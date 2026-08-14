@@ -29,6 +29,13 @@
   },
   {
     "date": "2026-08-14",
+    "area": "웹 HQ 테마",
+    "decision": "밝은 테마",
+    "status": "확정",
+    "note": "GitHub Pages 관리 화면은 밝은 배경과 흰색 카드 중심으로 운영"
+  },
+  {
+    "date": "2026-08-14",
     "area": "브랜드 방향",
     "decision": "전통 + 현대 / 긍정 + 스토리텔링 / Why Korea? 관점",
     "status": "확정",
