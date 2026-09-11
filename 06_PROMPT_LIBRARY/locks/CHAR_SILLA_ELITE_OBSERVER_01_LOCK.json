@@ -1,7 +1,7 @@
 {
   "lock_id": "CHAR_SILLA_ELITE_OBSERVER_01_LOCK",
   "kind": "CHARACTER",
-  "text": "CHAR_SILLA_ELITE_OBSERVER_01 (Senior elite observer): 봉분 조성·장례 준비를 떨어져서 지켜보는 지배층 원로 (H04 원로, H05 관찰자). Face: realistic Korean facial proportions, restrained expression, not a portrait of any named historical person. Body: natural, medium build, upright still posture. Hair: tied up, period-appropriate — final form follows COSTUME_SILLA_ELITE_A01 headwear. Age: 40s–50s. Skin: natural texture, weathered, no gloss. Costume lock: COSTUME_SILLA_ELITE_A01_LOCK.",
+  "text": "CHAR_SILLA_ELITE_OBSERVER_01 (Senior elite observer): senior member of the elite watching mound construction and funeral preparation from a distance; not the deceased, not a king. Face: realistic Korean facial proportions, restrained expression, not a portrait of any named historical person. Body: natural, medium build, upright still posture. Hair: tied up, period-appropriate. Age: 40s–50s. Skin: natural texture, weathered, no gloss. Costume lock: COSTUME_SILLA_ELITE_A01_LOCK.",
   "source": "05_HISTORY_DATABASE/characters/CHAR_SILLA_ELITE_OBSERVER_01.json",
   "status": "DRAFT",
   "updated_at": "2026-09-11"
