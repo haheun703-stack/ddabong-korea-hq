@@ -1,8 +1,8 @@
 {
   "lock_id": "COSTUME_SILLA_ELITE_A01_LOCK",
   "kind": "COSTUME",
-  "text": "COSTUME_SILLA_ELITE_A01: Silla senior elite observer (PROBABLE; colour and belt INTERPRETIVE): silk outer robe over hemp/ramie inner jacket; narrow-sleeved jacket under a longer outer robe, straight collar closing right over left, rounded collar acceptable; wide trousers, pleats acceptable; plaque belt with hanging pendants in restrained silver or bronze - never a copy of the Cheonmachong gold belt; ankle boots over socks; birch-bark style cap or simple formal cap - never a gold or gilt-bronze crown; muted crimson or blue tones, never purple. Back view, shoulder line and cap silhouette must be consistent. Forbidden: gold crown, Joseon royal or official robes, Ming/Qing imperial dress, fantasy king styling, purple.",
-  "source": "05_HISTORY_DATABASE/costumes/COSTUME_SILLA_ELITE_A01.json (D-011)",
-  "status": "DRAFT",
+  "text": "COSTUME_SILLA_ELITE_A01: Silla senior elite observer (PROBABLE; colour and belt fixed by D-015): silk outer robe over hemp/ramie inner jacket; narrow-sleeved jacket under a longer outer robe, straight collar closing right over left, rounded collar acceptable; wide trousers, pleats acceptable; plaque belt with hanging pendants in restrained bronze - never a copy of the Cheonmachong gold belt; ankle boots over socks; birch-bark style cap or simple formal cap - never a gold or gilt-bronze crown; muted blue tones, never crimson, never purple. Back view, shoulder line and cap silhouette must be consistent. Forbidden: gold crown, silver or gold belt plaques, Joseon royal or official robes, Ming/Qing imperial dress, fantasy king styling, purple, crimson.",
+  "source": "05_HISTORY_DATABASE/costumes/COSTUME_SILLA_ELITE_A01.json (D-011) · D-015 colour/belt",
+  "status": "APPROVED",
   "updated_at": "2026-09-11"
 }

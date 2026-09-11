@@ -3,6 +3,6 @@
   "kind": "CHARACTER",
   "text": "CHAR_SILLA_LABORER_GROUP_01 (Burial-construction laborer group): crowd of labourers preparing timber, carrying stones and building the mound; no recurring individual face. Face: varied realistic Korean faces, no single recurring hero face, no close-up emotion acting. Body: lean working builds, mixed heights. Hair: tied up, cloth band possible. Age: 20s–40s mixed. Skin: sun-weathered, dust, sweat, no gloss. Costume lock: COSTUME_SILLA_LABORER_A01_LOCK.",
   "source": "05_HISTORY_DATABASE/characters/CHAR_SILLA_LABORER_GROUP_01.json",
-  "status": "DRAFT",
+  "status": "APPROVED",
   "updated_at": "2026-09-11"
 }

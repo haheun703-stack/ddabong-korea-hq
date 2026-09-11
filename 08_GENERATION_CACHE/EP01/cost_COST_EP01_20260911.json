@@ -1,0 +1,17 @@
+{
+  "cost_id": "COST_EP01_20260911",
+  "episode_id": "EP01",
+  "budget": {
+    "currency": "KRW",
+    "amount": 40000,
+    "spent": 0,
+    "note": "D-015 사용자 확정"
+  },
+  "spent_total": 0,
+  "spent_by_provider": {},
+  "percent_used": 0,
+  "gate_state": "OPEN",
+  "generation_ids": [],
+  "as_of": "2026-09-11",
+  "note": "P-001 종결. 유료 호출마다 generation.json 추가 후 spent_total/percent_used 갱신. 80% WARNING · 95% STRONG · 100% LOCKED."
+}

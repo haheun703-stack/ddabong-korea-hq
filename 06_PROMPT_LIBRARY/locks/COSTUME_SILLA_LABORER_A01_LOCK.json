@@ -3,6 +3,6 @@
   "kind": "COSTUME",
   "text": "COSTUME_SILLA_LABORER_A01: Silla labourer (PROBABLE, CLM_SILLA_COSTUME_001-007): undyed coarse hemp plain-weave; short narrow-sleeved jacket to hip length, straight collar closing right over left; narrow trousers, possibly bound at shin or ankle; plain cloth waist cord, no metal; straw sandals or bare feet; topknot with a cloth band or bare topknot, may be bare-chested while working; colours natural white, black or raw fibre, no bright dye. Dust, sweat, worn cloth. Forbidden: Joseon hanbok silhouette, gat hat, Ming/Qing dress, samurai elements, modern fabric, purple/crimson/blue/yellow official colours.",
   "source": "05_HISTORY_DATABASE/costumes/COSTUME_SILLA_LABORER_A01.json (D-011)",
-  "status": "DRAFT",
+  "status": "APPROVED",
   "updated_at": "2026-09-11"
 }

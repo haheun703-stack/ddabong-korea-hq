@@ -70,9 +70,16 @@
 
 ---
 
+### D-015 · 2026-09-11 · P2 사전 점검 승인 A–F · Money Gate OPEN · Master Pack 소규모 배치 (사용자)
+**승인 내용** `15_QA/P2_PREFLIGHT_REPORT.md` 항목 A–F. **A** Character lock 3 + Costume lock 3 → APPROVED. **B** (P-009 종결) 원로 옷 색 muted blue · 금속 포인트 restrained bronze, `historical_basis` 는 PROBABLE 유지. **C** 노동자·시종 2그룹 LITE_CROWD 유지, H02 푸시인이 특정 얼굴에 머물 때만 FULL 승격 검토. **D** (P-005 종결) back_view 는 정식 슬롯 추가 없이 FULL Pack 보조 레퍼런스 이미지로 취급, 스키마 미확장. **E** (P-011 보류) 라우터 49건 ACCEPT/OVERRIDE 는 AI 샷 생성 직전 최종 승인. **F** (P-001 종결) EP01 AI 생성 예산 **₩40,000**, Money Gate OPEN.
+**생성 원칙** 17장 일괄 생성 금지. 배치 1 = 원로 hero · front · three_quarter_left · full_body 4장 → 사람 검수(얼굴·체형·복식 lock 확인) → 나머지 6 + back_view → 군중 6. Generate Late + Change Only What Failed.
+**반영** locks 6 APPROVED · `COSTUME_SILLA_ELITE_A01` color/belt/forbidden · 프롬프트 13 재조립 (원로 MP 11 + S06_SH002 · SH005; 생성 전이라 V01 유지) · `episode.json.budget` · `08_GENERATION_CACHE/EP01/cost_COST_EP01_20260911.json` OPEN · `approval_APR_EP01_MP_ELITE_BATCH1_001.json` APPROVE · validate.py 가 cost/approval/generation 인스턴스 검증.
+
+---
+
 ## 승인 대기 (P)
 
-### P-001 · EP01 생성 예산 (Money Gate 기준값)
+### ~~P-001~~ · (종결 D-015) EP01 생성 예산 (Money Gate 기준값)
 **제안** 통화·금액 확정 필요. 미확인 동안 `cost.gate_state = UNKNOWN_BUDGET` 으로 유료 생성 잠금.
 **영향** `02_SEASONS/S01/EP01/episode.json.budget`, `COST_STANDARD.md`
 
@@ -88,12 +95,12 @@
 
 *(P-005 → D-008, P-006 → D-009, P-007 → D-010 으로 승인됨, 2026-09-11)*
 
-### P-009 · 원로 인물 옷 색·허리띠 재질 (복식 QA, 2026-09-11)
+### ~~P-009~~ · (종결 D-015) 원로 인물 옷 색·허리띠 재질 (복식 QA, 2026-09-11)
 **현황** `COSTUME_SILLA_ELITE_A01` 의 다른 항목은 PROBABLE 로 확정됐으나, 옷 색과 과대(허리띠) 재질은 인물의 관등을 정하지 않으면 근거로 못 정한다. 삼국사기 색복지(법흥왕대) 기준 자=최고위, 비=아찬~급찬, 청=대나마·나마.
 **제안** 원로는 "왕 아님·피장자 아님"이므로 **비(다홍) 계열 + 은·동 과대** 권장. 자색·금제 과대는 피장자/왕급이라 제외. 5세기 전반에 이 색 규정이 있었는지는 불확실하므로 INTERPRETIVE 로 유지.
 **영향** Master Pack 생성 프롬프트의 COSTUME LOCK.
 
-### P-011 · 라우터 판정 49건 ACCEPT / OVERRIDE (P4, 2026-09-11)
+### P-011 · (보류 D-015: AI 샷 직전 승인) 라우터 판정 49건 ACCEPT / OVERRIDE (P4, 2026-09-11)
 **현황** 전 샷 `human_decision = PENDING`. 실질 판단 대상은 재현 8컷 — 특히 **H05** (`EP01_S06_SH005`, 에피소드 핵심 컷): 판정 BLENDER_FLOW (공간 85 + 인물 연속성), fallback HIGGSFIELD. 나머지 41건은 규칙 그대로 (REAL/ARCHIVE/GRAPHIC).
 **제안** 일괄 ACCEPT. OVERRIDE 시 `router_decision.human_decision = OVERRIDDEN` + `override_note`, 샷 `pipeline` 변경.
 **근거** `02_SEASONS/S01/EP01/15_QA/P4_ROUTER_REPORT.md`

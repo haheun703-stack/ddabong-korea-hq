@@ -1,7 +1,7 @@
 # CURRENT STATUS — 지금 어디까지 왔나
 
 > **매 작업마다 갱신한다.** 이 파일 하나만 읽으면 어느 봇/AI 창을 열어도 바로 이어갈 수 있어야 한다.
-> 갱신: 2026-09-11 (Claude Code, P2 pre-flight) · 마지막 사용자 승인: 2026-09-11 (P0 범위·EP01 파일 유지·push 전 확인 → D-007)
+> 갱신: 2026-09-11 (Claude Code, D-015 반영) · 마지막 사용자 승인: 2026-09-11 (P0 범위·EP01 파일 유지·push 전 확인 → D-007)
 > 읽는 순서: `BOT_HANDOFF_DDABONG_STUDIO_OS_V0.1.md` → `BOT_BOOTSTRAP_PROMPT.md` → **이 문서** → `OS_INDEX.md` → `02_SEASONS/S01/EP01/episode.json`
 
 ---
@@ -9,21 +9,21 @@
 ## 지금 우선 작업
 
 **사용자 손에 있는 것**
-- P-001 EP01 생성 예산 금액 (Money Gate 기준값) — 미확인이면 유료 생성 게이트는 `UNKNOWN_BUDGET` 으로 잠김.
+- ~~P-001~~ EP01 예산 **₩40,000 확정 (D-015)** → Money Gate OPEN.
 - P-002 에피소드 ID 자릿수 (`EP01` 유지 vs `EP001` 통일).
 - P-003 표준 문서 언어 (P0 초안은 한글 본문 + 영문 키/ID).
 - `p1-continuity` → main 병합 시점 (D-012: 다음 검수 게이트 전까지 보류).
 
-- **P-009** 원로(`CHAR_SILLA_ELITE_OBSERVER_01`) 옷 색 비(다홍) vs 청 · 과대 재질 — 관등 미설정이라 INTERPRETIVE (NEW).
+- ~~P-009~~ 원로 옷 색 muted blue · 과대 bronze 확정 (D-015), PROBABLE 유지.
 
-- **P-011** 라우터 판정 49건 ACCEPT / OVERRIDE (핵심: H05 BLENDER_FLOW vs Higgsfield).
+- **P-011** 라우터 판정 49건 ACCEPT / OVERRIDE — **AI 샷 생성 직전 최종 승인으로 보류 (D-015)**.
 - YELLOW_ACTIVE 1건 (`RTS_GNM_OTHER_OBJECTS_001`) — 편집 확정 전 필수 해소 (D-014).
 
 **봇이 바로 갈 수 있는 것**
 - graphics-spec v2 (G13 추가) — legacy HTML 은 수정하지 않고 새 문서로.
 - P5 Review UI / P6 Money Gate 어댑터 설계 (유료 없음).
 
-**유료 생성 시작 조건 (모두 충족해야)**: P-001 예산 확정 → `cost.json` OPEN · P-011 라우터 ACCEPT · Master Pack 생성 → `CHARACTER_MASTER_APPROVED` · master_frame APPROVED.
+**유료 생성 현황 (D-015)**: Money Gate OPEN (₩40,000 / 소진 0). **지금 가능**: 원로 Master Pack 배치 1 (hero · front · three_quarter_left · full_body 4장, `approval_APR_EP01_MP_ELITE_BATCH1_001` APPROVE) → 사람 검수 → 나머지 6 + back_view → 군중 6. AI 샷은 P-011 ACCEPT + `CHARACTER_MASTER_APPROVED` + master_frame APPROVED 뒤.
 
 ## P2 사전 점검 — Pre-flight (2026-09-11 · DONE, 생성 0)
 
@@ -37,7 +37,7 @@
 | Reference Set | 3층 계보 (Master Pack → Master Frame → AI 샷). S05_SH005 프롬프트의 유령 참조 `EP01_S05_MASTER_V01` 제거. 검증기에 `reference_images` 실존 규칙 추가 (음성 테스트 통과) |
 | FULL / LITE | 원로 FULL · 군중 2 LITE_CROWD 유지, 승격 대상 없음 (사람 확인 항목 C). H02 푸시인이 특정 얼굴에 머물면 재검토 |
 | Master Frame 후보 | S04 · S06 DRAFT 2 (Master Pack 승인 뒤 생성) |
-| 승인 대기 | A lock 승인 · B P-009 · C 군중 등급 확인 · D P-005 back_view · E P-011 · **F P-001 예산 (전면 차단)** |
+| 승인 | **D-015**: A✔ lock 6 APPROVED · B✔ muted blue + bronze · C✔ LITE 유지 · D✔ back_view 보조 · E 보류(AI 샷 직전) · F✔ ₩40,000 OPEN |
 
 ## P2 준비 — 프롬프트·카메라·마스터프레임 초안 (2026-09-11 · DONE, 생성 0)
 
@@ -135,9 +135,9 @@
 
 | 항목 | 값 |
 |---|---|
-| EP01 예산 | **미확인** (P-001) |
-| 소진 | 미확인 |
-| 게이트 상태 | `UNKNOWN_BUDGET` → 유료 생성 잠금 |
+| EP01 예산 | **₩40,000** (D-015) — `08_GENERATION_CACHE/EP01/cost_COST_EP01_20260911.json` |
+| 소진 | ₩0 (0%) |
+| 게이트 상태 | `OPEN` — 배치 1 승인 `APR_EP01_MP_ELITE_BATCH1_001` |
 
 ---
 
@@ -150,13 +150,16 @@
 
 ## 차단 / 미결
 
-- 예산 미확인 → 유료 생성 전면 잠금 (규칙 위반 아님, 정상 상태).
+- ~~예산 미확인~~ → D-015 ₩40,000 OPEN. 배치 1 생성은 Higgsfield 연결(MCP 인증) 필요.
 - Blender 로컬 브리지(P7) 없음 → `camera.json` 은 수동 작성 단계.
 - ~~복식 세부 근거 미확보~~ → 2026-09-11 해소 (D-011 게이트 통과). 잔여: 짚신 출처가 언론 보도 → P3 에서 박물관 페이지로 교체 권장.
 
 ---
 
 ## 최근 변경 (최신순)
+
+- **2026-09-11 사용자** — **D-015.** P2 사전 점검 A–F 승인: lock 6 APPROVED, 원로 muted blue + bronze (PROBABLE 유지), LITE_CROWD 유지, back_view 보조 이미지, P-011 은 AI 샷 직전, **예산 ₩40,000 Money Gate OPEN**. Master Pack 은 원로 4장 배치부터.
+- **2026-09-11 Claude Code** — D-015 반영: 복식 lock·인스턴스 갱신, 프롬프트 13 재조립, cost/approval 인스턴스, 검증기 캐시 등록, 배치 1 브리프 `11_AI_STILLS/MP_BATCH1_BRIEF.md`.
 
 - **2026-09-11 Claude Code** — P2 사전 점검 완료 (`15_QA/P2_PREFLIGHT_REPORT.md`): lock·요구·TBD·Reference Set·등급·Master Frame 후보 점검, S05 유령 master_frame 참조 제거, 검증기 reference_images 규칙 추가. 생성 0. 검증 231/231. 승인 대기 A–F.
 - **2026-09-11 Claude Code** — H: 드라이브 끊김 복구: fsck 통과, index.lock 정리, ba55720 push. D:\ddabong-korea-hq 비상용 클론 생성 (작업 클론은 H: 유지).

@@ -1,0 +1,24 @@
+{
+  "approval_id": "APR_EP01_MP_ELITE_BATCH1_001",
+  "kind": "PAID_GENERATION",
+  "target_id": "CHAR_SILLA_ELITE_OBSERVER_01",
+  "money_gate_presented": {
+    "shot_id": "MASTER_PACK:CHAR_SILLA_ELITE_OBSERVER_01:batch1",
+    "prompt_ids": [
+      "PRM_MP_CHAR_SILLA_ELITE_OBSERVER_01_HERO_V01",
+      "PRM_MP_CHAR_SILLA_ELITE_OBSERVER_01_FRONT_V01",
+      "PRM_MP_CHAR_SILLA_ELITE_OBSERVER_01_THREE_QUARTER_LEFT_V01",
+      "PRM_MP_CHAR_SILLA_ELITE_OBSERVER_01_FULL_BODY_V01"
+    ],
+    "provider_model": "Higgsfield / image model TBD at run",
+    "expected_attempts": 8,
+    "estimated_cost_range": "미확인 (첫 파일럿, 실제 비용 데이터 수집)",
+    "continuity_risk": "HIGH - 첫 얼굴·체형·복식 lock",
+    "note": "4 images x up to 2 attempts"
+  },
+  "decision": "APPROVE",
+  "fix_reason": null,
+  "decided_by": "사용자",
+  "decided_at": "2026-09-11T00:00:00Z",
+  "note": "D-015. 소규모 배치 1 (4장) 승인. 사람 검수 통과 후 나머지 6 + back_view 는 별도 approval."
+}

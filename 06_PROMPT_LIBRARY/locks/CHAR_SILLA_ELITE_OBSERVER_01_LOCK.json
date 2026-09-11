@@ -3,6 +3,6 @@
   "kind": "CHARACTER",
   "text": "CHAR_SILLA_ELITE_OBSERVER_01 (Senior elite observer): senior member of the elite watching mound construction and funeral preparation from a distance; not the deceased, not a king. Face: realistic Korean facial proportions, restrained expression, not a portrait of any named historical person. Body: natural, medium build, upright still posture. Hair: tied up, period-appropriate. Age: 40s–50s. Skin: natural texture, weathered, no gloss. Costume lock: COSTUME_SILLA_ELITE_A01_LOCK.",
   "source": "05_HISTORY_DATABASE/characters/CHAR_SILLA_ELITE_OBSERVER_01.json",
-  "status": "DRAFT",
+  "status": "APPROVED",
   "updated_at": "2026-09-11"
 }

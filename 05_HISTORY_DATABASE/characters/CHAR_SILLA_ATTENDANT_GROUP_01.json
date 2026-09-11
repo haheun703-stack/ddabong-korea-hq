@@ -77,5 +77,5 @@
   "approved_at": null,
   "version": "V01",
   "updated_at": "2026-09-11",
-  "notes": "군중 역할. H03 은 손 클로즈업 중심 → 손·소매 디테일이 costume_detail 의 핵심. D-008 Lite Crowd Pack: full_body·walking·costume_detail 만 필수. 전경·식별 가능하게 쓰이면 FULL 로 승격."
+  "notes": "군중 역할. H03 은 손 클로즈업 중심 → 손·소매 디테일이 costume_detail 의 핵심. D-008 Lite Crowd Pack: full_body·walking·costume_detail 만 필수. 전경·식별 가능하게 쓰이면 FULL 로 승격. D-015: LITE_CROWD 유지 확인 (사용자). H02 푸시인이 특정 얼굴에 머물 때만 FULL 승격 검토."
 }

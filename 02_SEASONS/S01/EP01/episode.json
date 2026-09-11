@@ -12,9 +12,9 @@
   "gate_note": "프리프로덕션 ≈91% 완료. 다음 실제 작업 = 경주 현장 촬영 + 유물/아카이브 파일 다운로드·정리. 그다음 필요한 Higgsfield 컷만 선별 생성 → 내레이션 녹음 → Premiere 러프컷.",
   "budget": {
     "currency": "KRW",
-    "amount": null,
-    "spent": null,
-    "note": "미확인 — DECISIONS.md P-001 승인 대기. 0으로 기록하지 않는다."
+    "amount": 40000,
+    "spent": 0,
+    "note": "D-015 (2026-09-11, 사용자): EP01 AI 생성 예산 ₩40,000. Money Gate OPEN."
   },
   "era_ids": [
     "SILLA_EARLY",

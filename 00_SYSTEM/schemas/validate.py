@@ -43,7 +43,9 @@ INSTANCES = sorted(ROOT.glob("02_SEASONS/*/*/episode.json")) + \
             sorted(p for p in ROOT.glob("05_HISTORY_DATABASE/*/*.json")) + \
             sorted(ROOT.glob("02_SEASONS/*/*/07_SHOTS/*.json")) + \
             sorted(ROOT.glob("02_SEASONS/*/*/10_BLENDER/camera_*.json")) + \
-            sorted(ROOT.glob("02_SEASONS/*/*/1[12]_AI_*/prompt_*.json"))
+            sorted(ROOT.glob("02_SEASONS/*/*/1[12]_AI_*/prompt_*.json")) + \
+            sorted(ROOT.glob("08_GENERATION_CACHE/*/cost_*.json")) + sorted(ROOT.glob("08_GENERATION_CACHE/*/approval_*.json")) + \
+            sorted(ROOT.glob("08_GENERATION_CACHE/*/generation_*.json"))
 
 LITE_SLOTS = {"full_body", "walking", "costume_detail"}
 

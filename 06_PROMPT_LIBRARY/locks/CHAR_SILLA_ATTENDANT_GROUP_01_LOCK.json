@@ -3,6 +3,6 @@
   "kind": "CHARACTER",
   "text": "CHAR_SILLA_ATTENDANT_GROUP_01 (Funeral attendant and artisan group): crowd of attendants and artisans selecting and arranging grave goods and preparing the rite; faces often out of frame, hands first. Face: varied realistic Korean faces, calm focused expressions, faces often out of frame (hands-first). Body: natural, mixed. Hair: neatly tied. Age: 20s–50s mixed. Skin: natural texture, no gloss. Costume lock: COSTUME_SILLA_ATTENDANT_A01_LOCK.",
   "source": "05_HISTORY_DATABASE/characters/CHAR_SILLA_ATTENDANT_GROUP_01.json",
-  "status": "DRAFT",
+  "status": "APPROVED",
   "updated_at": "2026-09-11"
 }
