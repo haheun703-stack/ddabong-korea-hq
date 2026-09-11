@@ -1,0 +1,37 @@
+{
+  "generation_id": "GEN_MP_ELITE_THREE_QUARTER_LEFT_HIGGSFIELD_V01",
+  "shot_id": "MASTER_PACK:CHAR_SILLA_ELITE_OBSERVER_01:three_quarter_left",
+  "stage": "STILL",
+  "provider": "Higgsfield",
+  "model": "nano_banana_pro (2k, 3:4, image_references=hero V02)",
+  "prompt_id": "PRM_MP_CHAR_SILLA_ELITE_OBSERVER_01_THREE_QUARTER_LEFT_V01",
+  "prompt_version": "V01",
+  "standard_versions": {
+    "CHARACTER_CONTINUITY_STANDARD.md": "v0.1",
+    "COST_STANDARD.md": "v0.1"
+  },
+  "case_ids_used": [
+    "CASE_DDABONG_CHAR_001"
+  ],
+  "approval_id": "APR_EP01_MP_ELITE_BATCH1_001",
+  "input_paths": [
+    "08_GENERATION_CACHE/EP01/MP_ELITE/MP_ELITE_HERO_V02_c7a5cc92.png"
+  ],
+  "output_paths": [
+    "08_GENERATION_CACHE/EP01/MP_ELITE/MP_ELITE_THREE_QUARTER_LEFT_V01_8d82a4c5.png"
+  ],
+  "attempts": 1,
+  "duration_sec": null,
+  "cost": {
+    "currency": "CREDITS",
+    "amount": 2.0,
+    "spent": 2.0,
+    "note": "Higgsfield job 8d82a4c5-cd4f-4605-83b7-d5ab5fb3e350"
+  },
+  "result_status": "SUCCESS",
+  "failure_id": null,
+  "started_at": "2026-09-11T13:39:05Z",
+  "finished_at": "2026-09-11T13:39:45Z",
+  "run_by": "Image Generation Agent (Claude Code)",
+  "notes": "Same face identity, ~45 deg left turn, cap silhouette clear (useful for profile later). Plain earth background. No forbidden elements, no text."
+}

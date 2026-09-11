@@ -1,0 +1,35 @@
+{
+  "generation_id": "GEN_MP_ELITE_HERO_HIGGSFIELD_V02",
+  "shot_id": "MASTER_PACK:CHAR_SILLA_ELITE_OBSERVER_01:hero",
+  "stage": "STILL",
+  "provider": "Higgsfield",
+  "model": "nano_banana_pro (2k, 3:4)",
+  "prompt_id": "PRM_MP_CHAR_SILLA_ELITE_OBSERVER_01_HERO_V01",
+  "prompt_version": "V01",
+  "standard_versions": {
+    "CHARACTER_CONTINUITY_STANDARD.md": "v0.1",
+    "COST_STANDARD.md": "v0.1"
+  },
+  "case_ids_used": [
+    "CASE_DDABONG_CHAR_001"
+  ],
+  "approval_id": "APR_EP01_MP_ELITE_BATCH1_001",
+  "input_paths": [],
+  "output_paths": [
+    "08_GENERATION_CACHE/EP01/MP_ELITE/MP_ELITE_HERO_V02_c7a5cc92.png"
+  ],
+  "attempts": 2,
+  "duration_sec": null,
+  "cost": {
+    "currency": "CREDITS",
+    "amount": 2.0,
+    "spent": 2.0,
+    "note": "Higgsfield job c7a5cc92-3f36-4b40-8071-84da9f6c6441"
+  },
+  "result_status": "SUCCESS",
+  "failure_id": null,
+  "started_at": "2026-09-11T13:37:41Z",
+  "finished_at": "2026-09-11T13:38:20Z",
+  "run_by": "Image Generation Agent (Claude Code)",
+  "notes": "Attempt 2 after V01 REJECTED. Changed only failed items: single subject, ivory inner (no crimson), no text, timber yard background. PASS on lock: Korean 40s-50s restrained face, birch-bark conical cap, muted blue outer robe, bronze plaque belt with pendants, no crown. Human-review flags: outer robe is short-sleeved over long inner sleeves (lock says narrow-sleeved inner + longer outer; acceptable but confirm); tiled roofs visible in background. This image is the identity reference (job id) for the other views."
+}

@@ -79,6 +79,12 @@
 
 ## 승인 대기 (P)
 
+### P-012 · Higgsfield 크레딧 → KRW 환산율 (Money Gate 계산용)
+**현황** 예산은 KRW ₩40,000 (D-015), 소진은 Higgsfield 크레딧 (배치 1 = 8.12 credits, plus 플랜). 환산율이 없어 `cost.percent_used` 를 계산할 수 없다.
+**제안** 플랜 월 요금 ÷ 월 크레딧으로 1 credit 당 KRW 를 정해 `COST_STANDARD.md` 에 기록.
+**영향** `08_GENERATION_CACHE/EP01/cost_COST_EP01_20260911.json` spent_total / percent_used.
+
+
 ### ~~P-001~~ · (종결 D-015) EP01 생성 예산 (Money Gate 기준값)
 **제안** 통화·금액 확정 필요. 미확인 동안 `cost.gate_state = UNKNOWN_BUDGET` 으로 유료 생성 잠금.
 **영향** `02_SEASONS/S01/EP01/episode.json.budget`, `COST_STANDARD.md`

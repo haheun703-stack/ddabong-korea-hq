@@ -1,0 +1,35 @@
+{
+  "generation_id": "GEN_MP_ELITE_HERO_HIGGSFIELD_V01",
+  "shot_id": "MASTER_PACK:CHAR_SILLA_ELITE_OBSERVER_01:hero",
+  "stage": "STILL",
+  "provider": "Higgsfield",
+  "model": "soul_2 (text2image_soul_v2, 2k, 3:4, seed 238493)",
+  "prompt_id": "PRM_MP_CHAR_SILLA_ELITE_OBSERVER_01_HERO_V01",
+  "prompt_version": "V01",
+  "standard_versions": {
+    "CHARACTER_CONTINUITY_STANDARD.md": "v0.1",
+    "COST_STANDARD.md": "v0.1"
+  },
+  "case_ids_used": [
+    "CASE_DDABONG_CHAR_001"
+  ],
+  "approval_id": "APR_EP01_MP_ELITE_BATCH1_001",
+  "input_paths": [],
+  "output_paths": [
+    "08_GENERATION_CACHE/EP01/MP_ELITE/MP_ELITE_HERO_V01_35407202.png"
+  ],
+  "attempts": 1,
+  "duration_sec": null,
+  "cost": {
+    "currency": "CREDITS",
+    "amount": 0.12,
+    "spent": 0.12,
+    "note": "Higgsfield job 35407202-2db4-46ef-b52f-6fef00e29bac"
+  },
+  "result_status": "REJECTED",
+  "failure_id": null,
+  "started_at": "2026-09-11T13:36:03Z",
+  "finished_at": "2026-09-11T13:36:40Z",
+  "run_by": "Image Generation Agent (Claude Code)",
+  "notes": "KEEP: face identity (Korean, 40s, restrained), birch-bark cap, bronze pendant belt, muted blue outer robe, timber background. FAIL: (1) second figure in armour with gat-like helmet (forbidden, must be single subject); (2) crimson inner garment (D-015 never crimson); (3) hallucinated text watermark bottom-right. -> attempt 2 with only failed items changed."
+}

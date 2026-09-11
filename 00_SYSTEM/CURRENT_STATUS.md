@@ -16,6 +16,8 @@
 
 - ~~P-009~~ 원로 옷 색 muted blue · 과대 bronze 확정 (D-015), PROBABLE 유지.
 
+- **P-012** Higgsfield 크레딧→KRW 환산율 (NEW).
+- **배치 1 검수** `08_GENERATION_CACHE/EP01/MP_ELITE/REVIEW_BATCH1.md` — 4장 APPROVE/FIX, 특히 표의 소매 길이.
 - **P-011** 라우터 판정 49건 ACCEPT / OVERRIDE — **AI 샷 생성 직전 최종 승인으로 보류 (D-015)**.
 - YELLOW_ACTIVE 1건 (`RTS_GNM_OTHER_OBJECTS_001`) — 편집 확정 전 필수 해소 (D-014).
 
@@ -23,7 +25,7 @@
 - graphics-spec v2 (G13 추가) — legacy HTML 은 수정하지 않고 새 문서로.
 - P5 Review UI / P6 Money Gate 어댑터 설계 (유료 없음).
 
-**유료 생성 현황 (D-015)**: Money Gate OPEN (₩40,000 / 소진 0). **지금 가능**: 원로 Master Pack 배치 1 (hero · front · three_quarter_left · full_body 4장, `approval_APR_EP01_MP_ELITE_BATCH1_001` APPROVE) → 사람 검수 → 나머지 6 + back_view → 군중 6. AI 샷은 P-011 ACCEPT + `CHARACTER_MASTER_APPROVED` + master_frame APPROVED 뒤.
+**유료 생성 현황 (D-015)**: Money Gate OPEN (₩40,000 / 소진 8.12 credits, KRW 환산 P-012). **배치 1 생성 완료 → 사람 검수 대기** `08_GENERATION_CACHE/EP01/MP_ELITE/REVIEW_BATCH1.md` (hero V02 · front · three_quarter_left · full_body, DRAFT). 승인되면 나머지 6 + back_view → 군중 6. AI 샷은 P-011 ACCEPT + `CHARACTER_MASTER_APPROVED` + master_frame APPROVED 뒤.
 
 ## P2 사전 점검 — Pre-flight (2026-09-11 · DONE, 생성 0)
 
@@ -136,7 +138,7 @@
 | 항목 | 값 |
 |---|---|
 | EP01 예산 | **₩40,000** (D-015) — `08_GENERATION_CACHE/EP01/cost_COST_EP01_20260911.json` |
-| 소진 | ₩0 (0%) |
+| 소진 | 8.12 credits (5 호출, 4 채택) — KRW 환산 P-012 |
 | 게이트 상태 | `OPEN` — 배치 1 승인 `APR_EP01_MP_ELITE_BATCH1_001` |
 
 ---
@@ -157,6 +159,8 @@
 ---
 
 ## 최근 변경 (최신순)
+
+- **2026-09-11 Claude Code** — **첫 유료 생성.** 원로 Master Pack 배치 1: hero V01 REJECTED(갑옷 인물·다홍·워터마크) → V02 PASS, front · three_quarter_left · full_body (hero 참조) PASS. 5 호출 8.12 credits. generation.json 5, cost 갱신, character MASTER_IN_PROGRESS, 검수 시트. P-012 등록.
 
 - **2026-09-11 사용자** — **D-015.** P2 사전 점검 A–F 승인: lock 6 APPROVED, 원로 muted blue + bronze (PROBABLE 유지), LITE_CROWD 유지, back_view 보조 이미지, P-011 은 AI 샷 직전, **예산 ₩40,000 Money Gate OPEN**. Master Pack 은 원로 4장 배치부터.
 - **2026-09-11 Claude Code** — D-015 반영: 복식 lock·인스턴스 갱신, 프롬프트 13 재조립, cost/approval 인스턴스, 검증기 캐시 등록, 배치 1 브리프 `11_AI_STILLS/MP_BATCH1_BRIEF.md`.
