@@ -1,0 +1,34 @@
+{
+  "decision_id": "RTR_EP01_S04_SH004_V01",
+  "shot_id": "EP01_S04_SH004",
+  "recommended_pipeline": "BLENDER_FLOW",
+  "fallback_pipeline": "HIGGSFIELD",
+  "previous_pipeline": "HIGGSFIELD",
+  "reason": "H01 목재 준비: 노동 동작 중심(human_motion 70), 카메라는 느린 측면 트래킹. 공간 의존 중간(60). 자연스러운 손·몸 움직임이 핵심이라 Flow/Veo. Blender 는 작업장 스케일 previz 만.",
+  "rule_applied": "Human motion + natural movement (carrying, ritual preparation, looking) → FLOW/VEO (Blender previz for scale)",
+  "scores": {
+    "spatial_accuracy": 60,
+    "camera_complexity": 45,
+    "human_motion": 70,
+    "continuity_importance": "MEDIUM",
+    "historical_importance": "MEDIUM",
+    "visual_importance": 70
+  },
+  "historical_confidence": "PROBABLE",
+  "continuity_risk": "MEDIUM",
+  "expected_cost_range": {
+    "currency": "CREDITS",
+    "min": null,
+    "max": null
+  },
+  "expected_attempts": 3,
+  "provider_candidates": [
+    "Blender",
+    "Flow",
+    "Veo"
+  ],
+  "human_decision": "PENDING",
+  "override_note": null,
+  "decided_at": "2026-09-11",
+  "decided_by": "Visual Router (Claude Code)"
+}

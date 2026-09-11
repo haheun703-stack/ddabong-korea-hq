@@ -1,0 +1,30 @@
+{
+  "decision_id": "RTR_EP01_S06_SH008_V01",
+  "shot_id": "EP01_S06_SH008",
+  "recommended_pipeline": "ORIGINAL_GRAPHIC",
+  "fallback_pipeline": null,
+  "previous_pipeline": "ORIGINAL_GRAPHIC",
+  "reason": "정보 밀도 높고 움직임 적음 → 자체 그래픽 (권리 BLUE).",
+  "rule_applied": "Low motion + high factual density → ORIGINAL_GRAPHIC",
+  "scores": {
+    "spatial_accuracy": 0,
+    "camera_complexity": 5,
+    "human_motion": 0,
+    "continuity_importance": "LOW",
+    "historical_importance": "LOW",
+    "visual_importance": 70
+  },
+  "historical_confidence": "FACT",
+  "continuity_risk": "LOW",
+  "expected_cost_range": {
+    "currency": "CREDITS",
+    "min": null,
+    "max": null
+  },
+  "expected_attempts": 2,
+  "provider_candidates": [],
+  "human_decision": "PENDING",
+  "override_note": null,
+  "decided_at": "2026-09-11",
+  "decided_by": "Visual Router (Claude Code)"
+}

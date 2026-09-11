@@ -15,5 +15,6 @@
   "status": "GREEN",
   "checked_at": "2026-09-11",
   "checked_by": "Claude Code (Story Engine Fact Check / Quality Engine Rights)",
-  "notes": "archive-photos 페이지에서 항목별 제1유형 확인. 다운로드 시 파일마다 라벨 재확인 후 proof 캡처 저장. 2019 간행물 PDF 캡처는 금지 (별도 RED)."
+  "notes": "archive-photos 페이지에서 항목별 제1유형 확인. 다운로드 시 파일마다 라벨 재확인 후 proof 캡처 저장. 2019 간행물 PDF 캡처는 금지 (별도 RED).",
+  "usage_tier": "ACTIVE"
 }

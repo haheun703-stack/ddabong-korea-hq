@@ -1,0 +1,33 @@
+{
+  "decision_id": "RTR_EP01_S06_SH010_V01",
+  "shot_id": "EP01_S06_SH010",
+  "recommended_pipeline": "AI_STILL",
+  "fallback_pipeline": "BLENDER_FLOW",
+  "previous_pipeline": "HIGGSFIELD",
+  "reason": "H06 완성 봉분 와이드: 움직임 거의 없음(20), 정보량(스케일 47 m/12.7 m) 높음, 정적 와이드 → AI_STILL. Blender 로 봉분 스케일·소그룹 위치 lock 한 키프레임을 생성 기준으로. 미세 카메라 필요 시 BLENDER_FLOW.",
+  "rule_applied": "Low motion + high factual density (historical reconstruction) → AI_STILL",
+  "scores": {
+    "spatial_accuracy": 90,
+    "camera_complexity": 30,
+    "human_motion": 20,
+    "continuity_importance": "MEDIUM",
+    "historical_importance": "MEDIUM",
+    "visual_importance": 85
+  },
+  "historical_confidence": "PROBABLE",
+  "continuity_risk": "MEDIUM",
+  "expected_cost_range": {
+    "currency": "CREDITS",
+    "min": null,
+    "max": null
+  },
+  "expected_attempts": 3,
+  "provider_candidates": [
+    "Flow (image)",
+    "Higgsfield (image)"
+  ],
+  "human_decision": "PENDING",
+  "override_note": null,
+  "decided_at": "2026-09-11",
+  "decided_by": "Visual Router (Claude Code)"
+}

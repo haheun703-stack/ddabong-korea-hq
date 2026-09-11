@@ -24,12 +24,85 @@
         "HIGGSFIELD"
       ]
     },
+    "fallback_pipeline": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "enum": [
+        "REAL_SHOOT",
+        "ARCHIVE",
+        "AI_STILL",
+        "ORIGINAL_GRAPHIC",
+        "BLENDER_FLOW",
+        "HIGGSFIELD",
+        null
+      ],
+      "description": "1순위 실패 시 대체 파이프라인 (D-014)"
+    },
+    "previous_pipeline": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "라우팅 전 샷에 적혀 있던 파이프라인 (legacy 태그 추적)"
+    },
     "reason": {
       "type": "string"
     },
     "rule_applied": {
       "type": "string",
       "description": "정본 §7 규칙 문장"
+    },
+    "scores": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "spatial_accuracy": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 100
+        },
+        "camera_complexity": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 100
+        },
+        "human_motion": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 100
+        },
+        "visual_importance": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 100
+        },
+        "continuity_importance": {
+          "type": "string",
+          "enum": [
+            "LOW",
+            "MEDIUM",
+            "HIGH"
+          ]
+        },
+        "historical_importance": {
+          "type": "string",
+          "enum": [
+            "LOW",
+            "MEDIUM",
+            "HIGH"
+          ]
+        }
+      },
+      "required": [
+        "spatial_accuracy",
+        "camera_complexity",
+        "human_motion",
+        "continuity_importance",
+        "historical_importance",
+        "visual_importance"
+      ]
     },
     "historical_confidence": {
       "type": "string",

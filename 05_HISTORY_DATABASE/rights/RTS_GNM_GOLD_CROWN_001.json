@@ -15,5 +15,6 @@
   "status": "GREEN",
   "checked_at": "2026-09-11",
   "checked_by": "Claude Code (Story Engine Fact Check / Quality Engine Rights)",
-  "notes": "visual-assets B1 공식 1순위."
+  "notes": "visual-assets B1 공식 1순위.",
+  "usage_tier": "ACTIVE"
 }

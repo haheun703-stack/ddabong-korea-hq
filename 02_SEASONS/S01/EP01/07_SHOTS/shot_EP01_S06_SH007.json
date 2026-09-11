@@ -12,7 +12,7 @@
   "human_motion": 10,
   "visual_importance": 70,
   "pipeline": "REAL_SHOOT",
-  "status": "PLANNED",
+  "status": "ROUTED",
   "characters": [],
   "costumes": [],
   "continuity_group": "EP01_S06",
@@ -20,7 +20,7 @@
   "must_keep": [],
   "camera_id": null,
   "prompt_id": null,
-  "router_decision_id": null,
+  "router_decision_id": "RTR_EP01_S06_SH007_V01",
   "fact_ids": [
     "CLM_EP01_MODERN_012",
     "CLM_EP01_MOUND_011"
@@ -31,7 +31,7 @@
   "approved_version": null,
   "created_at": "2026-09-11",
   "updated_at": "2026-09-11",
-  "updated_by": "Claude Code (Story Engine Fact Check / Quality Engine Rights)",
+  "updated_by": "Visual Router (Claude Code)",
   "notes": "TC 4:54–4:58 (러프컷 v1 기준, 내레이션 녹음 후 조정). D-009 채움 컷 (H05 분할분). 현장 촬영 시 H05 와 비슷한 '뒤에서 바라보는' 구도로. 점수(camera_complexity 등)는 Continuity Engine 추정치 — P4 라우터에서 확정.",
   "evidence_role": "CONTEXT"
 }

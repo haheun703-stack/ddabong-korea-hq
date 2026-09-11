@@ -1,0 +1,34 @@
+{
+  "decision_id": "RTR_EP01_S06_SH002_V01",
+  "shot_id": "EP01_S06_SH002",
+  "recommended_pipeline": "BLENDER_FLOW",
+  "fallback_pipeline": "HIGGSFIELD",
+  "previous_pipeline": "HIGGSFIELD",
+  "reason": "H04 장례 준비 와이드: 역할별 배치(공간 80) + 반복 인물 원로 등장 → master_frame 필수, 인물 연속성 critical. 정적 와이드 + 전경 미세 움직임 → Blender 배치 lock → Flow/Veo reference-driven.",
+  "rule_applied": "High spatial accuracy + high camera complexity → BLENDER → FLOW/VEO",
+  "scores": {
+    "spatial_accuracy": 80,
+    "camera_complexity": 40,
+    "human_motion": 50,
+    "continuity_importance": "HIGH",
+    "historical_importance": "MEDIUM",
+    "visual_importance": 85
+  },
+  "historical_confidence": "INTERPRETIVE",
+  "continuity_risk": "HIGH",
+  "expected_cost_range": {
+    "currency": "CREDITS",
+    "min": null,
+    "max": null
+  },
+  "expected_attempts": 3,
+  "provider_candidates": [
+    "Blender",
+    "Flow",
+    "Veo"
+  ],
+  "human_decision": "PENDING",
+  "override_note": null,
+  "decided_at": "2026-09-11",
+  "decided_by": "Visual Router (Claude Code)"
+}

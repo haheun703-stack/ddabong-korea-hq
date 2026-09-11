@@ -1,0 +1,34 @@
+{
+  "decision_id": "RTR_EP01_S04_SH005_V01",
+  "shot_id": "EP01_S04_SH005",
+  "recommended_pipeline": "BLENDER_FLOW",
+  "fallback_pipeline": "HIGGSFIELD",
+  "previous_pipeline": "HIGGSFIELD",
+  "reason": "H02 돌 운반: 봉분 일부 형성 상태의 공간 관계(70) + 와이드→손 푸시인(55) + 반복 운반 동작(75). 공간·카메라·동작 모두 → Blender 공간 lock 후 Flow/Veo.",
+  "rule_applied": "High spatial accuracy + high camera complexity → BLENDER → FLOW/VEO",
+  "scores": {
+    "spatial_accuracy": 70,
+    "camera_complexity": 55,
+    "human_motion": 75,
+    "continuity_importance": "MEDIUM",
+    "historical_importance": "MEDIUM",
+    "visual_importance": 75
+  },
+  "historical_confidence": "PROBABLE",
+  "continuity_risk": "MEDIUM",
+  "expected_cost_range": {
+    "currency": "CREDITS",
+    "min": null,
+    "max": null
+  },
+  "expected_attempts": 3,
+  "provider_candidates": [
+    "Blender",
+    "Flow",
+    "Veo"
+  ],
+  "human_decision": "PENDING",
+  "override_note": null,
+  "decided_at": "2026-09-11",
+  "decided_by": "Visual Router (Claude Code)"
+}

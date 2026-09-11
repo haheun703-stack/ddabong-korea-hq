@@ -12,7 +12,7 @@
   "human_motion": 0,
   "visual_importance": 80,
   "pipeline": "ORIGINAL_GRAPHIC",
-  "status": "PLANNED",
+  "status": "ROUTED",
   "characters": [],
   "costumes": [],
   "continuity_group": "EP01_S03",
@@ -20,7 +20,7 @@
   "must_keep": [],
   "camera_id": null,
   "prompt_id": null,
-  "router_decision_id": null,
+  "router_decision_id": "RTR_EP01_S03_SH005_V01",
   "fact_ids": [
     "CLM_EP01_OCCUPANT_006"
   ],
@@ -30,7 +30,7 @@
   "approved_version": null,
   "created_at": "2026-09-11",
   "updated_at": "2026-09-11",
-  "updated_by": "Claude Code (Story Engine Fact Check / Quality Engine Rights)",
+  "updated_by": "Visual Router (Claude Code)",
   "notes": "TC 2:04–2:15 (러프컷 v1 기준, 내레이션 녹음 후 조정). G06. S4 피장자 불확실. 미스터리 연출 과하게 하지 않기. X2 RESOLVED (D-010, 내용 → Script 우선): 문구 'OCCUPANT: UNCERTAIN'. 러프컷의 'WHO WAS BURIED HERE?' 는 보조 문구로만 (S4). 점수(camera_complexity 등)는 Continuity Engine 추정치 — P4 라우터에서 확정.",
   "evidence_role": "PRIMARY"
 }

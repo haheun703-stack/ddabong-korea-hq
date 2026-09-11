@@ -1,0 +1,34 @@
+{
+  "decision_id": "RTR_EP01_S05_SH005_V01",
+  "shot_id": "EP01_S05_SH005",
+  "recommended_pipeline": "BLENDER_FLOW",
+  "fallback_pipeline": "AI_STILL",
+  "previous_pipeline": "HIGGSFIELD",
+  "reason": "H03 부장품 준비: 손·천·금속 클로즈업, 얕은 심도. 공간 의존 낮음(50) 이라 Blender previz 생략 가능, 승인 키프레임 → Flow/Veo 직행. 4초라 AI_STILL + 켄번스로도 대체 가능.",
+  "rule_applied": "Human motion + natural movement (carrying, ritual preparation, looking) → FLOW/VEO (Blender previz for scale)",
+  "scores": {
+    "spatial_accuracy": 50,
+    "camera_complexity": 35,
+    "human_motion": 40,
+    "continuity_importance": "MEDIUM",
+    "historical_importance": "MEDIUM",
+    "visual_importance": 75
+  },
+  "historical_confidence": "PROBABLE",
+  "continuity_risk": "MEDIUM",
+  "expected_cost_range": {
+    "currency": "CREDITS",
+    "min": null,
+    "max": null
+  },
+  "expected_attempts": 3,
+  "provider_candidates": [
+    "Blender",
+    "Flow",
+    "Veo"
+  ],
+  "human_decision": "PENDING",
+  "override_note": null,
+  "decided_at": "2026-09-11",
+  "decided_by": "Visual Router (Claude Code)"
+}

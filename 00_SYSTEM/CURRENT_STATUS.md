@@ -16,12 +16,25 @@
 
 - **P-009** 원로(`CHAR_SILLA_ELITE_OBSERVER_01`) 옷 색 비(다홍) vs 청 · 과대 재질 — 관등 미설정이라 INTERPRETIVE (NEW).
 
-- **P-010** YELLOW 권리 4건 확정 (B5 박물관 기타 유물 페이지별 확인, Wikimedia CC BY-SA 2건 SA 수용 여부, 경주시 이미지 서면 확인) — 편집 전까지.
+- **P-011** 라우터 판정 49건 ACCEPT / OVERRIDE (핵심: H05 BLENDER_FLOW vs Higgsfield).
+- YELLOW_ACTIVE 1건 (`RTS_GNM_OTHER_OBJECTS_001`) — 편집 확정 전 필수 해소 (D-014).
 
 **봇이 바로 갈 수 있는 것**
-- P4 Shot Router: 49 샷 `router_decision.json` (H01–H06 → BLENDER_FLOW 재검토, 점수 확정).
-- P2 Character Master 준비: 복식 게이트 통과 → 남은 선행 조건은 예산(P-001)뿐.
+- P2 Character Master 준비 문서: 원로 FULL 10종 + 군중 LITE 3종 프롬프트 조립(§8 lock 조각) — 생성은 예산(P-001) 후.
+- `camera.json` 수동 작성: BLENDER_FLOW 6컷 (Blender 브리지 P7 전).
 - graphics-spec v2 (G13 추가) — legacy HTML 은 수정하지 않고 새 문서로.
+
+## P4 — Shot Router (2026-09-11 · DONE, 사용자 ACCEPT 대기 P-011)
+
+| 항목 | 산출 | 상태 |
+|---|---|---|
+| 라우터 판정 | `07_SHOTS/router_decision_RTR_EP01_*_V01.json` 49건 — 점수 6종 + recommended/fallback/reason/rule | `PENDING` |
+| 재판정 결과 | legacy Higgsfield 8 → **HIGGSFIELD 1** (H07 매치컷) · **BLENDER_FLOW 6** (H01–H05) · **AI_STILL 1** (H06) | 샷 `pipeline` 갱신, `status = ROUTED` |
+| 최종 구성 | REAL 10 · ARCHIVE 20 · GRAPHIC 11 · BLENDER_FLOW 6 · AI_STILL 1 · HIGGSFIELD 1 | — |
+| 권리 등급 | `rights.usage_tier` ACTIVE / BACKUP_ONLY — YELLOW_ACTIVE 1 · YELLOW_BACKUP 3 | D-014 |
+| 자동 FAIL 추가 | BACKUP_ONLY 참조 · AI 샷 라우터 없음 · 샷 파이프라인 ≠ 판정(OVERRIDDEN 아님) | 음성 테스트 통과 |
+| 리포트 | `15_QA/P4_ROUTER_REPORT.md` | DONE |
+| 검증 | 196/196 PASS, refs OK | DONE |
 
 ## P3 — Source/Rights Ledger (2026-09-11 · DONE, 브랜치 `p1-continuity`)
 
@@ -75,7 +88,8 @@
 | SCRIPT | `episodes/ep01-production-script-v2.md` (v1은 PREVIOUS) | APPROVED |
 | SHOTLIST | `ep01-visual-assets`, `ep01-graphics-spec` (G01–G12) | APPROVED |
 | SCENE_BREAKDOWN | `02_SEASONS/S01/EP01/07_SHOTS/` 씬 9 · 샷 49 | DRAFT (P1, 조건부 승인) |
-| SOURCE_FACT_QA | `05_HISTORY_DATABASE/{sources,facts,rights}/` + `15_QA/P3_LEDGER_REPORT.md` | DONE (P3) · YELLOW 권리 4건 P-010 |
+| SOURCE_FACT_QA | `05_HISTORY_DATABASE/{sources,facts,rights}/` + `15_QA/P3_LEDGER_REPORT.md` | DONE (P3) · YELLOW_ACTIVE 1건 편집 전 해소 |
+| SHOT_ROUTER | `07_SHOTS/router_decision_*` 49 + `15_QA/P4_ROUTER_REPORT.md` | DONE (P4) · ACCEPT 대기 P-011 |
 | REAL_SHOOT | `ep01-field-shoot-plan` 체크리스트 | 계획 APPROVED · **촬영 미실행** |
 | ARCHIVE | `ep01-archive-photos` (1973 NRICH), `ep01-artifact-library` | 선별 APPROVED · 파일 다운로드 미실행 |
 | HIGGSFIELD | `ep01-higgsfield-prompts` 7컷 | 프롬프트 APPROVED · **생성 금지 (Money Gate 미승인, 예산 미확인)** |
@@ -118,6 +132,8 @@
 
 ## 최근 변경 (최신순)
 
+- **2026-09-11 Claude Code** — P4 Shot Router 완료 (D-014): 49 판정, Higgsfield 8 → 1, 권리 usage_tier, 검증 규칙 3종 추가, 리포트. 검증 196/196. P-011 등록.
+- **2026-09-11 사용자** — **D-014.** `e5c4d39` push, 권리 등급 YELLOW_ACTIVE/BACKUP, P4 진입, 라우터 감독 기준.
 - **2026-09-11 Claude Code** — P3 Source/Rights Ledger 완료 (D-013): 출처 13 · 사실 22 · 권리 11, 49 샷 fact/rights/evidence_role 연결, 자동 FAIL 규칙 6종, 리포트. 검증 147/147.
 - **2026-09-11 사용자** — **D-013.** `b918b24` push, P3 진입, `evidence_role` 필드.
 - **2026-09-11 Claude Code** — SCRIPT_ROUGHCUT_DELTA 4/4 정리: X2 문구 반영, X3 금관 위치 단면 G13 신규 샷 (`EP01_S07_SH005`, NRICH S4 근거 `CLM_CHEONMACHONG_LAYOUT_001`), 천마총 location 배치 정보 보강. 검증 119/119.

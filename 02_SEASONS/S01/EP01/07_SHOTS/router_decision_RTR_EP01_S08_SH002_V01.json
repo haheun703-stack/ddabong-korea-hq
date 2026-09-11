@@ -1,0 +1,32 @@
+{
+  "decision_id": "RTR_EP01_S08_SH002_V01",
+  "shot_id": "EP01_S08_SH002",
+  "recommended_pipeline": "HIGGSFIELD",
+  "fallback_pipeline": "AI_STILL",
+  "previous_pipeline": "HIGGSFIELD",
+  "reason": "H07 과거→현재 매치컷: 정본 §6 Higgsfield 용도(past-to-present match cut). 카메라 고정이지만 특수 전환 컷. 실사 착지 구도(SH003) 촬영 후 그 구도에 맞춰 생성. 정지 프레임이면 AI_STILL 로 충분.",
+  "rule_applied": "Strong reveal / extreme camera / past-to-present match cut → HIGGSFIELD",
+  "scores": {
+    "spatial_accuracy": 95,
+    "camera_complexity": 10,
+    "human_motion": 0,
+    "continuity_importance": "HIGH",
+    "historical_importance": "MEDIUM",
+    "visual_importance": 90
+  },
+  "historical_confidence": "PROBABLE",
+  "continuity_risk": "HIGH",
+  "expected_cost_range": {
+    "currency": "CREDITS",
+    "min": null,
+    "max": null
+  },
+  "expected_attempts": 3,
+  "provider_candidates": [
+    "Higgsfield"
+  ],
+  "human_decision": "PENDING",
+  "override_note": null,
+  "decided_at": "2026-09-11",
+  "decided_by": "Visual Router (Claude Code)"
+}

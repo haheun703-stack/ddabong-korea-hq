@@ -15,5 +15,6 @@
   "status": "YELLOW",
   "checked_at": "2026-09-11",
   "checked_by": "Claude Code (Story Engine Fact Check / Quality Engine Rights)",
-  "notes": "A2 백업. Share-Alike 의무 수용 여부 결정 필요."
+  "notes": "A2 백업. Share-Alike 의무 수용 여부 결정 필요.",
+  "usage_tier": "BACKUP_ONLY"
 }

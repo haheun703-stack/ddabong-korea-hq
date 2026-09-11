@@ -12,7 +12,7 @@
   "human_motion": 0,
   "visual_importance": 75,
   "pipeline": "REAL_SHOOT",
-  "status": "PLANNED",
+  "status": "ROUTED",
   "characters": [],
   "costumes": [],
   "continuity_group": "EP01_S09",
@@ -22,7 +22,7 @@
   ],
   "camera_id": null,
   "prompt_id": null,
-  "router_decision_id": null,
+  "router_decision_id": "RTR_EP01_S09_SH003_V01",
   "fact_ids": [
     "CLM_EP01_MODERN_012"
   ],
@@ -32,7 +32,7 @@
   "approved_version": null,
   "created_at": "2026-09-11",
   "updated_at": "2026-09-11",
-  "updated_by": "Claude Code (Story Engine Fact Check / Quality Engine Rights)",
+  "updated_by": "Visual Router (Claude Code)",
   "notes": "TC 6:42–6:48 (러프컷 v1 기준, 내레이션 녹음 후 조정). EP01_S01_SH002 구도 회수. 점수(camera_complexity 등)는 Continuity Engine 추정치 — P4 라우터에서 확정.",
   "evidence_role": "CONTEXT"
 }

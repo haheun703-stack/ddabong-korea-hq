@@ -1,0 +1,30 @@
+{
+  "decision_id": "RTR_EP01_S01_SH002_V01",
+  "shot_id": "EP01_S01_SH002",
+  "recommended_pipeline": "REAL_SHOOT",
+  "fallback_pipeline": null,
+  "previous_pipeline": "REAL_SHOOT",
+  "reason": "현재 장소 실사 (era PRESENT_DAY).",
+  "rule_applied": "Present-day location → REAL_SHOOT",
+  "scores": {
+    "spatial_accuracy": 50,
+    "camera_complexity": 35,
+    "human_motion": 30,
+    "continuity_importance": "LOW",
+    "historical_importance": "LOW",
+    "visual_importance": 90
+  },
+  "historical_confidence": "FACT",
+  "continuity_risk": "LOW",
+  "expected_cost_range": {
+    "currency": "CREDITS",
+    "min": null,
+    "max": null
+  },
+  "expected_attempts": 1,
+  "provider_candidates": [],
+  "human_decision": "PENDING",
+  "override_note": null,
+  "decided_at": "2026-09-11",
+  "decided_by": "Visual Router (Claude Code)"
+}

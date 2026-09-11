@@ -12,7 +12,7 @@
   "human_motion": 0,
   "visual_importance": 80,
   "pipeline": "ORIGINAL_GRAPHIC",
-  "status": "PLANNED",
+  "status": "ROUTED",
   "characters": [],
   "costumes": [],
   "continuity_group": "EP01_S07",
@@ -20,7 +20,7 @@
   "must_keep": [],
   "camera_id": null,
   "prompt_id": null,
-  "router_decision_id": null,
+  "router_decision_id": "RTR_EP01_S07_SH005_V01",
   "fact_ids": [
     "CLM_CHEONMACHONG_LAYOUT_001"
   ],
@@ -30,7 +30,7 @@
   "approved_version": null,
   "created_at": "2026-09-11",
   "updated_at": "2026-09-11",
-  "updated_by": "Claude Code (Story Engine Fact Check / Quality Engine Rights)",
+  "updated_by": "Visual Router (Claude Code)",
   "notes": "TC 5:42–5:45 (러프컷 v1 기준, 내레이션 녹음 후 조정). X3 RESOLVED (D-010, 사실 → Script 우선): 대본 v2 '금관 위치 단면, 고고학적으로 뒷받침될 때만' → S4 로 뒷받침됨. G13 은 legacy graphics-spec(G01–G12) 에 없는 신규 그래픽 → graphics-spec v2 필요 (legacy HTML 은 수정하지 않음). 그리는 것: 목관 안 피장자 머리 동쪽 + 머리 위 금관 + 머리맡 부장궤 T자. 그 외 세부 금지. 점수는 Continuity Engine 추정치 — P4 라우터에서 확정.",
   "evidence_role": "PRIMARY"
 }

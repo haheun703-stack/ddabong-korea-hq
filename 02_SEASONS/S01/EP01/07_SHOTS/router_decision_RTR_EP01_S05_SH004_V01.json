@@ -1,0 +1,30 @@
+{
+  "decision_id": "RTR_EP01_S05_SH004_V01",
+  "shot_id": "EP01_S05_SH004",
+  "recommended_pipeline": "ARCHIVE",
+  "fallback_pipeline": null,
+  "previous_pipeline": "ARCHIVE",
+  "reason": "공식 발굴사진·유물 이미지 (rights 연결 완료).",
+  "rule_applied": "Historical photo/document/artifact → ARCHIVE",
+  "scores": {
+    "spatial_accuracy": 10,
+    "camera_complexity": 5,
+    "human_motion": 0,
+    "continuity_importance": "LOW",
+    "historical_importance": "HIGH",
+    "visual_importance": 65
+  },
+  "historical_confidence": "FACT",
+  "continuity_risk": "LOW",
+  "expected_cost_range": {
+    "currency": "CREDITS",
+    "min": null,
+    "max": null
+  },
+  "expected_attempts": 1,
+  "provider_candidates": [],
+  "human_decision": "PENDING",
+  "override_note": null,
+  "decided_at": "2026-09-11",
+  "decided_by": "Visual Router (Claude Code)"
+}

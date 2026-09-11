@@ -15,5 +15,6 @@
   "status": "GREEN",
   "checked_at": "2026-09-11",
   "checked_by": "Claude Code (Story Engine Fact Check / Quality Engine Rights)",
-  "notes": "B4. 라이선스 페이지 캡처를 proof 로 보관."
+  "notes": "B4. 라이선스 페이지 캡처를 proof 로 보관.",
+  "usage_tier": "ACTIVE"
 }

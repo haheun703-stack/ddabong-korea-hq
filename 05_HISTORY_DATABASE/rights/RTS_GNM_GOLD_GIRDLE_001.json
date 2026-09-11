@@ -15,5 +15,6 @@
   "status": "GREEN",
   "checked_at": "2026-09-11",
   "checked_by": "Claude Code (Story Engine Fact Check / Quality Engine Rights)",
-  "notes": "B3."
+  "notes": "B3.",
+  "usage_tier": "ACTIVE"
 }

@@ -15,5 +15,6 @@
   "status": "YELLOW",
   "checked_at": "2026-09-11",
   "checked_by": "Claude Code (Story Engine Fact Check / Quality Engine Rights)",
-  "notes": "A1 백업. 수익화 영상 사용은 서면 확인 후. 기본은 자체 촬영(BLUE)."
+  "notes": "A1 백업. 수익화 영상 사용은 서면 확인 후. 기본은 자체 촬영(BLUE).",
+  "usage_tier": "BACKUP_ONLY"
 }

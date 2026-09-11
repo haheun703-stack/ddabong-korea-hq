@@ -15,5 +15,6 @@
   "status": "YELLOW",
   "checked_at": "2026-09-11",
   "checked_by": "Claude Code (Story Engine Fact Check / Quality Engine Rights)",
-  "notes": "A3 백업. 동일 SA 이슈."
+  "notes": "A3 백업. 동일 SA 이슈.",
+  "usage_tier": "BACKUP_ONLY"
 }

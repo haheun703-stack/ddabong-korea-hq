@@ -1,0 +1,34 @@
+{
+  "decision_id": "RTR_EP01_S04_SH006_V01",
+  "shot_id": "EP01_S04_SH006",
+  "recommended_pipeline": "BLENDER_FLOW",
+  "fallback_pipeline": "AI_STILL",
+  "previous_pipeline": "HIGGSFIELD",
+  "reason": "H02 조직된 작업 와이드: 공간 정확도 75, 정적 와이드. SH005 와 같은 Blender 씬에서 카메라만 바꿔 뽑는다 → 유료 호출 절감. 실패 시 Blender 키프레임 AI_STILL + 미세 모션.",
+  "rule_applied": "High spatial accuracy + high camera complexity → BLENDER → FLOW/VEO",
+  "scores": {
+    "spatial_accuracy": 75,
+    "camera_complexity": 40,
+    "human_motion": 60,
+    "continuity_importance": "MEDIUM",
+    "historical_importance": "MEDIUM",
+    "visual_importance": 70
+  },
+  "historical_confidence": "PROBABLE",
+  "continuity_risk": "MEDIUM",
+  "expected_cost_range": {
+    "currency": "CREDITS",
+    "min": null,
+    "max": null
+  },
+  "expected_attempts": 3,
+  "provider_candidates": [
+    "Blender",
+    "Flow",
+    "Veo"
+  ],
+  "human_decision": "PENDING",
+  "override_note": null,
+  "decided_at": "2026-09-11",
+  "decided_by": "Visual Router (Claude Code)"
+}

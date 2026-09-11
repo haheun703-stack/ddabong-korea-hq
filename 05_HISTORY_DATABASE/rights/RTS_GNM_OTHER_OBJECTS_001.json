@@ -15,5 +15,6 @@
   "status": "YELLOW",
   "checked_at": "2026-09-11",
   "checked_by": "Claude Code (Story Engine Fact Check / Quality Engine Rights)",
-  "notes": "B5 귀걸이·유리·토기·말갖춤. 소장품 페이지마다 라벨 확인 → 1유형이면 개별 GREEN 인스턴스로 분리. 4유형이면 사용 금지."
+  "notes": "B5 귀걸이·유리·토기·말갖춤. 소장품 페이지마다 라벨 확인 → 1유형이면 개별 GREEN 인스턴스로 분리. 4유형이면 사용 금지. D-014: YELLOW_ACTIVE — 편집 확정 전 필수 해소.",
+  "usage_tier": "ACTIVE"
 }

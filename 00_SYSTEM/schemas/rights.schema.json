@@ -94,6 +94,14 @@
         "BLUE"
       ]
     },
+    "usage_tier": {
+      "type": "string",
+      "enum": [
+        "ACTIVE",
+        "BACKUP_ONLY"
+      ],
+      "description": "D-014. ACTIVE = 실제 샷에 연결됨 (YELLOW 이면 편집 전 해결 필수 = YELLOW_ACTIVE). BACKUP_ONLY = 대체 가능, 실제 사용 시에만 해결 (YELLOW_BACKUP). BACKUP_ONLY 자산을 샷이 참조하면 FAIL."
+    },
     "checked_at": {
       "type": "string",
       "description": "YYYY-MM-DD",

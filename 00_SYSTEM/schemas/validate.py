@@ -65,7 +65,7 @@ def pack_rules(p, d, costumes):
 RANK = {"FACT": 3, "PROBABLE": 2, "INTERPRETIVE": 1, "ARTISTIC": 0}
 EVIDENCE_PIPES = {"ARCHIVE", "HIGGSFIELD", "AI_STILL", "BLENDER_FLOW"}
 
-def ledger_rules(p, d, facts, rights):
+def ledger_rules(p, d, facts, rights, routers):
     """P3 (정본 §9 §10, D-013): source-less shot / unresolved rights / over-interpretation -> FAIL."""
     errs, rel = [], p.relative_to(ROOT)
     role = d.get("evidence_role")
@@ -80,6 +80,17 @@ def ledger_rules(p, d, facts, rights):
     for r in d.get("rights_ids", []):
         if rights.get(r, {}).get("status") == "RED":
             errs.append(f"{rel}: uses RED rights {r}")
+        if rights.get(r, {}).get("usage_tier") == "BACKUP_ONLY":
+            errs.append(f"{rel}: references BACKUP_ONLY rights {r} - promote to ACTIVE first (D-014)")
+    rid = d.get("router_decision_id")
+    if d["pipeline"] in ("AI_STILL", "BLENDER_FLOW", "HIGGSFIELD") and not rid:
+        errs.append(f"{rel}: AI pipeline without router_decision_id (no router output)")
+    if rid:
+        r = routers.get(rid)
+        if not r: errs.append(f"{rel}: router_decision_id -> unknown router '{rid}'")
+        elif r["shot_id"] != d["shot_id"]: errs.append(f"{rel}: router {rid} belongs to {r['shot_id']}")
+        elif r["human_decision"] != "OVERRIDDEN" and r["recommended_pipeline"] != d["pipeline"]:
+            errs.append(f"{rel}: pipeline {d['pipeline']} != router recommendation {r['recommended_pipeline']} (not OVERRIDDEN)")
     fs = [facts[c] for c in d.get("fact_ids", []) if c in facts]
     if fs:
         best = max(RANK[f["confidence"]] for f in fs)
@@ -93,13 +104,15 @@ def refcheck(paths):
     """Cross-reference check for real instances (not templates): every referenced ID must exist."""
     ids, docs = {}, []
     key = {"era": "era_id", "location": "location_id", "character": "character_id", "costume": "costume_id",
-           "fact": "claim_id", "source": "source_id", "rights": "rights_id", "scene": "scene_id", "shot": "shot_id", "episode": "episode_id"}
+           "fact": "claim_id", "source": "source_id", "rights": "rights_id", "router_decision": "decision_id",
+           "scene": "scene_id", "shot": "shot_id", "episode": "episode_id"}
     for p in paths:
         data = json.loads(p.read_text(encoding="utf-8")); name = pick(p, data)
         if name in key: ids.setdefault(name, set()).add(data.get(key[name])); docs.append((p, name, data))
     costumes = {d["costume_id"]: d for _, n, d in docs if n == "costume"}
     facts = {d["claim_id"]: d for _, n, d in docs if n == "fact"}
     rights = {d["rights_id"]: d for _, n, d in docs if n == "rights"}
+    routers = {d["decision_id"]: d for _, n, d in docs if n == "router_decision"}
     has = lambda kind, v: v in ids.get(kind, set())
     errs = []
     def need(p, kind, vals, field):
@@ -112,7 +125,7 @@ def refcheck(paths):
         if name == "shot":
             need(p, "costume", d.get("costumes"), "costumes"); need(p, "scene", d.get("scene_id"), "scene_id")
             need(p, "fact", d.get("fact_ids"), "fact_ids"); need(p, "rights", d.get("rights_ids"), "rights_ids")
-            errs.extend(ledger_rules(p, d, facts, rights))
+            errs.extend(ledger_rules(p, d, facts, rights, routers))
         if name == "scene": need(p, "shot", d.get("shot_ids"), "shot_ids")
         if name == "character":
             need(p, "era", d.get("era"), "era"); need(p, "costume", d.get("costume_ids"), "costume_ids")

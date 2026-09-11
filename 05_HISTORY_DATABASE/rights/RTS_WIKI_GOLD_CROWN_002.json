@@ -15,5 +15,6 @@
   "status": "GREEN",
   "checked_at": "2026-09-11",
   "checked_by": "Claude Code (Story Engine Fact Check / Quality Engine Rights)",
-  "notes": "B2 백업. 저작자명 페이지에서 확정 후 attribution_text 채움."
+  "notes": "B2 백업. 저작자명 페이지에서 확정 후 attribution_text 채움.",
+  "usage_tier": "BACKUP_ONLY"
 }

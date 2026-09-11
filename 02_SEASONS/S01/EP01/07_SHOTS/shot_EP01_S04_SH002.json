@@ -12,7 +12,7 @@
   "human_motion": 0,
   "visual_importance": 85,
   "pipeline": "ORIGINAL_GRAPHIC",
-  "status": "PLANNED",
+  "status": "ROUTED",
   "characters": [],
   "costumes": [],
   "continuity_group": "EP01_S04",
@@ -20,7 +20,7 @@
   "must_keep": [],
   "camera_id": null,
   "prompt_id": null,
-  "router_decision_id": null,
+  "router_decision_id": "RTR_EP01_S04_SH002_V01",
   "fact_ids": [
     "CLM_EP01_STRUCT_004",
     "CLM_CHEONMACHONG_LAYOUT_001"
@@ -31,7 +31,7 @@
   "approved_version": null,
   "created_at": "2026-09-11",
   "updated_at": "2026-09-11",
-  "updated_by": "Claude Code (Story Engine Fact Check / Quality Engine Rights)",
+  "updated_by": "Visual Router (Claude Code)",
   "notes": "TC 2:24–2:32 (러프컷 v1 기준, 내레이션 녹음 후 조정). G04. 치수·층 순서는 LOC_CHEONMACHONG_V01.spatial_lock (S3). 박물관 도면 트레이싱 금지. 점수(camera_complexity 등)는 Continuity Engine 추정치 — P4 라우터에서 확정.",
   "evidence_role": "PRIMARY"
 }

@@ -1,0 +1,34 @@
+{
+  "decision_id": "RTR_EP01_S06_SH005_V01",
+  "shot_id": "EP01_S06_SH005",
+  "recommended_pipeline": "BLENDER_FLOW",
+  "fallback_pipeline": "HIGGSFIELD",
+  "previous_pipeline": "HIGGSFIELD",
+  "reason": "H05 관찰자 시점: 공간 85 + 카메라 60(관찰자 뒤 느린 전진) + 원로 뒷모습 연속성. 에피소드 핵심 컷(visual 100) 이라 공간·인물 lock 이 우선 → Blender → Flow/Veo. 극단 카메라가 아니므로 Higgsfield 는 fallback.",
+  "rule_applied": "High spatial accuracy + high camera complexity → BLENDER → FLOW/VEO",
+  "scores": {
+    "spatial_accuracy": 85,
+    "camera_complexity": 60,
+    "human_motion": 50,
+    "continuity_importance": "HIGH",
+    "historical_importance": "MEDIUM",
+    "visual_importance": 100
+  },
+  "historical_confidence": "INTERPRETIVE",
+  "continuity_risk": "HIGH",
+  "expected_cost_range": {
+    "currency": "CREDITS",
+    "min": null,
+    "max": null
+  },
+  "expected_attempts": 3,
+  "provider_candidates": [
+    "Blender",
+    "Flow",
+    "Veo"
+  ],
+  "human_decision": "PENDING",
+  "override_note": null,
+  "decided_at": "2026-09-11",
+  "decided_by": "Visual Router (Claude Code)"
+}
