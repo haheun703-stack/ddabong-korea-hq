@@ -15,4 +15,5 @@ files: -
 
 | 시작 | 에이전트 | 작업 | 종료 |
 |---|---|---|---|
+| 2026-09-11 | Claude Code | P1 — Continuity Engine (`05_HISTORY_DATABASE/**`, `02_SEASONS/S01/EP01/07_SHOTS/**`, `episode.json`, `validate.py`) | 2026-09-11 |
 | 2026-09-11 | Claude Code | P0 — OS 정본 문서·스키마·파일 구조 (`00_SYSTEM/*`, `01_`~`10_`, `02_SEASONS/S01/EP01/episode.json`, `index.html`) | 2026-09-11 |

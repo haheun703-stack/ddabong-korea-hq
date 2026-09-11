@@ -1,0 +1,24 @@
+{
+  "costume_id": "COSTUME_SILLA_ELITE_A01",
+  "era": "SILLA_EARLY",
+  "wearer_role": "장례를 지켜보는 지배층 원로 (피장자 아님)",
+  "historical_basis": "INTERPRETIVE",
+  "fact_ids": [],
+  "elements": {
+    "material": "비단류 — 지배층 복식으로 PROBABLE, 근거 자료 확인 필요",
+    "upper": "긴 윗옷, 허리 묶음 — 여밈·깃·소매 장식 TBD (Historical QA)",
+    "lower": "바지 — TBD",
+    "belt": "장식 허리띠 — 재질 TBD. 천마총 금제 허리띠를 그대로 복제하지 않는다 (피장자의 부장품)",
+    "footwear": "TBD",
+    "headwear": "관모류 — 형태 TBD. 금관 착용 금지 (금관은 부장품이며 이 인물은 왕이 아니다)",
+    "color": "절제된 색. 과한 금장식·광택 금지",
+    "silhouette_priority": "H05 는 뒤에서 찍는다 → 뒷모습·어깨선·관모 실루엣이 연속성 핵심",
+    "forbidden": "금관, 조선 곤룡포/관복, 명·청 황실 예복, 판타지 왕 연출"
+  },
+  "reference_images": [
+    { "path": null, "generation_id": null, "status": "MISSING" }
+  ],
+  "status": "DRAFT",
+  "version": "V01",
+  "updated_at": "2026-09-11"
+}

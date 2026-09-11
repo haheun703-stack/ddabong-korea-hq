@@ -1,0 +1,19 @@
+{
+  "scene_id": "EP01_S08",
+  "episode_id": "EP01",
+  "title": "현대 경주 — 도시가 무덤 곁에 산다",
+  "story_beat": "LEGACY",
+  "era": "PRESENT_DAY",
+  "location": "LOC_GYEONGJU_DAEREUNGWON_V01",
+  "characters": [],
+  "master_frame": null,
+  "shot_ids": [
+    "EP01_S08_SH001",
+    "EP01_S08_SH002",
+    "EP01_S08_SH003"
+  ],
+  "status": "BROKEN_DOWN",
+  "updated_at": "2026-09-11",
+  "updated_by": "Claude Code (Continuity Engine)",
+  "notes": "TC 6:05–6:30 · 원본 script v2 6:05–6:40 + episodes/ep01-premiere-roughcut.html. 대본은 새로 쓰지 않음."
+}

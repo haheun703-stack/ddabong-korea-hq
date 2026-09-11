@@ -1,0 +1,15 @@
+{
+  "era_id": "PRESENT_DAY",
+  "name_ko": "현재 경주",
+  "name_en": "Present-day Gyeongju",
+  "period_start": 2026,
+  "period_end": 2026,
+  "material_culture_notes": "현재 장소는 REAL_SHOOT (정본 §7). 촬영 시점의 실제 모습 그대로. 박물관 유물 이미지는 권리 확인된 파일만.",
+  "forbidden_anachronisms": [
+    "AI-generated present-day Gyeongju footage",
+    "stock footage from other cities presented as Gyeongju"
+  ],
+  "prompt_lock_id": null,
+  "fact_ids": [],
+  "updated_at": "2026-09-11"
+}

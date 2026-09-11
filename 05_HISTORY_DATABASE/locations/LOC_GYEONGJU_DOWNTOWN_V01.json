@@ -1,0 +1,21 @@
+{
+  "location_id": "LOC_GYEONGJU_DOWNTOWN_V01",
+  "name_ko": "경주 도심 (대릉원 인접 거리)",
+  "name_en": "Downtown Gyeongju streets near Daereungwon",
+  "era": "PRESENT_DAY",
+  "present_day_site": "대릉원 주변 도로·카페·저층 건물 (황리단길 일대 포함 여부는 현장에서 결정)",
+  "historical_basis": "FACT",
+  "fact_ids": [],
+  "spatial_lock": {
+    "purpose": "일상 도시 속에 봉분이 솟아 있는 대비 (오프닝·현대 경주 몽타주)",
+    "shooting_spots": "field-shoot-plan 체크리스트에서 현장 선택. 촬영 후 좌표·렌즈 기록.",
+    "source_refs": ["episodes/ep01-field-shoot-plan.md"]
+  },
+  "blender_scene_path": null,
+  "reference_images": [
+    { "path": null, "generation_id": null, "status": "MISSING" }
+  ],
+  "status": "DRAFT",
+  "version": "V01",
+  "updated_at": "2026-09-11"
+}

@@ -1,0 +1,20 @@
+{
+  "scene_id": "EP01_S07",
+  "episode_id": "EP01",
+  "title": "금관의 의미가 바뀐다",
+  "story_beat": "CHOICE",
+  "era": "SILLA_EARLY",
+  "location": "LOC_GYEONGJU_NATIONAL_MUSEUM_V01",
+  "characters": [],
+  "master_frame": null,
+  "shot_ids": [
+    "EP01_S07_SH001",
+    "EP01_S07_SH002",
+    "EP01_S07_SH003",
+    "EP01_S07_SH004"
+  ],
+  "status": "BROKEN_DOWN",
+  "updated_at": "2026-09-11",
+  "updated_by": "Claude Code (Continuity Engine)",
+  "notes": "TC 5:20–6:05 · 원본 script v2 5:20–6:05 + episodes/ep01-premiere-roughcut.html. 대본은 새로 쓰지 않음."
+}

@@ -1,0 +1,20 @@
+{
+  "scene_id": "EP01_S01",
+  "episode_id": "EP01",
+  "title": "Cold Open — 도시 한가운데 거대한 봉분",
+  "story_beat": "QUESTION",
+  "era": "PRESENT_DAY",
+  "location": "LOC_GYEONGJU_DAEREUNGWON_V01",
+  "characters": [],
+  "master_frame": null,
+  "shot_ids": [
+    "EP01_S01_SH001",
+    "EP01_S01_SH002",
+    "EP01_S01_SH003",
+    "EP01_S01_SH004"
+  ],
+  "status": "BROKEN_DOWN",
+  "updated_at": "2026-09-11",
+  "updated_by": "Claude Code (Continuity Engine)",
+  "notes": "TC 0:00–0:42 · 원본 script v2 0:00–0:35 COLD OPEN + episodes/ep01-premiere-roughcut.html. 대본은 새로 쓰지 않음."
+}

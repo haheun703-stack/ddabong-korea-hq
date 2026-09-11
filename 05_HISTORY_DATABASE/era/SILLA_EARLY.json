@@ -1,0 +1,29 @@
+{
+  "era_id": "SILLA_EARLY",
+  "name_ko": "신라 전기 — 왕경 경주 적석목곽분·황금문화 전성기",
+  "name_en": "Early Silla — royal-capital elite burial and gold culture (5th–early 6th c.)",
+  "period_start": 400,
+  "period_end": 540,
+  "material_culture_notes": "범위는 국립경주박물관이 말하는 '신라 황금문화 전성기 5세기~6세기 초' (research-v2 S2) 기준의 작업 범위이며 정확한 왕대 경계가 아니다. 왕경 경주에 거대 봉분(적석목곽분: 목곽 → 돌무지 → 흙 봉분, S1/S3). 부장품: 금관·금제 장신구·귀걸이·무기·용기·칠기·유리·말갖춤 (S3). 금은 신성함·정통성·영원한 권위를 표현 (S2 공식 해석). 건축·작업공간은 소박한 목조로 보수적으로 표현 (Higgsfield 팩 공통 룰). 의상·건축의 세부 형태는 COSTUME/LOCATION LOCK 에서 따로 검증한다.",
+  "forbidden_anachronisms": [
+    "Joseon dynasty hanbok",
+    "gat hats",
+    "Ming or Qing court robes",
+    "samurai armor",
+    "European medieval armor",
+    "fantasy armor",
+    "giant stone palace",
+    "Joseon-style tiled palace compound",
+    "Chinese imperial palace",
+    "pagoda skyline",
+    "torii gates",
+    "stone mausoleum / pyramid / Chinese-style tomb gateway",
+    "modern tools, excavators, cranes, wheeled modern carts",
+    "concrete, electric lights, plastic, modern roads",
+    "supernatural ghosts, glowing magic, fantasy crown",
+    "modern museum display cases"
+  ],
+  "prompt_lock_id": "SILLA_EARLY_V01",
+  "fact_ids": [],
+  "updated_at": "2026-09-11"
+}

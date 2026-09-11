@@ -1,0 +1,38 @@
+{
+  "character_id": "CHAR_SILLA_ATTENDANT_GROUP_01",
+  "name_ko": "장례 시종·장인 무리",
+  "name_en": "Funeral attendant and artisan group",
+  "role": "부장품을 고르고 정리하는 시종·장인, 의례 준비 인원 (H03, H04, H05, H06 원경). 개별 얼굴이 반복되지 않는 군중.",
+  "era": "SILLA_EARLY",
+  "historical_basis": "PROBABLE",
+  "fact_ids": [],
+  "style_lock": "DDABONG_DOC_REENACTMENT_V01",
+  "physical_lock": {
+    "face_identity": "varied realistic Korean faces, calm focused expressions, faces often out of frame (hands-first)",
+    "body_proportion": "natural, mixed",
+    "hair": "neatly tied — follows COSTUME_SILLA_ATTENDANT_A01",
+    "height_cm": null,
+    "age_range": "20s–50s mixed",
+    "skin": "natural texture, no gloss"
+  },
+  "default_costume_id": "COSTUME_SILLA_ATTENDANT_A01",
+  "costume_ids": ["COSTUME_SILLA_ATTENDANT_A01"],
+  "master_pack": {
+    "hero": { "path": null, "generation_id": null, "status": "MISSING" },
+    "front": { "path": null, "generation_id": null, "status": "MISSING" },
+    "three_quarter_left": { "path": null, "generation_id": null, "status": "MISSING" },
+    "three_quarter_right": { "path": null, "generation_id": null, "status": "MISSING" },
+    "profile": { "path": null, "generation_id": null, "status": "MISSING" },
+    "full_body": { "path": null, "generation_id": null, "status": "MISSING" },
+    "neutral_standing": { "path": null, "generation_id": null, "status": "MISSING" },
+    "walking": { "path": null, "generation_id": null, "status": "MISSING" },
+    "costume_detail": { "path": null, "generation_id": null, "status": "MISSING" },
+    "expression_sheet": { "path": null, "generation_id": null, "status": "MISSING" }
+  },
+  "status": "DRAFT",
+  "approved_by": null,
+  "approved_at": null,
+  "version": "V01",
+  "updated_at": "2026-09-11",
+  "notes": "군중 역할. H03 은 손 클로즈업 중심 → 손·소매 디테일이 costume_detail 의 핵심. Master Pack 축소 여부는 DECISIONS P-005."
+}

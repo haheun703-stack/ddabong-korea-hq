@@ -1,0 +1,16 @@
+{
+  "era_id": "EXCAVATION_1973",
+  "name_ko": "천마총 발굴기 (1973–1974)",
+  "name_en": "Cheonmachong excavation period (1973–1974)",
+  "period_start": 1973,
+  "period_end": 1974,
+  "material_culture_notes": "1973년 황남동 155호분 발굴 (황남대총 발굴 전 시험 발굴), 1974년 천마도 말다래에서 따 '천마총' 명명 (research-v2 S3). 이 시대 화면은 실제 발굴사진(ARCHIVE)만 쓴다. AI 재현하지 않는다. 사진별 권리 상태는 rights 원장(P3)에서 확인.",
+  "forbidden_anachronisms": [
+    "AI-generated excavation photos",
+    "fake film grain applied to modern footage presented as 1973",
+    "colorized archive presented as original"
+  ],
+  "prompt_lock_id": null,
+  "fact_ids": [],
+  "updated_at": "2026-09-11"
+}

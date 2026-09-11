@@ -1,0 +1,25 @@
+{
+  "scene_id": "EP01_S04",
+  "episode_id": "EP01",
+  "title": "무덤은 공사였다 — 조성 과정",
+  "story_beat": "CONTEXT",
+  "era": "SILLA_EARLY",
+  "location": "LOC_CHEONMACHONG_V01",
+  "characters": [
+    "CHAR_SILLA_LABORER_GROUP_01"
+  ],
+  "master_frame": null,
+  "shot_ids": [
+    "EP01_S04_SH001",
+    "EP01_S04_SH002",
+    "EP01_S04_SH003",
+    "EP01_S04_SH004",
+    "EP01_S04_SH005",
+    "EP01_S04_SH006",
+    "EP01_S04_SH007"
+  ],
+  "status": "BROKEN_DOWN",
+  "updated_at": "2026-09-11",
+  "updated_by": "Claude Code (Continuity Engine)",
+  "notes": "TC 2:15–3:15 · 원본 script v2 2:15–3:15 + episodes/ep01-premiere-roughcut.html. 대본은 새로 쓰지 않음. 반복 인물 등장 → 유료 생성 전 승인된 master_frame 필요 (정본 §5, P2)."
+}

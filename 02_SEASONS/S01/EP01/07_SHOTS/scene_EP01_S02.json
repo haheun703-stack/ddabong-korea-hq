@@ -1,0 +1,19 @@
+{
+  "scene_id": "EP01_S02",
+  "episode_id": "EP01",
+  "title": "FACT — 여기엔 실제로 무엇이 있나",
+  "story_beat": "FACT",
+  "era": "PRESENT_DAY",
+  "location": "LOC_GYEONGJU_DAEREUNGWON_V01",
+  "characters": [],
+  "master_frame": null,
+  "shot_ids": [
+    "EP01_S02_SH001",
+    "EP01_S02_SH002",
+    "EP01_S02_SH003"
+  ],
+  "status": "BROKEN_DOWN",
+  "updated_at": "2026-09-11",
+  "updated_by": "Claude Code (Continuity Engine)",
+  "notes": "TC 0:42–1:25 · 원본 script v2 0:35–1:25 + episodes/ep01-premiere-roughcut.html. 대본은 새로 쓰지 않음."
+}

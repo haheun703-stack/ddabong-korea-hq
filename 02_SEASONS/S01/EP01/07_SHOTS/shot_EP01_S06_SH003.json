@@ -1,0 +1,47 @@
+{
+  "shot_id": "EP01_S06_SH003",
+  "scene_id": "EP01_S06",
+  "episode_id": "EP01",
+  "duration": 15,
+  "purpose": "H05 관찰자 시점 — 사람 머릿속이 아니라 '문제 상황'",
+  "era": "SILLA_EARLY",
+  "location": "LOC_CHEONMACHONG_V01",
+  "historical_confidence": "INTERPRETIVE",
+  "camera_complexity": 60,
+  "spatial_accuracy": 85,
+  "human_motion": 50,
+  "visual_importance": 100,
+  "pipeline": "HIGGSFIELD",
+  "status": "PLANNED",
+  "characters": [
+    "CHAR_SILLA_ELITE_OBSERVER_01",
+    "CHAR_SILLA_LABORER_GROUP_01",
+    "CHAR_SILLA_ATTENDANT_GROUP_01"
+  ],
+  "costumes": [
+    "COSTUME_SILLA_ELITE_A01",
+    "COSTUME_SILLA_LABORER_A01",
+    "COSTUME_SILLA_ATTENDANT_A01"
+  ],
+  "continuity_group": "EP01_S06",
+  "master_frame": null,
+  "must_keep": [
+    "face_identity",
+    "body_proportion",
+    "hair",
+    "costume",
+    "height_ratio"
+  ],
+  "camera_id": null,
+  "prompt_id": null,
+  "router_decision_id": null,
+  "fact_ids": [],
+  "rights_ids": [],
+  "ai_label": "INTERPRETIVE RECONSTRUCTION",
+  "version_history": [],
+  "approved_version": null,
+  "created_at": "2026-09-11",
+  "updated_at": "2026-09-11",
+  "updated_by": "Claude Code (Continuity Engine)",
+  "notes": "TC 4:43–4:58 (러프컷 v1 기준, 내레이션 녹음 후 조정). H05 채널 차별점 핵심 컷. 카메라는 관찰자 뒤 → 뒷모습·어깨 실루엣 연속성이 핵심. 15초 (P-006). AI Visual Reconstruction + INTERPRETIVE RECONSTRUCTION 둘 다 표시. 파이프라인은 legacy 팩 태그 그대로 (잠정). P4 Visual Router 에서 재판정. 점수(camera_complexity 등)는 Continuity Engine 추정치 — P4 라우터에서 확정."
+}

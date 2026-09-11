@@ -1,0 +1,24 @@
+{
+  "costume_id": "COSTUME_SILLA_ATTENDANT_A01",
+  "era": "SILLA_EARLY",
+  "wearer_role": "장례 시종·장인 (부장품 취급, 의례 준비)",
+  "historical_basis": "PROBABLE",
+  "fact_ids": [],
+  "elements": {
+    "material": "노동자보다 고운 평직 — PROBABLE, 근거 자료 확인 필요",
+    "upper": "노동자보다 긴 윗옷, 허리 묶음 — 여밈·깃 TBD (Historical QA)",
+    "lower": "바지 (남) / 치마형 하의 (여) 여부 TBD",
+    "belt": "천 허리끈, 장식 최소",
+    "footwear": "TBD",
+    "headwear": "머리 묶음, 간단한 천 — TBD",
+    "color": "차분한 중간톤. 노동자와 계층 차이는 원단 결·청결도로 표현",
+    "hands": "H03 은 손 클로즈업 중심 — 소매 끝·손목 디테일이 KEEP 대상",
+    "forbidden": "조선 한복 실루엣, 궁중 예복, 판타지 사제복, 중국 황실 복식"
+  },
+  "reference_images": [
+    { "path": null, "generation_id": null, "status": "MISSING" }
+  ],
+  "status": "DRAFT",
+  "version": "V01",
+  "updated_at": "2026-09-11"
+}

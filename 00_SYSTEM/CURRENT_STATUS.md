@@ -1,36 +1,46 @@
 # CURRENT STATUS — 지금 어디까지 왔나
 
 > **매 작업마다 갱신한다.** 이 파일 하나만 읽으면 어느 봇/AI 창을 열어도 바로 이어갈 수 있어야 한다.
-> 갱신: 2026-09-11 (Claude Code) · 마지막 사용자 승인: 2026-09-11 (P0 범위·EP01 파일 유지·push 전 확인 → D-007)
+> 갱신: 2026-09-11 (Claude Code, P1) · 마지막 사용자 승인: 2026-09-11 (P0 범위·EP01 파일 유지·push 전 확인 → D-007)
 > 읽는 순서: `BOT_HANDOFF_DDABONG_STUDIO_OS_V0.1.md` → `BOT_BOOTSTRAP_PROMPT.md` → **이 문서** → `OS_INDEX.md` → `02_SEASONS/S01/EP01/episode.json`
 
 ---
 
 ## 지금 우선 작업
 
-**사용자 손에 있는 것 3개**
+**사용자 손에 있는 것**
 - P-001 EP01 생성 예산 금액 (Money Gate 기준값) — 미확인이면 유료 생성 게이트는 `UNKNOWN_BUDGET` 으로 잠김.
 - P-002 에피소드 ID 자릿수 (`EP01` 유지 vs `EP001` 통일).
 - P-003 표준 문서 언어 (P0 초안은 한글 본문 + 영문 키/ID).
+- **P-005** 군중 인물(노동자·시종) Master Pack 축소 여부 (NEW, P1).
+- **P-006** Higgsfield 컷 길이 — H04 16초·H05 15초·H06 10초가 팩 권장 3–6초 초과 (NEW, P1).
+- **P-007** 대본 v2 ↔ 러프컷 v1 불일치 4곳 X1–X4 어느 쪽 따를지 (NEW, P1).
 
-**봇이 바로 갈 수 있는 것: P1 — Continuity Engine**
-- `05_HISTORY_DATABASE/` 에 EP01 실제 인스턴스 생성: `era/SILLA_EARLY.json`, `locations/LOC_GYEONGJU_DAEREUNGWON_V01.json`, `LOC_CHEONMACHONG_V01.json`.
-- `episodes/ep01-higgsfield-prompts.html` 의 역사 재현 7컷 → `character.json` 후보 추출 → Character Master Pack 요구 목록 작성 (생성은 Money Gate 이후).
-- EP01 씬/샷 분해: `episodes/ep01-premiere-roughcut.html` 타임라인 → `02_SEASONS/S01/EP01/07_SHOTS/scene_*.json`, `shot_*.json` (승인된 대본 v2 기준, 새로 쓰지 않음).
+**봇이 바로 갈 수 있는 것**
+- 복식 Historical QA: `COSTUME_SILLA_*_A01` 의 TBD 항목(여밈·깃·관모·신발)을 근거 자료로 채우기 — 유료 없음, P2 선행 조건.
+- P3 Source/Rights Ledger: research-v2 S1–S6 → `05_HISTORY_DATABASE/sources/`, claim safety table → `facts/`, 그다음 샷 `fact_ids` 연결.
+- P4 Shot Router: 43개 샷 `router_decision.json` (특히 H01–H06 → BLENDER_FLOW 재검토).
 
 ---
 
-## P0 — OS 정본 문서·스키마 (2026-09-11 · DONE, push 대기)
+## P1 — Continuity Engine (2026-09-11 · DONE, 로컬 브랜치 `p1-continuity` · push 대기)
 
-| 항목 | 상태 |
-|---|---|
-| §21 폴더 골격 `01_CHANNEL` ~ `10_EXPORTS` + 에피소드 템플릿 18폴더 | DONE |
-| `00_SYSTEM/schemas/` 29개 JSON Schema + TEMPLATE 예시 + `validate.py` (30/30 PASS) | DONE |
-| `02_SEASONS/S01/EP01/episode.json` 매니페스트 (기존 `episodes/ep01-*` 참조, 이동 없음) | DONE |
-| 운영 문서 `CURRENT_STATUS` `AGENT_RULES` `DECISIONS` `ACTIVE_TASK` | DONE |
-| §22 표준 문서 22개 v0.1 DRAFT (`00_SYSTEM/standards/`) | DONE (DRAFT — 승인 전까지 정본 §N 우선) |
-| `OS_INDEX.md` + Web HQ `os-index.html`, `index.html`/`bot-handoff.html` 링크 | DONE |
-| GitHub push → Web HQ 반영 | **대기 — 사용자 확인 후** |
+| 항목 | 산출 | 상태 |
+|---|---|---|
+| ERA | `05_HISTORY_DATABASE/era/` `SILLA_EARLY` · `EXCAVATION_1973` · `PRESENT_DAY` | DONE |
+| LOCATION | `locations/` 대릉원 · 천마총(치수 47 m/12.7 m, 목곽 6.6×4.2 m) · 경주 도심 · 국립경주박물관 | DRAFT |
+| COSTUME | `costumes/` 노동자 · 시종 · 원로 `_A01` — 세부 TBD (Historical QA 필요) | DRAFT |
+| CHARACTER | `characters/` 원로 1인 + 군중 2그룹, Master Pack 전부 `MISSING` | DRAFT |
+| Master Pack 요구 목록 | `characters/EP01_MASTER_PACK_REQUIREMENTS.md` | DONE |
+| 씬·샷 분해 | `02_SEASONS/S01/EP01/07_SHOTS/` 씬 9 · 샷 43 (러프컷 v1 기준, 합계 425초 = 7:05) | `BROKEN_DOWN` / `PLANNED` |
+| 검증 | `validate.py` 인스턴스 + ID 상호참조 검사 추가 → 95/95 PASS, refs OK | DONE |
+
+샷 구성: REAL 8 · ARCHIVE 17 · GRAPHIC 10 · HIGGSFIELD 8 (AI 70초 ≈ 16%).
+`fact_ids` 는 비어 있다 (P3 에서 연결). 출처는 샷 `notes` 에 research-v2 S1–S6 번호로 표기.
+
+## P0 — OS 정본 문서·스키마 (2026-09-11 · DONE, push 완료 `6a7158a`)
+
+폴더 골격 · 29 스키마 · EP01 매니페스트 · 운영 문서 4종 · 표준 22개 v0.1 DRAFT · OS_INDEX + Web HQ.
 
 ---
 
@@ -43,13 +53,14 @@
 | RESEARCH | `episodes/ep01-research-verified-v2.md` | APPROVED |
 | SCRIPT | `episodes/ep01-production-script-v2.md` (v1은 PREVIOUS) | APPROVED |
 | SHOTLIST | `ep01-visual-assets`, `ep01-graphics-spec` (G01–G12) | APPROVED |
+| SCENE_BREAKDOWN | `02_SEASONS/S01/EP01/07_SHOTS/` 씬 9 · 샷 43 | DRAFT (P1) |
 | REAL_SHOOT | `ep01-field-shoot-plan` 체크리스트 | 계획 APPROVED · **촬영 미실행** |
 | ARCHIVE | `ep01-archive-photos` (1973 NRICH), `ep01-artifact-library` | 선별 APPROVED · 파일 다운로드 미실행 |
 | HIGGSFIELD | `ep01-higgsfield-prompts` 7컷 | 프롬프트 APPROVED · **생성 금지 (Money Gate 미승인, 예산 미확인)** |
 | ROUGH_CUT | `ep01-premiere-roughcut` 0:00–7:05 | 설계 APPROVED |
 
 **다음 실제 작업 (순서)**
-1. 경주 현장 촬영 (좁은 주제 + 넓은 클러스터 촬영: 불국사·다보탑/석가탑·석굴암·첨성대·박물관·월정교/동궁).
+1. 경주 현장 촬영 (좁은 주제 + 넓은 클러스터 촬영: 불국사·다보탑/석가탑·석굴암·첨성대·박물관·월정교/동궁). 매치컷 착지 구도(`EP01_S08_SH003`)는 반드시 삼각대로 찍고 `LOC_GYEONGJU_DAEREUNGWON_V01.spatial_lock.match_cut_frame` 에 기록.
 2. 유물/아카이브 실제 파일 다운로드·정리 → `02_SOURCES/` 에 `source.json` / `rights.json` 인스턴스.
 3. 필요한 Higgsfield 컷만 선별 생성 (Character Master Pack + Money Gate 승인 후).
 4. 내레이션 녹음 → Premiere 러프컷 → 수정 → 공개.
@@ -70,7 +81,8 @@
 
 ## 검수 요청 (needs_review)
 
-- `00_SYSTEM/standards/*.md` 22개 v0.1 DRAFT — 정본 내용 이관본. 사용자 승인 시 `standard_version` 을 ACTIVE 로 올린다. 승인 전에는 정본 §N 이 우선.
+- `00_SYSTEM/standards/*.md` 22개 v0.1 DRAFT — 사용자 승인 시 ACTIVE (P-004).
+- P1 인스턴스 전체 DRAFT — 특히 `CHAR_SILLA_ELITE_OBSERVER_01` 인물 설정(피장자·왕 아님)과 복식 방향.
 
 ---
 
@@ -78,12 +90,14 @@
 
 - 예산 미확인 → 유료 생성 전면 잠금 (규칙 위반 아님, 정상 상태).
 - Blender 로컬 브리지(P7) 없음 → `camera.json` 은 수동 작성 단계.
+- 복식 세부 근거 미확보 → Master Pack 생성 전 Historical QA 필수.
 
 ---
 
 ## 최근 변경 (최신순)
 
-- **2026-09-11 Claude Code** — P0 완료: 폴더 골격, 29 스키마, EP01 매니페스트, 운영 문서 4종, 표준 22개 DRAFT, OS_INDEX + Web HQ 페이지. 로컬 브랜치 `p0-os-schemas` 커밋. push 대기.
+- **2026-09-11 Claude Code** — P1 완료 (브랜치 `p1-continuity`, push 대기): era 3 · location 4 · costume 3 · character 3 · Master Pack 요구 목록 · 씬 9/샷 43 · validate.py 상호참조 검사. P-005~P-007 등록.
+- **2026-09-11 Claude Code** — P0 완료·push (`6a7158a`): 폴더 골격, 29 스키마, EP01 매니페스트, 운영 문서 4종, 표준 22개 DRAFT, OS_INDEX + Web HQ 페이지.
 - **2026-09-11 사용자** — **D-007.** P0 범위 = 핵심 완성 + 나머지 골격 / EP01 파일 제자리 유지 + 매니페스트 / 커밋 후 push 전 확인.
 - **2026-09-11 (이전 세션)** — **D-004~D-006.** 정본 v0.1 채택, 캐릭터 스타일 B Documentary Reenactment, EP01 = 경주 왕릉/천마총, 황룡사는 예시. Bootstrap Prompt + Web HQ bot-handoff 페이지.
 - **2026-08-16** — EP01 프리프로덕션 페이지 9종 완료 (research v2 · script v2 · visual · field shoot · archive · artifacts · higgsfield · graphics · roughcut).

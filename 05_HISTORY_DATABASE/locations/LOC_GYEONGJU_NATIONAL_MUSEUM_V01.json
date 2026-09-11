@@ -1,0 +1,19 @@
+{
+  "location_id": "LOC_GYEONGJU_NATIONAL_MUSEUM_V01",
+  "name_ko": "국립경주박물관 (유물 이미지 출처)",
+  "name_en": "Gyeongju National Museum (artifact imagery)",
+  "era": "PRESENT_DAY",
+  "present_day_site": "국립경주박물관",
+  "historical_basis": "FACT",
+  "fact_ids": [],
+  "spatial_lock": {
+    "purpose": "천마총 금관·허리띠·천마도 등 유물 이미지. 기본은 권리 확인된 공식/공개 파일, 전시실 촬영은 허가 시에만.",
+    "rights_note": "페이지마다 라이선스가 다르다. B1 금관 KOGL 1유형(GREEN), B3 허리띠 KOGL 1유형(GREEN), B4 천마도 PD(GREEN), B5 기타 유물 YELLOW (visual-assets). 일부 전시 자료는 공공누리 4유형 → 수익화 영상 사용 불가.",
+    "source_refs": ["episodes/ep01-visual-assets.md", "research-v2 S2", "research-v2 S3"]
+  },
+  "blender_scene_path": null,
+  "reference_images": [],
+  "status": "DRAFT",
+  "version": "V01",
+  "updated_at": "2026-09-11"
+}

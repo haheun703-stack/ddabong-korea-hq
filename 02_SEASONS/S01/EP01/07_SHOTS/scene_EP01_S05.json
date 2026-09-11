@@ -1,0 +1,24 @@
+{
+  "scene_id": "EP01_S05",
+  "episode_id": "EP01",
+  "title": "금이 말해주는 것 — 신성함·정통성·권위",
+  "story_beat": "CONTEXT",
+  "era": "SILLA_EARLY",
+  "location": "LOC_GYEONGJU_NATIONAL_MUSEUM_V01",
+  "characters": [
+    "CHAR_SILLA_ATTENDANT_GROUP_01"
+  ],
+  "master_frame": null,
+  "shot_ids": [
+    "EP01_S05_SH001",
+    "EP01_S05_SH002",
+    "EP01_S05_SH003",
+    "EP01_S05_SH004",
+    "EP01_S05_SH005",
+    "EP01_S05_SH006"
+  ],
+  "status": "BROKEN_DOWN",
+  "updated_at": "2026-09-11",
+  "updated_by": "Claude Code (Continuity Engine)",
+  "notes": "TC 3:15–4:20 · 원본 script v2 3:15–4:20 + episodes/ep01-premiere-roughcut.html. 대본은 새로 쓰지 않음. 반복 인물 등장 → 유료 생성 전 승인된 master_frame 필요 (정본 §5, P2)."
+}

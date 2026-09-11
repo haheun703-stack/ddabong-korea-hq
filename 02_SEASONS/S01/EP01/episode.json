@@ -17,10 +17,32 @@
     "note": "미확인 — DECISIONS.md P-001 승인 대기. 0으로 기록하지 않는다."
   },
   "era_ids": [
-    "SILLA_EARLY"
+    "SILLA_EARLY",
+    "EXCAVATION_1973",
+    "PRESENT_DAY"
   ],
-  "location_ids": [],
-  "character_ids": [],
+  "location_ids": [
+    "LOC_GYEONGJU_DAEREUNGWON_V01",
+    "LOC_CHEONMACHONG_V01",
+    "LOC_GYEONGJU_DOWNTOWN_V01",
+    "LOC_GYEONGJU_NATIONAL_MUSEUM_V01"
+  ],
+  "character_ids": [
+    "CHAR_SILLA_ELITE_OBSERVER_01",
+    "CHAR_SILLA_LABORER_GROUP_01",
+    "CHAR_SILLA_ATTENDANT_GROUP_01"
+  ],
+  "scene_ids": [
+    "EP01_S01",
+    "EP01_S02",
+    "EP01_S03",
+    "EP01_S04",
+    "EP01_S05",
+    "EP01_S06",
+    "EP01_S07",
+    "EP01_S08",
+    "EP01_S09"
+  ],
   "template_note": "EP001_HWANGNYONGSA appearing in OS examples is a TEMPLATE ONLY. Never overwrite this active episode with template data.",
   "legacy_artifacts": [
     {

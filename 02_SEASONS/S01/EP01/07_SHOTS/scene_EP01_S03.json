@@ -1,0 +1,21 @@
+{
+  "scene_id": "EP01_S03",
+  "episode_id": "EP01",
+  "title": "천마총 — 1973년 발굴과 이름의 유래",
+  "story_beat": "FACT",
+  "era": "EXCAVATION_1973",
+  "location": "LOC_CHEONMACHONG_V01",
+  "characters": [],
+  "master_frame": null,
+  "shot_ids": [
+    "EP01_S03_SH001",
+    "EP01_S03_SH002",
+    "EP01_S03_SH003",
+    "EP01_S03_SH004",
+    "EP01_S03_SH005"
+  ],
+  "status": "BROKEN_DOWN",
+  "updated_at": "2026-09-11",
+  "updated_by": "Claude Code (Continuity Engine)",
+  "notes": "TC 1:25–2:15 · 원본 script v2 1:25–2:15 CASE STUDY + episodes/ep01-premiere-roughcut.html. 대본은 새로 쓰지 않음."
+}

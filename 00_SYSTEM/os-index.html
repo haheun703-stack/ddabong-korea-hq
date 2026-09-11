@@ -6,10 +6,12 @@
 <section class="card"><h2>폴더 구조 (정본 §21)</h2><div class="tbl"><table><tr><th>폴더</th><th>용도</th><th>상태</th></tr>
 <tr><td><code>01_CHANNEL/</code></td><td>채널 기준서 인스턴스</td><td>골격</td></tr>
 <tr><td><code>02_SEASONS/S01/EP01/</code></td><td>활성 EP01 매니페스트 + 템플릿 18폴더 (00_BRIEF ~ 18_ANALYTICS)</td><td><span class="badge">ACTIVE</span></td></tr>
-<tr><td><code>03_SHARED_ASSETS/ … 07_AUDIO_LIBRARY/</code></td><td>공유 라이브러리 (자산·Blender·역사DB·프롬프트·오디오)</td><td>골격 (P1~)</td></tr>
+<tr><td><code>02_SEASONS/S01/EP01/07_SHOTS/</code></td><td>EP01 씬 9 · 샷 43 (러프컷 v1 기준 분해, 합계 7:05)</td><td>DRAFT (P1)</td></tr>
+<tr><td><code>05_HISTORY_DATABASE/</code></td><td>시대 3 · 장소 4 · 복식 3 · 인물 3 + Master Pack 요구 목록</td><td>DRAFT (P1)</td></tr>
+<tr><td><code>03_SHARED_ASSETS/ 04_BLENDER_LIBRARY/ 06_PROMPT_LIBRARY/ 07_AUDIO_LIBRARY/</code></td><td>공유 라이브러리 (자산·Blender·프롬프트·오디오)</td><td>골격</td></tr>
 <tr><td><code>08_GENERATION_CACHE/ 10_EXPORTS/</code></td><td>생성물·출력 — 바이너리 미추적, JSON 매니페스트만</td><td>골격</td></tr>
 <tr><td><code>09_ANALYTICS/</code></td><td>성과·회귀검사</td><td>골격</td></tr>
 <tr><td><code>episodes/</code></td><td>EP01 프리프로덕션 산출물 9종 (OS 이전 · 이동 금지 · 매니페스트가 참조)</td><td><span class="badge">APPROVED</span></td></tr></table></div></section>
-<section class="card"><h2>빌드 순서 (정본 §25)</h2><p><span class="badge">P0 ✓</span> OS 문서·스키마 → <span class="badge p">P1</span> Episode/Scene/Shot + Continuity 인스턴스 → P2 Character Master → P3 Source/Rights Ledger → P4 Shot Router → P5 Review UI → P6 Money Gate + provider adapters → P7 Blender bridge → P8 Learning/regression → P9 Publish/analytics.</p><p class="muted">첫 실전 검증은 활성 EP01 (경주 왕릉 / 천마총).</p></section>
+<section class="card"><h2>빌드 순서 (정본 §25)</h2><p><span class="badge">P0 ✓</span> OS 문서·스키마 → <span class="badge">P1 ✓</span> Episode/Scene/Shot + Continuity 인스턴스 → <span class="badge p">P2</span> Character Master → P3 Source/Rights Ledger → P4 Shot Router → P5 Review UI → P6 Money Gate + provider adapters → P7 Blender bridge → P8 Learning/regression → P9 Publish/analytics.</p><p class="muted">첫 실전 검증은 활성 EP01 (경주 왕릉 / 천마총).</p></section>
 <div class="warn"><b>주의:</b> OS 예시의 <code>EP001_HWANGNYONGSA</code> 는 템플릿. 활성 EP01 을 덮어쓰지 않는다 (D-006). 승인된 <code>episodes/ep01-*</code> 는 다시 만들지 않는다.</div>
 </main><footer style="padding:30px 0 60px;border-top:1px solid var(--line);color:var(--muted)"><div class="wrap">DDABONG KOREA · DDABONG STUDIO OS v0.1 · GitHub Pages</div></footer></body></html>
