@@ -38,5 +38,5 @@
   "created_at": "2026-09-11",
   "updated_at": "2026-09-11",
   "updated_by": "Claude Code (Continuity Engine)",
-  "notes": "TC 3:02–3:08 (러프컷 v1 기준, 내레이션 녹음 후 조정). H02 프롬프트 재사용. SH005 와 같은 생성본에서 잘라 쓸 수 있으면 유료 호출 1회 절약 → 라우터 판단. 파이프라인은 legacy 팩 태그 그대로 (잠정). P4 Visual Router 에서 재판정. 점수(camera_complexity 등)는 Continuity Engine 추정치 — P4 라우터에서 확정."
+  "notes": "TC 3:00–3:06 (러프컷 v1 기준, 내레이션 녹음 후 조정). H02 프롬프트 재사용, 6초 (D-009). SH005 와 같은 생성본에서 잘라 쓸 수 있으면 유료 호출 1회 절약 → 라우터 판단. 파이프라인은 legacy 팩 태그 그대로 (잠정). P4 Visual Router 에서 재판정. 점수(camera_complexity 등)는 Continuity Engine 추정치 — P4 라우터에서 확정."
 }

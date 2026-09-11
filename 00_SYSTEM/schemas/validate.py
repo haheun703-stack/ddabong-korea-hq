@@ -43,6 +43,25 @@ INSTANCES = sorted(ROOT.glob("02_SEASONS/*/*/episode.json")) + \
             sorted(p for p in ROOT.glob("05_HISTORY_DATABASE/*/*.json")) + \
             sorted(ROOT.glob("02_SEASONS/*/*/07_SHOTS/*.json"))
 
+LITE_SLOTS = {"full_body", "walking", "costume_detail"}
+
+def pack_rules(p, d, costumes):
+    """D-008 master pack tier + D-011 costume TBD gate."""
+    errs, rel = [], p.relative_to(ROOT)
+    tier, pack = d.get("master_pack_tier", "FULL"), d.get("master_pack", {})
+    required = LITE_SLOTS if tier == "LITE_CROWD" else set(pack)
+    for slot, v in pack.items():
+        if v["status"] == "NOT_REQUIRED" and slot in required:
+            errs.append(f"{rel}: master_pack.{slot} is required for tier {tier} (D-008)")
+    if d.get("status") == "CHARACTER_MASTER_APPROVED":
+        missing = [s for s in required if pack.get(s, {}).get("status") != "APPROVED"]
+        if missing: errs.append(f"{rel}: CHARACTER_MASTER_APPROVED but not APPROVED: {', '.join(sorted(missing))}")
+    if any(v["status"] in ("DRAFT", "APPROVED") for v in pack.values()):
+        for cid in d.get("costume_ids", []):
+            tbd = [k for k, v in costumes.get(cid, {}).get("elements", {}).items() if "TBD" in v]
+            if tbd: errs.append(f"{rel}: master pack started while {cid} still TBD ({', '.join(tbd)}) (D-011)")
+    return errs
+
 def refcheck(paths):
     """Cross-reference check for real instances (not templates): every referenced ID must exist."""
     ids, docs = {}, []
@@ -51,6 +70,7 @@ def refcheck(paths):
     for p in paths:
         data = json.loads(p.read_text(encoding="utf-8")); name = pick(p, data)
         if name in key: ids.setdefault(name, set()).add(data.get(key[name])); docs.append((p, name, data))
+    costumes = {d["costume_id"]: d for _, n, d in docs if n == "costume"}
     has = lambda kind, v: v in ids.get(kind, set())
     errs = []
     def need(p, kind, vals, field):
@@ -66,6 +86,7 @@ def refcheck(paths):
         if name == "scene": need(p, "shot", d.get("shot_ids"), "shot_ids")
         if name == "character":
             need(p, "era", d.get("era"), "era"); need(p, "costume", d.get("costume_ids"), "costume_ids")
+            errs.extend(pack_rules(p, d, costumes))
         if name in ("location", "costume"): need(p, "era", d.get("era"), "era")
         if name == "fact": need(p, "source", d.get("source_ids"), "source_ids")
         if name == "episode":

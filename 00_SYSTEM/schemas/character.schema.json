@@ -2,7 +2,7 @@
   "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "https://haheun703-stack.github.io/ddabong-korea-hq/00_SYSTEM/schemas/character.schema.json",
   "title": "CHARACTER (정본 §5·§20)",
-  "description": "반복 등장 역사 인물. Character Master Pack 10종이 모두 APPROVED 이어야 status=CHARACTER_MASTER_APPROVED 가능. 유료 비디오 생성 전 필수.",
+  "description": "반복 등장 역사 인물. Character Master Pack 10종이 모두 APPROVED 이어야 status=CHARACTER_MASTER_APPROVED 가능. 유료 비디오 생성 전 필수. 등급별 필수 슬롯은 master_pack_tier (D-008). 복식 TBD 가 남아 있으면 Master Pack 생성 금지 (D-011).",
   "type": "object",
   "additionalProperties": false,
   "properties": {
@@ -43,6 +43,15 @@
       "type": "string",
       "description": "기본 DDABONG_DOC_REENACTMENT_V01",
       "default": "DDABONG_DOC_REENACTMENT_V01"
+    },
+    "master_pack_tier": {
+      "type": "string",
+      "enum": [
+        "FULL",
+        "LITE_CROWD"
+      ],
+      "default": "FULL",
+      "description": "D-008. BACKGROUND CROWD = LITE_CROWD (full_body·walking·costume_detail 필수, 나머지 NOT_REQUIRED). 반복 등장하거나 얼굴이 식별되는 인물 = FULL (10종 전부). 한 샷이라도 전경·식별 가능하게 쓰이면 FULL 로 승격."
     },
     "physical_lock": {
       "type": "object",
@@ -108,7 +117,8 @@
               "enum": [
                 "MISSING",
                 "DRAFT",
-                "APPROVED"
+                "APPROVED",
+                "NOT_REQUIRED"
               ]
             }
           },
@@ -137,7 +147,8 @@
               "enum": [
                 "MISSING",
                 "DRAFT",
-                "APPROVED"
+                "APPROVED",
+                "NOT_REQUIRED"
               ]
             }
           },
@@ -166,7 +177,8 @@
               "enum": [
                 "MISSING",
                 "DRAFT",
-                "APPROVED"
+                "APPROVED",
+                "NOT_REQUIRED"
               ]
             }
           },
@@ -195,7 +207,8 @@
               "enum": [
                 "MISSING",
                 "DRAFT",
-                "APPROVED"
+                "APPROVED",
+                "NOT_REQUIRED"
               ]
             }
           },
@@ -224,7 +237,8 @@
               "enum": [
                 "MISSING",
                 "DRAFT",
-                "APPROVED"
+                "APPROVED",
+                "NOT_REQUIRED"
               ]
             }
           },
@@ -253,7 +267,8 @@
               "enum": [
                 "MISSING",
                 "DRAFT",
-                "APPROVED"
+                "APPROVED",
+                "NOT_REQUIRED"
               ]
             }
           },
@@ -282,7 +297,8 @@
               "enum": [
                 "MISSING",
                 "DRAFT",
-                "APPROVED"
+                "APPROVED",
+                "NOT_REQUIRED"
               ]
             }
           },
@@ -311,7 +327,8 @@
               "enum": [
                 "MISSING",
                 "DRAFT",
-                "APPROVED"
+                "APPROVED",
+                "NOT_REQUIRED"
               ]
             }
           },
@@ -340,7 +357,8 @@
               "enum": [
                 "MISSING",
                 "DRAFT",
-                "APPROVED"
+                "APPROVED",
+                "NOT_REQUIRED"
               ]
             }
           },
@@ -369,7 +387,8 @@
               "enum": [
                 "MISSING",
                 "DRAFT",
-                "APPROVED"
+                "APPROVED",
+                "NOT_REQUIRED"
               ]
             }
           },

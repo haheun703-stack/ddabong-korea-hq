@@ -7,6 +7,7 @@
   "historical_basis": "INTERPRETIVE",
   "fact_ids": [],
   "style_lock": "DDABONG_DOC_REENACTMENT_V01",
+  "master_pack_tier": "FULL",
   "physical_lock": {
     "face_identity": "realistic Korean facial proportions, restrained expression, not a portrait of any named historical person",
     "body_proportion": "natural, medium build, upright still posture",
@@ -16,23 +17,65 @@
     "skin": "natural texture, weathered, no gloss"
   },
   "default_costume_id": "COSTUME_SILLA_ELITE_A01",
-  "costume_ids": ["COSTUME_SILLA_ELITE_A01"],
+  "costume_ids": [
+    "COSTUME_SILLA_ELITE_A01"
+  ],
   "master_pack": {
-    "hero": { "path": null, "generation_id": null, "status": "MISSING" },
-    "front": { "path": null, "generation_id": null, "status": "MISSING" },
-    "three_quarter_left": { "path": null, "generation_id": null, "status": "MISSING" },
-    "three_quarter_right": { "path": null, "generation_id": null, "status": "MISSING" },
-    "profile": { "path": null, "generation_id": null, "status": "MISSING" },
-    "full_body": { "path": null, "generation_id": null, "status": "MISSING" },
-    "neutral_standing": { "path": null, "generation_id": null, "status": "MISSING" },
-    "walking": { "path": null, "generation_id": null, "status": "MISSING" },
-    "costume_detail": { "path": null, "generation_id": null, "status": "MISSING" },
-    "expression_sheet": { "path": null, "generation_id": null, "status": "MISSING" }
+    "hero": {
+      "path": null,
+      "generation_id": null,
+      "status": "MISSING"
+    },
+    "front": {
+      "path": null,
+      "generation_id": null,
+      "status": "MISSING"
+    },
+    "three_quarter_left": {
+      "path": null,
+      "generation_id": null,
+      "status": "MISSING"
+    },
+    "three_quarter_right": {
+      "path": null,
+      "generation_id": null,
+      "status": "MISSING"
+    },
+    "profile": {
+      "path": null,
+      "generation_id": null,
+      "status": "MISSING"
+    },
+    "full_body": {
+      "path": null,
+      "generation_id": null,
+      "status": "MISSING"
+    },
+    "neutral_standing": {
+      "path": null,
+      "generation_id": null,
+      "status": "MISSING"
+    },
+    "walking": {
+      "path": null,
+      "generation_id": null,
+      "status": "MISSING"
+    },
+    "costume_detail": {
+      "path": null,
+      "generation_id": null,
+      "status": "MISSING"
+    },
+    "expression_sheet": {
+      "path": null,
+      "generation_id": null,
+      "status": "MISSING"
+    }
   },
   "status": "DRAFT",
   "approved_by": null,
   "approved_at": null,
   "version": "V01",
   "updated_at": "2026-09-11",
-  "notes": "EP01 유일한 '반복 등장 개인' 후보 (EP01_S06_SH002, EP01_S06_SH003). Master Pack 10종 필수 (정본 §5). H05 는 관찰자 뒤에서 찍으므로 뒷모습·어깨 실루엣이 추가로 중요 → 요구 목록 EP01_MASTER_PACK_REQUIREMENTS.md. 생성은 Money Gate 이후."
+  "notes": "EP01 유일한 '반복 등장 개인' 후보 (EP01_S06_SH002 H04, EP01_S06_SH005 H05). Master Pack 10종 필수 (정본 §5). H05 는 관찰자 뒤에서 찍으므로 뒷모습·어깨 실루엣이 추가로 중요 → 요구 목록 EP01_MASTER_PACK_REQUIREMENTS.md. 생성은 Money Gate 이후. D-008: FULL (10종 전부)."
 }

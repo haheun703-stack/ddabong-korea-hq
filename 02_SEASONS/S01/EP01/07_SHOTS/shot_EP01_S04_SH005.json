@@ -2,7 +2,7 @@
   "shot_id": "EP01_S04_SH005",
   "scene_id": "EP01_S04",
   "episode_id": "EP01",
-  "duration": 7,
+  "duration": 6,
   "purpose": "H02 돌 운반 — 규모와 노동력",
   "era": "SILLA_EARLY",
   "location": "LOC_CHEONMACHONG_V01",
@@ -38,5 +38,5 @@
   "created_at": "2026-09-11",
   "updated_at": "2026-09-11",
   "updated_by": "Claude Code (Continuity Engine)",
-  "notes": "TC 2:55–3:02 (러프컷 v1 기준, 내레이션 녹음 후 조정). H02. 7초 (P-006). 봉분은 일부만 형성된 상태. 운반·작업·의례 준비 동작은 정본 §6 상 Flow/Veo 영역 → P4 에서 BLENDER_FLOW 재검토. 파이프라인은 legacy 팩 태그 그대로 (잠정). P4 Visual Router 에서 재판정. 점수(camera_complexity 등)는 Continuity Engine 추정치 — P4 라우터에서 확정."
+  "notes": "TC 2:54–3:00 (러프컷 v1 기준, 내레이션 녹음 후 조정). H02. 6초 (D-009). 봉분은 일부만 형성된 상태. 운반·작업·의례 준비 동작은 정본 §6 상 Flow/Veo 영역 → P4 에서 BLENDER_FLOW 재검토. 파이프라인은 legacy 팩 태그 그대로 (잠정). P4 Visual Router 에서 재판정. 점수(camera_complexity 등)는 Continuity Engine 추정치 — P4 라우터에서 확정."
 }

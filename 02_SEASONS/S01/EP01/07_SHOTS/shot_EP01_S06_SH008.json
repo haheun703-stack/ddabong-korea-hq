@@ -1,17 +1,17 @@
 {
-  "shot_id": "EP01_S06_SH003",
+  "shot_id": "EP01_S06_SH008",
   "scene_id": "EP01_S06",
   "episode_id": "EP01",
   "duration": 5,
-  "purpose": "1973 목곽·매장 공간 발굴사진 — 재현 뒤 실제 증거",
-  "era": "EXCAVATION_1973",
-  "location": "LOC_CHEONMACHONG_V01",
+  "purpose": "NO DIRECT QUOTATION 카드",
+  "era": "NONE",
+  "location": "NONE",
   "historical_confidence": "FACT",
   "camera_complexity": 5,
-  "spatial_accuracy": 40,
+  "spatial_accuracy": 0,
   "human_motion": 0,
-  "visual_importance": 65,
-  "pipeline": "ARCHIVE",
+  "visual_importance": 70,
+  "pipeline": "ORIGINAL_GRAPHIC",
   "status": "PLANNED",
   "characters": [],
   "costumes": [],
@@ -29,5 +29,5 @@
   "created_at": "2026-09-11",
   "updated_at": "2026-09-11",
   "updated_by": "Claude Code (Continuity Engine)",
-  "notes": "TC 4:33–4:38 (러프컷 v1 기준, 내레이션 녹음 후 조정). D-009 채움 컷 (H04 분할분). 편집 시 다른 실제 자료로 교체 가능. 점수(camera_complexity 등)는 Continuity Engine 추정치 — P4 라우터에서 확정."
+  "notes": "TC 4:58–5:03 (러프컷 v1 기준, 내레이션 녹음 후 조정). G08 계열 신뢰 카드 (대본 v2 그래픽 목록 #8). 점수(camera_complexity 등)는 Continuity Engine 추정치 — P4 라우터에서 확정."
 }

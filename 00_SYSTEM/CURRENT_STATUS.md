@@ -12,30 +12,33 @@
 - P-001 EP01 생성 예산 금액 (Money Gate 기준값) — 미확인이면 유료 생성 게이트는 `UNKNOWN_BUDGET` 으로 잠김.
 - P-002 에피소드 ID 자릿수 (`EP01` 유지 vs `EP001` 통일).
 - P-003 표준 문서 언어 (P0 초안은 한글 본문 + 영문 키/ID).
-- **P-005** 군중 인물(노동자·시종) Master Pack 축소 여부 (NEW, P1).
-- **P-006** Higgsfield 컷 길이 — H04 16초·H05 15초·H06 10초가 팩 권장 3–6초 초과 (NEW, P1).
-- **P-007** 대본 v2 ↔ 러프컷 v1 불일치 4곳 X1–X4 어느 쪽 따를지 (NEW, P1).
+- `p1-continuity` → main 병합 시점 (D-012: 다음 검수 게이트 전까지 보류).
 
 **봇이 바로 갈 수 있는 것**
-- 복식 Historical QA: `COSTUME_SILLA_*_A01` 의 TBD 항목(여밈·깃·관모·신발)을 근거 자료로 채우기 — 유료 없음, P2 선행 조건.
+- 복식 TBD → 근거 기반 확정 (D-011): `COSTUME_SILLA_*_A01` 의 여밈·깃·관모·신발 — 유료 없음, P2 선행 게이트. `validate.py` 가 강제.
+- SCRIPT_ROUGHCUT_DELTA 정리 (D-010): X1 (러프컷 VO 대조) · X3 (금관 위치 S3 확인) — **P3 시작 전 필수**.
 - P3 Source/Rights Ledger: research-v2 S1–S6 → `05_HISTORY_DATABASE/sources/`, claim safety table → `facts/`, 그다음 샷 `fact_ids` 연결.
 - P4 Shot Router: 43개 샷 `router_decision.json` (특히 H01–H06 → BLENDER_FLOW 재검토).
 
 ---
 
-## P1 — Continuity Engine (2026-09-11 · DONE, 로컬 브랜치 `p1-continuity` · push 대기)
+## P1 — Continuity Engine (2026-09-11 · **COMPLETE — APPROVED WITH CONDITIONS** D-008~D-012)
+
+브랜치 `p1-continuity` (origin push 완료, main 병합 보류). 조건: Lite Crowd Pack (D-008) · AI 컷 5–6초 (D-009) · 러프컷 임시 기준 + DELTA 정리 (D-010) · 복식 TBD 게이트 (D-011).
+**P2 NEXT — Character Master** (선행: D-011 복식 확정 + P-001 예산).
 
 | 항목 | 산출 | 상태 |
 |---|---|---|
 | ERA | `05_HISTORY_DATABASE/era/` `SILLA_EARLY` · `EXCAVATION_1973` · `PRESENT_DAY` | DONE |
 | LOCATION | `locations/` 대릉원 · 천마총(치수 47 m/12.7 m, 목곽 6.6×4.2 m) · 경주 도심 · 국립경주박물관 | DRAFT |
 | COSTUME | `costumes/` 노동자 · 시종 · 원로 `_A01` — 세부 TBD (Historical QA 필요) | DRAFT |
-| CHARACTER | `characters/` 원로 1인 + 군중 2그룹, Master Pack 전부 `MISSING` | DRAFT |
+| CHARACTER | `characters/` 원로 1인 (FULL) + 군중 2그룹 (LITE_CROWD) | DRAFT |
 | Master Pack 요구 목록 | `characters/EP01_MASTER_PACK_REQUIREMENTS.md` | DONE |
-| 씬·샷 분해 | `02_SEASONS/S01/EP01/07_SHOTS/` 씬 9 · 샷 43 (러프컷 v1 기준, 합계 425초 = 7:05) | `BROKEN_DOWN` / `PLANNED` |
-| 검증 | `validate.py` 인스턴스 + ID 상호참조 검사 추가 → 95/95 PASS, refs OK | DONE |
+| 씬·샷 분해 | `02_SEASONS/S01/EP01/07_SHOTS/` 씬 9 · 샷 48 (러프컷 v1 기준 + D-009 분할, 합계 425초 = 7:05) | `BROKEN_DOWN` / `PLANNED` |
+| 대본↔러프컷 차이 | `02_SEASONS/S01/EP01/05_SCRIPT/SCRIPT_ROUGHCUT_DELTA.md` X1–X4 (X2·X4 RESOLVED, X1·X3 OPEN) | P3 전 정리 |
+| 검증 | `validate.py` 인스턴스 + ID 상호참조 + Master Pack 등급 + 복식 TBD 게이트 → 100/100 PASS, refs OK | DONE |
 
-샷 구성: REAL 8 · ARCHIVE 17 · GRAPHIC 10 · HIGGSFIELD 8 (AI 70초 ≈ 16%).
+샷 구성: REAL 10 · ARCHIVE 20 · GRAPHIC 10 · HIGGSFIELD 8 (AI 45초 ≈ 11%, 모든 AI 컷 ≤ 6초).
 `fact_ids` 는 비어 있다 (P3 에서 연결). 출처는 샷 `notes` 에 research-v2 S1–S6 번호로 표기.
 
 ## P0 — OS 정본 문서·스키마 (2026-09-11 · DONE, push 완료 `6a7158a`)
@@ -53,7 +56,7 @@
 | RESEARCH | `episodes/ep01-research-verified-v2.md` | APPROVED |
 | SCRIPT | `episodes/ep01-production-script-v2.md` (v1은 PREVIOUS) | APPROVED |
 | SHOTLIST | `ep01-visual-assets`, `ep01-graphics-spec` (G01–G12) | APPROVED |
-| SCENE_BREAKDOWN | `02_SEASONS/S01/EP01/07_SHOTS/` 씬 9 · 샷 43 | DRAFT (P1) |
+| SCENE_BREAKDOWN | `02_SEASONS/S01/EP01/07_SHOTS/` 씬 9 · 샷 48 | DRAFT (P1, 조건부 승인) |
 | REAL_SHOOT | `ep01-field-shoot-plan` 체크리스트 | 계획 APPROVED · **촬영 미실행** |
 | ARCHIVE | `ep01-archive-photos` (1973 NRICH), `ep01-artifact-library` | 선별 APPROVED · 파일 다운로드 미실행 |
 | HIGGSFIELD | `ep01-higgsfield-prompts` 7컷 | 프롬프트 APPROVED · **생성 금지 (Money Gate 미승인, 예산 미확인)** |
@@ -96,7 +99,9 @@
 
 ## 최근 변경 (최신순)
 
-- **2026-09-11 Claude Code** — P1 완료 (브랜치 `p1-continuity`, push 대기): era 3 · location 4 · costume 3 · character 3 · Master Pack 요구 목록 · 씬 9/샷 43 · validate.py 상호참조 검사. P-005~P-007 등록.
+- **2026-09-11 Claude Code** — D-008~D-012 반영: 스키마 `master_pack_tier`, 검증기 등급·복식 TBD 게이트, S04·S06 AI 컷 분할 (43 → 48 샷), SCRIPT_ROUGHCUT_DELTA, Web HQ P1 COMPLETE / P2 NEXT.
+- **2026-09-11 사용자** — **D-008~D-012.** P1 APPROVED WITH CONDITIONS. `6a60b1b` → `origin/p1-continuity` push, main 병합 보류.
+- **2026-09-11 Claude Code** — P1 완료 (브랜치 `p1-continuity`): era 3 · location 4 · costume 3 · character 3 · Master Pack 요구 목록 · 씬 9/샷 43 · validate.py 상호참조 검사. P-005~P-007 등록.
 - **2026-09-11 Claude Code** — P0 완료·push (`6a7158a`): 폴더 골격, 29 스키마, EP01 매니페스트, 운영 문서 4종, 표준 22개 DRAFT, OS_INDEX + Web HQ 페이지.
 - **2026-09-11 사용자** — **D-007.** P0 범위 = 핵심 완성 + 나머지 골격 / EP01 파일 제자리 유지 + 매니페스트 / 커밋 후 push 전 확인.
 - **2026-09-11 (이전 세션)** — **D-004~D-006.** 정본 v0.1 채택, 캐릭터 스타일 B Documentary Reenactment, EP01 = 경주 왕릉/천마총, 황룡사는 예시. Bootstrap Prompt + Web HQ bot-handoff 페이지.

@@ -40,6 +40,25 @@
 - 로컬 커밋까지 자율, **push 직전 변경 요약 후 사용자 확인**
 **반영** `AGENT_RULES.md` §6, `.gitignore`, `episode.json.legacy_artifacts`
 
+### D-008 · 2026-09-11 · Master Pack 등급: BACKGROUND CROWD = Lite / RECURRING OR FOREGROUND = Full (사용자, P-005 승인)
+**승인 내용** 반복 신원 유지가 필요 없는 군중(노동자·시종·장인)은 전신 / 걷기 / 복식 3종 Lite Crowd Pack. 카메라에 반복 등장하거나 얼굴이 식별되는 인물은 반드시 10종 Full Pack 으로 승격.
+**반영** `character.schema.json` `master_pack_tier` (FULL / LITE_CROWD) + 슬롯 상태 `NOT_REQUIRED`, `validate.py` 등급 검사, 군중 2그룹 LITE_CROWD · 원로 FULL.
+
+### D-009 · 2026-09-11 · AI 재현 컷은 5–6초 핵심 순간으로 분할 (사용자, P-006 승인)
+**승인 내용** H04 16초·H05 15초를 AI 영상 한 번으로 밀지 않는다. AI 는 핵심 재현 순간만 5–6초, 나머지는 실사·발굴자료·유물·그래픽·편집 모션으로 채운다. Generate Late 와 "AI 는 실제 증거를 대신하지 않는다" 원칙에 따름.
+**반영** EP01 S04·S06 샷 재분할. AI 합계 70초 → 45초. 모든 Higgsfield 샷 ≤ 6초.
+
+### D-010 · 2026-09-11 · 러프컷 v1 = 샷 구조 임시 작업 기준, 차이는 SCRIPT_ROUGHCUT_DELTA 로 (사용자, P-007 승인)
+**승인 내용** 샷/씬 분해는 러프컷 타임라인을 따르되 최종 정본은 아니다. 차이 4곳은 P3 Fact/Source 연결 전에 정리. 내용·사실·해석이 다르면 Script/Fact 우선, 단순 타이밍·컷 배치 차이면 Rough Cut 우선.
+**반영** `02_SEASONS/S01/EP01/05_SCRIPT/SCRIPT_ROUGHCUT_DELTA.md`
+
+### D-011 · 2026-09-11 · 복식 TBD → 근거 기반 확정 게이트 (사용자)
+**승인 내용** 근거 없는 옷깃·여밈·모자·신발을 상상으로 채우지 않는다. Character Master Pack 생성 전에 복식 TBD 가 근거 자료로 확정돼야 한다.
+**반영** `validate.py` — 복식에 TBD 가 남아 있는데 Master Pack 슬롯이 DRAFT/APPROVED 가 되면 FAIL.
+
+### D-012 · 2026-09-11 · P1 APPROVED WITH CONDITIONS · Git (사용자)
+**승인 내용** P1 승인 (조건: D-008~D-011). `6a60b1b` 를 `p1-continuity` 에 push. main 병합은 다음 검수 게이트 전까지 보류. Web HQ 에 P1 COMPLETE / P2 NEXT 표시.
+
 ---
 
 ## 승인 대기 (P)
@@ -58,19 +77,4 @@
 ### P-004 · 표준 문서 22개 v0.1 DRAFT → ACTIVE 승인
 **제안** `00_SYSTEM/standards/*.md` 는 정본 내용 이관본. 검토 후 일괄 또는 개별 ACTIVE 승격. 승인 전에는 정본 §N 우선.
 
-### P-005 · 군중 인물 Master Pack 축소 (P1, 2026-09-11)
-**제안** 정본 §5 의 Master Pack 10종은 "반복 등장하는 중요 인물" 기준. EP01 의 노동자·시종은 얼굴이 반복되지 않는 군중이므로 `full_body` · `walking` · `costume_detail` 만 필수로 하고 나머지 7종은 군중 예외로 기록. 원로(`CHAR_SILLA_ELITE_OBSERVER_01`)는 10종 전부 + 뒷모습 레퍼런스 추가 검토 (H05 는 뒤에서 촬영).
-**영향** 생성 규모 약 30장 → 약 20장. 채택 시 `character.schema.json` 에 군중 예외 표기 필드 추가 (스키마 변경).
-**근거** `05_HISTORY_DATABASE/characters/EP01_MASTER_PACK_REQUIREMENTS.md`
-
-### P-006 · Higgsfield 컷 길이 (P1, 2026-09-11)
-**제안** Higgsfield 팩은 AI 컷 3–6초를 권장하는데, 러프컷 v1 에서는 H04 16초(`EP01_S06_SH002`) · H05 15초(`SH003`) · H06 10초(`SH006`) · H01/H02 7초. 선택지: (a) 러프컷 길이 유지 → 긴 생성 또는 2회 생성, (b) AI 는 5–6초로 자르고 남는 시간은 아카이브·그래픽 컷어웨이로 채움. **권장 (b)** — 비용·검증 부담이 줄고 "실제 자료 → AI" 원칙에 맞음.
-**영향** 샷 분할 변경 (S06 샷 수 증가), 유료 생성 시간 70초 → 약 45초.
-
-### P-007 · 대본 v2 ↔ 러프컷 v1 불일치 (P1, 2026-09-11)
-**현황** P1 샷 분해는 러프컷 v1 타임라인을 따랐다. 두 승인본이 다른 곳:
-- X1 `EP01_S02` — 대본은 0:35–1:25 에 G04 단면 그래픽 + 금관 매크로, 러프컷에는 없음.
-- X2 `EP01_S03_SH005` — 카드 문구 대본 `OCCUPANT: UNCERTAIN` vs 러프컷 `WHO WAS BURIED HERE? / UNKNOWN WITH CERTAINTY`.
-- X3 `EP01_S07` — 대본에 관람객 실사 컷 + 금관 위치 단면 그래픽, 러프컷에는 없음.
-- X4 `EP01_S09_SH001` — 대본은 클로징에 Higgsfield 공사 플래시 2–3초, 러프컷은 아카이브·유물·실사 3단 교차.
-**제안** 러프컷 v1 유지 (편집 설계가 더 나중에 만들어졌고 AI 사용량이 적음). X2 는 러프컷 문구. 촬영 후 재검토.
+*(P-005 → D-008, P-006 → D-009, P-007 → D-010 으로 승인됨, 2026-09-11)*

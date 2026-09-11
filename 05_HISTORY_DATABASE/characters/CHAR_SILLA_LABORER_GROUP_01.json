@@ -7,6 +7,7 @@
   "historical_basis": "PROBABLE",
   "fact_ids": [],
   "style_lock": "DDABONG_DOC_REENACTMENT_V01",
+  "master_pack_tier": "LITE_CROWD",
   "physical_lock": {
     "face_identity": "varied realistic Korean faces, no single recurring hero face, no close-up emotion acting",
     "body_proportion": "lean working builds, mixed heights",
@@ -16,23 +17,65 @@
     "skin": "sun-weathered, dust, sweat, no gloss"
   },
   "default_costume_id": "COSTUME_SILLA_LABORER_A01",
-  "costume_ids": ["COSTUME_SILLA_LABORER_A01"],
+  "costume_ids": [
+    "COSTUME_SILLA_LABORER_A01"
+  ],
   "master_pack": {
-    "hero": { "path": null, "generation_id": null, "status": "MISSING" },
-    "front": { "path": null, "generation_id": null, "status": "MISSING" },
-    "three_quarter_left": { "path": null, "generation_id": null, "status": "MISSING" },
-    "three_quarter_right": { "path": null, "generation_id": null, "status": "MISSING" },
-    "profile": { "path": null, "generation_id": null, "status": "MISSING" },
-    "full_body": { "path": null, "generation_id": null, "status": "MISSING" },
-    "neutral_standing": { "path": null, "generation_id": null, "status": "MISSING" },
-    "walking": { "path": null, "generation_id": null, "status": "MISSING" },
-    "costume_detail": { "path": null, "generation_id": null, "status": "MISSING" },
-    "expression_sheet": { "path": null, "generation_id": null, "status": "MISSING" }
+    "hero": {
+      "path": null,
+      "generation_id": null,
+      "status": "NOT_REQUIRED"
+    },
+    "front": {
+      "path": null,
+      "generation_id": null,
+      "status": "NOT_REQUIRED"
+    },
+    "three_quarter_left": {
+      "path": null,
+      "generation_id": null,
+      "status": "NOT_REQUIRED"
+    },
+    "three_quarter_right": {
+      "path": null,
+      "generation_id": null,
+      "status": "NOT_REQUIRED"
+    },
+    "profile": {
+      "path": null,
+      "generation_id": null,
+      "status": "NOT_REQUIRED"
+    },
+    "full_body": {
+      "path": null,
+      "generation_id": null,
+      "status": "MISSING"
+    },
+    "neutral_standing": {
+      "path": null,
+      "generation_id": null,
+      "status": "NOT_REQUIRED"
+    },
+    "walking": {
+      "path": null,
+      "generation_id": null,
+      "status": "MISSING"
+    },
+    "costume_detail": {
+      "path": null,
+      "generation_id": null,
+      "status": "MISSING"
+    },
+    "expression_sheet": {
+      "path": null,
+      "generation_id": null,
+      "status": "NOT_REQUIRED"
+    }
   },
   "status": "DRAFT",
   "approved_by": null,
   "approved_at": null,
   "version": "V01",
   "updated_at": "2026-09-11",
-  "notes": "군중 역할. 연속성은 얼굴이 아니라 복식·체형·작업 도구로 유지. Master Pack 을 축소판(full_body·walking·costume_detail)으로 할지 사용자 결정 대기 → DECISIONS P-005."
+  "notes": "군중 역할. 연속성은 얼굴이 아니라 복식·체형·작업 도구로 유지. D-008 Lite Crowd Pack: full_body·walking·costume_detail 만 필수. 전경·식별 가능하게 쓰이면 FULL 로 승격."
 }

@@ -10,9 +10,11 @@
 
 | character_id | 역할 | 등장 샷 (Higgsfield 팩) | 얼굴 노출 |
 |---|---|---|---|
-| `CHAR_SILLA_ELITE_OBSERVER_01` | 장례를 지켜보는 원로 (피장자·왕 아님) | `EP01_S06_SH002` (H04), `EP01_S06_SH003` (H05) | H04 원경 / H05 **뒷모습** |
-| `CHAR_SILLA_LABORER_GROUP_01` | 봉분 조성 노동자 무리 | `EP01_S04_SH004`–`SH006` (H01·H02), `EP01_S06_SH002`–`SH003` 배경 | 군중, 개별 얼굴 반복 없음 |
-| `CHAR_SILLA_ATTENDANT_GROUP_01` | 시종·장인 무리 | `EP01_S05_SH005` (H03), `EP01_S06_SH002`·`SH003`·`SH006` | H03 손 위주 / H06 원경 |
+| `CHAR_SILLA_ELITE_OBSERVER_01` | 장례를 지켜보는 원로 (피장자·왕 아님) | `EP01_S06_SH002` (H04), `EP01_S06_SH005` (H05) | H04 원경 / H05 **뒷모습** |
+| `CHAR_SILLA_LABORER_GROUP_01` | 봉분 조성 노동자 무리 | `EP01_S04_SH004`–`SH006` (H01·H02), `EP01_S06_SH002`·`SH005` 배경 | 군중, 개별 얼굴 반복 없음 |
+| `CHAR_SILLA_ATTENDANT_GROUP_01` | 시종·장인 무리 | `EP01_S05_SH005` (H03), `EP01_S06_SH002`·`SH005`·`SH009` | H03 손 위주 / H06 원경 |
+
+샷 번호는 D-009 분할(2026-09-11) 이후 기준. AI 컷은 모두 6초 이하.
 
 H07 (`EP01_S08_SH002`) 은 인물이 없다.
 
@@ -34,28 +36,27 @@ H07 (`EP01_S08_SH002`) 은 인물이 없다.
 
 **추가 요구 (정본 슬롯 밖, P-005 와 함께 결정)**: H05 는 관찰자 뒤에서 찍는다. 그래서 **뒷모습 / 어깨 너머 시점** 레퍼런스가 사실상 가장 중요하다. 슬롯 추가 여부는 스키마 변경이라 사용자 승인이 필요하다.
 
-### CHAR_SILLA_LABORER_GROUP_01 · CHAR_SILLA_ATTENDANT_GROUP_01 — 축소 제안 (P-005)
+### CHAR_SILLA_LABORER_GROUP_01 · CHAR_SILLA_ATTENDANT_GROUP_01 — Lite Crowd Pack (D-008 승인)
 
-군중은 얼굴이 반복되지 않고, 연속성은 **복식·체형·도구**로 유지된다. 제안:
+규칙: **BACKGROUND CROWD = Lite Pack / RECURRING OR FOREGROUND = Full Pack.** 군중은 얼굴이 반복되지 않고, 연속성은 **복식·체형·도구**로 유지된다. 한 샷이라도 전경에서 얼굴이 식별되게 쓰이면 그 인물은 별도 character_id 로 떼어 Full Pack 으로 승격한다.
 
 | 슬롯 | 노동자 | 시종·장인 |
 |---|---|---|
 | full_body | 필수 (체형 3–4종) | 필수 |
 | walking | 필수 (짐 운반 동작) | 선택 |
 | costume_detail | 필수 | 필수 (손·소매 — H03) |
-| 나머지 7종 | 생략 (`MISSING` 유지, 군중 예외로 기록) | 생략 |
+| 나머지 7종 | `NOT_REQUIRED` | `NOT_REQUIRED` |
 
-결정 전까지 스키마상 10종 모두 `MISSING` 이며 `CHARACTER_MASTER_APPROVED` 는 불가하다.
+스키마: `master_pack_tier: LITE_CROWD`. `validate.py` 가 Lite 필수 3종을 `NOT_REQUIRED` 로 두면 FAIL 처리한다.
 
 ## 3. 선행 조건 (생성 전에 끝나야 함)
 
-1. **복식 Historical QA** — `COSTUME_SILLA_*_A01` 의 TBD 항목 (여밈·깃·관모·신발) 을 근거 자료로 채운다. 근거 없이 Master Pack 을 만들면 전부 다시 만들게 된다 (Rule 3).
+1. **복식 TBD → 근거 기반 확정 게이트 (D-011)** — `COSTUME_SILLA_*_A01` 의 TBD 항목 (여밈·깃·관모·신발) 을 근거 자료로 채운다. TBD 가 남은 채 Master Pack 슬롯이 DRAFT 가 되면 `validate.py` FAIL.
 2. **P-001 예산** — Money Gate 가 `UNKNOWN_BUDGET` 인 동안 유료 생성 잠금.
-3. **P-005 군중 예외** 결정.
-4. S04·S06 **master_frame** 은 Master Pack 승인 뒤 (P2).
+3. S04·S06 **master_frame** 은 Master Pack 승인 뒤 (P2).
 
 ## 4. 예상 생성 규모 (참고, 비용 산정은 P6)
 
-- 원로 10종 (+ 뒷모습 1–2종 제안)
-- 군중 축소안 채택 시: 노동자 3종 × 체형 변형 + 시종 2종 ≈ 8–10장
-- 채택하지 않으면: 3명 × 10종 = 30장
+- 원로 10종 (+ 뒷모습 1–2종 제안 — 슬롯 추가는 스키마 변경이라 별도 승인)
+- 군중 Lite: 노동자 3종 × 체형 변형 + 시종 3종 ≈ 8–10장
+- 합계 약 20장 (Full 로 했으면 30장)
