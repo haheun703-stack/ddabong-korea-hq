@@ -78,3 +78,8 @@
 **제안** `00_SYSTEM/standards/*.md` 는 정본 내용 이관본. 검토 후 일괄 또는 개별 ACTIVE 승격. 승인 전에는 정본 §N 우선.
 
 *(P-005 → D-008, P-006 → D-009, P-007 → D-010 으로 승인됨, 2026-09-11)*
+
+### P-008 · Shot 스키마에 인물 가시성 필드 추가 (P2 백로그, 사용자 제안 2026-09-11)
+**제안** `shot.schema.json` 에 `foreground_role` 또는 `character_visibility` (예: BACKGROUND / MIDGROUND / FOREGROUND_IDENTIFIABLE) 를 추가해, 군중 인물이 전경·식별 가능하게 쓰이면 `validate.py` 가 FULL Pack 승격을 자동 요구하게 한다 (D-008 규칙 자동화). 지금은 사람 검수.
+**시점** P2 또는 P3. P1 에는 넣지 않는다.
+**영향** 스키마 변경 + 48개 샷 인스턴스 필드 추가 + 검증기 규칙.
