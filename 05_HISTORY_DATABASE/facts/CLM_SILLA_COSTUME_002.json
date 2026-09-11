@@ -1,0 +1,18 @@
+{
+  "claim_id": "CLM_SILLA_COSTUME_002",
+  "text_ko": "법흥왕대 관등별 공복색: 자(태대각간~대아찬)·비(아찬~급찬)·청(대나마·나마)·황(대사~선저지). 평인은 백·흑으로 추정.",
+  "text_en": "Under King Beopheung, official robe colours by rank: purple, crimson, blue, yellow. Commoners probably white or black.",
+  "confidence": "FACT",
+  "source_ids": [
+    "SRC_SAMGUKSAGI_SAEKBOK_001",
+    "SRC_NAHF_SILLA_CLOTHING_001"
+  ],
+  "used_in": [
+    "COSTUME_SILLA_ELITE_A01",
+    "COSTUME_SILLA_ATTENDANT_A01"
+  ],
+  "hedge_required": false,
+  "verified_at": "2026-09-11",
+  "verified_by": "Claude Code (Continuity Engine / Historical QA)",
+  "notes": "법령은 FACT. '평인 백·흑'은 PROBABLE. 5세기 전반 적용 여부는 불확실 → 5세기 장면에서는 색 위계만 참고."
+}

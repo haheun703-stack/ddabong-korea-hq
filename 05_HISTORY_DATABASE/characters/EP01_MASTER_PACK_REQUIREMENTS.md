@@ -51,7 +51,7 @@ H07 (`EP01_S08_SH002`) 은 인물이 없다.
 
 ## 3. 선행 조건 (생성 전에 끝나야 함)
 
-1. **복식 TBD → 근거 기반 확정 게이트 (D-011)** — `COSTUME_SILLA_*_A01` 의 TBD 항목 (여밈·깃·관모·신발) 을 근거 자료로 채운다. TBD 가 남은 채 Master Pack 슬롯이 DRAFT 가 되면 `validate.py` FAIL.
+1. **복식 근거 확정 게이트 (D-011) — 통과 (2026-09-11)**. `COSTUME_SILLA_*_A01` 전 항목이 `05_HISTORY_DATABASE/facts/CLM_SILLA_COSTUME_001~008` (출처 7건) 에 연결됨. 등급은 대부분 PROBABLE. 사용자 결정 남음: 원로 옷 색(비 vs 청)·과대 재질 (현재 INTERPRETIVE).
 2. **P-001 예산** — Money Gate 가 `UNKNOWN_BUDGET` 인 동안 유료 생성 잠금.
 3. S04·S06 **master_frame** 은 Master Pack 승인 뒤 (P2).
 

@@ -24,6 +24,15 @@
     "modern museum display cases"
   ],
   "prompt_lock_id": "SILLA_EARLY_V01",
-  "fact_ids": [],
+  "fact_ids": [
+    "CLM_SILLA_COSTUME_001",
+    "CLM_SILLA_COSTUME_002",
+    "CLM_SILLA_COSTUME_003",
+    "CLM_SILLA_COSTUME_004",
+    "CLM_SILLA_COSTUME_005",
+    "CLM_SILLA_COSTUME_006",
+    "CLM_SILLA_COSTUME_007",
+    "CLM_SILLA_COSTUME_008"
+  ],
   "updated_at": "2026-09-11"
 }

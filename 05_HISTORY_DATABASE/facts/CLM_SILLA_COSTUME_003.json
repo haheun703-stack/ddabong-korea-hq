@@ -1,0 +1,18 @@
+{
+  "claim_id": "CLM_SILLA_COSTUME_003",
+  "text_ko": "관모: 초·중기 백화모(자작나무 껍질 모자) 기본, 상부 귀족층 금관·금동관. 금령총 주인상은 호화 관모, 하인상은 상투에 수건.",
+  "text_en": "Headwear: birch-bark cap as base; gold/gilt-bronze crowns for top elite. Geumnyeongchong rider: master wears ornate cap, servant has topknot with cloth band.",
+  "confidence": "PROBABLE",
+  "source_ids": [
+    "SRC_AKS_ENCYKOREA_BOKSIK_001",
+    "SRC_NMK_GEUMNYEONGCHONG_RIDER_001"
+  ],
+  "used_in": [
+    "COSTUME_SILLA_LABORER_A01",
+    "COSTUME_SILLA_ELITE_A01"
+  ],
+  "hedge_required": true,
+  "verified_at": "2026-09-11",
+  "verified_by": "Claude Code (Continuity Engine / Historical QA)",
+  "notes": null
+}

@@ -3,20 +3,31 @@
   "era": "SILLA_EARLY",
   "wearer_role": "장례 시종·장인 (부장품 취급, 의례 준비)",
   "historical_basis": "PROBABLE",
-  "fact_ids": [],
+  "fact_ids": [
+    "CLM_SILLA_COSTUME_001",
+    "CLM_SILLA_COSTUME_002",
+    "CLM_SILLA_COSTUME_004",
+    "CLM_SILLA_COSTUME_005",
+    "CLM_SILLA_COSTUME_007"
+  ],
   "elements": {
-    "material": "노동자보다 고운 평직 — PROBABLE, 근거 자료 확인 필요",
-    "upper": "노동자보다 긴 윗옷, 허리 묶음 — 여밈·깃 TBD (Historical QA)",
-    "lower": "바지 (남) / 치마형 하의 (여) 여부 TBD",
-    "belt": "천 허리끈, 장식 최소",
-    "footwear": "TBD",
-    "headwear": "머리 묶음, 간단한 천 — TBD",
-    "color": "차분한 중간톤. 노동자와 계층 차이는 원단 결·청결도로 표현",
+    "material": "노동자보다 고운 마직 또는 저포 평직 — PROBABLE (CLM_006 유추). 견직은 귀족 전용으로 상정 — INTERPRETIVE",
+    "upper": "소매 좁은 저고리(유), 엉덩이선 길이, 직령 우임, 노동자보다 정돈됨 — PROBABLE (CLM_001, CLM_007)",
+    "lower": "통 좁은~중간 바지(고) — PROBABLE (CLM_001 서민형). 여성 시종은 저고리+치마 — PROBABLE (CLM_001 서민 여자)",
+    "belt": "포대 (천 띠), 장식 최소 — PROBABLE (CLM_004)",
+    "footwear": "운두 낮은 이(履) 또는 짚신 — PROBABLE (CLM_005)",
+    "headwear": "상투 + 수건 또는 단순 건 — PROBABLE (CLM_003)",
+    "color": "백·흑·회갈 등 무염 계열 — PROBABLE (CLM_002 평인). 공복 4색 금지 (관등 없는 인원)",
     "hands": "H03 은 손 클로즈업 중심 — 소매 끝·손목 디테일이 KEEP 대상",
-    "forbidden": "조선 한복 실루엣, 궁중 예복, 판타지 사제복, 중국 황실 복식"
+    "forbidden": "조선 한복 실루엣, 궁중 예복, 판타지 사제복, 중국 황실 복식, 공복 4색",
+    "qa_note": "D-011 근거 확정 2026-09-11. 미확정 항목 없음. 잔여 불확실: 시종의 관등·계층(무관등 서민으로 상정)."
   },
   "reference_images": [
-    { "path": null, "generation_id": null, "status": "MISSING" }
+    {
+      "path": null,
+      "generation_id": null,
+      "status": "MISSING"
+    }
   ],
   "status": "DRAFT",
   "version": "V01",

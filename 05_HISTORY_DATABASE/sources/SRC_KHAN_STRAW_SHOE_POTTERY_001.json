@@ -1,0 +1,17 @@
+{
+  "source_id": "SRC_KHAN_STRAW_SHOE_POTTERY_001",
+  "claim_ids": [
+    "CLM_SILLA_COSTUME_005"
+  ],
+  "title": "죽은 자를 위한 신라·가야인들의 마지막 선물 — 온갖 모양의 토기·토우 (짚신 모양 토기)",
+  "institution_or_author": "경향신문 2023-06-07 (국립중앙박물관 특별전 보도)",
+  "url_or_path": "https://www.khan.co.kr/article/202306071601001",
+  "verified_at": "2026-09-11",
+  "verified_by": "Claude Code (Continuity Engine / Historical QA)",
+  "excerpt_or_summary": "신라 짚신 모양 이형토기에 나타난 짚신은 오늘날 짚신과 차이가 거의 없음.",
+  "confidence": "PROBABLE",
+  "uncertainty": "언론 보도. P3 에서 박물관 소장품 페이지로 교체 권장.",
+  "source_type": "SECONDARY",
+  "rights_id": null,
+  "notes": "복식 Historical QA (D-011) 용. 미디어 재사용 권리는 별개(P3 rights)."
+}

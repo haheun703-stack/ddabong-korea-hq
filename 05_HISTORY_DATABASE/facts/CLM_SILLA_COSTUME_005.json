@@ -1,0 +1,19 @@
+{
+  "claim_id": "CLM_SILLA_COSTUME_005",
+  "text_ko": "신발: 버선에 운두 낮은 이(履), 관원·귀족은 발목 덮는 화(靴). 짚신 모양 토기가 존재해 서민 짚신 사용 개연성.",
+  "text_en": "Footwear: low shoes (ri) over socks; officials and elite wore ankle boots (hwa). Straw-sandal-shaped pottery suggests commoner straw sandals.",
+  "confidence": "PROBABLE",
+  "source_ids": [
+    "SRC_AKS_ENCYKOREA_BOKSIK_001",
+    "SRC_KHAN_STRAW_SHOE_POTTERY_001"
+  ],
+  "used_in": [
+    "COSTUME_SILLA_LABORER_A01",
+    "COSTUME_SILLA_ATTENDANT_A01",
+    "COSTUME_SILLA_ELITE_A01"
+  ],
+  "hedge_required": true,
+  "verified_at": "2026-09-11",
+  "verified_by": "Claude Code (Continuity Engine / Historical QA)",
+  "notes": null
+}

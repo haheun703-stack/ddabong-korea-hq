@@ -1,0 +1,17 @@
+{
+  "source_id": "SRC_NMK_GEUMNYEONGCHONG_RIDER_001",
+  "claim_ids": [
+    "CLM_SILLA_COSTUME_003"
+  ],
+  "title": "기마 인물형 토기 (금령총 출토, 국보, 본관9705)",
+  "institution_or_author": "국립중앙박물관 소장품 검색",
+  "url_or_path": "https://www.museum.go.kr/site/main/relic/search/view?relicId=3802",
+  "verified_at": "2026-09-11",
+  "verified_by": "Claude Code (Continuity Engine / Historical QA)",
+  "excerpt_or_summary": "신라, 경주 금령총. 주인상: 호화로운 관모를 쓰고 갑옷을 입음. 하인상: 상투 머리에 수건을 동여맸고 상체는 벗음. 당시 복식과 마구류 연구에 중요한 자료. 이미지 공공누리 1유형.",
+  "confidence": "FACT",
+  "uncertainty": "5~6세기 부장 명기. 하인 상체 노출은 명기 표현이라 실제 노동 복장 일반화에 주의.",
+  "source_type": "MUSEUM",
+  "rights_id": null,
+  "notes": "복식 Historical QA (D-011) 용. 미디어 재사용 권리는 별개(P3 rights)."
+}

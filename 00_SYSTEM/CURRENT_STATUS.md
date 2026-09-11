@@ -14,9 +14,12 @@
 - P-003 표준 문서 언어 (P0 초안은 한글 본문 + 영문 키/ID).
 - `p1-continuity` → main 병합 시점 (D-012: 다음 검수 게이트 전까지 보류).
 
+- **P-009** 원로(`CHAR_SILLA_ELITE_OBSERVER_01`) 옷 색 비(다홍) vs 청 · 과대 재질 — 관등 미설정이라 INTERPRETIVE (NEW).
+
 **봇이 바로 갈 수 있는 것**
-- 복식 TBD → 근거 기반 확정 (D-011): `COSTUME_SILLA_*_A01` 의 여밈·깃·관모·신발 — 유료 없음, P2 선행 게이트. `validate.py` 가 강제.
 - SCRIPT_ROUGHCUT_DELTA 정리 (D-010): X1 (러프컷 VO 대조) · X3 (금관 위치 S3 확인) — **P3 시작 전 필수**.
+- P3 Source/Rights Ledger: research-v2 S1–S6 → `sources/`, claim safety table → `facts/`, 샷 `fact_ids` 연결. (복식 출처 7건·사실 8건은 이미 같은 폴더에 있음.)
+- P2 Character Master 준비: 복식 게이트 통과 → 남은 선행 조건은 예산(P-001)뿐.
 - P3 Source/Rights Ledger: research-v2 S1–S6 → `05_HISTORY_DATABASE/sources/`, claim safety table → `facts/`, 그다음 샷 `fact_ids` 연결.
 - P4 Shot Router: 43개 샷 `router_decision.json` (특히 H01–H06 → BLENDER_FLOW 재검토).
 
@@ -31,7 +34,8 @@
 |---|---|---|
 | ERA | `05_HISTORY_DATABASE/era/` `SILLA_EARLY` · `EXCAVATION_1973` · `PRESENT_DAY` | DONE |
 | LOCATION | `locations/` 대릉원 · 천마총(치수 47 m/12.7 m, 목곽 6.6×4.2 m) · 경주 도심 · 국립경주박물관 | DRAFT |
-| COSTUME | `costumes/` 노동자 · 시종 · 원로 `_A01` — 세부 TBD (Historical QA 필요) | DRAFT |
+| COSTUME | `costumes/` 노동자 · 시종 · 원로 `_A01` — **D-011 근거 확정 완료** (PROBABLE, fact_ids 연결) | DRAFT |
+| FACT / SOURCE (복식) | `facts/CLM_SILLA_COSTUME_001–008` · `sources/SRC_*` 7건 (국사편찬위·삼국사기 색복·국립중앙박물관·민족문화대백과·전통문화포털·1976 직물 논문·짚신 토기 보도) | DONE |
 | CHARACTER | `characters/` 원로 1인 (FULL) + 군중 2그룹 (LITE_CROWD) | DRAFT |
 | Master Pack 요구 목록 | `characters/EP01_MASTER_PACK_REQUIREMENTS.md` | DONE |
 | 씬·샷 분해 | `02_SEASONS/S01/EP01/07_SHOTS/` 씬 9 · 샷 48 (러프컷 v1 기준 + D-009 분할, 합계 425초 = 7:05) | `BROKEN_DOWN` / `PLANNED` |
@@ -93,12 +97,13 @@
 
 - 예산 미확인 → 유료 생성 전면 잠금 (규칙 위반 아님, 정상 상태).
 - Blender 로컬 브리지(P7) 없음 → `camera.json` 은 수동 작성 단계.
-- 복식 세부 근거 미확보 → Master Pack 생성 전 Historical QA 필수.
+- ~~복식 세부 근거 미확보~~ → 2026-09-11 해소 (D-011 게이트 통과). 잔여: 짚신 출처가 언론 보도 → P3 에서 박물관 페이지로 교체 권장.
 
 ---
 
 ## 최근 변경 (최신순)
 
+- **2026-09-11 Claude Code** — 복식 Historical QA (D-011 게이트 통과): 출처 7 · 사실 8 인스턴스, 복식 3종 전 항목 근거 등급 표기. 검증 115/115. P-009 등록.
 - **2026-09-11 Claude Code** — D-008~D-012 반영: 스키마 `master_pack_tier`, 검증기 등급·복식 TBD 게이트, S04·S06 AI 컷 분할 (43 → 48 샷), SCRIPT_ROUGHCUT_DELTA, Web HQ P1 COMPLETE / P2 NEXT.
 - **2026-09-11 사용자** — **D-008~D-012.** P1 APPROVED WITH CONDITIONS. `6a60b1b` → `origin/p1-continuity` push, main 병합 보류.
 - **2026-09-11 Claude Code** — P1 완료 (브랜치 `p1-continuity`): era 3 · location 4 · costume 3 · character 3 · Master Pack 요구 목록 · 씬 9/샷 43 · validate.py 상호참조 검사. P-005~P-007 등록.

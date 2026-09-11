@@ -1,0 +1,18 @@
+{
+  "claim_id": "CLM_SILLA_COSTUME_001",
+  "text_ko": "신라 기본 복식은 상의 유(저고리)+하의 고(바지). 상류층 남자는 소매 좁은 저고리에 넓은 바지, 서민 남자는 소매 좁은 저고리에 좁은 바지.",
+  "text_en": "Basic Silla dress = short jacket (yu) + trousers (go). Upper-class men: narrow sleeves with wide trousers; commoner men: narrow sleeves with narrow trousers.",
+  "confidence": "PROBABLE",
+  "source_ids": [
+    "SRC_NAHF_SILLA_CLOTHING_001"
+  ],
+  "used_in": [
+    "COSTUME_SILLA_LABORER_A01",
+    "COSTUME_SILLA_ATTENDANT_A01",
+    "COSTUME_SILLA_ELITE_A01"
+  ],
+  "hedge_required": true,
+  "verified_at": "2026-09-11",
+  "verified_by": "Claude Code (Continuity Engine / Historical QA)",
+  "notes": null
+}

@@ -1,0 +1,19 @@
+{
+  "claim_id": "CLM_SILLA_COSTUME_007",
+  "text_ko": "여밈: 양직공도 신라 사신·토용은 우임(오른쪽 여밈). 다만 고대 한국 복식은 좌임·우임 혼재.",
+  "text_en": "Closure: the Silla envoy in Liang Zhigongtu and clay figures show right-over-left closure, though ancient Korean dress mixed both.",
+  "confidence": "PROBABLE",
+  "source_ids": [
+    "SRC_NAHF_SILLA_CLOTHING_001",
+    "SRC_AKS_ENCYKOREA_BOKSIK_001"
+  ],
+  "used_in": [
+    "COSTUME_SILLA_LABORER_A01",
+    "COSTUME_SILLA_ATTENDANT_A01",
+    "COSTUME_SILLA_ELITE_A01"
+  ],
+  "hedge_required": true,
+  "verified_at": "2026-09-11",
+  "verified_by": "Claude Code (Continuity Engine / Historical QA)",
+  "notes": null
+}

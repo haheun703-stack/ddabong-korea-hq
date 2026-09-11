@@ -1,0 +1,20 @@
+{
+  "source_id": "SRC_AKS_ENCYKOREA_BOKSIK_001",
+  "claim_ids": [
+    "CLM_SILLA_COSTUME_003",
+    "CLM_SILLA_COSTUME_004",
+    "CLM_SILLA_COSTUME_005",
+    "CLM_SILLA_COSTUME_007"
+  ],
+  "title": "한국민족문화대백과사전 「복식」",
+  "institution_or_author": "한국학중앙연구원 (집필 유송옥·김동욱)",
+  "url_or_path": "https://encykorea.aks.ac.kr/Article/E0023690",
+  "verified_at": "2026-09-11",
+  "verified_by": "Claude Code (Continuity Engine / Historical QA)",
+  "excerpt_or_summary": "신라 초·중기 관모는 백화모 기본, 상부 귀족층 금관·금동관. 상의는 유 위에 표의, 귀족은 과대·서민은 포대. 하의는 바지. 발에 버선 + 운두 낮은 이, 관원·귀족은 발목 덮는 화. 고대 한국 복식은 좌임·우임 혼재.",
+  "confidence": "PROBABLE",
+  "uncertainty": "사전 서술('~한 것 같다') — 종합 추정.",
+  "source_type": "SECONDARY",
+  "rights_id": null,
+  "notes": "복식 Historical QA (D-011) 용. 미디어 재사용 권리는 별개(P3 rights)."
+}

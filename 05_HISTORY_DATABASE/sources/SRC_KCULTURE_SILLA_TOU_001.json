@@ -1,0 +1,18 @@
+{
+  "source_id": "SRC_KCULTURE_SILLA_TOU_001",
+  "claim_ids": [
+    "CLM_SILLA_COSTUME_004",
+    "CLM_SILLA_COSTUME_008"
+  ],
+  "title": "전통문화포털 — 시대별 한복 / 삼국시대·통일신라 (부상 토우)",
+  "institution_or_author": "한국공예·디자인문화진흥원 (문화체육관광부)",
+  "url_or_path": "https://www.kculture.or.kr/clothes/code/941/menu/921/idx/189/currentPage/3",
+  "verified_at": "2026-09-11",
+  "verified_by": "Claude Code (Continuity Engine / Historical QA)",
+  "excerpt_or_summary": "국립경주박물관 부상(夫像) 토우: 변형모를 쓰고, 주름을 선각으로 표현한 고 위에 둥근 깃의 유를 입고, 허리 앞에 요패를 늘인 과대 착용 — 신라 의례복의 일종으로 추측.",
+  "confidence": "PROBABLE",
+  "uncertainty": "토우 1점 기준. 의례복 추정.",
+  "source_type": "GOVERNMENT",
+  "rights_id": null,
+  "notes": "복식 Historical QA (D-011) 용. 미디어 재사용 권리는 별개(P3 rights)."
+}

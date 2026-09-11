@@ -1,0 +1,17 @@
+{
+  "claim_id": "CLM_SILLA_COSTUME_006",
+  "text_ko": "천마총에서 직물 20여 편이 출토되어 분석됨 (섬유·조직·염색). 말다래는 마직.",
+  "text_en": "Some 20 textile fragments from Cheonmachong were analysed (fibre, weave, dye); the saddle flap used hemp cloth.",
+  "confidence": "FACT",
+  "source_ids": [
+    "SRC_KPEA_CHEONMACHONG_TEXTILE_001"
+  ],
+  "used_in": [
+    "COSTUME_SILLA_LABORER_A01",
+    "COSTUME_SILLA_ELITE_A01"
+  ],
+  "hedge_required": false,
+  "verified_at": "2026-09-11",
+  "verified_by": "Claude Code (Continuity Engine / Historical QA)",
+  "notes": "서민 = 마직, 귀족 = 견직 일반화는 PROBABLE."
+}

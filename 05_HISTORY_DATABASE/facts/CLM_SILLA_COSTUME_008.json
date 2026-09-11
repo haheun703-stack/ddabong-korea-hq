@@ -1,0 +1,16 @@
+{
+  "claim_id": "CLM_SILLA_COSTUME_008",
+  "text_ko": "부상 토우(국립경주박물관): 변형모 + 둥근 깃 유 + 주름 잡은 고 + 요패 달린 과대 — 의례복으로 추정.",
+  "text_en": "Husband figurine (Gyeongju NM): cap, round-collar jacket, pleated trousers, plaque belt with pendants — probably ceremonial dress.",
+  "confidence": "PROBABLE",
+  "source_ids": [
+    "SRC_KCULTURE_SILLA_TOU_001"
+  ],
+  "used_in": [
+    "COSTUME_SILLA_ELITE_A01"
+  ],
+  "hedge_required": true,
+  "verified_at": "2026-09-11",
+  "verified_by": "Claude Code (Continuity Engine / Historical QA)",
+  "notes": null
+}

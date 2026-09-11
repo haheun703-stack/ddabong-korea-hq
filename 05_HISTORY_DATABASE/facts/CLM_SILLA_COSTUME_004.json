@@ -1,0 +1,19 @@
+{
+  "claim_id": "CLM_SILLA_COSTUME_004",
+  "text_ko": "허리띠: 귀족층은 과대(금속 장식 띠, 요패), 일반 서민은 포대(천 띠).",
+  "text_en": "Belts: elite wore metal-plaque belts (gwadae) with pendants; commoners wore cloth belts.",
+  "confidence": "PROBABLE",
+  "source_ids": [
+    "SRC_AKS_ENCYKOREA_BOKSIK_001",
+    "SRC_KCULTURE_SILLA_TOU_001"
+  ],
+  "used_in": [
+    "COSTUME_SILLA_LABORER_A01",
+    "COSTUME_SILLA_ATTENDANT_A01",
+    "COSTUME_SILLA_ELITE_A01"
+  ],
+  "hedge_required": true,
+  "verified_at": "2026-09-11",
+  "verified_by": "Claude Code (Continuity Engine / Historical QA)",
+  "notes": null
+}

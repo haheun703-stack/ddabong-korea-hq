@@ -1,0 +1,19 @@
+{
+  "source_id": "SRC_NAHF_SILLA_CLOTHING_001",
+  "claim_ids": [
+    "CLM_SILLA_COSTUME_001",
+    "CLM_SILLA_COSTUME_002",
+    "CLM_SILLA_COSTUME_007"
+  ],
+  "title": "신편 한국사 — 삼국의 문화 Ⅵ. 의식주 생활 1. 의생활 4) 신라의 의생활",
+  "institution_or_author": "국사편찬위원회 (우리역사넷)",
+  "url_or_path": "https://contents.history.go.kr/mobile/nh/view.do?levelId=nh_008_0070_0010_0040",
+  "verified_at": "2026-09-11",
+  "verified_by": "Claude Code (Continuity Engine / Historical QA)",
+  "excerpt_or_summary": "관을 유자례, 유(저고리)를 위해, 고(바지)를 가반, 화를 세라 함. 자·비·청·황 4색은 공복, 평인은 백색이나 흑색 옷이었을 것. 상류층 남자는 소매가 좁은 저고리와 넓은 바지, 서민 남자는 소매가 좁은 저고리와 좁은 바지. 근거 유물: 천마총 기마인물, 김유신묘 12지 호석상, 양직공도 신라 사신(소매 좁고 오른쪽 여밈, 넓은 바지).",
+  "confidence": "PROBABLE",
+  "uncertainty": "문헌·유물 종합 해석. '평인 백·흑'은 추정 표현.",
+  "source_type": "ACADEMIC",
+  "rights_id": null,
+  "notes": "복식 Historical QA (D-011) 용. 미디어 재사용 권리는 별개(P3 rights)."
+}

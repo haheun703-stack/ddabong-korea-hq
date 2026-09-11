@@ -1,0 +1,17 @@
+{
+  "source_id": "SRC_SAMGUKSAGI_SAEKBOK_001",
+  "claim_ids": [
+    "CLM_SILLA_COSTUME_002"
+  ],
+  "title": "『삼국사기』 권33 잡지2 색복 — 신라 (사료로 본 한국사 '신라 귀족의 복식 문화')",
+  "institution_or_author": "김부식 편 / 국사편찬위원회 번역·해설",
+  "url_or_path": "https://contents.history.go.kr/front/hm/view.do?levelId=hm_036_0040",
+  "verified_at": "2026-09-11",
+  "verified_by": "Claude Code (Continuity Engine / Historical QA)",
+  "excerpt_or_summary": "법흥왕대 제도: 태대각간~대아찬 자주색 옷, 아찬~급찬 다홍색 옷(아홀), 대나마·나마 푸른색, 대사~선저지 누런색.",
+  "confidence": "FACT",
+  "uncertainty": "12세기 편찬 기록. 520년(법흥왕 7) 공복 제정으로 보는 것이 통설이나 일부 이견. 5세기 전반에도 같은 규정이 있었다는 근거는 아님.",
+  "source_type": "PRIMARY_RECORD",
+  "rights_id": null,
+  "notes": "복식 Historical QA (D-011) 용. 미디어 재사용 권리는 별개(P3 rights)."
+}
