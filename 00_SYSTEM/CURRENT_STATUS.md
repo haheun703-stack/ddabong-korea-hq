@@ -16,8 +16,8 @@
 
 - ~~P-009~~ 원로 옷 색 muted blue · 과대 bronze 확정 (D-015), PROBABLE 유지.
 
-- **P-012** Higgsfield 크레딧→KRW 환산율 (NEW).
-- **배치 1 검수** `08_GENERATION_CACHE/EP01/MP_ELITE/REVIEW_BATCH1.md` — 4장 APPROVE/FIX, 특히 표의 소매 길이.
+- **P-012** 크레딧→KRW 환산율 — **임시 미정 (사용자 2026-09-11)**: 플랜 월 요금·월 크레딧 수 확인 전까지 크레딧 단위로만 기록, 원화 소진율 계산 안 함.
+- **배치 1 검수 — Work 창에 위임 (사용자 2026-09-11)**: 이미지 5장 + `REVIEW_BATCH1.md` 를 직접 열어 비교. 검수 항목: 얼굴 동일성 · 연령 · 관모 형태 · 표(袍) 소매 길이 · 체형 · 복식 일관성. **판정(APPROVE/FIX)만 내리고 유료 생성은 하지 않는다.** 판정이 나오면 그 기준으로 나머지 6 + back_view 확장 여부 결정.
 - **P-011** 라우터 판정 49건 ACCEPT / OVERRIDE — **AI 샷 생성 직전 최종 승인으로 보류 (D-015)**.
 - YELLOW_ACTIVE 1건 (`RTS_GNM_OTHER_OBJECTS_001`) — 편집 확정 전 필수 해소 (D-014).
 
@@ -159,6 +159,8 @@
 ---
 
 ## 최근 변경 (최신순)
+
+- **2026-09-11 사용자** — 공식 상태 고정: P2 배치 1 사람 검수 대기 (Work 창 위임, 판정만) / 유료 생성 정지 유지 / P-012 임시 미정, 크레딧 단위 기록.
 
 - **2026-09-11 Claude Code** — **첫 유료 생성.** 원로 Master Pack 배치 1: hero V01 REJECTED(갑옷 인물·다홍·워터마크) → V02 PASS, front · three_quarter_left · full_body (hero 참조) PASS. 5 호출 8.12 credits. generation.json 5, cost 갱신, character MASTER_IN_PROGRESS, 검수 시트. P-012 등록.
 
