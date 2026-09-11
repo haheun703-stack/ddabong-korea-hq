@@ -1,0 +1,24 @@
+{
+  "claim_id": "CLM_EP01_GOLD_007",
+  "text_ko": "국립경주박물관은 5세기~6세기 초 신라 지배층이 왕경에 거대 무덤을 만들고 금으로 신성함·정통성·영원한 권위를 표현했다고 설명한다.",
+  "text_en": "Gyeongju National Museum states that in the 5th–early 6th c. the Silla elite built huge tombs in the capital and used gold to express sacredness, legitimacy and enduring authority.",
+  "confidence": "FACT",
+  "source_ids": [
+    "SRC_GNM_SILLA_GOLD_001"
+  ],
+  "used_in": [
+    "EP01_S05_SH001",
+    "EP01_S05_SH002",
+    "EP01_S05_SH005",
+    "EP01_S05_SH006",
+    "EP01_S06_SH004",
+    "EP01_S06_SH006",
+    "EP01_S07_SH003",
+    "EP01_S07_SH004",
+    "EP01_S09_SH002"
+  ],
+  "hedge_required": false,
+  "verified_at": "2026-09-11",
+  "verified_by": "Claude Code (Story Engine Fact Check / Quality Engine Rights)",
+  "notes": "박물관 공식 해석을 인용하는 형태로만 FACT. 내레이션은 'The museum describes…' 를 유지."
+}

@@ -21,13 +21,18 @@
   "camera_id": null,
   "prompt_id": null,
   "router_decision_id": null,
-  "fact_ids": [],
-  "rights_ids": [],
+  "fact_ids": [
+    "CLM_EP01_GOLD_007"
+  ],
+  "rights_ids": [
+    "RTS_GNM_GOLD_CROWN_001"
+  ],
   "ai_label": null,
   "version_history": [],
   "approved_version": null,
   "created_at": "2026-09-11",
   "updated_at": "2026-09-11",
-  "updated_by": "Claude Code (Continuity Engine)",
-  "notes": "TC 4:12–4:20 (러프컷 v1 기준, 내레이션 녹음 후 조정). 실제 유물이 문장 끝을 받는다. 점수(camera_complexity 등)는 Continuity Engine 추정치 — P4 라우터에서 확정."
+  "updated_by": "Claude Code (Story Engine Fact Check / Quality Engine Rights)",
+  "notes": "TC 4:12–4:20 (러프컷 v1 기준, 내레이션 녹음 후 조정). 실제 유물이 문장 끝을 받는다. 점수(camera_complexity 등)는 Continuity Engine 추정치 — P4 라우터에서 확정.",
+  "evidence_role": "PRIMARY"
 }

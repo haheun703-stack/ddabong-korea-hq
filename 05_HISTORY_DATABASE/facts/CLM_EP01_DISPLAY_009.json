@@ -1,0 +1,19 @@
+{
+  "claim_id": "CLM_EP01_DISPLAY_009",
+  "text_ko": "매장의 과시는 산 자들에게 위계와 권위를 전달했을 수 있다.",
+  "text_en": "Burial display may have communicated hierarchy and authority to the living.",
+  "confidence": "INTERPRETIVE",
+  "source_ids": [
+    "SRC_GNM_SILLA_GOLD_001"
+  ],
+  "used_in": [
+    "EP01_S05_SH005",
+    "EP01_S06_SH005",
+    "EP01_S06_SH010",
+    "EP01_S07_SH004"
+  ],
+  "hedge_required": true,
+  "verified_at": "2026-09-11",
+  "verified_by": "Claude Code (Story Engine Fact Check / Quality Engine Rights)",
+  "notes": null
+}

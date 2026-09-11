@@ -21,13 +21,16 @@
   "camera_id": null,
   "prompt_id": null,
   "router_decision_id": null,
-  "fact_ids": [],
+  "fact_ids": [
+    "CLM_EP01_EXCAV_003"
+  ],
   "rights_ids": [],
   "ai_label": null,
   "version_history": [],
   "approved_version": null,
   "created_at": "2026-09-11",
   "updated_at": "2026-09-11",
-  "updated_by": "Claude Code (Continuity Engine)",
-  "notes": "TC 1:25–1:38 (러프컷 v1 기준, 내레이션 녹음 후 조정). 촬영 허가 확인. 백업 A3 (CC BY-SA, YELLOW). 점수(camera_complexity 등)는 Continuity Engine 추정치 — P4 라우터에서 확정."
+  "updated_by": "Claude Code (Story Engine Fact Check / Quality Engine Rights)",
+  "notes": "TC 1:25–1:38 (러프컷 v1 기준, 내레이션 녹음 후 조정). 촬영 허가 확인. 백업 A3 (CC BY-SA, YELLOW). 점수(camera_complexity 등)는 Continuity Engine 추정치 — P4 라우터에서 확정.",
+  "evidence_role": "CONTEXT"
 }

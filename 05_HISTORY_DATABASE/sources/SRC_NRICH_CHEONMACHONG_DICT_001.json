@@ -1,7 +1,9 @@
 {
   "source_id": "SRC_NRICH_CHEONMACHONG_DICT_001",
   "claim_ids": [
-    "CLM_CHEONMACHONG_LAYOUT_001"
+    "CLM_CHEONMACHONG_LAYOUT_001",
+    "CLM_EP01_OCCUPANT_006",
+    "CLM_EP01_STRUCT_004"
   ],
   "title": "한국고고학사전 「천마총」 (research-v2 S4)",
   "institution_or_author": "국립문화유산연구원",

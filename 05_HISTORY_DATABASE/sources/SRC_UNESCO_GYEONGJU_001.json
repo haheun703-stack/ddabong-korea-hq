@@ -1,0 +1,20 @@
+{
+  "source_id": "SRC_UNESCO_GYEONGJU_001",
+  "claim_ids": [
+    "CLM_EP01_TOMBS_001",
+    "CLM_EP01_TUMULI_002",
+    "CLM_EP01_MOUND_011",
+    "CLM_EP01_MODERN_012"
+  ],
+  "title": "UNESCO World Heritage — Gyeongju Historic Areas (research-v2 S1)",
+  "institution_or_author": "UNESCO World Heritage Centre",
+  "url_or_path": "https://whc.unesco.org/en/list/976/",
+  "verified_at": "2026-09-11",
+  "verified_by": "Claude Code (Story Engine Fact Check / Quality Engine Rights)",
+  "excerpt_or_summary": "경주역사유적지구: 신라 도읍의 궁궐·사찰·성곽·왕릉군 유산 경관. 대릉원지구(Tumuli Park Belt)는 왕릉 3개 그룹, 대부분 돔형 봉분, 이중 목관을 자갈로 덮은 구조, 금·유리·토기 등 부장품. 5개 지구가 신라 도시 구조·사회 구조·생활상 증거.",
+  "confidence": "FACT",
+  "uncertainty": "영상·사진은 All Rights Reserved (권리 RED).",
+  "source_type": "GOVERNMENT",
+  "rights_id": null,
+  "notes": "research-v2 source map 정규화 (P3)."
+}

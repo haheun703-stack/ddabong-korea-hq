@@ -16,9 +16,24 @@
 
 - **P-009** 원로(`CHAR_SILLA_ELITE_OBSERVER_01`) 옷 색 비(다홍) vs 청 · 과대 재질 — 관등 미설정이라 INTERPRETIVE (NEW).
 
+- **P-010** YELLOW 권리 4건 확정 (B5 박물관 기타 유물 페이지별 확인, Wikimedia CC BY-SA 2건 SA 수용 여부, 경주시 이미지 서면 확인) — 편집 전까지.
+
 **봇이 바로 갈 수 있는 것**
-- **P3 Source/Rights Ledger (다음 작업)**: research-v2 S1–S6 → `sources/`, claim safety table → `facts/`, 샷 `fact_ids` 연결. (복식 출처 7건·사실 8건은 이미 같은 폴더에 있음.)
+- P4 Shot Router: 49 샷 `router_decision.json` (H01–H06 → BLENDER_FLOW 재검토, 점수 확정).
 - P2 Character Master 준비: 복식 게이트 통과 → 남은 선행 조건은 예산(P-001)뿐.
+- graphics-spec v2 (G13 추가) — legacy HTML 은 수정하지 않고 새 문서로.
+
+## P3 — Source/Rights Ledger (2026-09-11 · DONE, 브랜치 `p1-continuity`)
+
+| 항목 | 산출 | 상태 |
+|---|---|---|
+| SOURCE | research-v2 S1–S6 전부 `05_HISTORY_DATABASE/sources/` (복식 7건 포함 총 13) | DONE |
+| FACT | `facts/CLM_EP01_*_001–013` (FACT 9 · INTERPRETIVE 4, hedge 필수) + 천마총 배치 1 + 복식 8 = 22 | DONE |
+| RIGHTS | `rights/` 11 — GREEN 5 (NRICH 1973 · 금관 2 · 허리띠 · 천마도) · YELLOW 4 · RED 2 (2019 간행물 · UNESCO/NHK) | DONE, YELLOW 는 P-010 |
+| 샷 연결 | 49 샷 전부 `fact_ids` + `evidence_role` (PRIMARY 16 · SUPPORTING 21 · CONTEXT 9 · NONE 3), ARCHIVE 20 샷 전부 `rights_ids` | DONE |
+| 자동 FAIL 규칙 | `validate.py ledger_rules()`: 출처 미연결 / ARCHIVE 권리 미연결 / RED 권리 사용 / 샷 등급 > 근거 등급(과도한 해석) / AI 라벨 누락 / INTERPRETIVE 사실 hedge 누락 | DONE (음성 테스트 통과) |
+| 리포트 | `02_SEASONS/S01/EP01/15_QA/P3_LEDGER_REPORT.md` (스크립트 생성) | DONE |
+| 검증 | 147/147 PASS, refs OK, FAIL 0 | DONE |
 - P3 Source/Rights Ledger: research-v2 S1–S6 → `05_HISTORY_DATABASE/sources/`, claim safety table → `facts/`, 그다음 샷 `fact_ids` 연결.
 - P4 Shot Router: 43개 샷 `router_decision.json` (특히 H01–H06 → BLENDER_FLOW 재검토).
 
@@ -59,7 +74,8 @@
 | RESEARCH | `episodes/ep01-research-verified-v2.md` | APPROVED |
 | SCRIPT | `episodes/ep01-production-script-v2.md` (v1은 PREVIOUS) | APPROVED |
 | SHOTLIST | `ep01-visual-assets`, `ep01-graphics-spec` (G01–G12) | APPROVED |
-| SCENE_BREAKDOWN | `02_SEASONS/S01/EP01/07_SHOTS/` 씬 9 · 샷 48 | DRAFT (P1, 조건부 승인) |
+| SCENE_BREAKDOWN | `02_SEASONS/S01/EP01/07_SHOTS/` 씬 9 · 샷 49 | DRAFT (P1, 조건부 승인) |
+| SOURCE_FACT_QA | `05_HISTORY_DATABASE/{sources,facts,rights}/` + `15_QA/P3_LEDGER_REPORT.md` | DONE (P3) · YELLOW 권리 4건 P-010 |
 | REAL_SHOOT | `ep01-field-shoot-plan` 체크리스트 | 계획 APPROVED · **촬영 미실행** |
 | ARCHIVE | `ep01-archive-photos` (1973 NRICH), `ep01-artifact-library` | 선별 APPROVED · 파일 다운로드 미실행 |
 | HIGGSFIELD | `ep01-higgsfield-prompts` 7컷 | 프롬프트 APPROVED · **생성 금지 (Money Gate 미승인, 예산 미확인)** |
@@ -102,6 +118,8 @@
 
 ## 최근 변경 (최신순)
 
+- **2026-09-11 Claude Code** — P3 Source/Rights Ledger 완료 (D-013): 출처 13 · 사실 22 · 권리 11, 49 샷 fact/rights/evidence_role 연결, 자동 FAIL 규칙 6종, 리포트. 검증 147/147.
+- **2026-09-11 사용자** — **D-013.** `b918b24` push, P3 진입, `evidence_role` 필드.
 - **2026-09-11 Claude Code** — SCRIPT_ROUGHCUT_DELTA 4/4 정리: X2 문구 반영, X3 금관 위치 단면 G13 신규 샷 (`EP01_S07_SH005`, NRICH S4 근거 `CLM_CHEONMACHONG_LAYOUT_001`), 천마총 location 배치 정보 보강. 검증 119/119.
 - **2026-09-11 Claude Code** — 복식 Historical QA (D-011 게이트 통과): 출처 7 · 사실 8 인스턴스, 복식 3종 전 항목 근거 등급 표기. 검증 115/115. P-009 등록.
 - **2026-09-11 Claude Code** — D-008~D-012 반영: 스키마 `master_pack_tier`, 검증기 등급·복식 TBD 게이트, S04·S06 AI 컷 분할 (43 → 48 샷), SCRIPT_ROUGHCUT_DELTA, Web HQ P1 COMPLETE / P2 NEXT.

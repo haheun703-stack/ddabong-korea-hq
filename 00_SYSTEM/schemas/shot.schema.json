@@ -147,6 +147,16 @@
         "type": "string"
       }
     },
+    "evidence_role": {
+      "type": "string",
+      "enum": [
+        "PRIMARY",
+        "SUPPORTING",
+        "CONTEXT",
+        "NONE"
+      ],
+      "description": "D-013. 이 샷이 fact_ids 에 대해 하는 역할: PRIMARY = 그 사실을 직접 보여주는 증거 화면 / SUPPORTING = 사실을 뒷받침·보완(재현 포함) / CONTEXT = 분위기·현재 맥락 / NONE = 역사 주장 없음(브랜드·방법론 카드). NONE 이 아니면 fact_ids 필수. ARCHIVE·AI 파이프라인은 NONE 불가."
+    },
     "rights_ids": {
       "type": "array",
       "items": {

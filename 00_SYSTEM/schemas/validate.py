@@ -18,7 +18,7 @@ SCHEMAS = {p.stem.replace(".schema", ""): json.loads(p.read_text(encoding="utf-8
 STORE = {v["$id"]: v for v in SCHEMAS.values()}
 
 DIR_SCHEMA = {"era": "era", "locations": "location", "characters": "character", "costumes": "costume",
-              "facts": "fact", "sources": "source"}
+              "facts": "fact", "sources": "source", "rights": "rights"}
 
 def pick(path, data):
     ref = data.get("$schema", "")
@@ -62,15 +62,44 @@ def pack_rules(p, d, costumes):
             if tbd: errs.append(f"{rel}: master pack started while {cid} still TBD ({', '.join(tbd)}) (D-011)")
     return errs
 
+RANK = {"FACT": 3, "PROBABLE": 2, "INTERPRETIVE": 1, "ARTISTIC": 0}
+EVIDENCE_PIPES = {"ARCHIVE", "HIGGSFIELD", "AI_STILL", "BLENDER_FLOW"}
+
+def ledger_rules(p, d, facts, rights):
+    """P3 (정본 §9 §10, D-013): source-less shot / unresolved rights / over-interpretation -> FAIL."""
+    errs, rel = [], p.relative_to(ROOT)
+    role = d.get("evidence_role")
+    if role is None:
+        errs.append(f"{rel}: evidence_role missing (D-013)"); return errs
+    if role != "NONE" and not d.get("fact_ids"):
+        errs.append(f"{rel}: evidence_role {role} but no fact_ids (source-less shot)")
+    if d["pipeline"] in EVIDENCE_PIPES and role == "NONE":
+        errs.append(f"{rel}: {d['pipeline']} shot cannot have evidence_role NONE")
+    if d["pipeline"] == "ARCHIVE" and not d.get("rights_ids"):
+        errs.append(f"{rel}: ARCHIVE shot without rights_ids (unresolved rights)")
+    for r in d.get("rights_ids", []):
+        if rights.get(r, {}).get("status") == "RED":
+            errs.append(f"{rel}: uses RED rights {r}")
+    fs = [facts[c] for c in d.get("fact_ids", []) if c in facts]
+    if fs:
+        best = max(RANK[f["confidence"]] for f in fs)
+        if RANK[d["historical_confidence"]] > best:
+            errs.append(f"{rel}: historical_confidence {d['historical_confidence']} exceeds strongest fact ({[k for k,v in RANK.items() if v==best][0]}) - over-interpretation")
+    if d["pipeline"] in ("HIGGSFIELD", "AI_STILL", "BLENDER_FLOW", "FLOW_VEO") and not d.get("ai_label"):
+        errs.append(f"{rel}: AI pipeline without ai_label")
+    return errs
+
 def refcheck(paths):
     """Cross-reference check for real instances (not templates): every referenced ID must exist."""
     ids, docs = {}, []
     key = {"era": "era_id", "location": "location_id", "character": "character_id", "costume": "costume_id",
-           "fact": "claim_id", "source": "source_id", "scene": "scene_id", "shot": "shot_id", "episode": "episode_id"}
+           "fact": "claim_id", "source": "source_id", "rights": "rights_id", "scene": "scene_id", "shot": "shot_id", "episode": "episode_id"}
     for p in paths:
         data = json.loads(p.read_text(encoding="utf-8")); name = pick(p, data)
         if name in key: ids.setdefault(name, set()).add(data.get(key[name])); docs.append((p, name, data))
     costumes = {d["costume_id"]: d for _, n, d in docs if n == "costume"}
+    facts = {d["claim_id"]: d for _, n, d in docs if n == "fact"}
+    rights = {d["rights_id"]: d for _, n, d in docs if n == "rights"}
     has = lambda kind, v: v in ids.get(kind, set())
     errs = []
     def need(p, kind, vals, field):
@@ -82,13 +111,17 @@ def refcheck(paths):
             need(p, "character", d.get("characters"), "characters")
         if name == "shot":
             need(p, "costume", d.get("costumes"), "costumes"); need(p, "scene", d.get("scene_id"), "scene_id")
-            need(p, "fact", d.get("fact_ids"), "fact_ids")
+            need(p, "fact", d.get("fact_ids"), "fact_ids"); need(p, "rights", d.get("rights_ids"), "rights_ids")
+            errs.extend(ledger_rules(p, d, facts, rights))
         if name == "scene": need(p, "shot", d.get("shot_ids"), "shot_ids")
         if name == "character":
             need(p, "era", d.get("era"), "era"); need(p, "costume", d.get("costume_ids"), "costume_ids")
             errs.extend(pack_rules(p, d, costumes))
         if name in ("location", "costume"): need(p, "era", d.get("era"), "era")
-        if name == "fact": need(p, "source", d.get("source_ids"), "source_ids")
+        if name == "fact":
+            need(p, "source", d.get("source_ids"), "source_ids")
+            if d["confidence"] in ("INTERPRETIVE", "ARTISTIC") and not d.get("hedge_required"):
+                errs.append(f"{p.relative_to(ROOT)}: {d['confidence']} claim must set hedge_required=true")
         if name == "episode":
             need(p, "era", d.get("era_ids"), "era_ids"); need(p, "location", d.get("location_ids"), "location_ids")
             need(p, "character", d.get("character_ids"), "character_ids"); need(p, "scene", d.get("scene_ids"), "scene_ids")

@@ -1,0 +1,16 @@
+{
+  "claim_id": "CLM_EP01_OCCUPANT_006",
+  "text_ko": "피장자는 규모·유물로 보아 왕 또는 왕에 준하는 인물로 추정되나, 신원은 확정되지 않았다.",
+  "text_en": "The occupant was probably a king or of comparable rank, but the identity is not certain.",
+  "confidence": "FACT",
+  "source_ids": [
+    "SRC_NRICH_CHEONMACHONG_DICT_001"
+  ],
+  "used_in": [
+    "EP01_S03_SH005"
+  ],
+  "hedge_required": false,
+  "verified_at": "2026-09-11",
+  "verified_by": "Claude Code (Story Engine Fact Check / Quality Engine Rights)",
+  "notes": "불확실성 자체가 사실. 특정 왕 이름을 대지 않는다."
+}

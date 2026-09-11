@@ -1,0 +1,26 @@
+{
+  "claim_id": "CLM_EP01_STRUCT_004",
+  "text_ko": "천마총은 목곽(6.6×4.2 m)에 관(2.15×0.8 m)을 넣고 위에 돌을 쌓은 뒤 흙 봉분(지름 47 m·높이 12.7 m)을 올린 구조다.",
+  "text_en": "Cheonmachong: wooden chamber 6.6×4.2 m with coffin 2.15×0.8 m, stones piled above, earth mound 47 m across and 12.7 m high.",
+  "confidence": "FACT",
+  "source_ids": [
+    "SRC_GNM_CHEONMA_EXHIBITION_001",
+    "SRC_NRICH_CHEONMACHONG_DICT_001"
+  ],
+  "used_in": [
+    "EP01_S04_SH001",
+    "EP01_S04_SH002",
+    "EP01_S04_SH003",
+    "EP01_S04_SH004",
+    "EP01_S04_SH005",
+    "EP01_S04_SH006",
+    "EP01_S04_SH007",
+    "EP01_S06_SH003",
+    "EP01_S06_SH010",
+    "EP01_S08_SH002"
+  ],
+  "hedge_required": false,
+  "verified_at": "2026-09-11",
+  "verified_by": "Claude Code (Story Engine Fact Check / Quality Engine Rights)",
+  "notes": null
+}

@@ -1,0 +1,18 @@
+{
+  "claim_id": "CLM_EP01_TUMULI_002",
+  "text_ko": "대릉원지구는 왕릉 3개 그룹으로 구성, 대부분 돔형 봉분. 목곽을 자갈로 덮은 구조이며 금·유리·토기 등이 출토됐다.",
+  "text_en": "Tumuli Park Belt has three tomb groups, mostly domed; wooden chambers covered with gravel; gold, glass and ceramics excavated.",
+  "confidence": "FACT",
+  "source_ids": [
+    "SRC_UNESCO_GYEONGJU_001"
+  ],
+  "used_in": [
+    "EP01_S02_SH001",
+    "EP01_S02_SH002",
+    "EP01_S02_SH003"
+  ],
+  "hedge_required": false,
+  "verified_at": "2026-09-11",
+  "verified_by": "Claude Code (Story Engine Fact Check / Quality Engine Rights)",
+  "notes": null
+}

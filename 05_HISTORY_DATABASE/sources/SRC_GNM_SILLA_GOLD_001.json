@@ -1,0 +1,20 @@
+{
+  "source_id": "SRC_GNM_SILLA_GOLD_001",
+  "claim_ids": [
+    "CLM_EP01_GOLD_007",
+    "CLM_EP01_DISPLAY_009",
+    "CLM_EP01_ORDER_010",
+    "CLM_EP01_MOUND_011"
+  ],
+  "title": "국립경주박물관 「신라, 황금의 나라」 (research-v2 S2)",
+  "institution_or_author": "국립경주박물관",
+  "url_or_path": "https://gyeongju.museum.go.kr/kor/html/sub04/0403.html?mode=V&no=5053",
+  "verified_at": "2026-09-11",
+  "verified_by": "Claude Code (Story Engine Fact Check / Quality Engine Rights)",
+  "excerpt_or_summary": "5세기~6세기 초 신라 황금문화 전성기: 지배층은 왕경에 거대 무덤을 만들고 피장자를 정교한 금제품으로 치장, 금으로 신성함·정통성·영원한 권위를 표현.",
+  "confidence": "FACT",
+  "uncertainty": "박물관 공식 해석 (해석의 출처가 공식기관이라는 점이 FACT). 개별 유물 이미지 권리는 페이지별 확인.",
+  "source_type": "MUSEUM",
+  "rights_id": null,
+  "notes": "research-v2 source map 정규화 (P3)."
+}

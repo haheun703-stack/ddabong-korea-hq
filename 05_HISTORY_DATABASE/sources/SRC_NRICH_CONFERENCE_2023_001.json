@@ -1,0 +1,19 @@
+{
+  "source_id": "SRC_NRICH_CONFERENCE_2023_001",
+  "claim_ids": [
+    "CLM_EP01_FUNERAL_008",
+    "CLM_EP01_ORDER_010",
+    "CLM_EP01_RITES_013"
+  ],
+  "title": "『천마총과 동아시아 고분문화』 학술대회 자료집 (research-v2 S5)",
+  "institution_or_author": "국립문화유산연구원 2023",
+  "url_or_path": "https://portal.nrich.go.kr/kor/originalUsrView.do?info_idx=9001&menuIdx=1046",
+  "verified_at": "2026-09-11",
+  "verified_by": "Claude Code (Story Engine Fact Check / Quality Engine Rights)",
+  "excerpt_or_summary": "수록 논문: 천마총을 통한 적석목곽분 구조 재검토 / 천마총 부장품 구성과 특징 / 천마총 장례 절차와 재현 전략. 장례 과정·표상 전략이 정식 연구 주제임을 확인.",
+  "confidence": "FACT",
+  "uncertainty": "전문 미열람. 특정 결론을 이 논문에 귀속시키지 않는다.",
+  "source_type": "ACADEMIC",
+  "rights_id": null,
+  "notes": "research-v2 source map 정규화 (P3)."
+}

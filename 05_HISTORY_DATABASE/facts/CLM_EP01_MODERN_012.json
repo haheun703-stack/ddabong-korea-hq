@@ -1,0 +1,23 @@
+{
+  "claim_id": "CLM_EP01_MODERN_012",
+  "text_ko": "현재 경주 도심에서는 도로·주택·상점 사이로 왕릉 봉분이 솟아 있고, 사람들이 그 사이를 걷는다.",
+  "text_en": "In present-day Gyeongju the mounds rise among roads, houses and shops, and people walk between them.",
+  "confidence": "FACT",
+  "source_ids": [
+    "SRC_UNESCO_GYEONGJU_001"
+  ],
+  "used_in": [
+    "EP01_S01_SH001",
+    "EP01_S01_SH002",
+    "EP01_S06_SH007",
+    "EP01_S06_SH011",
+    "EP01_S08_SH001",
+    "EP01_S08_SH003",
+    "EP01_S09_SH003",
+    "EP01_S09_SH004"
+  ],
+  "hedge_required": false,
+  "verified_at": "2026-09-11",
+  "verified_by": "Claude Code (Story Engine Fact Check / Quality Engine Rights)",
+  "notes": "현장 촬영이 직접 증거. UNESCO 는 '도시 안의 유산 경관' 맥락 출처."
+}

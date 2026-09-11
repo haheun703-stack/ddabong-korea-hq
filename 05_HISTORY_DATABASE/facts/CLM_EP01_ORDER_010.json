@@ -1,0 +1,18 @@
+{
+  "claim_id": "CLM_EP01_ORDER_010",
+  "text_ko": "지배자의 죽음은 사회·정치 질서를 재확인할 필요를 만들었을 수 있다.",
+  "text_en": "The death of a ruler may have created a need to reaffirm social and political order.",
+  "confidence": "INTERPRETIVE",
+  "source_ids": [
+    "SRC_GNM_SILLA_GOLD_001",
+    "SRC_NRICH_CONFERENCE_2023_001"
+  ],
+  "used_in": [
+    "EP01_S06_SH002",
+    "EP01_S06_SH005"
+  ],
+  "hedge_required": true,
+  "verified_at": "2026-09-11",
+  "verified_by": "Claude Code (Story Engine Fact Check / Quality Engine Rights)",
+  "notes": "금지: '질서 유지를 위해 지었다'를 단정. 'allows us to ask whether' 형태만."
+}

@@ -23,13 +23,17 @@
   "camera_id": null,
   "prompt_id": null,
   "router_decision_id": null,
-  "fact_ids": [],
+  "fact_ids": [
+    "CLM_EP01_TOMBS_001",
+    "CLM_EP01_MODERN_012"
+  ],
   "rights_ids": [],
   "ai_label": null,
   "version_history": [],
   "approved_version": null,
   "created_at": "2026-09-11",
   "updated_at": "2026-09-11",
-  "updated_by": "Claude Code (Continuity Engine)",
-  "notes": "TC 0:08–0:18 (러프컷 v1 기준, 내레이션 녹음 후 조정). REAL 우선순위 1–3. 이 구도는 EP01_S09_SH003 에서 다시 쓴다 → 렌즈·위치 기록 필수. 점수(camera_complexity 등)는 Continuity Engine 추정치 — P4 라우터에서 확정."
+  "updated_by": "Claude Code (Story Engine Fact Check / Quality Engine Rights)",
+  "notes": "TC 0:08–0:18 (러프컷 v1 기준, 내레이션 녹음 후 조정). REAL 우선순위 1–3. 이 구도는 EP01_S09_SH003 에서 다시 쓴다 → 렌즈·위치 기록 필수. 점수(camera_complexity 등)는 Continuity Engine 추정치 — P4 라우터에서 확정.",
+  "evidence_role": "CONTEXT"
 }

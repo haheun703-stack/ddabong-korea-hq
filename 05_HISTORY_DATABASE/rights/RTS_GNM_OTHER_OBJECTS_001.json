@@ -1,0 +1,19 @@
+{
+  "rights_id": "RTS_GNM_OTHER_OBJECTS_001",
+  "asset_id": "ASSET_GNM_CHEONMACHONG_OTHER_OBJECTS_V01",
+  "source": "https://gyeongju.museum.go.kr/",
+  "creator": "국립경주박물관",
+  "license": "페이지별 확인 필요 (KOGL 1 또는 4)",
+  "commercial_use": "UNKNOWN",
+  "modification_allowed": "UNKNOWN",
+  "attribution_required": "YES",
+  "attribution_text": null,
+  "expiration": null,
+  "proof": null,
+  "research_permission": "YES",
+  "media_reuse_permission": "UNKNOWN",
+  "status": "YELLOW",
+  "checked_at": "2026-09-11",
+  "checked_by": "Claude Code (Story Engine Fact Check / Quality Engine Rights)",
+  "notes": "B5 귀걸이·유리·토기·말갖춤. 소장품 페이지마다 라벨 확인 → 1유형이면 개별 GREEN 인스턴스로 분리. 4유형이면 사용 금지."
+}

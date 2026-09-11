@@ -1,0 +1,20 @@
+{
+  "claim_id": "CLM_EP01_TOMBS_001",
+  "text_ko": "경주에는 신라 왕릉군이 집중되어 있고, 왕릉은 도시 경관의 일부다.",
+  "text_en": "Gyeongju holds concentrated Silla royal tomb groups that form part of the city landscape.",
+  "confidence": "FACT",
+  "source_ids": [
+    "SRC_UNESCO_GYEONGJU_001"
+  ],
+  "used_in": [
+    "EP01_S01_SH002",
+    "EP01_S01_SH003",
+    "EP01_S01_SH004",
+    "EP01_S02_SH001",
+    "EP01_S08_SH003"
+  ],
+  "hedge_required": false,
+  "verified_at": "2026-09-11",
+  "verified_by": "Claude Code (Story Engine Fact Check / Quality Engine Rights)",
+  "notes": null
+}

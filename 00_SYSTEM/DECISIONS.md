@@ -57,7 +57,11 @@
 **반영** `validate.py` — 복식에 TBD 가 남아 있는데 Master Pack 슬롯이 DRAFT/APPROVED 가 되면 FAIL.
 
 ### D-012 · 2026-09-11 · P1 APPROVED WITH CONDITIONS · Git (사용자)
-**승인 내용** P1 승인 (조건: D-008~D-011). `6a60b1b` 를 `p1-continuity` 에 push. main 병합은 다음 검수 게이트 전까지 보류. Web HQ 에 P1 COMPLETE / P2 NEXT 표시.
+**승인 내용** P1 승인 (조건: D-008~D-011). `6a60b1b` 를 `p1-continuity` 에 push. main 병합은 다음 검수 게이트 전까지 보류. Web HQ 표시는 merge 시점에 동기 (main 만 배포).
+
+### D-013 · 2026-09-11 · P3 진입 승인 + Shot `evidence_role` (사용자)
+**승인 내용** `b918b24` push. P3 Source/Rights Ledger 진입: S1–S6 → SOURCE, 주장 → FACT(등급), 49 샷 `fact_ids` + 외부 자산 `rights_id`, 출처 미연결 샷 / 권리 미확인 자산 / 과도한 해석 자동 FAIL, 검증 리포트. 각 샷에 `evidence_role = PRIMARY / SUPPORTING / CONTEXT / NONE` 추가 (G13 = PRIMARY, 현대 실사 = CONTEXT).
+**반영** `shot.schema.json` `evidence_role`, `validate.py` `ledger_rules()`, `05_HISTORY_DATABASE/{sources,facts,rights}/`, `02_SEASONS/S01/EP01/15_QA/P3_LEDGER_REPORT.md`.
 
 ---
 
@@ -83,6 +87,10 @@
 **현황** `COSTUME_SILLA_ELITE_A01` 의 다른 항목은 PROBABLE 로 확정됐으나, 옷 색과 과대(허리띠) 재질은 인물의 관등을 정하지 않으면 근거로 못 정한다. 삼국사기 색복지(법흥왕대) 기준 자=최고위, 비=아찬~급찬, 청=대나마·나마.
 **제안** 원로는 "왕 아님·피장자 아님"이므로 **비(다홍) 계열 + 은·동 과대** 권장. 자색·금제 과대는 피장자/왕급이라 제외. 5세기 전반에 이 색 규정이 있었는지는 불확실하므로 INTERPRETIVE 로 유지.
 **영향** Master Pack 생성 프롬프트의 COSTUME LOCK.
+
+### P-010 · YELLOW 권리 4건 확정 (P3, 2026-09-11)
+**현황** `RTS_GNM_OTHER_OBJECTS_001` (박물관 기타 유물 — 페이지별 KOGL 유형 확인), `RTS_WIKI_DAEREUNGWON_001` · `RTS_WIKI_CHEONMACHONG_ENTRANCE_001` (CC BY-SA — Share-Alike 의무 수용 여부), `RTS_GYEONGJU_CITY_IMAGE_001` (상업 사용 서면 확인). 현재 YELLOW 로 연결된 샷: `EP01_S02_SH003`, `EP01_S05_SH001` (B5 만).
+**제안** 자체 촬영(BLUE)이 확보되면 A1–A3 백업은 미사용 → RED 아닌 '미사용'으로 종료. B5 는 개별 페이지 확인 후 GREEN 인스턴스 분리. 편집 시작 전까지 결정.
 
 ### P-008 · Shot 스키마에 인물 가시성 필드 추가 (P2 백로그, 사용자 제안 2026-09-11)
 **제안** `shot.schema.json` 에 `foreground_role` 또는 `character_visibility` (예: BACKGROUND / MIDGROUND / FOREGROUND_IDENTIFIABLE) 를 추가해, 군중 인물이 전경·식별 가능하게 쓰이면 `validate.py` 가 FULL Pack 승격을 자동 요구하게 한다 (D-008 규칙 자동화). 지금은 사람 검수.

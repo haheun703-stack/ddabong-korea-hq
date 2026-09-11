@@ -1,0 +1,20 @@
+{
+  "claim_id": "CLM_EP01_FUNERAL_008",
+  "text_ko": "이 규모의 장례는 단순한 사적 이별이 아니라 조직된 사회적 행사였을 수 있다.",
+  "text_en": "A funeral on this scale may have been an organised social event rather than a private farewell.",
+  "confidence": "INTERPRETIVE",
+  "source_ids": [
+    "SRC_GNM_CHEONMA_EXHIBITION_001",
+    "SRC_NRICH_CONFERENCE_2023_001"
+  ],
+  "used_in": [
+    "EP01_S04_SH004",
+    "EP01_S04_SH005",
+    "EP01_S04_SH006",
+    "EP01_S06_SH002"
+  ],
+  "hedge_required": true,
+  "verified_at": "2026-09-11",
+  "verified_by": "Claude Code (Story Engine Fact Check / Quality Engine Rights)",
+  "notes": null
+}

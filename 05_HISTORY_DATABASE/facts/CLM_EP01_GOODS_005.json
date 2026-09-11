@@ -1,0 +1,23 @@
+{
+  "claim_id": "CLM_EP01_GOODS_005",
+  "text_ko": "금관·귀걸이·장신구·무기·용기·칠기·유리·말갖춤이 피장자와 부장궤에 부장됐다. 자작나무 껍질 말다래에 천마가 그려져 있다.",
+  "text_en": "Gold crown, earrings, ornaments, weapons, vessels, lacquerware, glass and horse gear were placed with the dead and in the chest; the birch-bark saddle flap bears a heavenly horse.",
+  "confidence": "FACT",
+  "source_ids": [
+    "SRC_GNM_CHEONMA_EXHIBITION_001",
+    "SRC_KOREA_KR_CHEONMADO_001"
+  ],
+  "used_in": [
+    "EP01_S02_SH003",
+    "EP01_S03_SH003",
+    "EP01_S03_SH004",
+    "EP01_S05_SH001",
+    "EP01_S05_SH003",
+    "EP01_S05_SH004",
+    "EP01_S07_SH001"
+  ],
+  "hedge_required": false,
+  "verified_at": "2026-09-11",
+  "verified_by": "Claude Code (Story Engine Fact Check / Quality Engine Rights)",
+  "notes": null
+}

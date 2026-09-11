@@ -35,13 +35,17 @@
   "camera_id": null,
   "prompt_id": null,
   "router_decision_id": null,
-  "fact_ids": [],
+  "fact_ids": [
+    "CLM_EP01_FUNERAL_008",
+    "CLM_EP01_ORDER_010"
+  ],
   "rights_ids": [],
   "ai_label": "AI Visual Reconstruction",
   "version_history": [],
   "approved_version": null,
   "created_at": "2026-09-11",
   "updated_at": "2026-09-11",
-  "updated_by": "Claude Code (Continuity Engine)",
-  "notes": "TC 4:27–4:33 (러프컷 v1 기준, 내레이션 녹음 후 조정). H04. 6초 핵심 컷 (D-009, 원래 16초). 반복 인물 등장 → master_frame EP01_S06_MASTER 필요 (P2). 운반·작업·의례 준비 동작은 정본 §6 상 Flow/Veo 영역 → P4 에서 BLENDER_FLOW 재검토. 파이프라인은 legacy 팩 태그 그대로 (잠정). P4 Visual Router 에서 재판정. 점수(camera_complexity 등)는 Continuity Engine 추정치 — P4 라우터에서 확정."
+  "updated_by": "Claude Code (Story Engine Fact Check / Quality Engine Rights)",
+  "notes": "TC 4:27–4:33 (러프컷 v1 기준, 내레이션 녹음 후 조정). H04. 6초 핵심 컷 (D-009, 원래 16초). 반복 인물 등장 → master_frame EP01_S06_MASTER 필요 (P2). 운반·작업·의례 준비 동작은 정본 §6 상 Flow/Veo 영역 → P4 에서 BLENDER_FLOW 재검토. 파이프라인은 legacy 팩 태그 그대로 (잠정). P4 Visual Router 에서 재판정. 점수(camera_complexity 등)는 Continuity Engine 추정치 — P4 라우터에서 확정.",
+  "evidence_role": "SUPPORTING"
 }

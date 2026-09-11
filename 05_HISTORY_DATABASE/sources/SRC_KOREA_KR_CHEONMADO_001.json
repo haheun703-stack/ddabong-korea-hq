@@ -1,0 +1,17 @@
+{
+  "source_id": "SRC_KOREA_KR_CHEONMADO_001",
+  "claim_ids": [
+    "CLM_EP01_GOODS_005"
+  ],
+  "title": "천마총 천마도 정부 설명 (research-v2 S6)",
+  "institution_or_author": "korea.kr 정책브리핑",
+  "url_or_path": "https://www.korea.kr/news/policyNewsView.do?newsId=148957403",
+  "verified_at": "2026-09-11",
+  "verified_by": "Claude Code (Story Engine Fact Check / Quality Engine Rights)",
+  "excerpt_or_summary": "1973년 155호분 출토. 자작나무 껍질을 여러 겹 댄 말다래에 그림. 5~6세기 신라.",
+  "confidence": "FACT",
+  "uncertainty": null,
+  "source_type": "GOVERNMENT",
+  "rights_id": null,
+  "notes": "research-v2 source map 정규화 (P3)."
+}

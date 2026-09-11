@@ -25,13 +25,17 @@
   "camera_id": null,
   "prompt_id": null,
   "router_decision_id": null,
-  "fact_ids": [],
+  "fact_ids": [
+    "CLM_EP01_MODERN_012",
+    "CLM_EP01_TOMBS_001"
+  ],
   "rights_ids": [],
   "ai_label": null,
   "version_history": [],
   "approved_version": null,
   "created_at": "2026-09-11",
   "updated_at": "2026-09-11",
-  "updated_by": "Claude Code (Continuity Engine)",
-  "notes": "TC 6:25–6:30 (러프컷 v1 기준, 내레이션 녹음 후 조정). G10. 삼각대 고정, 봉분은 약간 오프축. 구도를 LOC_GYEONGJU_DAEREUNGWON_V01.spatial_lock.match_cut_frame 에 기록. 점수(camera_complexity 등)는 Continuity Engine 추정치 — P4 라우터에서 확정."
+  "updated_by": "Claude Code (Story Engine Fact Check / Quality Engine Rights)",
+  "notes": "TC 6:25–6:30 (러프컷 v1 기준, 내레이션 녹음 후 조정). G10. 삼각대 고정, 봉분은 약간 오프축. 구도를 LOC_GYEONGJU_DAEREUNGWON_V01.spatial_lock.match_cut_frame 에 기록. 점수(camera_complexity 등)는 Continuity Engine 추정치 — P4 라우터에서 확정.",
+  "evidence_role": "CONTEXT"
 }

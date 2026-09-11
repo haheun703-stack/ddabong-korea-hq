@@ -1,7 +1,11 @@
 {
   "source_id": "SRC_GNM_CHEONMA_EXHIBITION_001",
   "claim_ids": [
-    "CLM_CHEONMACHONG_LAYOUT_001"
+    "CLM_CHEONMACHONG_LAYOUT_001",
+    "CLM_EP01_EXCAV_003",
+    "CLM_EP01_FUNERAL_008",
+    "CLM_EP01_GOODS_005",
+    "CLM_EP01_STRUCT_004"
   ],
   "title": "특별전 「천마, 다시 날다」 — 천마총 구조·부장품 (research-v2 S3)",
   "institution_or_author": "국립경주박물관",

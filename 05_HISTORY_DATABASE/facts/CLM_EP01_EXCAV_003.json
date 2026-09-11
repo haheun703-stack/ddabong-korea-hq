@@ -1,0 +1,20 @@
+{
+  "claim_id": "CLM_EP01_EXCAV_003",
+  "text_ko": "천마총은 1973년 황남동 155호분으로 발굴됐다(황남대총 발굴 전 시험 발굴). 11,526점 수습. 1974년 천마도 말다래에서 따 명명.",
+  "text_en": "Cheonmachong was excavated in 1973 as Tomb No. 155 (test dig before Hwangnamdaechong); 11,526 objects; named in 1974 after the heavenly-horse saddle flap.",
+  "confidence": "FACT",
+  "source_ids": [
+    "SRC_GNM_CHEONMA_EXHIBITION_001"
+  ],
+  "used_in": [
+    "EP01_S03_SH001",
+    "EP01_S03_SH002",
+    "EP01_S03_SH003",
+    "EP01_S06_SH009",
+    "EP01_S09_SH001"
+  ],
+  "hedge_required": false,
+  "verified_at": "2026-09-11",
+  "verified_by": "Claude Code (Story Engine Fact Check / Quality Engine Rights)",
+  "notes": "대본 v2 'more than eleven thousand' 과 일치."
+}

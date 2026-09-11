@@ -6,7 +6,7 @@
   "purpose": "현재 봉분을 멀리서 바라보는 시점 — H05 시선을 실사로 이어받기",
   "era": "PRESENT_DAY",
   "location": "LOC_GYEONGJU_DAEREUNGWON_V01",
-  "historical_confidence": "FACT",
+  "historical_confidence": "INTERPRETIVE",
   "camera_complexity": 20,
   "spatial_accuracy": 50,
   "human_motion": 10,
@@ -21,13 +21,17 @@
   "camera_id": null,
   "prompt_id": null,
   "router_decision_id": null,
-  "fact_ids": [],
+  "fact_ids": [
+    "CLM_EP01_MODERN_012",
+    "CLM_EP01_MOUND_011"
+  ],
   "rights_ids": [],
   "ai_label": null,
   "version_history": [],
   "approved_version": null,
   "created_at": "2026-09-11",
   "updated_at": "2026-09-11",
-  "updated_by": "Claude Code (Continuity Engine)",
-  "notes": "TC 4:54–4:58 (러프컷 v1 기준, 내레이션 녹음 후 조정). D-009 채움 컷 (H05 분할분). 현장 촬영 시 H05 와 비슷한 '뒤에서 바라보는' 구도로. 점수(camera_complexity 등)는 Continuity Engine 추정치 — P4 라우터에서 확정."
+  "updated_by": "Claude Code (Story Engine Fact Check / Quality Engine Rights)",
+  "notes": "TC 4:54–4:58 (러프컷 v1 기준, 내레이션 녹음 후 조정). D-009 채움 컷 (H05 분할분). 현장 촬영 시 H05 와 비슷한 '뒤에서 바라보는' 구도로. 점수(camera_complexity 등)는 Continuity Engine 추정치 — P4 라우터에서 확정.",
+  "evidence_role": "CONTEXT"
 }

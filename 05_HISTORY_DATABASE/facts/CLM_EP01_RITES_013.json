@@ -1,0 +1,14 @@
+{
+  "claim_id": "CLM_EP01_RITES_013",
+  "text_ko": "천마총의 장례 절차와 재현(표상) 전략은 국립문화유산연구원 학술대회의 정식 연구 주제다.",
+  "text_en": "Cheonmachong funeral procedure and representational strategy are formal research topics at an NRICH conference.",
+  "confidence": "FACT",
+  "source_ids": [
+    "SRC_NRICH_CONFERENCE_2023_001"
+  ],
+  "used_in": [],
+  "hedge_required": false,
+  "verified_at": "2026-09-11",
+  "verified_by": "Claude Code (Story Engine Fact Check / Quality Engine Rights)",
+  "notes": "특정 결론을 인용하지 않는다."
+}
