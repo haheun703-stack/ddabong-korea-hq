@@ -1,3 +1,5 @@
+> **SUPERSEDED by `00_SYSTEM/CURRENT_STATUS.md` (2026-09-11).** 이 파일은 2026-08-14 체크포인트 보존용이며 갱신하지 않는다.
+
 # DDABONG KOREA — NEXT SESSION CHECKPOINT
 
 Date saved: 2026-08-14

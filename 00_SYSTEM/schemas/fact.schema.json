@@ -1,0 +1,72 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://haheun703-stack.github.io/ddabong-korea-hq/00_SYSTEM/schemas/fact.schema.json",
+  "title": "FACT / CLAIM (정본 §9)",
+  "description": "역사 주장 단위. 기록에 없는 내면 생각을 FACT로 두지 않는다.",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "claim_id": {
+      "type": "string",
+      "pattern": "^CLM_[A-Z0-9_]+_\\d{3}$"
+    },
+    "text_ko": {
+      "type": "string"
+    },
+    "text_en": {
+      "type": "string"
+    },
+    "confidence": {
+      "type": "string",
+      "enum": [
+        "FACT",
+        "PROBABLE",
+        "INTERPRETIVE",
+        "ARTISTIC"
+      ]
+    },
+    "source_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "minItems": 1
+    },
+    "used_in": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "shot_id / scene_id / script 블록 ID"
+    },
+    "hedge_required": {
+      "type": "boolean",
+      "description": "INTERPRETIVE 이상이면 might/may 표현 필수"
+    },
+    "verified_at": {
+      "type": "string",
+      "description": "YYYY-MM-DD",
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+    },
+    "verified_by": {
+      "type": "string",
+      "description": "행위자 (사용자 / 에이전트 이름)"
+    },
+    "notes": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  },
+  "required": [
+    "claim_id",
+    "text_ko",
+    "text_en",
+    "confidence",
+    "source_ids",
+    "used_in",
+    "hedge_required",
+    "verified_at"
+  ]
+}

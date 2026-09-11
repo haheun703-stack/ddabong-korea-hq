@@ -1,0 +1,445 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://haheun703-stack.github.io/ddabong-korea-hq/00_SYSTEM/schemas/character.schema.json",
+  "title": "CHARACTER (정본 §5·§20)",
+  "description": "반복 등장 역사 인물. Character Master Pack 10종이 모두 APPROVED 이어야 status=CHARACTER_MASTER_APPROVED 가능. 유료 비디오 생성 전 필수.",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "character_id": {
+      "type": "string",
+      "description": "예: CHAR_SILLA_OFFICIAL_01",
+      "pattern": "^CHAR_[A-Z0-9_]+_\\d{2}$"
+    },
+    "name_ko": {
+      "type": "string"
+    },
+    "name_en": {
+      "type": "string"
+    },
+    "role": {
+      "type": "string"
+    },
+    "era": {
+      "type": "string"
+    },
+    "historical_basis": {
+      "type": "string",
+      "enum": [
+        "FACT",
+        "PROBABLE",
+        "INTERPRETIVE",
+        "ARTISTIC"
+      ],
+      "description": "인물 존재/외형의 근거 등급"
+    },
+    "fact_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "style_lock": {
+      "type": "string",
+      "description": "기본 DDABONG_DOC_REENACTMENT_V01",
+      "default": "DDABONG_DOC_REENACTMENT_V01"
+    },
+    "physical_lock": {
+      "type": "object",
+      "description": "face_identity / body_proportion / hair / height 등 고정 서술",
+      "properties": {
+        "face_identity": {
+          "type": "string"
+        },
+        "body_proportion": {
+          "type": "string"
+        },
+        "hair": {
+          "type": "string"
+        },
+        "height_cm": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "age_range": {
+          "type": "string"
+        },
+        "skin": {
+          "type": "string"
+        }
+      }
+    },
+    "default_costume_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "costume_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "master_pack": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "hero": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "path": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "generation_id": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "status": {
+              "type": "string",
+              "enum": [
+                "MISSING",
+                "DRAFT",
+                "APPROVED"
+              ]
+            }
+          },
+          "required": [
+            "status"
+          ]
+        },
+        "front": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "path": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "generation_id": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "status": {
+              "type": "string",
+              "enum": [
+                "MISSING",
+                "DRAFT",
+                "APPROVED"
+              ]
+            }
+          },
+          "required": [
+            "status"
+          ]
+        },
+        "three_quarter_left": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "path": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "generation_id": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "status": {
+              "type": "string",
+              "enum": [
+                "MISSING",
+                "DRAFT",
+                "APPROVED"
+              ]
+            }
+          },
+          "required": [
+            "status"
+          ]
+        },
+        "three_quarter_right": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "path": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "generation_id": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "status": {
+              "type": "string",
+              "enum": [
+                "MISSING",
+                "DRAFT",
+                "APPROVED"
+              ]
+            }
+          },
+          "required": [
+            "status"
+          ]
+        },
+        "profile": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "path": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "generation_id": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "status": {
+              "type": "string",
+              "enum": [
+                "MISSING",
+                "DRAFT",
+                "APPROVED"
+              ]
+            }
+          },
+          "required": [
+            "status"
+          ]
+        },
+        "full_body": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "path": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "generation_id": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "status": {
+              "type": "string",
+              "enum": [
+                "MISSING",
+                "DRAFT",
+                "APPROVED"
+              ]
+            }
+          },
+          "required": [
+            "status"
+          ]
+        },
+        "neutral_standing": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "path": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "generation_id": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "status": {
+              "type": "string",
+              "enum": [
+                "MISSING",
+                "DRAFT",
+                "APPROVED"
+              ]
+            }
+          },
+          "required": [
+            "status"
+          ]
+        },
+        "walking": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "path": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "generation_id": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "status": {
+              "type": "string",
+              "enum": [
+                "MISSING",
+                "DRAFT",
+                "APPROVED"
+              ]
+            }
+          },
+          "required": [
+            "status"
+          ]
+        },
+        "costume_detail": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "path": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "generation_id": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "status": {
+              "type": "string",
+              "enum": [
+                "MISSING",
+                "DRAFT",
+                "APPROVED"
+              ]
+            }
+          },
+          "required": [
+            "status"
+          ]
+        },
+        "expression_sheet": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "path": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "generation_id": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "status": {
+              "type": "string",
+              "enum": [
+                "MISSING",
+                "DRAFT",
+                "APPROVED"
+              ]
+            }
+          },
+          "required": [
+            "status"
+          ]
+        }
+      },
+      "required": [
+        "hero",
+        "front",
+        "three_quarter_left",
+        "three_quarter_right",
+        "profile",
+        "full_body",
+        "neutral_standing",
+        "walking",
+        "costume_detail",
+        "expression_sheet"
+      ]
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "DRAFT",
+        "MASTER_IN_PROGRESS",
+        "CHARACTER_MASTER_APPROVED",
+        "RETIRED"
+      ]
+    },
+    "approved_by": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "approved_at": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "version": {
+      "type": "string",
+      "description": "버전 태그 (V01, V02 …)",
+      "pattern": "^V\\d{2,}$"
+    },
+    "updated_at": {
+      "type": "string",
+      "description": "YYYY-MM-DD",
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+    },
+    "notes": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  },
+  "required": [
+    "character_id",
+    "name_ko",
+    "name_en",
+    "role",
+    "era",
+    "historical_basis",
+    "style_lock",
+    "master_pack",
+    "status",
+    "version",
+    "updated_at"
+  ]
+}

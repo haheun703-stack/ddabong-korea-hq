@@ -1,0 +1,29 @@
+{
+  "perf_id": "PERF_EP001_20260911",
+  "scope": "EPISODE",
+  "target_id": "EP001",
+  "production": {
+    "time_hours": null,
+    "attempts": null,
+    "cost": {
+      "currency": "KRW",
+      "amount": null,
+      "spent": null,
+      "note": "미확인"
+    },
+    "approval_rate": null,
+    "rework_count": null
+  },
+  "audience": {
+    "ctr": null,
+    "retention_30s": null,
+    "avg_view_duration_sec": null,
+    "views": null,
+    "top_countries": []
+  },
+  "published_at": null,
+  "measured_at": "2026-09-11",
+  "days_since_publish": null,
+  "data_source": "TEMPLATE",
+  "notes": "TEMPLATE — 값 없음은 null"
+}

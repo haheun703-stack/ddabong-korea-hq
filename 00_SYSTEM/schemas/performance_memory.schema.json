@@ -1,0 +1,161 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://haheun703-stack.github.io/ddabong-korea-hq/00_SYSTEM/schemas/performance_memory.schema.json",
+  "title": "PERFORMANCE MEMORY (정본 §18 · 아스트라 §5 성과 기록)",
+  "description": "시간·시도·비용·승인율·CTR·유지율. 측정일과 게시 후 경과일을 반드시 함께 기록. 없는 값은 null.",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "perf_id": {
+      "type": "string",
+      "pattern": "^PERF_[A-Z0-9_]+_\\d{8}$"
+    },
+    "scope": {
+      "type": "string",
+      "enum": [
+        "SHOT",
+        "EPISODE",
+        "CHANNEL",
+        "SYSTEM"
+      ]
+    },
+    "target_id": {
+      "type": "string"
+    },
+    "production": {
+      "type": "object",
+      "properties": {
+        "time_hours": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "attempts": {
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "cost": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "currency": {
+              "type": "string",
+              "enum": [
+                "KRW",
+                "USD",
+                "CREDITS"
+              ]
+            },
+            "amount": {
+              "type": [
+                "number",
+                "null"
+              ],
+              "description": "미확인이면 null. 0은 실제 0원일 때만."
+            },
+            "spent": {
+              "type": [
+                "number",
+                "null"
+              ]
+            },
+            "note": {
+              "type": [
+                "string",
+                "null"
+              ]
+            }
+          },
+          "required": [
+            "currency",
+            "amount"
+          ]
+        },
+        "approval_rate": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "description": "0~1"
+        },
+        "rework_count": {
+          "type": [
+            "integer",
+            "null"
+          ]
+        }
+      }
+    },
+    "audience": {
+      "type": "object",
+      "properties": {
+        "ctr": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "retention_30s": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "avg_view_duration_sec": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "views": {
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "top_countries": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "published_at": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "measured_at": {
+      "type": "string",
+      "description": "YYYY-MM-DD",
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+    },
+    "days_since_publish": {
+      "type": [
+        "integer",
+        "null"
+      ]
+    },
+    "data_source": {
+      "type": "string"
+    },
+    "notes": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  },
+  "required": [
+    "perf_id",
+    "scope",
+    "target_id",
+    "measured_at",
+    "data_source"
+  ]
+}

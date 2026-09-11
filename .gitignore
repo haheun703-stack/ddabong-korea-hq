@@ -1,0 +1,20 @@
+# DDABONG STUDIO OS — 바이너리/생성물은 Git 미추적. JSON/MD 매니페스트만 추적.
+08_GENERATION_CACHE/**
+!08_GENERATION_CACHE/**/
+!08_GENERATION_CACHE/**/*.json
+!08_GENERATION_CACHE/**/*.md
+10_EXPORTS/**
+!10_EXPORTS/**/
+!10_EXPORTS/**/*.json
+!10_EXPORTS/**/*.md
+04_BLENDER_LIBRARY/**/*.blend
+04_BLENDER_LIBRARY/**/*.blend1
+02_SEASONS/**/08_REAL_FOOTAGE/**/*.mp4
+02_SEASONS/**/08_REAL_FOOTAGE/**/*.mov
+02_SEASONS/**/1[12]_AI_*/**/*.mp4
+02_SEASONS/**/1[12]_AI_*/**/*.png
+02_SEASONS/**/1[12]_AI_*/**/*.jpg
+__pycache__/
+*.pyc
+.DS_Store
+Thumbs.db

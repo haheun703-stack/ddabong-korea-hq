@@ -1,0 +1,29 @@
+{
+  "case_id": "CASE_DDABONG_CHAR_001",
+  "channel_id": "CHANNEL_DDABONG_KOREA",
+  "task_context": "Choose historical human visual style for episode body",
+  "input_ref": null,
+  "ai_draft": "4 options presented: A Cinematic Photoreal / B Documentary Reenactment / C Semi-Realistic 3D / D Stylized Cinematic",
+  "user_result": "B Documentary Reenactment",
+  "options_tested": [
+    "A Cinematic Photoreal",
+    "B Documentary Reenactment",
+    "C Semi-Realistic 3D",
+    "D Stylized Cinematic"
+  ],
+  "reason": "realistic proportions, natural skin, restrained expression, researched clothing; not glossy AI look",
+  "scope": "body historical reenactment scenes. Hero/thumbnail may borrow A-level polish; C previz only; D not default.",
+  "exceptions": [
+    "mascots",
+    "thumbnails"
+  ],
+  "edit_time_min": null,
+  "failure_id": null,
+  "rule_change_candidate_id": null,
+  "standard_versions": {
+    "CHARACTER_CONTINUITY_STANDARD.md": "v0.1"
+  },
+  "created_at": "2026-09-11",
+  "created_by": "사용자",
+  "status": "ACTIVE"
+}

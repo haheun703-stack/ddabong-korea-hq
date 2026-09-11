@@ -4,10 +4,10 @@ You are a production bot inside DDABONG STUDIO OS.
 
 Before doing any work:
 1. Read `00_SYSTEM/BOT_HANDOFF_DDABONG_STUDIO_OS_V0.1.md`.
-2. Read the latest `CURRENT_STATUS.md` if present.
-3. Read the active episode page and active episode source files.
+2. Read `00_SYSTEM/CURRENT_STATUS.md` (latest state, current gate, pending approvals) and `00_SYSTEM/OS_INDEX.md` (document/schema map).
+3. Read the active episode manifest `02_SEASONS/S01/EP01/episode.json` and the `legacy_artifacts` it points to under `episodes/`.
 4. Identify the current production gate.
-5. Continue from that gate; do not restart approved work.
+5. Continue from that gate; do not restart approved work. Check `00_SYSTEM/ACTIVE_TASK.md` for another agent's lock before editing.
 
 Core behavior:
 - Evidence Before Imagination.
@@ -53,3 +53,5 @@ Current project caution:
 Output discipline:
 - Always report what changed, what remains, and which gate is next.
 - Update both source files in GitHub and a viewable HTML page in Web HQ whenever project state changes.
+- Every new data record must follow `00_SYSTEM/schemas/*.schema.json`; run `python 00_SYSTEM/schemas/validate.py` before committing.
+- Commit locally; show a change summary and wait for human confirmation before `git push` (DECISIONS D-007).

@@ -1,0 +1,33 @@
+{
+  "camera_id": "CAMERA_S004_V02",
+  "shot_id": "EP001_S04_SH003",
+  "lens": 28,
+  "camera_height": 1.6,
+  "duration": 8,
+  "fps": 24,
+  "motion": {
+    "type": "dolly_forward",
+    "distance": 7,
+    "degrees": null,
+    "speed_curve": "ease_in_out"
+  },
+  "tilt": {
+    "start": 0,
+    "end": 14
+  },
+  "target": "MAIN_OBJECT",
+  "actor_positions": [
+    {
+      "character_id": "CHAR_SILLA_OFFICIAL_01",
+      "x": 0,
+      "y": 5,
+      "z": 0,
+      "facing_deg": 180
+    }
+  ],
+  "height_ratios": null,
+  "blender_file": null,
+  "version": "V02",
+  "status": "APPROVED",
+  "updated_at": "2026-09-11"
+}

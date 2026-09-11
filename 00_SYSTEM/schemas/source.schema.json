@@ -1,0 +1,95 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://haheun703-stack.github.io/ddabong-korea-hq/00_SYSTEM/schemas/source.schema.json",
+  "title": "SOURCE 기록 (정본 §10 Source Ledger)",
+  "description": "모든 사실 주장은 source_id로 연결. 연구 열람 허가와 미디어 재사용 허가는 별개(rights.json).",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "source_id": {
+      "type": "string",
+      "description": "예: SRC_NRICH_CHEONMACHONG_001",
+      "pattern": "^SRC_[A-Z0-9_]+_\\d{3}$"
+    },
+    "claim_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "연결된 fact/claim"
+    },
+    "title": {
+      "type": "string"
+    },
+    "institution_or_author": {
+      "type": "string"
+    },
+    "url_or_path": {
+      "type": "string"
+    },
+    "verified_at": {
+      "type": "string",
+      "description": "YYYY-MM-DD",
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+    },
+    "verified_by": {
+      "type": "string",
+      "description": "행위자 (사용자 / 에이전트 이름)"
+    },
+    "excerpt_or_summary": {
+      "type": "string"
+    },
+    "confidence": {
+      "type": "string",
+      "enum": [
+        "FACT",
+        "PROBABLE",
+        "INTERPRETIVE",
+        "ARTISTIC"
+      ]
+    },
+    "uncertainty": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "불확실성·반론·한계"
+    },
+    "source_type": {
+      "type": "string",
+      "enum": [
+        "PRIMARY_RECORD",
+        "EXCAVATION_REPORT",
+        "ACADEMIC",
+        "MUSEUM",
+        "GOVERNMENT",
+        "SECONDARY",
+        "OTHER"
+      ]
+    },
+    "rights_id": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "이 출처의 미디어를 쓸 경우 rights 기록"
+    },
+    "notes": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  },
+  "required": [
+    "source_id",
+    "claim_ids",
+    "title",
+    "institution_or_author",
+    "url_or_path",
+    "verified_at",
+    "excerpt_or_summary",
+    "confidence",
+    "source_type"
+  ]
+}

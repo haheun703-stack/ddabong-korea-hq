@@ -1,0 +1,17 @@
+{
+  "approval_id": "APR_TEMPLATE_001",
+  "kind": "PAID_GENERATION",
+  "target_id": "EP001_S04_SH003",
+  "money_gate_presented": {
+    "shot_id": "EP001_S04_SH003",
+    "provider_model": "Flow / veo-template",
+    "expected_attempts": 3,
+    "estimated_cost_range": "미확인",
+    "continuity_risk": "MEDIUM"
+  },
+  "decision": "PENDING",
+  "fix_reason": null,
+  "decided_by": "사용자",
+  "decided_at": "2026-09-11T00:00:00Z",
+  "note": "TEMPLATE"
+}

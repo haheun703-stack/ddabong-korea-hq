@@ -1,0 +1,80 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://haheun703-stack.github.io/ddabong-korea-hq/00_SYSTEM/schemas/failure_memory.schema.json",
+  "title": "FAILURE MEMORY (정본 §18)",
+  "description": "구체적 실패와 해결. 분류는 §13 fix reason과 동일.",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "failure_id": {
+      "type": "string",
+      "pattern": "^FAIL_[A-Z0-9_]+_\\d{3}$"
+    },
+    "category": {
+      "type": "string",
+      "enum": [
+        "CAMERA",
+        "ARCHITECTURE",
+        "COSTUME",
+        "LIGHTING",
+        "MOTION",
+        "CHARACTER_IDENTITY",
+        "HISTORICAL_ISSUE",
+        "AI_ARTIFACT",
+        "OTHER"
+      ]
+    },
+    "what_failed": {
+      "type": "string"
+    },
+    "what_fixed": {
+      "type": "string"
+    },
+    "shot_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "generation_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "patch_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "case_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "recurrence_count": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "created_at": {
+      "type": "string",
+      "description": "YYYY-MM-DD",
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+    },
+    "created_by": {
+      "type": "string",
+      "description": "행위자 (사용자 / 에이전트 이름)"
+    }
+  },
+  "required": [
+    "failure_id",
+    "category",
+    "what_failed",
+    "what_fixed",
+    "shot_ids",
+    "recurrence_count",
+    "created_at"
+  ]
+}

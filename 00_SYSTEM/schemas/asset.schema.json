@@ -1,0 +1,96 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://haheun703-stack.github.io/ddabong-korea-hq/00_SYSTEM/schemas/asset.schema.json",
+  "title": "ASSET",
+  "description": "외부/내부 시각·음향 자산. 외부 자산은 rights_id 필수.",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "asset_id": {
+      "type": "string",
+      "pattern": "^ASSET_[A-Z0-9_]+_V\\d{2}$"
+    },
+    "kind": {
+      "type": "string",
+      "enum": [
+        "IMAGE",
+        "VIDEO",
+        "AUDIO",
+        "3D",
+        "GRAPHIC",
+        "DOCUMENT"
+      ]
+    },
+    "origin": {
+      "type": "string",
+      "enum": [
+        "REAL_SHOOT",
+        "ARCHIVE",
+        "AI_GENERATED",
+        "ORIGINAL_GRAPHIC",
+        "LICENSED",
+        "BLENDER"
+      ]
+    },
+    "path": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "url": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "rights_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "source_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "generation_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "used_in": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "ai_label_required": {
+      "type": "boolean"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "DRAFT",
+        "APPROVED",
+        "RETIRED"
+      ]
+    },
+    "updated_at": {
+      "type": "string",
+      "description": "YYYY-MM-DD",
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+    }
+  },
+  "required": [
+    "asset_id",
+    "kind",
+    "origin",
+    "ai_label_required",
+    "status",
+    "updated_at"
+  ]
+}

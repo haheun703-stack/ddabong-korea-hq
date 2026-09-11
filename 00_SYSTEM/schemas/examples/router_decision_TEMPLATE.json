@@ -1,0 +1,23 @@
+{
+  "decision_id": "RTR_EP001_S04_SH003_V01",
+  "shot_id": "EP001_S04_SH003",
+  "recommended_pipeline": "BLENDER_FLOW",
+  "reason": "spatial_accuracy 90 + camera_complexity 55 + human continuity critical",
+  "rule_applied": "High spatial accuracy + high camera complexity → BLENDER → FLOW/VEO",
+  "historical_confidence": "PROBABLE",
+  "continuity_risk": "MEDIUM",
+  "expected_cost_range": {
+    "currency": "CREDITS",
+    "min": null,
+    "max": null
+  },
+  "expected_attempts": 3,
+  "provider_candidates": [
+    "Flow",
+    "Veo"
+  ],
+  "human_decision": "PENDING",
+  "override_note": null,
+  "decided_at": "2026-09-11",
+  "decided_by": "Visual Router"
+}

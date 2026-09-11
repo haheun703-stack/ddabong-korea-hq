@@ -1,0 +1,22 @@
+{
+  "frame_id": "EP001_S04_MASTER_V03",
+  "scene_id": "EP001_S04",
+  "version": "V03",
+  "path": null,
+  "generation_id": null,
+  "characters": [
+    "CHAR_SILLA_OFFICIAL_01"
+  ],
+  "costumes": [
+    "COSTUME_SILLA_OFFICIAL_A01"
+  ],
+  "location": "LOC_GYEONGJU_BURIAL_SITE_V01",
+  "camera_id": "CAMERA_S004_V02",
+  "status": "APPROVED",
+  "approved_by": "사용자",
+  "approved_at": "2026-09-11",
+  "derived_shots": [
+    "EP001_S04_SH003"
+  ],
+  "updated_at": "2026-09-11"
+}

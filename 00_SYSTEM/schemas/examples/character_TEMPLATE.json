@@ -1,0 +1,80 @@
+{
+  "character_id": "CHAR_SILLA_OFFICIAL_01",
+  "name_ko": "신라 관리 (템플릿)",
+  "name_en": "Silla official (TEMPLATE)",
+  "role": "burial rite official",
+  "era": "SILLA_EARLY",
+  "historical_basis": "PROBABLE",
+  "fact_ids": [],
+  "style_lock": "DDABONG_DOC_REENACTMENT_V01",
+  "physical_lock": {
+    "face_identity": "realistic Korean facial proportions, restrained expression",
+    "body_proportion": "natural, medium build",
+    "hair": "tied, period headwear",
+    "height_cm": 168,
+    "age_range": "40s",
+    "skin": "natural texture, no gloss"
+  },
+  "default_costume_id": "COSTUME_SILLA_OFFICIAL_A01",
+  "costume_ids": [
+    "COSTUME_SILLA_OFFICIAL_A01"
+  ],
+  "master_pack": {
+    "hero": {
+      "path": null,
+      "generation_id": null,
+      "status": "MISSING"
+    },
+    "front": {
+      "path": null,
+      "generation_id": null,
+      "status": "MISSING"
+    },
+    "three_quarter_left": {
+      "path": null,
+      "generation_id": null,
+      "status": "MISSING"
+    },
+    "three_quarter_right": {
+      "path": null,
+      "generation_id": null,
+      "status": "MISSING"
+    },
+    "profile": {
+      "path": null,
+      "generation_id": null,
+      "status": "MISSING"
+    },
+    "full_body": {
+      "path": null,
+      "generation_id": null,
+      "status": "MISSING"
+    },
+    "neutral_standing": {
+      "path": null,
+      "generation_id": null,
+      "status": "MISSING"
+    },
+    "walking": {
+      "path": null,
+      "generation_id": null,
+      "status": "MISSING"
+    },
+    "costume_detail": {
+      "path": null,
+      "generation_id": null,
+      "status": "MISSING"
+    },
+    "expression_sheet": {
+      "path": null,
+      "generation_id": null,
+      "status": "MISSING"
+    }
+  },
+  "status": "DRAFT",
+  "approved_by": null,
+  "approved_at": null,
+  "version": "V01",
+  "updated_at": "2026-09-11",
+  "notes": "TEMPLATE"
+}

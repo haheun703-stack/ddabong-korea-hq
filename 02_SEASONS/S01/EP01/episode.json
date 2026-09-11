@@ -1,0 +1,110 @@
+{
+  "$schema": "../../../00_SYSTEM/schemas/episode.schema.json",
+  "episode_id": "EP01",
+  "season_id": "S01",
+  "project_id": "DDABONG_KOREA",
+  "topic_ko": "경주 왕릉 / 천마총",
+  "working_title_en": "Why Are Giant Tombs Everywhere in This Korean City?",
+  "core_question": "Why are giant tombs everywhere in this Korean city?",
+  "target_duration_sec": 425,
+  "status": "PRE_PRODUCTION",
+  "current_gate": "REAL_SHOOT",
+  "gate_note": "프리프로덕션 ≈91% 완료. 다음 실제 작업 = 경주 현장 촬영 + 유물/아카이브 파일 다운로드·정리. 그다음 필요한 Higgsfield 컷만 선별 생성 → 내레이션 녹음 → Premiere 러프컷.",
+  "budget": {
+    "currency": "KRW",
+    "amount": null,
+    "spent": null,
+    "note": "미확인 — DECISIONS.md P-001 승인 대기. 0으로 기록하지 않는다."
+  },
+  "era_ids": [
+    "SILLA_EARLY"
+  ],
+  "location_ids": [],
+  "character_ids": [],
+  "template_note": "EP001_HWANGNYONGSA appearing in OS examples is a TEMPLATE ONLY. Never overwrite this active episode with template data.",
+  "legacy_artifacts": [
+    {
+      "stage": "RESEARCH",
+      "path": "episodes/ep01-research-verified-v2.md",
+      "html": "episodes/ep01-research-verified-v2.html",
+      "version": "v2",
+      "status": "APPROVED",
+      "note": "공식/학술 출처와 주장 안전선"
+    },
+    {
+      "stage": "SCRIPT",
+      "path": "episodes/ep01-script-v1.md",
+      "html": null,
+      "version": "v1",
+      "status": "PREVIOUS",
+      "note": "v2로 대체됨. 보존."
+    },
+    {
+      "stage": "SCRIPT",
+      "path": "episodes/ep01-production-script-v2.md",
+      "html": "episodes/ep01-production-script.html",
+      "version": "v2",
+      "status": "APPROVED",
+      "note": "7분 내레이션 + 화면 태그 [REAL][MUSEUM][ARCHIVE][GRAPHIC][HIGGSFIELD]"
+    },
+    {
+      "stage": "SHOTLIST",
+      "path": "episodes/ep01-visual-assets.md",
+      "html": "episodes/ep01-visual-assets.html",
+      "version": "v1",
+      "status": "APPROVED",
+      "note": "시각자료 확보표: 필요 컷·출처·권리 상태"
+    },
+    {
+      "stage": "REAL_SHOOT",
+      "path": "episodes/ep01-field-shoot-plan.md",
+      "html": "episodes/ep01-field-shoot-plan.html",
+      "version": "v1",
+      "status": "APPROVED",
+      "note": "경주 현장 촬영 체크리스트 (대릉원·천마총·현대 도시 대비). 촬영 자체는 미실행."
+    },
+    {
+      "stage": "ARCHIVE",
+      "path": null,
+      "html": "episodes/ep01-archive-photos.html",
+      "version": "v1",
+      "status": "APPROVED",
+      "note": "1973 천마총 발굴사진 (NRICH 공개) 선별"
+    },
+    {
+      "stage": "ARCHIVE",
+      "path": null,
+      "html": "episodes/ep01-artifact-library.html",
+      "version": "v1",
+      "status": "APPROVED",
+      "note": "천마총 유물 소스 라이브러리"
+    },
+    {
+      "stage": "HIGGSFIELD",
+      "path": null,
+      "html": "episodes/ep01-higgsfield-prompts.html",
+      "version": "v1",
+      "status": "APPROVED",
+      "note": "역사 재현 프롬프트 7개 + 공통 금지요소. 실제 생성은 Money Gate 승인 후."
+    },
+    {
+      "stage": "SHOTLIST",
+      "path": null,
+      "html": "episodes/ep01-graphics-spec.html",
+      "version": "v1",
+      "status": "APPROVED",
+      "note": "그래픽 G01–G12 명세"
+    },
+    {
+      "stage": "ROUGH_CUT",
+      "path": null,
+      "html": "episodes/ep01-premiere-roughcut.html",
+      "version": "v1",
+      "status": "APPROVED",
+      "note": "Premiere 0:00–7:05 러프컷 설계 (실제 컷은 촬영 후)"
+    }
+  ],
+  "web_hq_page": "episodes/ep01-gyeongju-tombs.html",
+  "updated_at": "2026-09-11",
+  "updated_by": "Claude Code"
+}

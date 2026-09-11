@@ -1,0 +1,16 @@
+{
+  "doc": "CHARACTER_CONTINUITY_STANDARD.md",
+  "version": "v0.1",
+  "status": "DRAFT",
+  "source_section": "BOT_HANDOFF §5·§20",
+  "change_summary": "P0 초안 — 정본 내용 이관",
+  "rule_change_candidate_id": null,
+  "regression_test_ref": null,
+  "case_ids": [
+    "CASE_DDABONG_CHAR_001"
+  ],
+  "approved_by": null,
+  "approved_at": null,
+  "created_at": "2026-09-11",
+  "created_by": "Claude Code"
+}

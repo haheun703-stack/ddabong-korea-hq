@@ -1,0 +1,108 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://haheun703-stack.github.io/ddabong-korea-hq/00_SYSTEM/schemas/case_memory.schema.json",
+  "title": "CASE MEMORY (정본 §18 · 아스트라 §5 수정 사례)",
+  "description": "AI 초안 + 사용자 수정/선택 결과 + 이유 + 적용 범위. 사례 1개로 전역 규칙을 만들지 않는다.",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "case_id": {
+      "type": "string",
+      "description": "예: CASE_DDABONG_CHAR_001",
+      "pattern": "^CASE_[A-Z0-9_]+_\\d{3}$"
+    },
+    "channel_id": {
+      "type": "string"
+    },
+    "task_context": {
+      "type": "string",
+      "description": "작업 상황 (어느 단계, 어떤 샷/문서)"
+    },
+    "input_ref": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "ai_draft": {
+      "type": "string",
+      "description": "AI 결과 요약 또는 경로"
+    },
+    "user_result": {
+      "type": "string",
+      "description": "사용자 수정/선택 결과 요약 또는 경로"
+    },
+    "options_tested": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "reason": {
+      "type": "string",
+      "description": "사용자가 밝힌 이유/가설"
+    },
+    "scope": {
+      "type": "string",
+      "description": "적용 범위 (예: 본편 역사 인물만)"
+    },
+    "exceptions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "edit_time_min": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "failure_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "rule_change_candidate_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "standard_versions": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "string"
+      }
+    },
+    "created_at": {
+      "type": "string",
+      "description": "YYYY-MM-DD",
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+    },
+    "created_by": {
+      "type": "string",
+      "description": "행위자 (사용자 / 에이전트 이름)"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "ACTIVE",
+        "SUPERSEDED",
+        "RETIRED"
+      ]
+    }
+  },
+  "required": [
+    "case_id",
+    "channel_id",
+    "task_context",
+    "ai_draft",
+    "user_result",
+    "reason",
+    "scope",
+    "created_at",
+    "status"
+  ]
+}

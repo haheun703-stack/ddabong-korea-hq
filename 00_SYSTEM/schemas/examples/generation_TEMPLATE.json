@@ -1,0 +1,33 @@
+{
+  "generation_id": "GEN_EP001_S04_SH003_FLOW_V01",
+  "shot_id": "EP001_S04_SH003",
+  "stage": "VIDEO",
+  "provider": "Flow",
+  "model": "veo-template",
+  "prompt_id": "PRM_EP001_S04_SH003_V01",
+  "prompt_version": "V01",
+  "standard_versions": {
+    "CHARACTER_CONTINUITY_STANDARD.md": "v0.1",
+    "PROMPT_STANDARD.md": "v0.1"
+  },
+  "case_ids_used": [
+    "CASE_DDABONG_CHAR_001"
+  ],
+  "approval_id": "APR_TEMPLATE_001",
+  "input_paths": [],
+  "output_paths": [],
+  "attempts": 1,
+  "duration_sec": null,
+  "cost": {
+    "currency": "CREDITS",
+    "amount": null,
+    "spent": null,
+    "note": "미확인"
+  },
+  "result_status": "SUCCESS",
+  "failure_id": null,
+  "started_at": "2026-09-11T00:00:00Z",
+  "finished_at": null,
+  "run_by": "Video Generation Agent",
+  "notes": "TEMPLATE"
+}

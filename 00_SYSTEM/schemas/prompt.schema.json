@@ -1,0 +1,122 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://haheun703-stack.github.io/ddabong-korea-hq/00_SYSTEM/schemas/prompt.schema.json",
+  "title": "PROMPT 조립 (정본 §8)",
+  "description": "GLOBAL+ERA+LOCATION+CHARACTER/COSTUME+STYLE+CAMERA LOCK + SHOT DELTA. 매번 처음부터 쓰지 않는다.",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "prompt_id": {
+      "type": "string",
+      "pattern": "^PRM_[A-Z0-9_]+_V\\d{2}$"
+    },
+    "shot_id": {
+      "type": "string"
+    },
+    "target": {
+      "type": "string",
+      "enum": [
+        "IMAGE",
+        "VIDEO",
+        "PREVIZ"
+      ]
+    },
+    "locks": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "global": {
+          "type": "string",
+          "description": "예: DDABONG_GLOBAL_V01"
+        },
+        "era": {
+          "type": "string"
+        },
+        "location": {
+          "type": "string"
+        },
+        "character_costume": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "style": {
+          "type": "string",
+          "description": "예: DDABONG_DOC_REENACTMENT_V01"
+        },
+        "camera": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "required": [
+        "global",
+        "era",
+        "location",
+        "character_costume",
+        "style"
+      ]
+    },
+    "shot_delta": {
+      "type": "string",
+      "description": "이 샷만의 행동/구도 서술"
+    },
+    "negative": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "assembled_text": {
+      "type": "string",
+      "description": "최종 조립 결과 (재현 가능하도록 저장)"
+    },
+    "reference_images": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "master_frame / character pack 경로"
+    },
+    "version": {
+      "type": "string",
+      "description": "버전 태그 (V01, V02 …)",
+      "pattern": "^V\\d{2,}$"
+    },
+    "parent_prompt_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "patch_id": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "keep_change_patch 참조"
+    },
+    "created_at": {
+      "type": "string",
+      "description": "YYYY-MM-DD",
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+    },
+    "created_by": {
+      "type": "string",
+      "description": "행위자 (사용자 / 에이전트 이름)"
+    }
+  },
+  "required": [
+    "prompt_id",
+    "shot_id",
+    "target",
+    "locks",
+    "shot_delta",
+    "assembled_text",
+    "version",
+    "created_at"
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://haheun703-stack.github.io/ddabong-korea-hq/00_SYSTEM/schemas/license.schema.json",
+  "title": "LICENSE 프리셋",
+  "description": "자주 쓰는 라이선스 조건 프리셋. rights.json 이 참조.",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "license_id": {
+      "type": "string",
+      "pattern": "^LIC_[A-Z0-9_]+$"
+    },
+    "name": {
+      "type": "string"
+    },
+    "url": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "commercial_use": {
+      "type": "string",
+      "enum": [
+        "YES",
+        "NO",
+        "CONDITIONAL"
+      ]
+    },
+    "modification_allowed": {
+      "type": "string",
+      "enum": [
+        "YES",
+        "NO",
+        "CONDITIONAL"
+      ]
+    },
+    "attribution_required": {
+      "type": "boolean"
+    },
+    "attribution_format": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "notes": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  },
+  "required": [
+    "license_id",
+    "name",
+    "commercial_use",
+    "modification_allowed",
+    "attribution_required"
+  ]
+}

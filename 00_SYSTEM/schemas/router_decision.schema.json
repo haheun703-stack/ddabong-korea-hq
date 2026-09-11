@@ -1,0 +1,120 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://haheun703-stack.github.io/ddabong-korea-hq/00_SYSTEM/schemas/router_decision.schema.json",
+  "title": "SHOT ROUTER 출력 (정본 §7)",
+  "description": "라우터는 파이프라인·이유·신뢰도·연속성 위험·비용 범위·시도 횟수를 반드시 낸다.",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "decision_id": {
+      "type": "string",
+      "pattern": "^RTR_[A-Z0-9_]+_V\\d{2}$"
+    },
+    "shot_id": {
+      "type": "string"
+    },
+    "recommended_pipeline": {
+      "type": "string",
+      "enum": [
+        "REAL_SHOOT",
+        "ARCHIVE",
+        "AI_STILL",
+        "ORIGINAL_GRAPHIC",
+        "BLENDER_FLOW",
+        "HIGGSFIELD"
+      ]
+    },
+    "reason": {
+      "type": "string"
+    },
+    "rule_applied": {
+      "type": "string",
+      "description": "정본 §7 규칙 문장"
+    },
+    "historical_confidence": {
+      "type": "string",
+      "enum": [
+        "FACT",
+        "PROBABLE",
+        "INTERPRETIVE",
+        "ARTISTIC"
+      ]
+    },
+    "continuity_risk": {
+      "type": "string",
+      "enum": [
+        "LOW",
+        "MEDIUM",
+        "HIGH"
+      ]
+    },
+    "expected_cost_range": {
+      "type": "object",
+      "properties": {
+        "currency": {
+          "type": "string"
+        },
+        "min": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "max": {
+          "type": [
+            "number",
+            "null"
+          ]
+        }
+      },
+      "required": [
+        "currency"
+      ]
+    },
+    "expected_attempts": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "provider_candidates": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "human_decision": {
+      "type": "string",
+      "enum": [
+        "PENDING",
+        "ACCEPTED",
+        "OVERRIDDEN"
+      ]
+    },
+    "override_note": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "decided_at": {
+      "type": "string",
+      "description": "YYYY-MM-DD",
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+    },
+    "decided_by": {
+      "type": "string",
+      "description": "행위자 (사용자 / 에이전트 이름)"
+    }
+  },
+  "required": [
+    "decision_id",
+    "shot_id",
+    "recommended_pipeline",
+    "reason",
+    "historical_confidence",
+    "continuity_risk",
+    "expected_cost_range",
+    "expected_attempts",
+    "human_decision",
+    "decided_at"
+  ]
+}

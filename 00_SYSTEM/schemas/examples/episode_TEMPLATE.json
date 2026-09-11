@@ -1,0 +1,31 @@
+{
+  "episode_id": "EP001",
+  "season_id": "S00",
+  "project_id": "DDABONG_KOREA",
+  "topic_ko": "황룡사 (템플릿 예시)",
+  "working_title_en": "Hwangnyongsa (TEMPLATE)",
+  "core_question": "TEMPLATE",
+  "target_duration_sec": 420,
+  "status": "IDEA",
+  "current_gate": "IDEA",
+  "gate_note": "TEMPLATE ONLY. 활성 EP01 은 02_SEASONS/S01/EP01/episode.json.",
+  "budget": {
+    "currency": "KRW",
+    "amount": null,
+    "spent": null,
+    "note": "미확인"
+  },
+  "era_ids": [
+    "SILLA_EARLY"
+  ],
+  "location_ids": [],
+  "character_ids": [],
+  "scene_ids": [
+    "EP001_S04"
+  ],
+  "template_note": "EP001_HWANGNYONGSA is a TEMPLATE ONLY.",
+  "legacy_artifacts": [],
+  "web_hq_page": null,
+  "updated_at": "2026-09-11",
+  "updated_by": "Claude Code"
+}

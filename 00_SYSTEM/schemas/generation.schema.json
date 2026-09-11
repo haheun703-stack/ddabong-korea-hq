@@ -1,0 +1,174 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://haheun703-stack.github.io/ddabong-korea-hq/00_SYSTEM/schemas/generation.schema.json",
+  "title": "GENERATION 실행 기록 (정본 §11 · 아스트라 §5 실행 기록)",
+  "description": "유료/무료 생성 1회 실행. 당시 사용한 prompt/standard 버전을 반드시 가리킨다. 비용 미확인이면 null.",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "generation_id": {
+      "type": "string",
+      "pattern": "^GEN_[A-Z0-9_]+_V\\d{2}$"
+    },
+    "shot_id": {
+      "type": "string"
+    },
+    "stage": {
+      "type": "string",
+      "enum": [
+        "PREVIZ",
+        "STILL",
+        "VIDEO",
+        "UPSCALE",
+        "AUDIO",
+        "OTHER"
+      ]
+    },
+    "provider": {
+      "type": "string",
+      "description": "Flow / Veo / Higgsfield / Blender / Suno …"
+    },
+    "model": {
+      "type": "string"
+    },
+    "prompt_id": {
+      "type": "string"
+    },
+    "prompt_version": {
+      "type": "string",
+      "description": "버전 태그 (V01, V02 …)",
+      "pattern": "^V\\d{2,}$"
+    },
+    "standard_versions": {
+      "type": "object",
+      "description": "doc → version",
+      "additionalProperties": {
+        "type": "string"
+      }
+    },
+    "case_ids_used": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "참조한 Case Memory"
+    },
+    "approval_id": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "유료면 필수"
+    },
+    "input_paths": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "output_paths": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "attempts": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "duration_sec": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "cost": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "currency": {
+          "type": "string",
+          "enum": [
+            "KRW",
+            "USD",
+            "CREDITS"
+          ]
+        },
+        "amount": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "description": "미확인이면 null. 0은 실제 0원일 때만."
+        },
+        "spent": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "note": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "required": [
+        "currency",
+        "amount"
+      ]
+    },
+    "result_status": {
+      "type": "string",
+      "enum": [
+        "SUCCESS",
+        "PARTIAL",
+        "FAILED",
+        "REJECTED"
+      ]
+    },
+    "failure_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "started_at": {
+      "type": "string",
+      "description": "ISO-8601 datetime",
+      "format": "date-time"
+    },
+    "finished_at": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "run_by": {
+      "type": "string",
+      "description": "행위자 (사용자 / 에이전트 이름)"
+    },
+    "notes": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  },
+  "required": [
+    "generation_id",
+    "shot_id",
+    "stage",
+    "provider",
+    "model",
+    "prompt_id",
+    "prompt_version",
+    "standard_versions",
+    "attempts",
+    "cost",
+    "result_status",
+    "started_at",
+    "run_by"
+  ]
+}

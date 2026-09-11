@@ -1,0 +1,14 @@
+{
+  "asset_id": "ASSET_TEMPLATE_PHOTO_V01",
+  "kind": "IMAGE",
+  "origin": "ARCHIVE",
+  "path": null,
+  "url": "https://example.org/template",
+  "rights_id": "RTS_TEMPLATE_001",
+  "source_id": "SRC_TEMPLATE_001",
+  "generation_id": null,
+  "used_in": [],
+  "ai_label_required": false,
+  "status": "DRAFT",
+  "updated_at": "2026-09-11"
+}

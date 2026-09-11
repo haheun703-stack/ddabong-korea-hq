@@ -1,0 +1,19 @@
+{
+  "rights_id": "RTS_TEMPLATE_001",
+  "asset_id": "ASSET_TEMPLATE_PHOTO_V01",
+  "source": "https://example.org/template",
+  "creator": "(template)",
+  "license": "KOGL Type 1",
+  "commercial_use": "YES",
+  "modification_allowed": "YES",
+  "attribution_required": "YES",
+  "attribution_text": "출처: (template)",
+  "expiration": null,
+  "proof": null,
+  "research_permission": "YES",
+  "media_reuse_permission": "UNKNOWN",
+  "status": "BLUE",
+  "checked_at": "2026-09-11",
+  "checked_by": "Rights Agent",
+  "notes": "TEMPLATE"
+}

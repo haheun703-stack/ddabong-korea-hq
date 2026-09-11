@@ -1,0 +1,16 @@
+{
+  "claim_id": "CLM_HWANGNYONGSA_TEMPLATE_001",
+  "text_ko": "(템플릿) 주장",
+  "text_en": "(template) claim",
+  "confidence": "PROBABLE",
+  "source_ids": [
+    "SRC_TEMPLATE_001"
+  ],
+  "used_in": [
+    "EP001_S04_SH003"
+  ],
+  "hedge_required": true,
+  "verified_at": "2026-09-11",
+  "verified_by": "Fact Check Agent",
+  "notes": "TEMPLATE"
+}

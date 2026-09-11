@@ -1,0 +1,26 @@
+{
+  "evaluation_id": "EVAL_TEMPLATE_001",
+  "target_kind": "STANDARD_VERSION",
+  "target_version_ref": "CHARACTER_CONTINUITY_STANDARD.md@v0.1",
+  "case_ids": [
+    "CASE_DDABONG_CHAR_001"
+  ],
+  "evaluator": "Experience Learning Agent",
+  "scores": {
+    "continuity": {
+      "score": 0,
+      "max": 30,
+      "basis": "template"
+    },
+    "historical_accuracy": {
+      "score": 0,
+      "max": 25,
+      "basis": "template"
+    }
+  },
+  "critical_defects": [],
+  "regression_passed": null,
+  "adopted": "PENDING",
+  "evaluated_at": "2026-09-11",
+  "notes": "TEMPLATE"
+}

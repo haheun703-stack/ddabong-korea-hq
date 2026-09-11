@@ -1,0 +1,53 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://haheun703-stack.github.io/ddabong-korea-hq/00_SYSTEM/schemas/season.schema.json",
+  "title": "SEASON",
+  "description": "시즌 = 콘텐츠 클러스터 (예: 경주).",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "season_id": {
+      "type": "string",
+      "pattern": "^S\\d{2}$"
+    },
+    "project_id": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "cluster_note": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "episode_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "PLANNED",
+        "ACTIVE",
+        "DONE"
+      ]
+    },
+    "updated_at": {
+      "type": "string",
+      "description": "YYYY-MM-DD",
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+    }
+  },
+  "required": [
+    "season_id",
+    "project_id",
+    "title",
+    "episode_ids",
+    "status",
+    "updated_at"
+  ]
+}

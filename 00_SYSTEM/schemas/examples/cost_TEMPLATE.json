@@ -1,0 +1,17 @@
+{
+  "cost_id": "COST_EP001_20260911",
+  "episode_id": "EP001",
+  "budget": {
+    "currency": "KRW",
+    "amount": null,
+    "spent": null,
+    "note": "미확인"
+  },
+  "spent_total": null,
+  "spent_by_provider": {},
+  "percent_used": null,
+  "gate_state": "UNKNOWN_BUDGET",
+  "generation_ids": [],
+  "as_of": "2026-09-11",
+  "note": "TEMPLATE"
+}

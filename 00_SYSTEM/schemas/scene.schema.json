@@ -1,0 +1,94 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://haheun703-stack.github.io/ddabong-korea-hq/00_SYSTEM/schemas/scene.schema.json",
+  "title": "SCENE (정본 §4·§5)",
+  "description": "씬. 반복 인물이 있으면 approved master_frame 필수.",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "scene_id": {
+      "type": "string",
+      "pattern": "^EP\\d{2,3}_S\\d{2}$"
+    },
+    "episode_id": {
+      "type": "string",
+      "pattern": "^EP\\d{2,3}$"
+    },
+    "title": {
+      "type": "string"
+    },
+    "story_beat": {
+      "type": "string",
+      "enum": [
+        "QUESTION",
+        "FACT",
+        "CONTEXT",
+        "MINDSET",
+        "CHOICE",
+        "LEGACY"
+      ]
+    },
+    "era": {
+      "type": "string"
+    },
+    "location": {
+      "type": "string"
+    },
+    "characters": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "master_frame": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "master_frame_id (승인 필요)"
+    },
+    "shot_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "PLANNED",
+        "BROKEN_DOWN",
+        "IN_PROGRESS",
+        "APPROVED",
+        "FINAL"
+      ]
+    },
+    "updated_at": {
+      "type": "string",
+      "description": "YYYY-MM-DD",
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+    },
+    "updated_by": {
+      "type": "string",
+      "description": "행위자 (사용자 / 에이전트 이름)"
+    },
+    "notes": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  },
+  "required": [
+    "scene_id",
+    "episode_id",
+    "title",
+    "story_beat",
+    "era",
+    "location",
+    "characters",
+    "shot_ids",
+    "status",
+    "updated_at"
+  ]
+}

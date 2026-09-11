@@ -1,0 +1,63 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://haheun703-stack.github.io/ddabong-korea-hq/00_SYSTEM/schemas/era.schema.json",
+  "title": "ERA (정본 §8 ERA LOCK)",
+  "description": "시대 LOCK. 프롬프트 ERA LOCK 조각의 원천.",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "era_id": {
+      "type": "string",
+      "description": "예: SILLA_EARLY",
+      "pattern": "^[A-Z][A-Z0-9_]+$"
+    },
+    "name_ko": {
+      "type": "string"
+    },
+    "name_en": {
+      "type": "string"
+    },
+    "period_start": {
+      "type": "integer",
+      "description": "연도 (BC는 음수)"
+    },
+    "period_end": {
+      "type": "integer"
+    },
+    "material_culture_notes": {
+      "type": "string"
+    },
+    "forbidden_anachronisms": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "prompt_lock_id": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "예: SILLA_EARLY_V01"
+    },
+    "fact_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "updated_at": {
+      "type": "string",
+      "description": "YYYY-MM-DD",
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+    }
+  },
+  "required": [
+    "era_id",
+    "name_ko",
+    "name_en",
+    "period_start",
+    "period_end",
+    "updated_at"
+  ]
+}

@@ -1,0 +1,101 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://haheun703-stack.github.io/ddabong-korea-hq/00_SYSTEM/schemas/evaluation.schema.json",
+  "title": "EVALUATION 기록 (아스트라 §5 평가 기록 · 정본 §18 회귀검사)",
+  "description": "버전/규칙 변경안 평가. 항목별 점수와 근거, 중대 결함, 채택 여부.",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "evaluation_id": {
+      "type": "string",
+      "pattern": "^EVAL_[A-Z0-9_]+_\\d{3}$"
+    },
+    "target_kind": {
+      "type": "string",
+      "enum": [
+        "SHOT_VERSION",
+        "SCRIPT_VERSION",
+        "STANDARD_VERSION",
+        "RULE_CHANGE",
+        "PROMPT_VERSION"
+      ]
+    },
+    "target_version_ref": {
+      "type": "string"
+    },
+    "case_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "비교에 쓴 사례 (이전 좋은 사례 + 미사용 사례 포함)"
+    },
+    "evaluator": {
+      "type": "string"
+    },
+    "scores": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "properties": {
+          "score": {
+            "type": "number"
+          },
+          "max": {
+            "type": "number"
+          },
+          "basis": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "score",
+          "max",
+          "basis"
+        ]
+      }
+    },
+    "critical_defects": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "regression_passed": {
+      "type": [
+        "boolean",
+        "null"
+      ]
+    },
+    "adopted": {
+      "type": "string",
+      "enum": [
+        "YES",
+        "NO",
+        "PENDING"
+      ]
+    },
+    "evaluated_at": {
+      "type": "string",
+      "description": "YYYY-MM-DD",
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+    },
+    "notes": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  },
+  "required": [
+    "evaluation_id",
+    "target_kind",
+    "target_version_ref",
+    "case_ids",
+    "evaluator",
+    "scores",
+    "critical_defects",
+    "adopted",
+    "evaluated_at"
+  ]
+}

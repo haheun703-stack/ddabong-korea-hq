@@ -1,0 +1,98 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://haheun703-stack.github.io/ddabong-korea-hq/00_SYSTEM/schemas/master_frame.schema.json",
+  "title": "MASTER FRAME (정본 §5)",
+  "description": "씬 대표 프레임. 자식 샷은 이 시각 계보에서 파생.",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "frame_id": {
+      "type": "string",
+      "description": "예: EP001_S04_MASTER_V03",
+      "pattern": "^EP\\d{2,3}_S\\d{2}_MASTER_V\\d{2}$"
+    },
+    "scene_id": {
+      "type": "string"
+    },
+    "version": {
+      "type": "string",
+      "description": "버전 태그 (V01, V02 …)",
+      "pattern": "^V\\d{2,}$"
+    },
+    "path": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "generation_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "characters": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "costumes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "location": {
+      "type": "string"
+    },
+    "camera_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "DRAFT",
+        "APPROVED",
+        "PREVIOUS",
+        "REJECTED"
+      ]
+    },
+    "approved_by": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "approved_at": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "derived_shots": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "updated_at": {
+      "type": "string",
+      "description": "YYYY-MM-DD",
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+    }
+  },
+  "required": [
+    "frame_id",
+    "scene_id",
+    "version",
+    "characters",
+    "location",
+    "status",
+    "derived_shots",
+    "updated_at"
+  ]
+}

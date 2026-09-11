@@ -1,0 +1,19 @@
+{
+  "location_id": "LOC_GYEONGJU_BURIAL_SITE_V01",
+  "name_ko": "경주 고분군 (템플릿)",
+  "name_en": "Gyeongju burial site (TEMPLATE)",
+  "era": "SILLA_EARLY",
+  "present_day_site": "Daereungwon area",
+  "historical_basis": "PROBABLE",
+  "fact_ids": [],
+  "spatial_lock": {
+    "mound_height_m": 12,
+    "mound_diameter_m": 47,
+    "scale_ref": "human 1.65m"
+  },
+  "blender_scene_path": null,
+  "reference_images": [],
+  "status": "DRAFT",
+  "version": "V01",
+  "updated_at": "2026-09-11"
+}

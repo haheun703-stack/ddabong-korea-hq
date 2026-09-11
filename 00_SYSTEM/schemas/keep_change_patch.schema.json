@@ -1,0 +1,91 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://haheun703-stack.github.io/ddabong-korea-hq/00_SYSTEM/schemas/keep_change_patch.schema.json",
+  "title": "KEEP / CHANGE 패치 (정본 §5)",
+  "description": "한 요소만 실패하면 전체 재생성 금지. KEEP 목록을 보존하고 CHANGE만 수정해 새 버전 생성.",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "patch_id": {
+      "type": "string",
+      "pattern": "^PATCH_[A-Z0-9_]+_\\d{3}$"
+    },
+    "shot_id": {
+      "type": "string"
+    },
+    "from_version": {
+      "type": "string",
+      "description": "버전 태그 (V01, V02 …)",
+      "pattern": "^V\\d{2,}$"
+    },
+    "to_version": {
+      "type": "string",
+      "description": "버전 태그 (V01, V02 …)",
+      "pattern": "^V\\d{2,}$"
+    },
+    "fix_reason": {
+      "type": "string",
+      "enum": [
+        "CAMERA",
+        "ARCHITECTURE",
+        "COSTUME",
+        "LIGHTING",
+        "MOTION",
+        "CHARACTER_IDENTITY",
+        "HISTORICAL_ISSUE",
+        "AI_ARTIFACT",
+        "OTHER"
+      ]
+    },
+    "keep": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "minItems": 1
+    },
+    "change": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "minItems": 1
+    },
+    "reason": {
+      "type": "string"
+    },
+    "requested_by": {
+      "type": "string",
+      "description": "행위자 (사용자 / 에이전트 이름)"
+    },
+    "created_at": {
+      "type": "string",
+      "description": "YYYY-MM-DD",
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+    },
+    "resulting_prompt_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "resulting_generation_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  },
+  "required": [
+    "patch_id",
+    "shot_id",
+    "from_version",
+    "to_version",
+    "fix_reason",
+    "keep",
+    "change",
+    "reason",
+    "requested_by",
+    "created_at"
+  ]
+}

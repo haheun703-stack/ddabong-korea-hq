@@ -1,0 +1,78 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://haheun703-stack.github.io/ddabong-korea-hq/00_SYSTEM/schemas/music.schema.json",
+  "title": "MUSIC (정본 §16)",
+  "description": "Korean Cinematic Hybrid. 공급자(Suno 등)에 종속되지 않는다.",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "music_id": {
+      "type": "string",
+      "pattern": "^MUSIC_[A-Z0-9_]+_V\\d{2}$"
+    },
+    "mood": {
+      "type": "string"
+    },
+    "role": {
+      "type": "string",
+      "enum": [
+        "TEMP",
+        "FINAL",
+        "INTRO",
+        "TRANSITION",
+        "SHORTS"
+      ]
+    },
+    "identity_check": {
+      "type": "boolean",
+      "description": "Korean Cinematic Hybrid 기준 통과"
+    },
+    "provider": {
+      "type": "string"
+    },
+    "provider_ref": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "path": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "rights_id": {
+      "type": "string"
+    },
+    "used_in": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "DRAFT",
+        "APPROVED",
+        "RETIRED"
+      ]
+    },
+    "updated_at": {
+      "type": "string",
+      "description": "YYYY-MM-DD",
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+    }
+  },
+  "required": [
+    "music_id",
+    "mood",
+    "role",
+    "identity_check",
+    "provider",
+    "rights_id",
+    "status",
+    "updated_at"
+  ]
+}

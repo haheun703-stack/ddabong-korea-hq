@@ -1,0 +1,12 @@
+{
+  "voice_id": "VOICE_NARRATOR_MAIN_V01",
+  "role": "NARRATOR",
+  "provider": "(abstracted)",
+  "provider_voice_ref": null,
+  "language": "en",
+  "style_notes": "documentary, curious not boastful, no face",
+  "sample_path": null,
+  "rights_id": null,
+  "status": "DRAFT",
+  "updated_at": "2026-09-11"
+}

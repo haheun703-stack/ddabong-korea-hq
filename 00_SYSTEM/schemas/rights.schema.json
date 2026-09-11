@@ -1,0 +1,127 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://haheun703-stack.github.io/ddabong-korea-hq/00_SYSTEM/schemas/rights.schema.json",
+  "title": "RIGHTS 기록 (정본 §10 Rights Ledger)",
+  "description": "외부 시각/음향 자산의 권리. RED/미해결 상태로 게시 금지.",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "rights_id": {
+      "type": "string",
+      "pattern": "^RTS_[A-Z0-9_]+_\\d{3}$"
+    },
+    "asset_id": {
+      "type": "string"
+    },
+    "source": {
+      "type": "string",
+      "description": "출처 기관/URL"
+    },
+    "creator": {
+      "type": "string"
+    },
+    "license": {
+      "type": "string",
+      "description": "예: CC BY 4.0 / KOGL Type 1 / All rights reserved / Purchased"
+    },
+    "commercial_use": {
+      "type": "string",
+      "enum": [
+        "YES",
+        "NO",
+        "UNKNOWN"
+      ]
+    },
+    "modification_allowed": {
+      "type": "string",
+      "enum": [
+        "YES",
+        "NO",
+        "UNKNOWN"
+      ]
+    },
+    "attribution_required": {
+      "type": "string",
+      "enum": [
+        "YES",
+        "NO",
+        "UNKNOWN"
+      ]
+    },
+    "attribution_text": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "expiration": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "YYYY-MM-DD 또는 null"
+    },
+    "proof": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "라이선스 증빙 경로/URL"
+    },
+    "research_permission": {
+      "type": "string",
+      "enum": [
+        "YES",
+        "NO",
+        "UNKNOWN"
+      ]
+    },
+    "media_reuse_permission": {
+      "type": "string",
+      "enum": [
+        "YES",
+        "NO",
+        "UNKNOWN"
+      ]
+    },
+    "status": {
+      "type": "string",
+      "description": "GREEN 사용가능 / YELLOW 조건부 / RED 불가 / BLUE 확인중",
+      "enum": [
+        "GREEN",
+        "YELLOW",
+        "RED",
+        "BLUE"
+      ]
+    },
+    "checked_at": {
+      "type": "string",
+      "description": "YYYY-MM-DD",
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+    },
+    "checked_by": {
+      "type": "string",
+      "description": "행위자 (사용자 / 에이전트 이름)"
+    },
+    "notes": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  },
+  "required": [
+    "rights_id",
+    "asset_id",
+    "source",
+    "creator",
+    "license",
+    "commercial_use",
+    "modification_allowed",
+    "attribution_required",
+    "research_permission",
+    "media_reuse_permission",
+    "status",
+    "checked_at"
+  ]
+}

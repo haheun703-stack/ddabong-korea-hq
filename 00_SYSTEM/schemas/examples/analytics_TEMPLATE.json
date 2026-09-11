@@ -1,0 +1,17 @@
+{
+  "analytics_id": "ANL_EP001_20260911",
+  "episode_id": "EP001",
+  "platform": "YOUTUBE",
+  "video_url": null,
+  "published_at": null,
+  "measured_at": "2026-09-11",
+  "days_since_publish": null,
+  "metrics": {
+    "views": null,
+    "ctr": null,
+    "retention_30s": null
+  },
+  "top_countries": [],
+  "experiment": null,
+  "data_source": "TEMPLATE"
+}

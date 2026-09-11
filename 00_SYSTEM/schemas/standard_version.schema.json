@@ -1,0 +1,85 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://haheun703-stack.github.io/ddabong-korea-hq/00_SYSTEM/schemas/standard_version.schema.json",
+  "title": "STANDARD VERSION (정본 §1-7 · §18)",
+  "description": "표준 문서 버전. DRAFT → (회귀검사+사람 승인) → ACTIVE, 이전 ACTIVE는 PREVIOUS. 개선 실험이 ACTIVE를 덮어쓰지 않는다.",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "doc": {
+      "type": "string",
+      "description": "예: CHARACTER_CONTINUITY_STANDARD.md"
+    },
+    "version": {
+      "type": "string",
+      "pattern": "^v\\d+\\.\\d+$"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "DRAFT",
+        "ACTIVE",
+        "PREVIOUS",
+        "REJECTED"
+      ]
+    },
+    "source_section": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "정본 § 참조"
+    },
+    "change_summary": {
+      "type": "string"
+    },
+    "rule_change_candidate_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "regression_test_ref": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "REGRESSION_TEST_STANDARD 결과 경로"
+    },
+    "case_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "approved_by": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "approved_at": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "created_at": {
+      "type": "string",
+      "description": "YYYY-MM-DD",
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+    },
+    "created_by": {
+      "type": "string",
+      "description": "행위자 (사용자 / 에이전트 이름)"
+    }
+  },
+  "required": [
+    "doc",
+    "version",
+    "status",
+    "change_summary",
+    "created_at",
+    "created_by"
+  ]
+}

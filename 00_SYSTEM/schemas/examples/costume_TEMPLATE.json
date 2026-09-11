@@ -1,0 +1,19 @@
+{
+  "costume_id": "COSTUME_SILLA_OFFICIAL_A01",
+  "era": "SILLA_EARLY",
+  "wearer_role": "official",
+  "historical_basis": "PROBABLE",
+  "fact_ids": [],
+  "elements": {
+    "collar": "cross-collar, layered",
+    "belt": "leather with metal fittings (PROBABLE)",
+    "sleeve": "wide, plain hem",
+    "headwear": "soft cap",
+    "material": "hemp/silk blend",
+    "color": "undyed + dark indigo accents"
+  },
+  "reference_images": [],
+  "status": "DRAFT",
+  "version": "V01",
+  "updated_at": "2026-09-11"
+}

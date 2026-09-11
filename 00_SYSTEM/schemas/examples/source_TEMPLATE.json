@@ -1,0 +1,17 @@
+{
+  "source_id": "SRC_TEMPLATE_001",
+  "claim_ids": [
+    "CLM_HWANGNYONGSA_TEMPLATE_001"
+  ],
+  "title": "(TEMPLATE) Excavation report",
+  "institution_or_author": "NRICH (template)",
+  "url_or_path": "https://example.org/template",
+  "verified_at": "2026-09-11",
+  "verified_by": "Fact Check Agent",
+  "excerpt_or_summary": "template excerpt",
+  "confidence": "FACT",
+  "uncertainty": null,
+  "source_type": "EXCAVATION_REPORT",
+  "rights_id": null,
+  "notes": "TEMPLATE"
+}

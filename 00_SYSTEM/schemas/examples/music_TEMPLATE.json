@@ -1,0 +1,13 @@
+{
+  "music_id": "MUSIC_KCH_SOLEMN_V01",
+  "mood": "solemn",
+  "role": "TEMP",
+  "identity_check": true,
+  "provider": "(abstracted)",
+  "provider_ref": null,
+  "path": null,
+  "rights_id": "RTS_TEMPLATE_001",
+  "used_in": [],
+  "status": "DRAFT",
+  "updated_at": "2026-09-11"
+}

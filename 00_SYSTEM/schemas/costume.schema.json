@@ -1,0 +1,103 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://haheun703-stack.github.io/ddabong-korea-hq/00_SYSTEM/schemas/costume.schema.json",
+  "title": "COSTUME (정본 §5)",
+  "description": "복식 LOCK. 시대별로 분리. '모든 한국사에 조선 한복' 금지.",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "costume_id": {
+      "type": "string",
+      "description": "예: COSTUME_SILLA_OFFICIAL_A01",
+      "pattern": "^COSTUME_[A-Z0-9_]+_[A-Z]\\d{2}$"
+    },
+    "era": {
+      "type": "string"
+    },
+    "wearer_role": {
+      "type": "string"
+    },
+    "historical_basis": {
+      "type": "string",
+      "enum": [
+        "FACT",
+        "PROBABLE",
+        "INTERPRETIVE",
+        "ARTISTIC"
+      ]
+    },
+    "fact_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "elements": {
+      "type": "object",
+      "description": "collar/belt/sleeve/headwear/footwear/material/color 등 KEEP/CHANGE 단위",
+      "additionalProperties": {
+        "type": "string"
+      }
+    },
+    "reference_images": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "path": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "generation_id": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "MISSING",
+              "DRAFT",
+              "APPROVED"
+            ]
+          }
+        },
+        "required": [
+          "status"
+        ]
+      }
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "DRAFT",
+        "APPROVED",
+        "RETIRED"
+      ]
+    },
+    "version": {
+      "type": "string",
+      "description": "버전 태그 (V01, V02 …)",
+      "pattern": "^V\\d{2,}$"
+    },
+    "updated_at": {
+      "type": "string",
+      "description": "YYYY-MM-DD",
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+    }
+  },
+  "required": [
+    "costume_id",
+    "era",
+    "wearer_role",
+    "historical_basis",
+    "elements",
+    "status",
+    "version",
+    "updated_at"
+  ]
+}

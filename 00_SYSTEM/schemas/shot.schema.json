@@ -1,0 +1,275 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://haheun703-stack.github.io/ddabong-korea-hq/00_SYSTEM/schemas/shot.schema.json",
+  "title": "SHOT — 최소 운영 단위 (정본 §4·§12)",
+  "description": "SHOT은 DDABONG OS의 최소 운영 단위. ID 규칙 <EP>_S<NN>_SH<NNN>. 승인된 버전은 덮어쓰지 않고 version_history에 누적.",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "shot_id": {
+      "type": "string",
+      "description": "예: EP001_S04_SH003",
+      "pattern": "^EP\\d{2,3}_S\\d{2}_SH\\d{3}$"
+    },
+    "scene_id": {
+      "type": "string",
+      "pattern": "^EP\\d{2,3}_S\\d{2}$"
+    },
+    "episode_id": {
+      "type": "string",
+      "pattern": "^EP\\d{2,3}$"
+    },
+    "duration": {
+      "type": "number",
+      "description": "초"
+    },
+    "purpose": {
+      "type": "string"
+    },
+    "era": {
+      "type": "string",
+      "description": "era_id 참조 (예: SILLA_EARLY)"
+    },
+    "location": {
+      "type": "string",
+      "description": "location_id 참조"
+    },
+    "historical_confidence": {
+      "type": "string",
+      "enum": [
+        "FACT",
+        "PROBABLE",
+        "INTERPRETIVE",
+        "ARTISTIC"
+      ]
+    },
+    "camera_complexity": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 100
+    },
+    "spatial_accuracy": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 100
+    },
+    "human_motion": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 100
+    },
+    "visual_importance": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 100
+    },
+    "pipeline": {
+      "type": "string",
+      "enum": [
+        "REAL_SHOOT",
+        "ARCHIVE",
+        "AI_STILL",
+        "ORIGINAL_GRAPHIC",
+        "BLENDER_FLOW",
+        "HIGGSFIELD"
+      ]
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "PLANNED",
+        "ROUTED",
+        "PREVIZ_V",
+        "PREVIZ_APPROVED",
+        "LOOK_V",
+        "LOOK_APPROVED",
+        "VIDEO_V",
+        "VIDEO_APPROVED",
+        "FINAL",
+        "REJECTED",
+        "ARCHIVED"
+      ]
+    },
+    "characters": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "character_id[]"
+    },
+    "costumes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "costume_id[]"
+    },
+    "continuity_group": {
+      "type": "string",
+      "description": "보통 scene_id"
+    },
+    "master_frame": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "master_frame_id"
+    },
+    "must_keep": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "KEEP/CHANGE 기본 KEEP 항목"
+    },
+    "camera_id": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "camera.json 참조"
+    },
+    "prompt_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "router_decision_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "fact_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "rights_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "ai_label": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "AI 장면이면 'AI Visual Reconstruction' 또는 'INTERPRETIVE RECONSTRUCTION'"
+    },
+    "version_history": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "version": {
+            "type": "string",
+            "description": "버전 태그 (V01, V02 …)",
+            "pattern": "^V\\d{2,}$"
+          },
+          "stage": {
+            "type": "string",
+            "enum": [
+              "PREVIZ",
+              "LOOK",
+              "VIDEO",
+              "STILL",
+              "SCRIPT",
+              "PROMPT",
+              "STANDARD"
+            ]
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "DRAFT",
+              "APPROVED",
+              "FINAL",
+              "REJECTED",
+              "PREVIOUS"
+            ]
+          },
+          "created_at": {
+            "type": "string",
+            "description": "YYYY-MM-DD",
+            "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+          },
+          "created_by": {
+            "type": "string",
+            "description": "행위자 (사용자 / 에이전트 이름)"
+          },
+          "path": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "note": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        },
+        "required": [
+          "version",
+          "stage",
+          "status",
+          "created_at"
+        ]
+      }
+    },
+    "approved_version": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "created_at": {
+      "type": "string",
+      "description": "YYYY-MM-DD",
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+    },
+    "updated_at": {
+      "type": "string",
+      "description": "YYYY-MM-DD",
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+    },
+    "updated_by": {
+      "type": "string",
+      "description": "행위자 (사용자 / 에이전트 이름)"
+    },
+    "notes": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  },
+  "required": [
+    "shot_id",
+    "scene_id",
+    "episode_id",
+    "duration",
+    "purpose",
+    "era",
+    "location",
+    "historical_confidence",
+    "camera_complexity",
+    "spatial_accuracy",
+    "human_motion",
+    "visual_importance",
+    "pipeline",
+    "status",
+    "characters",
+    "costumes",
+    "continuity_group",
+    "must_keep",
+    "version_history",
+    "updated_at"
+  ]
+}

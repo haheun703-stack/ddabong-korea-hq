@@ -1,0 +1,16 @@
+{
+  "era_id": "SILLA_EARLY",
+  "name_ko": "신라 초기·중기",
+  "name_en": "Early Silla",
+  "period_start": 300,
+  "period_end": 650,
+  "material_culture_notes": "wooden-chamber stone-mound tombs, gold crowns, glass imports",
+  "forbidden_anachronisms": [
+    "Joseon hanbok",
+    "paper windows",
+    "modern brick"
+  ],
+  "prompt_lock_id": "SILLA_EARLY_V01",
+  "fact_ids": [],
+  "updated_at": "2026-09-11"
+}

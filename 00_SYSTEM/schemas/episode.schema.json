@@ -1,0 +1,263 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://haheun703-stack.github.io/ddabong-korea-hq/00_SYSTEM/schemas/episode.schema.json",
+  "title": "EPISODE 매니페스트 (정본 §4·§19·§21)",
+  "description": "에피소드 단위 상태·게이트·예산·산출물 매니페스트. 활성 EP01 = 경주 왕릉/천마총.",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "$schema": {
+      "type": "string"
+    },
+    "episode_id": {
+      "type": "string",
+      "pattern": "^EP\\d{2,3}$"
+    },
+    "season_id": {
+      "type": "string",
+      "pattern": "^S\\d{2}$"
+    },
+    "project_id": {
+      "type": "string"
+    },
+    "topic_ko": {
+      "type": "string"
+    },
+    "working_title_en": {
+      "type": "string"
+    },
+    "core_question": {
+      "type": "string"
+    },
+    "target_duration_sec": {
+      "type": "integer"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "IDEA",
+        "PRE_PRODUCTION",
+        "PRODUCTION",
+        "POST_PRODUCTION",
+        "QA",
+        "PUBLISHED",
+        "ARCHIVED"
+      ]
+    },
+    "current_gate": {
+      "type": "string",
+      "description": "정본 §2 파이프라인 단계",
+      "enum": [
+        "IDEA",
+        "RESEARCH",
+        "SOURCE_FACT_QA",
+        "STORY_ANGLE",
+        "TITLE_THUMBNAIL",
+        "SCRIPT",
+        "NARRATION_DESIGN",
+        "TEMP_MUSIC_MAP",
+        "SCENE_BREAKDOWN",
+        "SHOTLIST",
+        "SHOT_ROUTER",
+        "REAL_SHOOT",
+        "ARCHIVE",
+        "AI_STILL",
+        "BLENDER_PREVIZ",
+        "FLOW_VEO",
+        "HIGGSFIELD",
+        "ROUGH_CUT",
+        "FINAL_MUSIC",
+        "SFX_AMBIENCE_FOLEY",
+        "AUDIO_MIX",
+        "HISTORY_QA",
+        "VISUAL_QA",
+        "RETENTION_QA",
+        "RIGHTS_QA",
+        "FINAL_APPROVAL",
+        "PUBLISH",
+        "SHORTS_CLIPS",
+        "ANALYTICS",
+        "SYSTEM_LEARNING"
+      ]
+    },
+    "gate_note": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "budget": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "currency": {
+          "type": "string",
+          "enum": [
+            "KRW",
+            "USD",
+            "CREDITS"
+          ]
+        },
+        "amount": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "description": "미확인이면 null. 0은 실제 0원일 때만."
+        },
+        "spent": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "note": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "required": [
+        "currency",
+        "amount"
+      ]
+    },
+    "era_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "location_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "character_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "scene_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "template_note": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "legacy_artifacts": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "stage": {
+            "type": "string",
+            "enum": [
+              "IDEA",
+              "RESEARCH",
+              "SOURCE_FACT_QA",
+              "STORY_ANGLE",
+              "TITLE_THUMBNAIL",
+              "SCRIPT",
+              "NARRATION_DESIGN",
+              "TEMP_MUSIC_MAP",
+              "SCENE_BREAKDOWN",
+              "SHOTLIST",
+              "SHOT_ROUTER",
+              "REAL_SHOOT",
+              "ARCHIVE",
+              "AI_STILL",
+              "BLENDER_PREVIZ",
+              "FLOW_VEO",
+              "HIGGSFIELD",
+              "ROUGH_CUT",
+              "FINAL_MUSIC",
+              "SFX_AMBIENCE_FOLEY",
+              "AUDIO_MIX",
+              "HISTORY_QA",
+              "VISUAL_QA",
+              "RETENTION_QA",
+              "RIGHTS_QA",
+              "FINAL_APPROVAL",
+              "PUBLISH",
+              "SHORTS_CLIPS",
+              "ANALYTICS",
+              "SYSTEM_LEARNING"
+            ]
+          },
+          "path": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "html": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "version": {
+            "type": "string"
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "DRAFT",
+              "APPROVED",
+              "PREVIOUS",
+              "DONE"
+            ]
+          },
+          "note": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        },
+        "required": [
+          "stage",
+          "version",
+          "status"
+        ]
+      },
+      "description": "OS 이전에 만들어진 산출물 참조 (옮기지 않음)"
+    },
+    "web_hq_page": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "updated_at": {
+      "type": "string",
+      "description": "YYYY-MM-DD",
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+    },
+    "updated_by": {
+      "type": "string",
+      "description": "행위자 (사용자 / 에이전트 이름)"
+    }
+  },
+  "required": [
+    "episode_id",
+    "season_id",
+    "project_id",
+    "topic_ko",
+    "working_title_en",
+    "status",
+    "current_gate",
+    "budget",
+    "updated_at"
+  ]
+}

@@ -1,0 +1,157 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://haheun703-stack.github.io/ddabong-korea-hq/00_SYSTEM/schemas/camera.schema.json",
+  "title": "CAMERA 데이터 (정본 §6 Blender 입력)",
+  "description": "Blender 입력은 구조화 데이터. 자연어 금지.",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "camera_id": {
+      "type": "string",
+      "description": "예: CAMERA_S004_V02",
+      "pattern": "^CAMERA_[A-Z0-9_]+_V\\d{2}$"
+    },
+    "shot_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "lens": {
+      "type": "number",
+      "description": "mm"
+    },
+    "camera_height": {
+      "type": "number",
+      "description": "m"
+    },
+    "duration": {
+      "type": "number",
+      "description": "s"
+    },
+    "fps": {
+      "type": "integer"
+    },
+    "motion": {
+      "type": "object",
+      "properties": {
+        "type": {
+          "type": "string",
+          "enum": [
+            "static",
+            "dolly_forward",
+            "dolly_back",
+            "pan",
+            "tilt",
+            "tracking",
+            "orbit",
+            "crane",
+            "push_in",
+            "reveal"
+          ]
+        },
+        "distance": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "degrees": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "speed_curve": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "required": [
+        "type"
+      ]
+    },
+    "tilt": {
+      "type": "object",
+      "properties": {
+        "start": {
+          "type": "number"
+        },
+        "end": {
+          "type": "number"
+        }
+      }
+    },
+    "target": {
+      "type": "string",
+      "description": "MAIN_OBJECT / character_id / location anchor"
+    },
+    "actor_positions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "character_id": {
+            "type": "string"
+          },
+          "x": {
+            "type": "number"
+          },
+          "y": {
+            "type": "number"
+          },
+          "z": {
+            "type": "number"
+          },
+          "facing_deg": {
+            "type": "number"
+          }
+        }
+      }
+    },
+    "height_ratios": {
+      "type": [
+        "object",
+        "null"
+      ]
+    },
+    "blender_file": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "version": {
+      "type": "string",
+      "description": "버전 태그 (V01, V02 …)",
+      "pattern": "^V\\d{2,}$"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "DRAFT",
+        "APPROVED",
+        "PREVIOUS"
+      ]
+    },
+    "updated_at": {
+      "type": "string",
+      "description": "YYYY-MM-DD",
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+    }
+  },
+  "required": [
+    "camera_id",
+    "lens",
+    "camera_height",
+    "duration",
+    "fps",
+    "motion",
+    "target",
+    "version",
+    "status",
+    "updated_at"
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "scene_id": "EP001_S04",
+  "episode_id": "EP001",
+  "title": "Burial preparation (TEMPLATE)",
+  "story_beat": "CHOICE",
+  "era": "SILLA_EARLY",
+  "location": "LOC_GYEONGJU_BURIAL_SITE_V01",
+  "characters": [
+    "CHAR_SILLA_OFFICIAL_01"
+  ],
+  "master_frame": "EP001_S04_MASTER_V03",
+  "shot_ids": [
+    "EP001_S04_SH003"
+  ],
+  "status": "IN_PROGRESS",
+  "updated_at": "2026-09-11",
+  "updated_by": "Claude Code",
+  "notes": "TEMPLATE"
+}

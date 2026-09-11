@@ -1,0 +1,81 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://haheun703-stack.github.io/ddabong-korea-hq/00_SYSTEM/schemas/analytics.schema.json",
+  "title": "ANALYTICS 스냅샷 (정본 §2 ANALYTICS)",
+  "description": "게시물 단위 지표 스냅샷. performance_memory 의 원천.",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "analytics_id": {
+      "type": "string",
+      "pattern": "^ANL_[A-Z0-9_]+_\\d{8}$"
+    },
+    "episode_id": {
+      "type": "string"
+    },
+    "platform": {
+      "type": "string",
+      "enum": [
+        "YOUTUBE",
+        "YOUTUBE_SHORTS",
+        "OTHER"
+      ]
+    },
+    "video_url": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "published_at": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "measured_at": {
+      "type": "string",
+      "description": "YYYY-MM-DD",
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+    },
+    "days_since_publish": {
+      "type": [
+        "integer",
+        "null"
+      ]
+    },
+    "metrics": {
+      "type": "object",
+      "additionalProperties": {
+        "type": [
+          "number",
+          "null"
+        ]
+      }
+    },
+    "top_countries": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "experiment": {
+      "type": [
+        "object",
+        "null"
+      ],
+      "description": "제목/썸네일 실험 변수"
+    },
+    "data_source": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "analytics_id",
+    "episode_id",
+    "platform",
+    "measured_at",
+    "metrics",
+    "data_source"
+  ]
+}
