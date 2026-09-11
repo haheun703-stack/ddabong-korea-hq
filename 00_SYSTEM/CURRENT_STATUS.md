@@ -1,7 +1,7 @@
 # CURRENT STATUS — 지금 어디까지 왔나
 
 > **매 작업마다 갱신한다.** 이 파일 하나만 읽으면 어느 봇/AI 창을 열어도 바로 이어갈 수 있어야 한다.
-> 갱신: 2026-09-11 (Claude Code, P1) · 마지막 사용자 승인: 2026-09-11 (P0 범위·EP01 파일 유지·push 전 확인 → D-007)
+> 갱신: 2026-09-11 (Claude Code, P2 pre-flight) · 마지막 사용자 승인: 2026-09-11 (P0 범위·EP01 파일 유지·push 전 확인 → D-007)
 > 읽는 순서: `BOT_HANDOFF_DDABONG_STUDIO_OS_V0.1.md` → `BOT_BOOTSTRAP_PROMPT.md` → **이 문서** → `OS_INDEX.md` → `02_SEASONS/S01/EP01/episode.json`
 
 ---
@@ -24,6 +24,20 @@
 - P5 Review UI / P6 Money Gate 어댑터 설계 (유료 없음).
 
 **유료 생성 시작 조건 (모두 충족해야)**: P-001 예산 확정 → `cost.json` OPEN · P-011 라우터 ACCEPT · Master Pack 생성 → `CHARACTER_MASTER_APPROVED` · master_frame APPROVED.
+
+## P2 사전 점검 — Pre-flight (2026-09-11 · DONE, 생성 0)
+
+리포트 `02_SEASONS/S01/EP01/15_QA/P2_PREFLIGHT_REPORT.md`. 순서(사용자 고정): Lock 확인 → Master Pack 요구 → 복식 TBD → Reference Set → FULL/LITE → Master Frame 후보 → **사람 승인** → 유료 생성.
+
+| 단계 | 결과 |
+|---|---|
+| Character lock 3 · Costume lock 3 | 영문 전용, character 인스턴스와 일치. 전부 DRAFT → 승인 대기 (항목 A) |
+| Master Pack 요구 ↔ 프롬프트 | 17 = 17 (원로 10 + back_view 1 · 노동자 3 · 시종 3) |
+| 복식 TBD | 0. 잔여 INTERPRETIVE = P-009 (옷 색·과대), lock 은 hedge 상태 |
+| Reference Set | 3층 계보 (Master Pack → Master Frame → AI 샷). S05_SH005 프롬프트의 유령 참조 `EP01_S05_MASTER_V01` 제거. 검증기에 `reference_images` 실존 규칙 추가 (음성 테스트 통과) |
+| FULL / LITE | 원로 FULL · 군중 2 LITE_CROWD 유지, 승격 대상 없음 (사람 확인 항목 C). H02 푸시인이 특정 얼굴에 머물면 재검토 |
+| Master Frame 후보 | S04 · S06 DRAFT 2 (Master Pack 승인 뒤 생성) |
+| 승인 대기 | A lock 승인 · B P-009 · C 군중 등급 확인 · D P-005 back_view · E P-011 · **F P-001 예산 (전면 차단)** |
 
 ## P2 준비 — 프롬프트·카메라·마스터프레임 초안 (2026-09-11 · DONE, 생성 0)
 
@@ -143,6 +157,9 @@
 ---
 
 ## 최근 변경 (최신순)
+
+- **2026-09-11 Claude Code** — P2 사전 점검 완료 (`15_QA/P2_PREFLIGHT_REPORT.md`): lock·요구·TBD·Reference Set·등급·Master Frame 후보 점검, S05 유령 master_frame 참조 제거, 검증기 reference_images 규칙 추가. 생성 0. 검증 231/231. 승인 대기 A–F.
+- **2026-09-11 Claude Code** — H: 드라이브 끊김 복구: fsck 통과, index.lock 정리, ba55720 push. D:\ddabong-korea-hq 비상용 클론 생성 (작업 클론은 H: 유지).
 
 - **2026-09-11 Claude Code** — P2 준비: lock 11 · Master Pack 프롬프트 17 · AI 샷 프롬프트 8 · 카메라 8 · master_frame 2. 생성 0. 검증 231/231.
 - **2026-09-11 Claude Code** — P4 Shot Router 완료 (D-014): 49 판정, Higgsfield 8 → 1, 권리 usage_tier, 검증 규칙 3종 추가, 리포트. 검증 196/196. P-011 등록.

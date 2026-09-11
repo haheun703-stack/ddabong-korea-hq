@@ -137,6 +137,12 @@ def refcheck(paths):
                 if d.get(field): need(p, kind, d[field], field)
         if name == "camera" and d.get("shot_id"): need(p, "shot", d["shot_id"], "shot_id")
         if name == "prompt" and not str(d.get("shot_id", "")).startswith("MASTER_PACK:"): need(p, "shot", d["shot_id"], "shot_id")
+        if name == "prompt":
+            # reference_images entries "master_frame:<frame_id>" / "character_pack:<character_id>" must resolve (P2 rule)
+            for r in d.get("reference_images") or []:
+                kind, _, v = str(r).partition(":")
+                if kind == "master_frame": need(p, "master_frame", v, "reference_images")
+                elif kind == "character_pack": need(p, "character", v, "reference_images")
         if name == "master_frame":
             need(p, "scene", d["scene_id"], "scene_id"); need(p, "shot", d.get("derived_shots"), "derived_shots")
             need(p, "character", d.get("characters"), "characters"); need(p, "location", d["location"], "location")
