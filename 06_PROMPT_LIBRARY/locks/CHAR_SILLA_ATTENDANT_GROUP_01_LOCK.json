@@ -1,0 +1,8 @@
+{
+  "lock_id": "CHAR_SILLA_ATTENDANT_GROUP_01_LOCK",
+  "kind": "CHARACTER",
+  "text": "CHAR_SILLA_ATTENDANT_GROUP_01 (Funeral attendant and artisan group): 부장품을 고르고 정리하는 시종·장인, 의례 준비 인원 (H03, H04, H05, H06 원경). Face: varied realistic Korean faces, calm focused expressions, faces often out of frame (hands-first). Body: natural, mixed. Hair: neatly tied — follows COSTUME_SILLA_ATTENDANT_A01. Age: 20s–50s mixed. Skin: natural texture, no gloss. Costume lock: COSTUME_SILLA_ATTENDANT_A01_LOCK.",
+  "source": "05_HISTORY_DATABASE/characters/CHAR_SILLA_ATTENDANT_GROUP_01.json",
+  "status": "DRAFT",
+  "updated_at": "2026-09-11"
+}

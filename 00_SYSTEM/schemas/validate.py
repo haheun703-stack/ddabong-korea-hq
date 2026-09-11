@@ -41,7 +41,9 @@ def check(path):
 
 INSTANCES = sorted(ROOT.glob("02_SEASONS/*/*/episode.json")) + \
             sorted(p for p in ROOT.glob("05_HISTORY_DATABASE/*/*.json")) + \
-            sorted(ROOT.glob("02_SEASONS/*/*/07_SHOTS/*.json"))
+            sorted(ROOT.glob("02_SEASONS/*/*/07_SHOTS/*.json")) + \
+            sorted(ROOT.glob("02_SEASONS/*/*/10_BLENDER/camera_*.json")) + \
+            sorted(ROOT.glob("02_SEASONS/*/*/1[12]_AI_*/prompt_*.json"))
 
 LITE_SLOTS = {"full_body", "walking", "costume_detail"}
 
@@ -105,6 +107,7 @@ def refcheck(paths):
     ids, docs = {}, []
     key = {"era": "era_id", "location": "location_id", "character": "character_id", "costume": "costume_id",
            "fact": "claim_id", "source": "source_id", "rights": "rights_id", "router_decision": "decision_id",
+           "camera": "camera_id", "prompt": "prompt_id", "master_frame": "frame_id",
            "scene": "scene_id", "shot": "shot_id", "episode": "episode_id"}
     for p in paths:
         data = json.loads(p.read_text(encoding="utf-8")); name = pick(p, data)
@@ -126,7 +129,18 @@ def refcheck(paths):
             need(p, "costume", d.get("costumes"), "costumes"); need(p, "scene", d.get("scene_id"), "scene_id")
             need(p, "fact", d.get("fact_ids"), "fact_ids"); need(p, "rights", d.get("rights_ids"), "rights_ids")
             errs.extend(ledger_rules(p, d, facts, rights, routers))
-        if name == "scene": need(p, "shot", d.get("shot_ids"), "shot_ids")
+        if name == "scene":
+            need(p, "shot", d.get("shot_ids"), "shot_ids")
+            if d.get("master_frame"): need(p, "master_frame", d["master_frame"], "master_frame")
+        if name == "shot":
+            for kind, field in (("camera", "camera_id"), ("prompt", "prompt_id"), ("master_frame", "master_frame")):
+                if d.get(field): need(p, kind, d[field], field)
+        if name == "camera" and d.get("shot_id"): need(p, "shot", d["shot_id"], "shot_id")
+        if name == "prompt" and not str(d.get("shot_id", "")).startswith("MASTER_PACK:"): need(p, "shot", d["shot_id"], "shot_id")
+        if name == "master_frame":
+            need(p, "scene", d["scene_id"], "scene_id"); need(p, "shot", d.get("derived_shots"), "derived_shots")
+            need(p, "character", d.get("characters"), "characters"); need(p, "location", d["location"], "location")
+            if d.get("camera_id"): need(p, "camera", d["camera_id"], "camera_id")
         if name == "character":
             need(p, "era", d.get("era"), "era"); need(p, "costume", d.get("costume_ids"), "costume_ids")
             errs.extend(pack_rules(p, d, costumes))

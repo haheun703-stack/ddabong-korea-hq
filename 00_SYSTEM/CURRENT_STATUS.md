@@ -20,9 +20,21 @@
 - YELLOW_ACTIVE 1건 (`RTS_GNM_OTHER_OBJECTS_001`) — 편집 확정 전 필수 해소 (D-014).
 
 **봇이 바로 갈 수 있는 것**
-- P2 Character Master 준비 문서: 원로 FULL 10종 + 군중 LITE 3종 프롬프트 조립(§8 lock 조각) — 생성은 예산(P-001) 후.
-- `camera.json` 수동 작성: BLENDER_FLOW 6컷 (Blender 브리지 P7 전).
 - graphics-spec v2 (G13 추가) — legacy HTML 은 수정하지 않고 새 문서로.
+- P5 Review UI / P6 Money Gate 어댑터 설계 (유료 없음).
+
+**유료 생성 시작 조건 (모두 충족해야)**: P-001 예산 확정 → `cost.json` OPEN · P-011 라우터 ACCEPT · Master Pack 생성 → `CHARACTER_MASTER_APPROVED` · master_frame APPROVED.
+
+## P2 준비 — 프롬프트·카메라·마스터프레임 초안 (2026-09-11 · DONE, 생성 0)
+
+| 항목 | 산출 | 상태 |
+|---|---|---|
+| Lock 라이브러리 (§8) | `06_PROMPT_LIBRARY/locks/` 11 조각 — GLOBAL · ERA `SILLA_EARLY_V01` · LOCATION `LOC_CHEONMACHONG_V01` · COSTUME 3 · CHARACTER 3 · STYLE · NEGATIVE | DRAFT (GLOBAL/STYLE/NEGATIVE 는 정본 인용이라 APPROVED) |
+| Master Pack 프롬프트 | `11_AI_STILLS/prompt_PRM_MP_*` 17 — 원로 10 + 뒷모습 1 · 노동자 3 · 시종 3 (IMAGE) | DRAFT |
+| AI 샷 프롬프트 | `12_AI_VIDEO/` 6 (H01–H05) · `11_AI_STILLS/` 2 (H06 · H07) — legacy APPROVED 팩을 shot_delta 로, lock 조립 `assembled_text` 저장 | DRAFT |
+| 카메라 | `10_BLENDER/camera_CAMERA_EP01_*_V01.json` 8 (렌즈·높이·모션·배우 위치·키 비율) — 수동 초안 | DRAFT |
+| Master Frame | `07_SHOTS/master_frame_EP01_S04_MASTER_V01` · `_S06_MASTER_V01` (path 없음, 승인 전) | DRAFT |
+| 검증 | camera / prompt / master_frame 인스턴스 + 상호참조 (shot ↔ camera ↔ prompt ↔ master_frame) → 231/231 PASS | DONE |
 
 ## P4 — Shot Router (2026-09-11 · DONE, 사용자 ACCEPT 대기 P-011)
 
@@ -132,6 +144,7 @@
 
 ## 최근 변경 (최신순)
 
+- **2026-09-11 Claude Code** — P2 준비: lock 11 · Master Pack 프롬프트 17 · AI 샷 프롬프트 8 · 카메라 8 · master_frame 2. 생성 0. 검증 231/231.
 - **2026-09-11 Claude Code** — P4 Shot Router 완료 (D-014): 49 판정, Higgsfield 8 → 1, 권리 usage_tier, 검증 규칙 3종 추가, 리포트. 검증 196/196. P-011 등록.
 - **2026-09-11 사용자** — **D-014.** `e5c4d39` push, 권리 등급 YELLOW_ACTIVE/BACKUP, P4 진입, 라우터 감독 기준.
 - **2026-09-11 Claude Code** — P3 Source/Rights Ledger 완료 (D-013): 출처 13 · 사실 22 · 권리 11, 49 샷 fact/rights/evidence_role 연결, 자동 FAIL 규칙 6종, 리포트. 검증 147/147.

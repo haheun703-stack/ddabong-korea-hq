@@ -1,0 +1,8 @@
+{
+  "lock_id": "CHAR_SILLA_LABORER_GROUP_01_LOCK",
+  "kind": "CHARACTER",
+  "text": "CHAR_SILLA_LABORER_GROUP_01 (Burial-construction laborer group): 목재 준비·돌 운반·봉분 작업을 하는 집단 (H01, H02, H04·H05 배경). Face: varied realistic Korean faces, no single recurring hero face, no close-up emotion acting. Body: lean working builds, mixed heights. Hair: tied up, cloth band possible — follows COSTUME_SILLA_LABORER_A01. Age: 20s–40s mixed. Skin: sun-weathered, dust, sweat, no gloss. Costume lock: COSTUME_SILLA_LABORER_A01_LOCK.",
+  "source": "05_HISTORY_DATABASE/characters/CHAR_SILLA_LABORER_GROUP_01.json",
+  "status": "DRAFT",
+  "updated_at": "2026-09-11"
+}

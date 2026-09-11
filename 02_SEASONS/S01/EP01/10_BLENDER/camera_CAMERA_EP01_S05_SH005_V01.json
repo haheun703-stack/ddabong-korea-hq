@@ -1,0 +1,29 @@
+{
+  "camera_id": "CAMERA_EP01_S05_SH005_V01",
+  "shot_id": "EP01_S05_SH005",
+  "lens": 50,
+  "camera_height": 1.0,
+  "duration": 4,
+  "fps": 24,
+  "motion": {
+    "type": "dolly_forward",
+    "distance": 0.4,
+    "degrees": null,
+    "speed_curve": "ease_in_out"
+  },
+  "tilt": {
+    "start": 0,
+    "end": 0
+  },
+  "target": "CHAR_SILLA_ATTENDANT_GROUP_01",
+  "actor_positions": [],
+  "height_ratios": {
+    "CHAR_SILLA_ELITE_OBSERVER_01": 1.0,
+    "CHAR_SILLA_LABORER_GROUP_01": 0.97,
+    "CHAR_SILLA_ATTENDANT_GROUP_01": 0.98
+  },
+  "blender_file": null,
+  "version": "V01",
+  "status": "DRAFT",
+  "updated_at": "2026-09-11"
+}

@@ -1,0 +1,25 @@
+{
+  "camera_id": "CAMERA_EP01_S08_SH002_V01",
+  "shot_id": "EP01_S08_SH002",
+  "lens": 35,
+  "camera_height": 1.6,
+  "duration": 5,
+  "fps": 24,
+  "motion": {
+    "type": "static",
+    "distance": null,
+    "degrees": null,
+    "speed_curve": null
+  },
+  "tilt": {
+    "start": 0,
+    "end": 0
+  },
+  "target": "MAIN_OBJECT",
+  "actor_positions": [],
+  "height_ratios": null,
+  "blender_file": null,
+  "version": "V01",
+  "status": "DRAFT",
+  "updated_at": "2026-09-11"
+}

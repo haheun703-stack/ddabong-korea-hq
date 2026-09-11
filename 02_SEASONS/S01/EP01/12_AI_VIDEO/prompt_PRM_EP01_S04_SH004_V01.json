@@ -1,0 +1,56 @@
+{
+  "prompt_id": "PRM_EP01_S04_SH004_V01",
+  "shot_id": "EP01_S04_SH004",
+  "target": "VIDEO",
+  "locks": {
+    "global": "DDABONG_GLOBAL_V01",
+    "era": "SILLA_EARLY_V01",
+    "location": "LOC_CHEONMACHONG_V01",
+    "character_costume": [
+      "CHAR_SILLA_LABORER_GROUP_01_LOCK+COSTUME_SILLA_LABORER_A01_LOCK"
+    ],
+    "style": "DDABONG_DOC_REENACTMENT_V01",
+    "camera": "CAMERA_EP01_S04_SH004_V01"
+  },
+  "shot_delta": "H01: skilled workers prepare thick timber beams for the burial chamber, measuring, carrying and fitting wood with simple period tools; coordinated labour, physical effort, no dramatic emotion; earthy colours, cool morning light, dust in air; medium-wide. AI Visual Reconstruction",
+  "negative": [
+    "Joseon dynasty hanbok",
+    "gat hats",
+    "Ming or Qing court robes",
+    "samurai armor",
+    "European medieval armor",
+    "fantasy armor",
+    "giant stone palace",
+    "Chinese imperial palace",
+    "pagoda skyline",
+    "torii gates",
+    "modern tools",
+    "excavators",
+    "cranes",
+    "concrete",
+    "electric lights",
+    "plastic",
+    "modern roads",
+    "supernatural ghosts",
+    "glowing magic",
+    "fantasy crown",
+    "exaggerated crying",
+    "battle scene",
+    "cinematic war spectacle",
+    "modern museum display cases",
+    "text",
+    "watermark",
+    "glossy skin",
+    "malformed anatomy"
+  ],
+  "assembled_text": "Photorealistic cinematic historical documentary. Natural physical proportions. Historically plausible reconstruction. Realistic materials. Natural lighting. No fantasy. No modern objects. No text. No logos. No excessive saturation. No glossy AI look. No malformed anatomy. No arbitrary architecture changes. [SILLA_EARLY_V01] Early Silla, Gyeongju royal capital, 5th to early 6th century. Elite burial construction context. Modest timber work spaces, no palace spectacle. Forbidden: Joseon dynasty hanbok; gat hats; Ming or Qing court robes; samurai armor; European medieval armor; fantasy armor; giant stone palace; Joseon-style tiled palace compound; Chinese imperial palace; pagoda skyline; torii gates; stone mausoleum / pyramid / Chinese-style tomb gateway; modern tools, excavators, cranes, wheeled modern carts; concrete, electric lights, plastic, modern roads; supernatural ghosts, glowing magic, fantasy crown; modern museum display cases. [LOC_CHEONMACHONG_V01] Cheonmachong under construction, Gyeongju: stone-mound wooden-chamber tomb. Wooden outer chamber 6.6 x 4.2 m, coffin inside, river stones piled above and around the chamber, earth mound finishing at about 47 m diameter and 12.7 m height. Layer order: coffin and grave-goods chest, wooden chamber, stones, earth. Do not invent stone-pile thickness, work duration, headcount or ritual order. [CHAR_SILLA_LABORER_GROUP_01_LOCK] CHAR_SILLA_LABORER_GROUP_01 (Burial-construction laborer group): 목재 준비·돌 운반·봉분 작업을 하는 집단 (H01, H02, H04·H05 배경). Face: varied realistic Korean faces, no single recurring hero face, no close-up emotion acting. Body: lean working builds, mixed heights. Hair: tied up, cloth band possible — follows COSTUME_SILLA_LABORER_A01. Age: 20s–40s mixed. Skin: sun-weathered, dust, sweat, no gloss. Costume lock: COSTUME_SILLA_LABORER_A01_LOCK. [COSTUME_SILLA_LABORER_A01_LOCK] COSTUME_SILLA_LABORER_A01: Silla labourer (PROBABLE, CLM_SILLA_COSTUME_001-007): undyed coarse hemp plain-weave; short narrow-sleeved jacket to hip length, straight collar closing right over left; narrow trousers, possibly bound at shin or ankle; plain cloth waist cord, no metal; straw sandals or bare feet; topknot with a cloth band or bare topknot, may be bare-chested while working; colours natural white, black or raw fibre, no bright dye. Dust, sweat, worn cloth. Forbidden: Joseon hanbok silhouette, gat hat, Ming/Qing dress, samurai elements, modern fabric, purple/crimson/blue/yellow official colours. [DDABONG_DOC_REENACTMENT_V01] DDABONG Documentary Reenactment (style B): realistic Korean facial proportions, natural skin texture with subtle imperfections, restrained expressions, historically researched clothing, natural documentary lighting, not glamorous, not glossy, not fantasy-drama, not generic Joseon hanbok. [CAMERA_EP01_S04_SH004_V01] lens 35mm, camera height 1.4 m, tracking 3 m, 6 s. SHOT: H01: skilled workers prepare thick timber beams for the burial chamber, measuring, carrying and fitting wood with simple period tools; coordinated labour, physical effort, no dramatic emotion; earthy colours, cool morning light, dust in air; medium-wide.",
+  "reference_images": [
+    "master_frame:EP01_S04_MASTER_V01",
+    "character_pack:CHAR_SILLA_LABORER_GROUP_01"
+  ],
+  "version": "V01",
+  "parent_prompt_id": null,
+  "patch_id": null,
+  "created_at": "2026-09-11",
+  "created_by": "Image/Video Generation Agent (Claude Code)"
+}

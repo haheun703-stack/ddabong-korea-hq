@@ -1,0 +1,24 @@
+{
+  "frame_id": "EP01_S04_MASTER_V01",
+  "scene_id": "EP01_S04",
+  "version": "V01",
+  "path": null,
+  "generation_id": null,
+  "characters": [
+    "CHAR_SILLA_LABORER_GROUP_01"
+  ],
+  "costumes": [
+    "COSTUME_SILLA_LABORER_A01"
+  ],
+  "location": "LOC_CHEONMACHONG_V01",
+  "camera_id": "CAMERA_EP01_S04_SH004_V01",
+  "status": "DRAFT",
+  "approved_by": null,
+  "approved_at": null,
+  "derived_shots": [
+    "EP01_S04_SH004",
+    "EP01_S04_SH005",
+    "EP01_S04_SH006"
+  ],
+  "updated_at": "2026-09-11"
+}

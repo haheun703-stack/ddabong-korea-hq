@@ -8,7 +8,7 @@
   "characters": [
     "CHAR_SILLA_LABORER_GROUP_01"
   ],
-  "master_frame": null,
+  "master_frame": "EP01_S04_MASTER_V01",
   "shot_ids": [
     "EP01_S04_SH001",
     "EP01_S04_SH002",
