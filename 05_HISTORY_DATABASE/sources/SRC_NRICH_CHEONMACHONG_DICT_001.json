@@ -1,0 +1,17 @@
+{
+  "source_id": "SRC_NRICH_CHEONMACHONG_DICT_001",
+  "claim_ids": [
+    "CLM_CHEONMACHONG_LAYOUT_001"
+  ],
+  "title": "한국고고학사전 「천마총」 (research-v2 S4)",
+  "institution_or_author": "국립문화유산연구원",
+  "url_or_path": "https://portal.nrich.go.kr/kor/archeologyUsrView.do?idx=5195&menuIdx=797",
+  "verified_at": "2026-09-11",
+  "verified_by": "Claude Code (Continuity Engine / Historical QA)",
+  "excerpt_or_summary": "목관 안의 피장자는 동쪽으로 머리를 두고 금관·금제 세환이식·경흉식·금팔찌와 반지·금제 과대와 요패 등의 장신구를 착용. 목관 동쪽에 석단에 붙여 남북 장축의 부장품 수장궤 → 목관과 T자형 배치. 피장자 왼쪽 허리 아래 단봉환두대도 1점. 목관 밖 석단 동남쪽 모서리에 투조문 금제관모와 백화수피제 관모.",
+  "confidence": "FACT",
+  "uncertainty": "피장자 신원 불확실 (왕 또는 왕급). 연대 이견 있음.",
+  "source_type": "EXCAVATION_REPORT",
+  "rights_id": null,
+  "notes": null
+}

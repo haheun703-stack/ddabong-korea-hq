@@ -11,10 +11,11 @@
     "EP01_S07_SH001",
     "EP01_S07_SH002",
     "EP01_S07_SH003",
-    "EP01_S07_SH004"
+    "EP01_S07_SH004",
+    "EP01_S07_SH005"
   ],
   "status": "BROKEN_DOWN",
   "updated_at": "2026-09-11",
   "updated_by": "Claude Code (Continuity Engine)",
-  "notes": "TC 5:20–6:05 · 원본 script v2 5:20–6:05 + episodes/ep01-premiere-roughcut.html. 대본은 새로 쓰지 않음."
+  "notes": "TC 5:20–6:05 · 원본 script v2 5:20–6:05 + episodes/ep01-premiere-roughcut.html. 대본은 새로 쓰지 않음. X3 반영: SH005 G13 추가 (2026-09-11)."
 }

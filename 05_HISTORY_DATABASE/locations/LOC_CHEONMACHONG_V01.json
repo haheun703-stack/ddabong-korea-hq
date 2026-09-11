@@ -5,12 +5,20 @@
   "era": "SILLA_EARLY",
   "present_day_site": "대릉원 내 천마총 (내부 공개 전시)",
   "historical_basis": "FACT",
-  "fact_ids": [],
+  "fact_ids": [
+    "CLM_CHEONMACHONG_LAYOUT_001"
+  ],
   "spatial_lock": {
     "mound_diameter_m": 47,
     "mound_height_m": 12.7,
-    "wooden_outer_chamber_m": { "length": 6.6, "width": 4.2 },
-    "coffin_m": { "length": 2.15, "width": 0.8 },
+    "wooden_outer_chamber_m": {
+      "length": 6.6,
+      "width": 4.2
+    },
+    "coffin_m": {
+      "length": 2.15,
+      "width": 0.8
+    },
     "layer_order_bottom_to_top": [
       "coffin + grave-goods chest",
       "wooden outer chamber",
@@ -18,15 +26,24 @@
       "earth mound"
     ],
     "structure_type": "적석목곽분 (stone-mound wooden-chamber tomb)",
-    "grave_goods_placement": "금관·귀걸이·장신구는 피장자와 함께, 그 밖의 용기·칠기·유리·말갖춤 등은 부장궤에 (S3). 세부 배치도는 확인 전 그리지 않는다.",
+    "grave_goods_placement": "피장자 머리 동쪽, 금관·귀걸이·경흉식·과대 착장. 부장품 궤(1.8×1.0 m)는 머리맡에 T자 배치. 금제관모·백화수피 관모는 목관 밖 석단 동남 모서리. 환두대도는 왼쪽 허리 아래. (CLM_CHEONMACHONG_LAYOUT_001)",
     "occupant": "불확실 — 규모·유물로 보아 왕 또는 왕에 준하는 인물로 추정 (S4). 특정 왕으로 표현 금지.",
     "reconstruction_state": "H01–H06 은 이 장소의 '조성 중' 상태를 재현한다. 봉분 스케일(47 m / 12.7 m)과 층 순서를 지킨다.",
-    "unverified_do_not_invent": "목곽 방향(향), 돌무지 높이·두께, 조성 기간, 작업 인원 수, 의례 순서.",
-    "source_refs": ["research-v2 S3", "research-v2 S4"]
+    "unverified_do_not_invent": "돌무지 높이·두께, 조성 기간, 작업 인원 수, 의례 순서.",
+    "source_refs": [
+      "research-v2 S3",
+      "research-v2 S4",
+      "SRC_GNM_CHEONMA_EXHIBITION_001",
+      "SRC_NRICH_CHEONMACHONG_DICT_001"
+    ]
   },
   "blender_scene_path": null,
   "reference_images": [
-    { "path": null, "generation_id": null, "status": "MISSING" }
+    {
+      "path": null,
+      "generation_id": null,
+      "status": "MISSING"
+    }
   ],
   "status": "DRAFT",
   "version": "V01",

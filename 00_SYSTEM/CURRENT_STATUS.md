@@ -17,8 +17,7 @@
 - **P-009** 원로(`CHAR_SILLA_ELITE_OBSERVER_01`) 옷 색 비(다홍) vs 청 · 과대 재질 — 관등 미설정이라 INTERPRETIVE (NEW).
 
 **봇이 바로 갈 수 있는 것**
-- SCRIPT_ROUGHCUT_DELTA 정리 (D-010): X1 (러프컷 VO 대조) · X3 (금관 위치 S3 확인) — **P3 시작 전 필수**.
-- P3 Source/Rights Ledger: research-v2 S1–S6 → `sources/`, claim safety table → `facts/`, 샷 `fact_ids` 연결. (복식 출처 7건·사실 8건은 이미 같은 폴더에 있음.)
+- **P3 Source/Rights Ledger (다음 작업)**: research-v2 S1–S6 → `sources/`, claim safety table → `facts/`, 샷 `fact_ids` 연결. (복식 출처 7건·사실 8건은 이미 같은 폴더에 있음.)
 - P2 Character Master 준비: 복식 게이트 통과 → 남은 선행 조건은 예산(P-001)뿐.
 - P3 Source/Rights Ledger: research-v2 S1–S6 → `05_HISTORY_DATABASE/sources/`, claim safety table → `facts/`, 그다음 샷 `fact_ids` 연결.
 - P4 Shot Router: 43개 샷 `router_decision.json` (특히 H01–H06 → BLENDER_FLOW 재검토).
@@ -39,10 +38,10 @@
 | CHARACTER | `characters/` 원로 1인 (FULL) + 군중 2그룹 (LITE_CROWD) | DRAFT |
 | Master Pack 요구 목록 | `characters/EP01_MASTER_PACK_REQUIREMENTS.md` | DONE |
 | 씬·샷 분해 | `02_SEASONS/S01/EP01/07_SHOTS/` 씬 9 · 샷 48 (러프컷 v1 기준 + D-009 분할, 합계 425초 = 7:05) | `BROKEN_DOWN` / `PLANNED` |
-| 대본↔러프컷 차이 | `02_SEASONS/S01/EP01/05_SCRIPT/SCRIPT_ROUGHCUT_DELTA.md` X1–X4 (X2·X4 RESOLVED, X1·X3 OPEN) | P3 전 정리 |
-| 검증 | `validate.py` 인스턴스 + ID 상호참조 + Master Pack 등급 + 복식 TBD 게이트 → 100/100 PASS, refs OK | DONE |
+| 대본↔러프컷 차이 | `02_SEASONS/S01/EP01/05_SCRIPT/SCRIPT_ROUGHCUT_DELTA.md` X1–X4 **4/4 RESOLVED** (X3 → G13 금관 위치 단면 신규, S4 근거) | DONE |
+| 검증 | `validate.py` 인스턴스 + ID 상호참조 + Master Pack 등급 + 복식 TBD 게이트 → 119/119 PASS, refs OK | DONE |
 
-샷 구성: REAL 10 · ARCHIVE 20 · GRAPHIC 10 · HIGGSFIELD 8 (AI 45초 ≈ 11%, 모든 AI 컷 ≤ 6초).
+샷 구성 (49): REAL 10 · ARCHIVE 20 · GRAPHIC 11 · HIGGSFIELD 8 (AI 45초 ≈ 11%, 모든 AI 컷 ≤ 6초). 백로그: G13 은 graphics-spec v2 에 추가 필요 (legacy HTML 수정 금지).
 `fact_ids` 는 비어 있다 (P3 에서 연결). 출처는 샷 `notes` 에 research-v2 S1–S6 번호로 표기.
 
 ## P0 — OS 정본 문서·스키마 (2026-09-11 · DONE, push 완료 `6a7158a`)
@@ -103,6 +102,7 @@
 
 ## 최근 변경 (최신순)
 
+- **2026-09-11 Claude Code** — SCRIPT_ROUGHCUT_DELTA 4/4 정리: X2 문구 반영, X3 금관 위치 단면 G13 신규 샷 (`EP01_S07_SH005`, NRICH S4 근거 `CLM_CHEONMACHONG_LAYOUT_001`), 천마총 location 배치 정보 보강. 검증 119/119.
 - **2026-09-11 Claude Code** — 복식 Historical QA (D-011 게이트 통과): 출처 7 · 사실 8 인스턴스, 복식 3종 전 항목 근거 등급 표기. 검증 115/115. P-009 등록.
 - **2026-09-11 Claude Code** — D-008~D-012 반영: 스키마 `master_pack_tier`, 검증기 등급·복식 TBD 게이트, S04·S06 AI 컷 분할 (43 → 48 샷), SCRIPT_ROUGHCUT_DELTA, Web HQ P1 COMPLETE / P2 NEXT.
 - **2026-09-11 사용자** — **D-008~D-012.** P1 APPROVED WITH CONDITIONS. `6a60b1b` → `origin/p1-continuity` push, main 병합 보류.

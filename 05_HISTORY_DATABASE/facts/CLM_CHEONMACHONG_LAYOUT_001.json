@@ -1,0 +1,18 @@
+{
+  "claim_id": "CLM_CHEONMACHONG_LAYOUT_001",
+  "text_ko": "천마총 피장자는 목관 안에 머리를 동쪽으로 두고 금관·귀걸이·경흉식·과대 등을 착용한 상태였다. 부장품 궤는 머리맡(동쪽)에 목관과 T자로 놓였고, 금제관모·백화수피 관모는 목관 밖 석단 동남쪽 모서리에 있었다.",
+  "text_en": "The Cheonmachong occupant lay in the coffin head to the east, wearing the gold crown, earrings, chest ornament and belt. The grave-goods chest sat at the head end in a T-layout; the gold and birch-bark caps lay outside the coffin at the SE corner of the stone platform.",
+  "confidence": "FACT",
+  "source_ids": [
+    "SRC_NRICH_CHEONMACHONG_DICT_001",
+    "SRC_GNM_CHEONMA_EXHIBITION_001"
+  ],
+  "used_in": [
+    "EP01_S07_SH005",
+    "LOC_CHEONMACHONG_V01"
+  ],
+  "hedge_required": false,
+  "verified_at": "2026-09-11",
+  "verified_by": "Claude Code (Continuity Engine / Historical QA)",
+  "notes": "X3 판정 근거. G13 단면 그래픽은 이 배치(머리 동쪽·금관 착용·머리맡 부장궤)만 그린다. 그 밖의 세부는 그리지 않는다."
+}

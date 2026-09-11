@@ -1,0 +1,17 @@
+{
+  "source_id": "SRC_GNM_CHEONMA_EXHIBITION_001",
+  "claim_ids": [
+    "CLM_CHEONMACHONG_LAYOUT_001"
+  ],
+  "title": "특별전 「천마, 다시 날다」 — 천마총 구조·부장품 (research-v2 S3)",
+  "institution_or_author": "국립경주박물관",
+  "url_or_path": "https://gyeongju.museum.go.kr/kor/html/sub02/0202.html?d_mng_no=110&mode=VD",
+  "verified_at": "2026-09-11",
+  "verified_by": "Claude Code (Continuity Engine / Historical QA)",
+  "excerpt_or_summary": "봉분 지름 47 m, 높이 12.7 m. 덧널 6.6×4.2 m, 널 2.15×0.8 m. 덧널 위 돌무지, 흙 봉분. 금관·금드리개·금귀걸이·고리자루칼은 무덤 주인을 안치한 널에. 부장품 궤(1.8×1.0 m)는 무덤 주인의 머리맡.",
+  "confidence": "FACT",
+  "uncertainty": "널 안 착장품의 신체 부위별 위치는 이 페이지에 명시 없음 (S4 로 보완).",
+  "source_type": "MUSEUM",
+  "rights_id": null,
+  "notes": "전시 자료 일부는 공공누리 4유형 — 이미지 재사용은 rights 별도 확인 (research-v2 경고)."
+}
