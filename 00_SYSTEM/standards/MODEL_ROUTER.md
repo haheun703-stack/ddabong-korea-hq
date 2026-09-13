@@ -22,6 +22,7 @@ OS 는 공급자 교체에도 살아남아야 한다.
 | 역사 사진·문서·유물 | `ARCHIVE` |
 | 저모션 + 고사실밀도 | `AI_STILL` / `ORIGINAL_GRAPHIC` |
 | 고공간정확도 + 고카메라복잡도 | `BLENDER_FLOW` |
+| 사람 움직임 중심 + 중간 공간 의존 (단일 행동·손 동작) | `FLOW_VEO` (D-024) |
 | 초고카메라복잡도 + 중간 공간 의존 | `HIGGSFIELD` |
 | 인물 연속성 critical | MASTER FRAME + reference-driven video |
 

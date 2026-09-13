@@ -67,7 +67,7 @@ def pack_rules(p, d, costumes):
     return errs
 
 RANK = {"FACT": 3, "PROBABLE": 2, "INTERPRETIVE": 1, "ARTISTIC": 0}
-EVIDENCE_PIPES = {"ARCHIVE", "HIGGSFIELD", "AI_STILL", "BLENDER_FLOW"}
+EVIDENCE_PIPES = {"ARCHIVE", "HIGGSFIELD", "AI_STILL", "BLENDER_FLOW", "FLOW_VEO"}
 
 def ledger_rules(p, d, facts, rights, routers):
     """P3 (정본 §9 §10, D-013): source-less shot / unresolved rights / over-interpretation -> FAIL."""
@@ -87,7 +87,7 @@ def ledger_rules(p, d, facts, rights, routers):
         if rights.get(r, {}).get("usage_tier") == "BACKUP_ONLY":
             errs.append(f"{rel}: references BACKUP_ONLY rights {r} - promote to ACTIVE first (D-014)")
     rid = d.get("router_decision_id")
-    if d["pipeline"] in ("AI_STILL", "BLENDER_FLOW", "HIGGSFIELD") and not rid:
+    if d["pipeline"] in ("AI_STILL", "BLENDER_FLOW", "FLOW_VEO", "HIGGSFIELD") and not rid:
         errs.append(f"{rel}: AI pipeline without router_decision_id (no router output)")
     if rid:
         r = routers.get(rid)
@@ -132,6 +132,7 @@ def money_rules(docs):
     prompts, gens, apps = by("prompt", "prompt_id"), by("generation", "generation_id"), by("approval", "approval_id")
     costs, patches, chars, eps = by("cost", "cost_id"), by("keep_change_patch", "patch_id"), by("character", "character_id"), by("episode", "episode_id")
     parents = {d.get("parent_prompt_id") for _, d in prompts.values()}
+    routers = {d["shot_id"]: d for _, n, d in docs if n == "router_decision"}
     def chain(pid):
         """pid and its ancestors (an approval may list the exact version or any ancestor)."""
         out = [pid]
@@ -158,6 +159,8 @@ def money_rules(docs):
                 if allowed and not set(chain(g["prompt_id"])) & set(allowed):
                     errs.append(f"{rel(p)}: prompt {g['prompt_id']} (root {root(g['prompt_id'])}) not covered by approval {aid}")
                 per_approval[aid] = per_approval.get(aid, 0) + 1
+        if not g["shot_id"].startswith("MASTER_PACK:") and routers.get(g["shot_id"], {}).get("human_decision", "PENDING") == "PENDING":
+            errs.append(f"{rel(p)}: generation for {g['shot_id']} while its router decision is not ACCEPTED/OVERRIDDEN (D-024)")
         pj = g.get("provider_job")
         if g["provider"] == "Higgsfield" and not pj:
             errs.append(f"{rel(p)}: Higgsfield generation without provider_job (sent prompt not traceable)")

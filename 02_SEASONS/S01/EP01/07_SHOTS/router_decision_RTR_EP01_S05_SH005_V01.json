@@ -27,8 +27,8 @@
     "Flow",
     "Veo"
   ],
-  "human_decision": "PENDING",
-  "override_note": null,
-  "decided_at": "2026-09-11",
-  "decided_by": "Visual Router (Claude Code)"
+  "human_decision": "OVERRIDDEN",
+  "override_note": "D-024: H03 부장품 준비 — 손 동작·소품 제스처 중심, 카메라 단순(35), 공간 50 → FLOW_VEO 단독 (시종 Character Pack 참조, master frame 없음).",
+  "decided_at": "2026-09-13",
+  "decided_by": "사용자 (D-024)"
 }

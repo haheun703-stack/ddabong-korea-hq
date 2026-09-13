@@ -27,8 +27,8 @@
     "Flow",
     "Veo"
   ],
-  "human_decision": "PENDING",
+  "human_decision": "ACCEPTED",
   "override_note": null,
-  "decided_at": "2026-09-11",
-  "decided_by": "Visual Router (Claude Code)"
+  "decided_at": "2026-09-13",
+  "decided_by": "사용자 (D-024)"
 }

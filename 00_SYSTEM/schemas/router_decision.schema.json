@@ -21,6 +21,7 @@
         "AI_STILL",
         "ORIGINAL_GRAPHIC",
         "BLENDER_FLOW",
+        "FLOW_VEO",
         "HIGGSFIELD"
       ]
     },
@@ -35,6 +36,7 @@
         "AI_STILL",
         "ORIGINAL_GRAPHIC",
         "BLENDER_FLOW",
+        "FLOW_VEO",
         "HIGGSFIELD",
         null
       ],

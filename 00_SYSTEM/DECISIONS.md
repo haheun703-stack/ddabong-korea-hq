@@ -111,6 +111,13 @@
 **메모** walking/costume_detail 에 참조 full_body 얼굴이 반복됨 → 영상에서 같은 3인조를 알아볼 정도로 반복하지 않는다. 시종 옷감 새것 느낌은 허용.
 **비용** EP01 누적 44.12 credits (23 호출: 원로 13 · 군중 10). 군중 승인 12 중 10 사용, 남은 2 호출은 사용하지 않고 종료.
 
+### D-024 · 2026-09-13 · P-011 라우터 49건 최종 잠금 · FLOW_VEO 분류 추가 · EP01 Higgsfield 0건 (사용자)
+**확정** 46건 ACCEPTED · `EP01_S04_SH004` H01 · `EP01_S05_SH005` H03 → **FLOW_VEO** (OVERRIDDEN) · `EP01_S08_SH002` H07 AI_STILL 유지 (D-018). 최종 구성 REAL 10 · ARCHIVE 20 · GRAPHIC 11 · BLENDER_FLOW 4 (H02 · H02b · H04 · H05) · FLOW_VEO 2 · AI_STILL 2 (H06 · H07) · **HIGGSFIELD 0**. AI 8컷 45초 (≈11%, 모두 ≤6초).
+**EP01 재현 원칙** 공간 위계·규모 → BLENDER_FLOW · 행동 중심·공간 중간 → FLOW_VEO · 저동작 정보 컷 → AI_STILL · 증거 → ARCHIVE · 현재 장소 → REAL_SHOOT · 설명 도식 → ORIGINAL_GRAPHIC. EP01 은 다큐 톤 우선 → **Higgsfield 사용 0건으로 잠금**.
+**스키마** shot.pipeline · router_decision.recommended/fallback 에 `FLOW_VEO` 정식 추가 (BLENDER_FLOW 와 독립). 검증기: FLOW_VEO 를 AI 파이프라인으로 취급, 라우터 PENDING 인 샷의 generation 은 FAIL.
+**유지 주의** YELLOW_ACTIVE 권리 1건 (`RTS_GNM_OTHER_OBJECTS_001` → S02_SH003 · S05_SH001) 편집 확정 전 해소 필수 (판정과 별개). Flow/Veo 자동 연결 도구 없음 → 라우터만 확정, 실제 생성은 별도 승인 + 별도 Money Gate. Blender 자동화(P7) 전 → 카메라 초안 기준 수작업 허용.
+**근거** `02_SEASONS/S01/EP01/15_QA/P011_ROUTER_FINAL.md`
+
 ---
 
 ## 승인 대기 (P)
@@ -142,7 +149,7 @@
 **제안** 원로는 "왕 아님·피장자 아님"이므로 **비(다홍) 계열 + 은·동 과대** 권장. 자색·금제 과대는 피장자/왕급이라 제외. 5세기 전반에 이 색 규정이 있었는지는 불확실하므로 INTERPRETIVE 로 유지.
 **영향** Master Pack 생성 프롬프트의 COSTUME LOCK.
 
-### P-011 · (보류 D-015: AI 샷 직전 승인) 라우터 판정 49건 ACCEPT / OVERRIDE (P4, 2026-09-11)
+### ~~P-011~~ · **종결 D-024 (2026-09-13)** · 라우터 판정 49건 ACCEPT / OVERRIDE (P4, 2026-09-11)
 **현황** 전 샷 `human_decision = PENDING`. 실질 판단 대상은 재현 8컷 — 특히 **H05** (`EP01_S06_SH005`, 에피소드 핵심 컷): 판정 BLENDER_FLOW (공간 85 + 인물 연속성), fallback HIGGSFIELD. 나머지 41건은 규칙 그대로 (REAL/ARCHIVE/GRAPHIC).
 **제안** 일괄 ACCEPT. OVERRIDE 시 `router_decision.human_decision = OVERRIDDEN` + `override_note`, 샷 `pipeline` 변경.
 **근거** `02_SEASONS/S01/EP01/15_QA/P4_ROUTER_REPORT.md`

@@ -27,8 +27,8 @@
     "Flow",
     "Veo"
   ],
-  "human_decision": "PENDING",
-  "override_note": null,
-  "decided_at": "2026-09-11",
-  "decided_by": "Visual Router (Claude Code)"
+  "human_decision": "OVERRIDDEN",
+  "override_note": "D-024: H01 목재 준비 — 사람 움직임 중심(70), 공간 정밀도 중간(60), 단일 행동 → Blender 사전 고정 불필요. FLOW_VEO 단독 (S04 master frame 에서 시작).",
+  "decided_at": "2026-09-13",
+  "decided_by": "사용자 (D-024)"
 }

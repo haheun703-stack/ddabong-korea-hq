@@ -20,14 +20,14 @@
 - **2026-09-13 전체 검수 수정 1–5 완료 (유료 없음, `6c66f13` push)** → `02_SEASONS/S01/EP01/15_QA/REVIEW_FIX_20260913.md`. 실제 전송 프롬프트 버전화 · provider job 기록 · 검증기 Money Gate 규칙 · negative 25개 보강 · 예산 소진 일치. 검증 244/244.
 - **P-012** 크레딧→KRW 환산율 — **임시 미정 (사용자 2026-09-11)**: 플랜 월 요금·월 크레딧 수 확인 전까지 크레딧 단위로만 기록, 원화 소진율 계산 안 함.
 - **배치 1 판정 (D-017)**: front · three_quarter_left · full_body APPROVED. hero V03 (배경 편집) **APPROVED** → **4장 완료**. 나머지 6 + back_view 는 새 approval 필요. 배치 1 승인 호출 6/8 사용.
-- **P-011** 라우터 판정 49건 ACCEPT / OVERRIDE — **AI 샷 생성 직전 최종 승인으로 보류 (D-015)**.
+- ~~P-011~~ **라우터 49건 잠금 (D-024)**: 46 ACCEPTED · H01·H03 → FLOW_VEO · H07 AI_STILL · **EP01 Higgsfield 0건**. 실제 AI 생성은 별도 승인 + Money Gate.
 - YELLOW_ACTIVE 1건 (`RTS_GNM_OTHER_OBJECTS_001`) — 편집 확정 전 필수 해소 (D-014).
 
 **봇이 바로 갈 수 있는 것**
 - graphics-spec v2 (G13 추가) — legacy HTML 은 수정하지 않고 새 문서로.
 - P5 Review UI / P6 Money Gate 어댑터 설계 (유료 없음).
 
-**유료 생성 현황 (D-015)**: Money Gate OPEN (₩40,000 / 소진 44.12 credits, KRW 환산 P-012). **P2 Character Master 완료 (D-023)**: 원로 FULL 10/10 · 노동자 LITE 3/3 · 시종 LITE 3/3 전부 CHARACTER_MASTER_APPROVED. 다음 유료는 AI 샷 (P-011 ACCEPT + master_frame 승인 뒤). AI 샷은 P-011 ACCEPT + `CHARACTER_MASTER_APPROVED` + master_frame APPROVED 뒤.
+**유료 생성 현황 (D-015)**: Money Gate OPEN (₩40,000 / 소진 44.12 credits, KRW 환산 P-012). **P2 Character Master 완료 (D-023)**: 원로 FULL 10/10 · 노동자 LITE 3/3 · 시종 LITE 3/3 전부 CHARACTER_MASTER_APPROVED. 라우터 잠금 (D-024). 다음 유료는 Master Frame S04 · S06 → AI 샷 (Flow/Veo 는 별도 비용 게이트).
 
 ## P2 사전 점검 — Pre-flight (2026-09-11 · DONE, 생성 0)
 
@@ -54,13 +54,13 @@
 | Master Frame | `07_SHOTS/master_frame_EP01_S04_MASTER_V01` · `_S06_MASTER_V01` (path 없음, 승인 전) | DRAFT |
 | 검증 | camera / prompt / master_frame 인스턴스 + 상호참조 (shot ↔ camera ↔ prompt ↔ master_frame) → 231/231 PASS | DONE |
 
-## P4 — Shot Router (2026-09-11 · DONE, 사용자 ACCEPT 대기 P-011)
+## P4 — Shot Router (2026-09-11 · DONE · **최종 잠금 D-024 2026-09-13**)
 
 | 항목 | 산출 | 상태 |
 |---|---|---|
 | 라우터 판정 | `07_SHOTS/router_decision_RTR_EP01_*_V01.json` 49건 — 점수 6종 + recommended/fallback/reason/rule | `PENDING` |
 | 재판정 결과 | legacy Higgsfield 8 → **HIGGSFIELD 1** (H07 매치컷) · **BLENDER_FLOW 6** (H01–H05) · **AI_STILL 1** (H06) | 샷 `pipeline` 갱신, `status = ROUTED` |
-| 최종 구성 | REAL 10 · ARCHIVE 20 · GRAPHIC 11 · BLENDER_FLOW 6 · AI_STILL 1 · HIGGSFIELD 1 | — |
+| 최종 구성 (D-024) | REAL 10 · ARCHIVE 20 · GRAPHIC 11 · BLENDER_FLOW 4 · FLOW_VEO 2 · AI_STILL 2 · **HIGGSFIELD 0** | 46 ACCEPTED · 3 OVERRIDDEN (H01 · H03 · H07) · `15_QA/P011_ROUTER_FINAL.md` |
 | 권리 등급 | `rights.usage_tier` ACTIVE / BACKUP_ONLY — YELLOW_ACTIVE 1 · YELLOW_BACKUP 3 | D-014 |
 | 자동 FAIL 추가 | BACKUP_ONLY 참조 · AI 샷 라우터 없음 · 샷 파이프라인 ≠ 판정(OVERRIDDEN 아님) | 음성 테스트 통과 |
 | 리포트 | `15_QA/P4_ROUTER_REPORT.md` | DONE |
@@ -117,10 +117,10 @@
 | SHOTLIST | `ep01-visual-assets`, `ep01-graphics-spec` (G01–G12) | APPROVED |
 | SCENE_BREAKDOWN | `02_SEASONS/S01/EP01/07_SHOTS/` 씬 9 · 샷 49 | DRAFT (P1, 조건부 승인) |
 | SOURCE_FACT_QA | `05_HISTORY_DATABASE/{sources,facts,rights}/` + `15_QA/P3_LEDGER_REPORT.md` | DONE (P3) · YELLOW_ACTIVE 1건 편집 전 해소 |
-| SHOT_ROUTER | `07_SHOTS/router_decision_*` 49 + `15_QA/P4_ROUTER_REPORT.md` | DONE (P4) · ACCEPT 대기 P-011 |
+| SHOT_ROUTER | `07_SHOTS/router_decision_*` 49 + `15_QA/P4_ROUTER_REPORT.md` | DONE (P4) · **잠금 D-024** |
 | REAL_SHOOT | `ep01-field-shoot-plan` 체크리스트 | 계획 APPROVED · **촬영 미실행** |
 | ARCHIVE | `ep01-archive-photos` (1973 NRICH), `ep01-artifact-library` | 선별 APPROVED · 파일 다운로드 미실행 |
-| HIGGSFIELD | `ep01-higgsfield-prompts` 7컷 | 프롬프트 APPROVED · Money Gate OPEN (D-015) · 원로 Master Pack 배치 1만 생성, **AI 샷 생성은 P-011 ACCEPT + Character Master 승인 뒤** |
+| AI 재현 | legacy `ep01-higgsfield-prompts` 7컷 → 라우터 D-024: BLENDER_FLOW 4 · FLOW_VEO 2 · AI_STILL 2 · Higgsfield 0 | Character Master 승인 완료 (D-023) · 다음 Master Frame S04 · S06 → AI 샷 (별도 승인) |
 | ROUGH_CUT | `ep01-premiere-roughcut` 0:00–7:05 | 설계 APPROVED |
 
 **다음 실제 작업 (순서)**
@@ -159,6 +159,8 @@
 ---
 
 ## 최근 변경 (최신순)
+
+- **2026-09-13 사용자** — **D-024.** P-011 종결: 라우터 49건 잠금 (46 ACCEPTED · H01 · H03 → FLOW_VEO · H07 AI_STILL), `FLOW_VEO` 스키마 추가, **EP01 Higgsfield 0건**. 검증기: 라우터 PENDING 샷 generation FAIL.
 
 - **2026-09-13 사용자** — **D-023.** 군중 2단계 4장 APPROVE → 노동자·시종 CHARACTER_MASTER_APPROVED → **P2 Character Master 완료** (캐릭터 3/3). EP01 누적 44.12 credits.
 
