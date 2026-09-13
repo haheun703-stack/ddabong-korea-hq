@@ -1,0 +1,24 @@
+{
+  "provider": "Higgsfield",
+  "job_id": "77078e12-15a1-480e-b67e-5f8044921940",
+  "job_set_type": "nano_banana_2",
+  "display_name": "Nano Banana Pro",
+  "status": "completed",
+  "created_at": "2026-09-13T04:42:20Z",
+  "params": {
+    "width": 2528,
+    "height": 1696,
+    "aspect_ratio": "3:2",
+    "resolution": "2k",
+    "batch_size": 1,
+    "input_images": [
+      {
+        "id": "30791f45-502b-4d21-9add-028bb4a7c5b1",
+        "type": "image_job"
+      }
+    ],
+    "prompt": "Edit the reference image. Keep the three people exactly as they are: same faces, bodies, poses, hair, headwear, trousers, skirt, footwear, fabric colours, bundles, lighting and background. Change only the jacket fastening: remove the long ribbon ties on the chest of all three jackets; each jacket closes right over left with a straight collar and is held only by a plain cloth belt tied at the waist, like simple ancient work jackets. No ribbon bows on the chest, no Joseon hanbok look. No text, no watermark, no logo."
+  },
+  "retrieved_at": "2026-09-13",
+  "note": "generate_image_batch/jobs_wait result. Result/CDN URLs omitted. params.prompt = text actually sent (identical to prompt V03)."
+}

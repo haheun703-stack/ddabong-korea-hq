@@ -27,7 +27,7 @@
 - graphics-spec v2 (G13 추가) — legacy HTML 은 수정하지 않고 새 문서로.
 - P5 Review UI / P6 Money Gate 어댑터 설계 (유료 없음).
 
-**유료 생성 현황 (D-015)**: Money Gate OPEN (₩40,000 / 소진 28.12 credits, KRW 환산 P-012). **원로 Master Pack 10/10 APPROVED → CHARACTER_MASTER_APPROVED (D-019)**. 다음: 군중 LITE Pack 6 (별도 approval). AI 샷은 P-011 ACCEPT + `CHARACTER_MASTER_APPROVED` + master_frame APPROVED 뒤.
+**유료 생성 현황 (D-015)**: Money Gate OPEN (₩40,000 / 소진 32.12 credits, KRW 환산 P-012). **원로 Master Pack 10/10 APPROVED → CHARACTER_MASTER_APPROVED (D-019)**. 다음: 군중 LITE Pack 6 (별도 approval). AI 샷은 P-011 ACCEPT + `CHARACTER_MASTER_APPROVED` + master_frame APPROVED 뒤.
 
 ## P2 사전 점검 — Pre-flight (2026-09-11 · DONE, 생성 0)
 
@@ -138,7 +138,7 @@
 | 항목 | 값 |
 |---|---|
 | EP01 예산 | **₩40,000** (D-015) — `08_GENERATION_CACHE/EP01/cost_COST_EP01_20260911.json` |
-| 소진 | 28.12 credits (15 호출: 원로 13 · 군중 2) — KRW 환산 P-012 |
+| 소진 | 32.12 credits (17 호출: 원로 13 · 군중 4) — KRW 환산 P-012 |
 | 게이트 상태 | `OPEN` — 배치 1 승인 `APR_EP01_MP_ELITE_BATCH1_001` |
 
 ---
@@ -159,6 +159,8 @@
 ---
 
 ## 최근 변경 (최신순)
+
+- **2026-09-13 Claude Code** — 군중 full_body 편집 (사용자 OK, 4 credits, 승인 4/9): 노동자 공구 제거 PASS · 시종 PARTIAL (여자만 옷고름 제거) → 재편집 V04·PATCH_002 저장, **사용자 OK 대기**. EP01 소진 32.12 credits.
 
 - **2026-09-13 Claude Code** — 군중 1단계 full_body 2장 생성 (4 credits, 승인 2/9). 노동자: 현대 쇠 공구처럼 보임 · 시종: 조선식 옷고름 → 각 편집 FIX 문장(V03)·PATCH 저장, **사용자 OK 대기**. `08_GENERATION_CACHE/EP01/MP_CROWD/REVIEW_CROWD_STEP1.md`. EP01 소진 28.12 credits.
 

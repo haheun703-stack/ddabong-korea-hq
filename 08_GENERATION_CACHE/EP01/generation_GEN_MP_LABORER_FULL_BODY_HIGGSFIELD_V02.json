@@ -1,0 +1,43 @@
+{
+  "generation_id": "GEN_MP_LABORER_FULL_BODY_HIGGSFIELD_V02",
+  "shot_id": "MASTER_PACK:CHAR_SILLA_LABORER_GROUP_01:full_body",
+  "stage": "STILL",
+  "provider": "Higgsfield",
+  "model": "Nano Banana Pro (job_set_type nano_banana_2, 2k, 3:2, edit of job f5514f0f)",
+  "provider_job": {
+    "job_id": "412a72bc-f3f1-4955-8d3a-36e1e6306d1f",
+    "job_set_type": "nano_banana_2",
+    "display_name": "Nano Banana Pro",
+    "params_path": "08_GENERATION_CACHE/EP01/provider_jobs/HF_412a72bc-f3f1-4955-8d3a-36e1e6306d1f.json"
+  },
+  "prompt_id": "PRM_MP_CHAR_SILLA_LABORER_GROUP_01_FULL_BODY_V03",
+  "prompt_version": "V03",
+  "standard_versions": {
+    "CHARACTER_CONTINUITY_STANDARD.md": "v0.1",
+    "COST_STANDARD.md": "v0.1"
+  },
+  "case_ids_used": [
+    "CASE_DDABONG_CHAR_001"
+  ],
+  "approval_id": "APR_EP01_MP_CROWD_001",
+  "input_paths": [
+    "08_GENERATION_CACHE/EP01/MP_CROWD/MP_LABORER_FULL_BODY_V01_f5514f0f.png"
+  ],
+  "output_paths": [
+    "08_GENERATION_CACHE/EP01/MP_CROWD/MP_LABORER_FULL_BODY_V02_412a72bc.png"
+  ],
+  "attempts": 1,
+  "duration_sec": null,
+  "cost": {
+    "currency": "CREDITS",
+    "amount": 2.0,
+    "spent": 2.0,
+    "note": "Higgsfield job 412a72bc-f3f1-4955-8d3a-36e1e6306d1f (fix pair: balance 1894.48 -> 1890.48)"
+  },
+  "result_status": "SUCCESS",
+  "failure_id": null,
+  "started_at": "2026-09-13T04:42:20Z",
+  "finished_at": null,
+  "run_by": "Image Generation Agent (Claude Code)",
+  "notes": "FIX edit (PATCH_MP_LABORER_FULL_BODY_001, user OK 2026-09-13). Bot check PASS: spade and pick-axes removed, empty relaxed hands; faces, clothing, footwear, mounds and light unchanged."
+}

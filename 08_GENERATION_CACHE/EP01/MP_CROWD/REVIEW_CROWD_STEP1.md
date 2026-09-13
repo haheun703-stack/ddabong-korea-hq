@@ -8,3 +8,12 @@
 | 시종 | `MP_ATTENDANT_FULL_BODY_V01_30791f45.png` | 사람·색 OK. **가슴 긴 옷고름 매듭이 조선 한복처럼 보임** (복식 lock 위반) | 옷고름만 지우고 허리 천띠로 여미는 편집 1회 (`PRM_…_V03` + `PATCH_MP_ATTENDANT_FULL_BODY_001` 저장됨) |
 
 편집은 사용자 OK 후 전송. 편집본 확인 뒤 2단계 (walking · costume_detail) 는 편집본을 복식 참조로.
+
+## 편집 결과 (사용자 '둘다 수정', 4 credits, 승인 4/9)
+
+| 무리 | 파일 | 결과 |
+|---|---|---|
+| 노동자 | `MP_LABORER_FULL_BODY_V02_412a72bc.png` | **PASS** — 공구 제거, 나머지 동일 |
+| 시종 | `MP_ATTENDANT_FULL_BODY_V02_77078e12.png` | **PARTIAL** — 여자만 옷고름 제거·허리띠. 남자 2명 옷고름 남음 → 재편집 `PRM_…_V04` + `PATCH_MP_ATTENDANT_FULL_BODY_002` 저장, 사용자 OK 대기 |
+
+남은 승인: 5 호출. 재편집 1 + 2단계 4 = 5 → 한도 딱 맞음 (추가 FIX 는 새 승인).
