@@ -1,0 +1,24 @@
+{
+  "patch_id": "PATCH_EP01_S06_SH010_002",
+  "shot_id": "EP01_S06_SH010",
+  "from_version": "V03",
+  "to_version": "V04",
+  "fix_reason": "ARCHITECTURE",
+  "keep": [
+    "~4:1 width-to-height proportion",
+    "clean early horizon (no man-made objects)",
+    "nearly finished stage with workers on top",
+    "low warm side light, far camera, 35mm"
+  ],
+  "change": [
+    "human scale: figures ~1/8 of mound height, none in foreground",
+    "rounded crown instead of flat top with ledge",
+    "attendant jackets not martial-arts-uniform-like",
+    "camera 60 m -> 80 m"
+  ],
+  "reason": "Attempt 2 (GEN_EP01_S06_SH010_HIGGSFIELD_V02) fixed proportion and horizon but people read ~1/4 of mound height (mound looks ~6 m) and the top is flat with a ledge.",
+  "requested_by": "Image Generation Agent (Claude Code) - pending owner approval",
+  "created_at": "2026-09-13",
+  "resulting_prompt_id": "PRM_EP01_S06_SH010_V04",
+  "resulting_generation_id": null
+}

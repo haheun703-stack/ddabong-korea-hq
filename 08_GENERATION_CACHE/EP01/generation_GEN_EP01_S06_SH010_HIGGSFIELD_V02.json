@@ -1,0 +1,41 @@
+{
+  "generation_id": "GEN_EP01_S06_SH010_HIGGSFIELD_V02",
+  "shot_id": "EP01_S06_SH010",
+  "stage": "STILL",
+  "provider": "Higgsfield",
+  "model": "NANO_BANANA_PRO (job_set_type nano_banana_2, 2k, 16:9, text only)",
+  "provider_job": {
+    "job_id": "d6326541-2bc3-476a-9837-cc48cbddeee7",
+    "job_set_type": "nano_banana_2",
+    "display_name": "Nano Banana Pro",
+    "params_path": "08_GENERATION_CACHE/EP01/provider_jobs/HF_d6326541-2bc3-476a-9837-cc48cbddeee7.json"
+  },
+  "prompt_id": "PRM_EP01_S06_SH010_V03",
+  "prompt_version": "V03",
+  "standard_versions": {
+    "CHARACTER_CONTINUITY_STANDARD.md": "v0.1",
+    "COST_STANDARD.md": "v0.1"
+  },
+  "case_ids_used": [
+    "CASE_DDABONG_CHAR_001"
+  ],
+  "approval_id": "APR_EP01_AI_B1_001",
+  "input_paths": [],
+  "output_paths": [
+    "08_GENERATION_CACHE/EP01/AI_STILL/H06_V02_d6326541.png"
+  ],
+  "attempts": 1,
+  "duration_sec": null,
+  "cost": {
+    "currency": "CREDITS",
+    "amount": 2.0,
+    "spent": 2.0,
+    "note": "Higgsfield job d6326541-2bc3-476a-9837-cc48cbddeee7 (balance 1858.48 -> 1856.48)"
+  },
+  "result_status": "PARTIAL",
+  "failure_id": null,
+  "started_at": "2026-09-13T11:50:35Z",
+  "finished_at": null,
+  "run_by": "Image Generation Agent (Claude Code)",
+  "notes": "D-028 D4 call 2/2 (retry, PATCH_EP01_S06_SH010_001). Owner criteria check: (1) proportion PASS - base width ~4x height (target ~3.7x), but the top is flat with a terrace ledge instead of a rounded crown; (2) modern intrusion PASS - only hills, trees and low neighbouring mounds; (3) stage PASS - nearly finished earth mound, workers smoothing the top; (4) human scale FAIL - people at the base reach ~1/4 of the mound height (target ~1/8), so the mound reads ~6 m tall instead of 12.7 m; extra issue: central attendants in white jackets with dark belts read like modern martial-arts uniforms. Approval cap reached -> STOP, owner decision required (no automatic 3rd call)."
+}

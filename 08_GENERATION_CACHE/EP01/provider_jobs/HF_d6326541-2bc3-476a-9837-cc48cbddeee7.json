@@ -1,0 +1,19 @@
+{
+  "provider": "Higgsfield",
+  "job_id": "d6326541-2bc3-476a-9837-cc48cbddeee7",
+  "job_set_type": "nano_banana_2",
+  "display_name": "Nano Banana Pro",
+  "status": "completed",
+  "created_at": "2026-09-13T11:50:35Z",
+  "params": {
+    "width": 2752,
+    "height": 1536,
+    "aspect_ratio": "16:9",
+    "resolution": "2k",
+    "batch_size": 1,
+    "input_images": [],
+    "prompt": "One wide documentary photograph that fills the entire 16:9 frame edge to edge, a single still image; no black bars, no letterbox, no borders. Early Silla, Gyeongju, 5th century: the Cheonmachong earth mound nearly completed, seen from far away. The mound is a very broad, low, gently sloping dome of freshly packed earth, about 47 metres across and only 12.7 metres high: its height is barely a quarter of its width, the slopes are gentle, about 25 to 30 degrees, and the top is a wide rounded crown, not a peak; the last bare patches are being smoothed near the top; no stones, timber or chamber visible anywhere. Small groups of people stand near its base for scale; a person about 1.6 metres tall is only about one eighth of the mound's height and looks tiny against it. They are labourers in undyed coarse hemp and funeral attendants in belted white, black and grey-brown hemp jackets; all different faces, no one in blue, no one posing, no one looking at the camera. Camera about 1.7 metres high, standing far back, about 60 metres from the mound, 35mm lens feel, so the whole mound sits in the middle of the frame with open ground on both sides; static wide view, low warm sunlight from the side, long shadows, calm and permanent, not celebratory. The horizon is empty early countryside - only bare low hills and a few trees, nothing man-made anywhere: no utility poles, no power lines, no buildings, no sheds, no roads, no fences, no regular field grid, no modern objects. Photorealistic historical documentary still, style B Documentary Reenactment, natural textures, not glossy, earthy natural colours. No tiled roofs, no stone walls, no manicured grass lawn, no gold objects, no crown, no text, no watermark, no logo."
+  },
+  "retrieved_at": "2026-09-13",
+  "note": "job_status result. Result/CDN URLs omitted. params.prompt = text actually sent (identical to prompt V03)."
+}

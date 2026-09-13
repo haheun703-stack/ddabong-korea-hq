@@ -1,0 +1,20 @@
+{
+  "approval_id": "APR_EP01_AI_B1_002",
+  "kind": "PAID_GENERATION",
+  "target_id": "EP01_S06_SH010",
+  "money_gate_presented": {
+    "shot_id": "EP01_S06_SH010",
+    "prompt_ids": [
+      "PRM_EP01_S06_SH010_V04"
+    ],
+    "provider_model": "HIGGSFIELD / NANO_BANANA_PRO, 2k, 16:9 still",
+    "expected_attempts": 1,
+    "estimated_cost_range": "2 credits (hard cap 2)",
+    "continuity_risk": "MEDIUM - human scale 1:8 is the failed item"
+  },
+  "decision": "PENDING",
+  "fix_reason": "ARCHITECTURE",
+  "decided_by": "사용자",
+  "decided_at": "2026-09-13T00:00:00Z",
+  "note": "준비만 됨 (decided_at = 준비 시각). H06 3번째 호출은 이 새 승인 없이는 금지 (D-028 D3/D4)."
+}

@@ -16,5 +16,5 @@
   "fix_reason": null,
   "decided_by": "사용자",
   "decided_at": "2026-09-13T08:00:00Z",
-  "note": "D-028 D4: H06 사진만. 최대 2 호출 / 4 credits. 영상 미포함. 첫 결과 승인 가능하면 2번째 미사용. 실패 시 실패 항목만 새 prompt 버전 + PATCH 후 재시도."
+  "note": "D-028 D4: H06 사진만. 최대 2 호출 / 4 credits. 영상 미포함. 첫 결과 승인 가능하면 2번째 미사용. 실패 시 실패 항목만 새 prompt 버전 + PATCH 후 재시도. 2/2 사용 후 종료 (1차 REJECTED, 2차 PARTIAL)."
 }
