@@ -1,0 +1,25 @@
+{
+  "patch_id": "PATCH_MP_ELITE_HERO_002",
+  "shot_id": "MASTER_PACK:CHAR_SILLA_ELITE_OBSERVER_01:hero",
+  "from_version": "V03",
+  "to_version": "V04",
+  "fix_reason": "ARCHITECTURE",
+  "keep": [
+    "face identity",
+    "age",
+    "birch-bark cap",
+    "muted blue robe + ivory inner",
+    "bronze pendant belt",
+    "pose and framing",
+    "lighting",
+    "scaffolding and earth mound"
+  ],
+  "change": [
+    "background tiled-roof buildings removed (Joseon-style tiled buildings forbidden by SILLA_EARLY_V01)"
+  ],
+  "reason": "D-017 human review: hero V02 image background shows curved-eave tiled-roof buildings. Edit the existing image (input = hero job c7a5cc92) so the face used as identity reference does not drift.",
+  "requested_by": "사용자 (D-017)",
+  "created_at": "2026-09-13",
+  "resulting_prompt_id": "PRM_MP_CHAR_SILLA_ELITE_OBSERVER_01_HERO_V04",
+  "resulting_generation_id": null
+}

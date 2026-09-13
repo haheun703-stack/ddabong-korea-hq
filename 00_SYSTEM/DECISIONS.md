@@ -80,6 +80,11 @@
 **정본 규칙 (Sent Prompt Rule)** ① 보낼 문장을 먼저 prompt 새 버전으로 저장 → ② 저장된 `assembled_text` 를 **그대로** 전송 → ③ generation 기록에 실제 전송본 연결 (`prompt_id` + `provider_job.params_path`). 이 순서가 깨지면 FAIL — `validate.py money_rules` 가 강제한다.
 **우선순위** 1 배치 1 Work 판정 → 2 hero 배경 기와지붕 시대 위반 여부 → 3 H07 정지/영상 매치컷 결정 → 4 Master Pack 확장 → 5 Web HQ 는 main 병합 시점 동기화.
 
+### D-017 · 2026-09-13 · 원로 Master Pack 배치 1 사람 판정 (사용자)
+**판정** 얼굴 동일성 OK. front · three_quarter_left · full_body **APPROVED**. hero 는 얼굴·복식 OK, 배경의 조선식 기와지붕 건물이 시대 lock(SILLA_EARLY_V01) 위반 → **그 항목만 FIX**. 소매(반소매 겉옷 + 긴 속옷 소매)는 유지.
+**방법** 전체 재생성 대신 기존 hero 이미지(job c7a5cc92)를 입력으로 배경만 편집 1회 (`PRM_…_HERO_V04`, `PATCH_MP_ELITE_HERO_002`). 배치 1 승인 범위 8회 중 6번째. Sent Prompt Rule (D-016) 적용.
+**다음** 편집본 사람 확인 → hero APPROVED 되면 4장 완료 → 나머지 6 + back_view 는 새 approval.
+
 ---
 
 ## 승인 대기 (P)
