@@ -22,8 +22,8 @@
   ],
   "master_pack": {
     "hero": {
-      "path": "08_GENERATION_CACHE/EP01/MP_ELITE/MP_ELITE_HERO_V02_c7a5cc92.png",
-      "generation_id": "GEN_MP_ELITE_HERO_HIGGSFIELD_V02",
+      "path": "08_GENERATION_CACHE/EP01/MP_ELITE/MP_ELITE_HERO_V03_5de27748.png",
+      "generation_id": "GEN_MP_ELITE_HERO_HIGGSFIELD_V03",
       "status": "DRAFT"
     },
     "front": {
@@ -77,5 +77,5 @@
   "approved_at": null,
   "version": "V01",
   "updated_at": "2026-09-13",
-  "notes": "EP01 유일한 '반복 등장 개인' 후보 (EP01_S06_SH002 H04, EP01_S06_SH005 H05). Master Pack 10종 필수 (정본 §5). H05 는 관찰자 뒤에서 찍으므로 뒷모습·어깨 실루엣이 추가로 중요 → 요구 목록 EP01_MASTER_PACK_REQUIREMENTS.md. 생성은 Money Gate 이후. D-008: FULL (10종 전부). D-015: back_view 는 정식 슬롯이 아닌 FULL Pack 보조 레퍼런스 이미지 (스키마 미확장, P-005 종결). 생성 순서: 배치 1 = hero·front·three_quarter_left·full_body 4장 → 사람 검수 → 나머지 6 + back_view. 배치 1 생성 완료 (hero V02 · front · three_quarter_left · full_body, DRAFT) → 사람 검수 대기. 얼굴 ID 참조 = Higgsfield job c7a5cc92. D-017: front · three_quarter_left · full_body APPROVED. hero = FIX (배경 조선식 기와지붕만 제거, 얼굴 유지)."
+  "notes": "EP01 유일한 '반복 등장 개인' 후보 (EP01_S06_SH002 H04, EP01_S06_SH005 H05). Master Pack 10종 필수 (정본 §5). H05 는 관찰자 뒤에서 찍으므로 뒷모습·어깨 실루엣이 추가로 중요 → 요구 목록 EP01_MASTER_PACK_REQUIREMENTS.md. 생성은 Money Gate 이후. D-008: FULL (10종 전부). D-015: back_view 는 정식 슬롯이 아닌 FULL Pack 보조 레퍼런스 이미지 (스키마 미확장, P-005 종결). 생성 순서: 배치 1 = hero·front·three_quarter_left·full_body 4장 → 사람 검수 → 나머지 6 + back_view. 배치 1 생성 완료 (hero V02 · front · three_quarter_left · full_body, DRAFT) → 사람 검수 대기. 얼굴 ID 참조 = Higgsfield job c7a5cc92. D-017: front · three_quarter_left · full_body APPROVED. hero = FIX (배경 조선식 기와지붕만 제거, 얼굴 유지). hero V03 (배경 편집, job 5de27748) DRAFT → 사람 확인 대기. 얼굴 ID 참조는 c7a5cc92 유지."
 }

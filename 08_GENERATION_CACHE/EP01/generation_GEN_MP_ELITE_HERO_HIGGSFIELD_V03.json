@@ -1,0 +1,43 @@
+{
+  "generation_id": "GEN_MP_ELITE_HERO_HIGGSFIELD_V03",
+  "shot_id": "MASTER_PACK:CHAR_SILLA_ELITE_OBSERVER_01:hero",
+  "stage": "STILL",
+  "provider": "Higgsfield",
+  "model": "Nano Banana Pro (job_set_type nano_banana_2, 2k, 3:4, image_references=hero job c7a5cc92, edit)",
+  "provider_job": {
+    "job_id": "5de27748-f100-47e0-af23-1bdb68466bb7",
+    "job_set_type": "nano_banana_2",
+    "display_name": "Nano Banana Pro",
+    "params_path": "08_GENERATION_CACHE/EP01/provider_jobs/HF_5de27748-f100-47e0-af23-1bdb68466bb7.json"
+  },
+  "prompt_id": "PRM_MP_CHAR_SILLA_ELITE_OBSERVER_01_HERO_V04",
+  "prompt_version": "V04",
+  "standard_versions": {
+    "CHARACTER_CONTINUITY_STANDARD.md": "v0.1",
+    "COST_STANDARD.md": "v0.1"
+  },
+  "case_ids_used": [
+    "CASE_DDABONG_CHAR_001"
+  ],
+  "approval_id": "APR_EP01_MP_ELITE_BATCH1_001",
+  "input_paths": [
+    "08_GENERATION_CACHE/EP01/MP_ELITE/MP_ELITE_HERO_V02_c7a5cc92.png"
+  ],
+  "output_paths": [
+    "08_GENERATION_CACHE/EP01/MP_ELITE/MP_ELITE_HERO_V03_5de27748.png"
+  ],
+  "attempts": 1,
+  "duration_sec": null,
+  "cost": {
+    "currency": "CREDITS",
+    "amount": 2.0,
+    "spent": 2.0,
+    "note": "Higgsfield job 5de27748-f100-47e0-af23-1bdb68466bb7 (balance 1914.48 -> 1912.48)"
+  },
+  "result_status": "SUCCESS",
+  "failure_id": null,
+  "started_at": "2026-09-13T04:11:25Z",
+  "finished_at": null,
+  "run_by": "Image Generation Agent (Claude Code)",
+  "notes": "D-017 FIX (PATCH_MP_ELITE_HERO_002): edit of hero V02 image, background tiled-roof buildings only. Batch-1 approval call 6/8. Bot check PASS: tiled-roof buildings removed (earth mound + overcast sky), face/cap/costume/belt/pose/scaffolding unchanged, single person, no text."
+}

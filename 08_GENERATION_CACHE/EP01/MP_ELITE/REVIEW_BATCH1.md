@@ -31,3 +31,11 @@ three_quarter_right · profile · neutral_standing · walking · costume_detail 
 - front · three_quarter_left · full_body **APPROVED**.
 - hero: 얼굴·복식 OK, **배경 조선식 기와지붕만 FIX** → 기존 이미지 편집 1회 (배치 1 승인 6/8 번째 호출).
 - 소매(반소매 겉옷 + 긴 속옷 소매): 규칙 위반 아님, 4장 일관 → 유지.
+
+## hero 배경 편집 결과 (D-017)
+
+| slot | 파일 | 모델 | 판정(봇) | 사람 검수 |
+|---|---|---|---|---|
+| hero (V03, 편집) | `MP_ELITE_HERO_V03_5de27748.png` | Nano Banana Pro (nano_banana_2) + hero V02 입력 | PASS — 기와지붕 건물 제거(흙더미·흐린 하늘), 얼굴·모자·복식·자세·비계 동일 | ☐ APPROVE ☐ FIX |
+
+`PRM_…_HERO_V04` 저장 → 그대로 전송 → `GEN_MP_ELITE_HERO_HIGGSFIELD_V03`. 2 credits, 배치 1 승인 6/8.
