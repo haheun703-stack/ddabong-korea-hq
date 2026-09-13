@@ -1,0 +1,43 @@
+{
+  "generation_id": "GEN_MF_EP01_S04_MASTER_HIGGSFIELD_V04",
+  "shot_id": "MASTER_FRAME:EP01_S04_MASTER_V01",
+  "stage": "STILL",
+  "provider": "Higgsfield",
+  "model": "Nano Banana Pro (job_set_type nano_banana_2, 2k, 16:9, edit of job 447da844)",
+  "provider_job": {
+    "job_id": "cbd3f3df-6bf2-41c2-9ca7-7d824eb898f2",
+    "job_set_type": "nano_banana_2",
+    "display_name": "Nano Banana Pro",
+    "params_path": "08_GENERATION_CACHE/EP01/provider_jobs/HF_cbd3f3df-6bf2-41c2-9ca7-7d824eb898f2.json"
+  },
+  "prompt_id": "PRM_MF_EP01_S04_MASTER_V04",
+  "prompt_version": "V04",
+  "standard_versions": {
+    "CHARACTER_CONTINUITY_STANDARD.md": "v0.1",
+    "COST_STANDARD.md": "v0.1"
+  },
+  "case_ids_used": [
+    "CASE_DDABONG_CHAR_001"
+  ],
+  "approval_id": "APR_EP01_MF_001",
+  "input_paths": [
+    "08_GENERATION_CACHE/EP01/MF/MF_EP01_S04_MASTER_V03_447da844.png"
+  ],
+  "output_paths": [
+    "08_GENERATION_CACHE/EP01/MF/MF_EP01_S04_MASTER_V04_cbd3f3df.png"
+  ],
+  "attempts": 1,
+  "duration_sec": null,
+  "cost": {
+    "currency": "CREDITS",
+    "amount": 2.0,
+    "spent": 2.0,
+    "note": "Higgsfield job cbd3f3df-6bf2-41c2-9ca7-7d824eb898f2 (balance 1864.48 -> 1862.48)"
+  },
+  "result_status": "SUCCESS",
+  "failure_id": null,
+  "started_at": "2026-09-13T06:43:03Z",
+  "finished_at": null,
+  "run_by": "Image Generation Agent (Claude Code)",
+  "notes": "Edit (PATCH_MF_EP01_S04_003, owner 'A'). Bot check PASS: horizon now low hills, a few trees and open land - no poles, wires or buildings; tape measure became a wooden stick; front spade blades now read as wood; chamber, stones, labourers, dust and framing unchanged; full frame, no letterbox."
+}

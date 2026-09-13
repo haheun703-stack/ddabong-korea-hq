@@ -1,0 +1,24 @@
+{
+  "provider": "Higgsfield",
+  "job_id": "cbd3f3df-6bf2-41c2-9ca7-7d824eb898f2",
+  "job_set_type": "nano_banana_2",
+  "display_name": "Nano Banana Pro",
+  "status": "completed",
+  "created_at": "2026-09-13T06:43:03Z",
+  "params": {
+    "width": 2752,
+    "height": 1536,
+    "aspect_ratio": "16:9",
+    "resolution": "2k",
+    "batch_size": 1,
+    "input_images": [
+      {
+        "id": "447da844-0c8f-4d3a-9d0f-ca6dae38eb7b",
+        "type": "image_job"
+      }
+    ],
+    "prompt": "Edit the reference image. Keep everything in the foreground and middle ground exactly as it is: the timber chamber, the river stones, all labourers, their faces, clothing and poses, the baskets, carrying poles, mallets, timber beams, the dust, the light and the camera angle. Change only three things: (1) the far background and horizon becomes empty 5th-century countryside - bare low hills and open untilled land with a few trees - with no utility poles, no power lines, no buildings, no greenhouses and no regular field grid; (2) the yellow tape measure in the front-left labourer's hands becomes a plain wooden measuring stick; (3) every spade blade becomes plain wood, with no metal. Full frame, no black bars, no text, no watermark, no logo."
+  },
+  "retrieved_at": "2026-09-13",
+  "note": "job_status result. Result/CDN URLs omitted. params.prompt = text actually sent (identical to prompt V04)."
+}
