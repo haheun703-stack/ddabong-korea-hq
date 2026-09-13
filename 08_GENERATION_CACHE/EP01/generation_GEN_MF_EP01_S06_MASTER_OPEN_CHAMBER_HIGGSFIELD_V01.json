@@ -1,0 +1,41 @@
+{
+  "generation_id": "GEN_MF_EP01_S06_MASTER_OPEN_CHAMBER_HIGGSFIELD_V01",
+  "shot_id": "MASTER_FRAME:EP01_S06_MASTER_OPEN_CHAMBER_V01",
+  "stage": "STILL",
+  "provider": "Higgsfield",
+  "model": "Nano Banana Pro (job_set_type nano_banana_2, 2k, 16:9, image_references=5de27748 + fba70a58 + 84c0fdbc + 412a72bc)",
+  "provider_job": {
+    "job_id": "80d2d3db-44cd-4d01-8b50-76048154c458",
+    "job_set_type": "nano_banana_2",
+    "display_name": "Nano Banana Pro",
+    "params_path": "08_GENERATION_CACHE/EP01/provider_jobs/HF_80d2d3db-44cd-4d01-8b50-76048154c458.json"
+  },
+  "prompt_id": "PRM_MF_EP01_S06_MASTER_OPEN_CHAMBER_V01",
+  "prompt_version": "V01",
+  "standard_versions": {
+    "CHARACTER_CONTINUITY_STANDARD.md": "v0.1",
+    "COST_STANDARD.md": "v0.1"
+  },
+  "case_ids_used": [
+    "CASE_DDABONG_CHAR_001"
+  ],
+  "approval_id": "APR_EP01_MF_001",
+  "input_paths": [],
+  "output_paths": [
+    "08_GENERATION_CACHE/EP01/MF/MF_EP01_S06_MASTER_OPEN_CHAMBER_V01_80d2d3db.png"
+  ],
+  "attempts": 1,
+  "duration_sec": null,
+  "cost": {
+    "currency": "CREDITS",
+    "amount": 2.0,
+    "spent": 2.0,
+    "note": "Higgsfield job 80d2d3db-44cd-4d01-8b50-76048154c458 (batch of 3: balance 1878.48 -> 1872.48)"
+  },
+  "result_status": "SUCCESS",
+  "failure_id": null,
+  "started_at": "2026-09-13T06:11:30Z",
+  "finished_at": null,
+  "run_by": "Image Generation Agent (Claude Code)",
+  "notes": "D-026 master frame. Bot check: stage correct (open-topped chamber, coffin and chest inside, low stone course outside, no stones or earth on top), attendants in belted hemp holding cloth bundles, two women in grey skirts, labourers waiting with stone baskets, exactly one person in blue (observer, three-quarter back, birch-bark cap), late light. ISSUES: coffin has a tapered hexagonal Western-coffin outline; chest has metal hinges and latch; observer's belt is a plain leather strap without bronze plaques or pendants. -> FIX edit proposed (PATCH_MF_EP01_S06_OPEN_CHAMBER_001). Awaiting owner OK/FIX."
+}

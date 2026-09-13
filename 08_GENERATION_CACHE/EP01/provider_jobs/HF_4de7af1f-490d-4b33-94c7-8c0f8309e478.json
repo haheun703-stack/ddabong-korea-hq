@@ -1,0 +1,24 @@
+{
+  "provider": "Higgsfield",
+  "job_id": "4de7af1f-490d-4b33-94c7-8c0f8309e478",
+  "job_set_type": "nano_banana_2",
+  "display_name": "Nano Banana Pro",
+  "status": "completed",
+  "created_at": "2026-09-13T06:11:29Z",
+  "params": {
+    "width": 2752,
+    "height": 1536,
+    "aspect_ratio": "16:9",
+    "resolution": "2k",
+    "batch_size": 1,
+    "input_images": [
+      {
+        "id": "412a72bc-f3f1-4955-8d3a-36e1e6306d1f",
+        "type": "image_job"
+      }
+    ],
+    "prompt": "One wide cinematic establishing frame, 16:9, a single still image. Early Silla, Gyeongju, 5th century: the Cheonmachong burial site at an early construction stage. In the centre, a rectangular wooden outer burial chamber of thick timber beams stands on levelled ground, about 6.6 by 4.2 metres, open-topped with no lid; a low course of river stones is only beginning to line its outer walls, and nothing covers the top. The earth mound has not been raised yet; the open work area around the chamber is wide. Everyone in the image is a labourer: labourers in undyed coarse hemp short jackets with cloth waist cords, shin-bound trousers, straw sandals or bare feet, topknots or cloth headbands. At the left edge, a timber yard where labourers measure and shape beams; in the middle ground other labourers carry river stones in straw baskets toward the chamber. Use the reference image for the labourers' clothing only; faces varied, no hero figure. Tools only: straw baskets, rope, wooden poles and wooden spades. No one looks at the camera, no one poses. Camera about 1.6 metres high, 28mm lens feel, slightly elevated three-quarter view of the whole work area, overcast morning light, dust in the air. Photorealistic historical documentary still, style B Documentary Reenactment, natural textures and skin, not glossy, earthy natural colours. No tiled roofs, no buildings, no palace, no stone walls, no modern tools, no metal shovels or pick-axes, no rubber wheels, no cranes, no gold objects visible, no crown visible, no text, no watermark, no logo."
+  },
+  "retrieved_at": "2026-09-13",
+  "note": "generate_image_batch/jobs_wait result. Result/CDN URLs omitted. params.prompt = text actually sent (identical to prompt V01)."
+}

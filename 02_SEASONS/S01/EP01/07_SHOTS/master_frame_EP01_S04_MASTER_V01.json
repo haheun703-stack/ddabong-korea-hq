@@ -2,8 +2,8 @@
   "frame_id": "EP01_S04_MASTER_V01",
   "scene_id": "EP01_S04",
   "version": "V01",
-  "path": null,
-  "generation_id": null,
+  "path": "08_GENERATION_CACHE/EP01/MF/MF_EP01_S04_MASTER_V01_4de7af1f.png",
+  "generation_id": "GEN_MF_EP01_S04_MASTER_HIGGSFIELD_V01",
   "characters": [
     "CHAR_SILLA_LABORER_GROUP_01"
   ],

@@ -1,0 +1,36 @@
+{
+  "provider": "Higgsfield",
+  "job_id": "80d2d3db-44cd-4d01-8b50-76048154c458",
+  "job_set_type": "nano_banana_2",
+  "display_name": "Nano Banana Pro",
+  "status": "completed",
+  "created_at": "2026-09-13T06:11:30Z",
+  "params": {
+    "width": 2752,
+    "height": 1536,
+    "aspect_ratio": "16:9",
+    "resolution": "2k",
+    "batch_size": 1,
+    "input_images": [
+      {
+        "id": "5de27748-f100-47e0-af23-1bdb68466bb7",
+        "type": "image_job"
+      },
+      {
+        "id": "fba70a58-ef3f-45b7-8f94-7c61d0284307",
+        "type": "image_job"
+      },
+      {
+        "id": "84c0fdbc-1c5c-4edd-bb35-b1836ae14288",
+        "type": "image_job"
+      },
+      {
+        "id": "412a72bc-f3f1-4955-8d3a-36e1e6306d1f",
+        "type": "image_job"
+      }
+    ],
+    "prompt": "One wide cinematic frame, 16:9, a single still image. Early Silla, Gyeongju, 5th century: the Cheonmachong burial site at the stage when the wooden outer chamber is complete and still open. In the centre, the rectangular timber chamber stands on levelled ground, open-topped with no lid and nothing on top; a low course of river stones may line its outer walls, but no stones or earth cover it. Inside the chamber, a plain wooden coffin with its lid visible from above, and a plain wooden chest at the head end of the coffin. Reference images: references 1 and 2 = the senior observer's face and costume only; reference 3 = the attendants' clothing only; reference 4 = the labourers' clothing only; do not copy faces between groups. Exactly ONE person in blue in the whole image: the senior elite observer, in a muted dusty blue silk robe with short outer sleeves over long ivory inner sleeves, pale birch-bark conical cap and restrained bronze plaque belt with small pendants. Nobody else wears blue, a birch-bark cap or a bronze belt. He stands still in the foreground at a respectful distance, seen three-quarter from behind, watching the chamber. Near the open chamber, funeral attendants in undyed white, black and grey-brown hemp jackets wrapped right over left and closed only by plain cloth waist belts (no ribbon ties on the chest), one woman in a long plain grey skirt, stand holding cloth-wrapped bundles. Further back, labourers in undyed coarse hemp short jackets with cloth waist cords, shin-bound trousers, straw sandals or bare feet, topknots or cloth headbands, wait beside straw baskets of river stones, not working. Hierarchy is shown only by spacing and behaviour. No one looks at the camera, no one poses. Camera about 1.5 metres high, 28mm lens feel, static, late afternoon light, solemn and controlled. Photorealistic historical documentary still, style B Documentary Reenactment, natural textures and skin, not glossy, earthy natural colours. No tiled roofs, no buildings, no palace, no stone walls, no modern tools, no metal shovels or pick-axes, no rubber wheels, no cranes, no gold objects visible, no crown visible, no text, no watermark, no logo."
+  },
+  "retrieved_at": "2026-09-13",
+  "note": "generate_image_batch/jobs_wait result. Result/CDN URLs omitted. params.prompt = text actually sent (identical to prompt V01)."
+}

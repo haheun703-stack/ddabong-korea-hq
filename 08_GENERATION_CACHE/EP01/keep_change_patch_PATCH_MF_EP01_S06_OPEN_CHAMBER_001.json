@@ -1,0 +1,24 @@
+{
+  "patch_id": "PATCH_MF_EP01_S06_OPEN_CHAMBER_001",
+  "shot_id": "MASTER_FRAME:EP01_S06_MASTER_OPEN_CHAMBER_V01",
+  "from_version": "V01",
+  "to_version": "V02",
+  "fix_reason": "HISTORICAL_ISSUE",
+  "keep": [
+    "chamber, stones, stage",
+    "all faces, clothing, poses",
+    "bundles and baskets",
+    "light and camera angle",
+    "exactly one person in blue"
+  ],
+  "change": [
+    "coffin -> plain straight-sided rectangular box with flat lid",
+    "chest -> no metal hinges or latch",
+    "observer belt -> bronze plaque belt with small pendants"
+  ],
+  "reason": "coffin has a tapered hexagonal Western-coffin outline; chest has metal hinges and latch; observer's belt is a plain leather strap without bronze plaques or pendants. Edit input: 80d2d3db, 5681f1e0.",
+  "requested_by": "Image Generation Agent (Claude Code) — pending owner OK",
+  "created_at": "2026-09-13",
+  "resulting_prompt_id": "PRM_MF_EP01_S06_MASTER_OPEN_CHAMBER_V02",
+  "resulting_generation_id": null
+}

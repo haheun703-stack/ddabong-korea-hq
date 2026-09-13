@@ -1,0 +1,36 @@
+{
+  "provider": "Higgsfield",
+  "job_id": "8e1007b7-fc47-4de0-9ba4-709d4a44efeb",
+  "job_set_type": "nano_banana_2",
+  "display_name": "Nano Banana Pro",
+  "status": "completed",
+  "created_at": "2026-09-13T06:11:30Z",
+  "params": {
+    "width": 2752,
+    "height": 1536,
+    "aspect_ratio": "16:9",
+    "resolution": "2k",
+    "batch_size": 1,
+    "input_images": [
+      {
+        "id": "5de27748-f100-47e0-af23-1bdb68466bb7",
+        "type": "image_job"
+      },
+      {
+        "id": "fba70a58-ef3f-45b7-8f94-7c61d0284307",
+        "type": "image_job"
+      },
+      {
+        "id": "412a72bc-f3f1-4955-8d3a-36e1e6306d1f",
+        "type": "image_job"
+      },
+      {
+        "id": "84c0fdbc-1c5c-4edd-bb35-b1836ae14288",
+        "type": "image_job"
+      }
+    ],
+    "prompt": "One wide cinematic frame, 16:9, a single still image. Early Silla, Gyeongju, 5th century: the same Cheonmachong site at a later stage. The wooden chamber is already fully buried under a heap of river stones and hidden; no timber, coffin or chamber walls are visible anywhere. A broad earth mound is rising over the stones, already far taller than people but not finished; the finished mound will be about 47 metres across and 12.7 metres high, about 3.7 times as wide as it is high, a wide low dome, not a steep hill; people at its base look tiny. Reference images: references 1 and 2 = the senior observer's face and costume only; reference 3 = the labourers' clothing only; reference 4 = the attendants' clothing only; do not copy faces between groups. Exactly ONE person in blue in the whole image: the senior elite observer, in a muted dusty blue silk robe with short outer sleeves over long ivory inner sleeves, pale birch-bark conical cap and restrained bronze plaque belt with small pendants. Nobody else wears blue, a birch-bark cap or a bronze belt. He stands still in the foreground at a respectful distance, seen three-quarter from behind, watching the mound grow. Labourers in undyed coarse hemp short jackets with cloth waist cords, shin-bound trousers, straw sandals or bare feet, topknots or cloth headbands carry straw baskets of earth up the slope and pack the sides; a few funeral attendants in undyed white, black and grey-brown hemp jackets wrapped right over left and closed only by plain cloth waist belts (no ribbon ties on the chest), one woman in a long plain grey skirt stand in small groups at the base. Tools only: straw baskets, rope, wooden poles and wooden spades. No one looks at the camera, no one poses. Camera about 1.5 metres high behind the observer, 35mm lens feel, low warm late-afternoon sunlight, long shadows, calm and monumental, not celebratory. Photorealistic historical documentary still, style B Documentary Reenactment, natural textures and skin, not glossy, earthy natural colours. No tiled roofs, no buildings, no palace, no stone walls, no modern tools, no metal shovels or pick-axes, no rubber wheels, no cranes, no gold objects visible, no crown visible, no text, no watermark, no logo."
+  },
+  "retrieved_at": "2026-09-13",
+  "note": "generate_image_batch/jobs_wait result. Result/CDN URLs omitted. params.prompt = text actually sent (identical to prompt V01)."
+}
