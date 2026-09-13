@@ -1,0 +1,1633 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta http-equiv="Cache-Control" content="no-cache" />
+	<meta http-equiv="Pragma" content="no-cache" />
+	<meta name="viewport" content="width=1400">
+	<meta name="format-detection" content="telephone=no" />	
+		
+ 	<title>金製冠帽 - e뮤지엄 소장품검색</title>	
+	<meta name="robots" content="noindex">
+	<link rel="stylesheet" type="text/css" href="/css/2019/jquery.booklet.latest.css;jsessionid=30F7504D24341D71BFC1C9CA52F0F57A">
+	
+
+
+
+
+
+
+
+
+
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2PD1RQPYTD"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-2PD1RQPYTD');
+    </script>
+
+    <link rel="shortcut icon" type="image/x-icon" href="/resources/images/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="/resources/css/jquery-ui.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/common.css?v=20250529">
+    <link rel="stylesheet" type="text/css" href="/resources/css/popup_openapi.css">
+
+    <script type="text/javascript" src="/resources/js/jquery-3.7.1.js"></script>
+    
+    
+    <script type="text/javascript" src="/resources/js/jquery-ui.js"></script>
+    <script type="text/javascript" src="/resources/js/common.js"></script>
+
+    <!-- slick-slider -->
+    <script type="text/javascript" src="/resources/dist/slick.min.js?v=20250529"></script>
+    <link rel="stylesheet" type="text/css" href="/resources/dist/slick.css">
+
+    <!-- scroll -->
+    <script type="text/javascript" src="/resources/dist/jquery.mCustomScrollbar.concat.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="/resources/dist/jquery.mCustomScrollbar.css">
+
+    <!-- old -->
+    <script type="text/javascript" src="/js/2018/lib/jquery.validate.js;jsessionid=30F7504D24341D71BFC1C9CA52F0F57A"></script>
+    <script type="text/javascript" src="/js/2018/front/common_2017.js;jsessionid=30F7504D24341D71BFC1C9CA52F0F57A"></script>
+    <script type="text/javascript" src="/js/2018/front/search_2017.js;jsessionid=30F7504D24341D71BFC1C9CA52F0F57A"></script>
+    <script type="text/javascript" src="/js/2018/front/search_2018.js;jsessionid=30F7504D24341D71BFC1C9CA52F0F57A"></script>
+    <script type="text/javascript" src="/js/2018/cmmn/emus_common.js;jsessionid=30F7504D24341D71BFC1C9CA52F0F57A"></script>
+    <script type="text/javascript" src="/js/2019/imageSearch.js;jsessionid=30F7504D24341D71BFC1C9CA52F0F57A"></script>
+    <script type="text/javascript" src="/js/2018/lib/imagesloaded.pkgd.min.js"></script>
+    <script type="text/javascript" src="/js/2018/lib/masonry.pkgd.min.js"></script>
+    <script type="text/javascript">
+	  //로그인
+	    function fnLogin() {
+	    	location.href="/login";
+	    }
+	    
+	    /*
+	     * 로그아웃
+	     */
+	    function fnLogout(){
+	    	$.ajax({
+				type: 'POST',
+				url: "/logout",
+				data: null,
+				success: function(obj){
+				if(obj.result){
+						location.href="/main;jsessionid=30F7504D24341D71BFC1C9CA52F0F57A";
+					}else{
+						alert(obj.resultMsg);
+					}
+				},
+				error: function(result){
+					alert(result);
+				}
+			});
+		}
+    </script>
+	<style>
+		.i-url-share {background-image: url(/images/icon/ico-url-share.png); width: 23px; height: 23px; margin-top: 16px;margin-right: 10px;}
+		/*.booklet .b-page {overflow : inherit;}*/
+		.booklet .b-p2 {left: 490px;}
+	</style>
+	<script type="text/javascript" src="/js/2019/lib/jquery.booklet.latest.js;jsessionid=30F7504D24341D71BFC1C9CA52F0F57A"></script>	
+	<script>
+		$(function(){
+			// $(".slider-nav").mCustomScrollbar({
+			// 	theme: "dark"
+			// });
+
+			// 접근성 개선을 위해 스크롤바 라이브러리 제거 후 탭인덱스 추가
+			$(".slider-nav").each(function (){
+				if ($(this).prop('scrollHeight') > $(this).height() ) {
+					$(this).attr("tabindex", "0");
+					$(this).css("overflow-y", "auto");
+				}
+			})
+
+			// $('.slider-for').slick({
+			//     slidesToShow: 1,
+			//     slidesToScroll: 1,
+			//     arrows: false,
+			//     fade: true,
+			//     asNavFor: '.slider-nav .mCSB_container'
+			// });
+			// $('.slider-nav .mCSB_container').slick({
+			//     slidesToShow: 3,
+			//     slidesToScroll: 1,
+			//     asNavFor: '.slider-for',
+			//     // centerMode: true,
+			//     vertical: true,
+			//     arrows: false,
+			//     focusOnSelect: true
+			// });
+			// $(".slider-nav .img").click(function(){
+			// 	var html = $(this).html();
+			// 	$(".slider-for .img").html(html);
+			// });			
+			
+			// 재질			
+			fnReltQlyListMore(1);			
+			// 국가/시대
+			fnReltAgeListMore(1);
+			// 용도/기능
+			fnReltPurposeListMore(1);
+			
+			// 문양			
+			
+
+			// 추천 전시 - 공간형
+			
+			fnCrtehbtListMore(1);
+			fnTypeTab('01');
+			
+			// 추천 전시 - 디자인형
+			
+			fnRecmcrtListMore(1);
+			fnTypeTab('01');
+			
+
+			// 전자책 팝업
+			$('.btn_digitalBook').click(function () {
+				$('html, body').css({'overflow': 'hidden'});
+				$('.digitalBook_bg').show();
+				$('.digitalBook_wrap').attr("tabindex", "0").show().focus();
+				$('.mybook').booklet("gotopage", "start");//첫페이지로 이동
+			});
+
+			$(".box-view-trans").on("keydown", function(event) {
+				if (!event.shiftKey && (event.keyCode || event.which) === 9) {
+
+					$(".btn-digitalbook-close").focus();
+					event.preventDefault();
+				}
+			});
+
+			$('.digitalBook_wrap .close, .digitalBook_bg').click(function () {
+				$(".digitalBook_menu a.page_font").click();
+				$('html, body').css({'overflow': ''});
+				$('.digitalBook_bg').hide();
+				$('.digitalBook_wrap').hide();
+				$(".btn_digitalBook").focus();
+			});
+
+			if($(window).width() < 768) {
+				$('.mybook').hide();
+			} else if($(window).width() < 1025) {
+				$('.mybook').booklet({
+					width: "100%",
+					height: "500",
+					//height: "100%",
+					pagePadding: 50,
+					prev: ".page_prev",
+					next: ".page_next",
+					arrows: true
+				});
+			} else {
+				$('.mybook').booklet({
+					width: "100%",
+					height: "500",
+					//height: "100%",
+					pagePadding: 50,
+					prev: ".page_prev",
+					next: ".page_next",
+					arrows: true
+				});
+			}
+			popupCenter();
+
+			$(document).on('click', '.digitalBook_menu a', function () {
+				var font_chk = $('.b-wrap p, .m_mybook div p' ).css( 'font-size' );
+				var num = font_chk.slice(0 , -2);
+				var up_result = Number(num) + 1;
+				var down_result = Number(num) - 1;
+				if($(this).hasClass('page_fontUp') == true){
+					$('.b-wrap p, .m_mybook div p').css( 'font-size', up_result+'px' );
+				} else if($(this).hasClass('page_font') == true) {
+					$('.b-wrap p, .m_mybook div p').css( 'font-size', '16px' );
+				} else if($(this).hasClass('page_fontDown') == true) {
+					$('.b-wrap p, .m_mybook div p').css( 'font-size', down_result+'px' );
+				} else {
+					return;
+				}
+			});
+		});
+
+		$(window).resize(function () {
+			$(function() {
+				if($(window).width() < 768) {
+					$('.mybook').hide();
+				} else if($(window).width() < 1025) {
+					$('.mybook').show();
+					$('.mybook').booklet({
+						width: "100%",
+						height: "500",
+						//height: "100%",
+						pagePadding: 50,
+						prev: ".page_prev",
+						next: ".page_next",
+						arrows: true
+					});
+				} else {
+					$('.mybook').show();
+					$('.mybook').booklet({
+						width: "100%",
+						height: "500",
+						//height: "100%",
+						pagePadding: 50,
+						prev: ".page_prev",
+						next: ".page_next",
+						arrows: true
+					});
+				}
+				popupCenter();
+			});
+			popupCenter();
+		});
+
+		// 팝업 중앙 정렬
+		function popupCenter() {
+			var width = $('.digitalBook_wrap').width();
+			var height = $('.digitalBook_wrap').height();
+			if($(window).width() < 768) {
+				$('.digitalBook_wrap').css({ 'left' : 0, 'top' : 0 });
+				$('.m_mybook div p').css({ 'height' : ($(window).height() / 3 ) });
+			} else {
+				$('.digitalBook_wrap').css({ 'left' : ($(window).width() - width) / 2 - 50, 'top' : ($(window).height() - height) / 2 - 25 });
+			}
+		}
+
+		// img slide
+		function fnChangeMainImg(id, w, h){
+			$('.mi').hide();
+			$('.mi').removeClass('on');
+			$('#img_'+id).addClass('on');
+			$('#img_'+id).show();
+			viewRate = 1;
+
+			$('#txt_bt').text('원본 해상도 ' + w + ' * ' + h)
+		}
+
+		// img 확대 축소
+		var viewRate = 1;
+		function fnImgRateEdit(flag){
+			$('.mi').each(function(){
+				if($(this).hasClass('on')){
+					if('+' == flag){
+						if(viewRate < 3.0) viewRate += 0.1;
+					} else {
+						if(viewRate > 0.5) viewRate -= 0.1;
+					}
+
+					var style = 'left: ' + $(this).css('left')
+							+ ';top: ' + $(this).css('top')
+							+ ';transform: scale('+viewRate+')'
+							+ ';transition: .5s;';
+					$(this).attr('style', style);
+				}
+			});
+		}
+
+		// 이미지 드래그하여 움직이기
+		var img_L = 0;
+		var img_T = 0;
+		var targetObj;
+
+		function fnGetLeft(obj){
+			return parseInt(obj.style.left.replace('px', ''));
+		}
+
+		function fnGetTop(obj){
+			return parseInt(obj.style.top.replace('px', ''));
+		}
+
+		function fnStartDrag(e, obj){
+			targetObj = obj;
+			var e_obj = window.event ? window.event : e;
+			img_L = fnGetLeft(obj) - e_obj.clientX;
+			img_T = fnGetTop(obj) - e_obj.clientY;
+
+			console.log(obj);
+
+			document.onmousemove = fnMoveDrag;
+			document.onmouseup = fnStopDrag;
+			if(e_obj.preventDefault()) e_obj.preventDefault();
+		}
+
+		function fnMoveDrag(e){
+			var e_obj = window.event ? window.event : e;
+			var dmvx = parseInt(e_obj.clientX + img_L);
+			var dmvy = parseInt(e_obj.clientY + img_T);
+			targetObj.style.left = dmvx+'px';
+			targetObj.style.top = dmvy+'px';
+			return false;
+		}
+
+		function fnStopDrag(){
+			document.onmousemove = null;
+			document.onmouseup = null;
+		}
+		//
+
+		// img full-screen
+		function fnImgFullScreen() {
+			var elem = document.getElementsByClassName('mi on')[0];
+			if (elem.requestFullscreen) {
+				elem.requestFullscreen();
+			} else if (elem.webkitRequestFullscreen) { /* Safari */
+				elem.webkitRequestFullscreen();
+			} else if (elem.msRequestFullscreen) { /* IE11 */
+				elem.msRequestFullscreen();
+			}
+		}
+
+		// 좋아요, 관심소장품 등록
+		function fnMakerDetailView(btnObj, preperGb, relicId, mcSeqNo1,groupSeq,imgId) {
+			// preperGb 선호 구분(G : 좋아요 / I : 나의관심유물)
+			if ( '' != '' && '' != null ) {
+				var selectImgId = imgId;
+				var targetImg = $('div.slider-for img.on');
+				selectImgId = targetImg.attr('data-img-id') ?? imgId;//현재 보이는 이미지가 관심소장품으로 담김
+
+				//if($('div.myRelic_detail_box li.on').length > 0) return false;//상세에서 관심소장품 담긴게 있으면 담지 못하도록
+
+				$.ajax({
+					type: 'POST',
+					url: "/dq_handleSetLikeRelic",
+					data: "preperGb=" + preperGb + "&relicId=" + relicId + "&mcSeqNo1=" + mcSeqNo1+ "&groupSeq=" + groupSeq + "&imgId=" + selectImgId,
+					success: function(obj){
+
+						$('.likeit_btn').find('span').html( '좋아요 (' + obj.preferRelicTotalGNew + ')');
+
+						if ( obj.preperGb == 'G' && obj.preferRelicMark == 'Insert' ) { // 좋아요 추가
+							// $('.likeit_btn').attr("class","likeit_btn on");
+							$('.likeit_btn').attr('title', '좋아요 선택됨');
+						} else if ( obj.preperGb == 'G' && obj.preferRelicMark == 'Delete' ) { // 좋아요 삭제
+							// $('.likeit_btn').attr("class","likeit_btn off");
+							$(btnObj).removeAttr('title');
+						} else if ( obj.preperGb == 'I' && obj.preferRelicMark == 'Insert' ) { // 관심유물 추가
+							$(btnObj).parent().attr("class","on");
+							$(btnObj).attr('title', '선택됨');
+						} else if ( obj.preperGb == 'I' && obj.preferRelicMark == 'Delete' ) { // 관심유물 삭제
+							//$('.book_maker').attr("class","book_maker off");
+							$(btnObj).parent().attr("class","off");
+							$(btnObj).removeAttr('title');
+						} else {
+							alert( obj );
+						}
+
+						//$.toast('<img src="'+targetImg.attr("src")+'"/><br/>관심소장품에 담았습니다.', {"duration":2000});
+					},
+					error: function(obj){
+						alert( "Error : " + obj );
+					}
+				});
+			} else {
+				alert("로그인이 필요합니다.");
+				return;
+			}
+		}
+
+		// sns
+		function goSnsPop(obj){
+			event.preventDefault();
+			var url = $(obj).attr("href");
+			window.open(url, "snspop", "width=800, height=600, menubar=1");
+		}
+
+		// 인쇄창
+		function fnOpenPrintPop(){
+			$('#pop-print').show();
+			
+			// 포커스 이동 처리
+	        $('#pop-print .pop_close').focus();
+	        
+			let $el = $('#pop-print');
+			let $lastItem = $el.find("button, a, input").last();
+		    let $firstItem = $el.find("button, .pop_close, a").first();
+		
+		    $lastItem.on("keydown", function(event) {
+		        if (!event.shiftKey && (event.keyCode || event.which) === 9) { 
+		
+				event.preventDefault();
+				$firstItem.focus();
+		        }
+		    });   
+			
+		}
+
+		// close print pop
+		function fnClosePrintPop(){
+			$('#pop-print').hide();
+			$(".btn-openprint").focus();
+		}
+
+		//프린트
+		function print(){
+			var sw=screen.width;
+			var sh=screen.height;
+			var w=800;
+			var h=750;
+			var xpos=(sw-w)/2;
+			var ypos=(sh-h)/2;
+
+			var pHeader="<!DOCTYPE html>" +
+					"<html lang='ko'><head><meta charset='UTF-8'>" +
+					"<link rel=\"stylesheet\" type=\"text/css\" href=\"/resources/css/jquery-ui.css\">" +
+					"<link rel=\"stylesheet\" type=\"text/css\" href=\"/resources/css/common.css\">" +
+					"<title>인쇄</title></head><body>" +
+					"<div class=\"popup_down\">";
+			var pgetContent=document.getElementById("pop-print").innerHTML + "<br>";
+			//pgetContent = pgetContent.replace(/(<img [^>]+ src="[^"]+)/gi, '$1?print=' + encodeURIComponent('4Qh4R8tx5BCaC+LJO+Zxtg3WV6jg7Y3A/HxkH0xNoHw='));
+			pgetContent = pgetContent.replace(/(<img [^>]+ src="[^"]+)/gi, '$1?print=' + encodeURIComponent('4Qh4R8tx5BCaC+LJO+Zxtg3WV6jg7Y3A/HxkH0xNoHw=') + '&printCheck=Y');
+
+			var pFooter="</div></body></html>";
+			pContent=pHeader + pgetContent + pFooter;
+			pWin=window.open("","print","width=" + w +",height="+ h +",top=" + ypos + ",left="+ xpos +",status=yes,scrollbars=yes"); //동적인 새창을 띄웁니다.
+
+			//pWin.document.open(); //팝업창 오픈
+			pWin.document.write(pContent);
+			pWin.document.close(); //클로즈
+			pWin.document.body.onload = function(){
+				pWin.print();
+				setTimeout(function(){
+					pWin.close();
+				}, 500);
+			};
+
+			return;
+		}
+
+
+		/**
+		 * 재질이 유사한 관련소장품 더보기
+		 */
+		function fnReltQlyListMore(no) {			
+			var allData = {"relicId": 'PS0100100200100227500000'
+				, "reltRows": 10
+				, "pageIndex": no
+				, "appendId": 'ulReltQlyList'
+				, "keyword": ''
+				, "reltType": 'QLY'};
+
+			var url = "/dq_reltListMore;jsessionid=30F7504D24341D71BFC1C9CA52F0F57A";
+			dq_callAjaxHtmlDo(url, allData, 'ulReltQlyList');
+		}
+
+		/**
+		 * 국가/시대가 유사한 관련소장품 더보기
+		 */
+		function fnReltAgeListMore(no) {			
+			var allData = {"relicId": 'PS0100100200100227500000'
+				, "reltRows": 10
+				, "pageIndex": no
+				, "appendId": 'ulReltAgeList'
+				, "keyword": ''
+				, "reltType": 'AGE'};
+
+			var url = "/dq_reltListMore;jsessionid=30F7504D24341D71BFC1C9CA52F0F57A";
+			dq_callAjaxHtmlDo(url, allData, 'ulReltAgeList');
+		}
+		
+		/**
+		 * 용도/기능이 유사한 관련소장품 더보기
+		 */
+		function fnReltPurposeListMore(no) {			
+			var allData = {"relicId": 'PS0100100200100227500000'
+				, "reltRows": 10
+				, "pageIndex": no
+				, "appendId": 'ulReltPurposeList'
+				, "keyword": ''
+				, "reltType": 'PURPOSE'};
+
+			var url = "/dq_reltListMore;jsessionid=30F7504D24341D71BFC1C9CA52F0F57A";
+			dq_callAjaxHtmlDo(url, allData, 'ulReltPurposeList');
+		}
+
+		/**
+		 * 문양이 유사한 관련소장품 더보기
+		 */
+		function fnReltImageTagListMore(no) {			
+			var allData = {"relicId": 'PS0100100200100227500000'
+				, "imgId": ''
+				, "reltRows": no - 1
+				, "pageIndex": no
+				, "appendId": 'ulReltImageTagList'
+				, "keyword": ''
+				, "reltType": "IMAGE_TAG"};
+			
+			var url = "/dq_reltImageTagListMore;jsessionid=30F7504D24341D71BFC1C9CA52F0F57A";
+			dq_callAjaxHtmlDo(url, allData, 'ulReltImageTagList');
+		}
+
+		/**
+		 * 추천 전시 더보기 - 공간형
+		 */
+		function fnCrtehbtListMore(no) {
+			var allData = {"relicId": 'PS0100100200100227500000'
+				, "reltRows": no - 1
+				, "pageIndex": no
+				, "appendId": 'ulCrtehbtList'
+				, "keyword": ''
+				, "reltType": ""};
+
+			var url = "/dq_crtehbtListMore;jsessionid=30F7504D24341D71BFC1C9CA52F0F57A";
+			dq_callAjaxHtmlDo(url, allData, 'ulCrtehbtList');
+		}
+
+		/**
+		 * 추천 전시 더보기 - 디자인형
+		 */
+		function fnRecmcrtListMore(no) {
+			var allData = {"relicId": 'PS0100100200100227500000'
+				, "reltRows": no - 1
+				, "pageIndex": no
+				, "appendId": 'ulRecmcrtList'
+				, "keyword": ''
+				, "reltType": ""};
+
+			var url = "/dq_recmcrtListMore;jsessionid=30F7504D24341D71BFC1C9CA52F0F57A";
+			dq_callAjaxHtmlDo(url, allData, 'ulRecmcrtList');
+		}
+
+		/**
+		 * 추천소장품 - 공간형 상세페이지 이동
+		 */
+		function fnGoCrtEhbtDetail(crtehbtSeq) {
+			var url = "/crtehbtPreviewMain";
+			var title = "crtehbtPreviewMain";
+
+			var crtehbtSeq = crtehbtSeq;
+
+			// popForm 이 존재하면 삭제해주기.
+			$("form[name=popForm]").remove();
+
+			// Form 동적 생성
+			var form = document.createElement("form");
+			form.setAttribute("charset", "UTF-8");
+			form.setAttribute("name", "popForm")
+			form.setAttribute("method", "post")
+
+			// 공간형 전시일련번호 설정
+			var hiddenField = document.createElement("input");
+			hiddenField.setAttribute("type", "hidden");
+			hiddenField.setAttribute("name", "crtehbtSeq");
+			hiddenField.setAttribute("value", crtehbtSeq);
+			form.appendChild(hiddenField);
+
+			// Body 에 form 설정
+			document.body.appendChild(form);
+
+			//var Wwidth = $(window).outerWidth();
+			//var Wheight = $(window).outerHeight();
+			openWinPopup_enlarge(url, title, 1390, 800, document.popForm);
+		}
+
+		// download pop
+		function fnOpenDownPop(flag){
+			if('S' == flag){
+				$('.imgSingle').show();
+				$('.imgAll').hide();
+			} else {
+				$('.imgSingle').hide();
+				$('.imgAll').show();
+			}
+
+			$('#pop_bt').text($('#txt_bt').text());
+
+			layer_popup('#pop-down');
+			$(".pop_close").focus();
+		}
+
+		// 이미지 다운로드 목적 선택
+		function fnChoiceType(txt){
+			$('#usage_purpose_type').text(txt);
+			$('#usage_purpose_type').trigger('click');
+		}
+
+		// 원문, 번역문, 연관url 보기
+		function fnGoLink(linkSrc){
+			window.open(linkSrc);
+		}
+
+		// url window open
+		function fnOpenUrl(url){
+			if('-' != url){
+				window.open(url.indexOf('http') > -1 ? url : 'http://' + url, '', '');
+			}
+		}
+
+		// 목록 버튼
+		function goList() {
+			if(history.length > 1) {
+				history.back(-1);
+			} else {
+				window.location.href="/headerSearch";
+			}
+		}
+
+		// tab click
+		function fnTypeTab(no){
+			$('.t01').hide();
+			$('.type_01').removeClass('on');
+			$('#cnt_01').hide();
+			$('.t02').hide();
+			$('.type_02').removeClass('on');
+			$('#cnt_02').hide();
+			$('.t'+no).show();
+			$('.type_'+no).addClass('on');
+			$('#cnt_'+no).show();
+		}
+
+		// 전국 소장품 현황 이동
+		function fnMoveStatus(){
+			var regionCd = 'GL90010';
+			var regionNm = '경상북도';
+			var divisionCd = 'D01';
+			var code = 'PS01001002';
+			var url = 'gyeongju.museum.go.kr'
+			console.log(url);
+			if(url === "") {
+				location.href = '/status?regionCd=' + regionCd + '&regionNm=' + regionNm + '&divisionCd=' + divisionCd + '&code=' + code;
+			} else {
+				window.open(url.indexOf('http') > -1 ? url : 'http://' + url, '', '');
+			}
+		}
+
+		// slice txt (ie)
+		function fnSliceTxt(id){
+			var agent = navigator.userAgent.toLowerCase();
+			if ( (navigator.appName == 'Netscape' && agent.indexOf('trident') != -1) || (agent.indexOf("msie") != -1)) {
+				var txt = $('#usage_'+id+'_desc').val();
+				if(txt.length > 40){
+					$('#usage_'+id+'_desc').val(txt.substr(0, 40));
+				}
+			}
+		}
+
+	</script>
+</head>
+<body>
+<div id="skip"> 
+	<a href="#contents"><span>본문 바로가기</span></a>
+	<a href="#menu"><span>메뉴 바로가기</span></a>
+</div> 
+<div id="wrap">
+	
+
+
+
+
+
+
+
+
+
+    <header>
+        <div class="header" id="header">
+            <div class="inner">
+                <div class="left">
+                    <h1 class="logo"><a href="/main"><img src="/resources/images/logo.png" alt="e뮤지엄 전국박물관소장품검색"/></a></h1>
+                    <p>이 사이트는 대한민국 공식 전자정부 누리집 입니다.</p>
+                </div>
+                <div class="right">
+                   <div class="btn_control">
+                    	
+							
+							
+								<button type="button" class="btn-line" onclick="fnLogin();">로그인</button>
+							
+						
+                        <button type="button" class="btn-line btn_menu">메뉴전체보기</button>
+                    </div>
+                
+                    <ul class="menu" id="menu">
+                        <li>
+                            <a href="/detailSearch">소장품 검색</a>
+                            <ul>
+                                <li><a href="/detailSearch?searchType=1">박물관 유형별 검색</a></li>
+                                <li><a href="/detailSearch?searchType=2">지역별 검색</a></li>
+                                <li><a href="/detailSearch?searchType=3">시대별 검색</a></li>
+                                <li><a href="/imageSearch">이미지 검색</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="/status">전국 소장품 현황</a>
+                        </li>
+                        <li>
+                            <a href="/story">e뮤지엄 이야기</a>
+                        </li>
+                        <li>
+                            <a href="/recmcrtList">내가 해보는 전시</a>
+                            <ul>
+                                <li><a href="/recmcrtList">디자인형</a></li>
+                                <li><a href="/recmcrtEhbtList">공간형</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="/noticeList">e뮤지엄 안내</a>
+                            <ul>
+                                <li><a href="/noticeList">공지사항</a></li>
+                                <li><a href="/faqList">자주 묻는 질문</a></li>
+                                <li><a href="/introList">e뮤지엄 소개</a></li>
+                                <li><a href="/copyright">저작권 정책</a></li>
+                                <li><a href="/openApi">OPEN API</a></li>
+                            </ul>
+                        </li>
+                        
+                            
+                            
+                            
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+    </header>
+
+	<div class="sub_contents" id="contents">		
+		<div class="collection_slide">
+			<div class="inner overflow-h">
+				<div class="slider-for">
+					
+					
+					<div class="img">
+						
+						
+						<img src="/IMG/Q0VQRklTcG9qejdEajh4dWxsa3ArcGx4aWpROEc3Qi8wbnA1YVFscnFJNkErcjJpR0pYbzh4N216WEZNcW9TeUtMeEkyZWpJMTJXQUZBYm1tcSs4bHNVdWtMWTRVcWFV" alt="金製冠帽 0번째 이미지"
+							 style="left: 0px; top: 0px; transform: scale(1); transition: .5s;"
+							 id="img_0" class="mi on" onmousedown="fnStartDrag(event, this);" data-img-id="PS01001002001002275000000000000014">
+						
+						
+						
+						
+						
+						<img src="/IMG/UHNnTkc1bTRYUGo4dGtsaUFFbzVscUNFaHE2WDZKL25SOGtuOFE4bXdkZDE4WmVlTk5LdHdQUWxqenl2eUtsVA==" alt="金製冠帽 1번째 이미지"
+							 style="left: 0px; top: 0px; transform: scale(1); transition: .5s; display: none;"
+							 id="img_1" class="mi" onmousedown="fnStartDrag(event, this);" data-img-id="PS01001002001002275000000000000001">
+						
+						
+					</div>
+					
+					
+					
+				</div>
+				<div class="slider-nav">
+					
+						<div class="img">
+						
+							
+							<a href="javascript:fnChangeMainImg('0', '3000', '2000');" title="선택됨">
+								<img src="/IMG/OVk0MHUwb2VoUStJVXkvRDdXUm9IZlpIeS9VU0l5anVzSFBuOE1kTkRZSEN0eElhanM4SmdHaGdUYlRDVXE2VUd6TUY2Wk1vVWQ1endReG1idEdmRTU2eGZyd0phb0VrTWFteXJXYUo3RVU9" alt="金製冠帽 0번째 이미지">
+							</a>
+							
+							
+						
+						</div>
+					
+						<div class="img">
+						
+							
+							
+							<a href="javascript:fnChangeMainImg('1', '', '');">
+								<img src="/IMG/TlJRYytqNS92cm9qRnBkOEpJWHNIYy96MUZVT2F1L1VzZUpoQWtTREdxZ004UEZhaUtwN1Z6YXBCYjNWZHJHVjgwNW1wbkxRNG9nPQ==" alt="金製冠帽 1번째 이미지">
+							</a>
+							
+						
+						</div>
+					
+				</div>
+				<ul class="btn_control">
+					<li><a href="javascript:fnImgRateEdit('+');"><img src="/resources/images/btn_plus.png" alt="확대"/></a></li>
+					<li><a href="javascript:fnImgRateEdit('-');"><img src="/resources/images/btn_minus.png" alt="축소"/></a></li>
+					<!-- <li><a href="javascript:fnImgFullScreen();"><img src="/resources/images/btn_full.png" alt="전체"/></a></li> -->
+					<li><a href="javascript:void(0);" title="새창열림" onclick="imgView('PS0100100200100227500000');"><img src="/resources/images/btn_full.png" alt="전체"/></a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="inner">
+			<!-- 기본 -->
+			
+			<div class="collection_info">
+				<div class="collection_title overflow-h">
+					<div class="float-left">
+						<p class="big_text" id="relicTitle">金製冠帽</p>
+						<p class="text">국립경주박물관 / 국보</p>
+					</div>
+					<div class="float-right">
+						
+							
+							
+							<p id="txt_bt">원본 해상도 3000 * 2000</p>
+							
+							
+							<button type="button" class="bg-orange pop" onclick="fnOpenDownPop('S')"><i class="i-down"></i>이미지 다운로드</button>
+							
+								<button type="button" class="bg-graylight pop" onclick="fnOpenDownPop('A')"><i class="i-down"></i>전체 다운로드</button>
+							
+						
+					</div>
+				</div>
+				<hr class="hr-333"/>
+				<div class="overflow-h mb35">
+					<div class="float-left wc500">
+						<ul>
+							
+							<li><em>명칭</em><span>金製冠帽</span></li>
+							
+							
+							<li><em>다른명칭</em><span>국보 금제관모, 천마총관모, 天馬塚冠帽</span></li>
+							
+							
+								<li><em>국적/시대</em><span>한국 - 신라</span></li>
+							
+							
+							<li><em>출토지</em><span>경상북도-경주시</span></li>
+							
+							
+								<li><em>분류</em><span>의 - 관모 - 모 - 기타</span></li>
+							
+							
+							<li><em>재질</em><span>금속 - 금</span></li>
+							
+							
+							
+							
+							<li><em>크기</em><span>너비 19cm</span></li>
+							
+							
+							<li><em>국가지정유산</em><span>국보</span></li>
+							
+							
+							<li>
+								<em>소장품번호</em>
+								<span>
+								경주
+								
+									2275
+								
+								
+								</span>
+							</li>
+							
+							
+														
+							
+							
+							
+							
+							
+							
+							
+							
+						</ul>
+					</div>
+					<div class="w500 float-right">
+						
+						
+							<div class="gray_box p25 float-right mt20 w500 mb10">
+							<p class="f18 bold mb15">제 1유형 : 출처표시</p>
+							<p class="mb20">저작권 보호분야 “金製冠帽” 저작물은 공공누리 출처표시 조건에 따라 이용할 수 있습니다.</p>
+							<a href="http://www.kogl.or.kr/info/licenseType1.do" target="_blank" title="새창에서 열림"><img src="/images/2017/img_opentype01_small.jpg" alt="1유형"/></a>
+							</div>
+						
+						
+						
+						
+						
+						
+						<p class="lh30">
+							* 소장품 및 소장정보의 오류는 해당 기관에 직접 문의 바랍니다.
+							<button type="button" class="bg-brownlight ml10 btn-xs-r" onclick="fnMoveStatus();" title="새창에서 열림">문의하기</button>
+						</p>
+					</div>
+				</div>
+				
+				<div class="mb30">
+					
+					
+					
+					<div class="add_button text-center ">
+						<a href="javascript:fnMakerDetailView(this, 'G','PS0100100200100227500000','2275','0','PS01001002001002275000000000000014');" class="btn bg-greenlight likeit_btn" >
+							<i class="i-heart"></i><span>좋아요 (0)</span>
+						</a>
+						<div class="inline-block relative ml10">
+							<a href="#" class="btn bg-orangelight" onclick="$('.bookmark_form').toggle();" title="관심소장품 등록 선택"><i class="i-plus"></i>관심소장품 등록</a>
+							<div class="bookmark_form">
+								<ul>
+									<li><a href="#" onclick="javascript:fnMakerDetailView(this, 'I','PS0100100200100227500000','2275','0','PS01001002001002275000000000000014');">기본</a></li>
+									
+								</ul>
+							</div>
+						</div>
+						<a href="javascript:fnOpenPrintPop();" class="btn bg-bluelight ml10 pop btn-openprint"><i class="i-print"></i>인쇄</a>
+						<a href="#" class="btn bg-purplelight ml10" onclick="fnCopyUrl('https://www.emuseum.go.kr/detail?relicId=PS0100100200100227500000');"><i class="i-url-share"></i>공유</a>
+					</div>
+				</div>
+			</div>			
+			<!-- //기본 -->
+
+			<!-- 전자책 -->			
+			<div>
+				<div class="digitalBook_bg"></div>
+				<div class="digitalBook_wrap">
+					<div class="digitalBook_menu_wrap">
+						<div class="digitalBook_tit">
+							<h3>金製冠帽</h3>
+						</div>
+						<a href="#none" class="close btn-digitalbook-close"><span>전자책 닫기</span></a>
+						<div class="digitalBook_menu">
+
+							<a href="#none" class="page_fontUp" title="글자크기 확대"><span>가 +</span></a>
+							<a href="#none" class="page_font" title="글자크기 초기화"><span>가</span></a>
+							<a href="#none" class="page_fontDown" title="글자크기 축소"><span>가 -</span></a>
+							<a href="#none" class="page_prev"><span>다음 페이지</span></a>
+							<a href="#none" class="page_next"><span>이전 페이지</span></a>
+						</div>
+					</div>
+					<!-- PC[전자책] -->
+					
+					
+					<div class="mybook">
+						
+							
+							
+								<div>
+									<h4>원문</h4>
+									<p tabindex="0"></p>
+								</div>
+								<div>
+									<h4>번역문</h4>
+									<p tabindex="0" class="box-view-trans"></p>
+								</div>
+							
+						
+					</div>
+					<!-- mobile[전자책] -->
+					<div class="m_mybook">
+						
+							
+							
+								<div>
+									<h4>원문</h4>
+									<p></p>
+								</div>
+								<div>
+									<h4>번역문</h4>
+									<p></p>
+								</div>
+							
+						
+					</div>
+				</div>
+			</div>			
+			<!-- //전자책 -->
+			
+			
+			<div class="gray_box2 check_form f18 mb20">
+				<ul>
+					
+					<li class="overflow-h">
+						<em class="float-left w110"><b>· 소장품설명</b></em>
+						<span class="float-left wc110 lh35 mt3">基幅 19cm. 前後面 上部에 透彫金板을 결합해 墳形帽를 만들고 基部에 테를 加着한 것으로 基部 테에도 鋸齒文帶가 타출돼 있음.<br>성분분석: 금과 은의 합금비는 평균 79.0%Au : 20.8%Ag로 측정.  그 외에 미량 원소는 Cu, Fe, Ni, Ca, Sn이 확인.</span>
+					</li>
+					
+					
+					<li class="overflow-h mt15">
+						<em class="float-left w110"><b>· 연관단어</b></em>
+						<div class="float-left wc110">
+							
+							
+							<a href="/headerSearch?detailFlag=true&filedOp=keyword&keyword= 2012&keywordHistory= 2012&pageNum=1"><span class="filter"># 2012</span></a>
+							
+							
+							<a href="/headerSearch?detailFlag=true&filedOp=keyword&keyword= 국립경주박물관 소장 명품전&keywordHistory= 국립경주박물관 소장 명품전&pageNum=1"><span class="filter"># 국립경주박물관 소장 명품전</span></a>
+							
+							
+							<a href="/headerSearch?detailFlag=true&filedOp=keyword&keyword= 우호교류10주년 기념&keywordHistory= 우호교류10주년 기념&pageNum=1"><span class="filter"># 우호교류10주년 기념</span></a>
+							
+							
+							<a href="/headerSearch?detailFlag=true&filedOp=keyword&keyword= 한국 국립경주박물관 소장 명품전&keywordHistory= 한국 국립경주박물관 소장 명품전&pageNum=1"><span class="filter"># 한국 국립경주박물관 소장 명품전</span></a>
+							
+							
+							<a href="/headerSearch?detailFlag=true&filedOp=keyword&keyword= 중국&keywordHistory= 중국&pageNum=1"><span class="filter"># 중국</span></a>
+							
+							
+							<a href="/headerSearch?detailFlag=true&filedOp=keyword&keyword= 섬서역사박물관&keywordHistory= 섬서역사박물관&pageNum=1"><span class="filter"># 섬서역사박물관</span></a>
+							
+							
+							<a href="/headerSearch?detailFlag=true&filedOp=keyword&keyword= 20120925&keywordHistory= 20120925&pageNum=1"><span class="filter"># 20120925</span></a>
+							
+							
+							<a href="/headerSearch?detailFlag=true&filedOp=keyword&keyword= 20121125&keywordHistory= 20121125&pageNum=1"><span class="filter"># 20121125</span></a>
+							
+							
+							<a href="/headerSearch?detailFlag=true&filedOp=keyword&keyword= 천마총&keywordHistory= 천마총&pageNum=1"><span class="filter"># 천마총</span></a>
+							
+							
+							<a href="/headerSearch?detailFlag=true&filedOp=keyword&keyword= 능형문&keywordHistory= 능형문&pageNum=1"><span class="filter"># 능형문</span></a>
+							
+							
+							<a href="/headerSearch?detailFlag=true&filedOp=keyword&keyword= 국보189&keywordHistory= 국보189&pageNum=1"><span class="filter"># 국보189</span></a>
+							
+							
+							<a href="/headerSearch?detailFlag=true&filedOp=keyword&keyword= 경주2275번&keywordHistory= 경주2275번&pageNum=1"><span class="filter"># 경주2275번</span></a>
+							
+							
+							<a href="/headerSearch?detailFlag=true&filedOp=keyword&keyword= 국보&keywordHistory= 국보&pageNum=1"><span class="filter"># 국보</span></a>
+							
+						</div>
+					</li>
+					
+					
+				</ul>
+			</div>
+			
+
+			
+				<div class="inner-list-tab">
+					<ul>
+						
+							<li>
+								<a href="#inner-list-tab1" class="on" title="선택됨">
+									<p class="tab-title">재질이 유사한 소장품</p>
+									<p class="inner-list-cnt">(7건)</p>
+								</a>
+							</li>
+						
+						
+							<li>
+								<a href="#inner-list-tab2">
+									<p class="tab-title">국적/시대가 유사한 소장품</p>
+									<p class="inner-list-cnt">(2건)</p>
+								</a>
+							</li>
+						
+						
+						
+							<li>
+								<a href="#inner-list-tab4">
+									<p class="tab-title">용도/기능이 유사한 소장품 </p>
+									<p class="inner-list-cnt">(27건)</p>
+								</a>
+							</li>
+						
+					</ul>
+				</div>
+			
+
+			<div class="inner-list-tabwarpper">
+				
+					<div class="inner-list-tabcon" id="inner-list-tab1">
+						<div class="collection_form" id="ulReltQlyList"></div>
+					</div>
+				
+				
+					<div class="inner-list-tabcon" id="inner-list-tab2">
+						<div class="collection_form" id="ulReltAgeList"></div>
+					</div>
+				
+				
+				
+					<div class="inner-list-tabcon" id="inner-list-tab4">
+						<div class="collection_form" id="ulReltPurposeList"></div>
+					</div>
+				
+			</div>
+
+			
+			<div class="collection_form">
+				<div class="overflow-h border_bottom ">
+					<p class="bold f25 float-left" id="cnt_01">추천 콘텐츠 (2건)</p>
+					<p class="bold f25 float-left" id="cnt_02">추천 콘텐츠 (2건)</p>
+					<ul class="float-right type_select tab">
+						<li class="type_01 on" data-id="type_01"><a href="javascript:fnTypeTab('01');">공간형</a></li>
+						<li class="type_02" data-id="type_02"><a href="javascript:fnTypeTab('02');">디자인형</a></li>
+					</ul>
+				</div>
+				<!-- 공간형 -->
+				<div class="tab_box t01" style="display: block;" id="ulCrtehbtList">
+
+				</div>
+				<!-- //공간형 -->
+
+				<!-- 디자인형 -->
+				<div class="tab_box t02" id="ulRecmcrtList">
+
+				</div>
+				<!-- //디자인형 -->
+			</div>
+			
+
+			<hr class="hr-333 mt60 mb40"/>
+			<div class="text-center overflow-h">
+				
+				
+				<button type="button" class="btn-line-xl" onclick="goList(1,9);">목록으로</button>
+				
+				
+				
+			</div>
+		</div>
+	</div>
+
+	<!-- 이미지다운로드 -->
+	<div class="popup popup_down" id="pop-down">
+		<div class="dim"></div>
+		<div class="popup_container">
+			<div class="popup_header">
+				<span class="imgSingle">이미지 다운로드</span>
+				<span class="imgAll">이미지 전체 다운로드</span>
+				<a href="#" class="pop_close float-right"><img src="/resources/images/ico_close_w.png" alt="닫기"/></a>
+			</div>
+			<div class="popup_body p30">
+				<p class="f14 color-666" id="pop_bt"></p>
+				<table class="line_table mt10 nado_form">
+					<caption>이미지 다운로드/사용목적,상세목적,기타의견으로 구성</caption>
+					<colgroup>
+						<col style="width: 100px;">
+						<col style="width: auto;">
+					</colgroup>
+					<tbody>
+					<tr>
+						<th scope="row">사용목적</th>
+						<td>
+							<div class="select w220">
+								<button type="button" id="usage_purpose_type">사용목적 선택</button>
+								<ul>
+									<li><a href="javascript:fnChoiceType('학술논문')">학술논문</a></li>
+									<li><a href="javascript:fnChoiceType('상업출판')">상업출판</a></li>
+									<li><a href="javascript:fnChoiceType('교육')">교육</a></li>
+									<li><a href="javascript:fnChoiceType('광고')">광고</a></li>
+									<li><a href="javascript:fnChoiceType('방송')">방송</a></li>
+									<li><a href="javascript:fnChoiceType('문화상품')">문화상품</a></li>
+									<li><a href="javascript:fnChoiceType('전시')">전시</a></li>
+									<li><a href="javascript:fnChoiceType('모사')">모사</a></li>
+									<li><a href="javascript:fnChoiceType('웹사이트')">웹사이트</a></li>
+									<li><a href="javascript:fnChoiceType('기타')">기타</a></li>
+								</ul>
+							</div>
+							<p class="color-red f14 lh2 mt10">이미지의 사용목적을 선택해주세요.</p>
+						</td>
+					</tr>
+					<tr>
+						<th scope="row">상세목적</th>
+						<td>
+							<textarea id="usage_purpose_desc" class="wp100 h130" title="상세목적" maxlength="100" onkeyup="fnSliceTxt('purpose');"></textarea>
+						</td>
+					</tr>
+					<tr>
+						<th scope="row">기타의견</th>
+						<td>
+							<textarea id="usage_etc_desc" class="wp100 h130" title="기타의견" maxlength="100" onkeyup="fnSliceTxt('etc');"></textarea>
+						</td>
+					</tr>
+					</tbody>
+				</table>
+				<div class="gray_box p20 mt20 overflow-h">					
+					<div class="float-left wc260">
+						<p class="bold">
+							
+							제 1유형 : 출처표시
+							
+							
+							
+							
+							
+						</p>
+						<p class="mt10 f14">저작권 보호분야 “金製冠帽” 저작물은 공공누리 출처표시 조건에 따라 이용할 수 있습니다.</p>
+					</div>
+					<div class="float-right w260 text-right">
+						
+							
+								<img src="/images/2017/img_opentype01_small.jpg" alt="공공누리 공공저작물 자유이용허락"/>
+							
+							
+							
+							
+							
+						
+					</div>					
+				</div>
+			</div>
+			<div class="popup_footer text-center pb30">
+				<button type="button" class="bg-orange btn-xl imgSingle" onclick="fnImgDownload('PS0100100200100227500000', false);"><i class="i-down"></i>이미지 다운로드</button>
+				<button type="button" class="bg-orange btn-xl imgAll" onclick="fnImgDownload('PS0100100200100227500000', true);"><i class="i-down"></i>이미지 전체 다운로드</button>
+				<button type="button" class="bg-gray btn-xl" onclick="$('.pop_close').trigger('click')">닫기</button>
+			</div>
+		</div>
+	</div>
+	<!-- //이미지다운로드 -->
+
+	<!-- 인쇄 미리보기 -->
+	<div class="popup popup_down" id="pop-print">
+		<div class="dim"></div>
+		<div class="popup_container">
+			<div class="popup_header">
+				인쇄 미리보기
+				<a href="javascript:fnClosePrintPop();" class="pop_close float-right"><img src="/resources/images/ico_close_w.png" alt="닫기"/></a>
+			</div>			
+			<div class="popup_body p30">
+				<p class="f20 mb20">
+					<b>金製冠帽</b>
+					<span class="f14 ml10">
+						국립경주박물관
+						 / 국보
+					</span>
+				</p>
+				<hr class="hr-333"/>
+				<div class="overflow-h mt20 mb20">
+					<div class="float-left w350">
+						<div class="img">
+						
+							
+							
+							
+							<img src="/IMG/Q0VQRklTcG9qejdEajh4dWxsa3ArcGx4aWpROEc3Qi8wbnA1YVFscnFJNkErcjJpR0pYbzh4N216WEZNcW9TeUtMeEkyZWpJMTJXQUZBYm1tcSs4bHNVdWtMWTRVcWFV" alt="金製冠帽 0번째 이미지">
+							
+							
+							
+							
+							
+							
+						
+						</div>
+					</div>
+					<div class="float-right wc350">
+						<ul class="mt10">
+							
+								<li><em>명칭</em><span>金製冠帽</span></li>
+							
+							
+								<li><em>다른명칭</em><span>국보 금제관모, 천마총관모, 天馬塚冠帽</span></li>
+							
+							
+								<li><em>국적/시대</em><span>한국 - 신라</span></li>
+							
+							
+								<li><em>출토지</em><span>경상북도-경주시</span></li>
+							
+							
+								<li><em>분류</em><span>의 - 관모 - 모 - 기타</span></li>
+							
+							
+								<li><em>재질</em><span>금속 - 금</span></li>
+							
+							
+							
+								<li><em>특징</em><span>基幅 19cm. 前後面 上部에 透彫金板을 결합해 墳形帽를 만들고 基部에 테를 加着한 것으로 基部 테에도 鋸齒文帶가 타출돼 있음.<br>성분분석: 금과 은의 합금비는 평균 79.0%Au : 20.8%Ag로 측정.  그 외에 미량 원소는 Cu, Fe, Ni, Ca, Sn이 확인.</span></li>
+							
+							
+							
+								<li><em>크기</em><span>너비 19cm</span></li>
+							
+							
+								<li><em>국가지정유산</em><span>국보</span></li>
+							
+							
+								<li>
+									<em>소장품번호</em>
+									<span>
+								경주
+								
+									2275
+								
+								
+								</span>
+								</li>
+							
+							
+							
+							
+								<li>
+									<em>촬영연도</em>
+									<span>
+								0
+								 ~ 0
+								</span>
+								</li>
+							
+							
+							
+							
+							
+							
+							
+							
+						</ul>
+					</div>
+				</div>
+				<div class="gray_box p20 mt20 overflow-h">
+					<div class="float-left wc260">
+						<p class="bold">
+							
+							제 1유형 : 출처표시
+							
+							
+							
+							
+							
+						</p>
+						<p class="mt10 f14">저작권 보호분야 “金製冠帽” 저작물은 공공누리 출처표시 조건에 따라 이용할 수 있습니다.</p>
+					</div>
+					<div class="float-right w260 text-right">
+						
+							
+								<img src="/images/2017/img_opentype01_small.jpg" alt="공공누리 공공저작물 자유이용허락"/>
+							
+							
+							
+							
+							
+						
+					</div>
+				</div>
+			</div>			
+			<div class="popup_footer text-center pb30 btn_modal">
+				<button type="button" class="bg-bluelight btn-xl" onclick="print()" title="새창에서 열림"><i class="i-print mt0"></i>인쇄</button>
+			</div>
+		</div>
+	</div>
+	<!-- //인쇄 미리보기 -->
+
+	
+
+
+
+
+
+
+
+
+
+<footer>
+    <div class="footer">
+        <div class="inner">
+            <img src="/resources/images/logo_footer.png" alt="e뮤지엄 전국박물관소장품검색"/>
+            <div class="left">
+                <ul class="link_list">
+                    <li><a href="/copyright">저작권 정책</a></li>
+                    <li><a href="/openApi">OPEN API</a></li>
+                </ul>
+                <div class="address">
+                    04383 서울시 용산구 서빙고로 137 국립중앙박물관<br/>
+                    고객지원센터 (전화) 02-2077-9623 (이메일) hrlimlim@korea.kr<br/>
+                    COPYRIGHT (c) National Museum of Korea. All rights reserved
+                </div>
+            </div>
+            <div class="right">
+                <select class="rel-link-select" title="관련사이트 선택">
+                   <option value = "">관련사이트 선택</option>
+                    <option value = "https://www.mcst.go.kr/site/main.jsp">문화체육관광부</option>
+                    <option value = "https://www.museum.go.kr">국립중앙박물관</option>
+                    <option value = "https://www.museum.go.kr/uigwe">국립중앙박물관 외규장각 의궤</option>
+                    <option value = "https://www.museum.go.kr/modern-history/main.do">국립중앙박물관 소장 조선총독부박물관 문서</option>
+                    <option value = "https://www.museum.go.kr/dryplate/main.do">국립중앙박물관 소장 조선총독부박물관 유리건판</option>
+                    <option value = "https://www.heritage.go.kr/heri/idx/index.do">국가유산청 국가유산포털</option>
+                    <option value = "https://db.history.go.kr">국사편찬위원회 한국사데이터베이스</option>
+                    <option value = "https://kyu.snu.ac.kr">서울대학교 규장각한국학연구원</option>
+                    <option value = "https://db.itkc.or.kr">한국고전종합DB</option>
+                </select>
+                <!--  접근성 관련 개선
+                <div class="select">
+                    <p>관련사이트</p>
+                    <ul>
+                        <li><a href="https://www.mcst.go.kr" target="_blank">문화체육관광부</a></li>
+                        <li><a href="https://www.museum.go.kr" target="_blank">국립중앙박물관</a></li>
+                    </ul>
+                </div>
+                 -->
+                <button type="button" class="btn-black btn-rel-golink" title="새창에서 열림">이동</button>
+                <div class="wa_mark">
+                    <a href="http://www.webwatch.or.kr/Situation/WA_Situation.html?MenuCD=110" title="새창에서 열림"
+                        target="_blank">
+                        <img class="wa_mark_img" src="/resources/images/wa_mark.png"
+                             alt="과학기술정보통신부 WA(WEB접근성) 품질인증 마크, 웹와치(WebWatch) 2025.5.25 ~ 2026.5.24"
+                             title="WA 품질인증 마크, 웹와치(WebWatch) 2026.5.25 ~ 2027.5.24"/>
+                    </a>
+                </div>
+            </div>
+            <a href="#wrap" class="btn-top">
+                <img src="/resources/images/btn_top.png" alt="맨위로 이동"/>
+            </a>
+        </div>
+    </div>
+
+</footer>
+
+
+	
+<form name="historyForm" id="historyForm">
+<input type="hidden" name ="cateClass" value=""/>  <!-- PS01:소장기관, PS12:지정문화재, PS06:국적/시대, PS08:재질, PS09:분류, GL05:출토지, HW01:표제어검색 -->
+<input type="hidden" name ="cateListFlag" value=""/>
+<input type="hidden" name ="keyword" value=""/>
+<input type="hidden" name ="pageNum" value=""/>
+<input type="hidden" name ="rows" value="20"/>
+<input type="hidden" name ="reltRows" value="10"/>
+<input type="hidden" name ="sort" value=""/>
+
+<input type="hidden" name="highQualityYn" value=""/>
+<input type="hidden" name="isImgExistOp" value=""/> <!-- 대표이미지 존재 여부 (0:없음, 1:있음)IS_IMG_EXIST -->
+<input type="hidden" name="mckoglsvOp" value=""/> <!-- 공공누리유형(MCKOGLSV) -->
+<input type="hidden" name="isIntrstMuseumOp" value=""/> <!-- 관심박물관만 검색  (1:관심박물관) -->
+<!--상세검색-->
+<input type="hidden" name ="filedOp" value=""/>
+<input type="hidden" name ="detailFlag" value=""/>
+<input type="hidden" name ="dq" value=""/>
+<input type="hidden" name ="mcSeqNo" value=""/>
+<input type="hidden" name ="author" value=""/>
+<input type="hidden" name ="culturalHerNo" value=""/>
+<input type="hidden" name ="publicType" value=""/>
+<input type="hidden" name ="detailedDes" value=""/>
+<!--테마검색-->
+<input type="hidden" name ="thema" value=""/>
+<input type="hidden" name ="storySeq" value=""/>
+<!-- 카테고리 검색 -->
+<input type="hidden" name ="categoryLv" value=""/>
+<input type="hidden" name ="categoryCode" value=""/>
+<input type="hidden" name ="ps01Lv1" value=""/><!-- 소장기관1 -->
+<input type="hidden" name ="ps01Lv2" value=""/><!-- 소장기관2 -->
+<input type="hidden" name ="ps01Lv3" value=""/><!-- 소장기관3 -->
+<input type="hidden" name ="ps06Lv1" value=""/><!-- 국적/시대1 -->
+<input type="hidden" name ="ps06Lv2" value=""/><!-- 국적/시대2 -->
+<input type="hidden" name ="ps08Lv1" value=""/><!-- 재질1 -->
+<input type="hidden" name ="ps08Lv2" value=""/><!-- 재질2 -->
+<input type="hidden" name ="ps09Lv1" value=""/><!-- 분류1 -->
+<input type="hidden" name ="ps09Lv2" value=""/><!-- 분류2 -->
+<input type="hidden" name ="ps09Lv3" value=""/><!-- 분류3 -->
+<input type="hidden" name ="ps09Lv4" value=""/><!-- 분류4 -->
+<input type="hidden" name ="ps12Lv1" value=""/><!-- 지정문화재 -->
+<input type="hidden" name ="ps15Lv1" value=""/>
+<input type="hidden" name ="gl05Lv1" value=""/><!-- 출토지1 -->
+<input type="hidden" name ="gl05Lv2" value=""/><!-- 출토지2 -->
+<!-- 패싯 검색 -->
+<input type="hidden" name ="mobileFacetIng" value=""/><!--소장기관1-->
+<input type="hidden" name ="location"  value=""/><!--소장기관 위치-->
+<input type="hidden" name ="facet1Lv1" value=""/><!--소장기관1-->
+<input type="hidden" name ="facet1Lv2" value=""/><!--소장기관2-->
+<input type="hidden" name ="facet1Lv3" value=""/><!--소장기관2-->
+<input type="hidden" name ="facet2Lv1" value=""/><!--지정문화재-->
+<input type="hidden" name ="facet3Lv1" value=""/><!--국적/시대1-->
+<input type="hidden" name ="facet3Lv2" value=""/><!--국적/시대2-->
+<input type="hidden" name ="facet4Lv1" value=""/><!--재질1-->
+<input type="hidden" name ="facet4Lv2" value=""/><!--재질2-->
+<input type="hidden" name ="facet5Lv1" value=""/><!--분류1-->
+<input type="hidden" name ="facet5Lv2" value=""/><!--분류2-->
+<input type="hidden" name ="facet5Lv3" value=""/><!--분류3-->
+<input type="hidden" name ="facet5Lv4" value=""/><!--분류4-->
+<input type="hidden" name ="facet6Lv1" value=""/><!--출토지1-->
+<input type="hidden" name ="facet6Lv2" value=""/><!--출토지2-->
+<input type="hidden" name ="facet7Lv1Selected" value=""/><!--표제어검색-->
+<input type="hidden" name ="facet7Lv1" value=""/><!--표제어검색-->
+<input type="hidden" name ="facet8Lv1" value=""/><!--크기1-->
+
+<input type="hidden" name ="facet1Lv1Nm" value=""/><!--소장기관1-->
+<input type="hidden" name ="facet1Lv2Nm" value=""/><!--소장기관2-->
+<input type="hidden" name ="facet1Lv3Nm" value=""/><!--소장기관2-->
+<input type="hidden" name ="facet2Lv1Nm" value=""/><!--지정문화재-->
+<input type="hidden" name ="facet3Lv1Nm" value=""/><!--국적/시대1-->
+<input type="hidden" name ="facet3Lv2Nm" value=""/><!--국적/시대2-->
+<input type="hidden" name ="facet4Lv1Nm" value=""/><!--재질1-->
+<input type="hidden" name ="facet4Lv2Nm" value=""/><!--재질2-->
+<input type="hidden" name ="facet5Lv1Nm" value=""/><!--분류1-->
+<input type="hidden" name ="facet5Lv2Nm" value=""/><!--분류2-->
+<input type="hidden" name ="facet5Lv3Nm" value=""/><!--분류3-->
+<input type="hidden" name ="facet5Lv4Nm" value=""/><!--분류4-->
+<input type="hidden" name ="facet6Lv1Nm" value=""/><!--출토지1-->
+<input type="hidden" name ="facet6Lv2Nm" value=""/><!--출토지2-->
+<input type="hidden" name ="facet7Lv1Nm" value=""/><!--표제어검색-->
+<input type="hidden" name ="facet8Lv1Nm" value=""/><!--크기1-->
+
+<!-- 유리건판 -->
+<input type="hidden" name="mcgpyear1" value=""/>
+<input type="hidden" name="mcgpyear2" value=""/>
+<input type="hidden" name="mcginves" value=""/>
+<input type="hidden" name="mcgchalj" value=""/>
+<input type="hidden" name="mcgchams" value=""/>
+
+<input type="hidden" name ="facetGL27Lv1" value=""/><!-- 분야1 -->
+<input type="hidden" name ="facetGL27Lv2" value=""/><!-- 분야2 -->
+<input type="hidden" name ="facetGL27Lv3" value=""/><!-- 분야3 -->
+<input type="hidden" name ="facetGL27Lv4" value=""/><!-- 분야4 -->
+<input type="hidden" name ="facetGL28Lv1" value=""/><!-- 출토지1 -->
+<input type="hidden" name ="facetGL28Lv2" value=""/><!-- 출토지2 -->
+<input type="hidden" name ="facetGL29Lv1" value=""/><!-- 크기 -->
+<input type="hidden" name ="facetGL30Lv1" value=""/>
+<input type="hidden" name ="facetGL27Lv1Nm" value=""/><!-- 분야1 -->
+<input type="hidden" name ="facetGL27Lv2Nm" value=""/><!-- 분야2 -->
+<input type="hidden" name ="facetGL27Lv3Nm" value=""/><!-- 분야3 -->
+<input type="hidden" name ="facetGL27Lv4Nm" value=""/><!-- 분야4 -->
+<input type="hidden" name ="facetGL28Lv1Nm" value=""/><!-- 출토지1 -->
+<input type="hidden" name ="facetGL28Lv2Nm" value=""/><!-- 출토지2 -->
+<input type="hidden" name ="facetGL29Lv1Nm" value=""/><!-- 크기 -->
+<input type="hidden" name ="facetGL30Lv1Nm" value=""/>
+<input type="hidden" name ="mcgwonpn" value="" />
+<!-- //유리건판 -->
+
+<input type="hidden" name="keywordHistory" value=""/>
+<input type="hidden" name="showSearchOption" value=""/>  <!-- 모든검색옵션 펼치보기 -->
+<!-- 선택한 박물관 -->
+<input type="hidden" name="intrstMuseumCode" value=""/>
+<input type="hidden" name="returnUrl" value=""/>
+<!-- 선택한 관심소장품 그룹 -->
+<input type="hidden" name="selectMakerGroup" value="0"/>
+
+<!-- 상단 검색 결과 유지를 위한 input -->
+<input type="hidden" name="radioSearchCheck"  value=""/>
+<input type="hidden" name="headerPs01Lv1"  value=""/>
+<input type="hidden" name="headerPs01Lv2"  value=""/>
+<input type="hidden" name="headerPs01Lv3"  value=""/>
+</form>
+
+	<form id="frmHiddenDownload" method="get" action="/" style="display: none;">
+		<input type="hidden" name="imageTitle" />
+		<input type="hidden" name="imageIndex" />
+		<input type="hidden" name="usagePurposeType" />
+		<input type="hidden" name="usagePurposeDesc" />
+		<input type="hidden" name="usageEtcDesc" value=""/>
+		<input type="hidden" name="relicId" value="PS0100100200100227500000" />
+		<input type="hidden" name="ps01Filter3" value="PS01001002" />
+		<input type="hidden" name="ps01Filter3Name" value="국립경주박물관" />
+		<input type="hidden" name="orgMchgname" value="金製冠帽" />
+		<input type="hidden" name="ps01Filter2Name" value="국립경주박물관" />
+		<input type="hidden" name="dsgnInfo" value="국보" />
+	</form>
+	
+</div>
+
+<script>
+	function fnImgDownload(relicId, isAll) {
+		var relicTitle = $('#relicTitle').text();
+		var reg = /[\{\}\[\]\/？?.,;:|\)*~`!^\-_+<>@#$%&\\\=\(\'\‘\“\’\”]/gim;
+		relicTitle = relicTitle.replace(reg, '');
+		var param = relicTitle + '_' + relicId;
+
+		if(isAll){
+			downloadImgAll(param)
+		}else {
+			downloadImg(param);
+		}
+	}
+
+
+	function fnCopyUrl(url) {
+		var textarea = document.createElement('textarea');
+		document.body.appendChild(textarea);
+		textarea.value = url;
+
+		textarea.select();
+		document.execCommand('copy');
+		document.body.removeChild(textarea);
+
+		alert('주소가 복사되었습니다.');
+	}
+
+	// 신규 탭추가
+	$(document).ready(function (){
+
+		// 처음 활성화 및 한개일때 처리
+		if ($(".inner-list-tab li").length > 1) {
+			$(".inner-list-tab").show()
+			$(".inner-list-tab li:first-child a").addClass("on");
+			$(".inner-list-tabwarpper > div:first-child").addClass("on");
+			$(".inner-list-tabcon .collection_form > p.f25").hide();
+		} else {
+			console.log($(".inner-list-tab li").length)
+			$(".inner-list-tab").hide();
+			$(".inner-list-tabwarpper > div:first-child").addClass("on");
+			$(".inner-list-tabcon .collection_form > p.f25").show();
+		}
+
+		// 탭클릭시
+		$(".inner-list-tab a").on('click', function(e){
+			let tabcontentId = $(this).attr('href');
+			$(".inner-list-tab a").removeClass("on");
+			$(".inner-list-tab a").removeAttr("title");
+			$(".inner-list-tabcon").removeClass("on");
+
+			$(this).attr("title", "선택됨");
+			$(this).addClass("on");
+			$(tabcontentId).addClass("on");
+			e.preventDefault();
+		});
+	});
+
+</script>
+</body>
+</html>
