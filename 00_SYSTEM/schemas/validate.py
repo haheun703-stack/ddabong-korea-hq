@@ -159,7 +159,7 @@ def money_rules(docs):
                 if allowed and not set(chain(g["prompt_id"])) & set(allowed):
                     errs.append(f"{rel(p)}: prompt {g['prompt_id']} (root {root(g['prompt_id'])}) not covered by approval {aid}")
                 per_approval[aid] = per_approval.get(aid, 0) + 1
-        if not g["shot_id"].startswith("MASTER_PACK:") and routers.get(g["shot_id"], {}).get("human_decision", "PENDING") == "PENDING":
+        if not g["shot_id"].startswith(("MASTER_PACK:", "MASTER_FRAME:")) and routers.get(g["shot_id"], {}).get("human_decision", "PENDING") == "PENDING":
             errs.append(f"{rel(p)}: generation for {g['shot_id']} while its router decision is not ACCEPTED/OVERRIDDEN (D-024)")
         pj = g.get("provider_job")
         if g["provider"] == "Higgsfield" and not pj:
@@ -249,7 +249,10 @@ def refcheck(paths):
             for kind, field in (("camera", "camera_id"), ("prompt", "prompt_id"), ("master_frame", "master_frame")):
                 if d.get(field): need(p, kind, d[field], field)
         if name == "camera" and d.get("shot_id"): need(p, "shot", d["shot_id"], "shot_id")
-        if name == "prompt" and not str(d.get("shot_id", "")).startswith("MASTER_PACK:"): need(p, "shot", d["shot_id"], "shot_id")
+        if name == "prompt":
+            target = str(d.get("shot_id", ""))
+            if target.startswith("MASTER_FRAME:"): need(p, "master_frame", target.partition(":")[2], "shot_id")
+            elif not target.startswith("MASTER_PACK:"): need(p, "shot", target, "shot_id")
         if name == "prompt":
             # reference_images entries "master_frame:<frame_id>" / "character_pack:<character_id>" must resolve (P2 rule)
             for r in d.get("reference_images") or []:
