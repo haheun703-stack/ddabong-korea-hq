@@ -1,0 +1,24 @@
+{
+  "provider": "Higgsfield",
+  "job_id": "447da844-0c8f-4d3a-9d0f-ca6dae38eb7b",
+  "job_set_type": "nano_banana_2",
+  "display_name": "Nano Banana Pro",
+  "status": "completed",
+  "created_at": "2026-09-13T06:38:33Z",
+  "params": {
+    "width": 2752,
+    "height": 1536,
+    "aspect_ratio": "16:9",
+    "resolution": "2k",
+    "batch_size": 1,
+    "input_images": [
+      {
+        "id": "412a72bc-f3f1-4955-8d3a-36e1e6306d1f",
+        "type": "image_job"
+      }
+    ],
+    "prompt": "One wide establishing documentary photograph that fills the entire 16:9 frame edge to edge, a single still image; no black bars, no letterbox, no borders. Early Silla, Gyeongju, 5th century: the Cheonmachong burial site at an early construction stage. In the centre, a rectangular wooden outer burial chamber of thick timber beams stands on levelled ground, about 6.6 by 4.2 metres, open-topped with no lid; a low course of river stones is only beginning to line its outer walls, and nothing covers the top. The earth mound has not been raised yet; the open work area around the chamber is wide. Everyone in the image is a labourer: labourers in undyed coarse hemp short jackets with cloth waist cords, shin-bound trousers, straw sandals or bare feet, topknots or cloth headbands. At the left edge, a timber yard where labourers measure and shape beams; in the middle ground other labourers carry river stones in straw baskets toward the chamber. Use the reference image for the labourers' clothing only; faces varied, no hero figure. Tools only: straw baskets, rope, wooden poles, wooden mallets and all-wooden spades. Every tool is made entirely of wood: no metal blades, no metal heads, no saws, no pick-axes, no hoes. No one looks at the camera, no one poses. Camera about 1.6 metres high, 28mm lens feel, slightly elevated three-quarter view of the whole work area, overcast morning light, dust in the air. Photorealistic historical documentary still, style B Documentary Reenactment, natural textures and skin, not glossy, earthy natural colours. No tiled roofs, no buildings, no palace, no stone walls, no modern tools, no metal shovels or pick-axes, no rubber wheels, no cranes, no gold objects visible, no crown visible, no text, no watermark, no logo."
+  },
+  "retrieved_at": "2026-09-13",
+  "note": "job_status result. Result/CDN URLs omitted. params.prompt = text actually sent (identical to prompt V03)."
+}

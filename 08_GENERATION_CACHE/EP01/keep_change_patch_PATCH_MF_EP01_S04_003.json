@@ -1,0 +1,23 @@
+{
+  "patch_id": "PATCH_MF_EP01_S04_003",
+  "shot_id": "MASTER_FRAME:EP01_S04_MASTER_V01",
+  "from_version": "V03",
+  "to_version": "V04",
+  "fix_reason": "HISTORICAL_ISSUE",
+  "keep": [
+    "full-frame composition (no letterbox)",
+    "chamber, stones, labourers, faces, clothing, poses",
+    "baskets, poles, mallets, beams",
+    "dust, light, camera angle"
+  ],
+  "change": [
+    "modern horizon (utility poles, power lines, buildings, greenhouses, field grid) -> empty early countryside",
+    "yellow tape measure -> wooden measuring stick",
+    "spade blades -> plain wood"
+  ],
+  "reason": "V03 fixed letterbox and most tools but introduced modern background objects and a tape measure (SILLA_EARLY_V01 forbids modern objects). Background replacement is a large-region edit, which worked before (hero tiled roofs, D-017).",
+  "requested_by": "Image Generation Agent (Claude Code) - pending owner OK",
+  "created_at": "2026-09-13",
+  "resulting_prompt_id": "PRM_MF_EP01_S04_MASTER_V04",
+  "resulting_generation_id": null
+}

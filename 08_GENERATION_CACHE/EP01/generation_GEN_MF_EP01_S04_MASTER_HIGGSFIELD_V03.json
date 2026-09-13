@@ -1,0 +1,41 @@
+{
+  "generation_id": "GEN_MF_EP01_S04_MASTER_HIGGSFIELD_V03",
+  "shot_id": "MASTER_FRAME:EP01_S04_MASTER_V01",
+  "stage": "STILL",
+  "provider": "Higgsfield",
+  "model": "Nano Banana Pro (job_set_type nano_banana_2, 2k, 16:9, image_references=412a72bc)",
+  "provider_job": {
+    "job_id": "447da844-0c8f-4d3a-9d0f-ca6dae38eb7b",
+    "job_set_type": "nano_banana_2",
+    "display_name": "Nano Banana Pro",
+    "params_path": "08_GENERATION_CACHE/EP01/provider_jobs/HF_447da844-0c8f-4d3a-9d0f-ca6dae38eb7b.json"
+  },
+  "prompt_id": "PRM_MF_EP01_S04_MASTER_V03",
+  "prompt_version": "V03",
+  "standard_versions": {
+    "CHARACTER_CONTINUITY_STANDARD.md": "v0.1",
+    "COST_STANDARD.md": "v0.1"
+  },
+  "case_ids_used": [
+    "CASE_DDABONG_CHAR_001"
+  ],
+  "approval_id": "APR_EP01_MF_001",
+  "input_paths": [],
+  "output_paths": [
+    "08_GENERATION_CACHE/EP01/MF/MF_EP01_S04_MASTER_V03_447da844.png"
+  ],
+  "attempts": 1,
+  "duration_sec": null,
+  "cost": {
+    "currency": "CREDITS",
+    "amount": 2.0,
+    "spent": 2.0,
+    "note": "Higgsfield job 447da844-0c8f-4d3a-9d0f-ca6dae38eb7b (balance 1866.48 -> 1864.48)"
+  },
+  "result_status": "PARTIAL",
+  "failure_id": null,
+  "started_at": "2026-09-13T06:38:33Z",
+  "finished_at": null,
+  "run_by": "Image Generation Agent (Claude Code)",
+  "notes": "Method change after V02 PARTIAL (PATCH_MF_EP01_S04_002, owner OK). Bot check PARTIAL: letterbox gone (full frame) and most tools wooden (mallets, carrying poles with baskets); open chamber with stone course, labourers in hemp. NEW ISSUES: modern background on the horizon (utility poles and power lines, modern buildings/greenhouses, regular field grid); a yellow modern tape measure held by the front-left labourer; a few spades still read as metal-bladed. -> edit V04 proposed (PATCH_MF_EP01_S04_003)."
+}

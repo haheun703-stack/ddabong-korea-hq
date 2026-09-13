@@ -27,7 +27,7 @@
 - graphics-spec v2 (G13 추가) — legacy HTML 은 수정하지 않고 새 문서로.
 - P5 Review UI / P6 Money Gate 어댑터 설계 (유료 없음).
 
-**유료 생성 현황 (D-015)**: Money Gate OPEN (₩40,000 / 소진 54.12 credits, KRW 환산 P-012). **P2 Character Master 완료 (D-023)**: 원로 FULL 10/10 · 노동자 LITE 3/3 · 시종 LITE 3/3 전부 CHARACTER_MASTER_APPROVED. 라우터 잠금 (D-024). 다음 유료는 Master Frame S04 · S06 → AI 샷 (Flow/Veo 는 별도 비용 게이트).
+**유료 생성 현황 (D-015)**: Money Gate OPEN (₩40,000 / 소진 56.12 credits, KRW 환산 P-012). **P2 Character Master 완료 (D-023)**: 원로 FULL 10/10 · 노동자 LITE 3/3 · 시종 LITE 3/3 전부 CHARACTER_MASTER_APPROVED. 라우터 잠금 (D-024). 다음 유료는 Master Frame S04 · S06 → AI 샷 (Flow/Veo 는 별도 비용 게이트).
 
 ## P2 사전 점검 — Pre-flight (2026-09-11 · DONE, 생성 0)
 
@@ -138,7 +138,7 @@
 | 항목 | 값 |
 |---|---|
 | EP01 예산 | **₩40,000** (D-015) — `08_GENERATION_CACHE/EP01/cost_COST_EP01_20260911.json` |
-| 소진 | 54.12 credits (28 호출: 원로 13 · 군중 10 · 기준 그림 5) — KRW 환산 P-012 |
+| 소진 | 56.12 credits (29 호출: 원로 13 · 군중 10 · 기준 그림 6) — KRW 환산 P-012 |
 | 게이트 상태 | `OPEN` — 배치 1 승인 `APR_EP01_MP_ELITE_BATCH1_001` |
 
 ---
@@ -159,6 +159,8 @@
 ---
 
 ## 최근 변경 (최신순)
+
+- **2026-09-13 Claude Code** — 기준 그림 S06 OPEN_CHAMBER V02 APPROVED (S06 2장 확정). S04 새로 생성 V03 (2 credits, 승인 6/10): 검은 띠 해결, 새 문제 = 지평선 전봇대·현대 건물, 노란 줄자, 쇠 날 삽 일부 → 편집 V04 저장, 사용자 OK 대기. EP01 소진 56.12 credits.
 
 - **2026-09-13 Claude Code** — 기준 그림 FIX 결과 (4 credits, 승인 5/10): S06 MOUND_BUILDING APPROVED · S06 OPEN_CHAMBER V02 PASS (관·허리띠) 최종 OK 대기 · S04 V02 PARTIAL (검은 띠·쇠 공구 일부 남음) → 새로 생성 V03 저장, 사용자 OK 대기. EP01 소진 54.12 credits.
 
