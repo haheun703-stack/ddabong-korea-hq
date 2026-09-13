@@ -12,7 +12,7 @@
   "human_motion": 20,
   "visual_importance": 85,
   "pipeline": "AI_STILL",
-  "status": "ROUTED",
+  "status": "LOOK_APPROVED",
   "characters": [
     "CHAR_SILLA_ATTENDANT_GROUP_01"
   ],
@@ -37,12 +37,40 @@
   ],
   "rights_ids": [],
   "ai_label": "AI Visual Reconstruction",
-  "version_history": [],
-  "approved_version": null,
+  "version_history": [
+    {
+      "version": "V01",
+      "stage": "STILL",
+      "status": "REJECTED",
+      "created_at": "2026-09-13",
+      "created_by": "Image Generation Agent (Claude Code)",
+      "path": "08_GENERATION_CACHE/EP01/AI_STILL/H06_V01_0f250ab3.png",
+      "note": "GEN_EP01_S06_SH010_HIGGSFIELD_V01 · prompt V02 · 봉분 비율 2.3:1, 지평선 전봇대·건물"
+    },
+    {
+      "version": "V02",
+      "stage": "STILL",
+      "status": "PREVIOUS",
+      "created_at": "2026-09-13",
+      "created_by": "Image Generation Agent (Claude Code)",
+      "path": "08_GENERATION_CACHE/EP01/AI_STILL/H06_V02_d6326541.png",
+      "note": "GEN_EP01_S06_SH010_HIGGSFIELD_V02 · prompt V03 · PARTIAL: 사람 규모 1/4, 평평한 꼭대기"
+    },
+    {
+      "version": "V03",
+      "stage": "STILL",
+      "status": "APPROVED",
+      "created_at": "2026-09-13",
+      "created_by": "사용자",
+      "path": "08_GENERATION_CACHE/EP01/AI_STILL/H06_V03_4cc87427.png",
+      "note": "GEN_EP01_S06_SH010_HIGGSFIELD_V03 · prompt V04 · D-031 사용자 최종 OK ('H06 OK'). 남은 작은 점: 사람 규모 약 1/5–1/6 (목표 1/8), 먼 인물 옷 일부 현대적 → 수용."
+    }
+  ],
+  "approved_version": "V03",
   "created_at": "2026-09-11",
   "updated_at": "2026-09-13",
-  "updated_by": "Image/Video Generation Agent (Claude Code)",
-  "notes": "TC 5:10–5:16 (러프컷 v1 기준, 내레이션 녹음 후 조정). H06. 6초 (D-009, 원래 10초). 봉분 스케일 47 m / 12.7 m 준수. 멀리 선 소그룹 → 얼굴 안 보임. 파이프라인은 legacy 팩 태그 그대로 (잠정). P4 Visual Router 에서 재판정. 점수(camera_complexity 등)는 Continuity Engine 추정치 — P4 라우터에서 확정. D-026: master_frame EP01_S06_MASTER_V01 → EP01_S06_MASTER_MOUND_BUILDING_V01 (천마총 층 순서: 목곽 열린 단계 vs 봉분 상승 단계). D-028: logical_pipeline AI_STILL · provider HIGGSFIELD (공급 플랫폼) · model NANO_BANANA_PRO.",
+  "updated_by": "Claude Code (D-031 기록, 판정 사용자)",
+  "notes": "TC 5:10–5:16 (러프컷 v1 기준, 내레이션 녹음 후 조정). H06. 6초 (D-009, 원래 10초). 봉분 스케일 47 m / 12.7 m 준수. 멀리 선 소그룹 → 얼굴 안 보임. 파이프라인은 legacy 팩 태그 그대로 (잠정). P4 Visual Router 에서 재판정. 점수(camera_complexity 등)는 Continuity Engine 추정치 — P4 라우터에서 확정. D-026: master_frame EP01_S06_MASTER_V01 → EP01_S06_MASTER_MOUND_BUILDING_V01 (천마총 층 순서: 목곽 열린 단계 vs 봉분 상승 단계). D-028: logical_pipeline AI_STILL · provider HIGGSFIELD (공급 플랫폼) · model NANO_BANANA_PRO. D-031: 사진 V03 (H06_V03_4cc87427.png) 사용자 최종 OK → LOOK_APPROVED. 편집에서 느린 줌 가능 (AI_SHOT_PLAN).",
   "evidence_role": "SUPPORTING",
   "logical_pipeline": "AI_STILL",
   "provider": "HIGGSFIELD",
