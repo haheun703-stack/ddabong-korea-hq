@@ -106,6 +106,11 @@
 **판정** 노동자 `MP_LABORER_FULL_BODY_V02_412a72bc.png` (공구 제거 편집) · 시종 `MP_ATTENDANT_FULL_BODY_V04_84c0fdbc.png` (방법 A 새로 생성, 옷고름 없음) **APPROVED**. 시종 V03 (가운데 남자 옷고름 남음) 탈락.
 **다음** 2단계 4장 — 노동자 walking/costume_detail V02 (참조 job 412a72bc) · 시종 walking/costume_detail V03 (참조 job 84c0fdbc). 승인 한도 12 중 6 사용.
 
+### D-023 · 2026-09-13 · 군중 LITE Pack 승인 · P2 Character Master 완료 (사용자)
+**판정** 노동자·시종 walking · costume_detail 4장 APPROVE → 두 무리 LITE Pack 3/3 → **CHARACTER_MASTER_APPROVED**. 원로(D-019) 포함 **캐릭터 3/3 승인 = P2 완료**.
+**메모** walking/costume_detail 에 참조 full_body 얼굴이 반복됨 → 영상에서 같은 3인조를 알아볼 정도로 반복하지 않는다. 시종 옷감 새것 느낌은 허용.
+**비용** EP01 누적 44.12 credits (23 호출: 원로 13 · 군중 10). 군중 승인 12 중 10 사용, 남은 2 호출은 사용하지 않고 종료.
+
 ---
 
 ## 승인 대기 (P)

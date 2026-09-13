@@ -1,7 +1,7 @@
 # CURRENT STATUS — 지금 어디까지 왔나
 
 > **매 작업마다 갱신한다.** 이 파일 하나만 읽으면 어느 봇/AI 창을 열어도 바로 이어갈 수 있어야 한다.
-> 갱신: 2026-09-13 (Claude Code, D-017 반영) · 마지막 사용자 승인: 2026-09-11 (P0 범위·EP01 파일 유지·push 전 확인 → D-007)
+> 갱신: 2026-09-13 (Claude Code, D-023 반영 · P2 완료) · 마지막 사용자 승인: 2026-09-11 (P0 범위·EP01 파일 유지·push 전 확인 → D-007)
 > 읽는 순서: `BOT_HANDOFF_DDABONG_STUDIO_OS_V0.1.md` → `BOT_BOOTSTRAP_PROMPT.md` → **이 문서** → `OS_INDEX.md` → `02_SEASONS/S01/EP01/episode.json`
 
 ---
@@ -27,7 +27,7 @@
 - graphics-spec v2 (G13 추가) — legacy HTML 은 수정하지 않고 새 문서로.
 - P5 Review UI / P6 Money Gate 어댑터 설계 (유료 없음).
 
-**유료 생성 현황 (D-015)**: Money Gate OPEN (₩40,000 / 소진 44.12 credits, KRW 환산 P-012). **원로 Master Pack 10/10 APPROVED → CHARACTER_MASTER_APPROVED (D-019)**. 다음: 군중 LITE Pack 6 (별도 approval). AI 샷은 P-011 ACCEPT + `CHARACTER_MASTER_APPROVED` + master_frame APPROVED 뒤.
+**유료 생성 현황 (D-015)**: Money Gate OPEN (₩40,000 / 소진 44.12 credits, KRW 환산 P-012). **P2 Character Master 완료 (D-023)**: 원로 FULL 10/10 · 노동자 LITE 3/3 · 시종 LITE 3/3 전부 CHARACTER_MASTER_APPROVED. 다음 유료는 AI 샷 (P-011 ACCEPT + master_frame 승인 뒤). AI 샷은 P-011 ACCEPT + `CHARACTER_MASTER_APPROVED` + master_frame APPROVED 뒤.
 
 ## P2 사전 점검 — Pre-flight (2026-09-11 · DONE, 생성 0)
 
@@ -83,7 +83,7 @@
 ## P1 — Continuity Engine (2026-09-11 · **COMPLETE — APPROVED WITH CONDITIONS** D-008~D-012)
 
 브랜치 `p1-continuity` (`6a60b1b` `a89734b` origin push 완료, main 병합 보류). **Web HQ 는 main 만 배포하므로 P1 COMPLETE 표시는 병합 시점에 동기 반영** (사용자 결정, 2026-09-11). P2 백로그: P-008 인물 가시성 필드. 조건: Lite Crowd Pack (D-008) · AI 컷 5–6초 (D-009) · 러프컷 임시 기준 + DELTA 정리 (D-010) · 복식 TBD 게이트 (D-011).
-**P2 진행 중 — Character Master** (원로 APPROVED D-019 · 군중 LITE 6 남음).
+**P2 COMPLETE — Character Master** (원로 D-019 · 군중 D-023, 2026-09-13).
 
 | 항목 | 산출 | 상태 |
 |---|---|---|
@@ -159,6 +159,8 @@
 ---
 
 ## 최근 변경 (최신순)
+
+- **2026-09-13 사용자** — **D-023.** 군중 2단계 4장 APPROVE → 노동자·시종 CHARACTER_MASTER_APPROVED → **P2 Character Master 완료** (캐릭터 3/3). EP01 누적 44.12 credits.
 
 - **2026-09-13 Claude Code** — 군중 2단계 4장 생성 (8 credits, 승인 10/12), 봇 판정 전부 PASS (참조 얼굴이 따라옴 · 노동자 걷기 정면 · 시종 옷감 새것 느낌 메모). `08_GENERATION_CACHE/EP01/MP_CROWD/REVIEW_CROWD_STEP2.md` → **사용자 확인 대기**. EP01 소진 44.12 credits.
 

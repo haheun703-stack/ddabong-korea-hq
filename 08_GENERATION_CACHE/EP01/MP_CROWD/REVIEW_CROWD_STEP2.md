@@ -5,10 +5,10 @@
 
 | 무리·슬롯 | 파일 | 봇 판정 | 사람 검수 |
 |---|---|---|---|
-| laborer walking | `MP_LABORER_WALKING_V01_2740544f.png` | PASS - three labourers walking toward camera (more frontal than side-front), middle man carries a river stone, cloth headbands, shin wraps, straw sandals/bare feet, same hemp jackets and cords, finished mounds behind. | ☐ APPROVE ☐ FIX |
-| laborer costume_detail | `MP_LABORER_COSTUME_DETAIL_V01_06b95492.png` | PASS - chest-to-waist, collars right over left, cloth waist cords, sleeve ends and rough hands, coarse weave and dust; lower faces (mouth/beard) in frame. | ☐ APPROVE ☐ FIX |
-| attendant walking | `MP_ATTENDANT_WALKING_V01_083c45d4.png` | PASS - side-front walking, man carries a plain wooden box, belted jackets with plain chest fronts (no ribbon ties), woman in long grey skirt and cloth shoes, straw sandals. | ☐ APPROVE ☐ FIX |
-| attendant costume_detail | `MP_ATTENDANT_COSTUME_DETAIL_V01_d2a6b5ce.png` | PASS - plain chest fronts wrapping right over left, cloth waist belts, sleeve ends, wrists and hands clear; small inner tie knot beside each belt (not a chest ribbon). Fabric reads clean and new rather than hand-woven - minor. | ☐ APPROVE ☐ FIX |
+| laborer walking | `MP_LABORER_WALKING_V01_2740544f.png` | PASS - three labourers walking toward camera (more frontal than side-front), middle man carries a river stone, cloth headbands, shin wraps, straw sandals/bare feet, same hemp jackets and cords, finished mounds behind. | ☑ APPROVE (D-023) |
+| laborer costume_detail | `MP_LABORER_COSTUME_DETAIL_V01_06b95492.png` | PASS - chest-to-waist, collars right over left, cloth waist cords, sleeve ends and rough hands, coarse weave and dust; lower faces (mouth/beard) in frame. | ☑ APPROVE (D-023) |
+| attendant walking | `MP_ATTENDANT_WALKING_V01_083c45d4.png` | PASS - side-front walking, man carries a plain wooden box, belted jackets with plain chest fronts (no ribbon ties), woman in long grey skirt and cloth shoes, straw sandals. | ☑ APPROVE (D-023) |
+| attendant costume_detail | `MP_ATTENDANT_COSTUME_DETAIL_V01_d2a6b5ce.png` | PASS - plain chest fronts wrapping right over left, cloth waist belts, sleeve ends, wrists and hands clear; small inner tie knot beside each belt (not a chest ribbon). Fabric reads clean and new rather than hand-woven - minor. | ☑ APPROVE (D-023) |
 
 ## 사람이 볼 점
 
@@ -17,3 +17,7 @@
 3. 시종 옷감이 손으로 짠 삼베보다 깨끗한 새 리넨처럼 보인다 — 허용 범위인지.
 
 모두 APPROVE 면 노동자·시종 LITE Pack 3/3 → 두 무리 CHARACTER_MASTER_APPROVED → **P2 Character Master 완료**.
+
+## 사람 판정 (D-023, 2026-09-13)
+
+4장 모두 APPROVE. 노동자·시종 LITE Pack 3/3 → CHARACTER_MASTER_APPROVED. **P2 Character Master 완료.**
