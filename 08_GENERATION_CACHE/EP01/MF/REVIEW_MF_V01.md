@@ -47,3 +47,13 @@ V03·V04 노동자 얼굴이 거의 같음 (같은 수염·머리띠·나이) �
 ## S04 새로 생성 V05 결과 (참고 그림 없음, 2 credits, 승인 8/10)
 
 `MF_EP01_S04_MASTER_V05_c4ceb494.png` **PASS** — 얼굴·나이·수염·옷색 제각각 (복제 느낌 해소), 꽉 찬 화면, 깨끗한 지평선, 공사 초기 단계. 메모: 가운데 뒤 삽 2자루 쇠 날처럼 보임, 오른쪽 끝 지평선 작은 흰 점. 사용자 최종 OK 대기.
+
+## 최종 확정 (D-027, 2026-09-13)
+
+| 기준 그림 | 최종본 | 파생 AI 샷 |
+|---|---|---|
+| `EP01_S04_MASTER_V01` | V05 `MF_EP01_S04_MASTER_V05_c4ceb494.png` | H01 · H02 · H02b |
+| `EP01_S06_MASTER_OPEN_CHAMBER_V01` | V02 `MF_EP01_S06_MASTER_OPEN_CHAMBER_V02_de2b6a3e.png` | H04 |
+| `EP01_S06_MASTER_MOUND_BUILDING_V01` | V01 `MF_EP01_S06_MASTER_MOUND_BUILDING_V01_8e1007b7.png` | H05 · H06 |
+
+남은 메모 (허용): S04 뒤쪽 쇠처럼 보이는 삽 2자루 · 지평선 작은 흰 점; S06-A 궤 위치·경첩 (T자 배치는 G13). 8 호출 16 credits, 2 호출 미사용.

@@ -46,5 +46,5 @@
   "fix_reason": null,
   "decided_by": "사용자",
   "decided_at": "2026-09-13T07:00:00Z",
-  "note": "D-026: 기준 그림 3장, 최대 10 호출 / 20 credits. 실패 시 실패 항목만 FIX (PATCH + 새 prompt 버전), 승인 범위 밖 호출 금지."
+  "note": "D-026: 기준 그림 3장, 최대 10 호출 / 20 credits. 실패 시 실패 항목만 FIX (PATCH + 새 prompt 버전), 승인 범위 밖 호출 금지. D-027: 8 호출 / 16 credits 로 종료, 남은 2 호출은 버퍼로 미사용 (새 호출은 새 승인 필요)."
 }

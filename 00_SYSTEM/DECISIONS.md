@@ -132,6 +132,13 @@
 **6** 해석 문장 hedge: "It may have belonged to a burial system of status, ceremony, and identity." (대본 v2 · SCRIPT_ROUGHCUT_DELTA)
 **7** G04 층 순서 = 관 → 목곽 → 돌·자갈 → 흙 봉분. 별도 부장품 층 없음, 부장품은 관·목곽 주변 배치.
 
+### D-027 · 2026-09-13 · EP01 Master Frames 최종 확정 · 군중 참고 그림 규칙 (사용자)
+**확정** `EP01_S04_MASTER_V01` = V05 (참고 그림 없이 새로 생성, 군중 얼굴 복제 해소) · `EP01_S06_MASTER_OPEN_CHAMBER_V01` = V02 (관 형태·원로 허리띠 수정) · `EP01_S06_MASTER_MOUND_BUILDING_V01` = V01. 전부 APPROVED.
+**근거** V05 는 복제 느낌·시대 위반(전봇대·건물·줄자·검은 띠)·공사 단계를 해결. 남은 미세 요소(뒤쪽 쇠처럼 보이는 삽 2자루, 지평선 흰 점)는 와이드 장면에서 영향 작음 → 추가 재생성은 새 문제 위험이 더 큼 (Change Only What Failed · Generate Late).
+**비용** 기준 그림 8 호출 / 16 credits, `APR_EP01_MF_001` 한도 10 중 2 호출은 버퍼로 미사용하고 종료. EP01 누적 60.12 credits.
+**운영 규칙** 군중 장면에 참고 이미지를 강하게 넣으면 얼굴 복제 위험 → 군중 복식·분위기는 문장 설명 중심, 참고 이미지는 반복 인물 continuity 가 필요한 경우에만 제한적으로 (CHARACTER_CONTINUITY_STANDARD §군중 장면의 참고 그림).
+**다음** AI 샷 8개 생성 방법·비용 관리안 정리 (사용자 요청).
+
 ---
 
 ## 승인 대기 (P)

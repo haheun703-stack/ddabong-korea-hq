@@ -12,9 +12,9 @@
   ],
   "location": "LOC_CHEONMACHONG_V01",
   "camera_id": "CAMERA_EP01_S04_SH005_V01",
-  "status": "DRAFT",
-  "approved_by": null,
-  "approved_at": null,
+  "status": "APPROVED",
+  "approved_by": "사용자",
+  "approved_at": "2026-09-13",
   "derived_shots": [
     "EP01_S04_SH004",
     "EP01_S04_SH005",
