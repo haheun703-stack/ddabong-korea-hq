@@ -1,0 +1,34 @@
+{
+  "approval_id": "APR_EP01_MP_CROWD_001",
+  "kind": "PAID_GENERATION",
+  "target_id": "CHAR_SILLA_LABORER_GROUP_01 + CHAR_SILLA_ATTENDANT_GROUP_01",
+  "money_gate_presented": {
+    "shot_id": "MASTER_PACK:CROWD_LITE:EP01",
+    "prompt_ids": [
+      "PRM_MP_CHAR_SILLA_LABORER_GROUP_01_FULL_BODY_V02",
+      "PRM_MP_CHAR_SILLA_LABORER_GROUP_01_WALKING_V02",
+      "PRM_MP_CHAR_SILLA_LABORER_GROUP_01_COSTUME_DETAIL_V02",
+      "PRM_MP_CHAR_SILLA_ATTENDANT_GROUP_01_FULL_BODY_V02",
+      "PRM_MP_CHAR_SILLA_ATTENDANT_GROUP_01_WALKING_V02",
+      "PRM_MP_CHAR_SILLA_ATTENDANT_GROUP_01_COSTUME_DETAIL_V02"
+    ],
+    "aspect_ratios": {
+      "PRM_MP_CHAR_SILLA_LABORER_GROUP_01_FULL_BODY_V02": "3:2",
+      "PRM_MP_CHAR_SILLA_LABORER_GROUP_01_WALKING_V02": "3:2",
+      "PRM_MP_CHAR_SILLA_LABORER_GROUP_01_COSTUME_DETAIL_V02": "3:2",
+      "PRM_MP_CHAR_SILLA_ATTENDANT_GROUP_01_FULL_BODY_V02": "3:2",
+      "PRM_MP_CHAR_SILLA_ATTENDANT_GROUP_01_WALKING_V02": "3:2",
+      "PRM_MP_CHAR_SILLA_ATTENDANT_GROUP_01_COSTUME_DETAIL_V02": "3:2"
+    },
+    "steps": "1) FULL_BODY x2 (text only) -> human check -> 2) WALKING + COSTUME_DETAIL x2 each, image_references = that group's APPROVED full_body",
+    "provider_model": "Higgsfield / Nano Banana Pro (job type nano_banana_2), 2k, 3:2",
+    "expected_attempts": 9,
+    "estimated_cost_range": "12–18 credits (2 credits x 6 images, + up to 3 FIX retries)",
+    "continuity_risk": "LOW-MEDIUM - LITE_CROWD (no recurring face); costume consistency anchored by step-1 full_body"
+  },
+  "decision": "PENDING",
+  "fix_reason": null,
+  "decided_by": "사용자",
+  "decided_at": "2026-09-13T00:00:00Z",
+  "note": "준비만 됨 (decided_at = 준비 시각, 결정 시 갱신). 사용자 APPROVE 전 전송 금지. 전송은 각 prompt 의 assembled_text 그대로."
+}
