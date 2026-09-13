@@ -124,7 +124,7 @@
 | ROUGH_CUT | `ep01-premiere-roughcut` 0:00–7:05 | 설계 APPROVED |
 
 **다음 실제 작업 (순서)**
-1. 경주 현장 촬영 — **필수는 대릉원·천마총 (D-026 #4, 월성·사찰은 선택)**. 계획 `08_REAL_FOOTAGE/SHOOT_PLAN_EP01_V01.md`, 준비 점검 `15_QA/SHOOT_READINESS_20260913.md` (촬영 허가 Q1–Q5 · 사용자 결정 D1–D7 대기). 매치컷 착지 구도(`EP01_S08_SH003`)는 반드시 삼각대로 찍고 `LOC_CHEONMACHONG_V01.spatial_lock.match_cut_frame (D-026)` 에 기록.
+1. 경주 현장 촬영 — **필수는 대릉원·천마총 (D-026 #4, 월성·사찰은 선택)**. 계획 `08_REAL_FOOTAGE/SHOOT_PLAN_EP01_V01.md`, 준비 점검 `15_QA/SHOOT_READINESS_20260913.md`. **D-032: 다음 주 짧은 촬영 (꼭 찍기 5컷), TODO `02_SEASONS/S01/EP01/08_REAL_FOOTAGE/SHOOT_TODO_EP01_20260913.md`.** 매치컷 착지 구도(`EP01_S08_SH003`)는 반드시 삼각대로 찍고 `LOC_CHEONMACHONG_V01.spatial_lock.match_cut_frame (D-026)` 에 기록.
 2. 유물/아카이브 실제 파일 다운로드·정리 → `02_SOURCES/` 에 `source.json` / `rights.json` 인스턴스.
 3. AI 샷: H06 사진 완료 (D-031). 영상 H01–H05 는 P-012 (실제 청구액·월 크레딧) 확정 + Money Gate 승인 후 (D-028 Higgsfield · Kling 3.0). H07 은 현장 촬영 뒤.
 4. 내레이션 녹음 → Premiere 러프컷 → 수정 → 공개.
@@ -159,6 +159,8 @@
 ---
 
 ## 최근 변경 (최신순)
+
+- **2026-09-13 사용자** — **D-032.** 경주 짧은 촬영 (다음 주): 꼭 찍기 5컷 (거리 · 오프닝 드러남 · 엔딩 같은 자리 · 천마총 매치컷 · 몽타주), 나머지 5컷은 시간 남으면. TODO `08_REAL_FOOTAGE/SHOOT_TODO_EP01_20260913.md`.
 
 - **2026-09-13 Claude Code (D-029 에이전트)** — 촬영 대신 인터넷 사진 조사 `15_QA/REAL_SHOT_ALTERNATIVES_20260913.md`: REAL 10샷 중 사진 그대로 2 · 사진+줌/이동 (손실 있음) 6 · **촬영 필요 2** (S01_SH001 거리, S08_SH001 걷기·차·카페 몽타주 — 사용 가능한 영상 못 찾음). H07 은 사진 먼저 고르고 AI 그림을 맞추는 순서 가능, 단 천마총 정면 최적 사진은 CC BY-SA (YELLOW). 경주시 관광 사진은 '개인적, 공익적 용도' 한정 → 수익 채널 사용 불가 (RED 제안). 사용자 결정 대기 (§5).
 
