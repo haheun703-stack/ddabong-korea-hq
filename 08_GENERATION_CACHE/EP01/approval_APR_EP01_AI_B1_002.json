@@ -12,9 +12,9 @@
     "estimated_cost_range": "2 credits (hard cap 2)",
     "continuity_risk": "MEDIUM - human scale 1:8 is the failed item"
   },
-  "decision": "PENDING",
+  "decision": "APPROVE",
   "fix_reason": "ARCHITECTURE",
   "decided_by": "사용자",
-  "decided_at": "2026-09-13T00:00:00Z",
-  "note": "준비만 됨 (decided_at = 준비 시각). H06 3번째 호출은 이 새 승인 없이는 금지 (D-028 D3/D4)."
+  "decided_at": "2026-09-13T12:30:00Z",
+  "note": "D-030: 사용자 '1,2,3 너의 추론대로' → H06 1회 추가 승인 (최대 1 호출 / 2 credits). 전송은 PRM_EP01_S06_SH010_V04 그대로."
 }
