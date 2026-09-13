@@ -97,3 +97,9 @@
 - 생성: `RTS_GNM_CHEST_ORNAMENT_001` · `RTS_GNM_GOLD_CAP_001` · `RTS_GNM_GLASS_CUP_001` · `RTS_GNM_MUDGUARD_001` (GREEN, ACTIVE). 증빙: 페이지 HTML 원문 `05_HISTORY_DATABASE/rights/proof/<rights_id>_20260913.html` (라벨 확인된 것만 proof 기재).
 - 샷 교체: S02_SH003 → GLASS_CUP + MUDGUARD · S05_SH001 → GOLD_CAP + CHEST_ORNAMENT. `RTS_GNM_OTHER_OBJECTS_001` → BACKUP_ONLY (YELLOW 유지).
 - 남은 일: 유리잔·말다래 표시 이미지 해상도 확인 (확인 필요 B), 기존 GREEN 기록(금관·금허리띠·천마도·NRICH) proof 보관 — 2026-09-13 완료.
+
+## 해상도 해결 (2026-09-13)
+
+- 유리잔·말다래 → e뮤지엄 페이지로 출처 교체 (같은 소장품번호, 제 1유형, 3000px급). 증빙 `proof/<rights_id>_emuseum_20260913.html`, 기존 GNM 페이지 증빙도 보관.
+- 가슴걸이·금제 관모: e뮤지엄 1유형 페이지 확인, 이미지 크기 미측정 (전체 화면 사용 시 편집 전 확인).
+- 상세: `15_QA/ARCHIVE_IMAGE_RESOLUTION_20260913.md`.
