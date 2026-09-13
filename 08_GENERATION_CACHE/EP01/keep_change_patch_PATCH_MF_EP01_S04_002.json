@@ -15,7 +15,7 @@
     "explicit all-wood tools, no metal heads/blades/saws"
   ],
   "reason": "V02 edit PARTIAL: letterbox bars kept, some metal tools kept. Edits of many small details are unreliable (same as attendant full_body); explicit wording in a fresh generation worked before.",
-  "requested_by": "Image Generation Agent (Claude Code) - pending owner OK",
+  "requested_by": "사용자 (2026-09-13 'OK')",
   "created_at": "2026-09-13",
   "resulting_prompt_id": "PRM_MF_EP01_S04_MASTER_V03",
   "resulting_generation_id": null
