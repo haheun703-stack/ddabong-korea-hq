@@ -30,6 +30,7 @@
 | 5 | Evidence Before Imagination | 실제 자료 → 복원 → 영화적 창작 순서. 샷·주장에 FACT/PROBABLE/INTERPRETIVE/ARTISTIC 명시 |
 | 6 | Never overwrite approved | 승인본은 `version_history` 누적 + 새 `V<NN>`. 롤백 가능 |
 | 7 | 제작 ≠ 시스템 개선 | 일상 제작은 ACTIVE 표준만 사용. 규칙 변경은 `evaluation` + 회귀검사 후 승격 |
+| 8 | Sent Prompt Rule (D-016) | 보낼 문장을 먼저 prompt 새 버전으로 저장 → 그 `assembled_text` 를 그대로 전송 → generation 에 `prompt_id` + `provider_job` 연결. 어기면 검증 FAIL |
 
 **에이전트 인계 규칙**: 자유 의견을 진실처럼 넘기지 않는다. ID·status·provenance 가 있는 구조화 데이터(스키마 인스턴스)로 넘긴다.
 **Provider 추상화**: Agent ≠ provider. Gemini/Claude/OpenAI/Flow/Veo/Higgsfield/Suno 는 교체 가능하며 OS 는 살아남아야 한다.

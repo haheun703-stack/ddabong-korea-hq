@@ -16,7 +16,8 @@
 
 - ~~P-009~~ 원로 옷 색 muted blue · 과대 bronze 확정 (D-015), PROBABLE 유지.
 
-- **2026-09-13 전체 검수 수정 1–5 완료 (유료 없음)** → `02_SEASONS/S01/EP01/15_QA/REVIEW_FIX_20260913.md`. 실제 전송 프롬프트 버전화 · provider job 기록 · 검증기 Money Gate 규칙 · negative 25개 보강 · 예산 소진 일치. 검증 244/244.
+- **다음 순서 (D-016)**: ① 배치 1 Work 판정 → ② hero 배경 기와지붕 시대 위반 여부 → ③ H07 정지/영상 매치컷 결정 → ④ Master Pack 확장 → ⑤ Web HQ 는 main 병합 때. 생성 시 **Sent Prompt Rule** (저장 → 그대로 전송 → 기록 연결, 어기면 FAIL).
+- **2026-09-13 전체 검수 수정 1–5 완료 (유료 없음, `6c66f13` push)** → `02_SEASONS/S01/EP01/15_QA/REVIEW_FIX_20260913.md`. 실제 전송 프롬프트 버전화 · provider job 기록 · 검증기 Money Gate 규칙 · negative 25개 보강 · 예산 소진 일치. 검증 244/244.
 - **P-012** 크레딧→KRW 환산율 — **임시 미정 (사용자 2026-09-11)**: 플랜 월 요금·월 크레딧 수 확인 전까지 크레딧 단위로만 기록, 원화 소진율 계산 안 함.
 - **배치 1 검수 — Work 창에 위임 (사용자 2026-09-11)**: 이미지 5장 + `REVIEW_BATCH1.md` 를 직접 열어 비교. 검수 항목: 얼굴 동일성 · 연령 · 관모 형태 · 표(袍) 소매 길이 · 체형 · 복식 일관성. **판정(APPROVE/FIX)만 내리고 유료 생성은 하지 않는다.** 판정이 나오면 그 기준으로 나머지 6 + back_view 확장 여부 결정.
 - **P-011** 라우터 판정 49건 ACCEPT / OVERRIDE — **AI 샷 생성 직전 최종 승인으로 보류 (D-015)**.
@@ -158,6 +159,8 @@
 ---
 
 ## 최근 변경 (최신순)
+
+- **2026-09-13 사용자** — **D-016.** `6c66f13` p1-continuity push 승인 (main 보류, 유료 정지 유지). Sent Prompt Rule 정본화 (AGENT_RULES §1 #8). 우선순위: 배치 1 Work 판정 → hero 기와지붕 → H07 → Master Pack 확장 → Web HQ(병합 시).
 
 - **2026-09-13 Claude Code** — 전체 검수(09-11) 수정 1–5, 유료 생성 0. ① Higgsfield job 원문 복구 → 실제 전송 프롬프트 `HERO_V02`(soul_2 시도) · `HERO_V03` · `FRONT/THREE_QUARTER_LEFT/FULL_BODY_V02` + `PATCH_MP_ELITE_HERO_001` (재시도가 실패 항목 외 모델·전문까지 바꿨음을 기록) ② `generation.provider_job` (표시명 Nano Banana Pro = job type `nano_banana_2`) + `provider_jobs/HF_*.json` ③ 검증기 Money Gate 규칙 (승인·승인 범위·시도 수·전송 프롬프트 = assembled_text·cost 합계·episode 예산·Master Pack 슬롯·patch 역참조·negative ⊇ lock Forbidden) — 음성 테스트 12종 ④ negative 21개 보강 (시대·복식 lock 금지 항목, 이미 보낸 V01 4개는 기록으로 동결) ⑤ episode 예산 spent null. 스크립트 8개 `00_SYSTEM/tools/legacy_20260911/` 로 이동. 검증 244/244.
 

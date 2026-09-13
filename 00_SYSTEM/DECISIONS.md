@@ -75,6 +75,11 @@
 **생성 원칙** 17장 일괄 생성 금지. 배치 1 = 원로 hero · front · three_quarter_left · full_body 4장 → 사람 검수(얼굴·체형·복식 lock 확인) → 나머지 6 + back_view → 군중 6. Generate Late + Change Only What Failed.
 **반영** locks 6 APPROVED · `COSTUME_SILLA_ELITE_A01` color/belt/forbidden · 프롬프트 13 재조립 (원로 MP 11 + S06_SH002 · SH005; 생성 전이라 V01 유지) · `episode.json.budget` · `08_GENERATION_CACHE/EP01/cost_COST_EP01_20260911.json` OPEN · `approval_APR_EP01_MP_ELITE_BATCH1_001.json` APPROVE · validate.py 가 cost/approval/generation 인스턴스 검증.
 
+### D-016 · 2026-09-13 · 전체 검수 수정 승인 · 전송 프롬프트 정본 규칙 · 우선순위 (사용자)
+**승인 내용** `6c66f13` (검수 수정 1–5, `15_QA/REVIEW_FIX_20260913.md`) → `origin/p1-continuity` push. main 은 계속 보류 (D-012). 유료 생성은 배치 1 Work 판정 전까지 정지 유지.
+**정본 규칙 (Sent Prompt Rule)** ① 보낼 문장을 먼저 prompt 새 버전으로 저장 → ② 저장된 `assembled_text` 를 **그대로** 전송 → ③ generation 기록에 실제 전송본 연결 (`prompt_id` + `provider_job.params_path`). 이 순서가 깨지면 FAIL — `validate.py money_rules` 가 강제한다.
+**우선순위** 1 배치 1 Work 판정 → 2 hero 배경 기와지붕 시대 위반 여부 → 3 H07 정지/영상 매치컷 결정 → 4 Master Pack 확장 → 5 Web HQ 는 main 병합 시점 동기화.
+
 ---
 
 ## 승인 대기 (P)
