@@ -14,7 +14,7 @@
     "adjacent": "도로·주택·카페가 가까이 있는 도심 속 봉분 경관 → LOC_GYEONGJU_DOWNTOWN_V01",
     "uses": [
       "REAL_SHOOT: 오프닝 봉분 리빌, 산책로, 석양 히어로 와이드 (field-shoot-plan)",
-      "H07 매치컷의 현재 쪽 착지점 (G10)"
+      "H07 매치컷 착지는 천마총 봉분 (LOC_CHEONMACHONG_V01, D-026)"
     ],
     "unverified_do_not_invent": "봉분 개수·정확한 배치(GIS). G03 은 자체 단순화 도식으로만 표현.",
     "match_cut_frame": "D-026: 매치컷 착지 구도는 천마총 봉분 기준 → LOC_CHEONMACHONG_V01.spatial_lock.match_cut_frame 에 기록.",
@@ -32,6 +32,5 @@
   ],
   "status": "DRAFT",
   "version": "V01",
-  "updated_at": "2026-09-13",
-  "uses": []
+  "updated_at": "2026-09-13"
 }
