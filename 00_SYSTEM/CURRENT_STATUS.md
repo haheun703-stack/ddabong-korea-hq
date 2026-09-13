@@ -19,7 +19,7 @@
 - **다음 순서 (D-016)**: ① 배치 1 Work 판정 → ② hero 배경 기와지붕 시대 위반 여부 → ③ H07 정지/영상 매치컷 결정 → ④ Master Pack 확장 → ⑤ Web HQ 는 main 병합 때. 생성 시 **Sent Prompt Rule** (저장 → 그대로 전송 → 기록 연결, 어기면 FAIL).
 - **2026-09-13 전체 검수 수정 1–5 완료 (유료 없음, `6c66f13` push)** → `02_SEASONS/S01/EP01/15_QA/REVIEW_FIX_20260913.md`. 실제 전송 프롬프트 버전화 · provider job 기록 · 검증기 Money Gate 규칙 · negative 25개 보강 · 예산 소진 일치. 검증 244/244.
 - **P-012** 크레딧→KRW 환산율 — **임시 미정 (사용자 2026-09-11)**: 플랜 월 요금·월 크레딧 수 확인 전까지 크레딧 단위로만 기록, 원화 소진율 계산 안 함.
-- **배치 1 판정 (D-017)**: front · three_quarter_left · full_body APPROVED. hero 배경 편집본 `MP_ELITE_HERO_V03_5de27748.png` **사람 최종 확인 대기** → APPROVE 면 4장 완료, 나머지 6 + back_view 는 새 approval 필요. 배치 1 승인 호출 6/8 사용.
+- **배치 1 판정 (D-017)**: front · three_quarter_left · full_body APPROVED. hero V03 (배경 편집) **APPROVED** → **4장 완료**. 나머지 6 + back_view 는 새 approval 필요. 배치 1 승인 호출 6/8 사용.
 - **P-011** 라우터 판정 49건 ACCEPT / OVERRIDE — **AI 샷 생성 직전 최종 승인으로 보류 (D-015)**.
 - YELLOW_ACTIVE 1건 (`RTS_GNM_OTHER_OBJECTS_001`) — 편집 확정 전 필수 해소 (D-014).
 
@@ -27,7 +27,7 @@
 - graphics-spec v2 (G13 추가) — legacy HTML 은 수정하지 않고 새 문서로.
 - P5 Review UI / P6 Money Gate 어댑터 설계 (유료 없음).
 
-**유료 생성 현황 (D-015)**: Money Gate OPEN (₩40,000 / 소진 10.12 credits, KRW 환산 P-012). **배치 1: 3장 APPROVED, hero V03(배경 편집) 사람 확인 대기** `08_GENERATION_CACHE/EP01/MP_ELITE/REVIEW_BATCH1.md`. 승인되면 나머지 6 + back_view → 군중 6. AI 샷은 P-011 ACCEPT + `CHARACTER_MASTER_APPROVED` + master_frame APPROVED 뒤.
+**유료 생성 현황 (D-015)**: Money Gate OPEN (₩40,000 / 소진 10.12 credits, KRW 환산 P-012). **배치 1: 4장 APPROVED (D-017)** `08_GENERATION_CACHE/EP01/MP_ELITE/REVIEW_BATCH1.md`. 승인되면 나머지 6 + back_view → 군중 6. AI 샷은 P-011 ACCEPT + `CHARACTER_MASTER_APPROVED` + master_frame APPROVED 뒤.
 
 ## P2 사전 점검 — Pre-flight (2026-09-11 · DONE, 생성 0)
 
@@ -160,7 +160,7 @@
 
 ## 최근 변경 (최신순)
 
-- **2026-09-13 사용자 + Claude Code** — **D-017 배치 1 판정.** front · three_quarter_left · full_body APPROVED. hero 는 배경 조선식 기와지붕만 FIX → `PRM_…_HERO_V04` 저장 후 그대로 전송, 기존 이미지 편집 1회 (2 credits, 승인 6/8) → `MP_ELITE_HERO_V03_5de27748.png` 봇 PASS, **사람 최종 확인 대기**. 소진 합계 10.12 credits.
+- **2026-09-13 사용자 + Claude Code** — **D-017 배치 1 판정.** front · three_quarter_left · full_body APPROVED. hero 는 배경 조선식 기와지붕만 FIX → `PRM_…_HERO_V04` 저장 후 그대로 전송, 기존 이미지 편집 1회 (2 credits, 승인 6/8) → `MP_ELITE_HERO_V03_5de27748.png` 사용자 APPROVE → 배치 1 4장 완료. 소진 합계 10.12 credits.
 
 - **2026-09-13 사용자** — **D-016.** `6c66f13` p1-continuity push 승인 (main 보류, 유료 정지 유지). Sent Prompt Rule 정본화 (AGENT_RULES §1 #8). 우선순위: 배치 1 Work 판정 → hero 기와지붕 → H07 → Master Pack 확장 → Web HQ(병합 시).
 

@@ -36,6 +36,8 @@ three_quarter_right · profile · neutral_standing · walking · costume_detail 
 
 | slot | 파일 | 모델 | 판정(봇) | 사람 검수 |
 |---|---|---|---|---|
-| hero (V03, 편집) | `MP_ELITE_HERO_V03_5de27748.png` | Nano Banana Pro (nano_banana_2) + hero V02 입력 | PASS — 기와지붕 건물 제거(흙더미·흐린 하늘), 얼굴·모자·복식·자세·비계 동일 | ☐ APPROVE ☐ FIX |
+| hero (V03, 편집) | `MP_ELITE_HERO_V03_5de27748.png` | Nano Banana Pro (nano_banana_2) + hero V02 입력 | PASS — 기와지붕 건물 제거(흙더미·흐린 하늘), 얼굴·모자·복식·자세·비계 동일 | ☑ APPROVE (사용자 2026-09-13) |
 
 `PRM_…_HERO_V04` 저장 → 그대로 전송 → `GEN_MP_ELITE_HERO_HIGGSFIELD_V03`. 2 credits, 배치 1 승인 6/8.
+
+**배치 1 완료 (2026-09-13)**: hero V03 · front · three_quarter_left · full_body 4장 APPROVED.
