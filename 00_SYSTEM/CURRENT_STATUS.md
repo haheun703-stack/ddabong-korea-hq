@@ -27,7 +27,7 @@
 - graphics-spec v2 (G13 추가) — legacy HTML 은 수정하지 않고 새 문서로.
 - P5 Review UI / P6 Money Gate 어댑터 설계 (유료 없음).
 
-**유료 생성 현황 (D-015)**: Money Gate OPEN (₩40,000 / 소진 24.12 credits, KRW 환산 P-012). **배치 1: 4장 APPROVED (D-017) · 배치 2: 7장 생성, 사람 검수 대기 (REVIEW_BATCH2.md)** `08_GENERATION_CACHE/EP01/MP_ELITE/REVIEW_BATCH1.md`. 승인되면 나머지 6 + back_view → 군중 6. AI 샷은 P-011 ACCEPT + `CHARACTER_MASTER_APPROVED` + master_frame APPROVED 뒤.
+**유료 생성 현황 (D-015)**: Money Gate OPEN (₩40,000 / 소진 24.12 credits, KRW 환산 P-012). **원로 Master Pack 10/10 APPROVED → CHARACTER_MASTER_APPROVED (D-019)**. 다음: 군중 LITE Pack 6 (별도 approval). AI 샷은 P-011 ACCEPT + `CHARACTER_MASTER_APPROVED` + master_frame APPROVED 뒤.
 
 ## P2 사전 점검 — Pre-flight (2026-09-11 · DONE, 생성 0)
 
@@ -83,7 +83,7 @@
 ## P1 — Continuity Engine (2026-09-11 · **COMPLETE — APPROVED WITH CONDITIONS** D-008~D-012)
 
 브랜치 `p1-continuity` (`6a60b1b` `a89734b` origin push 완료, main 병합 보류). **Web HQ 는 main 만 배포하므로 P1 COMPLETE 표시는 병합 시점에 동기 반영** (사용자 결정, 2026-09-11). P2 백로그: P-008 인물 가시성 필드. 조건: Lite Crowd Pack (D-008) · AI 컷 5–6초 (D-009) · 러프컷 임시 기준 + DELTA 정리 (D-010) · 복식 TBD 게이트 (D-011).
-**P2 진행 중 — Character Master** (D-011 복식 ✔ · D-015 예산 ✔ · 배치 1 사람 검수 대기).
+**P2 진행 중 — Character Master** (원로 APPROVED D-019 · 군중 LITE 6 남음).
 
 | 항목 | 산출 | 상태 |
 |---|---|---|
@@ -159,6 +159,8 @@
 ---
 
 ## 최근 변경 (최신순)
+
+- **2026-09-13 사용자** — **D-019.** 배치 2 7장 APPROVE → 원로 Master Pack 10/10, `CHARACTER_MASTER_APPROVED`. 다음 군중 LITE 6.
 
 - **2026-09-13 Claude Code** — **배치 2 생성 (D-018).** 원로 나머지 7장 (three_quarter_right · profile · neutral_standing · walking · costume_detail · expression_sheet · back_view) — V02 문장 그대로 전송, 7/7 성공, 14 credits (승인 10 호출 중 7). 봇 판정 전부 PASS (profile 방향 반대 · back_view 비계 금속관 의심 · 모자 약간 높음 메모). 검수 시트 `08_GENERATION_CACHE/EP01/MP_ELITE/REVIEW_BATCH2.md` → **사람 검수 대기**. EP01 소진 합계 24.12 credits.
 

@@ -91,6 +91,11 @@
 **H07** `EP01_S08_SH002` HIGGSFIELD → **AI_STILL** (라우터 OVERRIDDEN, P-011 중 1건 확정). 현장 SH003 착지 구도 촬영 뒤 생성.
 **크레딧** Higgsfield 계정은 다른 작업과 공용 → 잔액 차이는 EP01 소진이 아니다. EP01 소진은 generation 기록(job 단위) 합계만으로 계산.
 
+### D-019 · 2026-09-13 · 원로 Master Pack 배치 2 사람 판정 · Character Master 승인 (사용자)
+**판정** 배치 2 7장 (three_quarter_right · profile · neutral_standing · walking · costume_detail · expression_sheet · back_view) 전부 APPROVE. profile 방향(오른쪽)·back_view 비계·모자 높이 메모는 허용.
+**결과** `CHAR_SILLA_ELITE_OBSERVER_01` Master Pack 10/10 APPROVED → **CHARACTER_MASTER_APPROVED**. 원로 유료 생성 누적 22 credits (배치 1 8.12 포함 EP01 전체 24.12).
+**다음** 군중 LITE Pack (노동자 3 · 시종 3) — 별도 approval.
+
 ---
 
 ## 승인 대기 (P)
