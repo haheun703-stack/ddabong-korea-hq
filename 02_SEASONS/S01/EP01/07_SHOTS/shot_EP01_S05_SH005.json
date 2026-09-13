@@ -32,7 +32,8 @@
   "router_decision_id": "RTR_EP01_S05_SH005_V01",
   "fact_ids": [
     "CLM_EP01_GOLD_007",
-    "CLM_EP01_DISPLAY_009"
+    "CLM_EP01_DISPLAY_009",
+    "CLM_EP01_GOODS_005"
   ],
   "rights_ids": [],
   "ai_label": "AI Visual Reconstruction",
@@ -41,7 +42,7 @@
   "created_at": "2026-09-11",
   "updated_at": "2026-09-13",
   "updated_by": "Image/Video Generation Agent (Claude Code)",
-  "notes": "TC 4:08–4:12 (러프컷 v1 기준, 내레이션 녹음 후 조정). H03. 손·천·금속·유리 클로즈업. 금 유물 형태는 실제 B1/B3 참조, 판타지 보석 금지. 4초. 파이프라인은 legacy 팩 태그 그대로 (잠정). P4 Visual Router 에서 재판정. 점수(camera_complexity 등)는 Continuity Engine 추정치 — P4 라우터에서 확정. D-024: 파이프라인 BLENDER_FLOW → FLOW_VEO (사용자 OVERRIDE). D-028: logical_pipeline I2V_MOTION · provider HIGGSFIELD (공급 플랫폼) · model KLING_3_0 (시작 사진 필요 시 NANO_BANANA_PRO).",
+  "notes": "TC 4:08–4:12 (러프컷 v1 기준, 내레이션 녹음 후 조정). H03. 손·천·금속·유리 클로즈업. 금 유물 형태는 실제 B1/B3 참조, 판타지 보석 금지. (2026-09-13 반박 검수: 금 허리띠는 피장자 착장 FACT 이므로 탁자 위 부장품으로 그리지 않음 — 시작 사진은 무늬 없는 회색 토기·천만.) 4초. 파이프라인은 legacy 팩 태그 그대로 (잠정). P4 Visual Router 에서 재판정. 점수(camera_complexity 등)는 Continuity Engine 추정치 — P4 라우터에서 확정. D-024: 파이프라인 BLENDER_FLOW → FLOW_VEO (사용자 OVERRIDE). D-028: logical_pipeline I2V_MOTION · provider HIGGSFIELD (공급 플랫폼) · model KLING_3_0 (시작 사진 필요 시 NANO_BANANA_PRO).",
   "evidence_role": "SUPPORTING",
   "logical_pipeline": "I2V_MOTION",
   "provider": "HIGGSFIELD",

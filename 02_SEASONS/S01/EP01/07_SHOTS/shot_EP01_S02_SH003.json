@@ -28,14 +28,15 @@
   "rights_ids": [
     "RTS_GNM_GOLD_CROWN_001",
     "RTS_WIKI_CHEONMADO_001",
-    "RTS_GNM_OTHER_OBJECTS_001"
+    "RTS_GNM_GLASS_CUP_001",
+    "RTS_GNM_MUDGUARD_001"
   ],
   "ai_label": null,
   "version_history": [],
   "approved_version": null,
   "created_at": "2026-09-11",
-  "updated_at": "2026-09-11",
-  "updated_by": "Visual Router (Claude Code)",
-  "notes": "TC 1:05–1:25 (러프컷 v1 기준, 내레이션 녹음 후 조정). visual-assets B1/B4 GREEN, B5 YELLOW (개별 라이선스 확인 전 사용 금지). S1/S3. X1 RESOLVED: G04 는 S04 에서만. 몽타주 첫 컷 = 금관 매크로 (대본 v2 '슬로우 매크로'). 점수(camera_complexity 등)는 Continuity Engine 추정치 — P4 라우터에서 확정.",
+  "updated_at": "2026-09-13",
+  "updated_by": "Rights check + Codex-role review (Claude Code, D-029)",
+  "notes": "TC 1:05–1:25 (러프컷 v1 기준, 내레이션 녹음 후 조정). visual-assets B1/B4 GREEN, B5 YELLOW (개별 라이선스 확인 전 사용 금지). S1/S3. X1 RESOLVED: G04 는 S04 에서만. 몽타주 첫 컷 = 금관 매크로 (대본 v2 '슬로우 매크로'). 점수(camera_complexity 등)는 Continuity Engine 추정치 — P4 라우터에서 확정. 권리 해소 2026-09-13: RTS_GNM_OTHER_OBJECTS_001 (YELLOW) → RTS_GNM_GLASS_CUP_001 (GREEN, 공공누리 1유형, 15_QA/RIGHTS_CHECK_GNM_OTHER_OBJECTS_20260913.md). 정정 (반박 검수): 이 샷의 '말다래'는 금동 천마무늬 말다래 (대본 v2 0:35–1:25 'horse equipment', 유물 라이브러리 카드 7) → RTS_GNM_MUDGUARD_001 연결. 천마도(RTS_WIKI_CHEONMADO_001)는 1:25–2:15 구간 유물로 기존 연결 유지.",
   "evidence_role": "PRIMARY"
 }

@@ -1,0 +1,20 @@
+{
+  "rights_id": "RTS_GNM_MUDGUARD_001",
+  "asset_id": "ASSET_GNM_CHEONMACHONG_MUDGUARD_V01",
+  "source": "https://gyeongju.museum.go.kr/kor/html/sub02/0202.html?d_mng_no=193&mng_no=295&mode=V",
+  "creator": "국립경주박물관",
+  "license": "KOGL Type 1",
+  "commercial_use": "YES",
+  "modification_allowed": "YES",
+  "attribution_required": "YES",
+  "attribution_text": "Source: Gyeongju National Museum, Mudguard with winged-horse design from Cheonmachong (Gyeongju 2309), KOGL Type 1.",
+  "expiration": null,
+  "proof": "05_HISTORY_DATABASE/rights/proof/RTS_GNM_MUDGUARD_001_20260913.html",
+  "research_permission": "YES",
+  "media_reuse_permission": "YES",
+  "status": "GREEN",
+  "checked_at": "2026-09-13",
+  "checked_by": "Claude Code (Rights check agent, D-029)",
+  "notes": "RTS_GNM_OTHER_OBJECTS_001 에서 분리. 천마무늬 말다래 (경주2309, 금동판). 페이지 문구 '국립경주박물관이 창작한 저작권 보호분야 천마무늬 말다래 저작물은 \"공공누리\" 출처표시 조건에 따라 이용할 수 있습니다. (1유형)'. 원본 다운로드 버튼 없음, 표시 이미지만 → 편집 전 해상도 확인. 천마도(RTS_WIKI_CHEONMADO_001)와 다른 유물. S02_SH003 (대본 v2 0:35–1:25 'horse equipment', 유물 라이브러리 카드 7).",
+  "usage_tier": "ACTIVE"
+}

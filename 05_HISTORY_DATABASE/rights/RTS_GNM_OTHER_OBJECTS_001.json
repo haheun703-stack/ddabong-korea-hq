@@ -13,8 +13,8 @@
   "research_permission": "YES",
   "media_reuse_permission": "UNKNOWN",
   "status": "YELLOW",
-  "checked_at": "2026-09-11",
+  "checked_at": "2026-09-13",
   "checked_by": "Claude Code (Story Engine Fact Check / Quality Engine Rights)",
-  "notes": "B5 귀걸이·유리·토기·말갖춤. 소장품 페이지마다 라벨 확인 → 1유형이면 개별 GREEN 인스턴스로 분리. 4유형이면 사용 금지. D-014: YELLOW_ACTIVE — 편집 확정 전 필수 해소.",
-  "usage_tier": "ACTIVE"
+  "notes": "B5 귀걸이·유리·토기·말갖춤. 소장품 페이지마다 라벨 확인 → 1유형이면 개별 GREEN 인스턴스로 분리. 4유형이면 사용 금지. D-014: YELLOW_ACTIVE — 편집 확정 전 필수 해소. 2026-09-13: 가슴걸이·금제 관모·유리잔은 1유형 확인 → RTS_GNM_CHEST_ORNAMENT_001 · RTS_GNM_GOLD_CAP_001 · RTS_GNM_GLASS_CUP_001 로 분리, 두 샷 연결 교체. 천마무늬 말다래(경주2309)·유리구슬 목걸이(경주2381)도 1유형 확인했으나 미사용. 귀걸이·토기는 페이지 미확인 → YELLOW 유지, BACKUP_ONLY.",
+  "usage_tier": "BACKUP_ONLY"
 }

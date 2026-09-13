@@ -21,7 +21,7 @@
 - **P-012** 크레딧→KRW 환산율 — **임시 미정 (사용자 2026-09-11)**: 플랜 월 요금·월 크레딧 수 확인 전까지 크레딧 단위로만 기록, 원화 소진율 계산 안 함.
 - **배치 1 판정 (D-017)**: front · three_quarter_left · full_body APPROVED. hero V03 (배경 편집) **APPROVED** → **4장 완료**. 나머지 6 + back_view 는 새 approval 필요. 배치 1 승인 호출 6/8 사용.
 - ~~P-011~~ **라우터 49건 잠금 (D-024)**: 46 ACCEPTED · H01·H03 → FLOW_VEO · H07 AI_STILL · **EP01 Higgsfield 0건**. 실제 AI 생성은 별도 승인 + Money Gate.
-- YELLOW_ACTIVE 1건 (`RTS_GNM_OTHER_OBJECTS_001`) — 편집 확정 전 필수 해소 (D-014).
+- ~~YELLOW_ACTIVE 1건~~ **해소 (2026-09-13)**: `RTS_GNM_OTHER_OBJECTS_001` → 유리잔·금제 관모·가슴걸이 GREEN 1유형 분리, 원본은 BACKUP_ONLY. 남은 일: 유리잔 해상도 확인, GREEN proof 캡처.
 
 **봇이 바로 갈 수 있는 것**
 - graphics-spec v2 (G13 추가) — legacy HTML 은 수정하지 않고 새 문서로.
@@ -116,7 +116,7 @@
 | SCRIPT | `episodes/ep01-production-script-v2.md` (v1은 PREVIOUS) | APPROVED |
 | SHOTLIST | `ep01-visual-assets`, `ep01-graphics-spec` (G01–G12) | APPROVED |
 | SCENE_BREAKDOWN | `02_SEASONS/S01/EP01/07_SHOTS/` 씬 9 · 샷 49 | DRAFT (P1, 조건부 승인) |
-| SOURCE_FACT_QA | `05_HISTORY_DATABASE/{sources,facts,rights}/` + `15_QA/P3_LEDGER_REPORT.md` | DONE (P3) · YELLOW_ACTIVE 1건 편집 전 해소 |
+| SOURCE_FACT_QA | `05_HISTORY_DATABASE/{sources,facts,rights}/` + `15_QA/P3_LEDGER_REPORT.md` | DONE (P3) · YELLOW_ACTIVE 해소 (2026-09-13) |
 | SHOT_ROUTER | `07_SHOTS/router_decision_*` 49 + `15_QA/P4_ROUTER_REPORT.md` | DONE (P4) · **잠금 D-024** |
 | REAL_SHOOT | `ep01-field-shoot-plan` 체크리스트 | 계획 APPROVED · **촬영 미실행** |
 | ARCHIVE | `ep01-archive-photos` (1973 NRICH), `ep01-artifact-library` | 선별 APPROVED · 파일 다운로드 미실행 |
@@ -159,6 +159,8 @@
 ---
 
 ## 최근 변경 (최신순)
+
+- **2026-09-13 Claude Code (D-029 에이전트)** — 권리 조사: 국립경주박물관 페이지 원문 확인 → 가슴걸이·금제 관모·유리잔 공공누리 1유형 → GREEN 3건 생성, S02_SH003·S05_SH001 연결 교체, OTHER_OBJECTS BACKUP_ONLY. **YELLOW_ACTIVE 해소.** 데이터 정리: H05 라벨 2개 · S03_SH002 권리 메모 · G04 자갈 사실 연결.
 
 - **2026-09-13 사용자** — **D-029.** Codex 중계 종료 → 봇 자체 멀티 에이전트 (작업 에이전트 · Codex 역할 반박 검수 · 검증기 · push). 유료·그림·역사·main 관문 유지. H06 3번째 시도는 사용자 결정 대기.
 
