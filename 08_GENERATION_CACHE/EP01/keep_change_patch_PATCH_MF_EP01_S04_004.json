@@ -1,0 +1,24 @@
+{
+  "patch_id": "PATCH_MF_EP01_S04_004",
+  "shot_id": "MASTER_FRAME:EP01_S04_MASTER_V01",
+  "from_version": "V04",
+  "to_version": "V05",
+  "fix_reason": "CHARACTER_IDENTITY",
+  "keep": [
+    "early construction stage: open-topped chamber, low stone course, no mound",
+    "timber yard left, stone carrying middle ground",
+    "hemp labourer costume (LITE crowd lock)",
+    "camera 1.6 m / 28mm feel, overcast dust",
+    "full frame, clean early horizon, wooden tools only"
+  ],
+  "change": [
+    "NOT an edit: fresh text-only generation without the laborer full_body image reference (its three bearded headbanded faces were cloned across the crowd)",
+    "explicit face/age/height/beard/headband diversity, no cloned faces",
+    "earlier fixes stated as bans from the start: letterbox, utility poles/buildings/field grid, tape measure, metal tools"
+  ],
+  "reason": "Owner review of V03/V04: labourers look copy-pasted (same beard, headband, age). Crowd lock requires varied faces and mixed heights. The single reference image likely anchored all faces.",
+  "requested_by": "사용자 (2026-09-13 '진행')",
+  "created_at": "2026-09-13",
+  "resulting_prompt_id": "PRM_MF_EP01_S04_MASTER_V05",
+  "resulting_generation_id": null
+}
