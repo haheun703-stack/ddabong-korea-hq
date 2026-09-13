@@ -21,3 +21,9 @@
 ## 재편집 결과 (D-021, 2 credits, 승인 5/12)
 
 `MP_ATTENDANT_FULL_BODY_V03_dc7f38ed.png` **PARTIAL** — 왼쪽 남자 옷고름 제거 성공, 여자 유지. **가운데 젊은 남자 옷고름 남음·허리띠 없음.** D-021 에 따라 편집 반복 중단 → 방법 전환 사용자 결정 대기.
+
+## 방법 A 결과 (새로 생성, 2 credits, 승인 6/12)
+
+`MP_ATTENDANT_FULL_BODY_V04_84c0fdbc.png` **PASS** — 세 명 모두 가슴 옷고름 없음, 허리 천띠로만 여밈. 얼굴은 새 인물 (LITE 군중이라 허용). 시종 2단계 문장도 같은 여밈 문구로 V03 저장.
+
+**1단계 사람 확인 대기**: 노동자 `MP_LABORER_FULL_BODY_V02_412a72bc.png` · 시종 `MP_ATTENDANT_FULL_BODY_V04_84c0fdbc.png` → OK 면 2단계 4장 (남은 6 호출).

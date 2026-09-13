@@ -1,0 +1,19 @@
+{
+  "provider": "Higgsfield",
+  "job_id": "84c0fdbc-1c5c-4edd-bb35-b1836ae14288",
+  "job_set_type": "nano_banana_2",
+  "display_name": "Nano Banana Pro",
+  "status": "completed",
+  "created_at": "2026-09-13T04:50:48Z",
+  "params": {
+    "width": 2528,
+    "height": 1696,
+    "aspect_ratio": "3:2",
+    "resolution": "2k",
+    "batch_size": 1,
+    "input_images": [],
+    "prompt": "Exactly THREE different people, two men and one woman, nobody else. Early Silla Korea, 5th century, funeral attendants and artisans. FULL BODY: head to toe, standing side by side, arms relaxed, plain flat earth background, whole costume visible. Varied realistic Korean faces, ages 20s to 50s, calm focused expressions, natural builds, hair neatly tied in a topknot with cloth or a simple cloth cap for the men, neatly tied hair for the woman; no single hero face. Costume: finer undyed hemp or ramie plain-weave, narrow-sleeved hip-length jackets with straight collar wrapping right over left. Jacket fastening: NO ribbon ties and NO bows on the chest; every jacket on all three people is closed only by a plain cloth belt tied at the waist, and the chest front is completely plain. The men in narrow to medium trousers, the woman in the same belted jacket over a long plain skirt; low cloth shoes or straw sandals; colours only undyed white, black and grey-brown. Photorealistic historical documentary still, style B Documentary Reenactment, natural skin texture, not glossy, natural proportions. No Joseon hanbok silhouette, no goreum ribbon ties, no court robes, no fantasy priest robes, no Chinese imperial dress, no official colours (no purple, crimson, blue or yellow garments). No tiled roofs, no buildings. No text, no watermark, no logo."
+  },
+  "retrieved_at": "2026-09-13",
+  "note": "job_status result. Result/CDN URLs omitted. params.prompt = text actually sent (identical to prompt V05)."
+}
