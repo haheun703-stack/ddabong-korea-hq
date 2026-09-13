@@ -160,6 +160,8 @@
 
 ## 최근 변경 (최신순)
 
+- **2026-09-13 Claude Code (D-025 자율 + 검수 에이전트)** — 무료 작업 2건: 촬영 계획 `08_REAL_FOOTAGE/SHOOT_PLAN_EP01_V01.md` (10컷 87초, 매치컷·시선·오프닝 반복, 초록 잔디 조건) · 그래픽 명세 v2 `14_EDIT/GRAPHICS_SPEC_EP01_V2.md` (G01–G12 이관 + G13, 사실 기록 범위만). 둘 다 검수 에이전트 PASS WITH FIXES → 수정 반영. Master Frame 계획 `15_QA/MASTER_FRAME_PLAN_EP01.md` (S06 층 순서 충돌 A/B). **사람 결정 대기 목록은 채팅으로 일괄 보고.**
+
 - **2026-09-13 사용자** — **D-025.** 운영 방식: 무료 작업 자율 + 검수 에이전트 점검, **검증 통과 시 작업 브랜치 push 자동** (D-007 대체). 사람 관문 = 유료 승인 · 그림 OK/FIX · 역사 해석 · main 병합. Codex 교차 검수는 큰 단계 완료 시에만.
 
 - **2026-09-13 사용자** — **D-024.** P-011 종결: 라우터 49건 잠금 (46 ACCEPTED · H01 · H03 → FLOW_VEO · H07 AI_STILL), `FLOW_VEO` 스키마 추가, **EP01 Higgsfield 0건**. 검증기: 라우터 PENDING 샷 generation FAIL.
