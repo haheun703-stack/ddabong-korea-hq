@@ -22,13 +22,13 @@
     },
     "steps": "1) FULL_BODY x2 (text only) -> human check -> 2) WALKING + COSTUME_DETAIL x2 each, image_references = that group's APPROVED full_body",
     "provider_model": "Higgsfield / Nano Banana Pro (job type nano_banana_2), 2k, 3:2",
-    "expected_attempts": 9,
-    "estimated_cost_range": "12–18 credits (2 credits x 6 images, + up to 3 FIX retries)",
+    "expected_attempts": 12,
+    "estimated_cost_range": "12–24 credits (2 credits x 6 images + up to 6 FIX calls; D-021 expanded from 9 to 12 calls)",
     "continuity_risk": "LOW-MEDIUM - LITE_CROWD (no recurring face); costume consistency anchored by step-1 full_body"
   },
   "decision": "APPROVE",
   "fix_reason": null,
   "decided_by": "사용자",
   "decided_at": "2026-09-13T06:00:00Z",
-  "note": "D-020 사용자 APPROVE (2026-09-13). 군중 LITE 6장, 최대 9 호출. 1단계 full_body 2 → 사람 확인 → 2단계 4. 각 prompt 의 assembled_text 그대로 전송 (D-016)."
+  "note": "D-020 사용자 APPROVE (2026-09-13). 군중 LITE 6장, 최대 9 호출. 1단계 full_body 2 → 사람 확인 → 2단계 4. 각 prompt 의 assembled_text 그대로 전송 (D-016). D-021 (사용자 2026-09-13): 한도 9 → 12 호출 (시종 full_body 재편집 + 2단계 여유)."
 }

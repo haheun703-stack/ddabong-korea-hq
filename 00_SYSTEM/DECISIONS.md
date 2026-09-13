@@ -99,6 +99,9 @@
 ### D-020 · 2026-09-13 · 군중 LITE Master Pack 승인 (사용자)
 **승인** `APR_EP01_MP_CROWD_001` APPROVE — 노동자 3 · 시종 3 (full_body · walking · costume_detail, 한 장에 3명, 3:2), 최대 9 호출 (12–18 credits). 1단계 full_body 2장 → 사람 확인 → 2단계 나머지 4장 (해당 무리 full_body 를 복식 참조). 전송은 저장된 V02 문장 그대로 (D-016).
 
+### D-021 · 2026-09-13 · 군중 시종 full_body 재편집 · 승인 한도 확대 (사용자)
+**결정** 시종 full_body 편집 PARTIAL(여자만 옷고름 제거) → 남자 2명만 위치 지정 재편집 1회 (`PRM_…ATTENDANT…_FULL_BODY_V04`, `PATCH_MP_ATTENDANT_FULL_BODY_002`). `APR_EP01_MP_CROWD_001` 한도 9 → **12 호출** (최대 24 credits). 재편집이 또 실패하면 편집 반복하지 않고 방법 전환을 사용자에게 제안.
+
 ---
 
 ## 승인 대기 (P)
