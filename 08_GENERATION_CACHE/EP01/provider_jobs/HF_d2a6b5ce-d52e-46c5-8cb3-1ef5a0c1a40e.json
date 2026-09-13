@@ -1,0 +1,24 @@
+{
+  "provider": "Higgsfield",
+  "job_id": "d2a6b5ce-d52e-46c5-8cb3-1ef5a0c1a40e",
+  "job_set_type": "nano_banana_2",
+  "display_name": "Nano Banana Pro",
+  "status": "completed",
+  "created_at": "2026-09-13T04:56:20Z",
+  "params": {
+    "width": 2528,
+    "height": 1696,
+    "aspect_ratio": "3:2",
+    "resolution": "2k",
+    "batch_size": 1,
+    "input_images": [
+      {
+        "id": "84c0fdbc-1c5c-4edd-bb35-b1836ae14288",
+        "type": "image_job"
+      }
+    ],
+    "prompt": "Use the reference image for the costume only: keep the clothing identical in cut, fabric and colour; the faces must be different people. Exactly THREE different people, two men and one woman, nobody else. Early Silla Korea, 5th century, funeral attendants and artisans. COSTUME DETAIL: close-up from chest to waist of the three attendants standing side by side, showing the plain chest fronts with collars wrapping right over left and no ribbon ties, the plain cloth waist belts, the narrow sleeve ends and wrists, and their hands clearly; ramie and hemp weave visible; faces cropped out above the chin; soft daylight, plain earth background. Costume: finer undyed hemp or ramie plain-weave, narrow-sleeved hip-length jackets with straight collar wrapping right over left; jacket fastening: NO ribbon ties and NO bows on the chest, every jacket is closed only by a plain cloth belt tied at the waist and the chest front is completely plain; the men in narrow to medium trousers, the woman in the same belted jacket over a long plain skirt; low cloth shoes or straw sandals; colours only undyed white, black and grey-brown. Photorealistic historical documentary still, style B Documentary Reenactment, natural skin texture, not glossy, natural proportions. No Joseon hanbok silhouette, no goreum ribbon ties, no court robes, no fantasy priest robes, no Chinese imperial dress, no official colours (no purple, crimson, blue or yellow garments). No tiled roofs, no buildings. No text, no watermark, no logo."
+  },
+  "retrieved_at": "2026-09-13",
+  "note": "generate_image_batch/jobs_wait result. Result/CDN URLs omitted. params.prompt = text actually sent (identical to prompt V03)."
+}

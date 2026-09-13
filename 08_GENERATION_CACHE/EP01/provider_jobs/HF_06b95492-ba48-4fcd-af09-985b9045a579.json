@@ -1,0 +1,24 @@
+{
+  "provider": "Higgsfield",
+  "job_id": "06b95492-ba48-4fcd-af09-985b9045a579",
+  "job_set_type": "nano_banana_2",
+  "display_name": "Nano Banana Pro",
+  "status": "completed",
+  "created_at": "2026-09-13T04:56:20Z",
+  "params": {
+    "width": 2528,
+    "height": 1696,
+    "aspect_ratio": "3:2",
+    "resolution": "2k",
+    "batch_size": 1,
+    "input_images": [
+      {
+        "id": "412a72bc-f3f1-4955-8d3a-36e1e6306d1f",
+        "type": "image_job"
+      }
+    ],
+    "prompt": "Use the reference image for the costume only: keep the clothing identical in cut, fabric and colour; the faces must be different people. Exactly THREE different men, nobody else. Early Silla Korea, 5th century, burial-mound construction labourers. COSTUME DETAIL: close-up from chest to waist of the three labourers standing side by side, showing the straight collars closing right over left, the plain cloth waist cords, the narrow sleeve ends and their rough working hands; coarse hemp weave visible; faces cropped out above the chin; soft daylight, plain earth background. Costume on all three: undyed coarse hemp plain-weave short jacket to hip length with narrow sleeves and straight collar closing right over left, narrow trousers bound at the shin, plain cloth waist cord with no metal, straw sandals or bare feet; colours only natural white, raw fibre and black; worn, dusty cloth. Photorealistic historical documentary still, style B Documentary Reenactment, natural skin texture, not glossy, natural proportions. No Joseon hanbok silhouette, no gat hat, no Ming or Qing dress, no samurai elements, no modern fabric, no purple, crimson, blue or yellow garments. No tiled roofs, no buildings. No text, no watermark, no logo."
+  },
+  "retrieved_at": "2026-09-13",
+  "note": "generate_image_batch/jobs_wait result. Result/CDN URLs omitted. params.prompt = text actually sent (identical to prompt V02)."
+}

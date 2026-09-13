@@ -27,7 +27,7 @@
 - graphics-spec v2 (G13 추가) — legacy HTML 은 수정하지 않고 새 문서로.
 - P5 Review UI / P6 Money Gate 어댑터 설계 (유료 없음).
 
-**유료 생성 현황 (D-015)**: Money Gate OPEN (₩40,000 / 소진 36.12 credits, KRW 환산 P-012). **원로 Master Pack 10/10 APPROVED → CHARACTER_MASTER_APPROVED (D-019)**. 다음: 군중 LITE Pack 6 (별도 approval). AI 샷은 P-011 ACCEPT + `CHARACTER_MASTER_APPROVED` + master_frame APPROVED 뒤.
+**유료 생성 현황 (D-015)**: Money Gate OPEN (₩40,000 / 소진 44.12 credits, KRW 환산 P-012). **원로 Master Pack 10/10 APPROVED → CHARACTER_MASTER_APPROVED (D-019)**. 다음: 군중 LITE Pack 6 (별도 approval). AI 샷은 P-011 ACCEPT + `CHARACTER_MASTER_APPROVED` + master_frame APPROVED 뒤.
 
 ## P2 사전 점검 — Pre-flight (2026-09-11 · DONE, 생성 0)
 
@@ -138,7 +138,7 @@
 | 항목 | 값 |
 |---|---|
 | EP01 예산 | **₩40,000** (D-015) — `08_GENERATION_CACHE/EP01/cost_COST_EP01_20260911.json` |
-| 소진 | 36.12 credits (19 호출: 원로 13 · 군중 6) — KRW 환산 P-012 |
+| 소진 | 44.12 credits (23 호출: 원로 13 · 군중 10) — KRW 환산 P-012 |
 | 게이트 상태 | `OPEN` — 배치 1 승인 `APR_EP01_MP_ELITE_BATCH1_001` |
 
 ---
@@ -159,6 +159,8 @@
 ---
 
 ## 최근 변경 (최신순)
+
+- **2026-09-13 Claude Code** — 군중 2단계 4장 생성 (8 credits, 승인 10/12), 봇 판정 전부 PASS (참조 얼굴이 따라옴 · 노동자 걷기 정면 · 시종 옷감 새것 느낌 메모). `08_GENERATION_CACHE/EP01/MP_CROWD/REVIEW_CROWD_STEP2.md` → **사용자 확인 대기**. EP01 소진 44.12 credits.
 
 - **2026-09-13 사용자** — **D-022.** 군중 full_body 2장 APPROVED (노동자 V02 · 시종 V04). 2단계 4장 진행.
 
