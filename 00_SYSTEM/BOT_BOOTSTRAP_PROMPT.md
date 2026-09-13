@@ -54,4 +54,4 @@ Output discipline:
 - Always report what changed, what remains, and which gate is next.
 - Update both source files in GitHub and a viewable HTML page in Web HQ whenever project state changes.
 - Every new data record must follow `00_SYSTEM/schemas/*.schema.json`; run `python 00_SYSTEM/schemas/validate.py` before committing.
-- Commit locally; show a change summary and wait for human confirmation before `git push` (DECISIONS D-007).
+- Commit locally; if `00_SYSTEM/schemas/validate.py` fully passes (incl. cross-reference), push the working branch automatically and then report a short plain-Korean summary (DECISIONS D-025, supersedes D-007). Never push on validation failure; merging/pushing `main`, force-push and history rewrites still need human OK.

@@ -118,6 +118,11 @@
 **유지 주의** YELLOW_ACTIVE 권리 1건 (`RTS_GNM_OTHER_OBJECTS_001` → S02_SH003 · S05_SH001) 편집 확정 전 해소 필수 (판정과 별개). Flow/Veo 자동 연결 도구 없음 → 라우터만 확정, 실제 생성은 별도 승인 + 별도 Money Gate. Blender 자동화(P7) 전 → 카메라 초안 기준 수작업 허용.
 **근거** `02_SEASONS/S01/EP01/15_QA/P011_ROUTER_FINAL.md`
 
+### D-025 · 2026-09-13 · 운영 방식: 자율 실행 + 검수 에이전트 · 검증 통과 시 push 자동 (사용자)
+**배경** 사용자가 Codex ↔ Claude Code 사이에서 결과를 복붙으로 중계하던 방식은 LLM 2개를 사람이 연결하는 셈이라 비효율.
+**결정** ① 무료 작업은 봇이 계획 → 실행 → 검수 에이전트(별도 컨텍스트)로 OS 규칙 점검 → `validate.py` → 커밋 → push 까지 자율. ② **검증 전체 PASS + 상호참조 OK 이면 작업 브랜치 push 자동** (D-007 의 "push 전 확인" 대체). 검증 실패 시 push 금지. ③ 사람 관문 유지: 유료 생성 승인(Money Gate) · 그림 최종 OK/FIX · 역사 해석 결정 · `main` 병합/push · force push·히스토리 재작성. ④ Codex 교차 검수는 큰 단계 완료 시에만 (같은 계열 모델 착각 보완).
+**영향** AGENT_RULES §Git · 단축 명령, BOT_BOOTSTRAP_PROMPT. Web HQ(GitHub Pages)는 main 배포라 작업 브랜치 자동 push 로 공개 페이지는 바뀌지 않음.
+
 ---
 
 ## 승인 대기 (P)
