@@ -31,9 +31,9 @@
     "estimated_cost_range": "14–20 credits (2 credits x 7 images, + up to 3 FIX retries)",
     "continuity_risk": "MEDIUM - face and costume anchored by 4 APPROVED images; expression_sheet (5 faces in one image) and walking are the riskiest"
   },
-  "decision": "PENDING",
+  "decision": "APPROVE",
   "fix_reason": null,
   "decided_by": "사용자",
-  "decided_at": "2026-09-13T00:00:00Z",
-  "note": "준비만 됨 (decided_at = 준비 시각, 결정 시 갱신). 사용자 APPROVE 전 전송 금지. 전송은 각 prompt 의 assembled_text 그대로."
+  "decided_at": "2026-09-13T05:00:00Z",
+  "note": "D-018 사용자 APPROVE (2026-09-13). 7장, 최대 10 호출. 각 prompt 의 assembled_text 그대로 전송 (D-016)."
 }

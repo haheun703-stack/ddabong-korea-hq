@@ -86,6 +86,11 @@
 **다음** 편집본 사람 확인 → hero APPROVED 되면 4장 완료 → 나머지 6 + back_view 는 새 approval.
 **결과** hero V03 (job 5de27748, 2 credits) 사용자 APPROVE (2026-09-13) → 배치 1 4장 APPROVED.
 
+### D-018 · 2026-09-13 · Master Pack 배치 2 승인 · H07 정지 이미지 · 크레딧 공용 (사용자)
+**승인** `APR_EP01_MP_ELITE_BATCH2_001` APPROVE — 원로 나머지 7장 (three_quarter_right · profile · neutral_standing · walking · costume_detail · expression_sheet · back_view), 최대 10 호출 (14–20 credits). 참조 = hero V03 + full_body V01. 전송은 저장된 V02 문장 그대로 (D-016).
+**H07** `EP01_S08_SH002` HIGGSFIELD → **AI_STILL** (라우터 OVERRIDDEN, P-011 중 1건 확정). 현장 SH003 착지 구도 촬영 뒤 생성.
+**크레딧** Higgsfield 계정은 다른 작업과 공용 → 잔액 차이는 EP01 소진이 아니다. EP01 소진은 generation 기록(job 단위) 합계만으로 계산.
+
 ---
 
 ## 승인 대기 (P)

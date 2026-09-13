@@ -160,6 +160,8 @@
 
 ## 최근 변경 (최신순)
 
+- **2026-09-13 사용자** — **D-018.** 배치 2 (원로 나머지 7장) APPROVE · H07 → AI_STILL (OVERRIDDEN) · Higgsfield 크레딧은 다른 작업과 공용, EP01 소진은 job 기록 합계로만.
+
 - **2026-09-13 사용자 + Claude Code** — **D-017 배치 1 판정.** front · three_quarter_left · full_body APPROVED. hero 는 배경 조선식 기와지붕만 FIX → `PRM_…_HERO_V04` 저장 후 그대로 전송, 기존 이미지 편집 1회 (2 credits, 승인 6/8) → `MP_ELITE_HERO_V03_5de27748.png` 사용자 APPROVE → 배치 1 4장 완료. 소진 합계 10.12 credits.
 
 - **2026-09-13 사용자** — **D-016.** `6c66f13` p1-continuity push 승인 (main 보류, 유료 정지 유지). Sent Prompt Rule 정본화 (AGENT_RULES §1 #8). 우선순위: 배치 1 Work 판정 → hero 기와지붕 → H07 → Master Pack 확장 → Web HQ(병합 시).
