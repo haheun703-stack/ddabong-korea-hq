@@ -124,9 +124,9 @@
 | ROUGH_CUT | `ep01-premiere-roughcut` 0:00–7:05 | 설계 APPROVED |
 
 **다음 실제 작업 (순서)**
-1. 경주 현장 촬영 (좁은 주제 + 넓은 클러스터 촬영: 불국사·다보탑/석가탑·석굴암·첨성대·박물관·월정교/동궁). 매치컷 착지 구도(`EP01_S08_SH003`)는 반드시 삼각대로 찍고 `LOC_CHEONMACHONG_V01.spatial_lock.match_cut_frame (D-026)` 에 기록.
+1. 경주 현장 촬영 — **필수는 대릉원·천마총 (D-026 #4, 월성·사찰은 선택)**. 계획 `08_REAL_FOOTAGE/SHOOT_PLAN_EP01_V01.md`, 준비 점검 `15_QA/SHOOT_READINESS_20260913.md` (촬영 허가 Q1–Q5 · 사용자 결정 D1–D7 대기). 매치컷 착지 구도(`EP01_S08_SH003`)는 반드시 삼각대로 찍고 `LOC_CHEONMACHONG_V01.spatial_lock.match_cut_frame (D-026)` 에 기록.
 2. 유물/아카이브 실제 파일 다운로드·정리 → `02_SOURCES/` 에 `source.json` / `rights.json` 인스턴스.
-3. 필요한 Higgsfield 컷만 선별 생성 (Character Master Pack + Money Gate 승인 후).
+3. AI 샷: H06 사진 완료 (D-031). 영상 H01–H05 는 P-012 (실제 청구액·월 크레딧) 확정 + Money Gate 승인 후 (D-028 Higgsfield · Kling 3.0). H07 은 현장 촬영 뒤.
 4. 내레이션 녹음 → Premiere 러프컷 → 수정 → 공개.
 
 **주의**: OS 예시의 `EP001_HWANGNYONGSA` 는 템플릿. 활성 EP01 을 덮어쓰지 않는다 (D-006).
@@ -159,6 +159,8 @@
 ---
 
 ## 최근 변경 (최신순)
+
+- **2026-09-13 Claude Code (D-029 에이전트)** — 현장 촬영 준비 점검 `15_QA/SHOOT_READINESS_20260913.md`: 샷 목록 10개·87초 계획과 일치. 막는 것 4가지 — 촬영 허가 미확인 (Q1–Q5), 촬영 날짜·잔디 색 (H07 'green mound'), 직접 촬영 권리 증빙 절차 없음, 상태 문서 옛 촬영 목록 (이번에 정리). 사용자 결정 D1–D7.
 
 - **2026-09-13 Claude Code** — 권리 이미지 크기 실측: 유리잔 3000px (원본 최대 11605px) · 말다래 3000×1933 (원본 5454×3516) · 가슴걸이 2000×3000 · 금제 관모 3000×2000 → 4건 모두 1080p 전체 화면 가능. 가슴걸이·금제 관모 출처도 e뮤지엄으로.
 
