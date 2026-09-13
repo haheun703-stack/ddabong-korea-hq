@@ -9,12 +9,12 @@
   "attribution_required": "YES",
   "attribution_text": "Source: National Research Institute of Cultural Heritage (NRICH), Cheonmachong excavation photographs, 1973, KOGL Type 1.",
   "expiration": null,
-  "proof": null,
+  "proof": "05_HISTORY_DATABASE/rights/proof/RTS_NRICH_1973_PHOTOS_001_20260913.html",
   "research_permission": "YES",
   "media_reuse_permission": "YES",
   "status": "GREEN",
   "checked_at": "2026-09-11",
   "checked_by": "Claude Code (Story Engine Fact Check / Quality Engine Rights)",
-  "notes": "archive-photos 페이지에서 항목별 제1유형 확인. 다운로드 시 파일마다 라벨 재확인 후 proof 캡처 저장. 2019 간행물 PDF 캡처는 금지 (별도 RED).",
+  "notes": "archive-photos 페이지에서 항목별 제1유형 확인. 다운로드 시 파일마다 라벨 재확인 후 proof 캡처 저장. 2019 간행물 PDF 캡처는 금지 (별도 RED). proof 저장 2026-09-13: 국가유산 포털 페이지 원문에 '제 1유형' 표기 확인 (파일별 라벨은 다운로드 시 재확인).",
   "usage_tier": "ACTIVE"
 }

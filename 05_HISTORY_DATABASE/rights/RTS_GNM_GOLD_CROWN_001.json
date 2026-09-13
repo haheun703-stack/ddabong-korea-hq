@@ -9,12 +9,12 @@
   "attribution_required": "YES",
   "attribution_text": "Source: Gyeongju National Museum, Gold crown from Cheonmachong, KOGL Type 1.",
   "expiration": null,
-  "proof": null,
+  "proof": "05_HISTORY_DATABASE/rights/proof/RTS_GNM_GOLD_CROWN_001_20260913.html",
   "research_permission": "YES",
   "media_reuse_permission": "YES",
   "status": "GREEN",
   "checked_at": "2026-09-11",
   "checked_by": "Claude Code (Story Engine Fact Check / Quality Engine Rights)",
-  "notes": "visual-assets B1 공식 1순위.",
+  "notes": "visual-assets B1 공식 1순위. proof 저장 2026-09-13: 페이지 원문 '금관 저작물은 \"공공누리\" 출처표시 조건에 따라 이용할 수 있습니다. (1유형)' 확인.",
   "usage_tier": "ACTIVE"
 }

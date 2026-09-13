@@ -1,0 +1,884 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<!--  익스에서만 나오게 처리 해주세요 -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<!--  익스에서만 나오게 처리 해주세요 -->
+<meta name="viewport" content="user-scalable=no,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,width=device-width" />
+<meta name="author" content="" /><!-- 작성자//메인은 사이트네임,서브는 각 컨텐츠 담당자  -->
+<meta name="keywords" content="" /><!-- 키워드 //SEO검색 관련으로 인하여 삽입 // 각 컨텐츠 별로 추가 또는 컨텐츠타이틀 게시판view는 게시글 제목 -->
+
+<meta name="copyright" content="" />
+<!-- <meta name="robots" content="noindex"> -->
+
+
+<!-- 기본 셋팅시 모바일 메신저로 넘기기 위한 셋팅 -->
+<meta property="og:type" content="website" />
+<meta property="og:title" content="국립경주박물관" />
+<meta property="og:image" content="http://gyeongju.museum.go.kr/kor/images/common/logo.png" />
+<meta property="og:description" content="국립경주박물관" />
+<!-- 기본 셋팅시 모바일 메신저로 넘기기 위한 셋팅 -->
+
+<!-- <title>국립경주박물관</title> -->
+<title>보기 > 중요 문화유산 > 소장품 > 국립경주박물관</title>
+<link rel="stylesheet" href="/site/common/css/font-awesome.min.css" type="text/css" media="all" />
+<link rel="stylesheet" href="/kor/css/common/common.css" type="text/css" media="all" />
+<link rel="stylesheet" href="/kor/css/common/layout.css?ver=1.2" type="text/css" media="all" />
+<link rel="stylesheet" href="/site/common/css/cmpt.css" type="text/css" media="all" />
+
+<link rel="stylesheet" href="/kor/css/common/prog.css" type="text/css" media="all" />
+<link rel="stylesheet" href="/site/common/css/ui.css" type="text/css" media="all" />
+<link rel="stylesheet" href="/kor/css/content.css?ver=20220804" type="text/css" media="all" />
+
+<link rel="stylesheet" href="/_prog/bbs/css/bodo/style.css" type="text/css" />
+<link rel="stylesheet" href="/_prog/bbs/css/notice/style.css" type="text/css" />
+<link rel="stylesheet" href="/_prog/bbs/css/photo/style.css" type="text/css" />
+<link rel="stylesheet" href="/_prog/bbs/css/faq/style.css" type="text/css" />
+<link rel="stylesheet" href="/_prog/bbs/css/vr_photo/style.css" type="text/css" />
+<link rel="stylesheet" href="/_prog/bbs/css/style.css" type="text/css" />
+<link rel="stylesheet" href="/kor/css/sub/sub4_prog.css" type="text/css"  media="all" /><!-- basic script -->
+<script src="/common/js/jQuery/jquery.min.js"></script>
+<script src="/common/js/jQuery/jquery-migrate.min.js"></script>
+<script type="text/javascript" src="/kor/js/jquery.touchSlider.js"></script>
+<script type="text/javascript" src="/kor/js/stateScrollObj.js"></script>
+<script type="text/javascript" src="/kor/js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/kor/js/jquery-ui-1.8.13.custom.min.js"></script>
+<script type="text/javascript" src="/kor/js/jquery.beforeafter-1.3.js"></script>
+<script type="text/javascript" src="/kor/js/common.js"></script>
+
+<script type="text/javascript" src="/kor/js/top-popup.js"></script>
+<script type="text/javascript" src="/kor/js/common-popup.js"></script>
+<script type="text/javascript" src="/kor/js/common-scroll.js"></script>
+
+<script type="text/javascript" src="/kor/js/script.js"></script>
+
+
+
+<!-- Print 지우지마세요-->
+<script type="text/javascript" src="/site/common/js/print/jquery.PrintArea.js"></script>
+<script type="text/javascript">
+$(function(){
+
+	function _in(event){
+		$("#txt").printArea({
+			popWd:$("#txt").outerWidth(),
+			popHt:$("#txt").outerHeight(),
+			mode:"popup",
+			popClose:true,
+			extraCss:"/site/common/css/print.css",
+			retainAttr:["id","class"],
+			extraHead:"<meta charset=\"utf-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">"
+		});
+
+		event.preventDefault();
+	}
+
+	$("#print").on("click",_in);
+
+});
+  </script>
+
+<script type="text/javascript" src="/site/demo/js/gnb.js"></script><!-- PC topmenu script -->
+<script type="text/javascript" src="/site/demo/js/topmenu.js"></script><!-- Mobile  topmenu script -->
+<script type="text/javascript" src="/site/demo/js/snb.js"></script><!-- sidemenu script -->
+
+
+<!--[if lt IE 9]>
+<script type="text/javascript" src="/site/common/js/html5.js"></script>
+<![endif]-->
+
+
+<script type='text/javascript'>
+	<!--
+		//페이스북
+		function facebookOpen() {
+			var titl = "국립경주박물관";
+			titl = titl.replace ('"', '&quot;');
+			titl = titl.replace ('"', '&quot;');
+			titl = encodeURIComponent(titl);
+			var link = encodeURIComponent("https://gyeongju.museum.go.kr/site/kor/html/sub04/0406.html?GotoPage=32&dvs_code=&mng_no=59&mode=V");
+			var url = "http://www.facebook.com/sharer.php?u=" + link + "&t=" + titl;
+			snswindowOpen (url, 900, 450, 'no');
+		}
+		//twitter
+		function twitterOpen() {
+			var titl = "국립경주박물관";
+			titl = titl.replace ('"', '&quot;');
+			titl = titl.replace ('"', '&quot;');
+			titl = encodeURIComponent(titl);
+			var link = encodeURIComponent("https://gyeongju.museum.go.kr/site/kor/html/sub04/0406.html?GotoPage=32&dvs_code=&mng_no=59&mode=V" );
+			var url = "http://twitter.com/share?text=" + titl + "&url=" + link;
+			snswindowOpen (url, 800, 400, 'yes');
+		}
+		function snswindowOpen () {
+			var nUrl; var nWidth; var nHeight; var nLeft; var nTop; var nScroll;
+			nUrl = arguments[0];
+			nWidth = arguments[1];
+			nHeight = arguments[2];
+			nScroll = (arguments.length > 3 ? arguments[3] : "no");
+			nLeft = (arguments.length > 4 ? arguments[4] : (screen.width/2 - nWidth/2));
+			nTop = (arguments.length > 5 ? arguments[5] : (screen.height/2 - nHeight/2));
+			winopen=window.open(nUrl, 'SNS', "left="+nLeft+",top="+nTop+",width="+nWidth+",height="+nHeight+",scrollbars="+nScroll+",toolbar=no,location=no,directories=no,status=no,menubar=no,resizable=no");
+		}
+		//카카오스토리 공유
+		function kakaoOpen() {
+			var titl = "국립경주박물관";
+			titl = titl.replace ('"', '&quot;');
+			titl = titl.replace ('"', '&quot;');
+			titl = encodeURIComponent(titl);
+			var link = encodeURIComponent("https://gyeongju.museum.go.kr/site/kor/html/sub04/0406.html?GotoPage=32&dvs_code=&mng_no=59&mode=V");
+			var url = "https://story.kakao.com/share?url=" + link ;
+			snswindowOpen (url, 900, 450, 'no');
+		}
+		//naver
+	    function naverOpen() {
+	    	var titl = "국립경주박물관";
+			titl = titl.replace ('"', '&quot;');
+			titl = titl.replace ('"', '&quot;');
+			titl = encodeURIComponent(titl);
+			var link = encodeURI(encodeURIComponent("https://gyeongju.museum.go.kr/site/kor/html/sub04/0406.html?GotoPage=32&dvs_code=&mng_no=59&mode=V" ));
+			var url = "http://share.naver.com/web/shareView.nhn?url=" + link + "&title=" + titl;
+			snswindowOpen (url, 800, 400, 'yes');
+	    }
+		//-->
+</script>
+
+</head>
+<body>
+<!-- 스킵네비케이션시작 -->
+<div id="skipnavi">
+		<a href="#txt">본문 바로가기</a>
+		<a href="#gnb_layout">대메뉴 바로가기</a>
+</div>
+<!-- 스킵네비케이션끝 -->
+
+
+
+<!-- <script>
+	$(function(){
+		$(".con3 .sliderBox ul li a").attr("tabindex","-1")
+	})
+</script> -->
+<!-- slide popup :s -->
+<div id="open_popup_wrap">
+    <div class="open_popup">
+        <div class="open_popup_box">
+            <div class="control">
+                <div class="main_control">
+                    <span class="pointer" id="pointer">
+                        <a href="#pointer">1</a>
+                        <a href="#pointer">2</a>
+                        <a href="#pointer">3</a>
+                    </span>
+                    <button type="button" class="ir stop" data-control="stop">멈춤</button>
+                    <button type="button" class="ir play" data-control="play">시작</button>
+                </div>
+            </div>
+            <!-- 팝업 -->
+            <div class="popup_box">
+                <ul id="slide_pop_list">
+                	
+										 <li class='n1'><a href='http://gyeongju.museum.go.kr/_prog/bbs/?mode=V&site_dvs_cd=kor&menu_dvs_cd=0701&code=0701&no=5538&GotoPage=1'  target='_blank'   id='bn1' title='새창열림'><img src='/_prog/download/?site_dvs_cd=kor&amp;func_gbn_cd=up_popup_zone&amp;filename=20260907094327_006exiltefhxclco6g4zjtvuxxwmtk.jpg' alt='상설전시 정기 휴실
+: 9.14.(월)/상설전시실, 어린이박물관, 신라천년보고, 신라천년서고
+신라미술관 불교조각실 임시 휴실
+9.18.(수)/신라미술관 1층 불교조각실'/></a></li>
+									                </ul>
+            </div>
+            <div class="pop_close">
+                <form name="notice_form2">
+                    <span class="today_close"><input type="checkbox" name="chkbox2" id="chkbox2" /><label for="chkbox2">오늘하루 그만 보기</label></span><a href="#chkbox2" class="close_btn"><span class="skip">팝업존 닫기</span></a>
+                </form>
+            </div>
+        </div>
+        <script type="text/javascript">
+            (function() {
+                var param = "#open_popup_wrap",
+                    btn = ".control",
+                    obj = "#slide_pop_list li",
+                    auto = true,
+                    f = 500,
+                    s = 3000,
+                    p = {
+                        use: true,
+                        path: ".pointer"
+                    },
+                    h = true;
+                popzone(param, btn, obj, auto, f, s, p, h);
+            }());
+        </script>
+    </div>
+</div>
+<!-- slide popup :e -->
+
+<!-- 탑 시작 -->
+<div id="top_layout" class="layout_sub">
+    <div class="utile_wrap">
+        <ul>
+            <li><a href="/kor/">홈으로</a></li>
+            <li><a href="/kor/html/sub12/1202.html">로그인</a></li> 			<li><a href="/kor/html/sub10/1001.html">박물관소개</a></li>
+            <li><a href="/kor/html/sub08/0801.html">정보공개</a></li>
+            <li><a href="/kor/html/sub06/06.html">자료저장소</a></li>
+            <li><a href="/kor/html/sub09/09.html">통합예약</a></li>
+            <li class="dropDown">
+                <a href="#gnb_layout">LANGUAGE</a>
+                <ul>
+                    <li><a href="/kor/" target="_blank" title="새창열림">한국어</a>
+                    <li><a href="/eng/" target="_blank" title="새창열림">English</a>
+                    <li><a href="/jpn/" target="_blank" title="새창열림">日本語</a>
+                    <li><a href="/chn/" target="_blank" title="새창열림">中國語</a>
+                </ul>
+            </li>
+            <li class="child"><a href="/kid/" target="_blank" title="새창열림">어린이박물관</a></li>
+        </ul>
+    </div>
+	<header class="top_wrap lo_inner">
+    	<div class="logo">
+        	<h1><a href="/kor/">국립경주박물관</a></h1>
+        </div>
+        <div class="side_wrap">
+        	<a id="btnSearch" class="search" href="#n">
+            	통합<span>검색ㆍ예약</span>
+            </a>
+            <!-- 통합검색 레이어팝업 시작 -->
+            <div id="search_lp">
+                <div class="search_wrap">
+                    <div class="search_inner">
+                        <!-- 검색 시작 -->
+                        <div class="search_box">
+                            <div class="searchBox_inner">
+                                <label for="search_txt">검색어를 입력하세요</label>
+                                <input id="search_txt" name="kwd" type="text" title="통합검색">
+                            </div>
+							<button type="button" OnClick="OnClickTotalSearch();">검색</button>
+                        </div>
+                        <!-- 검색 끝 -->
+                        <!-- 키워드 시작 -->
+                        <dl class="keyword_box">
+                            <dt>검색키워드</dt>
+                            <dd><a href="http://gyeongju.museum.go.kr/mecsearch/search.do?kw=성덕대왕신종">성덕대왕신종</a></dd>
+                            <dd><a href="http://gyeongju.museum.go.kr/mecsearch/search.do?kw=자원봉사">자원봉사</a></dd>
+                            <dd><a href="http://gyeongju.museum.go.kr/mecsearch/search.do?kw=전시해설">전시해설</a></dd>
+                            <dd><a href="http://gyeongju.museum.go.kr/mecsearch/search.do?kw=버스시간표">버스시간표</a></dd>
+                        </dl>
+                        <!-- 키워드 끝 -->
+                        <!-- 통합예약 시작 -->
+                        <div class="reservation_wrap">
+                            <div class="title"><a href="/kor/html/sub09/09.html"><span class="p_br">통합<br>예약</span></a></div>
+                            <div id="reservation_sb" class="reservation_box">
+                                <div class="grap">
+                                    <ul class="obj">
+                                        <!-- <li class="item n1">
+                                            <a href="/kor/html/sub09/0908.html">관람 예약</a>
+                                        </li> -->
+										<li class="item n5">
+                                            <a href="/kor/html/sub09/0907.html">예약조회 및 취소</a>
+                                        </li>
+										<li class="item n7">
+                                            <a href="/kor/html/sub07/0701.html?mode=V&no=5357&site_dvs_cd=kor&menu_dvs_cd=0701">어린이박물관 <br>관람예약</a>
+                                        </li>
+										<li class="item n1">
+                                            <a href="/kor/html/sub09/0901.html">학생단체관람 예약</a>
+                                        </li>										
+                                        <li class="item n2">
+                                            <a href="/kor/html/sub03/0302.html">교육프로그램 예약</a>
+                                        </li>
+                                        <li class="item n3">
+                                            <a href="/kor/html/sub03/0304.html">학술행사 예약</a>
+                                        </li>
+                                        <li class="item n4">
+                                            <a href="/kor/html/sub03/0303.html">문화행사 예약</a>
+                                        </li>
+                                        
+                                        <!-- <li class="item n6">
+                                            <a href="/kor/html/sub09/0906.html">단체전시해설예약</a>
+                                        </li> -->
+                                        <!--<li class="item n7">
+                                            <a href="/kor/html/sub09/0905.html">어린이박물관예약</a>
+                                        </li>-->
+										
+                                    </ul>
+                                </div>
+                                <div class="control">
+                                    <button class="btn_prev" type="button" data-control="prev">이전</button>
+                                    <button class="btn_next" type="button" data-control="next">다음</button>
+                                </div>
+                                <script type="text/javascript">
+                                    (function(){
+                                        var param = "#reservation_sb",
+                                            obj = ".item",
+                                            btn = "#reservation_sb .control",
+                                            interval = 3000,
+                                            speed = 300,
+                                            viewSize = 1,
+                                            moreSize = 1,
+                                            dir = "x",
+                                            data = 1,
+                                            auto = false,
+                                            hover = false,
+                                            method = "easeInOutCubic",
+                                            op1 = false;
+                                        stateScrollObj(param,obj,btn,interval,speed,viewSize,moreSize,dir,data,auto,hover,method,op1);
+                                    }());
+                                </script>
+                            </div>
+                            <a class="btn_link" href="/kor/html/sub11/1101.html"><span class="p_br">경상북도<br>박물관협력망</span></a>
+                        </div>
+                        <!-- 통합예약 끝 -->
+                    </div>
+                </div>
+                <div class="child_wrap">
+                    <div class="child_inner">
+                        <strong>어린이박물관</strong>
+                        <p>어린이박물관에는 무엇이 있을까요?</p>
+                        <a href="/kid/">바로가기</a>
+                    </div>
+                </div>
+                <a class="searchBtn_close" href="#">닫기</a>
+            </div>
+            <!-- 통합검색 레이어팝업 끝 -->
+            <a id="btnAllmenu" class="allMenu" href="/kor/html/sub12/1201.html">
+                사이트맵
+                <span class="bg_bar">
+                    <span class="n1"></span>
+                    <span class="n2"></span>
+                    <span class="n3"></span>
+                </span>
+            </a>
+        </div>
+    </header>
+    <nav id="gnb_layout">
+        <div class="gnb">
+        	<div class="title">
+            	<strong>국립경주박물관</strong>
+                <p>
+                	국립경주박물관은<br />
+                    신라의 문화유산을 한 눈에 살필 수 있는<br />
+                    한국의 대표적인 박물관입니다.
+                </p>
+            </div>            
+            <ul class='depth1_ul'><li class='th1 '><a href='/kor/html/sub01/0101.html' class='th1_lnk'>관람정보</a><ul class='depth2_ul'><li>	<a href='/kor/html/sub01/0101.html' target='_self'  >관람안내</a></li><li>	<a href='/kor/html/sub01/0102.html' target='_self'  >찾아오시는길</a></li><li>	<a href='/kor/html/sub01/0103.html' target='_self'  >전시해설</a></li><li>	<a href='/kor/html/sub01/010401.html' target='_self'  >시설안내</a>	<ul class='depth3_ul'>		<li ><a href='/kor/html/sub01/010401.html' target='_self' class='lnk_2th' >시설안내</a></li>		<li ><a href='/kor/html/sub01/010402.html' target='_self' class='lnk_2th' >대관안내</a></li>		<li ><a href='/kor/html/sub01/010403.html' target='_self' class='lnk_2th' >문화상품점</a></li></ul></li></ul></li><li class='th1 '><a href='/kor/html/sub02/0201.html' class='th1_lnk'>전시</a><ul class='depth2_ul'><li>	<a href='/kor/html/sub02/0201.html' target='_self'  >상설전시</a></li><li>	<a href='/kor/html/sub02/0202.html' target='_self'  >특별전시</a></li><li>	<a href='/kor/html/sub02/0203.html' target='_self'  >전시관 가상체험</a></li></ul></li><li class='th1 '><a href='/_prog/bbs/?code=0301&site_dvs_cd=kor&menu_dvs_cd=0301' class='th1_lnk'>교육 &middot; 행사</a><ul class='depth2_ul'><li>	<a href='/kor/html/sub03/0301.html' target='_self'  >교육/행사 소식</a></li><li>	<a href='/kor/html/sub03/0302.html' target='_self'  >교육 프로그램</a></li><li>	<a href='/kor/html/sub03/0303.html' target='_self'  >문화행사</a></li><li>	<a href='/kor/html/sub03/0304.html' target='_self'  >학술행사</a></li><li>	<a href='/kor/html/sub03/0305.html' target='_self'  >교육/행사 자료</a></li></ul></li><li class='th1  on'><a href='/kor/html/sub04/0401.html' class='th1_lnk'>소장품</a><ul class='depth2_ul'><li>	<a href='http://www.emuseum.go.kr/' target='_blank'  title='새창으로 링크 열림'   >E뮤지엄</a></li><li>	<a href='/kor/html/sub04/0401.html' target='_self'  >소장품검색</a></li><li>	<a href='/kor/html/sub04/0402.html' target='_self'  >국보/보물</a></li><li>	<a href='/kor/html/sub04/0406.html' target='_self'  >중요 문화유산</a></li><li>	<a href='/kor/html/sub04/0403.html' target='_self'  >신라 황금 문화유산</a></li><li>	<a href='/kor/html/sub04/040401.html' target='_self'  >열람/복제/사진</a>	<ul class='depth3_ul'>		<li ><a href='/kor/html/sub04/040401.html' target='_self' class='lnk_2th' >소장품 열람</a></li>		<li ><a href='/kor/html/sub04/040402.html' target='_self' class='lnk_2th' >소장품 복제</a></li>		<li ><a href='/kor/html/sub04/040403.html' target='_self' class='lnk_2th' >사진자료</a></li>	</ul></li><li>	<a href='/kor/html/sub04/040501.html' target='_self'  >기증</a>	<ul class='depth3_ul'>		<li ><a href='/kor/html/sub04/040501.html' target='_self' class='lnk_2th' >기증안내</a></li>		<li ><a href='/kor/html/sub04/040502.html' target='_self' class='lnk_2th' >기증내역</a></li></ul></li></ul></li><li class='th1 '><a href='/kor/html/sub05/0501.html' class='th1_lnk'>학술</a><ul class='depth2_ul'><li>	<a href='/kor/html/sub05/0501.html' target='_self'  >발간자료</a></li><li>	<a href='/kor/html/sub05/050201.html' target='_self'  >보존과학</a>	<ul class='depth3_ul'>		<li ><a href='/kor/html/sub05/050201.html' target='_self' class='lnk_2th' >금속보존</a></li>		<li ><a href='/kor/html/sub05/050202.html' target='_self' class='lnk_2th' >석재보존</a></li>		<li ><a href='/kor/html/sub05/050203.html' target='_self' class='lnk_2th' >토기 도자기 보존</a></li>		<li ><a href='/kor/html/sub05/050204.html' target='_self' class='lnk_2th' >과학적 분석</a></li>		<li ><a href='/kor/html/sub05/050205.html' target='_self' class='lnk_2th' >소장품 복제</a></li>		<li ><a href='/kor/html/sub05/050206.html' target='_self' class='lnk_2th' >기타활동</a></li>	</ul></li><li>	<a href='/kor/html/sub05/050301.html' target='_self'  >도서관</a>	<ul class='depth3_ul'>		<li ><a href='/kor/html/sub05/050301.html' target='_self' class='lnk_2th' >도서관 소개</a></li>		<li ><a href='/kor/html/sub05/050302.html' target='_self' class='lnk_2th' >도서자료 검색</a></li></ul></li></ul></li><li class='th1 '><a href='/kor/html/sub06/06.html' class='th1_lnk'>자료저장소</a><ul class='depth2_ul'></ul></li><li class='th1 '><a href='/kor/html/sub07/0701.html' class='th1_lnk'>소식ㆍ참여</a><ul class='depth2_ul'><li>	<a href='/kor/html/sub07/0701.html' target='_self'  >새소식</a></li><li>	<a href='/kor/html/sub07/0703.html' target='_self'  >고시/공고</a></li><li>	<a href='/kor/html/sub07/0704.html' target='_self'  >채용안내</a></li><li>	<a href='/kor/html/sub07/0705.html' target='_self'  >보도자료</a></li><li>	<a href='/kor/html/sub07/0707.html' target='_self'  >자원봉사</a></li><li>	<a href='/kor/html/sub07/0708.html' target='_self'  >고객민원</a></li><li>	<a href='/kor/html/sub07/0709.html' target='_self'  >유실물 안내</a></li><li>	<a href='/kor/html/sub07/0710.html' target='_self'  >설문조사</a></li></ul></li><li class='th1 '><a href='/kor/html/sub08/0801.html' class='th1_lnk'>정보공개</a><ul class='depth2_ul'><li>	<a href='/kor/html/sub08/0801.html' target='_self'  >정보공개제도</a></li><li>	<a href='/kor/html/sub08/0806.html' target='_self'  >비공개 세부기준</a></li><li>	<a href='/kor/html/sub08/080201.html' target='_self'  >정보공개목록</a>	<ul class='depth3_ul'>		<li ><a href='/kor/html/sub08/080201.html' target='_self' class='lnk_2th' >현재</a></li>		<li ><a href='/kor/html/sub08/080202.html' target='_self' class='lnk_2th' >2013년 1월 이전</a></li>	</ul></li><li>	<a href='/kor/html/sub08/0803.html' target='_self'  >사전정보공표</a></li><li>	<a href='/kor/html/sub08/0804.html' target='_self'  >일반자료실</a></li><li>	<a href='/kor/html/sub08/0805.html' target='_self'  >공공데이터 개방</a></li></ul></li><li class='th1 '><a href='/kor/html/sub09/09.html' class='th1_lnk'>통합예약</a><ul class='depth2_ul'><li>	<a href='http://gyeongju.museum.go.kr/kor/html/sub07/0701.html?mode=V&no=5357&site_dvs_cd=kor&menu_dvs_cd=0701' target='_blank'  title='새창으로 링크 열림'   >어린이박물관 관람예약</a></li><li>	<a href='/kor/html/sub09/0901.html' target='_self'  >학생단체관람예약</a></li><li>	<a href='/kor/html/sub03/0302.html' target='_self'  >교육프로그램예약</a></li><li>	<a href='/kor/html/sub03/0303.html' target='_self'  >문화행사예약</a></li><li>	<a href='/kor/html/sub03/0304.html' target='_self'  >학술행사예약</a></li><li>	<a href='/kor/html/sub09/0907.html' target='_self'  >예약조회 및 취소</a></li></ul></li><li class='th1 '><a href='/kor/html/sub10/1001.html' class='th1_lnk'>박물관소개</a><ul class='depth2_ul'><li>	<a href='/kor/html/sub10/1001.html' target='_self'  >박물관 약사</a></li><li>	<a href='/kor/html/sub10/1002.html' target='_self'  >조직/업무</a></li><li>	<a href='/kor/html/sub10/1003.html' target='_self'  >미션 및 목표</a></li></ul></li><li class='th1 '><a href='/kor/html/sub11/1101.html' class='th1_lnk'>경상북도 박물관 협력망</a><ul class='depth2_ul'><li>	<a href='/kor/html/sub11/1101.html' target='_self'  >경상북도 박물관 협력망 소개</a></li></ul></li><li class='th1 '><a href='/kor/html/sub12/1201.html' class='th1_lnk'>이용안내</a><ul class='depth2_ul'><li>	<a href='/kor/html/sub12/1201.html' target='_self'  >누리집 지도</a></li><li>	<a href='/kor/html/sub12/1202.html' target='_self'  >로그인</a></li><li>	<a href='/kor/html/sub12/1203.html' target='_self'  >개인정보처리방침</a></li><li>	<a href='/kor/html/sub12/1204.html' target='_self'  >CCTV운영관리방침</a></li><li>	<a href='/kor/html/sub12/1205.html' target='_self'  >저작권 정책</a></li></ul></li><li class='th1 '><a href='http://gyeongju.museum.go.kr/kid/' target='_blank' class='th1_lnk' title='새창으로 링크 열림'>어린이박물관</a><ul class='depth2_ul'><li>	<a href='http://gyeongju.museum.go.kr/kid/' target='_blank'  title='새창으로 링크 열림'   >어린이박물관</a></li></ul></li></ul>            			<ul class="utile_menu">
+            	<li><a href="/kor/html/sub08/0801.html">정보공개</a></li>
+            	<li><a href="/kor/html/sub06/06.html">자료저장소</a></li>
+            </ul>
+            <a class="gnbClose" href="#">닫기</a>
+        </div>
+        <span class="gnb_bg"></span>
+    </nav>
+</div>
+<!-- 탑 끝 -->
+<!-- 비쥬얼 시작 -->
+<div id="svisual_layout">
+    <div class="svisual_wrap sub_04">
+    	<div class="title">
+        	국립경주박물관
+            <strong>소장품</strong>
+        </div>
+        			<img src="/kor/images/common/svisual_img4.jpg" alt="소장품 관련 이미지" />
+            </div>
+</div>
+<!-- 비쥬얼 끝 -->
+<!-- 바디 시작 -->
+<div id="body_layout" class="layout_sub">
+	<div class="body_wrap lo_inner">
+    	<aside id="lnb_layout" class="lnb_wrap">
+        	<ul class='depth2_ul n7'><li class=''><a href='http://www.emuseum.go.kr/' target='_blank'  title='새창으로 링크 열림'  class='lnk_2th' >E뮤지엄</a></li>
+<li class=''><a href='/kor/html/sub04/0401.html' target='_self' class='lnk_2th' onclick="goto('/kor/html/sub04/0401.html');">소장품검색</a></li>
+<li class=''><a href='/kor/html/sub04/0402.html' target='_self' class='lnk_2th' onclick="goto('/kor/html/sub04/0402.html');">국보/보물</a></li>
+<li class=' on'><a href='/kor/html/sub04/0406.html' target='_self' class='lnk_2th' onclick="goto('/kor/html/sub04/0406.html');">중요 문화유산</a></li>
+<li class=''><a href='/kor/html/sub04/0403.html' target='_self' class='lnk_2th' onclick="goto('/kor/html/sub04/0403.html');">신라 황금 문화유산</a></li>
+<li class=''><a href='/kor/html/sub04/040401.html' target='_self' class='lnk_2th' onclick="goto('/kor/html/sub04/040401.html');">열람/복제/사진</a><ul class='depth3_ul'><li  ><a href='/kor/html/sub04/040401.html' target='_self'  >소장품 열람</a></li><li  ><a href='/kor/html/sub04/040402.html' target='_self'  >소장품 복제</a></li><li  ><a href='/kor/html/sub04/040403.html' target='_self'  >사진자료</a></li></ul></li><li class=''><a href='/kor/html/sub04/040501.html' target='_self' class='lnk_2th' onclick="goto('/kor/html/sub04/040501.html');">기증</a><ul class='depth3_ul'><li  ><a href='/kor/html/sub04/040501.html' target='_self'  >기증안내</a></li><li  ><a href='/kor/html/sub04/040502.html' target='_self'  >기증내역</a></li></ul>
+</li></ul>                    </aside>
+        <div class="contents_wrap">
+        	<div class="title_wrap">
+            	<h2>중요 문화유산</h2>
+                <div class="f_r">
+                    
+			<ul class='location_wrap'>
+				<li class='home'><a class='navi_home' href='/site/kor/'>HOME</a></li><li><a href='/kor/html/sub04/0401.html' target='_self'   >소장품</a></li><li><a href='/kor/html/sub04/0406.html' target='_self' class='navi_ov' >중요 문화유산</a></li>
+			</ul>
+			                                        <div class="utile_wrap">
+                        <a id="print" class="print" href="#" target="_blank" title="새창열림">인쇄</a>
+                    	<a id="sns_slide" class="sns" href="#">SNS 퍼가기</a>
+                        <div id="sns_layout" class="sns_wrap">
+                            <a href="#" onclick="facebookOpen(); return false;" title="새창열림" class="fa">페이스북</a>
+                            <a href="#" onclick="twitterOpen(); return false;" title="새창열림" class="tw">트위터</a>
+                            <a href="#" onclick="kakaoOpen(); return false;" title="새창열림" class="ka">카카오스토리</a>
+                            <a href="#" onclick="naverOpen(); return false;" title="새창열림" class="bl">블로그</a>
+                            <a href="#" class="close">닫기</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+<script>
+function OnClickTotalSearch()
+{
+	location.href="http://gyeongju.museum.go.kr/mecsearch/search.do?kw=" + document.getElementById("search_txt").value;
+
+}
+</script>
+
+<!--
+<script>
+$(function(){
+	var menu1 = $( 'a:contains("전시해설")' ).attr({'href':'javascript:alert("코로나19로 인해 전시해설 잠정 중단 합니다.");', 'target':'_self'});
+});
+</script>
+-->
+<script type="text/javascript" src="/kor/js/jquery.touchSlider.js"></script>
+
+
+			
+<!-- <style type="text/css">
+    /* img_slide_wrap3 */
+.img_view_wrap { margin-bottom: 40px;position: relative;}
+.img_view_wrap .img_slide_con3{overflow:hidden;position:relative}
+.img_view_wrap .img_slide_con3 .grap{overflow:hidden;position:relative}
+.img_view_wrap .img_slide_con3 .grap .obj_img{overflow:hidden;position:relative;/* background-color:#dfe0e4 */}
+.img_view_wrap .img_slide_con3 .grap .obj_img ul{overflow:hidden;width:200%;height:100%}
+.img_view_wrap .img_slide_con3 .grap .obj_img .item{width:50%;height:100%;text-align:center;float:left;}
+.img_view_wrap .img_slide_con3 .grap .obj_img .item img { height:300px;}
+.img_view_wrap .img_slide_con3 button{position:absolute;top:50%;width:70px;height:70px;margin-top:-35px;background:#666 url(/kor/images/prog/sub02/0201/sub02_view_arr.png) no-repeat;font-size:0;opacity:0.7}
+.img_view_wrap .img_slide_con3 button[data-control=prev]{left:0;background-position:20px -43px}
+.img_view_wrap .img_slide_con3 button[data-control=next]{right:0;background-position:25px 13px}
+.img_view_wrap .btn_down { position: absolute;bottom: 0;left: 50%;margin-left: -102.5px; }
+
+@media(max-width:1000px){
+    .img_view_wrap .img_slide_con3 .grap .obj_img { height: 271.5px; }
+}
+
+@media(max-width:767px){
+    .img_view_wrap .img_slide_con3 .grap .obj_img { height: 181px; }
+    .img_view_wrap .img_slide_con3 button { width:40px;height: 40px;background:#666 url(/kor/images/prog/sub02/0201/sub02_view_arr02.png) no-repeat; }
+    .img_view_wrap .img_slide_con3 button[data-control=prev]{left:0;background-position:12px -37px}
+    .img_view_wrap .img_slide_con3 button[data-control=next]{right:0;background-position:16px 7px}
+}
+
+
+</style> -->
+
+<div id="txt">
+<!-- content start -->
+
+	<script type="text/javascript" src="/site/common/js/jquery.touchSliderDownload.js"></script>
+	<script type="text/javascript" src="/site/common/js/imglayer.js"></script>
+	<div class="box_0401">
+		<div class="box_0401_left">
+		    <div class="board_images">
+					<div class="gallery_wrap">
+						<div class="inner">
+							<div id="galleryView" style="position: relative;">
+                               <a target="_blank" class="hit_up">
+                                    
+                                </a>    
+				            </div>
+						</div>
+						
+					</div>
+					<div id="downDiv" style="text-align:center;">
+					<a class="btn btn-ani btn-file" href="" onclick="picture_dn('relic_data_59','금관','20170905100036_007zyni6l58zr9yw0zcmya2beixy2a.jpg','pic_20111018170959_0_490.jpg','relic_data','kor')"><span class="bico bticon left file"></span>원본이미지 다운로드</a> 					<!--
+						<a class="btn btn-ani btn-file" href="#" onclick=""><span class="bico bticon left file"></span>원본이미지 다운로드1</a>
+						<a class="btn btn-ani btn-file" href="#" onclick=""><span class="bico bticon left file"></span>원본이미지 다운로드2</a>
+						-->
+					</div>
+				            
+					<div id="galleryThum">
+						<div class="holder">
+						    
+							<ul class="list moving">
+
+								<li class="item"><div class="atem"><a href="#"><img src="/_prog/download/?site_dvs_cd=kor&amp;func_gbn_cd=relic_data&amp;mng_no=59&amp;atch=atch_img1" alt="금관 1"><br></a></div></li>								<!--
+                                <li class="item">
+                                    <div class="atem">
+                                        <a href="#">
+                                            <img src="/kor/images/prog/no_img.jpg" title="" alt="이미지"><br>
+                                        </a>										 
+                                    </div>   
+                                </li>
+                                <li class="item">
+                                    <div class="atem">
+                                        <a href="#">
+                                            <img src="/kor/images/prog/no_img.jpg" title="" alt="이미지"><br>
+                                        </a>											
+                                    </div>   
+                                </li>
+								-->
+                            </ul>				            
+                        </div>
+                        <a class="arrLeft" href="#total">이전<!-- <img src="/site/grac/img/common/prev.png" alt="이전"> --></a>
+                        <a class="arrRight" href="#total">다음<!-- <img src="/site/grac/img/common/next.png" alt="다음"> --></a>
+					</div>
+					
+				</div>
+          
+            <div class="sns_wrap">
+				<ul>
+					<li><a href="#" onclick="facebookOpen();"><em class="sns_fa"></em><span>페이스북</span></a></li>
+					<li><a href="#" onclick="twitterOpen();"><em class="sns_tw"></em><span>트위터</span></a></li>
+					<!-- <li><a href="#" onclick="kakaoOpen();"><em class="sns_ca"></em><span>카카오스토리</span></a></li> -->
+					<!--<li><a href="#"><em class="sns_in"></em><span>인스타그램</span></a></li>-->
+					<li><a href="#" onclick="naverOpen();"><em class="sns_bl"></em><span>블로그</span></a></li>
+				</ul>
+			</div>
+		</div>	
+
+
+		<div class="box_0401_right">
+			<div class="tit">금관</div>
+			<div class="list">
+				<ul class="list_1st">
+					<!--<li><em>명칭</em><span>금관</span></li>-->
+											<li><em>다른 명칭</em><span>金冠​</span></li>
+						<li><em>국적/시대</em><span>한국>신라​</span></li>
+						<li><em>출토지</em><span>경상북도>경주시>천마총</span></li>
+						<li><em>재질</em><span>금속>금</span></li>
+						<li><em>크기</em><span>높이 32.5cm​</span></li>
+						<li><em>소장품번호</em><span>경주2274​</span></li>
+												<li><em>지정구분</em><span>국보</span></li>
+												<li><em>지정번호</em><span>​</span></li>
+										<li><em>설명</em><span>신라 금관(金冠)의 화려함을 잘 표현한 걸작 중의 하나이다. 신라 금관은 보통 둥근 테[臺輪]에 3개의 나뭇가지모양 장식[出字形立飾]과 2개의 사슴뿔모양 장식[鹿角形立飾]을 세운 뒤, 곱은옥[曲玉]과 달개[瓔珞]로 가득 장식한다. <br />
+<br />
+둥근 테와 세움 장식판에는 가장자리를 따라 점열무늬[點列文]와 파상무늬[波狀文]를 장식하여 화려함을 더한다. <br />
+<br />
+관을 착용했을 때 양쪽 볼에 해당하는 부위의 둥근 테 지점에는 가는고리[細環]로 코일처럼 길게 꼰 사슬로 만든 드리개[垂下飾]를 매단다. 신라는 지배자의 상징으로 금(동)관을 활용한 결과, 경주의 왕족이 착용한 것은 물론이고 재질과 모양은 달랐지만 지방의 수장도 소유할 수 있었다. <br />
+<br />
+이는 금동관의 하사를 통해 지방의 수장을 회유하고 견제하려는 중앙정부의 의도가 담긴 것이었다. 그래서 고총과 화려한 위세품으로 통치기반을 확립해나가던 "마립간" 시기 즉 5세기대에 가장 화려하고, 불교가 국가의 이념으로 정착하기 시작하는 6세기 이후부터는 점차 퇴화한다. 천마총 금관의 나뭇가지 모양의 장식이 이전의 3단에서 4단으로 변한 점이 참조가 된다.</span></li>
+				</ul>
+			
+			</div>
+		
+		</div>
+	
+	
+	</div>
+
+	<div class="btn_0601"><a href="/kor/html/sub04/0406.html?dvs_code=&GotoPage=32" class="btn btn-ani btn-disabled large"><i class="fa fa-fw fa-bars"></i> 목록보기</a></div>
+
+
+<div class="clear ccl_1">
+	<a href="http://www.kogl.or.kr/open/info/license.do" target="_blank" title="새창으로 열림" class="qq"><img src="/kor/images/common/foot_open_img.jpg" alt="국립경주박물관이 창작한 이 저작물은 공공누리 출처표시 조건에 따라 이용 할 수 있습니다."></a>
+	<div class="desc">국립경주박물관이 창작한 저작권 보호분야 <strong>금관</strong> 저작물은 "공공누리" 출처표시  조건에 따라 이용할 수 있습니다. (1유형)</div>
+</div>
+	
+	
+<!-- content end -->
+</div>
+
+
+<script type="text/javascript">
+<!--
+						$(document).ready(function(){
+							$(".btn-file").hide();
+							                        
+                           var ts = $('#galleryThum').touchSliderDownload({
+								mode: 'shift',
+								box: '.list',
+								item: '.item',
+								center: true,
+								prevLink: 'a.arrLeft',
+								nextLink: 'a.arrRight'
+							});
+
+							var obj = $("#galleryView");
+							var obj_a = $("#galleryView a");
+							var btn = $('#galleryThum .item a');
+							var o = obj.find("img");
+							var list = $('#galleryThum .list');
+							var prev = $(".arrLeft");
+							var next = $(".arrRight");
+							var elem = 0;
+							var n = 0;
+
+
+							function elImg(elem){
+                                $("#downDiv .btn-file").hide();                           
+                                $("#downDiv .btn-file").eq(elem).show();
+								$("#bellBtn").show();
+
+								obj_a.html(btn.eq(elem).find("img").clone());
+								btn.removeClass("ov").eq(elem).addClass("ov");
+								obj_a.attr("href",btn.eq(elem).find("img").attr('src'));
+								
+							}
+
+							prev.click(function(){                                
+								if(elem!= 0){
+
+									elem--;
+									elImg(0);
+
+								} else	{
+
+									elem = btn.size()-1;
+
+								}                                
+								elImg(elem);
+
+							});
+
+							next.click(function(){
+
+								if(elem<btn.size()-1){
+
+									elem++;
+									elImg(0);
+
+								} else	{
+
+									elem = 0;
+
+								}
+
+								elImg(elem);
+
+							});
+
+							btn.click(function(){
+								 
+								var t = $(this);
+								
+                                $("#downDiv .btn-file").hide();
+                                $("#downDiv .btn-file").eq(btn.index(this)).show();
+								$("#bellBtn").show();
+
+								obj_a.html(t.find("img").clone());
+                                $(".ov").removeClass("ov");
+                                t.addClass("ov");
+								$("#galleryView a").attr("href", t.find("img").attr("src"));
+								$("#galleryView a").attr("target", "_blank");								
+								
+							});
+
+							elImg(0);							
+
+							
+							imglayer("#galleryView",".hit_up","body",300);
+				
+							
+						});
+
+//-->
+	</script>
+	
+	<script>
+<!--
+	//카카오스토리 공유
+	function kakaoOpen() {
+		var titl = "국립경주박물관";
+		titl = titl.replace ('"', '&quot;');
+		titl = titl.replace ('"', '&quot;');
+		titl = encodeURIComponent(titl);
+		var link = encodeURIComponent("https://gyeongju.museum.go.kr/site/kor/html/sub04/0406.html?GotoPage=32&dvs_code=&mng_no=59&mode=V");
+		var url = "https://story.kakao.com/share?url=" + link ;
+		snswindowOpen (url, 900, 450, 'no');
+	}
+
+	//페이스북
+	function facebookOpen() {
+		var titl = "국립경주박물관";
+		titl = titl.replace ('"', '&quot;');
+		titl = titl.replace ('"', '&quot;');
+		titl = encodeURIComponent(titl);
+		var link = encodeURIComponent("https://gyeongju.museum.go.kr/site/kor/html/sub04/0406.html?GotoPage=32&dvs_code=&mng_no=59&mode=V");
+		var url = "http://www.facebook.com/sharer.php?u=" + link + "&t=" + titl;
+		snswindowOpen (url, 900, 450, 'no');
+	}
+
+	//twitter
+	function twitterOpen() {
+		var titl = "국립경주박물관";
+		titl = titl.replace ('"', '&quot;');
+		titl = titl.replace ('"', '&quot;');
+		titl = encodeURIComponent(titl);
+		var link = encodeURIComponent("https://gyeongju.museum.go.kr/site/kor/html/sub04/0406.html?GotoPage=32&dvs_code=&mng_no=59&mode=V" );
+		var url = "http://twitter.com/share?text=" + titl + "&url=" + link;
+		snswindowOpen (url, 800, 400, 'yes');
+	}
+
+    function naverOpen() {
+    	var titl = "국립경주박물관";
+		titl = titl.replace ('"', '&quot;');
+		titl = titl.replace ('"', '&quot;');
+		titl = encodeURIComponent(titl);
+		var link = encodeURI(encodeURIComponent("https://gyeongju.museum.go.kr/site/kor/html/sub04/0406.html?GotoPage=32&dvs_code=&mng_no=59&mode=V" ));
+		var url = "http://share.naver.com/web/shareView.nhn?url=" + link + "&title=" + titl;
+		snswindowOpen (url, 800, 400, 'yes');
+    }
+  //-->
+</script>
+
+
+
+
+        </div>
+    </div>
+		<div class="info_wrap">
+    	<div class="inner">
+        	<div id="scrollBanner" class="link">
+                <div class="grap">
+                    <ul class="obj">
+                        <li class="item">
+                            <a href="/kor/html/sub02/0201.html?mode=VD&d_mng_no=10">
+                                <span class="thumb"><img src="/kor/images/common/contents_info_link_img_1.jpg" alt="신라역사관 사진"/></span>
+                                <span class="txt">신라역사관</span>
+                            </a>
+                        </li>
+                        <li class="item">
+                            <a href="/kor/html/sub02/0201.html?mode=VD&d_mng_no=12">
+                                <span class="thumb"><img src="/kor/images/common/contents_info_link_img_2.jpg" alt="신라미술관 사진"/></span>
+                                <span class="txt">신라미술관</span>
+                            </a>
+                        </li>
+                        <li class="item">
+                            <a href="/kor/html/sub02/0201.html?mode=VD&d_mng_no=13">
+                                <span class="thumb"><img src="/kor/images/common/contents_info_link_img_3.jpg" alt="월지관 사진"/></span>
+                                <span class="txt">월지관</span>
+                            </a>
+                        </li>
+                        <li class="item">
+                            <a href="/kor/html/sub02/0201.html?mode=VD&d_mng_no=168">
+                                <span class="thumb"><img src="/kor/images/common/contents_info_link_img_5.jpg" alt="신라천년보고 사진"/></span>
+                                <span class="txt">신라천년보고</span>
+                            </a>
+                        </li>
+                        <li class="item">
+                            <a href="/kor/html/sub02/0201.html?mode=VD&d_mng_no=14">
+                                <span class="thumb"><img src="/kor/images/common/contents_info_link_img_4.jpg" alt="옥외전시 사진"/></span>
+                                <span class="txt">옥외전시</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="control">
+                    <button class="btn_prev" type="button" data-control="prev">이전 전시관</button>
+                    <button class="btn_next" type="button" data-control="next">다음 전시관</button>
+                </div>
+                <script type="text/javascript">
+                    (function(){
+                        var param = "#scrollBanner",
+                            obj = ".item",
+                            btn = "#scrollBanner .control",
+                            interval = 3000,
+                            speed = 300, 
+                            viewSize = 0,
+                            moreSize = 0,
+                            dir = "x",
+                            data = 0,
+                            auto = false,
+                            hover = false,
+                            method = "easeInOutCubic",
+                            op1 = false;
+                        stateScrollObj(param,obj,btn,interval,speed,viewSize,moreSize,dir,data,auto,hover,method,op1);
+                    }());
+                </script>
+            </div>
+            <div class="open_info">
+            	<strong>10:00~18:00</strong>
+              <!--  <p>토요일 및 공휴일 1시간연장</p>  -->
+                <ul>
+                	<li>
+                    	<strong>야간연장개관 ~ 20:00</strong>
+                        <p>3월 ~ 10월 중 매주 토요일</p>
+                    </li>
+                	<li>
+                    	<strong>휴관일</strong>
+                        <p>1월 1일, 설날, 추석</p>
+                    </li>
+                </ul>
+				
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 바디 끝 -->
+<!-- 푸터 시작 -->
+<div id="foot_layout">
+	<div class="utile_wrap">
+    	<ul class="link">
+            <li class="on"><a href="/kor/html/sub12/1203.html">개인정보처리방침</a></li>
+        	<li><a href="/kor/html/sub10/1001.html">박물관소개</a></li>
+        	<li><a href="/kor/html/sub12/1201.html">누리집 지도</a></li>
+        	<li><a href="/kor/html/sub01/0101.html">관람안내</a></li>
+        	<li><a href="/kor/html/sub01/0102.html">찾아오시는길</a></li>
+        	<li><a href="/kor/html/sub12/1204.html">CCTV운영관리방침</a></li>
+        	<li><a href="/kor/html/sub01/0103.html">전시해설</a></li>
+        	<li><a href="/kor/html/sub12/1205.html">저작권정책</a></li>
+        </ul>
+        <div class="f_r">
+        	<ul class="sns">            	<li class="fa"><a href="https://www.facebook.com/kgjnm" target="_blank" title="새창열림,페이스북">페이스북</a></li>
+            	<!--<li class="tw"><a href="https://twitter.com/gjmuseum1" target="_blank" title="새창열림,트위터">트위터</a></li>-->
+            	<li class="in"><a href="https://www.instagram.com/gnmuseum/" target="_blank" title="새창열림,인스타">인스타</a></li>
+            	<!--<li class="ka"><a href="https://story.kakao.com/ch/gnm" target="_blank" title="새창열림,카카오톡">카카오톡</a></li>-->
+            	<li class="bl"><a href="http://blog.naver.com/gymuseum" target="_blank" title="새창열림,블로그">블로그</a></li>
+				<li class="ut"><a href="https://www.youtube.com/channel/UC2n7AjCn0j0Ie3fUDtvUM2w" target="_blank" title="새창열림,유튜브">유튜브</a></li>
+
+            </ul>
+			<script type="application/ld+json">
+			{
+			 "@context": "http://schema.org",
+			 "@type": "Organization",
+			 "name": "국립경주박물관",
+			 "url": "http://gyeongju.museum.go.kr/",
+			 "sameAs": [
+			   "https://www.facebook.com/kgjnm",
+			   "https://twitter.com/gjmuseum1",
+			   "https://www.instagram.com/gnmuseum/",
+			   "https://story.kakao.com/ch/gnm",
+			   "http://blog.naver.com/gymuseum",
+			 ]
+			}
+			</script>
+            <div class="dropUp">
+            	<a href="#">관련사이트 바로가기</a>
+                <ul>
+                    <li><a href="http://www.museum.go.kr" target="_blank" title="새창열림,국립중앙박물관">국립중앙박물관</a></li>
+                    <li><a href="http://gwangju.museum.go.kr" target="_blank" title="새창열림,국립광주박물관">국립광주박물관</a></li>
+                    <li><a href="http://jeonju.museum.go.kr" target="_blank" title="새창열림,국립전주박물관">국립전주박물관</a></li>
+					<li><a href="http://daegu.museum.go.kr" target="_blank" title="새창열림,국립대구박물관">국립대구박물관</a></li>
+                    <li><a href="http://buyeo.museum.go.kr" target="_blank" title="새창열림,국립부여박물관">국립부여박물관</a></li>
+                    <li><a href="http://gongju.museum.go.kr" target="_blank" title="새창열림,국립공주박물관">국립공주박물관</a></li>
+                    <li><a href="http://jinju.museum.go.kr" target="_blank" title="새창열림,국립진주박물관">국립진주박물관</a></li>
+                    <li><a href="http://cheongju.museum.go.kr" target="_blank" title="새창열림,국립청주박물관">국립청주박물관</a></li>                    
+                    <li><a href="http://gimhae.museum.go.kr" target="_blank" title="새창열림,국립김해박물관">국립김해박물관</a></li>
+                    <li><a href="http://jeju.museum.go.kr" target="_blank" title="새창열림,국립제주박물관">국립제주박물관</a></li>
+                    <li><a href="http://chuncheon.museum.go.kr" target="_blank" title="새창열림,국립춘천박물관">국립춘천박물관</a></li>
+                    <li><a href="http://naju.museum.go.kr" target="_blank" title="새창열림,국립나주박물관">국립나주박물관</a></li>
+                    <li><a href="https://iksan.museum.go.kr" target="_blank" title="새창열림,국립미륵사지유물전시관">국립익산박물관</a></li>
+                    <li><a href="http://www.cfnmk.or.kr" target="_blank" title="새창열림,국립박물관문화재단">국립박물관문화재단</a></li>
+                    <li><a href="http://www.fnmk.org" target="_blank" title="새창열림,국립중앙박물관회">국립중앙박물관회</a></li>
+                    <li><a href="http://www.museum.or.kr" target="_blank" title="새창열림,사단법인한국박물관회">사단법인한국박물관회</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+	<footer class="foot_wrap">    	
+       <address>(38171)경상북도 경주시 일정로 186 국립경주박물관 <span>Tel : 054-740-7500</span>  <span>Fax : 054-740-7522</span></address>
+        <p class="copy">Copyright(c)2017 Gyeongju National Museum. All rights reserved.</p>
+		<div class="mark">
+			<div class="open_mark">
+				<a href="/kor/html/sub12/1205.html"><img src="/kor/images/common/foot_open_img.jpg" alt="OPEN" /></a>
+			</div>
+			<div class="wa_mark">
+				<img src="/kor/images/common/foot_wa_img.png" alt="과학기술정보통신부 WEB ACCESSIBILITY 마크(웹 접근성 품질인증 마크)" title="국가 공인 인증기관 : 웹와치"/>
+			</div>
+		</div>
+    </footer>
+</div>
+<!-- 푸터 끝 -->
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-9ZLGE1T7RE"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-9ZLGE1T7RE');
+</script>
+
+</body>
+</html>
+
+

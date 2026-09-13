@@ -9,12 +9,12 @@
   "attribution_required": "YES",
   "attribution_text": "Source: Gyeongju National Museum, Gold girdle from Cheonmachong, KOGL Type 1.",
   "expiration": null,
-  "proof": null,
+  "proof": "05_HISTORY_DATABASE/rights/proof/RTS_GNM_GOLD_GIRDLE_001_20260913.html",
   "research_permission": "YES",
   "media_reuse_permission": "YES",
   "status": "GREEN",
   "checked_at": "2026-09-11",
   "checked_by": "Claude Code (Story Engine Fact Check / Quality Engine Rights)",
-  "notes": "B3.",
+  "notes": "B3. proof 저장 2026-09-13: Wikimedia Commons 파일 페이지 원문에 '제1유형' (KOGL) 표기 확인.",
   "usage_tier": "ACTIVE"
 }

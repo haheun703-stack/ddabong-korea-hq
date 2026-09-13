@@ -96,4 +96,4 @@
 - 확인 필요 A 해소 (반박 검수 정정): S02_SH003 몽타주의 '말다래'는 **금동 천마무늬 말다래 (경주2309)** — 대본 v2 0:35–1:25 VO 'horse equipment', 유물 라이브러리 카드 7 배정. 천마도는 1:25–2:15 구간. → `RTS_GNM_MUDGUARD_001` 생성·연결 (천마도 기록은 유지). 앞선 '천마도' 판단은 근거 없이 내린 오류였음.
 - 생성: `RTS_GNM_CHEST_ORNAMENT_001` · `RTS_GNM_GOLD_CAP_001` · `RTS_GNM_GLASS_CUP_001` · `RTS_GNM_MUDGUARD_001` (GREEN, ACTIVE). 증빙: 페이지 HTML 원문 `05_HISTORY_DATABASE/rights/proof/<rights_id>_20260913.html` (라벨 확인된 것만 proof 기재).
 - 샷 교체: S02_SH003 → GLASS_CUP + MUDGUARD · S05_SH001 → GOLD_CAP + CHEST_ORNAMENT. `RTS_GNM_OTHER_OBJECTS_001` → BACKUP_ONLY (YELLOW 유지).
-- 남은 일: 유리잔·말다래 표시 이미지 해상도 확인 (확인 필요 B), 기존 GREEN 기록(금관·금허리띠·천마도·NRICH) proof 보관.
+- 남은 일: 유리잔·말다래 표시 이미지 해상도 확인 (확인 필요 B), 기존 GREEN 기록(금관·금허리띠·천마도·NRICH) proof 보관 — 2026-09-13 완료.

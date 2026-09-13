@@ -359,7 +359,7 @@ EP01 fact = `CLM_EP01_*` 13건 + `CLM_CHEONMACHONG_LAYOUT_001`.
 | `RTS_GYEONGJU_CITY_IMAGE_001` | 경주시 관광 이미지 | 출처표시, 상업 범위 불명확 | YELLOW · BACKUP_ONLY | 없음 | 수익화 사용은 서면 확인 후 |
 
 - 화면 슬레이트 = legacy 짧은 형식 · 설명란 = 위 `attribution_text` **글자 그대로**.
-- 2026-09-13 신규 GREEN 4건은 페이지 HTML 원문을 proof 로 저장. 기존 GREEN 4건 (금관·금허리띠·천마도·NRICH) 은 `proof: null` — 캡처 저장 필요.
+- 2026-09-13 신규 GREEN 4건은 페이지 HTML 원문을 proof 로 저장. 기존 GREEN 4건 (금관·금허리띠·천마도·NRICH) 도 2026-09-13 페이지 원문 proof 저장 (라벨 확인). 사용 가능한 GREEN 8건 모두 proof 있음.
 
 legacy G12 2행 `Gyeongju National Museum artifacts — applicable KOGL Type 1 assets` 는 금관·금허리띠·유리잔·말다래·관모·가슴걸이 (GREEN) 해당. `RTS_GNM_OTHER_OBJECTS_001` 은 BACKUP_ONLY (미확인분, 포함 불가).
 

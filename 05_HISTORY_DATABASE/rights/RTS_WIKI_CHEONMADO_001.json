@@ -9,12 +9,12 @@
   "attribution_required": "NO",
   "attribution_text": "Cheonmado (Heavenly Horse painting), Public Domain, via Wikimedia Commons.",
   "expiration": null,
-  "proof": null,
+  "proof": "05_HISTORY_DATABASE/rights/proof/RTS_WIKI_CHEONMADO_001_20260913.html",
   "research_permission": "YES",
   "media_reuse_permission": "YES",
   "status": "GREEN",
   "checked_at": "2026-09-11",
   "checked_by": "Claude Code (Story Engine Fact Check / Quality Engine Rights)",
-  "notes": "B4. 라이선스 페이지 캡처를 proof 로 보관.",
+  "notes": "B4. 라이선스 페이지 캡처를 proof 로 보관. proof 저장 2026-09-13: Wikimedia Commons 파일 페이지 원문에 'Public Domain Mark 1.0' 확인.",
   "usage_tier": "ACTIVE"
 }
