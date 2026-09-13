@@ -23,7 +23,7 @@
 사람만 승인 → `approval.kind = PAID_GENERATION`. `generation.approval_id` 없는 유료 실행은 위반.
 
 ## 현재
-EP01 예산 미확인 (P-001) → `UNKNOWN_BUDGET`.
+EP01 예산 ₩40,000 확정 (D-015) → `OPEN`. 소진은 크레딧 단위 기록, KRW 환산율 미정 (P-012).
 
 ---
 

@@ -4,7 +4,7 @@
 Usage:  python 00_SYSTEM/schemas/validate.py            (validate examples/ + known instances)
         python 00_SYSTEM/schemas/validate.py FILE.json  (validate one instance; schema picked by "$schema" or filename prefix)
 """
-import json, sys, warnings
+import json, re, sys, warnings
 warnings.filterwarnings('ignore', category=DeprecationWarning)
 from pathlib import Path
 try:
@@ -45,7 +45,7 @@ INSTANCES = sorted(ROOT.glob("02_SEASONS/*/*/episode.json")) + \
             sorted(ROOT.glob("02_SEASONS/*/*/10_BLENDER/camera_*.json")) + \
             sorted(ROOT.glob("02_SEASONS/*/*/1[12]_AI_*/prompt_*.json")) + \
             sorted(ROOT.glob("08_GENERATION_CACHE/*/cost_*.json")) + sorted(ROOT.glob("08_GENERATION_CACHE/*/approval_*.json")) + \
-            sorted(ROOT.glob("08_GENERATION_CACHE/*/generation_*.json"))
+            sorted(ROOT.glob("08_GENERATION_CACHE/*/generation_*.json")) + sorted(ROOT.glob("08_GENERATION_CACHE/*/keep_change_patch_*.json"))
 
 LITE_SLOTS = {"full_body", "walking", "costume_detail"}
 
@@ -104,13 +104,119 @@ def ledger_rules(p, d, facts, rights, routers):
         errs.append(f"{rel}: AI pipeline without ai_label")
     return errs
 
+def forbidden_items(lock_id):
+    """Items of a NEGATIVE lock, or the trailing 'Forbidden: a, b.' list of any other lock."""
+    p = ROOT / "06_PROMPT_LIBRARY" / "locks" / f"{lock_id}.json"
+    if not lock_id or not p.exists(): return []
+    d = json.loads(p.read_text(encoding="utf-8"))
+    if d.get("items"): return list(d["items"])
+    m = re.search(r"Forbidden:\s*(.*?)\.?\s*$", d["text"])
+    if not m: return []
+    body = m.group(1)
+    return [s.strip() for s in body.split(";" if ";" in body else ",") if s.strip()]
+
+def required_negative(locks):
+    ids = ["DDABONG_NEGATIVE_V01", locks.get("era"), locks.get("location")]
+    for cc in locks.get("character_costume", []): ids += cc.split("+")
+    out = []
+    for i in ids:
+        for it in forbidden_items(i):
+            if it not in out: out.append(it)
+    return out
+
+def money_rules(docs):
+    """Money Gate + record integrity (2026-09-13 review): approval, sent prompt, cost sums, pack slots, patches, negatives."""
+    errs = []
+    rel = lambda p: p.relative_to(ROOT)
+    by = lambda kind, k: {d[k]: (p, d) for p, n, d in docs if n == kind}
+    prompts, gens, apps = by("prompt", "prompt_id"), by("generation", "generation_id"), by("approval", "approval_id")
+    costs, patches, chars, eps = by("cost", "cost_id"), by("keep_change_patch", "patch_id"), by("character", "character_id"), by("episode", "episode_id")
+    parents = {d.get("parent_prompt_id") for _, d in prompts.values()}
+    def root(pid):
+        seen = set()
+        while pid in prompts and prompts[pid][1].get("parent_prompt_id") and pid not in seen:
+            seen.add(pid); pid = prompts[pid][1]["parent_prompt_id"]
+        return pid
+    per_approval = {}
+    for gid, (p, g) in gens.items():
+        pr = prompts.get(g["prompt_id"])
+        if not pr: errs.append(f"{rel(p)}: prompt_id -> unknown prompt '{g['prompt_id']}'")
+        elif pr[1]["version"] != g["prompt_version"]:
+            errs.append(f"{rel(p)}: prompt_version {g['prompt_version']} != {g['prompt_id']}.version {pr[1]['version']}")
+        amount, aid = g["cost"]["amount"], g.get("approval_id")
+        if (amount is None or amount > 0) and not aid:
+            errs.append(f"{rel(p)}: paid or unknown-cost generation without approval_id (Money Gate)")
+        if aid:
+            a = apps.get(aid, (None, None))[1]
+            if not a: errs.append(f"{rel(p)}: approval_id -> unknown approval '{aid}'")
+            else:
+                if a["kind"] != "PAID_GENERATION" or a["decision"] != "APPROVE":
+                    errs.append(f"{rel(p)}: approval {aid} is not an APPROVEd PAID_GENERATION")
+                allowed = (a.get("money_gate_presented") or {}).get("prompt_ids")
+                if allowed and root(g["prompt_id"]) not in allowed:
+                    errs.append(f"{rel(p)}: prompt {g['prompt_id']} (root {root(g['prompt_id'])}) not covered by approval {aid}")
+                per_approval[aid] = per_approval.get(aid, 0) + 1
+        pj = g.get("provider_job")
+        if g["provider"] == "Higgsfield" and not pj:
+            errs.append(f"{rel(p)}: Higgsfield generation without provider_job (sent prompt not traceable)")
+        if pj:
+            jp = ROOT / pj["params_path"]
+            if not jp.exists(): errs.append(f"{rel(p)}: provider_job.params_path missing '{pj['params_path']}'")
+            elif pr and json.loads(jp.read_text(encoding="utf-8")).get("params", {}).get("prompt") != pr[1]["assembled_text"]:
+                errs.append(f"{rel(p)}: sent prompt ({pj['params_path']}) != {g['prompt_id']}.assembled_text - store the sent text as a new prompt version")
+    for aid, n in per_approval.items():
+        exp = (apps[aid][1].get("money_gate_presented") or {}).get("expected_attempts")
+        if exp is not None and n > exp: errs.append(f"{rel(apps[aid][0])}: {n} generation calls exceed expected_attempts {exp}")
+    latest = {}
+    for cid, (p, c) in costs.items():
+        if c["episode_id"] not in latest or c["as_of"] > latest[c["episode_id"]][1]["as_of"]: latest[c["episode_id"]] = (p, c)
+        listed = c.get("generation_ids") or []
+        for gid in listed:
+            if gid not in gens: errs.append(f"{rel(p)}: generation_ids -> unknown generation '{gid}'")
+        credits = round(sum(gens[x][1]["cost"].get("spent") or 0 for x in listed if x in gens and gens[x][1]["cost"]["currency"] == "CREDITS"), 4)
+        booked = round(sum(v or 0 for k, v in (c.get("spent_by_provider") or {}).items() if "credit" in k.lower()), 4)
+        if credits != booked: errs.append(f"{rel(p)}: generations spent {credits} credits but spent_by_provider books {booked}")
+    for epid, (p, c) in latest.items():
+        listed = set(c.get("generation_ids") or [])
+        for gid, (gp, _) in gens.items():
+            if gp.parent == p.parent and gid not in listed: errs.append(f"{rel(p)}: generation {gid} not listed in generation_ids")
+        if epid in eps:
+            ep_path, ep = eps[epid]; eb = ep.get("budget") or {}
+            for k in ("currency", "amount", "spent"):
+                if eb.get(k) != c["budget"].get(k):
+                    errs.append(f"{rel(ep_path)}: budget.{k} {eb.get(k)!r} != {rel(p)} budget.{k} {c['budget'].get(k)!r}")
+    for chid, (p, ch) in chars.items():
+        for slot, v in (ch.get("master_pack") or {}).items():
+            if v["status"] not in ("DRAFT", "APPROVED"): continue
+            g = gens.get(v.get("generation_id") or "", (None, None))[1]
+            if not v.get("path") or not v.get("generation_id"):
+                errs.append(f"{rel(p)}: master_pack.{slot} {v['status']} without path/generation_id")
+            elif not g: errs.append(f"{rel(p)}: master_pack.{slot} -> unknown generation '{v['generation_id']}'")
+            elif g["result_status"] != "SUCCESS" or v["path"] not in (g.get("output_paths") or []):
+                errs.append(f"{rel(p)}: master_pack.{slot} path not a SUCCESS output of {v['generation_id']}")
+    for ptid, (p, pt) in patches.items():
+        rp, rg = pt.get("resulting_prompt_id"), pt.get("resulting_generation_id")
+        if rp and (rp not in prompts or prompts[rp][1].get("patch_id") != ptid):
+            errs.append(f"{rel(p)}: resulting_prompt_id '{rp}' missing or does not point back to {ptid}")
+        if rg and rg not in gens: errs.append(f"{rel(p)}: resulting_generation_id -> unknown generation '{rg}'")
+    for pid, (p, pr) in prompts.items():
+        if not pid.endswith("_" + pr["version"]): errs.append(f"{rel(p)}: prompt_id suffix != version {pr['version']}")
+        if pr.get("patch_id") and pr["patch_id"] not in patches: errs.append(f"{rel(p)}: patch_id -> unknown patch '{pr['patch_id']}'")
+        if pr.get("parent_prompt_id") and pr["parent_prompt_id"] not in prompts:
+            errs.append(f"{rel(p)}: parent_prompt_id -> unknown prompt '{pr['parent_prompt_id']}'")
+        if pid not in parents:  # superseded versions are frozen records
+            miss = [i for i in required_negative(pr["locks"]) if i not in (pr.get("negative") or [])]
+            if miss: errs.append(f"{rel(p)}: negative missing lock Forbidden items: {', '.join(miss[:4])}{' ...' if len(miss) > 4 else ''}")
+    return errs
+
 def refcheck(paths):
     """Cross-reference check for real instances (not templates): every referenced ID must exist."""
     ids, docs = {}, []
     key = {"era": "era_id", "location": "location_id", "character": "character_id", "costume": "costume_id",
            "fact": "claim_id", "source": "source_id", "rights": "rights_id", "router_decision": "decision_id",
            "camera": "camera_id", "prompt": "prompt_id", "master_frame": "frame_id",
-           "scene": "scene_id", "shot": "shot_id", "episode": "episode_id"}
+           "scene": "scene_id", "shot": "shot_id", "episode": "episode_id",
+           "generation": "generation_id", "approval": "approval_id", "cost": "cost_id", "keep_change_patch": "patch_id"}
     for p in paths:
         data = json.loads(p.read_text(encoding="utf-8")); name = pick(p, data)
         if name in key: ids.setdefault(name, set()).add(data.get(key[name])); docs.append((p, name, data))
@@ -160,9 +266,10 @@ def refcheck(paths):
         if name == "episode":
             need(p, "era", d.get("era_ids"), "era_ids"); need(p, "location", d.get("location_ids"), "location_ids")
             need(p, "character", d.get("character_ids"), "character_ids"); need(p, "scene", d.get("scene_ids"), "scene_ids")
+    errs.extend(money_rules(docs))
     return errs
 
-targets = [Path(a) for a in sys.argv[1:]] or sorted((HERE / "examples").glob("*.json")) + INSTANCES
+targets =[Path(a) for a in sys.argv[1:]] or sorted((HERE / "examples").glob("*.json")) + INSTANCES
 bad = 0
 for t in targets:
     path, name, errs = check(t)

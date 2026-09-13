@@ -1,0 +1,26 @@
+{
+  "patch_id": "PATCH_MP_ELITE_HERO_001",
+  "shot_id": "MASTER_PACK:CHAR_SILLA_ELITE_OBSERVER_01:hero",
+  "from_version": "V02",
+  "to_version": "V03",
+  "fix_reason": "AI_ARTIFACT",
+  "keep": [
+    "face identity (Korean, 40s-50s, restrained)",
+    "birch-bark style cap",
+    "bronze plaque belt with pendants",
+    "muted blue outer robe",
+    "timber work-yard background"
+  ],
+  "change": [
+    "single subject only (second armoured figure removed)",
+    "inner garment ivory, no red/crimson/purple",
+    "no text / watermark",
+    "NOT a failed item: model switched soul_2 -> Nano Banana Pro",
+    "NOT minimal: prompt rewritten in full (see PRM_..._HERO_V03)"
+  ],
+  "reason": "hero V02 attempt (GEN_MP_ELITE_HERO_HIGGSFIELD_V01) REJECTED: second figure in armour, crimson inner garment, hallucinated watermark. Recorded retroactively on 2026-09-13; the retry changed more than the failed items (model + full rewrite).",
+  "requested_by": "Image Generation Agent (Claude Code)",
+  "created_at": "2026-09-11",
+  "resulting_prompt_id": "PRM_MP_CHAR_SILLA_ELITE_OBSERVER_01_HERO_V03",
+  "resulting_generation_id": "GEN_MP_ELITE_HERO_HIGGSFIELD_V02"
+}

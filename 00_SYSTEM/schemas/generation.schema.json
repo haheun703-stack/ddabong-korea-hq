@@ -29,7 +29,36 @@
       "description": "Flow / Veo / Higgsfield / Blender / Suno …"
     },
     "model": {
-      "type": "string"
+      "type": "string",
+      "description": "요청한 모델 표시명 + 설정. 실제 provider job type 은 provider_job 에."
+    },
+    "provider_job": {
+      "type": [
+        "object",
+        "null"
+      ],
+      "description": "provider 측 실제 작업 기록 (2026-09-13 검수). params_path 파일의 params.prompt = 실제 전송 프롬프트 → prompt.assembled_text 와 같아야 한다.",
+      "additionalProperties": false,
+      "properties": {
+        "job_id": {
+          "type": "string"
+        },
+        "job_set_type": {
+          "type": "string",
+          "description": "provider 가 보고한 실제 모델/작업 유형 (예: nano_banana_2)"
+        },
+        "display_name": {
+          "type": "string",
+          "description": "provider 표시명 (예: Nano Banana Pro)"
+        },
+        "params_path": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "job_id",
+        "params_path"
+      ]
     },
     "prompt_id": {
       "type": "string"

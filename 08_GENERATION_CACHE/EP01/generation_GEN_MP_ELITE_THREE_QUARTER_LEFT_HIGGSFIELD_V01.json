@@ -3,9 +3,15 @@
   "shot_id": "MASTER_PACK:CHAR_SILLA_ELITE_OBSERVER_01:three_quarter_left",
   "stage": "STILL",
   "provider": "Higgsfield",
-  "model": "nano_banana_pro (2k, 3:4, image_references=hero V02)",
-  "prompt_id": "PRM_MP_CHAR_SILLA_ELITE_OBSERVER_01_THREE_QUARTER_LEFT_V01",
-  "prompt_version": "V01",
+  "model": "Nano Banana Pro (job_set_type nano_banana_2, 2k, 3:4, input_images=hero job c7a5cc92)",
+  "provider_job": {
+    "job_id": "8d82a4c5-cd4f-4605-83b7-d5ab5fb3e350",
+    "job_set_type": "nano_banana_2",
+    "display_name": "Nano Banana Pro",
+    "params_path": "08_GENERATION_CACHE/EP01/provider_jobs/HF_8d82a4c5-cd4f-4605-83b7-d5ab5fb3e350.json"
+  },
+  "prompt_id": "PRM_MP_CHAR_SILLA_ELITE_OBSERVER_01_THREE_QUARTER_LEFT_V02",
+  "prompt_version": "V02",
   "standard_versions": {
     "CHARACTER_CONTINUITY_STANDARD.md": "v0.1",
     "COST_STANDARD.md": "v0.1"
@@ -33,5 +39,5 @@
   "started_at": "2026-09-11T13:39:05Z",
   "finished_at": "2026-09-11T13:39:45Z",
   "run_by": "Image Generation Agent (Claude Code)",
-  "notes": "Same face identity, ~45 deg left turn, cap silhouette clear (useful for profile later). Plain earth background. No forbidden elements, no text."
+  "notes": "Same face identity, ~45 deg left turn, cap silhouette clear (useful for profile later). Plain earth background. No forbidden elements, no text. [review fix 2026-09-13] Sent prompt stored as PRM_MP_CHAR_SILLA_ELITE_OBSERVER_01_THREE_QUARTER_LEFT_V02 (parent PRM_MP_CHAR_SILLA_ELITE_OBSERVER_01_THREE_QUARTER_LEFT_V01). V01 assembled_text was not sent verbatim: reference-image identity form, condensed costume, inline negative."
 }

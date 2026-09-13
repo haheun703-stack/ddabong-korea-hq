@@ -16,6 +16,7 @@
 
 - ~~P-009~~ 원로 옷 색 muted blue · 과대 bronze 확정 (D-015), PROBABLE 유지.
 
+- **2026-09-13 전체 검수 수정 1–5 완료 (유료 없음)** → `02_SEASONS/S01/EP01/15_QA/REVIEW_FIX_20260913.md`. 실제 전송 프롬프트 버전화 · provider job 기록 · 검증기 Money Gate 규칙 · negative 25개 보강 · 예산 소진 일치. 검증 244/244.
 - **P-012** 크레딧→KRW 환산율 — **임시 미정 (사용자 2026-09-11)**: 플랜 월 요금·월 크레딧 수 확인 전까지 크레딧 단위로만 기록, 원화 소진율 계산 안 함.
 - **배치 1 검수 — Work 창에 위임 (사용자 2026-09-11)**: 이미지 5장 + `REVIEW_BATCH1.md` 를 직접 열어 비교. 검수 항목: 얼굴 동일성 · 연령 · 관모 형태 · 표(袍) 소매 길이 · 체형 · 복식 일관성. **판정(APPROVE/FIX)만 내리고 유료 생성은 하지 않는다.** 판정이 나오면 그 기준으로 나머지 6 + back_view 확장 여부 결정.
 - **P-011** 라우터 판정 49건 ACCEPT / OVERRIDE — **AI 샷 생성 직전 최종 승인으로 보류 (D-015)**.
@@ -75,15 +76,13 @@
 | 자동 FAIL 규칙 | `validate.py ledger_rules()`: 출처 미연결 / ARCHIVE 권리 미연결 / RED 권리 사용 / 샷 등급 > 근거 등급(과도한 해석) / AI 라벨 누락 / INTERPRETIVE 사실 hedge 누락 | DONE (음성 테스트 통과) |
 | 리포트 | `02_SEASONS/S01/EP01/15_QA/P3_LEDGER_REPORT.md` (스크립트 생성) | DONE |
 | 검증 | 147/147 PASS, refs OK, FAIL 0 | DONE |
-- P3 Source/Rights Ledger: research-v2 S1–S6 → `05_HISTORY_DATABASE/sources/`, claim safety table → `facts/`, 그다음 샷 `fact_ids` 연결.
-- P4 Shot Router: 43개 샷 `router_decision.json` (특히 H01–H06 → BLENDER_FLOW 재검토).
 
 ---
 
 ## P1 — Continuity Engine (2026-09-11 · **COMPLETE — APPROVED WITH CONDITIONS** D-008~D-012)
 
 브랜치 `p1-continuity` (`6a60b1b` `a89734b` origin push 완료, main 병합 보류). **Web HQ 는 main 만 배포하므로 P1 COMPLETE 표시는 병합 시점에 동기 반영** (사용자 결정, 2026-09-11). P2 백로그: P-008 인물 가시성 필드. 조건: Lite Crowd Pack (D-008) · AI 컷 5–6초 (D-009) · 러프컷 임시 기준 + DELTA 정리 (D-010) · 복식 TBD 게이트 (D-011).
-**P2 NEXT — Character Master** (선행: D-011 복식 확정 + P-001 예산).
+**P2 진행 중 — Character Master** (D-011 복식 ✔ · D-015 예산 ✔ · 배치 1 사람 검수 대기).
 
 | 항목 | 산출 | 상태 |
 |---|---|---|
@@ -93,7 +92,7 @@
 | FACT / SOURCE (복식) | `facts/CLM_SILLA_COSTUME_001–008` · `sources/SRC_*` 7건 (국사편찬위·삼국사기 색복·국립중앙박물관·민족문화대백과·전통문화포털·1976 직물 논문·짚신 토기 보도) | DONE |
 | CHARACTER | `characters/` 원로 1인 (FULL) + 군중 2그룹 (LITE_CROWD) | DRAFT |
 | Master Pack 요구 목록 | `characters/EP01_MASTER_PACK_REQUIREMENTS.md` | DONE |
-| 씬·샷 분해 | `02_SEASONS/S01/EP01/07_SHOTS/` 씬 9 · 샷 48 (러프컷 v1 기준 + D-009 분할, 합계 425초 = 7:05) | `BROKEN_DOWN` / `PLANNED` |
+| 씬·샷 분해 | `02_SEASONS/S01/EP01/07_SHOTS/` 씬 9 · 샷 49 (러프컷 v1 기준 + D-009 분할 + X3 G13 추가, 합계 425초 = 7:05) | `BROKEN_DOWN` / `PLANNED` |
 | 대본↔러프컷 차이 | `02_SEASONS/S01/EP01/05_SCRIPT/SCRIPT_ROUGHCUT_DELTA.md` X1–X4 **4/4 RESOLVED** (X3 → G13 금관 위치 단면 신규, S4 근거) | DONE |
 | 검증 | `validate.py` 인스턴스 + ID 상호참조 + Master Pack 등급 + 복식 TBD 게이트 → 119/119 PASS, refs OK | DONE |
 
@@ -120,7 +119,7 @@
 | SHOT_ROUTER | `07_SHOTS/router_decision_*` 49 + `15_QA/P4_ROUTER_REPORT.md` | DONE (P4) · ACCEPT 대기 P-011 |
 | REAL_SHOOT | `ep01-field-shoot-plan` 체크리스트 | 계획 APPROVED · **촬영 미실행** |
 | ARCHIVE | `ep01-archive-photos` (1973 NRICH), `ep01-artifact-library` | 선별 APPROVED · 파일 다운로드 미실행 |
-| HIGGSFIELD | `ep01-higgsfield-prompts` 7컷 | 프롬프트 APPROVED · **생성 금지 (Money Gate 미승인, 예산 미확인)** |
+| HIGGSFIELD | `ep01-higgsfield-prompts` 7컷 | 프롬프트 APPROVED · Money Gate OPEN (D-015) · 원로 Master Pack 배치 1만 생성, **AI 샷 생성은 P-011 ACCEPT + Character Master 승인 뒤** |
 | ROUGH_CUT | `ep01-premiere-roughcut` 0:00–7:05 | 설계 APPROVED |
 
 **다음 실제 작업 (순서)**
@@ -159,6 +158,8 @@
 ---
 
 ## 최근 변경 (최신순)
+
+- **2026-09-13 Claude Code** — 전체 검수(09-11) 수정 1–5, 유료 생성 0. ① Higgsfield job 원문 복구 → 실제 전송 프롬프트 `HERO_V02`(soul_2 시도) · `HERO_V03` · `FRONT/THREE_QUARTER_LEFT/FULL_BODY_V02` + `PATCH_MP_ELITE_HERO_001` (재시도가 실패 항목 외 모델·전문까지 바꿨음을 기록) ② `generation.provider_job` (표시명 Nano Banana Pro = job type `nano_banana_2`) + `provider_jobs/HF_*.json` ③ 검증기 Money Gate 규칙 (승인·승인 범위·시도 수·전송 프롬프트 = assembled_text·cost 합계·episode 예산·Master Pack 슬롯·patch 역참조·negative ⊇ lock Forbidden) — 음성 테스트 12종 ④ negative 21개 보강 (시대·복식 lock 금지 항목, 이미 보낸 V01 4개는 기록으로 동결) ⑤ episode 예산 spent null. 스크립트 8개 `00_SYSTEM/tools/legacy_20260911/` 로 이동. 검증 244/244.
 
 - **2026-09-11 사용자** — 공식 상태 고정: P2 배치 1 사람 검수 대기 (Work 창 위임, 판정만) / 유료 생성 정지 유지 / P-012 임시 미정, 크레딧 단위 기록.
 

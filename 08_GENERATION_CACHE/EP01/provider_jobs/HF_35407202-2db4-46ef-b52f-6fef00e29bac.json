@@ -1,0 +1,21 @@
+{
+  "provider": "Higgsfield",
+  "job_id": "35407202-2db4-46ef-b52f-6fef00e29bac",
+  "job_set_type": "text2image_soul_v2",
+  "display_name": "Higgsfield Soul 2.0",
+  "status": "completed",
+  "created_at": "2026-09-11T13:36:03Z",
+  "params": {
+    "width": 1536,
+    "height": 2048,
+    "batch_size": 1,
+    "seed": 238493,
+    "enhance_prompt": false,
+    "quality": "1080p",
+    "style_id": "3db34ab5-3439-4317-9e03-08dc30852e69",
+    "style_name": "General",
+    "prompt": "hero portrait, chest-up, three-quarter light, calm direct gaze. Photorealistic cinematic historical documentary. Natural physical proportions. Historically plausible reconstruction. Realistic materials. Natural lighting. No fantasy. No modern objects. No text. No logos. No excessive saturation. No glossy AI look. No malformed anatomy. Early Silla, Gyeongju royal capital, 5th to early 6th century. Elite burial construction context. Modest timber work spaces, no palace spectacle. CHAR_SILLA_ELITE_OBSERVER_01 (Senior elite observer): senior member of the elite watching mound construction and funeral preparation from a distance; not the deceased, not a king. Face: realistic Korean facial proportions, restrained expression, not a portrait of any named historical person. Body: natural, medium build, upright still posture. Hair: tied up, period-appropriate. Age: 40s-50s. Skin: natural texture, weathered, no gloss. Costume: Silla senior elite observer: silk outer robe over hemp/ramie inner jacket; narrow-sleeved jacket under a longer outer robe, straight collar closing right over left; plaque belt with hanging pendants in restrained bronze - never a copy of the Cheonmachong gold belt; birch-bark style cap or simple formal cap - never a gold or gilt-bronze crown; muted blue tones, never crimson, never purple. DDABONG Documentary Reenactment (style B): realistic Korean facial proportions, natural skin texture with subtle imperfections, restrained expressions, historically researched clothing, natural documentary lighting, not glamorous, not glossy, not fantasy-drama, not generic Joseon hanbok. Negative: Joseon dynasty hanbok, gat hats, Ming or Qing court robes, samurai armor, fantasy armor, fantasy crown, gold crown, silver or gold belt plaques, purple, crimson, text, watermark, glossy skin, malformed anatomy."
+  },
+  "retrieved_at": "2026-09-13",
+  "note": "Higgsfield job_status raw_data. Result/CDN URLs omitted. params.prompt is the text actually sent."
+}

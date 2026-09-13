@@ -1,0 +1,24 @@
+{
+  "provider": "Higgsfield",
+  "job_id": "ae0b4062-481f-46e0-919e-28289aaba8e0",
+  "job_set_type": "nano_banana_2",
+  "display_name": "Nano Banana Pro",
+  "status": "completed",
+  "created_at": "2026-09-11T13:39:01Z",
+  "params": {
+    "width": 1792,
+    "height": 2400,
+    "aspect_ratio": "3:4",
+    "resolution": "2k",
+    "batch_size": 1,
+    "input_images": [
+      {
+        "id": "c7a5cc92-3f36-4b40-8071-84da9f6c6441",
+        "type": "image_job"
+      }
+    ],
+    "prompt": "Use the reference image as the exact same person: keep his face identity, age, skin, hair, cap, and costume identical. Exactly ONE person, alone. FRONT VIEW: straight-on front view, neutral expression, full head and shoulders, flat even daylight, plain muted earth-toned background, no scaffolding, no buildings. Photorealistic historical documentary still, style B Documentary Reenactment, natural skin texture, not glossy. Same costume: pale birch-bark style conical cap, muted dusty blue silk outer robe with straight collar closing right over left over an undyed ivory hemp inner jacket, restrained bronze plaque belt with small bronze pendants. Palette only muted blue, ivory, grey-brown, bronze. No red, no crimson, no purple. No text, no watermark, no logo. No second person."
+  },
+  "retrieved_at": "2026-09-13",
+  "note": "Higgsfield job_status raw_data. Result/CDN URLs omitted. params.prompt is the text actually sent."
+}

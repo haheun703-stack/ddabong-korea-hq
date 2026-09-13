@@ -3,9 +3,15 @@
   "shot_id": "MASTER_PACK:CHAR_SILLA_ELITE_OBSERVER_01:hero",
   "stage": "STILL",
   "provider": "Higgsfield",
-  "model": "nano_banana_pro (2k, 3:4)",
-  "prompt_id": "PRM_MP_CHAR_SILLA_ELITE_OBSERVER_01_HERO_V01",
-  "prompt_version": "V01",
+  "model": "Nano Banana Pro (job_set_type nano_banana_2, 2k, 3:4)",
+  "provider_job": {
+    "job_id": "c7a5cc92-3f36-4b40-8071-84da9f6c6441",
+    "job_set_type": "nano_banana_2",
+    "display_name": "Nano Banana Pro",
+    "params_path": "08_GENERATION_CACHE/EP01/provider_jobs/HF_c7a5cc92-3f36-4b40-8071-84da9f6c6441.json"
+  },
+  "prompt_id": "PRM_MP_CHAR_SILLA_ELITE_OBSERVER_01_HERO_V03",
+  "prompt_version": "V03",
   "standard_versions": {
     "CHARACTER_CONTINUITY_STANDARD.md": "v0.1",
     "COST_STANDARD.md": "v0.1"
@@ -31,5 +37,5 @@
   "started_at": "2026-09-11T13:37:41Z",
   "finished_at": "2026-09-11T13:38:20Z",
   "run_by": "Image Generation Agent (Claude Code)",
-  "notes": "Attempt 2 after V01 REJECTED. Changed only failed items: single subject, ivory inner (no crimson), no text, timber yard background. PASS on lock: Korean 40s-50s restrained face, birch-bark conical cap, muted blue outer robe, bronze plaque belt with pendants, no crown. Human-review flags: outer robe is short-sleeved over long inner sleeves (lock says narrow-sleeved inner + longer outer; acceptable but confirm); tiled roofs visible in background. This image is the identity reference (job id) for the other views."
+  "notes": "Attempt 2 after V01 REJECTED. Changed only failed items: single subject, ivory inner (no crimson), no text, timber yard background. PASS on lock: Korean 40s-50s restrained face, birch-bark conical cap, muted blue outer robe, bronze plaque belt with pendants, no crown. Human-review flags: outer robe is short-sleeved over long inner sleeves (lock says narrow-sleeved inner + longer outer; acceptable but confirm); tiled roofs visible in background. This image is the identity reference (job id) for the other views. [review fix 2026-09-13] Sent prompt stored as PRM_MP_CHAR_SILLA_ELITE_OBSERVER_01_HERO_V03 (parent PRM_MP_CHAR_SILLA_ELITE_OBSERVER_01_HERO_V02). Retry after V02 REJECTED; see PATCH_MP_ELITE_HERO_001. Prompt was rewritten, not minimally patched, and the model was switched."
 }
