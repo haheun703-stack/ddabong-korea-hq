@@ -102,6 +102,12 @@ def ledger_rules(p, d, facts, rights, routers):
             errs.append(f"{rel}: historical_confidence {d['historical_confidence']} exceeds strongest fact ({[k for k,v in RANK.items() if v==best][0]}) - over-interpretation")
     if d["pipeline"] in ("HIGGSFIELD", "AI_STILL", "BLENDER_FLOW", "FLOW_VEO") and not d.get("ai_label"):
         errs.append(f"{rel}: AI pipeline without ai_label")
+    logical = {"AI_STILL": "AI_STILL", "FLOW_VEO": "I2V_MOTION", "BLENDER_FLOW": "BLENDER_I2V", "HIGGSFIELD": "EXTREME_CAMERA"}
+    if d["pipeline"] in logical:  # D-028: logical pipeline separated from provider/model
+        if d.get("logical_pipeline") != logical[d["pipeline"]]:
+            errs.append(f"{rel}: logical_pipeline {d.get('logical_pipeline')!r} must be {logical[d['pipeline']]} for pipeline {d['pipeline']} (D-028)")
+        if not d.get("provider") or not d.get("model"):
+            errs.append(f"{rel}: AI shot without provider/model (D-028)")
     return errs
 
 def forbidden_items(lock_id):

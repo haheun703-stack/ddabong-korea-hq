@@ -42,6 +42,9 @@
   "created_at": "2026-09-11",
   "updated_at": "2026-09-13",
   "updated_by": "Image/Video Generation Agent (Claude Code)",
-  "notes": "TC 5:10–5:16 (러프컷 v1 기준, 내레이션 녹음 후 조정). H06. 6초 (D-009, 원래 10초). 봉분 스케일 47 m / 12.7 m 준수. 멀리 선 소그룹 → 얼굴 안 보임. 파이프라인은 legacy 팩 태그 그대로 (잠정). P4 Visual Router 에서 재판정. 점수(camera_complexity 등)는 Continuity Engine 추정치 — P4 라우터에서 확정. D-026: master_frame EP01_S06_MASTER_V01 → EP01_S06_MASTER_MOUND_BUILDING_V01 (천마총 층 순서: 목곽 열린 단계 vs 봉분 상승 단계).",
-  "evidence_role": "SUPPORTING"
+  "notes": "TC 5:10–5:16 (러프컷 v1 기준, 내레이션 녹음 후 조정). H06. 6초 (D-009, 원래 10초). 봉분 스케일 47 m / 12.7 m 준수. 멀리 선 소그룹 → 얼굴 안 보임. 파이프라인은 legacy 팩 태그 그대로 (잠정). P4 Visual Router 에서 재판정. 점수(camera_complexity 등)는 Continuity Engine 추정치 — P4 라우터에서 확정. D-026: master_frame EP01_S06_MASTER_V01 → EP01_S06_MASTER_MOUND_BUILDING_V01 (천마총 층 순서: 목곽 열린 단계 vs 봉분 상승 단계). D-028: logical_pipeline AI_STILL · provider HIGGSFIELD (공급 플랫폼) · model NANO_BANANA_PRO.",
+  "evidence_role": "SUPPORTING",
+  "logical_pipeline": "AI_STILL",
+  "provider": "HIGGSFIELD",
+  "model": "NANO_BANANA_PRO"
 }

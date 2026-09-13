@@ -113,7 +113,7 @@
 
 ### D-024 · 2026-09-13 · P-011 라우터 49건 최종 잠금 · FLOW_VEO 분류 추가 · EP01 Higgsfield 0건 (사용자)
 **확정** 46건 ACCEPTED · `EP01_S04_SH004` H01 · `EP01_S05_SH005` H03 → **FLOW_VEO** (OVERRIDDEN) · `EP01_S08_SH002` H07 AI_STILL 유지 (D-018). 최종 구성 REAL 10 · ARCHIVE 20 · GRAPHIC 11 · BLENDER_FLOW 4 (H02 · H02b · H04 · H05) · FLOW_VEO 2 · AI_STILL 2 (H06 · H07) · **HIGGSFIELD 0**. AI 8컷 45초 (≈11%, 모두 ≤6초).
-**EP01 재현 원칙** 공간 위계·규모 → BLENDER_FLOW · 행동 중심·공간 중간 → FLOW_VEO · 저동작 정보 컷 → AI_STILL · 증거 → ARCHIVE · 현재 장소 → REAL_SHOOT · 설명 도식 → ORIGINAL_GRAPHIC. EP01 은 다큐 톤 우선 → **Higgsfield 사용 0건으로 잠금**.
+**EP01 재현 원칙** 공간 위계·규모 → BLENDER_FLOW · 행동 중심·공간 중간 → FLOW_VEO · 저동작 정보 컷 → AI_STILL · 증거 → ARCHIVE · 현재 장소 → REAL_SHOOT · 설명 도식 → ORIGINAL_GRAPHIC. EP01 은 다큐 톤 우선 → **Higgsfield 사용 0건으로 잠금**. *(D-028 명확화: HIGGSFIELD CAMERA / EXTREME CAMERA 파이프라인 = 0 shots. 공급 플랫폼으로서 Higgsfield 는 허용.)*
 **스키마** shot.pipeline · router_decision.recommended/fallback 에 `FLOW_VEO` 정식 추가 (BLENDER_FLOW 와 독립). 검증기: FLOW_VEO 를 AI 파이프라인으로 취급, 라우터 PENDING 인 샷의 generation 은 FAIL.
 **유지 주의** YELLOW_ACTIVE 권리 1건 (`RTS_GNM_OTHER_OBJECTS_001` → S02_SH003 · S05_SH001) 편집 확정 전 해소 필수 (판정과 별개). Flow/Veo 자동 연결 도구 없음 → 라우터만 확정, 실제 생성은 별도 승인 + 별도 Money Gate. Blender 자동화(P7) 전 → 카메라 초안 기준 수작업 허용.
 **근거** `02_SEASONS/S01/EP01/15_QA/P011_ROUTER_FINAL.md`
@@ -139,13 +139,21 @@
 **운영 규칙** 군중 장면에 참고 이미지를 강하게 넣으면 얼굴 복제 위험 → 군중 복식·분위기는 문장 설명 중심, 참고 이미지는 반복 인물 continuity 가 필요한 경우에만 제한적으로 (CHARACTER_CONTINUITY_STANDARD §군중 장면의 참고 그림).
 **다음** AI 샷 8개 생성 방법·비용 관리안 정리 (사용자 요청).
 
+### D-028 · 2026-09-13 · 영상 공급자 · D-024 의미 명확화 · 논리 분류와 공급자/모델 분리 · H06 사진 승인 (사용자)
+**D1 (A)** 영상 생성은 **Higgsfield 를 공급 플랫폼(provider)** 으로 쓰고 **실제 모델은 Kling 3.0 (model)**. "Higgsfield 방식" 승인이 아니다.
+**D-024 명확화 (폐기 아님)** `HIGGSFIELD CAMERA / EXTREME CAMERA PIPELINE = 0 shots` · `Higgsfield as model provider = allowed` · `Selected model for current I2V test = Kling 3.0`.
+**분류 분리** 모델·서비스 이름을 샷 판정에 박지 않는다. 샷에 `logical_pipeline` · `provider` · `model` 을 별도로 남긴다: 사람 동작 사진→영상 = `I2V_MOTION / HIGGSFIELD / KLING_3_0`, Blender 필요 = `BLENDER_I2V / HIGGSFIELD / KLING_3_0`, 정지 = `AI_STILL / HIGGSFIELD / NANO_BANANA_PRO`, 극단 카메라 = `EXTREME_CAMERA` (EP01 0). 기존 `pipeline` 값(FLOW_VEO · BLENDER_FLOW)은 호환 때문에 유지. 라우터에 `selected_provider/selected_model`, 영상 6개 `provider_candidates` 에 Higgsfield (Kling 3.0) 추가. 검증기: AI 샷은 세 필드 필수 + 대응 일치.
+**D3** Blender 없이 기준 그림/시작 사진 + 카메라 초안 → I2V 로 먼저 시도. **같은 샷 공간 오류 2회 연속 → STOP → Blender 전환 여부 재승인. 자동 3번째 생성 금지.**
+**D4** `APR_EP01_AI_B1_001` H06 (`EP01_S06_SH010`) 사진만, 최대 2 호출 / 4 credits, 영상 미포함. 첫 결과가 승인 가능하면 2번째 미사용. 실패 시 실패 항목만 새 prompt 버전 + PATCH.
+**D2 (P-012 미정 유지)** 원화 환산은 실제 계정 월 결제 금액(원화 청구액) + 월 지급 크레딧으로 확정. 봇은 공개 요금표 숫자를 임의로 기록하지 않는다. **영상 생성은 아직 승인하지 않음.**
+
 ---
 
 ## 승인 대기 (P)
 
 ### P-012 · Higgsfield 크레딧 → KRW 환산율 (Money Gate 계산용)
 **현황** 예산은 KRW ₩40,000 (D-015), 소진은 Higgsfield 크레딧 (배치 1 = 8.12 credits, plus 플랜). 환산율이 없어 `cost.percent_used` 를 계산할 수 없다.
-**제안** 플랜 월 요금 ÷ 월 크레딧으로 1 credit 당 KRW 를 정해 `COST_STANDARD.md` 에 기록.
+**제안** 플랜 월 요금 ÷ 월 크레딧으로 1 credit 당 KRW 를 정해 `COST_STANDARD.md` 에 기록. **D-028: 실제 계정 청구 원화 금액 + 월 지급 크레딧(Manage Account → Subscription 캡처 또는 수치)으로만 확정. 영상 배치 전 필수.**
 **영향** `08_GENERATION_CACHE/EP01/cost_COST_EP01_20260911.json` spent_total / percent_used.
 
 

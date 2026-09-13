@@ -160,6 +160,8 @@
 
 ## 최근 변경 (최신순)
 
+- **2026-09-13 사용자** — **D-028.** Higgsfield = provider, Kling 3.0 = model (영상), D-024 '0건' = EXTREME_CAMERA 파이프라인 0건으로 명확화. 샷에 logical_pipeline/provider/model 분리. D3 Blender 없이 먼저, 공간 오류 2회 STOP. D4 H06 사진 최대 2회/4 credits. P-012 는 실제 청구액 받으면 확정, **영상 미승인**.
+
 - **2026-09-13 사용자** — **D-027.** 기준 그림 3장 최종 확정 (S04 V05 · S06 OPEN_CHAMBER V02 · S06 MOUND_BUILDING V01). 군중 참고 그림 규칙 추가. 기준 그림 16 credits (2 호출 버퍼 미사용), EP01 누적 60.12 credits. 다음: AI 샷 8개 생성 방법·비용 관리안.
 
 - **2026-09-13 Claude Code** — 사용자 지적 (S04 노동자 얼굴 복제) → 참고 그림 없이 새로 생성 V05, S04 V05 PASS (2 credits, 승인 8/10). 사용자 최종 OK 대기 → OK 면 기준 그림 3장 확정. EP01 소진 60.12 credits.

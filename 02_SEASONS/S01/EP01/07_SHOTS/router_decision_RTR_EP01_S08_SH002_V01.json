@@ -23,10 +23,13 @@
   },
   "expected_attempts": 3,
   "provider_candidates": [
-    "Higgsfield"
+    "Higgsfield",
+    "Higgsfield (Nano Banana Pro)"
   ],
   "human_decision": "OVERRIDDEN",
   "override_note": "D-018 (사용자 2026-09-13): H07 은 카메라 고정 5초 매치컷 → 정지 이미지(AI_STILL) + 편집 줌으로 충분. 현장 SH003 착지 구도 촬영 후 그 구도에 맞춰 생성.",
   "decided_at": "2026-09-13",
-  "decided_by": "사용자 (D-018)"
+  "decided_by": "사용자 (D-018)",
+  "selected_provider": "HIGGSFIELD",
+  "selected_model": "NANO_BANANA_PRO"
 }

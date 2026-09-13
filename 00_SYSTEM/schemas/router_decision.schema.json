@@ -178,6 +178,20 @@
     "decided_by": {
       "type": "string",
       "description": "행위자 (사용자 / 에이전트 이름)"
+    },
+    "selected_provider": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "D-028 선택된 공급 플랫폼"
+    },
+    "selected_model": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "D-028 선택된 모델"
     }
   },
   "required": [

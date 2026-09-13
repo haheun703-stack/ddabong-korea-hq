@@ -36,6 +36,9 @@
   "created_at": "2026-09-11",
   "updated_at": "2026-09-13",
   "updated_by": "Image/Video Generation Agent (Claude Code)",
-  "notes": "TC 6:20–6:25 (러프컷 v1 기준, 내레이션 녹음 후 조정). H07 + G10. 정본 §6 상 Higgsfield 에 맞는 컷 (과거→현재 매치컷). SH003 실사 구도를 먼저 찍고 그 구도에 맞춰 생성 (Generate Late). 파이프라인은 legacy 팩 태그 그대로 (잠정). P4 Visual Router 에서 재판정. 점수(camera_complexity 등)는 Continuity Engine 추정치 — P4 라우터에서 확정. D-018: 파이프라인 HIGGSFIELD → AI_STILL (사용자 OVERRIDE). 생성은 SH003 실사 구도 확보 뒤. D-026: 장소 LOC_GYEONGJU_DAEREUNGWON_V01 → LOC_CHEONMACHONG_V01 (H07·H05 역사 재현과 같은 천마총 봉분에 착지).",
-  "evidence_role": "SUPPORTING"
+  "notes": "TC 6:20–6:25 (러프컷 v1 기준, 내레이션 녹음 후 조정). H07 + G10. 정본 §6 상 Higgsfield 에 맞는 컷 (과거→현재 매치컷). SH003 실사 구도를 먼저 찍고 그 구도에 맞춰 생성 (Generate Late). 파이프라인은 legacy 팩 태그 그대로 (잠정). P4 Visual Router 에서 재판정. 점수(camera_complexity 등)는 Continuity Engine 추정치 — P4 라우터에서 확정. D-018: 파이프라인 HIGGSFIELD → AI_STILL (사용자 OVERRIDE). 생성은 SH003 실사 구도 확보 뒤. D-026: 장소 LOC_GYEONGJU_DAEREUNGWON_V01 → LOC_CHEONMACHONG_V01 (H07·H05 역사 재현과 같은 천마총 봉분에 착지). D-028: logical_pipeline AI_STILL · provider HIGGSFIELD (공급 플랫폼) · model NANO_BANANA_PRO.",
+  "evidence_role": "SUPPORTING",
+  "logical_pipeline": "AI_STILL",
+  "provider": "HIGGSFIELD",
+  "model": "NANO_BANANA_PRO"
 }

@@ -41,6 +41,9 @@
   "created_at": "2026-09-11",
   "updated_at": "2026-09-13",
   "updated_by": "Image/Video Generation Agent (Claude Code)",
-  "notes": "TC 2:48–2:54 (러프컷 v1 기준, 내레이션 녹음 후 조정). H01 프롬프트 APPROVED (legacy 팩). 6초 (D-009). 운반·작업·의례 준비 동작은 정본 §6 상 Flow/Veo 영역 → P4 에서 BLENDER_FLOW 재검토. 파이프라인은 legacy 팩 태그 그대로 (잠정). P4 Visual Router 에서 재판정. 점수(camera_complexity 등)는 Continuity Engine 추정치 — P4 라우터에서 확정. D-024: 파이프라인 BLENDER_FLOW → FLOW_VEO (사용자 OVERRIDE).",
-  "evidence_role": "SUPPORTING"
+  "notes": "TC 2:48–2:54 (러프컷 v1 기준, 내레이션 녹음 후 조정). H01 프롬프트 APPROVED (legacy 팩). 6초 (D-009). 운반·작업·의례 준비 동작은 정본 §6 상 Flow/Veo 영역 → P4 에서 BLENDER_FLOW 재검토. 파이프라인은 legacy 팩 태그 그대로 (잠정). P4 Visual Router 에서 재판정. 점수(camera_complexity 등)는 Continuity Engine 추정치 — P4 라우터에서 확정. D-024: 파이프라인 BLENDER_FLOW → FLOW_VEO (사용자 OVERRIDE). D-028: logical_pipeline I2V_MOTION · provider HIGGSFIELD (공급 플랫폼) · model KLING_3_0 (시작 사진 필요 시 NANO_BANANA_PRO).",
+  "evidence_role": "SUPPORTING",
+  "logical_pipeline": "I2V_MOTION",
+  "provider": "HIGGSFIELD",
+  "model": "KLING_3_0"
 }

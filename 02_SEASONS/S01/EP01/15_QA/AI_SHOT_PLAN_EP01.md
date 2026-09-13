@@ -106,3 +106,11 @@
 - **D2 P-012**: Higgsfield 요금제 월 요금과 월 크레딧 수 → 1 credit 당 원화. **영상 배치(1b 이후) 전에 필요.**
 - **D3 Blender 없는 BLENDER_FLOW**: §2 방식 승인 여부.
 - **D4 배치 1**: H06 사진만 — 최대 2 호출 / 4 credits (P-012 와 무관하게 가능).
+
+## 결정 (D-028, 2026-09-13)
+
+- D1 A: provider = HIGGSFIELD, model = KLING_3_0 (영상) · NANO_BANANA_PRO (사진). D-024 의 0건 = EXTREME_CAMERA 파이프라인 0건.
+- 샷 기록에 `logical_pipeline` (I2V_MOTION · BLENDER_I2V · AI_STILL) + provider + model 분리 기록.
+- D3 OK: 공간 오류 2회 연속 → STOP → Blender 전환 재승인, 자동 3번째 금지.
+- D4: `APR_EP01_AI_B1_001` H06 사진만 최대 2 호출 / 4 credits. 문장 `PRM_EP01_S06_SH010_V02` 저장.
+- D2: 실제 계정 청구액 + 월 크레딧 받으면 P-012 확정. **영상 생성 미승인.**

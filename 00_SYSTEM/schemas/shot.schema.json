@@ -259,6 +259,45 @@
         "string",
         "null"
       ]
+    },
+    "logical_pipeline": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "enum": [
+        "REAL_SHOOT",
+        "ARCHIVE",
+        "ORIGINAL_GRAPHIC",
+        "AI_STILL",
+        "I2V_MOTION",
+        "BLENDER_I2V",
+        "EXTREME_CAMERA",
+        null
+      ],
+      "description": "D-028 논리 분류 (공급자·모델과 무관). legacy pipeline 대응: AI_STILL→AI_STILL, FLOW_VEO→I2V_MOTION, BLENDER_FLOW→BLENDER_I2V, HIGGSFIELD→EXTREME_CAMERA"
+    },
+    "provider": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "enum": [
+        "HIGGSFIELD",
+        "GOOGLE_FLOW",
+        "BLENDER_LOCAL",
+        "MANUAL",
+        "NONE",
+        null
+      ],
+      "description": "D-028 공급 플랫폼 (예: HIGGSFIELD)"
+    },
+    "model": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "D-028 실제 생성 모델 ID (예: KLING_3_0, NANO_BANANA_PRO)"
     }
   },
   "required": [

@@ -46,6 +46,9 @@
   "created_at": "2026-09-11",
   "updated_at": "2026-09-13",
   "updated_by": "Image/Video Generation Agent (Claude Code)",
-  "notes": "TC 4:43–4:49 (러프컷 v1 기준, 내레이션 녹음 후 조정). H05 채널 차별점 핵심 컷. 6초 (D-009, 원래 15초). 카메라는 관찰자 뒤 → 뒷모습·어깨 실루엣 연속성이 핵심. AI Visual Reconstruction + INTERPRETIVE RECONSTRUCTION 둘 다 표시. 파이프라인은 legacy 팩 태그 그대로 (잠정). P4 Visual Router 에서 재판정. 점수(camera_complexity 등)는 Continuity Engine 추정치 — P4 라우터에서 확정. D-026: master_frame EP01_S06_MASTER_V01 → EP01_S06_MASTER_MOUND_BUILDING_V01 (천마총 층 순서: 목곽 열린 단계 vs 봉분 상승 단계).",
-  "evidence_role": "SUPPORTING"
+  "notes": "TC 4:43–4:49 (러프컷 v1 기준, 내레이션 녹음 후 조정). H05 채널 차별점 핵심 컷. 6초 (D-009, 원래 15초). 카메라는 관찰자 뒤 → 뒷모습·어깨 실루엣 연속성이 핵심. AI Visual Reconstruction + INTERPRETIVE RECONSTRUCTION 둘 다 표시. 파이프라인은 legacy 팩 태그 그대로 (잠정). P4 Visual Router 에서 재판정. 점수(camera_complexity 등)는 Continuity Engine 추정치 — P4 라우터에서 확정. D-026: master_frame EP01_S06_MASTER_V01 → EP01_S06_MASTER_MOUND_BUILDING_V01 (천마총 층 순서: 목곽 열린 단계 vs 봉분 상승 단계). D-028: logical_pipeline BLENDER_I2V · provider HIGGSFIELD (공급 플랫폼) · model KLING_3_0 (시작 사진 필요 시 NANO_BANANA_PRO).",
+  "evidence_role": "SUPPORTING",
+  "logical_pipeline": "BLENDER_I2V",
+  "provider": "HIGGSFIELD",
+  "model": "KLING_3_0"
 }
