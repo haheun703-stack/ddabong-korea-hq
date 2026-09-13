@@ -17,3 +17,7 @@
 | 시종 | `MP_ATTENDANT_FULL_BODY_V02_77078e12.png` | **PARTIAL** — 여자만 옷고름 제거·허리띠. 남자 2명 옷고름 남음 → 재편집 `PRM_…_V04` + `PATCH_MP_ATTENDANT_FULL_BODY_002` 저장, 사용자 OK 대기 |
 
 남은 승인: 5 호출. 재편집 1 + 2단계 4 = 5 → 한도 딱 맞음 (추가 FIX 는 새 승인).
+
+## 재편집 결과 (D-021, 2 credits, 승인 5/12)
+
+`MP_ATTENDANT_FULL_BODY_V03_dc7f38ed.png` **PARTIAL** — 왼쪽 남자 옷고름 제거 성공, 여자 유지. **가운데 젊은 남자 옷고름 남음·허리띠 없음.** D-021 에 따라 편집 반복 중단 → 방법 전환 사용자 결정 대기.

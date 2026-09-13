@@ -1,0 +1,43 @@
+{
+  "generation_id": "GEN_MP_ATTENDANT_FULL_BODY_HIGGSFIELD_V03",
+  "shot_id": "MASTER_PACK:CHAR_SILLA_ATTENDANT_GROUP_01:full_body",
+  "stage": "STILL",
+  "provider": "Higgsfield",
+  "model": "Nano Banana Pro (job_set_type nano_banana_2, 2k, 3:2, edit of job 77078e12)",
+  "provider_job": {
+    "job_id": "dc7f38ed-f345-4dbc-aebb-17d155986a2e",
+    "job_set_type": "nano_banana_2",
+    "display_name": "Nano Banana Pro",
+    "params_path": "08_GENERATION_CACHE/EP01/provider_jobs/HF_dc7f38ed-f345-4dbc-aebb-17d155986a2e.json"
+  },
+  "prompt_id": "PRM_MP_CHAR_SILLA_ATTENDANT_GROUP_01_FULL_BODY_V04",
+  "prompt_version": "V04",
+  "standard_versions": {
+    "CHARACTER_CONTINUITY_STANDARD.md": "v0.1",
+    "COST_STANDARD.md": "v0.1"
+  },
+  "case_ids_used": [
+    "CASE_DDABONG_CHAR_001"
+  ],
+  "approval_id": "APR_EP01_MP_CROWD_001",
+  "input_paths": [
+    "08_GENERATION_CACHE/EP01/MP_CROWD/MP_ATTENDANT_FULL_BODY_V02_77078e12.png"
+  ],
+  "output_paths": [
+    "08_GENERATION_CACHE/EP01/MP_CROWD/MP_ATTENDANT_FULL_BODY_V03_dc7f38ed.png"
+  ],
+  "attempts": 1,
+  "duration_sec": null,
+  "cost": {
+    "currency": "CREDITS",
+    "amount": 2.0,
+    "spent": 2.0,
+    "note": "Higgsfield job dc7f38ed-f345-4dbc-aebb-17d155986a2e (balance 1890.48 -> 1888.48)"
+  },
+  "result_status": "PARTIAL",
+  "failure_id": null,
+  "started_at": "2026-09-13T04:47:24Z",
+  "finished_at": null,
+  "run_by": "Image Generation Agent (Claude Code)",
+  "notes": "D-021 retry (PATCH_MP_ATTENDANT_FULL_BODY_002). Bot check PARTIAL: left man fixed (chest ties removed, belt kept); woman unchanged and compliant; young man in the middle STILL has the long chest ribbon tie and no belt. Per D-021, no further edit loop - method change proposed to user."
+}

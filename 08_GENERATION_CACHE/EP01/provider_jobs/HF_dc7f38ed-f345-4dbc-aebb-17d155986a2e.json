@@ -1,0 +1,24 @@
+{
+  "provider": "Higgsfield",
+  "job_id": "dc7f38ed-f345-4dbc-aebb-17d155986a2e",
+  "job_set_type": "nano_banana_2",
+  "display_name": "Nano Banana Pro",
+  "status": "completed",
+  "created_at": "2026-09-13T04:47:24Z",
+  "params": {
+    "width": 2528,
+    "height": 1696,
+    "aspect_ratio": "3:2",
+    "resolution": "2k",
+    "batch_size": 1,
+    "input_images": [
+      {
+        "id": "77078e12-15a1-480e-b67e-5f8044921940",
+        "type": "image_job"
+      }
+    ],
+    "prompt": "Edit the reference image. Keep all three people exactly as they are: same faces, bodies, poses, hair, headwear, trousers, skirt, footwear, fabric colours, bundles, lighting and background. Change only the two men's jackets (the man on the left in dark grey and the young man in the middle in beige): remove the long fabric ribbon ties and bows hanging on their chests completely, so the front of each jacket is plain and closed right over left with no strings. The man on the left keeps his waist belt; give the young man in the middle a plain beige cloth belt tied at the waist like the others. Keep the woman on the right exactly as she is. No ribbons or bows on any chest. No text, no watermark, no logo."
+  },
+  "retrieved_at": "2026-09-13",
+  "note": "job_status result. Result/CDN URLs omitted. params.prompt = text actually sent (identical to prompt V04)."
+}
