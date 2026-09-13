@@ -1,0 +1,41 @@
+{
+  "generation_id": "GEN_MF_EP01_S04_MASTER_HIGGSFIELD_V05",
+  "shot_id": "MASTER_FRAME:EP01_S04_MASTER_V01",
+  "stage": "STILL",
+  "provider": "Higgsfield",
+  "model": "Nano Banana Pro (job_set_type nano_banana_2, 2k, 16:9, text only - no image reference)",
+  "provider_job": {
+    "job_id": "c4ceb494-cc0b-43d4-96bc-58d5d3830ff5",
+    "job_set_type": "nano_banana_2",
+    "display_name": "Nano Banana Pro",
+    "params_path": "08_GENERATION_CACHE/EP01/provider_jobs/HF_c4ceb494-cc0b-43d4-96bc-58d5d3830ff5.json"
+  },
+  "prompt_id": "PRM_MF_EP01_S04_MASTER_V05",
+  "prompt_version": "V05",
+  "standard_versions": {
+    "CHARACTER_CONTINUITY_STANDARD.md": "v0.1",
+    "COST_STANDARD.md": "v0.1"
+  },
+  "case_ids_used": [
+    "CASE_DDABONG_CHAR_001"
+  ],
+  "approval_id": "APR_EP01_MF_001",
+  "input_paths": [],
+  "output_paths": [
+    "08_GENERATION_CACHE/EP01/MF/MF_EP01_S04_MASTER_V05_c4ceb494.png"
+  ],
+  "attempts": 1,
+  "duration_sec": null,
+  "cost": {
+    "currency": "CREDITS",
+    "amount": 2.0,
+    "spent": 2.0,
+    "note": "Higgsfield job c4ceb494-cc0b-43d4-96bc-58d5d3830ff5 (balance 1862.48 -> 1860.48)"
+  },
+  "result_status": "SUCCESS",
+  "failure_id": null,
+  "started_at": "2026-09-13T06:51:52Z",
+  "finished_at": null,
+  "run_by": "Image Generation Agent (Claude Code)",
+  "notes": "Fresh text-only generation (PATCH_MF_EP01_S04_004, owner '진행'). Bot check PASS: labourer faces clearly varied (ages, grey hair, clean-shaven and bearded, black and off-white jackets, headband or bare topknot) - no cloned look; full frame; horizon low hills and trees; open-topped chamber with river-stone course, no mound; wooden mallets, shoulder-pole baskets, log yard. Minor notes: two spades in the middle background still read as metal-bladed; a tiny white speck on the far right horizon. Crowd lesson: a single crowd reference image clones faces - describe crowd costume in text instead."
+}
