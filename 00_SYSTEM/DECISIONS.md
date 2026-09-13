@@ -96,6 +96,9 @@
 **결과** `CHAR_SILLA_ELITE_OBSERVER_01` Master Pack 10/10 APPROVED → **CHARACTER_MASTER_APPROVED**. 원로 유료 생성 누적 22 credits (배치 1 8.12 포함 EP01 전체 24.12).
 **다음** 군중 LITE Pack (노동자 3 · 시종 3) — 별도 approval.
 
+### D-020 · 2026-09-13 · 군중 LITE Master Pack 승인 (사용자)
+**승인** `APR_EP01_MP_CROWD_001` APPROVE — 노동자 3 · 시종 3 (full_body · walking · costume_detail, 한 장에 3명, 3:2), 최대 9 호출 (12–18 credits). 1단계 full_body 2장 → 사람 확인 → 2단계 나머지 4장 (해당 무리 full_body 를 복식 참조). 전송은 저장된 V02 문장 그대로 (D-016).
+
 ---
 
 ## 승인 대기 (P)

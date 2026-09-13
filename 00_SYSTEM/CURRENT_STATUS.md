@@ -160,6 +160,8 @@
 
 ## 최근 변경 (최신순)
 
+- **2026-09-13 사용자** — **D-020.** 군중 LITE 6장 APPROVE (`APR_EP01_MP_CROWD_001`, 최대 9 호출). 1단계 full_body 2장부터.
+
 - **2026-09-13 사용자** — **D-019.** 배치 2 7장 APPROVE → 원로 Master Pack 10/10, `CHARACTER_MASTER_APPROVED`. 다음 군중 LITE 6.
 
 - **2026-09-13 Claude Code** — **배치 2 생성 (D-018).** 원로 나머지 7장 (three_quarter_right · profile · neutral_standing · walking · costume_detail · expression_sheet · back_view) — V02 문장 그대로 전송, 7/7 성공, 14 credits (승인 10 호출 중 7). 봇 판정 전부 PASS (profile 방향 반대 · back_view 비계 금속관 의심 · 모자 약간 높음 메모). 검수 시트 `08_GENERATION_CACHE/EP01/MP_ELITE/REVIEW_BATCH2.md` → **사람 검수 대기**. EP01 소진 합계 24.12 credits.
