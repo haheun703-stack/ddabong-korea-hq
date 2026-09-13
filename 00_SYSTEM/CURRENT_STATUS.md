@@ -27,7 +27,7 @@
 - graphics-spec v2 (G13 추가) — legacy HTML 은 수정하지 않고 새 문서로.
 - P5 Review UI / P6 Money Gate 어댑터 설계 (유료 없음).
 
-**유료 생성 현황 (D-015)**: Money Gate OPEN (₩40,000 / 소진 60.12 credits, KRW 환산 P-012). **P2 Character Master 완료 (D-023)**: 원로 FULL 10/10 · 노동자 LITE 3/3 · 시종 LITE 3/3 전부 CHARACTER_MASTER_APPROVED. 라우터 잠금 (D-024). 다음 유료는 Master Frame S04 · S06 → AI 샷 (Flow/Veo 는 별도 비용 게이트).
+**유료 생성 현황 (D-015)**: Money Gate OPEN (₩40,000 / 소진 62.12 credits, KRW 환산 P-012). **P2 Character Master 완료 (D-023)**: 원로 FULL 10/10 · 노동자 LITE 3/3 · 시종 LITE 3/3 전부 CHARACTER_MASTER_APPROVED. 라우터 잠금 (D-024). 다음 유료는 Master Frame S04 · S06 → AI 샷 (Flow/Veo 는 별도 비용 게이트).
 
 ## P2 사전 점검 — Pre-flight (2026-09-11 · DONE, 생성 0)
 
@@ -138,7 +138,7 @@
 | 항목 | 값 |
 |---|---|
 | EP01 예산 | **₩40,000** (D-015) — `08_GENERATION_CACHE/EP01/cost_COST_EP01_20260911.json` |
-| 소진 | 60.12 credits (31 호출: 원로 13 · 군중 10 · 기준 그림 8) — KRW 환산 P-012 |
+| 소진 | 62.12 credits (32 호출: 원로 13 · 군중 10 · 기준 그림 8 · AI 샷 1) — KRW 환산 P-012 |
 | 게이트 상태 | `OPEN` — 배치 1 승인 `APR_EP01_MP_ELITE_BATCH1_001` |
 
 ---
@@ -159,6 +159,8 @@
 ---
 
 ## 최근 변경 (최신순)
+
+- **2026-09-13 Claude Code** — H06 1차 (2 credits, 승인 1/2): 단계 OK · 규모 대체로 OK · **봉분 비율 약 2.3:1 (목표 3.7:1) · 지평선 전봇대·건물** → REJECTED. 실패 항목만 고친 V03 + PATCH 저장 후 마지막 2차 시도. EP01 소진 62.12 credits.
 
 - **2026-09-13 사용자** — **D-028.** Higgsfield = provider, Kling 3.0 = model (영상), D-024 '0건' = EXTREME_CAMERA 파이프라인 0건으로 명확화. 샷에 logical_pipeline/provider/model 분리. D3 Blender 없이 먼저, 공간 오류 2회 STOP. D4 H06 사진 최대 2회/4 credits. P-012 는 실제 청구액 받으면 확정, **영상 미승인**.
 

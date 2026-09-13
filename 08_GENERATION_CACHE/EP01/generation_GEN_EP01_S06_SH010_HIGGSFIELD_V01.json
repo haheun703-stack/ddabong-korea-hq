@@ -1,0 +1,43 @@
+{
+  "generation_id": "GEN_EP01_S06_SH010_HIGGSFIELD_V01",
+  "shot_id": "EP01_S06_SH010",
+  "stage": "STILL",
+  "provider": "Higgsfield",
+  "model": "NANO_BANANA_PRO (job_set_type nano_banana_2, 2k, 16:9, image_references=MOUND_BUILDING frame 8e1007b7)",
+  "provider_job": {
+    "job_id": "0f250ab3-5927-4c80-8a01-2dcae8e5f74f",
+    "job_set_type": "nano_banana_2",
+    "display_name": "Nano Banana Pro",
+    "params_path": "08_GENERATION_CACHE/EP01/provider_jobs/HF_0f250ab3-5927-4c80-8a01-2dcae8e5f74f.json"
+  },
+  "prompt_id": "PRM_EP01_S06_SH010_V02",
+  "prompt_version": "V02",
+  "standard_versions": {
+    "CHARACTER_CONTINUITY_STANDARD.md": "v0.1",
+    "COST_STANDARD.md": "v0.1"
+  },
+  "case_ids_used": [
+    "CASE_DDABONG_CHAR_001"
+  ],
+  "approval_id": "APR_EP01_AI_B1_001",
+  "input_paths": [
+    "08_GENERATION_CACHE/EP01/MF/MF_EP01_S06_MASTER_MOUND_BUILDING_V01_8e1007b7.png"
+  ],
+  "output_paths": [
+    "08_GENERATION_CACHE/EP01/AI_STILL/H06_V01_0f250ab3.png"
+  ],
+  "attempts": 1,
+  "duration_sec": null,
+  "cost": {
+    "currency": "CREDITS",
+    "amount": 2.0,
+    "spent": 2.0,
+    "note": "Higgsfield job 0f250ab3-5927-4c80-8a01-2dcae8e5f74f (balance 1860.48 -> 1858.48)"
+  },
+  "result_status": "REJECTED",
+  "failure_id": null,
+  "started_at": "2026-09-13T11:47:26Z",
+  "finished_at": null,
+  "run_by": "Image Generation Agent (Claude Code)",
+  "notes": "D-028 D4 call 1/2. Owner criteria check: (1) construction stage PASS - smooth nearly finished earth dome, people smoothing the top, no stones/timber; (2) human scale roughly OK - base figures read about 1/6 of mound height (target ~1/8), partly close wide-angle perspective; (3) proportion FAIL - visible width ~2.3x height vs target ~3.7x (too steep/peaked), likely inherited from the steep mound in reference frame MOUND_BUILDING and 24mm close camera; (4) modern intrusion FAIL - utility poles and white buildings on the left horizon, white structure on the right horizon. -> retry V03 (PATCH_EP01_S06_SH010_001), pre-approved in D4."
+}
