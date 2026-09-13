@@ -1,0 +1,41 @@
+{
+  "generation_id": "GEN_MP_ATTENDANT_FULL_BODY_HIGGSFIELD_V01",
+  "shot_id": "MASTER_PACK:CHAR_SILLA_ATTENDANT_GROUP_01:full_body",
+  "stage": "STILL",
+  "provider": "Higgsfield",
+  "model": "Nano Banana Pro (job_set_type nano_banana_2, 2k, 3:2, text only)",
+  "provider_job": {
+    "job_id": "30791f45-502b-4d21-9add-028bb4a7c5b1",
+    "job_set_type": "nano_banana_2",
+    "display_name": "Nano Banana Pro",
+    "params_path": "08_GENERATION_CACHE/EP01/provider_jobs/HF_30791f45-502b-4d21-9add-028bb4a7c5b1.json"
+  },
+  "prompt_id": "PRM_MP_CHAR_SILLA_ATTENDANT_GROUP_01_FULL_BODY_V02",
+  "prompt_version": "V02",
+  "standard_versions": {
+    "CHARACTER_CONTINUITY_STANDARD.md": "v0.1",
+    "COST_STANDARD.md": "v0.1"
+  },
+  "case_ids_used": [
+    "CASE_DDABONG_CHAR_001"
+  ],
+  "approval_id": "APR_EP01_MP_CROWD_001",
+  "input_paths": [],
+  "output_paths": [
+    "08_GENERATION_CACHE/EP01/MP_CROWD/MP_ATTENDANT_FULL_BODY_V01_30791f45.png"
+  ],
+  "attempts": 1,
+  "duration_sec": null,
+  "cost": {
+    "currency": "CREDITS",
+    "amount": 2.0,
+    "spent": 2.0,
+    "note": "Higgsfield job 30791f45-502b-4d21-9add-028bb4a7c5b1 (step 1 pair: balance 1898.48 -> 1894.48)"
+  },
+  "result_status": "SUCCESS",
+  "failure_id": null,
+  "started_at": "2026-09-13T04:37:09Z",
+  "finished_at": null,
+  "run_by": "Image Generation Agent (Claude Code)",
+  "notes": "D-020 crowd step 1. Bot check: two men and one woman, undyed grey/black/ivory hemp, cloth headband and cloth cap, woman in long skirt, cloth bundles, plain earth. ISSUE (costume lock: no Joseon hanbok silhouette): all three jackets fasten with long chest ribbon ties (goreum-like bows) that read as Joseon hanbok -> FIX edit proposed (PATCH_MP_ATTENDANT_FULL_BODY_001)."
+}

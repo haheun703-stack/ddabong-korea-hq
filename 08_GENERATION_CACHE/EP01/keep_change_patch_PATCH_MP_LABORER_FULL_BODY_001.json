@@ -1,0 +1,25 @@
+{
+  "patch_id": "PATCH_MP_LABORER_FULL_BODY_001",
+  "shot_id": "MASTER_PACK:CHAR_SILLA_LABORER_GROUP_01:full_body",
+  "from_version": "V02",
+  "to_version": "V03",
+  "fix_reason": "HISTORICAL_ISSUE",
+  "keep": [
+    "three faces and bodies",
+    "poses",
+    "hemp jackets and colours",
+    "waist cords",
+    "trousers and footwear",
+    "hair",
+    "mound background",
+    "lighting"
+  ],
+  "change": [
+    "remove the steel spade and pick-axes; hands empty and relaxed"
+  ],
+  "reason": "Hand tools read as modern steel tools (SILLA_EARLY_V01 forbids modern tools). Edit the existing image so the costume reference stays identical.",
+  "requested_by": "Image Generation Agent (Claude Code) — pending user OK",
+  "created_at": "2026-09-13",
+  "resulting_prompt_id": "PRM_MP_CHAR_SILLA_LABORER_GROUP_01_FULL_BODY_V03",
+  "resulting_generation_id": null
+}

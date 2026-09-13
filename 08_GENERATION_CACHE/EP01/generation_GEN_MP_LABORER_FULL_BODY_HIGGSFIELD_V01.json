@@ -1,0 +1,41 @@
+{
+  "generation_id": "GEN_MP_LABORER_FULL_BODY_HIGGSFIELD_V01",
+  "shot_id": "MASTER_PACK:CHAR_SILLA_LABORER_GROUP_01:full_body",
+  "stage": "STILL",
+  "provider": "Higgsfield",
+  "model": "Nano Banana Pro (job_set_type nano_banana_2, 2k, 3:2, text only)",
+  "provider_job": {
+    "job_id": "f5514f0f-e657-4b85-b868-72256da35304",
+    "job_set_type": "nano_banana_2",
+    "display_name": "Nano Banana Pro",
+    "params_path": "08_GENERATION_CACHE/EP01/provider_jobs/HF_f5514f0f-e657-4b85-b868-72256da35304.json"
+  },
+  "prompt_id": "PRM_MP_CHAR_SILLA_LABORER_GROUP_01_FULL_BODY_V02",
+  "prompt_version": "V02",
+  "standard_versions": {
+    "CHARACTER_CONTINUITY_STANDARD.md": "v0.1",
+    "COST_STANDARD.md": "v0.1"
+  },
+  "case_ids_used": [
+    "CASE_DDABONG_CHAR_001"
+  ],
+  "approval_id": "APR_EP01_MP_CROWD_001",
+  "input_paths": [],
+  "output_paths": [
+    "08_GENERATION_CACHE/EP01/MP_CROWD/MP_LABORER_FULL_BODY_V01_f5514f0f.png"
+  ],
+  "attempts": 1,
+  "duration_sec": null,
+  "cost": {
+    "currency": "CREDITS",
+    "amount": 2.0,
+    "spent": 2.0,
+    "note": "Higgsfield job f5514f0f-e657-4b85-b868-72256da35304 (step 1 pair: balance 1898.48 -> 1894.48)"
+  },
+  "result_status": "SUCCESS",
+  "failure_id": null,
+  "started_at": "2026-09-13T04:37:09Z",
+  "finished_at": null,
+  "run_by": "Image Generation Agent (Claude Code)",
+  "notes": "D-020 crowd step 1. Bot check: three different men, undyed hemp/black jackets, cloth waist cords, shin-bound trousers, straw sandals/bare feet, topknots, finished mounds behind. ISSUE (era lock: no modern tools): they hold a flat steel spade and pick-axes that read as modern metal tools -> FIX edit proposed (PATCH_MP_LABORER_FULL_BODY_001)."
+}
