@@ -1,7 +1,7 @@
 # CURRENT STATUS — 지금 어디까지 왔나
 
 > **매 작업마다 갱신한다.** 이 파일 하나만 읽으면 어느 봇/AI 창을 열어도 바로 이어갈 수 있어야 한다.
-> 갱신: 2026-09-11 (Claude Code, D-015 반영) · 마지막 사용자 승인: 2026-09-11 (P0 범위·EP01 파일 유지·push 전 확인 → D-007)
+> 갱신: 2026-09-13 (Claude Code, D-017 반영) · 마지막 사용자 승인: 2026-09-11 (P0 범위·EP01 파일 유지·push 전 확인 → D-007)
 > 읽는 순서: `BOT_HANDOFF_DDABONG_STUDIO_OS_V0.1.md` → `BOT_BOOTSTRAP_PROMPT.md` → **이 문서** → `OS_INDEX.md` → `02_SEASONS/S01/EP01/episode.json`
 
 ---
@@ -19,7 +19,7 @@
 - **다음 순서 (D-016)**: ① 배치 1 Work 판정 → ② hero 배경 기와지붕 시대 위반 여부 → ③ H07 정지/영상 매치컷 결정 → ④ Master Pack 확장 → ⑤ Web HQ 는 main 병합 때. 생성 시 **Sent Prompt Rule** (저장 → 그대로 전송 → 기록 연결, 어기면 FAIL).
 - **2026-09-13 전체 검수 수정 1–5 완료 (유료 없음, `6c66f13` push)** → `02_SEASONS/S01/EP01/15_QA/REVIEW_FIX_20260913.md`. 실제 전송 프롬프트 버전화 · provider job 기록 · 검증기 Money Gate 규칙 · negative 25개 보강 · 예산 소진 일치. 검증 244/244.
 - **P-012** 크레딧→KRW 환산율 — **임시 미정 (사용자 2026-09-11)**: 플랜 월 요금·월 크레딧 수 확인 전까지 크레딧 단위로만 기록, 원화 소진율 계산 안 함.
-- **배치 1 검수 — Work 창에 위임 (사용자 2026-09-11)**: 이미지 5장 + `REVIEW_BATCH1.md` 를 직접 열어 비교. 검수 항목: 얼굴 동일성 · 연령 · 관모 형태 · 표(袍) 소매 길이 · 체형 · 복식 일관성. **판정(APPROVE/FIX)만 내리고 유료 생성은 하지 않는다.** 판정이 나오면 그 기준으로 나머지 6 + back_view 확장 여부 결정.
+- **배치 1 판정 (D-017)**: front · three_quarter_left · full_body APPROVED. hero 배경 편집본 `MP_ELITE_HERO_V03_5de27748.png` **사람 최종 확인 대기** → APPROVE 면 4장 완료, 나머지 6 + back_view 는 새 approval 필요. 배치 1 승인 호출 6/8 사용.
 - **P-011** 라우터 판정 49건 ACCEPT / OVERRIDE — **AI 샷 생성 직전 최종 승인으로 보류 (D-015)**.
 - YELLOW_ACTIVE 1건 (`RTS_GNM_OTHER_OBJECTS_001`) — 편집 확정 전 필수 해소 (D-014).
 
@@ -27,7 +27,7 @@
 - graphics-spec v2 (G13 추가) — legacy HTML 은 수정하지 않고 새 문서로.
 - P5 Review UI / P6 Money Gate 어댑터 설계 (유료 없음).
 
-**유료 생성 현황 (D-015)**: Money Gate OPEN (₩40,000 / 소진 10.12 credits, KRW 환산 P-012). **배치 1 생성 완료 → 사람 검수 대기** `08_GENERATION_CACHE/EP01/MP_ELITE/REVIEW_BATCH1.md` (hero V02 · front · three_quarter_left · full_body, DRAFT). 승인되면 나머지 6 + back_view → 군중 6. AI 샷은 P-011 ACCEPT + `CHARACTER_MASTER_APPROVED` + master_frame APPROVED 뒤.
+**유료 생성 현황 (D-015)**: Money Gate OPEN (₩40,000 / 소진 10.12 credits, KRW 환산 P-012). **배치 1: 3장 APPROVED, hero V03(배경 편집) 사람 확인 대기** `08_GENERATION_CACHE/EP01/MP_ELITE/REVIEW_BATCH1.md`. 승인되면 나머지 6 + back_view → 군중 6. AI 샷은 P-011 ACCEPT + `CHARACTER_MASTER_APPROVED` + master_frame APPROVED 뒤.
 
 ## P2 사전 점검 — Pre-flight (2026-09-11 · DONE, 생성 0)
 
