@@ -1,0 +1,41 @@
+{
+  "generation_id": "GEN_EP01_S06_SH010_HIGGSFIELD_V03",
+  "shot_id": "EP01_S06_SH010",
+  "stage": "STILL",
+  "provider": "Higgsfield",
+  "model": "NANO_BANANA_PRO (job_set_type nano_banana_2, 2k, 16:9, text only)",
+  "provider_job": {
+    "job_id": "4cc87427-65e4-469a-8d0f-2b1e3935a19e",
+    "job_set_type": "nano_banana_2",
+    "display_name": "Nano Banana Pro",
+    "params_path": "08_GENERATION_CACHE/EP01/provider_jobs/HF_4cc87427-65e4-469a-8d0f-2b1e3935a19e.json"
+  },
+  "prompt_id": "PRM_EP01_S06_SH010_V04",
+  "prompt_version": "V04",
+  "standard_versions": {
+    "CHARACTER_CONTINUITY_STANDARD.md": "v0.1",
+    "COST_STANDARD.md": "v0.1"
+  },
+  "case_ids_used": [
+    "CASE_DDABONG_CHAR_001"
+  ],
+  "approval_id": "APR_EP01_AI_B1_002",
+  "input_paths": [],
+  "output_paths": [
+    "08_GENERATION_CACHE/EP01/AI_STILL/H06_V03_4cc87427.png"
+  ],
+  "attempts": 1,
+  "duration_sec": null,
+  "cost": {
+    "currency": "CREDITS",
+    "amount": 2.0,
+    "spent": 2.0,
+    "note": "Higgsfield job 4cc87427-65e4-469a-8d0f-2b1e3935a19e. Balance 1856.48 -> 1844.48 (-12): transactions show 5 extra Nano Banana Pro -2 at 11:51:29, 12:02:02, 12:03:58, 12:18:13, 12:19:16Z not sent by this session (shared account, D-018) - excluded from EP01."
+  },
+  "result_status": "SUCCESS",
+  "failure_id": null,
+  "started_at": "2026-09-13T12:30:04Z",
+  "finished_at": null,
+  "run_by": "Image Generation Agent (Claude Code)",
+  "notes": "D-030 H06 attempt 3 (PATCH_EP01_S06_SH010_002). Bot check (owner criteria): proportion PASS (~3.9:1, rounded crown, no ledge); modern intrusion PASS (rolling hills, trees only); stage PASS (workers smoothing the top); human scale IMPROVED but slightly short of target - base figures read ~1/4 of apparent mound height on screen, ~1/5-1/6 after allowing that they stand ~25 m nearer the camera than the mound centre (target 1/8), top workers consistent with ~12.7 m; minor: right group white jackets with dark belts and two long dark robes still read slightly modern at distance. Approval cap reached; owner final OK pending."
+}

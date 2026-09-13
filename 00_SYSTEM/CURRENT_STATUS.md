@@ -27,7 +27,7 @@
 - graphics-spec v2 (G13 추가) — legacy HTML 은 수정하지 않고 새 문서로.
 - P5 Review UI / P6 Money Gate 어댑터 설계 (유료 없음).
 
-**유료 생성 현황 (D-015)**: Money Gate OPEN (₩40,000 / 소진 64.12 credits, KRW 환산 P-012). **P2 Character Master 완료 (D-023)**: 원로 FULL 10/10 · 노동자 LITE 3/3 · 시종 LITE 3/3 전부 CHARACTER_MASTER_APPROVED. 라우터 잠금 (D-024). 다음 유료는 Master Frame S04 · S06 → AI 샷 (Flow/Veo 는 별도 비용 게이트).
+**유료 생성 현황 (D-015)**: Money Gate OPEN (₩40,000 / 소진 66.12 credits, KRW 환산 P-012). **P2 Character Master 완료 (D-023)**: 원로 FULL 10/10 · 노동자 LITE 3/3 · 시종 LITE 3/3 전부 CHARACTER_MASTER_APPROVED. 라우터 잠금 (D-024). 다음 유료는 Master Frame S04 · S06 → AI 샷 (Flow/Veo 는 별도 비용 게이트).
 
 ## P2 사전 점검 — Pre-flight (2026-09-11 · DONE, 생성 0)
 
@@ -138,7 +138,7 @@
 | 항목 | 값 |
 |---|---|
 | EP01 예산 | **₩40,000** (D-015) — `08_GENERATION_CACHE/EP01/cost_COST_EP01_20260911.json` |
-| 소진 | 64.12 credits (33 호출: 원로 13 · 군중 10 · 기준 그림 8 · AI 샷 2) — KRW 환산 P-012 |
+| 소진 | 66.12 credits (34 호출: 원로 13 · 군중 10 · 기준 그림 8 · AI 샷 3) — KRW 환산 P-012 |
 | 게이트 상태 | `OPEN` — 배치 1 승인 `APR_EP01_MP_ELITE_BATCH1_001` |
 
 ---
@@ -159,6 +159,8 @@
 ---
 
 ## 최근 변경 (최신순)
+
+- **2026-09-13 Claude Code** — H06 3차 (D-030, 2 credits): 비율 3.9:1·둥근 꼭대기·지평선·단계 통과, 사람 규모 크게 개선 (원근 감안 약 1/5–1/6, 목표 1/8) → SUCCESS, **사용자 최종 OK 대기**. 공용 계정 출처 불명 차감 5건 (-10) 제외. EP01 소진 66.12 credits.
 
 - **2026-09-13 사용자** — **D-030.** H06 1회 추가 승인 · P-012 미정 유지 (영상 계속 미승인) · 사진 전용 위임 한도: 샷당 2 호출/4 credits, 누적 20 credits, 그림 최종 OK 는 사용자.
 

@@ -16,5 +16,5 @@
   "fix_reason": "ARCHITECTURE",
   "decided_by": "사용자",
   "decided_at": "2026-09-13T12:30:00Z",
-  "note": "D-030: 사용자 '1,2,3 너의 추론대로' → H06 1회 추가 승인 (최대 1 호출 / 2 credits). 전송은 PRM_EP01_S06_SH010_V04 그대로."
+  "note": "D-030: 사용자 '1,2,3 너의 추론대로' → H06 1회 추가 승인 (최대 1 호출 / 2 credits). 전송은 PRM_EP01_S06_SH010_V04 그대로. 1/1 사용 (SUCCESS, 사용자 최종 OK 대기)."
 }
