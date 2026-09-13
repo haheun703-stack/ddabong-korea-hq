@@ -1,0 +1,25 @@
+{
+  "patch_id": "PATCH_MP_ATTENDANT_FULL_BODY_003",
+  "shot_id": "MASTER_PACK:CHAR_SILLA_ATTENDANT_GROUP_01:full_body",
+  "from_version": "V04",
+  "to_version": "V05",
+  "fix_reason": "HISTORICAL_ISSUE",
+  "keep": [
+    "group of two men and one woman",
+    "finer undyed hemp/ramie",
+    "white/black/grey-brown palette",
+    "cloth headwear",
+    "long skirt for the woman",
+    "plain earth background",
+    "style B"
+  ],
+  "change": [
+    "NOT an edit: fresh text-only generation (faces may change, LITE crowd)",
+    "explicit fastening: no chest ribbon ties, jackets closed only by waist belt"
+  ],
+  "reason": "Two edits (V03, V04) left chest ribbon ties on at least one man. D-021: stop edit loop; user chose method A (fresh generation with explicit fastening wording).",
+  "requested_by": "사용자 (2026-09-13, 방법 A)",
+  "created_at": "2026-09-13",
+  "resulting_prompt_id": "PRM_MP_CHAR_SILLA_ATTENDANT_GROUP_01_FULL_BODY_V05",
+  "resulting_generation_id": null
+}
