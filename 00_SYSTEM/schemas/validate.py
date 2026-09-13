@@ -132,11 +132,13 @@ def money_rules(docs):
     prompts, gens, apps = by("prompt", "prompt_id"), by("generation", "generation_id"), by("approval", "approval_id")
     costs, patches, chars, eps = by("cost", "cost_id"), by("keep_change_patch", "patch_id"), by("character", "character_id"), by("episode", "episode_id")
     parents = {d.get("parent_prompt_id") for _, d in prompts.values()}
-    def root(pid):
-        seen = set()
-        while pid in prompts and prompts[pid][1].get("parent_prompt_id") and pid not in seen:
-            seen.add(pid); pid = prompts[pid][1]["parent_prompt_id"]
-        return pid
+    def chain(pid):
+        """pid and its ancestors (an approval may list the exact version or any ancestor)."""
+        out = [pid]
+        while pid in prompts and prompts[pid][1].get("parent_prompt_id") and prompts[pid][1]["parent_prompt_id"] not in out:
+            pid = prompts[pid][1]["parent_prompt_id"]; out.append(pid)
+        return out
+    root = lambda pid: chain(pid)[-1]
     per_approval = {}
     for gid, (p, g) in gens.items():
         pr = prompts.get(g["prompt_id"])
@@ -153,7 +155,7 @@ def money_rules(docs):
                 if a["kind"] != "PAID_GENERATION" or a["decision"] != "APPROVE":
                     errs.append(f"{rel(p)}: approval {aid} is not an APPROVEd PAID_GENERATION")
                 allowed = (a.get("money_gate_presented") or {}).get("prompt_ids")
-                if allowed and root(g["prompt_id"]) not in allowed:
+                if allowed and not set(chain(g["prompt_id"])) & set(allowed):
                     errs.append(f"{rel(p)}: prompt {g['prompt_id']} (root {root(g['prompt_id'])}) not covered by approval {aid}")
                 per_approval[aid] = per_approval.get(aid, 0) + 1
         pj = g.get("provider_job")

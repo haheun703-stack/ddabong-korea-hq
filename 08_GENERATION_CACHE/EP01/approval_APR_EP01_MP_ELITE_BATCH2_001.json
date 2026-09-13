@@ -1,0 +1,39 @@
+{
+  "approval_id": "APR_EP01_MP_ELITE_BATCH2_001",
+  "kind": "PAID_GENERATION",
+  "target_id": "CHAR_SILLA_ELITE_OBSERVER_01",
+  "money_gate_presented": {
+    "shot_id": "MASTER_PACK:CHAR_SILLA_ELITE_OBSERVER_01:batch2",
+    "prompt_ids": [
+      "PRM_MP_CHAR_SILLA_ELITE_OBSERVER_01_THREE_QUARTER_RIGHT_V02",
+      "PRM_MP_CHAR_SILLA_ELITE_OBSERVER_01_PROFILE_V02",
+      "PRM_MP_CHAR_SILLA_ELITE_OBSERVER_01_NEUTRAL_STANDING_V02",
+      "PRM_MP_CHAR_SILLA_ELITE_OBSERVER_01_WALKING_V02",
+      "PRM_MP_CHAR_SILLA_ELITE_OBSERVER_01_COSTUME_DETAIL_V02",
+      "PRM_MP_CHAR_SILLA_ELITE_OBSERVER_01_EXPRESSION_SHEET_V02",
+      "PRM_MP_CHAR_SILLA_ELITE_OBSERVER_01_BACK_VIEW_V02"
+    ],
+    "aspect_ratios": {
+      "PRM_MP_CHAR_SILLA_ELITE_OBSERVER_01_THREE_QUARTER_RIGHT_V02": "3:4",
+      "PRM_MP_CHAR_SILLA_ELITE_OBSERVER_01_PROFILE_V02": "3:4",
+      "PRM_MP_CHAR_SILLA_ELITE_OBSERVER_01_NEUTRAL_STANDING_V02": "2:3",
+      "PRM_MP_CHAR_SILLA_ELITE_OBSERVER_01_WALKING_V02": "2:3",
+      "PRM_MP_CHAR_SILLA_ELITE_OBSERVER_01_COSTUME_DETAIL_V02": "3:4",
+      "PRM_MP_CHAR_SILLA_ELITE_OBSERVER_01_EXPRESSION_SHEET_V02": "3:2",
+      "PRM_MP_CHAR_SILLA_ELITE_OBSERVER_01_BACK_VIEW_V02": "2:3"
+    },
+    "image_references": {
+      "hero_V03": "5de27748-f100-47e0-af23-1bdb68466bb7",
+      "full_body_V01": "5681f1e0-fe07-4fc3-b36c-f512dc7a2992"
+    },
+    "provider_model": "Higgsfield / Nano Banana Pro (job type nano_banana_2), 2k, image_references = hero V03 + full_body V01 (both APPROVED)",
+    "expected_attempts": 10,
+    "estimated_cost_range": "14–20 credits (2 credits x 7 images, + up to 3 FIX retries)",
+    "continuity_risk": "MEDIUM - face and costume anchored by 4 APPROVED images; expression_sheet (5 faces in one image) and walking are the riskiest"
+  },
+  "decision": "PENDING",
+  "fix_reason": null,
+  "decided_by": "사용자",
+  "decided_at": "2026-09-13T00:00:00Z",
+  "note": "준비만 됨 (decided_at = 준비 시각, 결정 시 갱신). 사용자 APPROVE 전 전송 금지. 전송은 각 prompt 의 assembled_text 그대로."
+}
