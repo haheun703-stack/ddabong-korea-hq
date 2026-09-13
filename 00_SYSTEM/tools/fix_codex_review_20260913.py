@@ -78,8 +78,11 @@ rep(R / "00_SYSTEM/CURRENT_STATUS.md", [
  ("- ~~YELLOW_ACTIVE 1건~~ **해소 (2026-09-13)**: `RTS_GNM_OTHER_OBJECTS_001` → 유리잔·금제 관모·가슴걸이 GREEN 1유형 분리, 원본은 BACKUP_ONLY. 남은 일: 유리잔 해상도 확인, GREEN proof 캡처.",
   "- ~~YELLOW_ACTIVE 1건~~ **해소 (2026-09-13)**: `RTS_GNM_OTHER_OBJECTS_001` → 유리잔·금제 관모·가슴걸이·천마무늬 말다래 GREEN 1유형 분리 (페이지 원문 proof 저장), 원본은 BACKUP_ONLY. 남은 일: 유리잔·말다래 표시 이미지 해상도 확인 (편집 전)."),
  ("YELLOW_ACTIVE 1 · YELLOW_BACKUP 3", "YELLOW_ACTIVE 0 · YELLOW_BACKUP 4 (2026-09-13)"),
- ("유리잔·금제 관모·가슴걸이 GREEN 3건 생성, S02_SH003·S05_SH001 연결 교체", "유리잔·금제 관모·가슴걸이·천마무늬 말다래 GREEN 4건 생성, S02_SH003·S05_SH001 연결 교체"),
 ])
+p = R / "00_SYSTEM/CURRENT_STATUS.md"; s = p.read_text(encoding="utf-8")
+if "반박 검수 BLOCK 수정" not in s:
+    s = s.replace("## 최근 변경 (최신순)\n", "## 최근 변경 (최신순)\n\n- **2026-09-13 Claude Code (D-029)** — 에이전트 배치 + Codex 역할 반박 검수 BLOCK 수정: YELLOW_ACTIVE 해소 (유리잔·금제 관모·가슴걸이·천마무늬 말다래 GREEN 1유형, 페이지 원문 proof 저장) · S02_SH003 말다래 정정 (금동 말다래) · 데이터 정리 (H05 라벨 2개 · S03_SH002 · 자갈/토기 사실 연결) · 영상 V02 6개 한 가지 동작 · 시작 사진 3개 (문장만, H03 금 제거). 커밋 8a3d798 은 스크립트 중단으로 일부만 반영된 상태였고 이어서 완결.\n", 1)
+p.write_text(s, encoding="utf-8")
 rep(EP / "14_EDIT/GRAPHICS_SPEC_EP01_V2.md", [
  ("| `RTS_GNM_OTHER_OBJECTS_001` | 귀걸이·유리·토기·말갖춤 | 페이지별 확인 (KOGL 1 또는 4) | **YELLOW** (편집 확정 전 필수 해소, D-014) | S02_SH003, S05_SH001 | attribution_text 없음 → 해소 전 기재 불가. 4유형이면 사용 금지 |",
   "| `RTS_GNM_GLASS_CUP_001` | 천마총 유리잔 | KOGL Type 1 | GREEN · ACTIVE | S02_SH003 | Source: Gyeongju National Museum, Glass cup from Cheonmachong (Treasure), KOGL Type 1. |\n"

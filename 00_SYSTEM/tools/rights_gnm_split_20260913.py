@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """Resolve YELLOW_ACTIVE RTS_GNM_OTHER_OBJECTS_001 (D-014) using the 2026-09-13 page check (15_QA/RIGHTS_CHECK_GNM_OTHER_OBJECTS_20260913.md):
 split into GREEN KOGL Type 1 records for objects the shots actually use; OTHER_OBJECTS -> BACKUP_ONLY (earrings/pottery unchecked, stays YELLOW).
-S02_SH003 '말다래' = the Cheonmado painting (already RTS_WIKI_CHEONMADO_001 on that shot) -> no separate mudguard record.
+(Original claim that S02_SH003 '말다래' = the Cheonmado painting was WRONG; corrected by fix_codex_review_20260913.py -> gilt-bronze mudguard RTS_GNM_MUDGUARD_001.)
 Usage:  python 00_SYSTEM/tools/rights_gnm_split_20260913.py
 """
 import json
@@ -17,7 +17,7 @@ NEW = [
  ("RTS_GNM_GOLD_CAP_001", "ASSET_GNM_CHEONMACHONG_GOLD_CAP_V01", "https://gyeongju.museum.go.kr/kor/html/sub04/0402.html?GotoPage=1&dvs_code=&mng_no=58&mode=V",
   "Source: Gyeongju National Museum, Gold cap from Cheonmachong (Gyeongju 2275), KOGL Type 1.", "금제 관모", "원본이미지 다운로드 있음 (2장)."),
  ("RTS_GNM_GLASS_CUP_001", "ASSET_GNM_CHEONMACHONG_GLASS_CUP_V01", "https://gyeongju.museum.go.kr/kor/html/sub02/0202.html?d_mng_no=172&mng_no=256&mode=V",
-  "Source: Gyeongju National Museum, Glass cup from Cheonmachong (Treasure No. 620), KOGL Type 1.", "유리잔", "전시 해설 페이지: 원본 다운로드 버튼 없음, 표시 이미지만 → 편집 전 해상도 확인. 부족하면 소장품 DB/e뮤지엄 원본 페이지를 찾아 그 라벨을 다시 확인."),
+  "Source: Gyeongju National Museum, Glass cup from Cheonmachong (Treasure), KOGL Type 1.", "유리잔", "전시 해설 페이지: 원본 다운로드 버튼 없음, 표시 이미지만 → 편집 전 해상도 확인. 부족하면 소장품 DB/e뮤지엄 원본 페이지를 찾아 그 라벨을 다시 확인."),
 ]
 for rid, aid, src, credit, name, extra in NEW:
     w(RT / f"{rid}.json", {"rights_id": rid, "asset_id": aid, "source": src, "creator": "국립경주박물관", "license": "KOGL Type 1",

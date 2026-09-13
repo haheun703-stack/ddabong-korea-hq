@@ -21,7 +21,7 @@
 - **P-012** 크레딧→KRW 환산율 — **임시 미정 (사용자 2026-09-11)**: 플랜 월 요금·월 크레딧 수 확인 전까지 크레딧 단위로만 기록, 원화 소진율 계산 안 함.
 - **배치 1 판정 (D-017)**: front · three_quarter_left · full_body APPROVED. hero V03 (배경 편집) **APPROVED** → **4장 완료**. 나머지 6 + back_view 는 새 approval 필요. 배치 1 승인 호출 6/8 사용.
 - ~~P-011~~ **라우터 49건 잠금 (D-024)**: 46 ACCEPTED · H01·H03 → FLOW_VEO · H07 AI_STILL · **EP01 Higgsfield 0건**. 실제 AI 생성은 별도 승인 + Money Gate.
-- ~~YELLOW_ACTIVE 1건~~ **해소 (2026-09-13)**: `RTS_GNM_OTHER_OBJECTS_001` → 유리잔·금제 관모·가슴걸이 GREEN 1유형 분리, 원본은 BACKUP_ONLY. 남은 일: 유리잔 해상도 확인, GREEN proof 캡처.
+- ~~YELLOW_ACTIVE 1건~~ **해소 (2026-09-13)**: `RTS_GNM_OTHER_OBJECTS_001` → 유리잔·금제 관모·가슴걸이·천마무늬 말다래 GREEN 1유형 분리 (페이지 원문 proof 저장), 원본은 BACKUP_ONLY. 남은 일: 유리잔·말다래 표시 이미지 해상도 확인 (편집 전).
 
 **봇이 바로 갈 수 있는 것**
 - graphics-spec v2 (G13 추가) — legacy HTML 은 수정하지 않고 새 문서로.
@@ -61,7 +61,7 @@
 | 라우터 판정 | `07_SHOTS/router_decision_RTR_EP01_*_V01.json` 49건 — 점수 6종 + recommended/fallback/reason/rule | `PENDING` |
 | 재판정 결과 | legacy Higgsfield 8 → **HIGGSFIELD 1** (H07 매치컷) · **BLENDER_FLOW 6** (H01–H05) · **AI_STILL 1** (H06) | 샷 `pipeline` 갱신, `status = ROUTED` |
 | 최종 구성 (D-024) | REAL 10 · ARCHIVE 20 · GRAPHIC 11 · BLENDER_FLOW 4 · FLOW_VEO 2 · AI_STILL 2 · **HIGGSFIELD 0** | 46 ACCEPTED · 3 OVERRIDDEN (H01 · H03 · H07) · `15_QA/P011_ROUTER_FINAL.md` |
-| 권리 등급 | `rights.usage_tier` ACTIVE / BACKUP_ONLY — YELLOW_ACTIVE 1 · YELLOW_BACKUP 3 | D-014 |
+| 권리 등급 | `rights.usage_tier` ACTIVE / BACKUP_ONLY — YELLOW_ACTIVE 0 · YELLOW_BACKUP 4 (2026-09-13) | D-014 |
 | 자동 FAIL 추가 | BACKUP_ONLY 참조 · AI 샷 라우터 없음 · 샷 파이프라인 ≠ 판정(OVERRIDDEN 아님) | 음성 테스트 통과 |
 | 리포트 | `15_QA/P4_ROUTER_REPORT.md` | DONE |
 | 검증 | 196/196 PASS, refs OK | DONE |
@@ -159,6 +159,8 @@
 ---
 
 ## 최근 변경 (최신순)
+
+- **2026-09-13 Claude Code (D-029)** — 에이전트 배치 + Codex 역할 반박 검수 BLOCK 수정: YELLOW_ACTIVE 해소 (유리잔·금제 관모·가슴걸이·천마무늬 말다래 GREEN 1유형, 페이지 원문 proof 저장) · S02_SH003 말다래 정정 (금동 말다래) · 데이터 정리 (H05 라벨 2개 · S03_SH002 · 자갈/토기 사실 연결) · 영상 V02 6개 한 가지 동작 · 시작 사진 3개 (문장만, H03 금 제거). 커밋 8a3d798 은 스크립트 중단으로 일부만 반영된 상태였고 이어서 완결.
 
 - **2026-09-13 Claude Code (D-029 에이전트)** — 권리 조사: 국립경주박물관 페이지 원문 확인 → 가슴걸이·금제 관모·유리잔 공공누리 1유형 → GREEN 3건 생성, S02_SH003·S05_SH001 연결 교체, OTHER_OBJECTS BACKUP_ONLY. **YELLOW_ACTIVE 해소.** 데이터 정리: H05 라벨 2개 · S03_SH002 권리 메모 · G04 자갈 사실 연결.
 

@@ -75,7 +75,7 @@
     "earth placed before stones",
     "build order other than coffin, chamber, stones, earth"
   ],
-  "assembled_text": "Locked-off static camera for the whole six seconds: no pan, no tilt, no zoom, no cut. Only small, quiet natural movement: the senior observer in blue in the foreground stands still, seen from behind, with slight breathing and a small shift of weight, and does not turn around; the attendants holding cloth bundles stand in place, adjust their grip slightly and lower their eyes; the labourers beside the stone baskets shift their weight and wait; a light breeze moves the cloth and a little dust. Everyone stays where they are; nobody walks to the chamber, nobody hands anything over. The coffin and the chest stay exactly where they are, the chamber stays open with no lid, no stones or earth are added. No lip movement. Keep everything in the start image unchanged: the same early Silla era, the same clothing and colours, the same faces, the same layout, the same horizon and the same light; nothing new is added to the scene. No text, no captions, no subtitles, no watermark, no logo. No modern objects, no metal tools, no utility poles, no buildings appearing. No cloned or repeated faces: every person keeps their own face for the whole shot. Nobody looks at the camera, nobody poses, nobody speaks. No invented ritual steps: no coffin lowering, no offerings placed, no bowing, no procession. The build order never changes: coffin, then wooden chamber, then stones, then earth; nothing is built out of order.",
+  "assembled_text": "Locked-off static camera for the whole six seconds: no pan, no tilt, no zoom, no cut. Quiet natural stillness only: everyone stays exactly where they are, with slight breathing and one small shift of weight; a light breeze moves the cloth and a little dust. The senior observer in blue in the foreground stays still, seen from behind, and does not turn. The open chamber and everything in it stay unchanged. No lip movement. Keep everything in the start image unchanged: the same era, clothing, colours, faces, layout, horizon and light; nothing new is added to the scene. No text, no captions, no subtitles, no watermark, no logo. No modern objects, no metal tools. Every person keeps their own face for the whole shot. Nobody looks at the camera, nobody poses, nobody speaks.",
   "reference_images": [
     "master_frame:EP01_S06_MASTER_OPEN_CHAMBER_V01"
   ],
@@ -83,5 +83,5 @@
   "parent_prompt_id": "PRM_EP01_S06_SH002_V01",
   "patch_id": null,
   "created_at": "2026-09-13",
-  "created_by": "Image/Video Generation Agent (Claude Code) - draft, saved before any sending (D-016), not approved"
+  "created_by": "Image/Video Generation Agent (Claude Code) - draft, saved before any sending (D-016), not approved | revised after Codex-role review: one main action, build-order/ritual sentences moved to negative only"
 }

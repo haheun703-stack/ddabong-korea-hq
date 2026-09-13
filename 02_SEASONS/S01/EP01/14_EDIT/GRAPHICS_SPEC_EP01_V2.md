@@ -348,16 +348,20 @@ EP01 fact = `CLM_EP01_*` 13건 + `CLM_CHEONMACHONG_LAYOUT_001`.
 | `RTS_GNM_GOLD_CROWN_001` | 천마총 금관 | KOGL Type 1 | GREEN · ACTIVE | S02_SH003, S03_SH004, S05_SH001/006, S06_SH004/006, S07_SH001/003/004, S09_SH002 | Source: Gyeongju National Museum, Gold crown from Cheonmachong, KOGL Type 1. |
 | `RTS_GNM_GOLD_GIRDLE_001` | 천마총 금허리띠 | KOGL Type 1 | GREEN · ACTIVE | S05_SH001/004 | Source: Gyeongju National Museum, Gold girdle from Cheonmachong, KOGL Type 1. |
 | `RTS_WIKI_CHEONMADO_001` | 천마도 | Public Domain Mark | GREEN · ACTIVE | S02_SH003, S03_SH004 | Cheonmado (Heavenly Horse painting), Public Domain, via Wikimedia Commons. |
-| `RTS_GNM_OTHER_OBJECTS_001` | 귀걸이·유리·토기·말갖춤 | 페이지별 확인 (KOGL 1 또는 4) | **YELLOW** (편집 확정 전 필수 해소, D-014) | S02_SH003, S05_SH001 | attribution_text 없음 → 해소 전 기재 불가. 4유형이면 사용 금지 |
+| `RTS_GNM_GLASS_CUP_001` | 천마총 유리잔 | KOGL Type 1 | GREEN · ACTIVE | S02_SH003 | Source: Gyeongju National Museum, Glass cup from Cheonmachong (Treasure), KOGL Type 1. |
+| `RTS_GNM_MUDGUARD_001` | 천마무늬 말다래 (경주2309) | KOGL Type 1 | GREEN · ACTIVE | S02_SH003 | Source: Gyeongju National Museum, Mudguard with winged-horse design from Cheonmachong (Gyeongju 2309), KOGL Type 1. |
+| `RTS_GNM_GOLD_CAP_001` | 천마총 금제 관모 | KOGL Type 1 | GREEN · ACTIVE | S05_SH001 | Source: Gyeongju National Museum, Gold cap from Cheonmachong (Gyeongju 2275), KOGL Type 1. |
+| `RTS_GNM_CHEST_ORNAMENT_001` | 천마총 가슴걸이 | KOGL Type 1 | GREEN · ACTIVE | S05_SH001 | Source: Gyeongju National Museum, Chest ornament from Cheonmachong (Gyeongju 2379), KOGL Type 1. |
+| `RTS_GNM_OTHER_OBJECTS_001` | 귀걸이·토기 (미확인분) | 페이지별 확인 | YELLOW · **BACKUP_ONLY** (2026-09-13) | 없음 | 사용 금지 (확인 전) |
 | `RTS_WIKI_GOLD_CROWN_002` | 금관 (Commons) | CC BY 2.0 | GREEN · BACKUP_ONLY | 없음 | 저작자명 미확정 — 백업 사용 시에만 |
 | `RTS_WIKI_DAEREUNGWON_001` | 대릉원 2006 | CC BY-SA 2.0 | YELLOW · BACKUP_ONLY | 없음 | SA 수용 결정 전 사용 금지 |
 | `RTS_WIKI_CHEONMACHONG_ENTRANCE_001` | 천마총 입구 | CC BY-SA 2.0 | YELLOW · BACKUP_ONLY | 없음 | 동일 |
 | `RTS_GYEONGJU_CITY_IMAGE_001` | 경주시 관광 이미지 | 출처표시, 상업 범위 불명확 | YELLOW · BACKUP_ONLY | 없음 | 수익화 사용은 서면 확인 후 |
 
 - 화면 슬레이트 = legacy 짧은 형식 · 설명란 = 위 `attribution_text` **글자 그대로**.
-- **GREEN 레코드 4건 모두 `proof: null`** — 파일별 라이선스 캡처 저장 필요.
+- 2026-09-13 신규 GREEN 4건은 페이지 HTML 원문을 proof 로 저장. 기존 GREEN 4건 (금관·금허리띠·천마도·NRICH) 은 `proof: null` — 캡처 저장 필요.
 
-legacy G12 2행 `Gyeongju National Museum artifacts — applicable KOGL Type 1 assets` 는 금관·금허리띠(GREEN)는 해당, `RTS_GNM_OTHER_OBJECTS_001` (YELLOW) 은 해소 전 포함 불가.
+legacy G12 2행 `Gyeongju National Museum artifacts — applicable KOGL Type 1 assets` 는 금관·금허리띠·유리잔·말다래·관모·가슴걸이 (GREEN) 해당. `RTS_GNM_OTHER_OBJECTS_001` 은 BACKUP_ONLY (미확인분, 포함 불가).
 
 ### 4.3 RED — 이미지로 절대 등장 금지 (연구 참고만)
 
@@ -419,5 +423,5 @@ legacy G12 2행 `Gyeongju National Museum artifacts — applicable KOGL Type 1 a
 - `NO DIRECT QUOTATION` 의 G 번호 (§5 #2)
 - 지도 라벨 표기 (G02)
 - 슬레이트에 참고 소스 (복식 QA 소스) 포함 여부
-- `RTS_GNM_OTHER_OBJECTS_001` YELLOW 해소 — 최종 편집 전
+- ~~`RTS_GNM_OTHER_OBJECTS_001` YELLOW 해소~~ 2026-09-13 해소 — 유리잔·말다래 표시 이미지 해상도 확인만 남음
 - `EP01_S03_SH002` notes 권리 문구 (§5 #12)
