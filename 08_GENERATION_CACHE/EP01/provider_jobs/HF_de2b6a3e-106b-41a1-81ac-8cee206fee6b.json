@@ -1,0 +1,28 @@
+{
+  "provider": "Higgsfield",
+  "job_id": "de2b6a3e-106b-41a1-81ac-8cee206fee6b",
+  "job_set_type": "nano_banana_2",
+  "display_name": "Nano Banana Pro",
+  "status": "completed",
+  "created_at": "2026-09-13T06:31:58Z",
+  "params": {
+    "width": 2752,
+    "height": 1536,
+    "aspect_ratio": "16:9",
+    "resolution": "2k",
+    "batch_size": 1,
+    "input_images": [
+      {
+        "id": "80d2d3db-44cd-4d01-8b50-76048154c458",
+        "type": "image_job"
+      },
+      {
+        "id": "5681f1e0-fe07-4fc3-b36c-f512dc7a2992",
+        "type": "image_job"
+      }
+    ],
+    "prompt": "Edit the reference image. Keep everything exactly as it is: the same open timber chamber, the wooden chest, river stones, attendants, labourers and senior observer, all faces, clothing and poses, the bundles and baskets, the light and the camera angle. Change only two things: (1) the coffin inside the chamber becomes a plain straight-sided rectangular wooden box with a flat lid, with no tapered or angled shoulders; (2) the senior observer's belt becomes a restrained bronze plaque belt with small hanging bronze pendants, like the belt in the second reference image. No text, no watermark, no logo."
+  },
+  "retrieved_at": "2026-09-13",
+  "note": "generate_image_batch/jobs_wait result. Result/CDN URLs omitted. params.prompt = text actually sent (identical to prompt V02)."
+}

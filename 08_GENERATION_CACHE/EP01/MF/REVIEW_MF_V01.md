@@ -22,3 +22,9 @@ FIX 2건 전송 시 누적 5 / 10 호출, 10 / 20 credits.
 - S04: **FIX** — 쇠 공구 → 나무, 검은 띠 제거.
 - S06 OPEN_CHAMBER: **FIX** — 관 형태 + 원로 허리띠만. 궤 위치·경첩은 이번 수정 범위 밖 (T자 배치는 G13 이 전달).
 - S06 MOUND_BUILDING: **APPROVED**.
+
+## FIX 결과 (2026-09-13, 4 credits, 승인 5/10)
+
+- S06 OPEN_CHAMBER V02 `MF_EP01_S06_MASTER_OPEN_CHAMBER_V02_de2b6a3e.png`: **PASS** — 곧은 네모 관, 청동 과대+드리개. 사용자 최종 OK 대기.
+- S04 V02 `MF_EP01_S04_MASTER_V02_da44103f.png`: **PARTIAL** — 검은 띠 그대로, 쇠 삽·톱 일부 남음. 편집 반복 중단 → 새로 생성 V03 저장 (`PATCH_MF_EP01_S04_002`), 사용자 OK 대기.
+- 크레딧: 이번 쌍에서 잔액 -6, 거래 내역에 06:31:23Z 출처 불명 -2 (공용 계정, D-018) → EP01 비용 미포함.

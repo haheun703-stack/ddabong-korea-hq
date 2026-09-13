@@ -1,0 +1,43 @@
+{
+  "generation_id": "GEN_MF_EP01_S06_MASTER_OPEN_CHAMBER_HIGGSFIELD_V02",
+  "shot_id": "MASTER_FRAME:EP01_S06_MASTER_OPEN_CHAMBER_V01",
+  "stage": "STILL",
+  "provider": "Higgsfield",
+  "model": "Nano Banana Pro (job_set_type nano_banana_2, 2k, 16:9, edit of job 80d2d3db)",
+  "provider_job": {
+    "job_id": "de2b6a3e-106b-41a1-81ac-8cee206fee6b",
+    "job_set_type": "nano_banana_2",
+    "display_name": "Nano Banana Pro",
+    "params_path": "08_GENERATION_CACHE/EP01/provider_jobs/HF_de2b6a3e-106b-41a1-81ac-8cee206fee6b.json"
+  },
+  "prompt_id": "PRM_MF_EP01_S06_MASTER_OPEN_CHAMBER_V02",
+  "prompt_version": "V02",
+  "standard_versions": {
+    "CHARACTER_CONTINUITY_STANDARD.md": "v0.1",
+    "COST_STANDARD.md": "v0.1"
+  },
+  "case_ids_used": [
+    "CASE_DDABONG_CHAR_001"
+  ],
+  "approval_id": "APR_EP01_MF_001",
+  "input_paths": [
+    "08_GENERATION_CACHE/EP01/MF/MF_EP01_S06_MASTER_OPEN_CHAMBER_V01_80d2d3db.png"
+  ],
+  "output_paths": [
+    "08_GENERATION_CACHE/EP01/MF/MF_EP01_S06_MASTER_OPEN_CHAMBER_V02_de2b6a3e.png"
+  ],
+  "attempts": 1,
+  "duration_sec": null,
+  "cost": {
+    "currency": "CREDITS",
+    "amount": 2.0,
+    "spent": 2.0,
+    "note": "Higgsfield job de2b6a3e-106b-41a1-81ac-8cee206fee6b. Balance 1872.48 -> 1866.48 (-6) over this pair; transactions show an extra Nano Banana Pro -2 at 06:31:23Z not sent by this session (shared account, D-018) - not counted in EP01."
+  },
+  "result_status": "SUCCESS",
+  "failure_id": null,
+  "started_at": "2026-09-13T06:31:58Z",
+  "finished_at": null,
+  "run_by": "Image Generation Agent (Claude Code)",
+  "notes": "FIX edit (PATCH_MF_EP01_S06_OPEN_CHAMBER_001, owner OK 2026-09-13). Bot check PASS: coffin is now a plain straight-sided rectangular box with flat lid; observer belt now bronze plaques with small hanging pendants; everything else unchanged (chest position/hardware untouched per owner scope)."
+}

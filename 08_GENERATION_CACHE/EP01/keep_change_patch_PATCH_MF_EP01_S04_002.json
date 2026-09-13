@@ -1,0 +1,22 @@
+{
+  "patch_id": "PATCH_MF_EP01_S04_002",
+  "shot_id": "MASTER_FRAME:EP01_S04_MASTER_V01",
+  "from_version": "V02",
+  "to_version": "V03",
+  "fix_reason": "AI_ARTIFACT",
+  "keep": [
+    "V01 scene description: open-topped chamber, low stone course, no mound, timber yard, labourers in hemp with baskets, overcast dust",
+    "camera 1.6 m / 28mm feel",
+    "laborer clothing reference 412a72bc"
+  ],
+  "change": [
+    "NOT an edit: fresh text+reference generation (crowd faces may change, LITE)",
+    "explicit full-frame 16:9, no letterbox",
+    "explicit all-wood tools, no metal heads/blades/saws"
+  ],
+  "reason": "V02 edit PARTIAL: letterbox bars kept, some metal tools kept. Edits of many small details are unreliable (same as attendant full_body); explicit wording in a fresh generation worked before.",
+  "requested_by": "Image Generation Agent (Claude Code) - pending owner OK",
+  "created_at": "2026-09-13",
+  "resulting_prompt_id": "PRM_MF_EP01_S04_MASTER_V03",
+  "resulting_generation_id": null
+}

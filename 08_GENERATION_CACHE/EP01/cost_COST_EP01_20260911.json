@@ -5,11 +5,11 @@
     "currency": "KRW",
     "amount": 40000,
     "spent": null,
-    "note": "D-015 사용자 확정 ₩40,000. 소진 Higgsfield 50.12 credits (원로 24.12 · 군중 20 · 기준 그림 6). 크레딧→KRW 환산율 미확정 (P-012). 계정 크레딧은 다른 작업과 공용 (D-018) → job 기록 합계로 계산."
+    "note": "D-015 사용자 확정 ₩40,000. 소진 Higgsfield 54.12 credits (원로 24.12 · 군중 20 · 기준 그림 10). 크레딧→KRW 환산율 미확정 (P-012). 계정 크레딧은 다른 작업과 공용 (D-018) → job 기록 합계로 계산 (06:31:23Z 출처 불명 -2 는 미포함)."
   },
   "spent_total": null,
   "spent_by_provider": {
-    "Higgsfield (credits)": 50.12
+    "Higgsfield (credits)": 54.12
   },
   "percent_used": null,
   "gate_state": "OPEN",
@@ -39,8 +39,10 @@
     "GEN_MP_ATTENDANT_COSTUME_DETAIL_HIGGSFIELD_V01",
     "GEN_MF_EP01_S04_MASTER_HIGGSFIELD_V01",
     "GEN_MF_EP01_S06_MASTER_OPEN_CHAMBER_HIGGSFIELD_V01",
-    "GEN_MF_EP01_S06_MASTER_MOUND_BUILDING_HIGGSFIELD_V01"
+    "GEN_MF_EP01_S06_MASTER_MOUND_BUILDING_HIGGSFIELD_V01",
+    "GEN_MF_EP01_S04_MASTER_HIGGSFIELD_V02",
+    "GEN_MF_EP01_S06_MASTER_OPEN_CHAMBER_HIGGSFIELD_V02"
   ],
   "as_of": "2026-09-13",
-  "note": "26 호출 = 50.12 credits (원로 13 · 군중 10 · 기준 그림 3). P-012 환산율 확정 시 percent_used 계산."
+  "note": "28 호출 = 54.12 credits (원로 13 · 군중 10 · 기준 그림 5). P-012 환산율 확정 시 percent_used 계산."
 }
