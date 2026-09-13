@@ -27,3 +27,5 @@
 `MP_ATTENDANT_FULL_BODY_V04_84c0fdbc.png` **PASS** — 세 명 모두 가슴 옷고름 없음, 허리 천띠로만 여밈. 얼굴은 새 인물 (LITE 군중이라 허용). 시종 2단계 문장도 같은 여밈 문구로 V03 저장.
 
 **1단계 사람 확인 대기**: 노동자 `MP_LABORER_FULL_BODY_V02_412a72bc.png` · 시종 `MP_ATTENDANT_FULL_BODY_V04_84c0fdbc.png` → OK 면 2단계 4장 (남은 6 호출).
+
+**D-022 사용자 OK (2026-09-13)**: 노동자 V02 · 시종 V04 full_body APPROVED.

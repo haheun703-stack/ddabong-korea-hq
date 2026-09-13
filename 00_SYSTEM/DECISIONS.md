@@ -102,6 +102,10 @@
 ### D-021 · 2026-09-13 · 군중 시종 full_body 재편집 · 승인 한도 확대 (사용자)
 **결정** 시종 full_body 편집 PARTIAL(여자만 옷고름 제거) → 남자 2명만 위치 지정 재편집 1회 (`PRM_…ATTENDANT…_FULL_BODY_V04`, `PATCH_MP_ATTENDANT_FULL_BODY_002`). `APR_EP01_MP_CROWD_001` 한도 9 → **12 호출** (최대 24 credits). 재편집이 또 실패하면 편집 반복하지 않고 방법 전환을 사용자에게 제안.
 
+### D-022 · 2026-09-13 · 군중 full_body 승인 (사용자)
+**판정** 노동자 `MP_LABORER_FULL_BODY_V02_412a72bc.png` (공구 제거 편집) · 시종 `MP_ATTENDANT_FULL_BODY_V04_84c0fdbc.png` (방법 A 새로 생성, 옷고름 없음) **APPROVED**. 시종 V03 (가운데 남자 옷고름 남음) 탈락.
+**다음** 2단계 4장 — 노동자 walking/costume_detail V02 (참조 job 412a72bc) · 시종 walking/costume_detail V03 (참조 job 84c0fdbc). 승인 한도 12 중 6 사용.
+
 ---
 
 ## 승인 대기 (P)
