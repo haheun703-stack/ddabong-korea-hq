@@ -1,0 +1,28 @@
+{
+  "provider": "Higgsfield",
+  "job_id": "fba70a58-ef3f-45b7-8f94-7c61d0284307",
+  "job_set_type": "nano_banana_2",
+  "display_name": "Nano Banana Pro",
+  "status": "completed",
+  "created_at": "2026-09-13T04:21:11Z",
+  "params": {
+    "width": 1696,
+    "height": 2528,
+    "aspect_ratio": "2:3",
+    "resolution": "2k",
+    "batch_size": 1,
+    "input_images": [
+      {
+        "id": "5de27748-f100-47e0-af23-1bdb68466bb7",
+        "type": "image_job"
+      },
+      {
+        "id": "5681f1e0-fe07-4fc3-b36c-f512dc7a2992",
+        "type": "image_job"
+      }
+    ],
+    "prompt": "Use the reference images as the exact same person: keep his face identity, age, skin, hair, cap, and costume identical. Exactly ONE person, alone. BACK VIEW: full body seen from directly behind, standing still and looking away toward a distant earth mound under construction, shoulders and the conical cap silhouette clear, face not visible, soft daylight, plain earth ground, no buildings. Photorealistic historical documentary still, style B Documentary Reenactment, natural skin texture, not glossy, natural proportions. Same costume: pale birch-bark style conical cap, muted dusty blue silk outer robe reaching below the knee with straight collar closing right over left, short outer sleeves over an undyed ivory hemp inner jacket with long narrow sleeves, wide grey-brown trousers, restrained bronze plaque belt with small bronze pendants, ankle-high leather boots over socks. Palette only muted blue, ivory, grey-brown, bronze. No red, no crimson, no purple. No gold crown, no gold belt. No text, no watermark, no logo. No second person."
+  },
+  "retrieved_at": "2026-09-13",
+  "note": "generate_image_batch index/jobs_wait result. Result/CDN URLs omitted. params.prompt = text actually sent (identical to prompt V02)."
+}

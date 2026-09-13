@@ -27,7 +27,7 @@
 - graphics-spec v2 (G13 추가) — legacy HTML 은 수정하지 않고 새 문서로.
 - P5 Review UI / P6 Money Gate 어댑터 설계 (유료 없음).
 
-**유료 생성 현황 (D-015)**: Money Gate OPEN (₩40,000 / 소진 10.12 credits, KRW 환산 P-012). **배치 1: 4장 APPROVED (D-017)** `08_GENERATION_CACHE/EP01/MP_ELITE/REVIEW_BATCH1.md`. 승인되면 나머지 6 + back_view → 군중 6. AI 샷은 P-011 ACCEPT + `CHARACTER_MASTER_APPROVED` + master_frame APPROVED 뒤.
+**유료 생성 현황 (D-015)**: Money Gate OPEN (₩40,000 / 소진 24.12 credits, KRW 환산 P-012). **배치 1: 4장 APPROVED (D-017) · 배치 2: 7장 생성, 사람 검수 대기 (REVIEW_BATCH2.md)** `08_GENERATION_CACHE/EP01/MP_ELITE/REVIEW_BATCH1.md`. 승인되면 나머지 6 + back_view → 군중 6. AI 샷은 P-011 ACCEPT + `CHARACTER_MASTER_APPROVED` + master_frame APPROVED 뒤.
 
 ## P2 사전 점검 — Pre-flight (2026-09-11 · DONE, 생성 0)
 
@@ -138,7 +138,7 @@
 | 항목 | 값 |
 |---|---|
 | EP01 예산 | **₩40,000** (D-015) — `08_GENERATION_CACHE/EP01/cost_COST_EP01_20260911.json` |
-| 소진 | 10.12 credits (6 호출: 배치 1 5 + D-017 hero 편집 1) — KRW 환산 P-012 |
+| 소진 | 24.12 credits (13 호출: 배치 1 5 · hero 편집 1 · 배치 2 7) — KRW 환산 P-012 |
 | 게이트 상태 | `OPEN` — 배치 1 승인 `APR_EP01_MP_ELITE_BATCH1_001` |
 
 ---
@@ -159,6 +159,8 @@
 ---
 
 ## 최근 변경 (최신순)
+
+- **2026-09-13 Claude Code** — **배치 2 생성 (D-018).** 원로 나머지 7장 (three_quarter_right · profile · neutral_standing · walking · costume_detail · expression_sheet · back_view) — V02 문장 그대로 전송, 7/7 성공, 14 credits (승인 10 호출 중 7). 봇 판정 전부 PASS (profile 방향 반대 · back_view 비계 금속관 의심 · 모자 약간 높음 메모). 검수 시트 `08_GENERATION_CACHE/EP01/MP_ELITE/REVIEW_BATCH2.md` → **사람 검수 대기**. EP01 소진 합계 24.12 credits.
 
 - **2026-09-13 사용자** — **D-018.** 배치 2 (원로 나머지 7장) APPROVE · H07 → AI_STILL (OVERRIDDEN) · Higgsfield 크레딧은 다른 작업과 공용, EP01 소진은 job 기록 합계로만.
 

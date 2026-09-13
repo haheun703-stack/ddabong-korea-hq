@@ -1,0 +1,44 @@
+{
+  "generation_id": "GEN_MP_ELITE_WALKING_HIGGSFIELD_V01",
+  "shot_id": "MASTER_PACK:CHAR_SILLA_ELITE_OBSERVER_01:walking",
+  "stage": "STILL",
+  "provider": "Higgsfield",
+  "model": "Nano Banana Pro (job_set_type nano_banana_2, 2k, 2:3, image_references=hero V03 + full_body V01)",
+  "provider_job": {
+    "job_id": "200b0388-1ad1-4299-b9c7-20bf3318d74e",
+    "job_set_type": "nano_banana_2",
+    "display_name": "Nano Banana Pro",
+    "params_path": "08_GENERATION_CACHE/EP01/provider_jobs/HF_200b0388-1ad1-4299-b9c7-20bf3318d74e.json"
+  },
+  "prompt_id": "PRM_MP_CHAR_SILLA_ELITE_OBSERVER_01_WALKING_V02",
+  "prompt_version": "V02",
+  "standard_versions": {
+    "CHARACTER_CONTINUITY_STANDARD.md": "v0.1",
+    "COST_STANDARD.md": "v0.1"
+  },
+  "case_ids_used": [
+    "CASE_DDABONG_CHAR_001"
+  ],
+  "approval_id": "APR_EP01_MP_ELITE_BATCH2_001",
+  "input_paths": [
+    "08_GENERATION_CACHE/EP01/MP_ELITE/MP_ELITE_HERO_V03_5de27748.png",
+    "08_GENERATION_CACHE/EP01/MP_ELITE/MP_ELITE_FULL_BODY_V01_5681f1e0.png"
+  ],
+  "output_paths": [
+    "08_GENERATION_CACHE/EP01/MP_ELITE/MP_ELITE_WALKING_V01_200b0388.png"
+  ],
+  "attempts": 1,
+  "duration_sec": null,
+  "cost": {
+    "currency": "CREDITS",
+    "amount": 2.0,
+    "spent": 2.0,
+    "note": "Higgsfield job 200b0388-1ad1-4299-b9c7-20bf3318d74e (batch of 7: balance 1912.48 -> 1898.48)"
+  },
+  "result_status": "SUCCESS",
+  "failure_id": null,
+  "started_at": "2026-09-13T04:21:11Z",
+  "finished_at": null,
+  "run_by": "Image Generation Agent (Claude Code)",
+  "notes": "D-018 batch 2. Bot check: PASS - natural mid-stride from side-front, same face, boots/trousers/belt consistent, plain earth ground. Awaiting human review."
+}
