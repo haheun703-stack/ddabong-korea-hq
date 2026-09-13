@@ -8,21 +8,30 @@
   "fact_ids": [],
   "spatial_lock": {
     "context": "UNESCO 경주역사유적지구 대릉원지구는 왕릉군 3개 그룹으로 구성 (research-v2 S1). 대부분 돔형 봉분 (S1).",
-    "contains_location_ids": ["LOC_CHEONMACHONG_V01"],
+    "contains_location_ids": [
+      "LOC_CHEONMACHONG_V01"
+    ],
     "adjacent": "도로·주택·카페가 가까이 있는 도심 속 봉분 경관 → LOC_GYEONGJU_DOWNTOWN_V01",
     "uses": [
       "REAL_SHOOT: 오프닝 봉분 리빌, 산책로, 석양 히어로 와이드 (field-shoot-plan)",
       "H07 매치컷의 현재 쪽 착지점 (G10)"
     ],
     "unverified_do_not_invent": "봉분 개수·정확한 배치(GIS). G03 은 자체 단순화 도식으로만 표현.",
-    "match_cut_frame": "EP01_S08_SH003 촬영 구도를 여기에 기록한다 (렌즈·높이·봉분 위치). H07 생성은 그 이후.",
-    "source_refs": ["research-v2 S1"]
+    "match_cut_frame": "D-026: 매치컷 착지 구도는 천마총 봉분 기준 → LOC_CHEONMACHONG_V01.spatial_lock.match_cut_frame 에 기록.",
+    "source_refs": [
+      "research-v2 S1"
+    ]
   },
   "blender_scene_path": null,
   "reference_images": [
-    { "path": null, "generation_id": null, "status": "MISSING" }
+    {
+      "path": null,
+      "generation_id": null,
+      "status": "MISSING"
+    }
   ],
   "status": "DRAFT",
   "version": "V01",
-  "updated_at": "2026-09-11"
+  "updated_at": "2026-09-13",
+  "uses": []
 }

@@ -60,7 +60,7 @@
 | G10 | THEN/NOW 매치컷 | `EP01_S08_SH002` → `EP01_S08_SH003` (편집 전환, ORIGINAL_GRAPHIC 아님) | 6:20–6:30 | 5초 + 5초 | `CLM_EP01_MOUND_011` (SH002, INTERPRETIVE) · `CLM_EP01_TOMBS_001`/`MODERN_012` (SH003) | PROBABLE (`S08_SH002.historical_confidence`) | 전환 자체에는 문구 없음 |
 | G11 | END 엔드카드 | `EP01_S09_SH005` (G12 와 한 샷) | 6:59–7:05 | 6초 합계 (G11 3~4초) | 없음 | 해당 없음 | 해당 없음 |
 | G12 | CREDITS 출처 슬레이트 | `EP01_S09_SH005` (G11 뒤) | 6:59–7:05 | 6초 합계 (G12 2~3초) | EP01 전체 source (§4) | — | — |
-| **G13** | **금관 위치 단면 (단순화 도식)** | `EP01_S07_SH005` | 5:42–5:45 | **3초** | `CLM_CHEONMACHONG_LAYOUT_001` | FACT | 배치는 불필요 · 해당 내레이션은 hedge 미해결 (§5 #15) |
+| **G13** | **금관 위치 단면 (단순화 도식)** | `EP01_S07_SH005` | 5:42–5:45 | **3초** | `CLM_CHEONMACHONG_LAYOUT_001` | FACT | 배치는 불필요 · 해당 내레이션은 "may have" hedge 로 해결 (§5 #15, D-026) |
 
 ---
 
@@ -74,7 +74,7 @@
 - **레이아웃/애니메이션**: 현대 경주 + 왕릉 실사(V1 = 봉분 와이드, SH002 연장) 위에 흰색 텍스트. 카드 노출 1.5~2초. 로고는 넣지 않거나 아주 작게. "tombs" 직전 0.3초 음악 드롭 (러프컷). 7초 샷 안에서 카드 인/아웃 위치는 미정 (편집 시 결정).
 - **근거**: `CLM_EP01_TOMBS_001` (FACT) — 경주에 신라 왕릉군이 집중, 도시 경관의 일부. 출처 `SRC_UNESCO_GYEONGJU_001`.
 - **hedge**: 불필요 (질문형 문구).
-- **출처 표기**: 화면 표기 없음. 배경 실사가 자체 촬영(BLUE)이면 크레딧 불필요, 백업 A1/A2 (YELLOW) 사용 시 §4 에 따름.
+- **출처 표기**: 화면 표기 없음. 배경 실사가 자체 촬영(GREEN, 증빙 "self-shot / original footage / source file retained" 기록 시 — D-026)이면 크레딧 불필요, 백업 A1/A2 (YELLOW) 사용 시 §4 에 따름.
 - **금지**: "EVERYWHERE" 를 수치(무덤 개수)로 바꾸지 않는다 — 개수는 fact 에 없음. 미스터리/호러 톤 금지.
 
 ### G02 · MAP — Korea → Gyeongju
@@ -98,7 +98,7 @@
 ### G04 · STRUCTURE — 적석목곽 구조 단면
 - **사용 샷**: `EP01_S04_SH002` · 8초 · TC 2:24–2:32 · PRIMARY
 - **화면 문구**: legacy 에 확정 문구 없음 → 레이어 라벨 영문 표기는 미정 (편집 시 결정). 치수 표기 시 fact 값만: coffin 2.15×0.8 m · wooden chamber 6.6×4.2 m · mound 47 m across, 12.7 m high.
-- **레이어 (legacy)**: 관 → 목곽 → 부장품 공간 → 돌/자갈 → 흙 봉분. 대본 v2 L47 은 coffin → wooden chamber → stone/gravel → earth mound (별도 부장품 층 없음) → D-010 상 대본 기준 (§5 #6, 소유자 결정 B).
+- **레이어 (확정, D-026)**: **coffin → wooden chamber → stone/gravel → earth mound** (관 → 목곽 → 돌/자갈 → 흙 봉분, 대본 v2 L47 기준). **별도 부장품 층 없음** — 부장품은 관·목곽 주변에 놓인 모습으로만 표시. legacy 의 "부장품 공간" 층은 쓰지 않는다 (§5 #6).
 - **레이아웃/애니메이션**: 아래부터 한 층씩 쌓기. 실제 1973 발굴사진(`EP01_S04_SH001`, NRICH GREEN)과 번갈아 보여줌. 낮은 목재/돌 질감 SFX 아주 약하게 (러프컷).
 - **근거**: `CLM_EP01_STRUCT_004` (FACT, `SRC_GNM_CHEONMA_EXHIBITION_001` · `SRC_NRICH_CHEONMACHONG_DICT_001`) · `CLM_CHEONMACHONG_LAYOUT_001` (FACT). "자갈(gravel)" 표현은 `CLM_EP01_TUMULI_002` (UNESCO) 근거 — 이 샷의 fact_ids 에는 없음 (§5 #7).
 - **hedge**: 불필요.
@@ -194,7 +194,7 @@
 ### G10 · THEN/NOW — 과거 → 현재 매치컷
 - **사용 샷**: `EP01_S08_SH002` (H07 AI 과거 봉분, 5초, 6:20–6:25) → `EP01_S08_SH003` (현재 봉분 실사, 5초, 6:25–6:30). **ORIGINAL_GRAPHIC 샷이 아니라 편집 전환** (§5 #4).
 - **화면 문구**: 없음. H07 쪽에는 G09 라벨.
-- **구성**: H07 AI 봉분과 실제 대릉원 봉분의 크기/위치가 비슷하도록 정렬 (legacy). SH003 실사 구도(삼각대 고정, 봉분 약간 오프축)를 먼저 찍어 `LOC_GYEONGJU_DAEREUNGWON_V01.spatial_lock.match_cut_frame` 에 기록 → 그 구도에 맞춰 H07 생성 (Generate Late).
+- **구성**: H07 AI 봉분과 실제 **천마총 봉분** (대릉원 안, D-026) 의 크기/위치가 비슷하도록 정렬 (legacy). SH003 실사 구도(삼각대 고정, 봉분 약간 오프축)를 먼저 찍어 `LOC_CHEONMACHONG_V01.spatial_lock.match_cut_frame` 에 기록 (D-026) → 그 구도에 맞춰 H07 생성 (Generate Late).
 - **전환**: 디졸브보다 하드 매치컷 또는 4~6프레임 짧은 디졸브. 효과음 최소 (legacy) · "효과음 없이 컷 자체로 승부" (러프컷).
 - **근거**: SH003 = `CLM_EP01_TOMBS_001` · `CLM_EP01_MODERN_012` (FACT). SH002 H07 = `CLM_EP01_STRUCT_004` (FACT, 봉분 스케일) + `CLM_EP01_MOUND_011` (INTERPRETIVE).
 - **hedge**: 전환에 문구 없음. 문구를 추가한다면 `MOUND_011` 관련 표현은 `MAY HAVE` 필수.
@@ -238,7 +238,7 @@
 | 사용 샷 | `EP01_S07_SH005` (ORIGINAL_GRAPHIC · PRIMARY · spatial_accuracy 90) |
 | TC / 길이 | 5:42–5:45 (러프컷 v1 기준) · **3초** |
 | 앞/뒤 샷 | 앞 `EP01_S07_SH002` 출토 현장 (ARCHIVE, NRICH 1973, 4초) → **G13** → 뒤 `EP01_S07_SH003` 금관 (MUSEUM, GNM KOGL 1) |
-| 해당 내레이션 | "But originally, this was not an object made for a museum. It belonged to a burial system of status, ceremony, and identity." (대본 v2 5:20–6:05) |
+| 해당 내레이션 | "But originally, this was not an object made for a museum. It may have belonged to a burial system of status, ceremony, and identity." (대본 v2 5:20–6:05, hedge 반영 D-026) |
 | 대본 v2 지시 | `[GRAPHIC]` Tomb cross-section with crown position as a simplified illustration, **only if archaeologically supported.** |
 | 판정 | X3 RESOLVED (D-010) — S4(`SRC_NRICH_CHEONMACHONG_DICT_001`)로 뒷받침됨 |
 | 근거 fact | `CLM_CHEONMACHONG_LAYOUT_001` · **FACT** · hedge_required **false** |
@@ -279,10 +279,11 @@
 | 돌무지 높이·두께, 조성 기간, 작업 인원, 의례 순서 | `unverified_do_not_invent` | 절대 표기 금지 |
 | 매장 시점의 의례 장면 | 없음 | 금지 |
 
-### 3.5 형식 주의 — "단면" vs "평면"
-- **T자 배치는 평면도(plan view)가 필요하다. 동서 방향 긴 단면(long east–west section)으로는 머리 동쪽 · 머리 위치의 금관 · 머리맡의 궤까지만 보여줄 수 있다** (T자는 표현 불가).
-- 대본 v2 L161 · fact notes · 샷 purpose 는 모두 "cross-section / 단면" 이라고 한다. 평면도로 바꾸거나 평면 인서트를 추가하는 것은 script-first 원칙상 **내용 변경** → **OWNER DECISION** (편집 세부사항 아님). §5 #8, §6 A.
-- 어느 형식이든 §3.3 의 4요소와 방위 표시 외에는 추가하지 않는다.
+### 3.5 형식 — 동서 단면 + 작은 평면 인서트 (확정, D-026)
+- **주 화면 = 동서 방향 옆 단면 (east–west side cross-section)**: 머리 동쪽 · 머리 위치에 착용한 금관 · 머리맡(동쪽 끝)의 부장품 궤까지 보여준다 (요소 #1–#4 의 위치 관계).
+- **작은 평면 인서트 (top-down plan inset)**: 목관과 궤의 **T자 배치만** 보여준다. T자는 인서트에서만 표현한다 (단면으로는 T자 표현 불가).
+- 역할 분리: 단면 = 머리 동쪽 / 금관 착용 / 머리맡 궤 · 인서트 = T자. 인서트에는 목관·궤 윤곽과 방위 `E` 표시 외 새 요소를 넣지 않는다.
+- 어느 쪽이든 §3.3 의 4요소와 방위 표시 외에는 추가하지 않는다. 기존 금지사항 (치수 라벨 없음 · 높이 스케일 없음 · fact 범위 안) 은 단면과 인서트 모두에 그대로 적용.
 - **세로 비율은 도식일 뿐, 높이 스케일을 암시하지 않는다** (vertical proportions schematic only; no height scale implied). 어떤 fact 에도 목관·궤·목곽 높이가 없다.
 
 ### 3.6 화면 문구 (제안 — 사용자 승인 필요, legacy 에 선례 없음)
@@ -304,7 +305,7 @@ E →                                     ← 방위 화살표 (1)
 
 ### 3.8 hedge
 - `CLM_CHEONMACHONG_LAYOUT_001` = FACT, hedge_required=false → 배치 자체에는 hedge 불필요.
-- **단, 내레이션의 "It belonged to a burial system of status, ceremony, and identity" 는 해석적 문장**이고 SH005 에 연결 fact 도 hedge 도 없다 → §5 #15 (OWNER DECISION). G13 화면에 `STATUS` · `CEREMONY` · `IDENTITY` · `POWER` 등 의미 라벨을 붙이지 않는다 (붙이면 INTERPRETIVE 를 FACT 도식에 섞게 됨).
+- **내레이션 hedge 해결 (D-026)**: 해석적 문장이고 SH005 에 연결 fact 가 없으므로 대본을 "It may have belonged to a burial system of status, ceremony, and identity." 로 수정함 (§5 #15). G13 화면에 `STATUS` · `CEREMONY` · `IDENTITY` · `POWER` 등 의미 라벨을 붙이지 않는다 (붙이면 INTERPRETIVE 를 FACT 도식에 섞게 됨).
 - 피장자를 `KING` 으로 라벨하지 않는다 (`OCCUPANT_006`). 필요 시 `OCCUPANT` 만.
 
 ### 3.9 출처 표기
@@ -387,29 +388,29 @@ legacy G12 2행 `Gyeongju National Museum artifacts — applicable KOGL Type 1 a
 | 4c | G10 샷 | "6:10 전후" | `EP01_S08_SH002` (AI_STILL) + `SH003` (REAL_SHOOT), 6:20–6:30. ORIGINAL_GRAPHIC 아님 | 타이밍 + 구조 | 편집 전환이므로 그래픽 샷 목록에 없음 |
 | 4d | G10 위치 (대본) | — | 대본 v2 는 매치컷을 4:20–5:20 MINDSET 구간 끝 (`[REAL] Match cut from reconstructed mound to modern mound`) 에 둠. 러프컷·샷은 S08 6:20 | 배치 → Rough Cut 우선 | **SCRIPT_ROUGHCUT_DELTA X1–X4 에 기재 안 됨** |
 | 5 | G13 | 없음 | `EP01_S07_SH005` 3초 (X3) | 신규 | v2 에 추가함 |
-| 6 | G04 레이어 순서 | 관 → 목곽 → **부장품 공간** → 돌/자갈 → 흙 봉분 | 샷 purpose: 관 → 목곽 → 돌무지 → 흙 봉분 (부장품 층 없음) · `LOC_CHEONMACHONG_V01.layer_order`: [coffin + grave-goods chest] → wooden chamber → stones → earth mound | 내용 (구조 표현) → Script 우선 | **판정 근거: 대본 v2 L47** `coffin → wooden chamber → stone/gravel → earth mound` (별도 부장품 층 없음) → D-010 (내용 차이 = Script 우선) 에 따라 대본 순서가 기준. fact `LAYOUT_001` (궤는 목관 머리맡, 목곽 안) 과도 일치. legacy 의 별도 "부장품 공간" 층은 제외 대상 → 소유자 결정 B |
+| 6 | G04 레이어 순서 | 관 → 목곽 → **부장품 공간** → 돌/자갈 → 흙 봉분 | 샷 purpose: 관 → 목곽 → 돌무지 → 흙 봉분 (부장품 층 없음) · `LOC_CHEONMACHONG_V01.layer_order`: [coffin + grave-goods chest] → wooden chamber → stones → earth mound | 내용 (구조 표현) → Script 우선 | **판정 근거: 대본 v2 L47** `coffin → wooden chamber → stone/gravel → earth mound` (별도 부장품 층 없음) → D-010 (내용 차이 = Script 우선) 에 따라 대본 순서가 기준. fact `LAYOUT_001` (궤는 목관 머리맡, 목곽 안) 과도 일치. legacy 의 별도 "부장품 공간" 층은 제외 → **RESOLVED (D-026)**: coffin → wooden chamber → stone/gravel → earth mound, 부장품은 관·목곽 주변 배치로만 표시 |
 | 7a | G04 fact_ids | "돌/자갈" | fact_ids = STRUCT_004 · LAYOUT_001. "자갈(gravel)" 은 `CLM_EP01_TUMULI_002` 에만 있음 | 근거 연결 누락 | **gravel 유지** (대본 v2 L47 `stone/gravel`). `CLM_EP01_TUMULI_002` 를 `EP01_S04_SH002.fact_ids` 에 연결해야 함 (샷 JSON 수정은 이 문서 범위 밖) |
 | 7b | G05 fact_ids | STEP 2 부장품 배치 | fact_ids = STRUCT_004 뿐. 부장품 위치 근거 `LAYOUT_001` / `GOODS_005` 미연결 | 근거 연결 누락 | — |
-| 8 | G13 명칭 | — | purpose "금관 위치 **단면**" 이나 근거 사실(머리 동쪽·T자)은 평면 관계 | 형식 → 내용 변경 | 대본 v2 L161 · fact notes · purpose 모두 cross-section. T자는 평면도 필요, 긴 동서 단면은 머리 동쪽·금관·머리맡 궤만 표현 가능. **OWNER DECISION** (§3.5, §6 A) |
+| 8 | G13 명칭 | — | purpose "금관 위치 **단면**" 이나 근거 사실(머리 동쪽·T자)은 평면 관계 | 형식 → 내용 변경 | 대본 v2 L161 · fact notes · purpose 모두 cross-section. T자는 평면도 필요, 긴 동서 단면은 머리 동쪽·금관·머리맡 궤만 표현 가능. **RESOLVED (D-026)**: 동서 옆 단면 + T자만 보여주는 작은 평면 인서트 (§3.5) |
 | 9 | G02 `SILLA CAPITAL` | 라벨 있음 | 근거 `CLM_EP01_TOMBS_001` 본문에 "신라 도읍" 없음 (소스 `SRC_UNESCO_GYEONGJU_001` 요약에만 있음) | 근거 텍스트 부족 (부분 지지) | `CLM_EP01_GOLD_007` ("built huge tombs in the capital") 이 부분적으로 뒷받침. 완전한 해결은 `CLM_EP01_TOMBS_001` 본문에 "Silla capital" 추가 (UNESCO 요약이 뒷받침) |
 | 10 | 대본 v2 추가 그래픽 (샷 없음) | — | `ROYAL TOMBS · SILLA` (대본 0:00 구간 minimal text — G01 은 0:18 이므로 충돌 아님) · `Cheonma = Heavenly Horse` · `Empty ground cross-section` · "date + site plan" (1973 사진 대체) — 전용 ORIGINAL_GRAPHIC 샷 없음 | extra script graphic with no shot | 기록만. DELTA 에는 기재 안 됨 |
 | 11 | G08 계열 카드 대본 문구 | — | 대본 v2 GRAPHICS #8 = `INTERPRETATION / NO DIRECT QUOTATION` 를 한 항목으로 묶음 · 샷은 SH001(G08) 과 SH008 로 분리 | 배치 | 충돌 아님, 기록만 |
 | 12 | 1973 사진 권리 표기 | legacy G12 "NRICH 1973 excavation photos — KOGL Type 1" | `RTS_NRICH_1973_PHOTOS_001` = GREEN, 그러나 `EP01_S03_SH002.notes` 는 "사진마다 라이선스 확인 (C1 YELLOW)" | 권리 표기 불일치 | 샷 notes 가 P3 이전 문구로 보임. 파일별 proof 캡처 여부 확인 필요 (rights `proof: null`) |
 | 13 | 총 길이 | — | 샷 49개 합계 425초 (7:05) — CURRENT_STATUS 와 일치 | 일치 | — |
 | 14 | G13 치수 근거 | — | **SH005 does not link STRUCT_004** — `EP01_S07_SH005.fact_ids` = `LAYOUT_001` 만. 목관·목곽 치수는 STRUCT_004, 궤 1.8 m 는 어떤 fact 에도 없음 | 근거 연결 누락 | G13 에서 치수 라벨·크기 비교 전부 제거함 (§3.3, §3.10 #5) |
-| 15 | G13 내레이션 hedge | — | "It belonged to a burial system of status, ceremony, and identity" (대본 v2 5:20–6:05) = 해석적 진술. SH005 에 이를 뒷받침하는 fact 없음, hedge 없음 | 내용 (해석 무hedge) | `CLM_EP01_DISPLAY_009` (INTERPRETIVE) 연결 + "may have" 표현, 또는 대본 수정. **OWNER DECISION** (§6 F) |
+| 15 | G13 내레이션 hedge | — | "It belonged to a burial system of status, ceremony, and identity" (대본 v2 5:20–6:05) = 해석적 진술. SH005 에 이를 뒷받침하는 fact 없음, hedge 없음 | 내용 (해석 무hedge) | **RESOLVED (D-026)**: 대본 수정 → "It may have belonged to a burial system of status, ceremony, and identity." (DELTA X5) |
 
 ---
 
 ## 6. 미결 — 소유자 결정 목록
 
 **Blocking (편집 착수 전 필요)**
-- **A** G13 형식 (단면 / 평면 / 단면 + 평면 인서트) + 화면 문구 (§3.5, §3.6, §5 #8)
-- **B** G04 레이어 순서를 대본 v2 L47 기준으로 (별도 부장품 층 제외, gravel 유지) (§5 #6, #7a)
+- **A** G13 화면 문구 (§3.6) — 형식은 해결됨: 동서 단면 + T자 평면 인서트 (D-026)
+- ~~**B** G04 레이어 순서~~ → 해결됨 (D-026): coffin → wooden chamber → stone/gravel → earth mound, 별도 부장품 층 없음 (§5 #6)
 - **C** G08 카드형 vs 모서리 라벨형 · G05 16초 사용 방식 (§5 #3e, #3h)
 - **D** G05 / G04 / G08 영문 문구
 - **E** 스타일 시트 1장: 서체 · 남색/금색 HEX · 텍스트 색 · 로고 파일
-- **F** G13 내레이션 hedge (§5 #15) + H05 이중 `ai_label` (§5 #4b)
+- **F** H05 이중 `ai_label` (§5 #4b) — G13 내레이션 hedge 는 해결됨 (D-026, §5 #15)
 
 **Can wait (나중에 결정 가능)**
 - 인/아웃 지점, TC (내레이션 녹음 후)

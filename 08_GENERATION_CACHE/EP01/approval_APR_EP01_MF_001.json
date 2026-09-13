@@ -1,0 +1,50 @@
+{
+  "approval_id": "APR_EP01_MF_001",
+  "kind": "PAID_GENERATION",
+  "target_id": "EP01_S04_MASTER_V01 + EP01_S06_MASTER_OPEN_CHAMBER_V01 + EP01_S06_MASTER_MOUND_BUILDING_V01",
+  "money_gate_presented": {
+    "shot_id": "MASTER_FRAME:EP01",
+    "prompt_ids": [
+      "PRM_MF_EP01_S04_MASTER_V01",
+      "PRM_MF_EP01_S06_MASTER_OPEN_CHAMBER_V01",
+      "PRM_MF_EP01_S06_MASTER_MOUND_BUILDING_V01"
+    ],
+    "aspect_ratios": {
+      "PRM_MF_EP01_S04_MASTER_V01": "16:9",
+      "PRM_MF_EP01_S06_MASTER_OPEN_CHAMBER_V01": "16:9",
+      "PRM_MF_EP01_S06_MASTER_MOUND_BUILDING_V01": "16:9"
+    },
+    "image_references": {
+      "laborer_full_body": "412a72bc-f3f1-4955-8d3a-36e1e6306d1f",
+      "attendant_full_body": "84c0fdbc-1c5c-4edd-bb35-b1836ae14288",
+      "elite_hero": "5de27748-f100-47e0-af23-1bdb68466bb7",
+      "elite_back_view": "fba70a58-ef3f-45b7-8f94-7c61d0284307"
+    },
+    "provider_model": "Higgsfield / Nano Banana Pro (job type nano_banana_2), 2k, 16:9 (still image tool; EP01 Higgsfield-video 0 unaffected)",
+    "expected_attempts": 10,
+    "estimated_cost_range": "6–20 credits (2 credits x 3 frames + FIX retries, hard cap 20)",
+    "continuity_risk": "HIGH - first multi-character frames; layer order and 47 m / 12.7 m proportion must hold",
+    "reference_order": {
+      "PRM_MF_EP01_S04_MASTER_V01": [
+        "laborer_full_body"
+      ],
+      "PRM_MF_EP01_S06_MASTER_OPEN_CHAMBER_V01": [
+        "elite_hero",
+        "elite_back_view",
+        "attendant_full_body",
+        "laborer_full_body"
+      ],
+      "PRM_MF_EP01_S06_MASTER_MOUND_BUILDING_V01": [
+        "elite_hero",
+        "elite_back_view",
+        "laborer_full_body",
+        "attendant_full_body"
+      ]
+    }
+  },
+  "decision": "APPROVE",
+  "fix_reason": null,
+  "decided_by": "사용자",
+  "decided_at": "2026-09-13T07:00:00Z",
+  "note": "D-026: 기준 그림 3장, 최대 10 호출 / 20 credits. 실패 시 실패 항목만 FIX (PATCH + 새 prompt 버전), 승인 범위 밖 호출 금지."
+}

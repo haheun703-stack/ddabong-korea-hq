@@ -1,0 +1,27 @@
+{
+  "scene_id": "EP01_S06",
+  "version": "V01",
+  "path": null,
+  "generation_id": null,
+  "location": "LOC_CHEONMACHONG_V01",
+  "status": "DRAFT",
+  "approved_by": null,
+  "approved_at": null,
+  "frame_id": "EP01_S06_MASTER_MOUND_BUILDING_V01",
+  "characters": [
+    "CHAR_SILLA_ELITE_OBSERVER_01",
+    "CHAR_SILLA_ATTENDANT_GROUP_01",
+    "CHAR_SILLA_LABORER_GROUP_01"
+  ],
+  "costumes": [
+    "COSTUME_SILLA_ATTENDANT_A01",
+    "COSTUME_SILLA_ELITE_A01",
+    "COSTUME_SILLA_LABORER_A01"
+  ],
+  "camera_id": "CAMERA_EP01_S06_SH005_V01",
+  "derived_shots": [
+    "EP01_S06_SH005",
+    "EP01_S06_SH010"
+  ],
+  "updated_at": "2026-09-13"
+}

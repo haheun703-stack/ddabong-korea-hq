@@ -1,4 +1,4 @@
-# EP01 Master Frame 계획 (초안) — 사람 결정 대기
+# EP01 Master Frame 계획 — **결정 D-026: A안**
 
 > 2026-09-13 · Claude Code · 유료 생성 0 · 라우터 잠금 D-024 이후 첫 유료 후보
 > 기준 그림(Master Frame) = 반복 인물이 나오는 씬의 **공간·상태·인물 배치 기준 1장**. 자식 AI 샷은 이 그림에서 출발한다 (CHARACTER_CONTINUITY_STANDARD §Scene Master Frame).
@@ -7,8 +7,9 @@
 
 | frame | 파생 샷 | 인물 | 카메라 초안 |
 |---|---|---|---|
-| `EP01_S04_MASTER_V01` | H01 목재 준비 (FLOW_VEO) · H02 돌 운반 (BLENDER_FLOW) · H02b 작업 와이드 (BLENDER_FLOW) | 노동자 | SH004 35mm 1.4m tracking |
-| `EP01_S06_MASTER_V01` | H04 장례 준비 (BLENDER_FLOW) · H05 관찰자 시점 (BLENDER_FLOW) · H06 거의 완성된 봉분 (AI_STILL) | 원로 · 시종 · 노동자 | SH002 28mm 1.5m static, 배치 좌표 있음 |
+| `EP01_S04_MASTER_V01` | H01 목재 준비 (FLOW_VEO) · H02 돌 운반 (BLENDER_FLOW) · H02b 작업 와이드 (BLENDER_FLOW) | 노동자 | SH005 28mm 1.6m (D-026 통일) |
+| `EP01_S06_MASTER_OPEN_CHAMBER_V01` (D-026) | H04 장례 준비 (BLENDER_FLOW) | 원로 · 시종 · 노동자 | SH002 28mm 1.5m static, 배치 좌표 있음 |
+| `EP01_S06_MASTER_MOUND_BUILDING_V01` (D-026) | H05 관찰자 시점 (BLENDER_FLOW) · H06 거의 완성된 봉분 (AI_STILL) | 원로 · 시종 · 노동자 | SH005 35mm 1.5m |
 
 ## ⚠ 역사 순서 문제 (S06 프레임 1장으로는 모순)
 
@@ -49,3 +50,7 @@
 
 1. S06 기준 그림: **A (2장으로 분리)** / B (1장 유지 + H04 수정)
 2. 유료 승인: 기준 그림 3장(A) 또는 2장(B), 최대 호출 수
+
+## 결정 (D-026)
+
+A안 승인. 기준 그림 3장: `EP01_S04_MASTER_V01` · `EP01_S06_MASTER_OPEN_CHAMBER_V01` · `EP01_S06_MASTER_MOUND_BUILDING_V01`. 프롬프트 `11_AI_STILLS/prompt_PRM_MF_*_V01.json` 저장 (전송 전), 승인 `APR_EP01_MF_001` (최대 10 호출 / 20 credits). 기존 `EP01_S06_MASTER_V01` 초안은 두 장으로 대체되어 삭제.

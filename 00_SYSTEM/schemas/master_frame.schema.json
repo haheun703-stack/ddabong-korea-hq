@@ -8,8 +8,8 @@
   "properties": {
     "frame_id": {
       "type": "string",
-      "description": "예: EP001_S04_MASTER_V03",
-      "pattern": "^EP\\d{2,3}_S\\d{2}_MASTER_V\\d{2}$"
+      "description": "예: EP001_S04_MASTER_V03 · 같은 씬에 역사 단계가 다르면 EP01_S06_MASTER_OPEN_CHAMBER_V01 처럼 단계 태그 (D-026)",
+      "pattern": "^EP\\d{2,3}_S\\d{2}_MASTER(_(?!V\\d{2}_|V\\d{2}$)[A-Z0-9]+)*_V\\d{2}$"
     },
     "scene_id": {
       "type": "string"

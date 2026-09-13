@@ -22,6 +22,7 @@
 2. `research_permission` 과 `media_reuse_permission` 은 별개 필드.
 3. 미해결 권리(RED/BLUE)로 게시 금지 (정본 §23).
 4. 자주 쓰는 라이선스는 `license.schema.json` 프리셋 (예: `LIC_KOGL_TYPE1`).
+5. 자체 촬영(원본) 영상·사진 = `GREEN`. 단 증빙을 기록했을 때만: `creator` = 자체 촬영, `proof` = "self-shot / original footage / source file retained" (원본 파일 보관). `BLUE` 는 그대로 "확인 중 · 게시 금지" 뜻이며 자체 촬영 표시로 쓰지 않는다. (D-026)
 
 ---
 

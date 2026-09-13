@@ -1,5 +1,7 @@
 # DDABONG KOREA — EP01 Visual Asset Acquisition Plan
 
+> **D-026 (2026-09-13) 안내**: 이 문서의 `BLUE = 직접 촬영` 표기는 옛 표기다. 현재 규칙(RIGHTS_STANDARD 규칙 5)에서 자체 촬영은 증빙(self-shot / original footage / source file retained)을 남기면 **GREEN**, BLUE 는 확인 중·게시 금지.
+
 Date: 2026-08-16
 Episode: Gyeongju Royal Tombs
 

@@ -157,7 +157,7 @@ Tag legend: `[REAL]` actual location footage · `[MUSEUM]` object/museum visual 
 **VO** Today it sits under museum lighting, separated from the place where it was buried.
 - `[MUSEUM]` Display case / gallery context if filming rights allow.
 
-**VO** But originally, this was not an object made for a museum. It belonged to a burial system of status, ceremony, and identity.
+**VO** But originally, this was not an object made for a museum. It may have belonged to a burial system of status, ceremony, and identity.
 - `[GRAPHIC]` Tomb cross-section with crown position as a simplified illustration, only if archaeologically supported.
 
 **VO** And that changes the question from “How beautiful is this?” to “Why did placing something this valuable with the dead make sense?”

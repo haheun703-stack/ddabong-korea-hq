@@ -5,7 +5,7 @@
   "duration": 4,
   "purpose": "현재 봉분을 멀리서 바라보는 시점 — H05 시선을 실사로 이어받기",
   "era": "PRESENT_DAY",
-  "location": "LOC_GYEONGJU_DAEREUNGWON_V01",
+  "location": "LOC_CHEONMACHONG_V01",
   "historical_confidence": "INTERPRETIVE",
   "camera_complexity": 20,
   "spatial_accuracy": 50,
@@ -30,8 +30,8 @@
   "version_history": [],
   "approved_version": null,
   "created_at": "2026-09-11",
-  "updated_at": "2026-09-11",
+  "updated_at": "2026-09-13",
   "updated_by": "Visual Router (Claude Code)",
-  "notes": "TC 4:54–4:58 (러프컷 v1 기준, 내레이션 녹음 후 조정). D-009 채움 컷 (H05 분할분). 현장 촬영 시 H05 와 비슷한 '뒤에서 바라보는' 구도로. 점수(camera_complexity 등)는 Continuity Engine 추정치 — P4 라우터에서 확정.",
+  "notes": "TC 4:54–4:58 (러프컷 v1 기준, 내레이션 녹음 후 조정). D-009 채움 컷 (H05 분할분). 현장 촬영 시 H05 와 비슷한 '뒤에서 바라보는' 구도로. 점수(camera_complexity 등)는 Continuity Engine 추정치 — P4 라우터에서 확정. D-026: 장소 LOC_GYEONGJU_DAEREUNGWON_V01 → LOC_CHEONMACHONG_V01 (H07·H05 역사 재현과 같은 천마총 봉분에 착지).",
   "evidence_role": "CONTEXT"
 }

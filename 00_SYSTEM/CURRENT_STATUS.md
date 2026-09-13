@@ -51,7 +51,7 @@
 | Master Pack 프롬프트 | `11_AI_STILLS/prompt_PRM_MP_*` 17 — 원로 10 + 뒷모습 1 · 노동자 3 · 시종 3 (IMAGE) | DRAFT |
 | AI 샷 프롬프트 | `12_AI_VIDEO/` 6 (H01–H05) · `11_AI_STILLS/` 2 (H06 · H07) — legacy APPROVED 팩을 shot_delta 로, lock 조립 `assembled_text` 저장 | DRAFT |
 | 카메라 | `10_BLENDER/camera_CAMERA_EP01_*_V01.json` 8 (렌즈·높이·모션·배우 위치·키 비율) — 수동 초안 | DRAFT |
-| Master Frame | `07_SHOTS/master_frame_EP01_S04_MASTER_V01` · `_S06_MASTER_V01` (path 없음, 승인 전) | DRAFT |
+| Master Frame | `07_SHOTS/master_frame_EP01_S04_MASTER_V01` · `_S06_MASTER_OPEN_CHAMBER_V01` · `_S06_MASTER_MOUND_BUILDING_V01` (D-026 분리, path 없음, 승인 전) | DRAFT |
 | 검증 | camera / prompt / master_frame 인스턴스 + 상호참조 (shot ↔ camera ↔ prompt ↔ master_frame) → 231/231 PASS | DONE |
 
 ## P4 — Shot Router (2026-09-11 · DONE · **최종 잠금 D-024 2026-09-13**)
@@ -124,7 +124,7 @@
 | ROUGH_CUT | `ep01-premiere-roughcut` 0:00–7:05 | 설계 APPROVED |
 
 **다음 실제 작업 (순서)**
-1. 경주 현장 촬영 (좁은 주제 + 넓은 클러스터 촬영: 불국사·다보탑/석가탑·석굴암·첨성대·박물관·월정교/동궁). 매치컷 착지 구도(`EP01_S08_SH003`)는 반드시 삼각대로 찍고 `LOC_GYEONGJU_DAEREUNGWON_V01.spatial_lock.match_cut_frame` 에 기록.
+1. 경주 현장 촬영 (좁은 주제 + 넓은 클러스터 촬영: 불국사·다보탑/석가탑·석굴암·첨성대·박물관·월정교/동궁). 매치컷 착지 구도(`EP01_S08_SH003`)는 반드시 삼각대로 찍고 `LOC_CHEONMACHONG_V01.spatial_lock.match_cut_frame (D-026)` 에 기록.
 2. 유물/아카이브 실제 파일 다운로드·정리 → `02_SOURCES/` 에 `source.json` / `rights.json` 인스턴스.
 3. 필요한 Higgsfield 컷만 선별 생성 (Character Master Pack + Money Gate 승인 후).
 4. 내레이션 녹음 → Premiere 러프컷 → 수정 → 공개.
@@ -159,6 +159,8 @@
 ---
 
 ## 최근 변경 (최신순)
+
+- **2026-09-13 사용자** — **D-026.** 1~7 추천안 전부 승인: Master Frame 3장 (S04 · S06 OPEN_CHAMBER · S06 MOUND_BUILDING) Money Gate 최대 10 호출/20 credits · H07 천마총 착지 · 자체 촬영 GREEN · 월성·사찰 선택 · G13 옆 단면+평면 inset · G13 hedge · G04 층 순서.
 
 - **2026-09-13 Claude Code (D-025 자율 + 검수 에이전트)** — 무료 작업 2건: 촬영 계획 `08_REAL_FOOTAGE/SHOOT_PLAN_EP01_V01.md` (10컷 87초, 매치컷·시선·오프닝 반복, 초록 잔디 조건) · 그래픽 명세 v2 `14_EDIT/GRAPHICS_SPEC_EP01_V2.md` (G01–G12 이관 + G13, 사실 기록 범위만). 둘 다 검수 에이전트 PASS WITH FIXES → 수정 반영. Master Frame 계획 `15_QA/MASTER_FRAME_PLAN_EP01.md` (S06 층 순서 충돌 A/B). **사람 결정 대기 목록은 채팅으로 일괄 보고.**
 

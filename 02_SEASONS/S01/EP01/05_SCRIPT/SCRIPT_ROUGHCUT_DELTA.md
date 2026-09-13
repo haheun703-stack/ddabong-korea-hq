@@ -3,7 +3,7 @@
 > D-010 (2026-09-11, 사용자) · 샷/씬 분해는 러프컷 v1 타임라인을 **임시 작업 기준**으로 쓴다. 최종 정본은 아니다.
 > 판정 규칙: **내용·사실·해석이 다르면 Script/Fact 우선 · 단순 타이밍·컷 배치 차이면 Rough Cut 우선.**
 > 원본: `episodes/ep01-production-script-v2.md` · `episodes/ep01-premiere-roughcut.html`
-> **상태: 4/4 RESOLVED (2026-09-11) → P3 진입 가능.**
+> **상태: 4/4 RESOLVED (2026-09-11) → P3 진입 가능.** · X5 추가 후 RESOLVED (D-026, 2026-09-13)
 
 | ID | 위치 | 대본 v2 | 러프컷 v1 | 차이 종류 | 판정 | 반영 |
 |---|---|---|---|---|---|---|
@@ -11,6 +11,7 @@
 | X2 | `EP01_S03_SH005` | 카드 `OCCUPANT: UNCERTAIN` | `WHO WAS BURIED HERE? / UNKNOWN WITH CERTAINTY` | 내용 (화면 문구 = 사실 진술) | Script 우선 → `OCCUPANT: UNCERTAIN`, 러프컷 문구는 보조 | `shot_EP01_S03_SH005.purpose` |
 | X3 | `EP01_S07` (5:20–6:05) | 관람객 실사 컷 + 금관 위치 단면 ("고고학적으로 뒷받침될 때만") | 둘 다 없음 | 관람객 컷 = 배치 / 금관 위치 = **사실 주장** | 관람객 컷: 생략 유지 (S08 에 있음). 금관 위치: **S4 로 뒷받침됨** (피장자 머리 동쪽, 금관 착용, 머리맡 부장궤 T자) → 복원 | 신규 `shot_EP01_S07_SH005` G13 (3초, 5:42–5:45), `SH002` 7→4초. `CLM_CHEONMACHONG_LAYOUT_001` + 출처 2건 |
 | X4 | `EP01_S09_SH001` | 클로징 Higgsfield 공사 플래시 2–3초 | 아카이브·유물·실사 3단 교차 | 배치 | Rough Cut 우선 → AI 플래시 없음 | 변경 없음 |
+| X5 | `EP01_S07_SH005` (5:20–6:05, G13 구간 내레이션) | "It belonged to a burial system of status, ceremony, and identity." | (해당 문장 표기 없음) | 내용 (해석적 주장을 사실처럼 단정) | **RESOLVED (D-026, 2026-09-13, 사용자)** — Script 수정: "It may have belonged to a burial system of status, ceremony, and identity." 이유: 해석적 주장이며 `EP01_S07_SH005` 에 이를 뒷받침하는 fact 가 없음 → hedge 필요 (HISTORY_ACCURACY_STANDARD) | `episodes/ep01-production-script-v2.md` VO 1문장 · `14_EDIT/GRAPHICS_SPEC_EP01_V2.md` §3.8 · §5 #15 |
 
 ## 후속
 

@@ -41,11 +41,23 @@
       }
     },
     "master_frame": {
-      "type": [
-        "string",
-        "null"
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        {
+          "type": "null"
+        }
       ],
-      "description": "master_frame_id (승인 필요)"
+      "description": "master_frame_id (승인 필요). 씬 안에서 역사 단계가 갈리면 여러 개 (D-026)"
     },
     "shot_ids": {
       "type": "array",

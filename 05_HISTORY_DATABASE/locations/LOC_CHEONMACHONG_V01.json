@@ -35,7 +35,28 @@
       "research-v2 S4",
       "SRC_GNM_CHEONMA_EXHIBITION_001",
       "SRC_NRICH_CHEONMACHONG_DICT_001"
-    ]
+    ],
+    "match_cut_frame": {
+      "status": "TO_RECORD_AFTER_SHOOT",
+      "shot_id": "EP01_S08_SH003",
+      "pairs_with": "EP01_S08_SH002 (H07 AI_STILL)",
+      "note": "D-026: 천마총 봉분 착지. SH003 삼각대 촬영 후 값을 채우고, 그 뒤 H07 생성 (D-018). 키 이름은 SHOOT_PLAN_EP01_V01 §3a.",
+      "position_description": null,
+      "gps": null,
+      "mound_id": "천마총 (황남동 155호분)",
+      "lens_mm": null,
+      "lens_35mm_equiv": null,
+      "camera_height_m": null,
+      "tilt_deg": null,
+      "heading_deg": null,
+      "mound_offset": null,
+      "horizon_height": null,
+      "shot_datetime": null,
+      "sun_direction": null,
+      "weather": null,
+      "grass_colour": null,
+      "take_id": null
+    }
   },
   "blender_scene_path": null,
   "reference_images": [
@@ -47,5 +68,5 @@
   ],
   "status": "DRAFT",
   "version": "V01",
-  "updated_at": "2026-09-11"
+  "updated_at": "2026-09-13"
 }

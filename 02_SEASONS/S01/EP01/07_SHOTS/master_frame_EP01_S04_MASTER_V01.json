@@ -11,7 +11,7 @@
     "COSTUME_SILLA_LABORER_A01"
   ],
   "location": "LOC_CHEONMACHONG_V01",
-  "camera_id": "CAMERA_EP01_S04_SH004_V01",
+  "camera_id": "CAMERA_EP01_S04_SH005_V01",
   "status": "DRAFT",
   "approved_by": null,
   "approved_at": null,
@@ -20,5 +20,5 @@
     "EP01_S04_SH005",
     "EP01_S04_SH006"
   ],
-  "updated_at": "2026-09-11"
+  "updated_at": "2026-09-13"
 }

@@ -123,6 +123,15 @@
 **결정** ① 무료 작업은 봇이 계획 → 실행 → 검수 에이전트(별도 컨텍스트)로 OS 규칙 점검 → `validate.py` → 커밋 → push 까지 자율. ② **검증 전체 PASS + 상호참조 OK 이면 작업 브랜치 push 자동** (D-007 의 "push 전 확인" 대체). 검증 실패 시 push 금지. ③ 사람 관문 유지: 유료 생성 승인(Money Gate) · 그림 최종 OK/FIX · 역사 해석 결정 · `main` 병합/push · force push·히스토리 재작성. ④ Codex 교차 검수는 큰 단계 완료 시에만 (같은 계열 모델 착각 보완).
 **영향** AGENT_RULES §Git · 단축 명령, BOT_BOOTSTRAP_PROMPT. Web HQ(GitHub Pages)는 main 배포라 작업 브랜치 자동 push 로 공개 페이지는 바뀌지 않음.
 
+### D-026 · 2026-09-13 · Master Frame 3장 승인 · H07 천마총 착지 · 자체 촬영 GREEN · 월성·사찰 선택 · G13·G04 확정 (사용자)
+**1** S06 기준 그림을 역사 단계로 분리 (A안): `EP01_S04_MASTER_V01` · `EP01_S06_MASTER_OPEN_CHAMBER_V01` (H04, 목곽 열린 단계) · `EP01_S06_MASTER_MOUND_BUILDING_V01` (H05·H06, 봉분 상승 단계). **Money Gate** `APR_EP01_MF_001` 최대 10 호출 / 20 credits. 실패 시 실패 항목만 FIX, 승인 범위 밖 호출 금지. 스키마: frame_id 단계 태그 허용, scene.master_frame 복수 허용.
+**2** H07 매치컷 착지 = **천마총 봉분**. S08_SH002 · S08_SH003 · S06_SH007 장소 → LOC_CHEONMACHONG_V01, 착지 구도 기록 `LOC_CHEONMACHONG_V01.spatial_lock.match_cut_frame`.
+**3** 자체 촬영 = **GREEN** (증빙: self-shot / original footage / source file retained). BLUE 는 확인 중·게시 금지 유지 (RIGHTS_STANDARD).
+**4** 월성·사찰 = 선택 촬영. EP01 필수 영상은 대릉원·천마총 중심, 선택 촬영이 일정을 흔들면 안 됨.
+**5** G13 = 동서 옆 단면 (머리 동쪽 · 금관 · 머리맡 궤) + 작은 평면 inset (T자 배치만).
+**6** 해석 문장 hedge: "It may have belonged to a burial system of status, ceremony, and identity." (대본 v2 · SCRIPT_ROUGHCUT_DELTA)
+**7** G04 층 순서 = 관 → 목곽 → 돌·자갈 → 흙 봉분. 별도 부장품 층 없음, 부장품은 관·목곽 주변 배치.
+
 ---
 
 ## 승인 대기 (P)
