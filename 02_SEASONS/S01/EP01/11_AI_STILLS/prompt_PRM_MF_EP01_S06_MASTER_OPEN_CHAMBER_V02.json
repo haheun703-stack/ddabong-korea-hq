@@ -14,7 +14,7 @@
     "style": "DDABONG_DOC_REENACTMENT_V01",
     "camera": "CAMERA_EP01_S06_SH002_V01"
   },
-  "shot_delta": "master frame FIX edit: coffin -> plain straight-sided rectangular box with flat lid; chest -> no metal hinges or latch; observer belt -> bronze plaque belt with small pendants",
+  "shot_delta": "master frame FIX edit: coffin -> plain straight-sided rectangular box with flat lid; observer belt -> bronze plaque belt with small pendants",
   "negative": [
     "Joseon dynasty hanbok",
     "gat hats",
@@ -67,7 +67,7 @@
     "modern fabric",
     "purple/crimson/blue/yellow official colours"
   ],
-  "assembled_text": "Edit the reference image. Keep everything exactly as it is: the same open timber chamber, river stones, attendants, labourers and senior observer, all faces, clothing and poses, the bundles and baskets, the light and the camera angle. Change only three things: (1) the coffin inside the chamber becomes a plain straight-sided rectangular wooden box with a flat lid, with no tapered or angled shoulders; (2) the wooden chest has no metal hinges, latches or handles, plain wood only; (3) the senior observer's belt becomes a restrained bronze plaque belt with small hanging bronze pendants, like the belt in the second reference image. No text, no watermark, no logo.",
+  "assembled_text": "Edit the reference image. Keep everything exactly as it is: the same open timber chamber, the wooden chest, river stones, attendants, labourers and senior observer, all faces, clothing and poses, the bundles and baskets, the light and the camera angle. Change only two things: (1) the coffin inside the chamber becomes a plain straight-sided rectangular wooden box with a flat lid, with no tapered or angled shoulders; (2) the senior observer's belt becomes a restrained bronze plaque belt with small hanging bronze pendants, like the belt in the second reference image. No text, no watermark, no logo.",
   "reference_images": [
     "character_pack:CHAR_SILLA_ELITE_OBSERVER_01",
     "character_pack:CHAR_SILLA_ATTENDANT_GROUP_01",
@@ -77,5 +77,5 @@
   "parent_prompt_id": "PRM_MF_EP01_S06_MASTER_OPEN_CHAMBER_V01",
   "patch_id": "PATCH_MF_EP01_S06_OPEN_CHAMBER_001",
   "created_at": "2026-09-13",
-  "created_by": "Image Generation Agent (Claude Code) — FIX edit, saved before sending (D-016), pending owner OK"
+  "created_by": "Image Generation Agent (Claude Code) — FIX edit, saved before sending (D-016); owner scope 2026-09-13: coffin + belt only (chest hinges and chest position unchanged)"
 }

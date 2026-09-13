@@ -16,3 +16,9 @@
 - S06 MOUND_BUILDING: 수정 없음 제안 (메모만).
 
 FIX 2건 전송 시 누적 5 / 10 호출, 10 / 20 credits.
+
+## 사용자 판정 (2026-09-13)
+
+- S04: **FIX** — 쇠 공구 → 나무, 검은 띠 제거.
+- S06 OPEN_CHAMBER: **FIX** — 관 형태 + 원로 허리띠만. 궤 위치·경첩은 이번 수정 범위 밖 (T자 배치는 G13 이 전달).
+- S06 MOUND_BUILDING: **APPROVED**.

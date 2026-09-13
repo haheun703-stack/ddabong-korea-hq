@@ -9,15 +9,15 @@
     "all faces, clothing, poses",
     "bundles and baskets",
     "light and camera angle",
-    "exactly one person in blue"
+    "exactly one person in blue",
+    "wooden chest position and hardware (owner: not in this fix; T-layout conveyed by G13)"
   ],
   "change": [
     "coffin -> plain straight-sided rectangular box with flat lid",
-    "chest -> no metal hinges or latch",
     "observer belt -> bronze plaque belt with small pendants"
   ],
   "reason": "coffin has a tapered hexagonal Western-coffin outline; chest has metal hinges and latch; observer's belt is a plain leather strap without bronze plaques or pendants. Edit input: 80d2d3db, 5681f1e0.",
-  "requested_by": "Image Generation Agent (Claude Code) — pending owner OK",
+  "requested_by": "사용자 (2026-09-13 '진행', 궤 위치 수정 없이)",
   "created_at": "2026-09-13",
   "resulting_prompt_id": "PRM_MF_EP01_S06_MASTER_OPEN_CHAMBER_V02",
   "resulting_generation_id": null
