@@ -161,6 +161,12 @@
 **결정** `EP01_S06_SH010` (H06) 사진 **V03** (`08_GENERATION_CACHE/EP01/AI_STILL/H06_V03_4cc87427.png`, `GEN_EP01_S06_SH010_HIGGSFIELD_V03`) 승인 → 샷 `LOOK_APPROVED`, `approved_version = V03`.
 **수용한 작은 점** 사람 규모 약 1/5–1/6 (목표 1/8), 먼 인물 옷 일부 현대적. H06 총 3 호출 / 6 credits, 추가 호출 없음.
 
+### D-034 · 2026-09-14 · 샘플 1–3 검토 뒤 4건 (사용자 "너의 추론대로")
+**1** ② REJECTED OBVIOUS ANSWER 는 **EP02 부터** 적용. EP01 대본은 러프컷 v1 기준 유지 (D-010), ③ 치수선(GT-03) 만 GRAPHICS_SPEC 에서 추가.
+**2** GREEN 원본 없는 샷: YELLOW 수치만 옮긴 텍스트 전용 생성 → 안 되면 현장 촬영 (D-032 유지).
+**3** 파이프라인 A 첫 유료 시험 = `EP01_S02_SH001` 1장 (GREEN Gagnon CC0 원본, 최대 1 호출 / 2 credits, D-030 사진 위임 한도 안). **실행은 Higgsfield 커넥터 재인증 뒤**, prompt 인스턴스 저장 + approval 기록 후 Sent Prompt Rule.
+**4** `STORY_ENGINE_STANDARD` · `PHOTO_AI_STANDARD` · `DIAGRAM_TEMPLATES` 는 2026-09-14 전체 검수(D-029 반박 검수) 통과 뒤 ACTIVE.
+
 ### D-033 · 2026-09-14 · 제작 방식 전환 — 벤치마크 반영 (사용자 "그래")
 **근거** `09_ANALYTICS/benchmarks/BENCHMARK_ARCHDICT_GYEONGHOERU_20260914.md` (신비한 건축사전 경회루 영상, 사용자 판정: 현장 촬영 0, 실사풍은 전부 가져온 사진의 AI 재구성).
 **결정**
