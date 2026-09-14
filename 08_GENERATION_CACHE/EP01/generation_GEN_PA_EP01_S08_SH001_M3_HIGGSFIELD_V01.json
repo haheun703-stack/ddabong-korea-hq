@@ -36,5 +36,5 @@
   "started_at": "2026-09-14T11:10:00Z",
   "finished_at": null,
   "run_by": "Claude Code (Pipeline A batch 2 text-only, D-041)",
-  "notes": "Sent text == prompt.assembled_text (verified at submission). Composition numbers only from RED captures (RTS_YOUTUBE_CAPTURES_GYEONGJU_001), no image attached. Owner OK/FIX pending (4 at once)."
+  "notes": "Sent text == prompt.assembled_text (verified at submission). Composition numbers only from RED captures (RTS_YOUTUBE_CAPTURES_GYEONGJU_001), no image attached. D-042: owner OK -> APPROVED (montage cut 3)."
 }

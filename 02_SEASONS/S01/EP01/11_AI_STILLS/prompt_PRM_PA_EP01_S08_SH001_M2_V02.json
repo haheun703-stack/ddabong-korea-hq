@@ -1,0 +1,40 @@
+{
+  "prompt_id": "PRM_PA_EP01_S08_SH001_M2_V02",
+  "shot_id": "EP01_S08_SH001",
+  "target": "IMAGE",
+  "locks": {
+    "global": "DDABONG_GLOBAL_PRESENT_V01",
+    "era": "NONE",
+    "location": "NONE",
+    "character_costume": [],
+    "style": "DDABONG_DOC_REENACTMENT_V01",
+    "camera": null
+  },
+  "shot_delta": "Montage cut 2/3 (café) FIX after V01: customers backs-only and far, no chalkboard/sign, no car badge (PATCH_EP01_S08_SH001_M2_001). Composition numbers as V01 (RED captures, not attached).",
+  "negative": [
+    "text",
+    "watermark",
+    "logo",
+    "signage",
+    "lens flare",
+    "HDR look",
+    "oversaturation",
+    "glossy AI look",
+    "malformed anatomy",
+    "identifiable faces",
+    "invented buildings not in the reference",
+    "altered landform or mound proportions",
+    "fantasy elements",
+    "historical costume figures",
+    "vehicles",
+    "crowds",
+    "drone or aerial perspective unless in the reference"
+  ],
+  "assembled_text": "Photorealistic present-day documentary still, reconstructed from a licensed reference photograph. Keep the real landform, silhouette and proportions of the reference; change only season, light, weather and clutter as instructed. Natural lighting, neutral grade, realistic materials. Present-day surroundings (paths, trees, distant town) allowed only as they exist in the reference. No fantasy. No invented buildings. No text. No logos. No oversaturation. No glossy AI look. No malformed anatomy. Present-day Gyeongju, South Korea: a café in a converted hanok on Hwangnidan-gil. Photorealistic documentary still, 16:9, 4K master. Eye-level view from the opposite pavement: a low hanok building with a dark grey curved tiled roof and a warm wooden shopfront, glass doors, a cream awning, potted plants. No chalkboard, no menu board, no sign of any kind on the front. Three small outdoor tables in front; only two customers, seated at the table farthest from the camera with their backs fully turned to the lens, heads small (under 6% of frame height), no faces visible at all, ordinary present-day clothing; the other tables are empty. At the right edge a slice of the quiet street with a small parked car with a plain grille and no badge, and an ornate street lamp. Bright early-summer afternoon, clear sky, soft shadows. No readable text anywhere. Camera: 35 mm, height 1.6 m, tilt 0°, static frame. Documentary tone, neutral grade, slight film grain acceptable. Style B Documentary Reenactment look: natural textures, not glossy. No text, no readable signs or logos, no watermark, no lens flare, no HDR look, no oversaturation. No identifiable faces, no blurred faces: nobody faces the camera.",
+  "reference_images": [],
+  "version": "V02",
+  "parent_prompt_id": "PRM_PA_EP01_S08_SH001_M2_V01",
+  "patch_id": "PATCH_EP01_S08_SH001_M2_001",
+  "created_at": "2026-09-14",
+  "created_by": "Claude Code (D-042 FIX, D-030 delegated; saved before sending - Sent Prompt Rule)"
+}

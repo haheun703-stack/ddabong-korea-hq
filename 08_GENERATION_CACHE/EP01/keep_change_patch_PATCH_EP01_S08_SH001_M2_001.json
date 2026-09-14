@@ -1,0 +1,23 @@
+{
+  "patch_id": "PATCH_EP01_S08_SH001_M2_001",
+  "shot_id": "EP01_S08_SH001",
+  "from_version": "V02",
+  "to_version": "V02",
+  "fix_reason": "AI_ARTIFACT",
+  "keep": [
+    "converted-hanok café with dark grey tiled roof, wooden shopfront, cream awning, potted plants",
+    "three outdoor tables, eye-level from the opposite pavement, 35 mm",
+    "slice of quiet street at right with parked small car and ornate street lamp",
+    "bright early-summer afternoon, soft shadows"
+  ],
+  "change": [
+    "customers: only two, seated with their backs fully to the camera, at the table farthest from the lens (heads under 6% of frame height) - no faces at all, no blur",
+    "no chalkboard, no menu board, no sign of any kind on the front",
+    "parked car shows no badge or emblem (plain grille)"
+  ],
+  "reason": "M2 V01 (GEN_PA_EP01_S08_SH001_M2_HIGGSFIELD_V01): four customers' faces came out as smeared AI blur (close to camera), chalkboard carried pseudo-Korean scribbles, parked car showed a maker badge. Composition otherwise approved by owner.",
+  "requested_by": "사용자 (D-042) · 실행 봇 위임 (D-030)",
+  "created_at": "2026-09-14",
+  "resulting_prompt_id": "PRM_PA_EP01_S08_SH001_M2_V02",
+  "resulting_generation_id": null
+}

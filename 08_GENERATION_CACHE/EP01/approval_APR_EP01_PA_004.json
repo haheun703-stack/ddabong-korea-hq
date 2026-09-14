@@ -1,0 +1,21 @@
+{
+  "approval_id": "APR_EP01_PA_004",
+  "kind": "PAID_GENERATION",
+  "target_id": "EP01_S08_SH001",
+  "money_gate_presented": {
+    "shot_id": "EP01_S08_SH001",
+    "prompt_ids": [
+      "PRM_PA_EP01_S08_SH001_M2_V02"
+    ],
+    "provider_model": "HIGGSFIELD / NANO_BANANA_2, 2k 16:9 still, text-only",
+    "expected_attempts": 1,
+    "estimated_cost_range": "2 credits (hard cap 2)",
+    "continuity_risk": "LOW: same composition, people moved away/backs only"
+  },
+  "decision": "APPROVE",
+  "fix_reason": "AI_ARTIFACT",
+  "delegated": true,
+  "decided_by": "봇 (D-030 위임)",
+  "decided_at": "2026-09-14T11:25:00Z",
+  "note": "D-042 (2026-09-14 사용자 '3장 OK + M2 카페 재생성 (2 credits)'): D-030 사진 전용 위임 한도 안 (샷당 ≤ 2 호출/4 credits, 누적 ≤ 20). 1회, 실패 시 STOP. 최종 OK 는 사용자."
+}

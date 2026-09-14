@@ -12,7 +12,7 @@
   "human_motion": 40,
   "visual_importance": 70,
   "pipeline": "AI_STILL",
-  "status": "ROUTED",
+  "status": "LOOK_V",
   "characters": [],
   "costumes": [],
   "continuity_group": "EP01_S08",
@@ -30,36 +30,36 @@
     {
       "version": "V01",
       "stage": "STILL",
-      "status": "DRAFT",
+      "status": "APPROVED",
       "created_at": "2026-09-14",
-      "created_by": "Claude Code (D-041 batch 2)",
+      "created_by": "사용자",
       "path": "08_GENERATION_CACHE/EP01/AI_STILL/PA_S08_SH001_M1_V01_d3d1f230.png",
-      "note": "GEN_PA_EP01_S08_SH001_M1_HIGGSFIELD_V01 · 텍스트 전용 · 봇 판정 대기 · 사용자 OK/FIX 대기"
+      "note": "D-042 (2026-09-14) 사용자 OK. GEN_PA_EP01_S08_SH001_M1_HIGGSFIELD_V01 · 텍스트 전용 · 봇 PASS"
     },
     {
       "version": "V02",
       "stage": "STILL",
-      "status": "DRAFT",
+      "status": "REJECTED",
       "created_at": "2026-09-14",
-      "created_by": "Claude Code (D-041 batch 2)",
+      "created_by": "사용자",
       "path": "08_GENERATION_CACHE/EP01/AI_STILL/PA_S08_SH001_M2_V01_ee9fd01b.png",
-      "note": "GEN_PA_EP01_S08_SH001_M2_HIGGSFIELD_V01 · 텍스트 전용 · 봇 판정 대기 · 사용자 OK/FIX 대기"
+      "note": "D-042 (2026-09-14) 사용자 FIX: 손님 얼굴 AI 블러 흔적 + 칠판 낙서 → M2 V02 재생성 (PATCH_EP01_S08_SH001_M2_001). GEN_PA_EP01_S08_SH001_M2_HIGGSFIELD_V01 · 텍스트 전용 · 봇 PARTIAL"
     },
     {
       "version": "V03",
       "stage": "STILL",
-      "status": "DRAFT",
+      "status": "APPROVED",
       "created_at": "2026-09-14",
-      "created_by": "Claude Code (D-041 batch 2)",
+      "created_by": "사용자",
       "path": "08_GENERATION_CACHE/EP01/AI_STILL/PA_S08_SH001_M3_V01_e930cc2a.png",
-      "note": "GEN_PA_EP01_S08_SH001_M3_HIGGSFIELD_V01 · 텍스트 전용 · 봇 판정 대기 · 사용자 OK/FIX 대기"
+      "note": "D-042 (2026-09-14) 사용자 OK. GEN_PA_EP01_S08_SH001_M3_HIGGSFIELD_V01 · 텍스트 전용 · 봇 PASS"
     }
   ],
   "approved_version": null,
   "created_at": "2026-09-11",
   "updated_at": "2026-09-14",
-  "updated_by": "Claude Code (D-041 text-only conversion)",
-  "notes": "TC 6:05–6:20 (러프컷 v1 기준, 내레이션 녹음 후 조정). 현장음 다시 앞으로. 점수(camera_complexity 등)는 Continuity Engine 추정치 — P4 라우터에서 확정. D-038: 현장 촬영 제외. D-041 (2026-09-14): GREEN 원본 없음 → D-034 #2 텍스트 전용 생성 (캡처 구도 수치만). 정지 이미지 뒤 I2V 는 P-012 뒤.",
+  "updated_by": "사용자 (D-042)",
+  "notes": "TC 6:05–6:20 (러프컷 v1 기준, 내레이션 녹음 후 조정). 현장음 다시 앞으로. 점수(camera_complexity 등)는 Continuity Engine 추정치 — P4 라우터에서 확정. D-038: 현장 촬영 제외. D-041 (2026-09-14): GREEN 원본 없음 → D-034 #2 텍스트 전용 생성 (캡처 구도 수치만). 정지 이미지 뒤 I2V 는 P-012 뒤. D-042: M1·M3 APPROVED, M2 V01 REJECTED → V02 재생성 1회 (위임, 2 credits).",
   "evidence_role": "CONTEXT",
   "logical_pipeline": "AI_STILL",
   "provider": "HIGGSFIELD",
