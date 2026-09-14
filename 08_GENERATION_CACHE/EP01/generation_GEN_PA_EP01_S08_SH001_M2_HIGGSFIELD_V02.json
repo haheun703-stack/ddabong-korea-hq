@@ -1,0 +1,39 @@
+{
+  "generation_id": "GEN_PA_EP01_S08_SH001_M2_HIGGSFIELD_V02",
+  "shot_id": "EP01_S08_SH001",
+  "stage": "STILL",
+  "provider": "Higgsfield",
+  "model": "NANO_BANANA_2 (catalog id nano_banana_2 -> job_set_type nano_banana_flash, 2k 16:9, text-only; D-036)",
+  "provider_job": {
+    "job_id": "5c085b53-21ce-4770-90fa-98bdf4630a2f",
+    "job_set_type": "nano_banana_flash",
+    "display_name": "Nano Banana 2",
+    "params_path": "08_GENERATION_CACHE/EP01/provider_jobs/HF_5c085b53-21ce-4770-90fa-98bdf4630a2f.json"
+  },
+  "prompt_id": "PRM_PA_EP01_S08_SH001_M2_V02",
+  "prompt_version": "V02",
+  "standard_versions": {
+    "PHOTO_AI_STANDARD.md": "v0.1 ACTIVE (D-035)",
+    "COST_STANDARD.md": "v0.1"
+  },
+  "case_ids_used": [],
+  "approval_id": "APR_EP01_PA_004",
+  "input_paths": [],
+  "output_paths": [
+    "08_GENERATION_CACHE/EP01/AI_STILL/PA_S08_SH001_M2_V02_5c085b53.png"
+  ],
+  "attempts": 1,
+  "duration_sec": null,
+  "cost": {
+    "currency": "CREDITS",
+    "amount": 2.0,
+    "spent": 2.0,
+    "note": "Balance 1650.58 -> 1648.58 (-2). Delegated approval (D-030), 1/1 used."
+  },
+  "result_status": "SUCCESS",
+  "failure_id": null,
+  "started_at": "2026-09-14T10:55:20Z",
+  "finished_at": null,
+  "run_by": "Claude Code (D-042 FIX, D-030 delegated)",
+  "notes": "Sent text == prompt.assembled_text (verified). FIX of M2 V01: customers backs-only/far, no chalkboard, no car badge. Bot check + owner OK pending."
+}

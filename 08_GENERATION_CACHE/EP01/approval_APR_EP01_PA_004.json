@@ -17,5 +17,5 @@
   "delegated": true,
   "decided_by": "봇 (D-030 위임)",
   "decided_at": "2026-09-14T11:25:00Z",
-  "note": "D-042 (2026-09-14 사용자 '3장 OK + M2 카페 재생성 (2 credits)'): D-030 사진 전용 위임 한도 안 (샷당 ≤ 2 호출/4 credits, 누적 ≤ 20). 1회, 실패 시 STOP. 최종 OK 는 사용자."
+  "note": "D-042 (2026-09-14 사용자 '3장 OK + M2 카페 재생성 (2 credits)'): D-030 사진 전용 위임 한도 안 (샷당 ≤ 2 호출/4 credits, 누적 ≤ 20). 1회, 실패 시 STOP. 최종 OK 는 사용자. 1/1 사용 (SUCCESS, 2 credits). 위임 누적 2/20 credits."
 }
