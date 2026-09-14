@@ -16,7 +16,7 @@
 5. **다음**: 순서 4 전체 검수 (멀티 에이전트 + 반박, D-029) → 순서 5 EP01 시험 준비. **D-034 결정 완료**: ② 는 EP02 부터 · GREEN 없는 샷은 YELLOW 수치만 → 촬영 · A 첫 유료 시험 = S02_SH001 1장 (커넥터 재인증 뒤, 라우터 OVERRIDE·rights·prompt 선행) · 표준 3개는 검수 뒤 ACTIVE. **전체 검수 (D-029) 2026-09-14 완료** → `15_QA/REVIEW_FIX_20260914.md`.
 6. ✔ **전체 검수 완료 (2026-09-14)** → `15_QA/REVIEW_FIX_20260914.md`: 치명 1 (photo_ai 규칙 YES/True) 포함 A 항목 26건 수정, 검증기 규칙 +6, tools 30개 legacy 이동, rights +1 (Gagnon CC0). 검증 336/336.
 7. **사용자 결정 대기 (B 8건, 보고서 §4)**: PRESENT lock 쌍 · present-day 라벨 문구 · I2V_MOTION 정의 확장 · 시험 절차 · approval 필수 필드 · delegated 필드 · CAMERA 기본값 · 표준 3개 ACTIVE.
-8. 대기 중: 경주 짧은 촬영 (D-032, 다음 주, 유지) · P-012 실제 청구액 · Higgsfield 커넥터 재인증.
+8. 대기 중: 경주 짧은 촬영 (D-032, 다음 주, 유지) · P-012 실제 청구액. ~~Higgsfield 커넥터 재인증~~ → 2026-09-14 claude.ai Higgsfield 커넥터 작동 확인 (balance 조회 1,676.58 credits · plus, 비용 0). 로컬 `higgsfield` MCP 는 미인증이나 불필요. Flow/Veo 는 연결 없음 — D-028 공급자 = Higgsfield Kling 3.0. 오후 재개: 잔액 재조회 → 보고서 §4 B 8건 → S02_SH001 시험 1장.
 
 **사용자 손에 있는 것**
 - ~~P-001~~ EP01 예산 **₩40,000 확정 (D-015)** → Money Gate OPEN.
@@ -163,7 +163,7 @@
 
 ## 차단 / 미결
 
-- ~~예산 미확인~~ → D-015 ₩40,000 OPEN. 파이프라인 A 시험은 Higgsfield 커넥터 재인증 필요.
+- ~~예산 미확인~~ → D-015 ₩40,000 OPEN. 파이프라인 A 시험: Higgsfield 커넥터 작동 확인 (2026-09-14), 선행 = B 8건 결정 (PRESENT lock 쌍).
 - Blender 로컬 브리지(P7) 없음 → `camera.json` 은 수동 작성 단계.
 - ~~복식 세부 근거 미확보~~ → 2026-09-11 해소 (D-011 게이트 통과). 잔여: 짚신 출처가 언론 보도 → P3 에서 박물관 페이지로 교체 권장.
 
