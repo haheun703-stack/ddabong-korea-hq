@@ -1,0 +1,44 @@
+{
+  "generation_id": "GEN_EP01_S08_SH002_HIGGSFIELD_V01",
+  "shot_id": "EP01_S08_SH002",
+  "stage": "STILL",
+  "provider": "Higgsfield",
+  "model": "NANO_BANANA_PRO (catalog nano_banana_pro -> job_set_type nano_banana_2, 2k, 16:9, image reference = S08_SH003 plate)",
+  "provider_job": {
+    "job_id": "db03cd01-a35f-46b9-880f-1afcb6ebdd50",
+    "job_set_type": "nano_banana_2",
+    "display_name": "Nano Banana Pro",
+    "params_path": "08_GENERATION_CACHE/EP01/provider_jobs/HF_db03cd01-a35f-46b9-880f-1afcb6ebdd50.json"
+  },
+  "prompt_id": "PRM_EP01_S08_SH002_V02",
+  "prompt_version": "V02",
+  "standard_versions": {
+    "CHARACTER_CONTINUITY_STANDARD.md": "v0.1",
+    "COST_STANDARD.md": "v0.1",
+    "HISTORY_ACCURACY_STANDARD.md": "v0.1"
+  },
+  "case_ids_used": [
+    "CASE_DDABONG_CHAR_001"
+  ],
+  "approval_id": "APR_EP01_AI_B1_003",
+  "input_paths": [
+    "08_GENERATION_CACHE/EP01/AI_STILL/PA_S08_SH003_V01_0f2174d1.png"
+  ],
+  "output_paths": [
+    "08_GENERATION_CACHE/EP01/AI_STILL/H07_V01_db03cd01.png"
+  ],
+  "attempts": 1,
+  "duration_sec": null,
+  "cost": {
+    "currency": "CREDITS",
+    "amount": 2.0,
+    "spent": 2.0,
+    "note": "Balance 1648.58 -> 1646.58 (-2). Approval 1/2 used."
+  },
+  "result_status": "SUCCESS",
+  "failure_id": null,
+  "started_at": "2026-09-14T11:26:56Z",
+  "finished_at": null,
+  "run_by": "Claude Code (H07, D-044)",
+  "notes": "Sent text == prompt V02 assembled_text (verified). Measured vs plate (sky-ref method): crest x=0.50/y=0.31 (plate 0.39-0.44/0.30), mound base 0.00-0.70 (plate full width), hill horizon y=0.45 (plate flat ground 0.55-0.62). Bot verdict PARTIAL: mound itself PASS (bare packed earth, rounded crown, no people, overcast); FAIL items = framing not matched (centred, narrower, different horizon), man-made structures/greenhouse-like shapes at both horizon edges, winter/dry season vs plate early-summer green. -> PATCH_EP01_S08_SH002_001 / prompt V03 (attempt 2 of 2)."
+}

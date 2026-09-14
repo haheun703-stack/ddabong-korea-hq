@@ -1,0 +1,22 @@
+{
+  "patch_id": "PATCH_EP01_S08_SH002_001",
+  "shot_id": "EP01_S08_SH002",
+  "from_version": "V02",
+  "to_version": "V03",
+  "fix_reason": "CAMERA",
+  "keep": [
+    "freshly packed bare-earth mound, smooth brownish surface, rounded crown, ~47 m x 12.7 m proportion",
+    "no people, neutral overcast daylight, 35 mm / 1.6 m / tilt 0",
+    "all era, location and style locks unchanged"
+  ],
+  "change": [
+    "framing: reproduce the reference image's composition exactly - same mound size, same position (crest left of centre x~0.44), base filling the frame width, flat open ground line at y~0.62; do not centre or shrink the mound",
+    "surroundings: early summer - green grass on the flat ground and green trees far away; no dry winter field, no bare trees",
+    "horizon: no buildings, greenhouses, sheds, poles or any structure at either edge - only low hills and trees"
+  ],
+  "reason": "Attempt 1 (GEN_EP01_S08_SH002_HIGGSFIELD_V01) drew a good bare-earth mound but centred and narrower than the plate, with a hill-line horizon at y~0.45 instead of the plate's flat ground at ~0.62, greenhouse/building shapes at both horizon edges, and a dry winter field - the hard cut to the green plate would jump.",
+  "requested_by": "봇 판정 (D-044 승인 범위 내 2회차) · 사용자 전송 전 확인",
+  "created_at": "2026-09-14",
+  "resulting_prompt_id": "PRM_EP01_S08_SH002_V03",
+  "resulting_generation_id": null
+}
