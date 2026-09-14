@@ -1,0 +1,42 @@
+{
+  "generation_id": "GEN_PA_EP01_S02_SH001_HIGGSFIELD_V01",
+  "shot_id": "EP01_S02_SH001",
+  "stage": "STILL",
+  "provider": "Higgsfield",
+  "model": "NANO_BANANA_2 (catalog id nano_banana_2 -> job_set_type nano_banana_flash, display 'Nano Banana 2'; 2k 2752x1536, 16:9, 1 image reference) - NOT the 'Nano Banana Pro' (job_set_type nano_banana_2) used for H06; approval named NANO_BANANA_PRO",
+  "provider_job": {
+    "job_id": "9cbd059e-27bf-4658-b166-311ce18dc773",
+    "job_set_type": "nano_banana_flash",
+    "display_name": "Nano Banana 2",
+    "params_path": "08_GENERATION_CACHE/EP01/provider_jobs/HF_9cbd059e-27bf-4658-b166-311ce18dc773.json"
+  },
+  "prompt_id": "PRM_PA_EP01_S02_SH001_V01",
+  "prompt_version": "V01",
+  "standard_versions": {
+    "PHOTO_AI_STANDARD.md": "v0.1 ACTIVE (D-035)",
+    "COST_STANDARD.md": "v0.1",
+    "RIGHTS_STANDARD.md": "v0.1"
+  },
+  "case_ids_used": [],
+  "approval_id": "APR_EP01_PA_001",
+  "input_paths": [
+    "02_SEASONS/S01/EP01/02_SOURCES/RTS_COMMONS_DAEREUNGWON_GAGNON_001_5018x3345.jpg"
+  ],
+  "output_paths": [
+    "08_GENERATION_CACHE/EP01/AI_STILL/PA_S02_SH001_V01_9cbd059e.png"
+  ],
+  "attempts": 1,
+  "duration_sec": null,
+  "cost": {
+    "currency": "CREDITS",
+    "amount": 2.0,
+    "spent": 2.0,
+    "note": "Preflight get_cost 2.0 (1.5 at default 1k without reference). Balance 1676.58 -> 1674.58 (-2) measured in-session, no other deductions."
+  },
+  "result_status": "SUCCESS",
+  "failure_id": null,
+  "started_at": "2026-09-14T09:42:56Z",
+  "finished_at": "2026-09-14T09:46:00Z",
+  "run_by": "Claude Code (Pipeline A trial, D-034 #3 / D-035 #4)",
+  "notes": "Pipeline A first paid trial. Sent text == PRM_PA_EP01_S02_SH001_V01.assembled_text (verified). Reference: Gagnon CC0 via media_import_url (media_id d78334ec). Bot check: landform/silhouette/proportion of 3 mounds kept PASS; horizon ~0.60 PASS; overcast early-summer light, fresh green PASS; no people PASS; no text/watermark PASS; MINOR: wooden post + rope fence and paved path at right remain (reference has them too; prompt said remove clutter); left ginkgo replaced by pines because prompt text said 'pine trees at left' (our wording). Output 2752x1536 (1080p OK, not 4K). Owner final OK/FIX pending. Model naming mismatch flagged for user (D-028 model id)."
+}

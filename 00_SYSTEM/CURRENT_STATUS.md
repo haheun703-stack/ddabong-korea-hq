@@ -1,7 +1,7 @@
 # CURRENT STATUS — 지금 어디까지 왔나
 
 > **매 작업마다 갱신한다.** 이 파일 하나만 읽으면 어느 봇/AI 창을 열어도 바로 이어갈 수 있어야 한다.
-> 갱신: 2026-09-14 오후 (Claude Code, D-035 반영 · S02_SH001 시험 준비 완료) · 마지막 사용자 승인: 2026-09-14 (D-035 검수 §4 B 8건)
+> 갱신: 2026-09-14 오후 (Claude Code, D-035 반영 · S02_SH001 시험 1장 생성 완료, OK/FIX 대기) · 마지막 사용자 승인: 2026-09-14 (D-035 검수 §4 B 8건)
 > 읽는 순서: `BOT_HANDOFF_DDABONG_STUDIO_OS_V0.1.md` → `BOT_BOOTSTRAP_PROMPT.md` → **이 문서** → `OS_INDEX.md` → `02_SEASONS/S01/EP01/episode.json`
 
 ---
@@ -16,7 +16,7 @@
 5. **다음**: 순서 4 전체 검수 (멀티 에이전트 + 반박, D-029) → 순서 5 EP01 시험 준비. **D-034 결정 완료**: ② 는 EP02 부터 · GREEN 없는 샷은 YELLOW 수치만 → 촬영 · A 첫 유료 시험 = S02_SH001 1장 (커넥터 재인증 뒤, 라우터 OVERRIDE·rights·prompt 선행) · 표준 3개는 검수 뒤 ACTIVE. **전체 검수 (D-029) 2026-09-14 완료** → `15_QA/REVIEW_FIX_20260914.md`.
 6. ✔ **전체 검수 완료 (2026-09-14)** → `15_QA/REVIEW_FIX_20260914.md`: 치명 1 (photo_ai 규칙 YES/True) 포함 A 항목 26건 수정, 검증기 규칙 +6, tools 30개 legacy 이동, rights +1 (Gagnon CC0). 검증 336/336.
 7. ✔ **D-035 (2026-09-14 오후)**: 보고서 §4 B 8건 전부 권고대로 승인 → 반영 완료. PRESENT lock 쌍 신설 · 라벨 `AI Visual Reconstruction (present-day, photo-based)` · I2V_MOTION 확장 · S02_SH001 시험 절차 · approval `prompt_ids`/`expected_attempts` 필수 + AI 컷 ≤ 6초 규칙 (photo_ai 예외) · `delegated` 필드 + D-030 한도 규칙 · CAMERA 기본값 · 표준 3개 ACTIVE. 검증 338/338, 부정 테스트 5/5.
-8. **다음 = 파이프라인 A 시험 1장 전송 (사용자 '보내' 확인 대기)**: `EP01_S02_SH001` 라우터 OVERRIDDEN → AI_STILL · prompt `11_AI_STILLS/prompt_PRM_PA_EP01_S02_SH001_V01.json` · approval `APR_EP01_PA_001` (1 호출 / 2 credits) · 원본 `02_SOURCES/RTS_COMMONS_DAEREUNGWON_GAGNON_001_5018x3345.jpg` (실측 완료). Higgsfield claude.ai 커넥터 오후 잔액 재조회 1,676.58 credits · plus (오전과 동일). 대기 중: 경주 짧은 촬영 (D-032) · P-012 실제 청구액.
+8. ✔ **파이프라인 A 시험 1장 전송 완료 (2026-09-14 오후, 사용자 '보내')**: `GEN_PA_EP01_S02_SH001_HIGGSFIELD_V01` SUCCESS, 2 credits (잔액 1676.58 → 1674.58), 결과 `08_GENERATION_CACHE/EP01/AI_STILL/PA_S02_SH001_V01_9cbd059e.png` 2752×1536. 봇 판정 PASS (minor: 오른쪽 말뚝·줄·포장길 잔존) → 검수 시트 `AI_STILL/REVIEW_PA_S02_SH001_V01.md`. **사용자 OK/FIX 대기.** 모델 이름 불일치 발견: 카탈로그 `nano_banana_2` = Nano Banana 2 (`nano_banana_flash`), H06 의 Pro 와 다름 → 사용자 결정 (a) Nano Banana 2 를 파이프라인 A 기본으로 인정 / (b) Pro 재생성. 대기 중: 경주 짧은 촬영 (D-032) · P-012.
 
 **사용자 손에 있는 것**
 - ~~P-001~~ EP01 예산 **₩40,000 확정 (D-015)** → Money Gate OPEN.
@@ -149,8 +149,8 @@
 | 항목 | 값 |
 |---|---|
 | EP01 예산 | **₩40,000** (D-015) — `08_GENERATION_CACHE/EP01/cost_COST_EP01_20260911.json` |
-| 소진 | 66.12 credits (34 호출: 원로 13 · 군중 10 · 기준 그림 8 · AI 샷 3) — KRW 환산 P-012 |
-| 게이트 상태 | `OPEN` — 최신 승인 `APR_EP01_AI_B1_002` (D-030) · 사진 위임 한도 사용 0/20 credits |
+| 소진 | 68.12 credits (35 호출: 원로 13 · 군중 10 · 기준 그림 8 · AI 샷 3 · 파이프라인 A 시험 1) — KRW 환산 P-012 |
+| 게이트 상태 | `OPEN` — 최신 승인 `APR_EP01_PA_001` (D-034 #3, 1/1 사용) · 사진 위임 한도 사용 0/20 credits |
 
 ---
 
@@ -170,6 +170,8 @@
 ---
 
 ## 최근 변경 (최신순)
+
+- **2026-09-14 오후 Claude Code** — 파이프라인 A 첫 유료 시험 (사용자 '보내'): S02_SH001 V01 생성 SUCCESS, 2 credits, Sent Prompt Rule 검증 (전송문 = V01 assembled_text). 봇 판정 PASS(minor). 모델 이름 불일치 (Nano Banana 2 ≠ Pro) 기록. EP01 소진 68.12 credits. 검증 339/339. **사용자 OK/FIX + 모델 결정 대기.**
 
 - **2026-09-14 오후 사용자 + Claude Code** — **D-035.** 검수 §4 B 8건 전부 승인 → 반영: PRESENT lock 쌍 (`DDABONG_GLOBAL_PRESENT_V01` · `DDABONG_NEGATIVE_PRESENT_V01`) · present-day 라벨 · I2V_MOTION 확장 (MODEL_ROUTER) · approval 스키마 (`prompt_ids` required · `delegated`) · 검증기 규칙 +4 (AI ≤ 6초 · PAID 승인 gate 필수 · 위임 한도 · `rights:` 참조) · CAMERA 기본값 · 표준 3개 ACTIVE (OS_INDEX). S02_SH001 시험 준비: 라우터 OVERRIDDEN · 샷 AI_STILL + photo_ai · prompt V01 · approval PA_001 · Gagnon 원본 5018×3345 다운로드 (rights 실측 완료). 검증 338/338. **전송은 사용자 확인 뒤.**
 
