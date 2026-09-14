@@ -47,6 +47,9 @@
 | `SOURCE_STANDARD.md` | §10 · 아스트라 §5 근거 묶음 | DRAFT v0.1 |
 | `THUMBNAIL_STANDARD.md` | §14 | DRAFT v0.1 |
 | `VISUAL_STYLE_BIBLE.md` | §5 §8 §20 | DRAFT v0.1 |
+| `STORY_ENGINE_STANDARD.md` | concept-bible 6단계 + D-033 (② 추가) | DRAFT v0.1 (2026-09-14) |
+| `PHOTO_AI_STANDARD.md` | D-033 파이프라인 A · `tools/photo_search.py` · `06_PROMPT_LIBRARY/templates/PHOTO_AI_REDESIGN_V01.md` | DRAFT v0.1 (2026-09-14) |
+| `DIAGRAM_TEMPLATES.md` | D-033 파이프라인 B (GT-01~04) | DRAFT v0.1 (2026-09-14) |
 
 ## 3. 스키마 (`00_SYSTEM/schemas/`) — 29개, JSON Schema draft-07
 
@@ -77,5 +80,5 @@
 
 ## 5. 빌드 순서 (정본 §25)
 
-P0 OS 문서·스키마 ✅ (2026-09-11) → **P1 Episode/Scene/Shot + Continuity 인스턴스** → P2 Character Master → P3 Source/Rights Ledger 채우기 → P4 Shot Router → P5 Review UI → P6 Money Gate + provider adapters → P7 Blender bridge → P8 Learning/regression → P9 Publish/analytics 자동화.
+P0 OS 문서·스키마 ✅ (2026-09-11) → P1 Continuity ✅ → P2 Character Master ✅ (D-023) → P3 Source/Rights Ledger ✅ → P4 Shot Router ✅ (D-024) → **현재: D-033 파이프라인 A/B 세팅 · 시험 1장 대기** → P5 Review UI → P6 Money Gate + provider adapters → P7 Blender bridge → P8 Learning/regression → P9 Publish/analytics 자동화.
 첫 실전 검증은 활성 EP01 (경주 왕릉 / 천마총).

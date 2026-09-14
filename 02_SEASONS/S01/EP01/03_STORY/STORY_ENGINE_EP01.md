@@ -8,9 +8,9 @@
 ```
 one_line_thesis:   "They did not bury the dead to hide them. They buried them to keep the living in order."
                     (죽은 자를 숨기려 묻은 게 아니라, 산 자의 질서를 지키려 묻었다)
-obvious_answers:   (현재 대본에 없음 — 아래 ② 참조)
-numbers_on_screen: 지름 47 m · 높이 12.7 m · 목곽 6.6×4.2 m · 1973년 · 유물 11,000점+ · 155호분  (CLM_CHEONMACHONG_LAYOUT_001 · CLM_EP01_STRUCT_004 · S3)
-people_moments:    S04 H01–H04 (노동자 4컷) · S06 H05 (원로) · S07 (시종)  — 현재 AI 8샷 45초 ≈ 11%
+obvious_answers:   (현재 대본에 없음 — D-034 #1: EP01 은 ② 미적용, EP02 부터)
+numbers_on_screen: 지름 47 m · 높이 12.7 m · 목곽 6.6×4.2 m · 1973년 · 유물 11,526점 · 155호분  (CLM_CHEONMACHONG_LAYOUT_001 · CLM_EP01_STRUCT_004 · CLM_EP01_EXCAV_003)
+people_moments:    S04_SH004–006 (노동자 3 · H01·H02·H02b) · S05_SH005 (시종 H03) · S06_SH002/005/010 (H04·H05·H06) · S08_SH002 (H07) — AI 8샷 45초 ≈ 10.6% (BLENDER_FLOW 4 · FLOW_VEO 2 · AI_STILL 2)
 ```
 
 ## 7단계 대입
@@ -27,6 +27,6 @@ people_moments:    S04 H01–H04 (노동자 4컷) · S06 H05 (원로) · S07 (�
 
 ## 결론
 
-- 7단계 중 **6개 충족, ② 만 빈 칸.** ② 를 넣으면 약 30초 늘어난다. 넣을지, 넣으면 어디를 줄일지는 사용자 결정 (러프컷 v1 은 D-010 기준).
+- 7단계 중 **6개 충족, ② 만 빈 칸.** **D-034 #1: EP01 은 ② 를 넣지 않고 러프컷 v1 유지, EP02 부터 적용.** ③ 치수선(GT-03) 만 GRAPHICS_SPEC 에서 추가.
 - ③ 의 숫자를 화면에 올리는 것(GT-03)은 대본 변경 없이 그래픽 스펙 v2 에서 처리 가능.
 - 이 파일은 샘플이다. 대본 v3 로 갈지 여부는 별도 결정.

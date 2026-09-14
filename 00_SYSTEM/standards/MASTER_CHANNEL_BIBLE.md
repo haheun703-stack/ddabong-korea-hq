@@ -15,7 +15,7 @@ DDABONG KOREA (따봉 코리아) · 슬로건 **STORIES BEHIND KOREA** · 해외
 > 무슨 일이 있었는지만 보여주지 않는다. 그 시대 사람들은 왜 그렇게 생각했고, 왜 그 선택이 당시에는 말이 되었는지를 보여준다.
 
 ## 3. 서사 문법
-`QUESTION → FACT → CONTEXT → MINDSET → CHOICE → LEGACY`
+`QUESTION → FACT → CONTEXT → MINDSET → CHOICE → LEGACY` — 정본은 `STORY_ENGINE_STANDARD.md` 7단계 (② REJECTED OBVIOUS ANSWER 추가, D-033, EP02 부터)
 
 ## 4. 역사 증거 규칙
 `FACT → PROBABLE → INTERPRETIVE → ARTISTIC`. 기록에 없는 내면 생각을 사실로 제시하지 않는다. → `HISTORY_ACCURACY_STANDARD.md`

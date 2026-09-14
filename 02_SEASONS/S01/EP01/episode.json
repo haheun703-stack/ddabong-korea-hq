@@ -14,7 +14,7 @@
     "currency": "KRW",
     "amount": 40000,
     "spent": null,
-    "note": "D-015 (2026-09-11, 사용자): EP01 AI 생성 예산 ₩40,000. Money Gate OPEN. 소진 Higgsfield 8.12 credits (배치 1) — KRW 환산율 미정 (P-012) → spent null. 정본: 08_GENERATION_CACHE/EP01/cost_COST_EP01_20260911.json"
+    "note": "소진액은 08_GENERATION_CACHE/EP01 의 cost 인스턴스가 정본 (2026-09-14: 이 note 의 옛 수치 제거)"
   },
   "era_ids": [
     "SILLA_EARLY",

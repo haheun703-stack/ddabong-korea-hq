@@ -26,7 +26,7 @@ A4·A5 는 Money Gate (COST_STANDARD) 와 사용자 승인 뒤에만. A1–A3·A
 
 ## 3. 권리 규칙 (핵심)
 
-1. **AI 참고 이미지로 넣는 원본은 GREEN 만** — CC0 · Public Domain · 공공누리 1유형. `rights.status = GREEN`, `usage_tier = ACTIVE`, `modification_allowed = true`.
+1. **AI 참고 이미지로 넣는 원본은 GREEN 만** — CC0 · Public Domain · 공공누리 1유형. `rights.status = GREEN`, `usage_tier = ACTIVE`, `modification_allowed = "YES"` (rights 스키마 enum 은 문자열). 자체 촬영 원본도 GREEN (D-026, rights 인스턴스 + proof 필수).
 2. **YELLOW (CC BY · CC BY-SA)** 는 참고 이미지로 넣지 않는다. "봉분 위치 · 지평선 높이 · 렌즈 추정" 같은 **수치만** 옮겨 적는다 (프롬프트 텍스트에 반영, 이미지 미첨부). 이 경우 `photo_ai.source_rights_ids` 에 넣지 않고 `photo_ai.composition_ref_note` 에 적는다.
 3. **RED** (NC · ND · 사용범위 불명 · 경주시 관광사진 등) 는 어떤 방식으로도 쓰지 않는다.
 4. **AI 재구성 결과물은 원본 권리를 승계한다.** 원본이 GREEN 이어야 결과물이 GREEN. 결과물 rights 는 따로 만들지 않고 샷의 `photo_ai.source_rights_ids` 로 계보를 남긴다.
@@ -46,7 +46,7 @@ A4·A5 는 Money Gate (COST_STANDARD) 와 사용자 승인 뒤에만. A1–A3·A
 
 검증기 규칙 (`validate.py photo_ai_rules`, D-033):
 - `photo_ai` 가 있으면 `pipeline` ∈ {`AI_STILL`, `FLOW_VEO`} 이어야 한다.
-- `source_rights_ids` 각각 실존 · `status = GREEN` · `usage_tier = ACTIVE` · `modification_allowed = true`. 아니면 **FAIL**.
+- `source_rights_ids` 각각 실존 · `status = GREEN` · `usage_tier = ACTIVE` · `modification_allowed = "YES"`. 아니면 **FAIL**. YELLOW 수치 전용이면 `source_rights_ids: []` + `composition_ref_note` 필수.
 - `ai_label` 비어 있으면 **FAIL** (기존 규칙과 중복이지만 photo_ai 는 별도 메시지).
 - `redesign_prompt_id` 가 있으면 prompt 인스턴스 실존.
 

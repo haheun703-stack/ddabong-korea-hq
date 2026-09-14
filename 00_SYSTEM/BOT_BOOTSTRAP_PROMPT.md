@@ -52,6 +52,6 @@ Current project caution:
 
 Output discipline:
 - Always report what changed, what remains, and which gate is next.
-- Update both source files in GitHub and a viewable HTML page in Web HQ whenever project state changes.
+- Update both source files in GitHub and a viewable HTML page in Web HQ whenever project state changes. (D-012: Web HQ HTML 은 main 병합 시점에 동기 — 작업 브랜치에서는 md/json 만.)
 - Every new data record must follow `00_SYSTEM/schemas/*.schema.json`; run `python 00_SYSTEM/schemas/validate.py` before committing.
 - Commit locally; if `00_SYSTEM/schemas/validate.py` fully passes (incl. cross-reference), push the working branch automatically and then report a short plain-Korean summary (DECISIONS D-025, supersedes D-007). Never push on validation failure; merging/pushing `main`, force-push and history rewrites still need human OK.

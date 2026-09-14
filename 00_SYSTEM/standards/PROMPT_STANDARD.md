@@ -20,7 +20,7 @@ LOCK 조각은 `06_PROMPT_LIBRARY/locks/`, 조립 결과는 `assembled/` 에 `as
 한 요소 실패 → `keep_change_patch` → `parent_prompt_id` 를 가진 새 `V<NN>`.
 
 ## 기존 EP01 프롬프트
-`episodes/ep01-higgsfield-prompts.html` 7컷 + 공통 금지요소는 APPROVED. P1 에서 LOCK 조각으로 분해하되 내용은 바꾸지 않는다.
+`episodes/ep01-higgsfield-prompts.html` 7컷 + 공통 금지요소는 APPROVED. P1 에서 LOCK 조각으로 분해하되 내용은 바꾸지 않는다. (완료: `locks/` 11개 APPROVED, D-015)
 
 ---
 

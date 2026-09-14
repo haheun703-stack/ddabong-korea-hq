@@ -5,6 +5,8 @@ Usage:  python 00_SYSTEM/schemas/validate.py            (validate examples/ + kn
         python 00_SYSTEM/schemas/validate.py FILE.json  (validate one instance; schema picked by "$schema" or filename prefix)
 """
 import json, re, sys, warnings
+try: sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+except Exception: pass
 warnings.filterwarnings('ignore', category=DeprecationWarning)
 from pathlib import Path
 try:
@@ -68,6 +70,8 @@ def pack_rules(p, d, costumes):
 
 RANK = {"FACT": 3, "PROBABLE": 2, "INTERPRETIVE": 1, "ARTISTIC": 0}
 EVIDENCE_PIPES = {"ARCHIVE", "HIGGSFIELD", "AI_STILL", "BLENDER_FLOW", "FLOW_VEO"}
+AI_PIPES = {"HIGGSFIELD", "AI_STILL", "BLENDER_FLOW", "FLOW_VEO"}
+HIGGSFIELD_LOCKED = {"EP01"}  # D-024: EP01 Higgsfield 0
 
 def ledger_rules(p, d, facts, rights, routers):
     """P3 (정본 §9 §10, D-013): source-less shot / unresolved rights / over-interpretation -> FAIL."""
@@ -102,6 +106,16 @@ def ledger_rules(p, d, facts, rights, routers):
             errs.append(f"{rel}: historical_confidence {d['historical_confidence']} exceeds strongest fact ({[k for k,v in RANK.items() if v==best][0]}) - over-interpretation")
     if d["pipeline"] in ("HIGGSFIELD", "AI_STILL", "BLENDER_FLOW", "FLOW_VEO") and not d.get("ai_label"):
         errs.append(f"{rel}: AI pipeline without ai_label")
+    if d["pipeline"] in AI_PIPES and d.get("historical_confidence") == "INTERPRETIVE" and "INTERPRETIVE" not in str(d.get("ai_label") or ""):
+        errs.append(f"{rel}: INTERPRETIVE AI shot must carry 'INTERPRETIVE RECONSTRUCTION' in ai_label (HISTORY_ACCURACY / STORY_ENGINE)")
+    if d["pipeline"] == "HIGGSFIELD" and d.get("episode_id") in HIGGSFIELD_LOCKED:
+        errs.append(f"{rel}: pipeline HIGGSFIELD is locked to 0 shots for {d.get('episode_id')} (D-024)")
+    if rid and routers.get(rid, {}).get("human_decision") == "OVERRIDDEN" and not (routers[rid].get("override_note") or "").strip():
+        errs.append(f"{rel}: router {rid} OVERRIDDEN without override_note")
+    for r in d.get("rights_ids", []):
+        rr = rights.get(r, {})
+        if rr.get("status") == "GREEN" and rr.get("usage_tier") == "ACTIVE" and rr.get("attribution_required") == "YES" and not (rr.get("attribution_text") or "").strip():
+            errs.append(f"{rel}: rights {r} requires attribution but attribution_text is empty (RIGHTS_STANDARD)")
     logical = {"AI_STILL": "AI_STILL", "FLOW_VEO": "I2V_MOTION", "BLENDER_FLOW": "BLENDER_I2V", "HIGGSFIELD": "EXTREME_CAMERA"}
     if d["pipeline"] in logical:  # D-028: logical pipeline separated from provider/model
         if d.get("logical_pipeline") != logical[d["pipeline"]]:
@@ -123,8 +137,8 @@ def photo_ai_rules(p, d, rights, has):
         rr = rights.get(r)
         if not rr: errs.append(f"{rel}: photo_ai.source_rights_ids -> unknown rights '{r}'"); continue
         if rr.get("status") != "GREEN": errs.append(f"{rel}: photo_ai source {r} is {rr.get('status')} - only GREEN may be an AI reference (D-033 #2)")
-        if rr.get("usage_tier") == "BACKUP_ONLY": errs.append(f"{rel}: photo_ai source {r} is BACKUP_ONLY (D-014)")
-        if rr.get("modification_allowed") is not True: errs.append(f"{rel}: photo_ai source {r} modification_allowed != true")
+        if rr.get("usage_tier") != "ACTIVE": errs.append(f"{rel}: photo_ai source {r} usage_tier {rr.get('usage_tier')!r} != ACTIVE (D-014 / PHOTO_AI §3)")
+        if rr.get("modification_allowed") != "YES": errs.append(f"{rel}: photo_ai source {r} modification_allowed != YES")
     if not d.get("ai_label"): errs.append(f"{rel}: photo_ai shot without ai_label (present-day reconstruction must be labeled)")
     if pa.get("redesign_prompt_id") and not has("prompt", pa["redesign_prompt_id"]):
         errs.append(f"{rel}: photo_ai.redesign_prompt_id -> unknown prompt '{pa['redesign_prompt_id']}'")
@@ -142,7 +156,8 @@ def forbidden_items(lock_id):
     return [s.strip() for s in body.split(";" if ";" in body else ",") if s.strip()]
 
 def required_negative(locks):
-    ids = ["DDABONG_NEGATIVE_V01", locks.get("era"), locks.get("location")]
+    neg = (locks.get("global") or "DDABONG_GLOBAL_V01").replace("GLOBAL", "NEGATIVE")  # PRESENT-era prompts use their own negative lock (D-034 review)
+    ids = [neg, locks.get("era"), locks.get("location")]
     for cc in locks.get("character_costume", []): ids += cc.split("+")
     out = []
     for i in ids:
@@ -173,7 +188,7 @@ def money_rules(docs):
         elif pr[1]["version"] != g["prompt_version"]:
             errs.append(f"{rel(p)}: prompt_version {g['prompt_version']} != {g['prompt_id']}.version {pr[1]['version']}")
         amount, aid = g["cost"]["amount"], g.get("approval_id")
-        if (amount is None or amount > 0) and not aid:
+        if (amount is None or amount > 0 or (g["cost"].get("spent") or 0) > 0) and not aid:
             errs.append(f"{rel(p)}: paid or unknown-cost generation without approval_id (Money Gate)")
         if aid:
             a = apps.get(aid, (None, None))[1]
@@ -188,7 +203,7 @@ def money_rules(docs):
         if not g["shot_id"].startswith(("MASTER_PACK:", "MASTER_FRAME:")) and routers.get(g["shot_id"], {}).get("human_decision", "PENDING") == "PENDING":
             errs.append(f"{rel(p)}: generation for {g['shot_id']} while its router decision is not ACCEPTED/OVERRIDDEN (D-024)")
         pj = g.get("provider_job")
-        if g["provider"] == "Higgsfield" and not pj:
+        if str(g["provider"]).lower() == "higgsfield" and not pj:
             errs.append(f"{rel(p)}: Higgsfield generation without provider_job (sent prompt not traceable)")
         if pj:
             jp = ROOT / pj["params_path"]
@@ -249,6 +264,7 @@ def refcheck(paths):
            "scene": "scene_id", "shot": "shot_id", "episode": "episode_id",
            "generation": "generation_id", "approval": "approval_id", "cost": "cost_id", "keep_change_patch": "patch_id"}
     for p in paths:
+        if p in SCHEMA_FAILED: continue  # schema-invalid docs would KeyError here and hide the rest (2026-09-14 review)
         data = json.loads(p.read_text(encoding="utf-8")); name = pick(p, data)
         if name in key: ids.setdefault(name, set()).add(data.get(key[name])); docs.append((p, name, data))
     costumes = {d["costume_id"]: d for _, n, d in docs if n == "costume"}
@@ -304,12 +320,13 @@ def refcheck(paths):
     errs.extend(money_rules(docs))
     return errs
 
+SCHEMA_FAILED = set()
 targets =[Path(a) for a in sys.argv[1:]] or sorted((HERE / "examples").glob("*.json")) + INSTANCES
 bad = 0
 for t in targets:
     path, name, errs = check(t)
     tag = "PASS" if not errs and name != "NO_SCHEMA" else "FAIL"
-    if tag == "FAIL": bad += 1
+    if tag == "FAIL": bad += 1; SCHEMA_FAILED.add(path)
     print(f"[{tag}] {path.relative_to(ROOT) if ROOT in path.parents else path}  ({name})")
     for e in errs: print("       -", e)
 print(f"\n{len(targets) - bad}/{len(targets)} passed")

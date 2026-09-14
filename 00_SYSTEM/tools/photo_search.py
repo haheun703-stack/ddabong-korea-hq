@@ -6,7 +6,8 @@ Usage:
   ... --out 02_SEASONS/S01/EP01/15_QA/PHOTO_AI_CANDIDATES_20260914.md   (append markdown table + JSON sidecar)
 
 Rules (PHOTO_AI_STANDARD v0.1, D-033):
-  GREEN  = CC0 / Public domain / PD-* / KOGL Type 1         -> may be used as AI reference (Pipeline A)
+  GREEN  = CC0 / Public domain / PDM / PD-* (not PD-US*) / KOGL Type 1 -> may be used as AI reference (Pipeline A)
+  PD-US* = YELLOW (US-only public domain; manual check before use)
   YELLOW = CC BY, CC BY-SA (any version)                    -> composition numbers only, never as AI reference
   RED    = NC / ND / unknown / all rights reserved          -> never
 This script only LISTS candidates. It never downloads originals, never writes rights.json.
@@ -18,14 +19,16 @@ import requests
 API = "https://commons.wikimedia.org/w/api.php"
 UA = {"User-Agent": "ddabong-korea-hq/0.1 (photo_search; research only)"}
 
-GREEN_PAT = re.compile(r"^(cc0|public domain|pd\b|pd-|kogl type 1|공공누리 제?1유형)", re.I)
-YELLOW_PAT = re.compile(r"^cc[- ]by(-sa)?(\s|$)", re.I)
+GREEN_PAT = re.compile(r"^(cc0|public domain|pdm\b|pd\b|pd-(?!us)|kogl type 1|공공누리 제?1유형)", re.I)  # PD-US* -> YELLOW (US-only PD, manual check)
+YELLOW_PAT = re.compile(r"^cc[- ]by(-sa)?([-\s]|$)", re.I)
 
 
 def tier(license_short: str) -> str:
     s = (license_short or "").strip()
     if not s:
         return "RED"
+    if re.match(r"^pd-us", s, re.I):  # US-only public domain: manual check (YELLOW)
+        return "YELLOW"
     if GREEN_PAT.search(s):
         return "GREEN"
     if re.search(r"\b(nc|nd)\b", s, re.I):
@@ -42,12 +45,15 @@ def strip_html(s: str) -> str:
 def search(query: str, limit: int, min_width: int):
     params = {
         "action": "query", "format": "json", "generator": "search",
-        "gsrsearch": f"{query} filetype:bitmap", "gsrnamespace": 6, "gsrlimit": limit,
+        "gsrsearch": f"{query} filetype:bitmap", "gsrnamespace": 6, "gsrlimit": min(limit, 50),
         "prop": "imageinfo", "iiprop": "url|size|extmetadata|mime",
     }
     r = requests.get(API, params=params, headers=UA, timeout=40)
     r.raise_for_status()
-    pages = r.json().get("query", {}).get("pages", {})
+    j = r.json()
+    if "error" in j:
+        raise RuntimeError(f"Commons API error: {j['error']}")
+    pages = j.get("query", {}).get("pages", {})
     out = []
     for p in pages.values():
         ii = (p.get("imageinfo") or [{}])[0]
@@ -97,7 +103,10 @@ def main():
     sys.stdout.reconfigure(encoding="utf-8")
     all_items, blocks = [], []
     for q in a.queries:
-        items = search(q, a.limit, a.min_width)
+        try:
+            items = search(q, a.limit, a.min_width)
+        except Exception as e:
+            print(f"### 후보 — {q}\n\n(검색 실패: {e})\n"); continue
         all_items += items
         blocks.append(md_table(items, a.shot) if items else f"### 후보 — {q}\n\n(폭 {a.min_width}px 이상 후보 없음)")
     body = "\n\n".join(blocks)

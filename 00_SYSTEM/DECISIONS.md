@@ -161,11 +161,10 @@
 **결정** `EP01_S06_SH010` (H06) 사진 **V03** (`08_GENERATION_CACHE/EP01/AI_STILL/H06_V03_4cc87427.png`, `GEN_EP01_S06_SH010_HIGGSFIELD_V03`) 승인 → 샷 `LOOK_APPROVED`, `approved_version = V03`.
 **수용한 작은 점** 사람 규모 약 1/5–1/6 (목표 1/8), 먼 인물 옷 일부 현대적. H06 총 3 호출 / 6 credits, 추가 호출 없음.
 
-### D-034 · 2026-09-14 · 샘플 1–3 검토 뒤 4건 (사용자 "너의 추론대로")
-**1** ② REJECTED OBVIOUS ANSWER 는 **EP02 부터** 적용. EP01 대본은 러프컷 v1 기준 유지 (D-010), ③ 치수선(GT-03) 만 GRAPHICS_SPEC 에서 추가.
-**2** GREEN 원본 없는 샷: YELLOW 수치만 옮긴 텍스트 전용 생성 → 안 되면 현장 촬영 (D-032 유지).
-**3** 파이프라인 A 첫 유료 시험 = `EP01_S02_SH001` 1장 (GREEN Gagnon CC0 원본, 최대 1 호출 / 2 credits, D-030 사진 위임 한도 안). **실행은 Higgsfield 커넥터 재인증 뒤**, prompt 인스턴스 저장 + approval 기록 후 Sent Prompt Rule.
-**4** `STORY_ENGINE_STANDARD` · `PHOTO_AI_STANDARD` · `DIAGRAM_TEMPLATES` 는 2026-09-14 전체 검수(D-029 반박 검수) 통과 뒤 ACTIVE.
+### D-032 · 2026-09-13 · 경주 짧은 촬영 (사용자 "1번 경주 방문 관련 2번으로 다음주에 가서 찍어서 올테니")
+**결정** `15_QA/REAL_SHOT_ALTERNATIVES_20260913.md` §5 안 B — 다음 주 짧은 촬영. **꼭 찍기 5컷**: S01_SH001 · S01_SH002 · S09_SH003 · S08_SH003 (매치컷 착지) · S08_SH001. **시간 남으면 5컷**: S02_SH001 · S03_SH001 · S06_SH007 · S06_SH011 · S09_SH004 (못 찍으면 인터넷 사진 후보로 대체).
+**유지** H07 은 촬영 뒤 생성 (D-018 순서 그대로). CC BY-SA 사용 여부 · 포토코리아 확인은 대체가 필요할 때만 결정.
+**TODO** `02_SEASONS/S01/EP01/08_REAL_FOOTAGE/SHOOT_TODO_EP01_20260913.md` (촬영 허가 문의 Q1–Q5 · 날짜·예비일 · 촬영자 · 원본 보관은 사용자).
 
 ### D-033 · 2026-09-14 · 제작 방식 전환 — 벤치마크 반영 (사용자 "그래")
 **근거** `09_ANALYTICS/benchmarks/BENCHMARK_ARCHDICT_GYEONGHOERU_20260914.md` (신비한 건축사전 경회루 영상, 사용자 판정: 현장 촬영 0, 실사풍은 전부 가져온 사진의 AI 재구성).
@@ -177,10 +176,11 @@
 5. **스토리 엔진 템플릿** 을 도구와 같은 무게로 세팅. 벤치마크에서 가져올 것: 상식 처방 기각 칸(QUESTION 과 FACT 사이) · 한 줄 주제로 긴 시간 꿰기 · 숫자·치수를 화면에 보여주기. 버릴 것: 공학 설명서 톤 · 사람 없는 화면 · 국내 시청자 전제.
 6. 차별점은 화면 품질이 아니라 질문의 각도("왜 그들에게 말이 됐나")와 근거 표시(FACT / INTERPRETATION 을 화면에서도 구분).
 
-### D-032 · 2026-09-13 · 경주 짧은 촬영 (사용자 "1번 경주 방문 관련 2번으로 다음주에 가서 찍어서 올테니")
-**결정** `15_QA/REAL_SHOT_ALTERNATIVES_20260913.md` §5 안 B — 다음 주 짧은 촬영. **꼭 찍기 5컷**: S01_SH001 · S01_SH002 · S09_SH003 · S08_SH003 (매치컷 착지) · S08_SH001. **시간 남으면 5컷**: S02_SH001 · S03_SH001 · S06_SH007 · S06_SH011 · S09_SH004 (못 찍으면 인터넷 사진 후보로 대체).
-**유지** H07 은 촬영 뒤 생성 (D-018 순서 그대로). CC BY-SA 사용 여부 · 포토코리아 확인은 대체가 필요할 때만 결정.
-**TODO** `02_SEASONS/S01/EP01/08_REAL_FOOTAGE/SHOOT_TODO_EP01_20260913.md` (촬영 허가 문의 Q1–Q5 · 날짜·예비일 · 촬영자 · 원본 보관은 사용자).
+### D-034 · 2026-09-14 · 샘플 1–3 검토 뒤 4건 (사용자 "너의 추론대로")
+**1** ② REJECTED OBVIOUS ANSWER 는 **EP02 부터** 적용. EP01 대본은 러프컷 v1 기준 유지 (D-010), ③ 치수선(GT-03) 만 GRAPHICS_SPEC 에서 추가.
+**2** GREEN 원본 없는 샷: YELLOW 수치만 옮긴 텍스트 전용 생성 → 안 되면 현장 촬영 (D-032 유지).
+**3** 파이프라인 A 첫 유료 시험 = `EP01_S02_SH001` 1장 (GREEN Gagnon CC0 원본, 최대 1 호출 / 2 credits, D-030 사진 위임 한도 안). **실행은 Higgsfield 커넥터 재인증 뒤**, prompt 인스턴스 저장 + approval 기록 후 Sent Prompt Rule.
+**4** `STORY_ENGINE_STANDARD` · `PHOTO_AI_STANDARD` · `DIAGRAM_TEMPLATES` 는 2026-09-14 전체 검수(D-029 반박 검수) 통과 뒤 ACTIVE.
 
 ---
 

@@ -1,7 +1,7 @@
 # PHOTO_AI_REDESIGN_V01 — 사진→AI 리디자인 프롬프트 템플릿 (파이프라인 A4)
 
 > v0.1 DRAFT (2026-09-14) · `PHOTO_AI_STANDARD.md` §2 A4 · 조립 결과는 `prompt` 인스턴스 `assembled_text` 로 저장하고 **그대로** 전송한다 (Sent Prompt Rule).
-> lock 조립 순서: `DDABONG_GLOBAL_V01` → 아래 본문 → `DDABONG_NEGATIVE_V01`. 역사 lock (ERA · CHARACTER · COSTUME) 은 **넣지 않는다** (현재 시점 장소이므로).
+> lock 조립: prompt 인스턴스의 `locks` 필수 키는 유지한다 — `era: "NONE"`, `location`: 해당 LOC lock 또는 `"NONE"`, `character_costume: []`, `style: DDABONG_DOC_REENACTMENT_V01`. `global` 은 현재 시점용 `DDABONG_GLOBAL_PRESENT_V01` (+ 짝 `DDABONG_NEGATIVE_PRESENT_V01`) — **B-1 결정 전까지는 신설 금지, 결정 전 A4 실행 불가**. 검증기는 `global` 이름으로 negative 세트를 고른다.
 
 ## 템플릿
 

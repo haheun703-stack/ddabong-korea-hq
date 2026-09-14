@@ -73,8 +73,8 @@
     }
   },
   "status": "CHARACTER_MASTER_APPROVED",
-  "approved_by": null,
-  "approved_at": null,
+  "approved_by": "사용자 (D-023)",
+  "approved_at": "2026-09-13",
   "version": "V01",
   "updated_at": "2026-09-13",
   "notes": "군중 역할. H03 은 손 클로즈업 중심 → 손·소매 디테일이 costume_detail 의 핵심. D-008 Lite Crowd Pack: full_body·walking·costume_detail 만 필수. 전경·식별 가능하게 쓰이면 FULL 로 승격. D-015: LITE_CROWD 유지 확인 (사용자). H02 푸시인이 특정 얼굴에 머물 때만 FULL 승격 검토. D-022 (사용자 2026-09-13): full_body APPROVED → 2단계 walking · costume_detail 는 이 이미지를 복식 참조로. D-023 (사용자 2026-09-13): LITE Pack 3/3 APPROVED → CHARACTER_MASTER_APPROVED. 참조 얼굴이 walking/costume_detail 에 반복됨 → 영상에서 이 3인조를 알아볼 정도로 반복 사용 금지."

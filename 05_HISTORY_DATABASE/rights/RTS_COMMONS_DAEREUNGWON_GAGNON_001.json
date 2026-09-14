@@ -1,0 +1,20 @@
+{
+  "rights_id": "RTS_COMMONS_DAEREUNGWON_GAGNON_001",
+  "asset_id": "ASSET_COMMONS_DAEREUNGWON_GAGNON_2022_V01",
+  "source": "https://commons.wikimedia.org/wiki/File:Daereungwon_Tomb_Complex.jpg",
+  "creator": "Bernard Gagnon (Wikimedia Commons User:Bgag)",
+  "license": "CC0 1.0 Universal (Public Domain Dedication)",
+  "commercial_use": "YES",
+  "modification_allowed": "YES",
+  "attribution_required": "NO",
+  "attribution_text": "Photo: Bernard Gagnon, Wikimedia Commons, CC0 (attribution not required; given as courtesy).",
+  "expiration": null,
+  "proof": "05_HISTORY_DATABASE/rights/proof/RTS_COMMONS_DAEREUNGWON_GAGNON_001_20260914.html",
+  "research_permission": "YES",
+  "media_reuse_permission": "YES",
+  "status": "GREEN",
+  "usage_tier": "ACTIVE",
+  "checked_at": "2026-09-14",
+  "checked_by": "Claude Code (D-034 #3 Pipeline A trial source; rebuttal review A-14)",
+  "notes": "파이프라인 A 첫 시험 (EP01_S02_SH001, D-034 #3) 참고 원본. Commons API: 5018×3345, 2022-10-06 촬영, LicenseShortName 'CC0', LicenseUrl creativecommons.org/publicdomain/zero/1.0. 페이지 원문 proof 저장 (2026-09-14). 원본 실측: 미완 — upload.wikimedia.org 가 429 로 거부 (2026-09-14), A3 완료 전 실측 필요. 대릉원 봉분 3기 겹침 경관, 사람 없음, 10월 초 초록 풀, 흐림. 15_QA/PHOTO_AI_CANDIDATES_20260914.md."
+}

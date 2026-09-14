@@ -7,7 +7,7 @@
 
 - 출처 SOURCE: 6 (research-v2 S1–S6 전부 정규화) + 복식 7 = 13
 - 사실 FACT/CLAIM: EP01 13 + 천마총 배치 1 + 복식 8 = 22
-- 권리 RIGHTS: 11 — GREEN 5 · YELLOW 4 · RED 2
+- 권리 RIGHTS: 11 — GREEN 5 · YELLOW 4 · RED 2 (P3 시점. 2026-09-13 GNM 분리 후 15 — GREEN 9 · YELLOW 4 · RED 2)
 - 샷 49: evidence_role PRIMARY 16 · SUPPORTING 21 · CONTEXT 9 · NONE 3
 - fact 미연결 샷: 0 · ARCHIVE 권리 미연결: 0 · RED 권리 사용: 0
 

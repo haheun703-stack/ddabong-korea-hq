@@ -22,7 +22,7 @@
 | 구성 | 대상 물체를 수직으로 잘라 층을 드러냄. 카메라 15–25° 부감, 잘린 면은 살짝 밝게 |
 | 모션 | 2.5–4초. 흙 → 강돌 → 목곽 순서로 벗겨지거나 쌓임. 8–12프레임 페이드 |
 | 라벨 | 층 이름 영어 3단어 이내 + GT-03 치수선 |
-| EP01 적용 | G04 적석목곽 단면 (`CLM_EP01_STRUCT_004` · `CLM_CHEONMACHONG_LAYOUT_001`), G13 금관 위치 |
+| EP01 적용 | G04 적석목곽 단면 (`CLM_EP01_STRUCT_004` · `CLM_CHEONMACHONG_LAYOUT_001`), G13 금관 위치 (GT-01 변형: 치수선 없음 · 금관은 브랜드 레드 대신 금색, D-026 #5 · GRAPHICS_SPEC_EP01_V2) |
 | 벤치마크 대응 | 지반·물 단면 (g1-4, g3-3, g7-5) |
 
 ## GT-02 · 오버헤드 도식 (Overhead schematic)
@@ -55,7 +55,7 @@
 | 구성 | 좌: 상식 답 도식 (회색), 우: 사실 도식. 좌측에 빨간 X 가 0.4초에 그어지고 회색이 더 어두워짐 |
 | 모션 | 답 하나당 4–8초. 최대 3개 연속 |
 | 라벨 | 좌 "Maybe: {obvious}" / 우 "Actually: {fact}" (영어 5단어 이내) |
-| EP01 적용 | 현재 없음. ② 신설 시 (a) "More kings?" → 56 kings vs hundreds of mounds (b) "Spare land?" → next to the palace |
+| EP01 적용 | 현재 없음. ② 신설 시 (a) "More kings?" → 56 kings vs hundreds of mounds **(56 = UNSOURCED, fact 신설 전 화면 사용 금지)** (b) "Spare land?" → next to the palace |
 | 벤치마크 대응 | 물 퍼내기 X · 흙 덮기 X (g2-6~9), 빨간 X 마크 (g7-8, g8-4) |
 
 ## 산출 방식
