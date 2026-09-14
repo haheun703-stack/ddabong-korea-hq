@@ -228,6 +228,10 @@
 **결과** 원래 REAL_SHOOT 10샷 → 전부 파이프라인 A 정지 이미지로 LOOK_APPROVED (S01_SH001 · S01_SH002 · S02_SH001×3 · S03_SH001 · S06_SH007 · S06_SH011 · S08_SH001×3 · S08_SH003 · S09_SH003 · S09_SH004). 파이프라인 A 누적: 14 생성 · 13 승인 · 1 REJECTED(M2 V01) · 28 credits. EP01 누적 94.12 credits, 잔액 1648.58. 위임 누적 2/20.
 **다음** 움직임 필요 컷 (S01_SH001 · S08_SH001 M1–M3 · S01_SH002 리빌) 은 I2V Kling 3.0 — P-012 뒤 승인. H07 (S08_SH002) 은 S08_SH003 플레이트에 맞춰 생성 가능. GT-0x 도해.
 
+### D-044 · 2026-09-14 · H07 (S08_SH002) 생성 승인 — S08_SH003 플레이트에 맞춤 (사용자 "승인 — 최대 2회 / 4 credits")
+**전제** 착지 플레이트 = `GEN_PA_EP01_S08_SH003_HIGGSFIELD_V01` (D-040). 실측값 `LOC_CHEONMACHONG_V01.spatial_lock.match_cut_frame` 기록 (꼭대기 x0.44/y0.31, 지평선 y0.62, 밑변 0.00–0.95, 35 mm·1.6 m·0°). D-018 의 "현장 SH003 촬영 뒤" 조건은 D-038 로 AI 플레이트로 대체.
+**승인** `APR_EP01_AI_B1_003`: `PRM_EP01_S08_SH002_V02` (V01 + 매치컷 수치 + 맨흙 봉분), Nano Banana Pro (카탈로그 `nano_banana_pro` 확인), 참고 이미지 = S08_SH003 플레이트 (job id). 최대 2회 / 4 credits.
+
 ---
 
 ## 승인 대기 (P)

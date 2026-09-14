@@ -1,0 +1,21 @@
+{
+  "approval_id": "APR_EP01_AI_B1_003",
+  "kind": "PAID_GENERATION",
+  "target_id": "EP01_S08_SH002",
+  "money_gate_presented": {
+    "shot_id": "EP01_S08_SH002",
+    "prompt_ids": [
+      "PRM_EP01_S08_SH002_V02"
+    ],
+    "provider_model": "HIGGSFIELD / NANO_BANANA_PRO (catalog nano_banana_pro), 2k 16:9 still, image reference = S08_SH003 plate (job 0f2174d1)",
+    "expected_attempts": 2,
+    "estimated_cost_range": "2-4 credits (hard cap 4)",
+    "continuity_risk": "HIGH - match cut: crest/horizon must land on the plate numbers; bare-earth finish must not read as concrete or modern earthworks"
+  },
+  "decision": "APPROVE",
+  "fix_reason": null,
+  "delegated": false,
+  "decided_by": "사용자",
+  "decided_at": "2026-09-14T12:10:00Z",
+  "note": "D-044 (2026-09-14 '승인 — 최대 2회 / 4 credits'): H07 생성. 1회 전송 → 봇 판정 → 실패 항목만 고쳐 1회 더 (새 버전 + PATCH, 전송 전 보고). 최종 OK 는 사용자."
+}
