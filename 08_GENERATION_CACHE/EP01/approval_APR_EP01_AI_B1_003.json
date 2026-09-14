@@ -17,5 +17,5 @@
   "delegated": false,
   "decided_by": "사용자",
   "decided_at": "2026-09-14T12:10:00Z",
-  "note": "D-044 (2026-09-14 '승인 — 최대 2회 / 4 credits'): H07 생성. 1회 전송 → 봇 판정 → 실패 항목만 고쳐 1회 더 (새 버전 + PATCH, 전송 전 보고). 최종 OK 는 사용자. 1/2 사용 (SUCCESS, 2 credits). 2/2 사용 (SUCCESS, 2 credits) — 한도 소진."
+  "note": "D-044 (2026-09-14 '승인 — 최대 2회 / 4 credits'): H07 생성. 1회 전송 → 봇 판정 → 실패 항목만 고쳐 1회 더 (새 버전 + PATCH, 전송 전 보고). 최종 OK 는 사용자. 1/2 사용 (SUCCESS, 2 credits). 2/2 사용 (SUCCESS, 2 credits) — 한도 소진. D-045: 사용자 V02 OK."
 }

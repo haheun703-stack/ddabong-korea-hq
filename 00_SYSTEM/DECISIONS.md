@@ -232,6 +232,11 @@
 **전제** 착지 플레이트 = `GEN_PA_EP01_S08_SH003_HIGGSFIELD_V01` (D-040). 실측값 `LOC_CHEONMACHONG_V01.spatial_lock.match_cut_frame` 기록 (꼭대기 x0.44/y0.31, 지평선 y0.62, 밑변 0.00–0.95, 35 mm·1.6 m·0°). D-018 의 "현장 SH003 촬영 뒤" 조건은 D-038 로 AI 플레이트로 대체.
 **승인** `APR_EP01_AI_B1_003`: `PRM_EP01_S08_SH002_V02` (V01 + 매치컷 수치 + 맨흙 봉분), Nano Banana Pro (카탈로그 `nano_banana_pro` 확인), 참고 이미지 = S08_SH003 플레이트 (job id). 최대 2회 / 4 credits.
 
+### D-045 · 2026-09-14 · H07 2차 OK (사용자 "OK")
+**경과** 1차 (`GEN_EP01_S08_SH002_HIGGSFIELD_V01`) PARTIAL — 봉분 중앙·좁음, 산 지평선, 겨울 들판, 지평선 끝 인공물. `PATCH_EP01_S08_SH002_001` → V03 (참고 이미지 구도 그대로, 표면만 맨흙, 초여름, 인공물 0). 2차 (`_V02`) PASS.
+**결정** H07 V02 **APPROVED** → `EP01_S08_SH002` LOOK_APPROVED. G10 매치컷 양쪽 플레이트 확보 (과거 H07 ↔ 현재 S08_SH003). 꼭대기 5–10% 우측 편차는 편집 정렬. 4 credits, EP01 누적 98.12. 승인 한도 소진, 추가 생성 없음.
+**결과** EP01 AI 정지 컷 전부 확보: H06 · H07 · 파이프라인 A 13. 남은 AI = 영상 H01–H05 + I2V (P-012 뒤).
+
 ---
 
 ## 승인 대기 (P)

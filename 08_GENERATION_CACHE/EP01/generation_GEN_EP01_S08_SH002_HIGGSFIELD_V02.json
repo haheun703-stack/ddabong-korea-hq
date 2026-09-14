@@ -40,5 +40,5 @@
   "started_at": "2026-09-14T11:30:48Z",
   "finished_at": null,
   "run_by": "Claude Code (H07 attempt 2, D-044)",
-  "notes": "Sent text == prompt V03 assembled_text (verified). Measured vs plate: crest x=0.492/y=0.306 (plate 0.388/0.303), edge horizon y=0.508 (plate 0.553). Bot visual check + owner OK/FIX pending. Approval cap reached - no further attempts without new approval."
+  "notes": "Sent text == prompt V03 assembled_text (verified). Measured vs plate: crest x=0.492/y=0.306 (plate 0.388/0.303), edge horizon y=0.508 (plate 0.553). Bot PASS (minor: crest 5-10% right of plate; season/man-made fixed). D-045: owner OK -> LOOK_APPROVED V02. Approval cap reached - no further attempts without new approval."
 }

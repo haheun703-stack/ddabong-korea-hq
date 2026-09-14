@@ -1,7 +1,7 @@
 # CURRENT STATUS — 지금 어디까지 왔나
 
 > **매 작업마다 갱신한다.** 이 파일 하나만 읽으면 어느 봇/AI 창을 열어도 바로 이어갈 수 있어야 한다.
-> 갱신: 2026-09-14 오후 (Claude Code, D-035~D-043 · EP01 현재 시점 실사 10샷 전부 정지 이미지 확정) · 마지막 사용자 승인: 2026-09-14 (D-043 M2 V02 OK)
+> 갱신: 2026-09-14 오후 (Claude Code, D-035~D-045 · EP01 AI 정지 컷 전부 완료, H07 매치컷 확보) · 마지막 사용자 승인: 2026-09-14 (D-045 H07 V02 OK)
 > 읽는 순서: `BOT_HANDOFF_DDABONG_STUDIO_OS_V0.1.md` → `BOT_BOOTSTRAP_PROMPT.md` → **이 문서** → `OS_INDEX.md` → `02_SEASONS/S01/EP01/episode.json`
 
 ---
@@ -19,6 +19,7 @@
 8. ✔ **파이프라인 A 시험 1장 완료 · D-037 사용자 OK (2026-09-14 오후)**: `EP01_S02_SH001` V01 LOOK_APPROVED — `08_GENERATION_CACHE/EP01/AI_STILL/PA_S02_SH001_V01_9cbd059e.png` (2752×1536, 2 credits, Nano Banana 2 = D-036 파이프라인 A 기본). 검수 시트 `AI_STILL/REVIEW_PA_S02_SH001_V01.md`. EP01 누적 68.12 credits.
 9. ✔ **D-038 현장 촬영 제외 → 전부 자체 제작** (사용자 "직접 촬영 말고"). REAL 9샷 → 파이프라인 A. GREEN 원본 +5 (CC0, `02_SEASONS/S01/EP01/02_SOURCES/`). **D-039 배치 1 (8장, 16 credits) 생성 완료** → `08_GENERATION_CACHE/EP01/AI_STILL/PA_*_V01_*.png` · 검수 시트 `AI_STILL/REVIEW_PA_BATCH1_20260914.md`. 봇 판정 PASS 7 · PARTIAL 1 → **D-040 사용자 8장 전부 OK → 7샷 LOOK_APPROVED** (파이프라인 A 누적 9/9 승인, 실패 0). D-026 완화 (착지 = 대릉원 봉분). EP01 누적 84.12 credits, 잔액 1658.58.
 10. ✔ **D-041 캡처 21장 = RED** (유튜브 화면, `경주 사진 모음/` git 제외, 구도 연구만). **배치 2 텍스트 전용 4장 생성 완료** (8 credits): S01_SH001 거리 · S08_SH001 몽타주 M1·M2·M3 → `08_GENERATION_CACHE/EP01/AI_STILL/PA_S01_SH001_*.png` · `PA_S08_SH001_M*_*.png`, 검수 시트 `AI_STILL/REVIEW_PA_BATCH2_20260914.md`. → **D-042** 3장 OK + M2 재생성 (위임, 2 credits) → **D-043** M2 V02 OK. **REAL 10샷 전부 LOOK_APPROVED (파이프라인 A 14 생성 · 13 승인 · 28 credits).** 움직임은 I2V (P-012 뒤). EP01 누적 94.12 credits, 잔액 1648.58, 위임 누적 2/20.
+11. ✔ **D-044/D-045 H07 (S08_SH002) 완료**: S08_SH003 플레이트 실측값(`LOC_CHEONMACHONG_V01.match_cut_frame`)에 맞춰 Nano Banana Pro 2회 (1차 PARTIAL → PATCH → 2차 PASS) → V02 LOOK_APPROVED. `08_GENERATION_CACHE/EP01/AI_STILL/H07_V02_2801ac11.png`. **G10 매치컷 양쪽 플레이트 확보.** EP01 누적 98.12 credits, 잔액 1644.58. **EP01 AI 정지 컷 전부 완료** — 남은 AI 는 영상(H01–H05 · I2V) 뿐, P-012 뒤.
 
 **사용자 손에 있는 것**
 - ~~P-001~~ EP01 예산 **₩40,000 확정 (D-015)** → Money Gate OPEN.
@@ -40,7 +41,7 @@
 - 파이프라인 A 선행 작업 (라우터 OVERRIDE · rights 인스턴스 · PRESENT lock — B-1 결정 뒤) · GT-0x Blender 템플릿.
 - P5 Review UI / P6 Money Gate 어댑터 설계 (유료 없음).
 
-**유료 생성 현황 (D-015)**: Money Gate OPEN (₩40,000 / 소진 94.12 credits, KRW 환산 P-012). **P2 Character Master 완료 (D-023)**: 원로 FULL 10/10 · 노동자 LITE 3/3 · 시종 LITE 3/3 전부 CHARACTER_MASTER_APPROVED. 라우터 잠금 (D-024). Master Frame 3장 APPROVED (D-027) · H06 완료 (D-031). 파이프라인 A 시험 1장 완료 (D-037, 68.12 credits). **다음 유료 = 미정 (사용자 지시 대기)**, 영상 H01–H05 는 P-012 뒤.
+**유료 생성 현황 (D-015)**: Money Gate OPEN (₩40,000 / 소진 98.12 credits, KRW 환산 P-012). **P2 Character Master 완료 (D-023)**: 원로 FULL 10/10 · 노동자 LITE 3/3 · 시종 LITE 3/3 전부 CHARACTER_MASTER_APPROVED. 라우터 잠금 (D-024). Master Frame 3장 APPROVED (D-027) · H06 완료 (D-031). 파이프라인 A 시험 1장 완료 (D-037, 68.12 credits). **다음 유료 = 미정 (사용자 지시 대기)**, 영상 H01–H05 는 P-012 뒤.
 
 ## P2 사전 점검 — Pre-flight (2026-09-11 · DONE, 생성 0)
 
@@ -151,8 +152,8 @@
 | 항목 | 값 |
 |---|---|
 | EP01 예산 | **₩40,000** (D-015) — `08_GENERATION_CACHE/EP01/cost_COST_EP01_20260911.json` |
-| 소진 | 94.12 credits (48 호출: 원로 13 · 군중 10 · 기준 그림 8 · AI 샷 3 · 파이프라인 A 14) — KRW 환산 P-012 |
-| 게이트 상태 | `OPEN` — 최신 승인 `APR_EP01_PA_004` (D-042 위임, 1/1 사용) · 사진 위임 한도 사용 2/20 credits |
+| 소진 | 98.12 credits (50 호출: 원로 13 · 군중 10 · 기준 그림 8 · AI 샷 5 · 파이프라인 A 14) — KRW 환산 P-012 |
+| 게이트 상태 | `OPEN` — 최신 승인 `APR_EP01_AI_B1_003` (D-044, 2/2 사용) · 사진 위임 한도 사용 2/20 credits |
 
 ---
 
@@ -172,6 +173,8 @@
 ---
 
 ## 최근 변경 (최신순)
+
+- **2026-09-14 저녁 사용자 + Claude Code** — H: 재연결 확인. **D-044** H07 승인 (2회/4 credits) → 1차 PARTIAL → PATCH V03 → 2차 PASS → **D-045** V02 OK, S08_SH002 LOOK_APPROVED. match_cut_frame 실측 기록. Nano Banana Pro 카탈로그 id `nano_banana_pro` 확인. EP01 98.12 credits.
 
 - **2026-09-14 오후 사용자** — **D-042** 배치 2: 3장 OK, M2 재생성 (위임 2 credits) · **D-043** M2 V02 OK → S08_SH001 LOOK_APPROVED. **EP01 현재 시점 실사 10샷 전부 파이프라인 A 로 확정.** EP01 94.12 credits.
 

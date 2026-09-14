@@ -12,7 +12,7 @@
   "human_motion": 0,
   "visual_importance": 90,
   "pipeline": "AI_STILL",
-  "status": "LOOK_V",
+  "status": "LOOK_APPROVED",
   "characters": [],
   "costumes": [],
   "continuity_group": "EP01_S08",
@@ -44,18 +44,18 @@
     {
       "version": "V02",
       "stage": "STILL",
-      "status": "DRAFT",
+      "status": "APPROVED",
       "created_at": "2026-09-14",
-      "created_by": "Claude Code (D-044 attempt 2)",
+      "created_by": "사용자",
       "path": "08_GENERATION_CACHE/EP01/AI_STILL/H07_V02_2801ac11.png",
-      "note": "GEN_EP01_S08_SH002_HIGGSFIELD_V02 · prompt V03 (PATCH_EP01_S08_SH002_001) · 봇 판정 대기 · 사용자 OK/FIX 대기"
+      "note": "GEN_EP01_S08_SH002_HIGGSFIELD_V02 · prompt V03 · D-045 사용자 OK (2026-09-14). 봇 PASS: 맨흙 봉분·초록 들판·인공물 0·사람 0; minor 꼭대기 5–10% 오른쪽 → 편집 정렬."
     }
   ],
-  "approved_version": null,
+  "approved_version": "V02",
   "created_at": "2026-09-11",
   "updated_at": "2026-09-14",
-  "updated_by": "Claude Code (H07 prep)",
-  "notes": "TC 6:20–6:25 (러프컷 v1 기준, 내레이션 녹음 후 조정). H07 + G10. 정본 §6 상 Higgsfield 에 맞는 컷 (과거→현재 매치컷). SH003 실사 구도를 먼저 찍고 그 구도에 맞춰 생성 (Generate Late). 파이프라인은 legacy 팩 태그 그대로 (잠정). P4 Visual Router 에서 재판정. 점수(camera_complexity 등)는 Continuity Engine 추정치 — P4 라우터에서 확정. D-018: 파이프라인 HIGGSFIELD → AI_STILL (사용자 OVERRIDE). 생성은 SH003 실사 구도 확보 뒤. D-026: 장소 LOC_GYEONGJU_DAEREUNGWON_V01 → LOC_CHEONMACHONG_V01 (H07·H05 역사 재현과 같은 천마총 봉분에 착지). D-028: logical_pipeline AI_STILL · provider HIGGSFIELD (공급 플랫폼) · model NANO_BANANA_PRO. 2026-09-14: SH003 착지 플레이트가 AI 정지 이미지로 확정됨 (D-040) → match_cut_frame 실측값으로 H07 프롬프트 V02 조립. 생성은 사용자 승인 뒤.",
+  "updated_by": "사용자 (D-045)",
+  "notes": "TC 6:20–6:25 (러프컷 v1 기준, 내레이션 녹음 후 조정). H07 + G10. 정본 §6 상 Higgsfield 에 맞는 컷 (과거→현재 매치컷). SH003 실사 구도를 먼저 찍고 그 구도에 맞춰 생성 (Generate Late). 파이프라인은 legacy 팩 태그 그대로 (잠정). P4 Visual Router 에서 재판정. 점수(camera_complexity 등)는 Continuity Engine 추정치 — P4 라우터에서 확정. D-018: 파이프라인 HIGGSFIELD → AI_STILL (사용자 OVERRIDE). 생성은 SH003 실사 구도 확보 뒤. D-026: 장소 LOC_GYEONGJU_DAEREUNGWON_V01 → LOC_CHEONMACHONG_V01 (H07·H05 역사 재현과 같은 천마총 봉분에 착지). D-028: logical_pipeline AI_STILL · provider HIGGSFIELD (공급 플랫폼) · model NANO_BANANA_PRO. 2026-09-14: SH003 착지 플레이트가 AI 정지 이미지로 확정됨 (D-040) → match_cut_frame 실측값으로 H07 프롬프트 V02 조립. 생성은 사용자 승인 뒤. D-045: V02 APPROVED → G10 매치컷 양쪽 플레이트 (S08_SH002 H07 · S08_SH003) 확보.",
   "evidence_role": "SUPPORTING",
   "logical_pipeline": "AI_STILL",
   "provider": "HIGGSFIELD",
