@@ -223,6 +223,11 @@
 **결정** S01_SH001 V01 LOOK_APPROVED · S08_SH001 M1 (V01) · M3 (V03) APPROVED · M2 (V02) REJECTED — 손님 얼굴 AI 블러 흔적 · 칠판 낙서 · 차 엠블럼. FIX = `PATCH_EP01_S08_SH001_M2_001` → `PRM_PA_EP01_S08_SH001_M2_V02` (손님 2명 뒷모습·멀리, 칠판 없음, 엠블럼 없음). 승인 `APR_EP01_PA_004` **위임 (D-030)**, 1회 / 2 credits, 실패 시 STOP.
 **결과** REAL 10샷 중 9샷 정지 이미지 확보 (S08_SH001 은 3컷 중 2컷 확정). EP01 누적 92.12 credits (재생성 전).
 
+### D-043 · 2026-09-14 · M2 카페 V02 OK — EP01 현재 시점 실사 10샷 전부 정지 이미지 확정 (사용자 "OK")
+**결정** `GEN_PA_EP01_S08_SH001_M2_HIGGSFIELD_V02` APPROVED (위임 1회, 2 credits) → S08_SH001 LOOK_APPROVED (M1 · M2 V02 · M3). 차 엠블럼은 편집에서 흐림.
+**결과** 원래 REAL_SHOOT 10샷 → 전부 파이프라인 A 정지 이미지로 LOOK_APPROVED (S01_SH001 · S01_SH002 · S02_SH001×3 · S03_SH001 · S06_SH007 · S06_SH011 · S08_SH001×3 · S08_SH003 · S09_SH003 · S09_SH004). 파이프라인 A 누적: 14 생성 · 13 승인 · 1 REJECTED(M2 V01) · 28 credits. EP01 누적 94.12 credits, 잔액 1648.58. 위임 누적 2/20.
+**다음** 움직임 필요 컷 (S01_SH001 · S08_SH001 M1–M3 · S01_SH002 리빌) 은 I2V Kling 3.0 — P-012 뒤 승인. H07 (S08_SH002) 은 S08_SH003 플레이트에 맞춰 생성 가능. GT-0x 도해.
+
 ---
 
 ## 승인 대기 (P)
