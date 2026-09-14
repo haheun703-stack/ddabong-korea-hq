@@ -1,0 +1,40 @@
+{
+  "generation_id": "GEN_PA_EP01_S01_SH001_HIGGSFIELD_V01",
+  "shot_id": "EP01_S01_SH001",
+  "stage": "STILL",
+  "provider": "Higgsfield",
+  "model": "NANO_BANANA_2 (catalog id nano_banana_2 -> job_set_type nano_banana_flash, 2k 16:9, text-only; D-036)",
+  "provider_job": {
+    "job_id": "866883a5-6178-490c-9d34-2c56957331a6",
+    "job_set_type": "nano_banana_flash",
+    "display_name": "Nano Banana 2",
+    "params_path": "08_GENERATION_CACHE/EP01/provider_jobs/HF_866883a5-6178-490c-9d34-2c56957331a6.json"
+  },
+  "prompt_id": "PRM_PA_EP01_S01_SH001_V01",
+  "prompt_version": "V01",
+  "standard_versions": {
+    "PHOTO_AI_STANDARD.md": "v0.1 ACTIVE (D-035)",
+    "COST_STANDARD.md": "v0.1",
+    "RIGHTS_STANDARD.md": "v0.1"
+  },
+  "case_ids_used": [],
+  "approval_id": "APR_EP01_PA_003",
+  "input_paths": [],
+  "output_paths": [
+    "08_GENERATION_CACHE/EP01/AI_STILL/PA_S01_SH001_V01_866883a5.png"
+  ],
+  "attempts": 1,
+  "duration_sec": null,
+  "cost": {
+    "currency": "CREDITS",
+    "amount": 2.0,
+    "spent": 2.0,
+    "note": "Batch generate_image_batch (4 jobs, text-only). Balance before 1658.58 -> after 1650.58."
+  },
+  "result_status": "SUCCESS",
+  "failure_id": null,
+  "started_at": "2026-09-14T11:10:00Z",
+  "finished_at": null,
+  "run_by": "Claude Code (Pipeline A batch 2 text-only, D-041)",
+  "notes": "Sent text == prompt.assembled_text (verified at submission). Composition numbers only from RED captures (RTS_YOUTUBE_CAPTURES_GYEONGJU_001), no image attached. Owner OK/FIX pending (4 at once)."
+}

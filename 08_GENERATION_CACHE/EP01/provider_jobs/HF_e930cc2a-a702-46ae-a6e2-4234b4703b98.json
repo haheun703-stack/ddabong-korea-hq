@@ -1,0 +1,20 @@
+{
+  "provider": "Higgsfield",
+  "job_id": "e930cc2a-a702-46ae-a6e2-4234b4703b98",
+  "job_set_type": "nano_banana_flash",
+  "display_name": "Nano Banana 2",
+  "status": "completed",
+  "created_at": "2026-09-14T10:48:34Z",
+  "params": {
+    "width": 2752,
+    "height": 1536,
+    "aspect_ratio": "16:9",
+    "resolution": "2k",
+    "batch_size": 1,
+    "is_inpaint": false,
+    "input_images": [],
+    "prompt": "Photorealistic present-day documentary still, reconstructed from a licensed reference photograph. Keep the real landform, silhouette and proportions of the reference; change only season, light, weather and clutter as instructed. Natural lighting, neutral grade, realistic materials. Present-day surroundings (paths, trees, distant town) allowed only as they exist in the reference. No fantasy. No invented buildings. No text. No logos. No oversaturation. No glossy AI look. No malformed anatomy. Present-day Gyeongju, South Korea: the road that runs along the edge of the Daereungwon tomb park. Photorealistic documentary still, 16:9, 4K master. Eye-level view from the pavement: a two-lane asphalt road crosses the frame from left to right in the lower third with one silver hatchback passing at mid-frame (about 10% of frame height) and a pedestrian crossing stripe at the left; beyond the road a low wooden fence and a row of mature trees, and above them two large smooth grass-covered burial mounds rising against the sky, their crests at about a third of the frame height. Late afternoon early-summer light from the left, long soft shadows, clear pale sky. One or two pedestrians far away on the pavement, seen from behind. No readable signs or text. Camera: 35 mm, height 1.6 m, tilt 0°, static frame. Documentary tone, neutral grade, slight film grain acceptable. Style B Documentary Reenactment look: natural textures, not glossy. No text, no readable signs or logos, no watermark, no lens flare, no HDR look, no oversaturation. No identifiable faces: any people are small, seen from behind or in profile at a distance."
+  },
+  "retrieved_at": "2026-09-14",
+  "note": "jobs_wait result. Result/CDN URLs omitted. params.prompt = text actually sent (identical to PRM_PA_EP01_S08_SH001_M3_V01.assembled_text, batch index 3). Text-only (no reference image, D-034 #2 / D-041)."
+}
