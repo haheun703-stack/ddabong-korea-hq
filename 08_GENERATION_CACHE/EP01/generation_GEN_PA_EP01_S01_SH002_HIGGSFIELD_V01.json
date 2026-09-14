@@ -1,0 +1,42 @@
+{
+  "generation_id": "GEN_PA_EP01_S01_SH002_HIGGSFIELD_V01",
+  "shot_id": "EP01_S01_SH002",
+  "stage": "STILL",
+  "provider": "Higgsfield",
+  "model": "NANO_BANANA_2 (catalog id nano_banana_2 -> job_set_type nano_banana_flash, 2k 16:9, 1 image reference; D-036)",
+  "provider_job": {
+    "job_id": "0d7214c7-55ab-40ef-bb39-eed189da7751",
+    "job_set_type": "nano_banana_flash",
+    "display_name": "Nano Banana 2",
+    "params_path": "08_GENERATION_CACHE/EP01/provider_jobs/HF_0d7214c7-55ab-40ef-bb39-eed189da7751.json"
+  },
+  "prompt_id": "PRM_PA_EP01_S01_SH002_V01",
+  "prompt_version": "V01",
+  "standard_versions": {
+    "PHOTO_AI_STANDARD.md": "v0.1 ACTIVE (D-035)",
+    "COST_STANDARD.md": "v0.1",
+    "RIGHTS_STANDARD.md": "v0.1"
+  },
+  "case_ids_used": [],
+  "approval_id": "APR_EP01_PA_002",
+  "input_paths": [
+    "02_SEASONS/S01/EP01/02_SOURCES/RTS_COMMONS_DAEREUNGWON_MIETCHEN_PINE_001.jpg"
+  ],
+  "output_paths": [
+    "08_GENERATION_CACHE/EP01/AI_STILL/PA_S01_SH002_V01_0d7214c7.png"
+  ],
+  "attempts": 1,
+  "duration_sec": null,
+  "cost": {
+    "currency": "CREDITS",
+    "amount": 2.0,
+    "spent": 2.0,
+    "note": "Batch generate_image_batch (8 jobs). Balance before 1674.58 -> after 1658.58."
+  },
+  "result_status": "SUCCESS",
+  "failure_id": null,
+  "started_at": "2026-09-14T10:30:00Z",
+  "finished_at": null,
+  "run_by": "Claude Code (Pipeline A batch 1, D-039)",
+  "notes": "Sent text == prompt.assembled_text (verified at submission). Bot check pending owner OK/FIX (8 at once, D-039)."
+}

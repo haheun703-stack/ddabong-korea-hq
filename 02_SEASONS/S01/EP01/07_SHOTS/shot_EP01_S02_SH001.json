@@ -36,6 +36,24 @@
       "path": "08_GENERATION_CACHE/EP01/AI_STILL/PA_S02_SH001_V01_9cbd059e.png",
       "note": "GEN_PA_EP01_S02_SH001_HIGGSFIELD_V01 · 봇 PASS(minor) · D-037 사용자 최종 OK (2026-09-14). 남은 작은 점: 오른쪽 말뚝·줄·포장길, 왼쪽 소나무 → 수용.",
       "created_by": "사용자"
+    },
+    {
+      "version": "V02",
+      "stage": "STILL",
+      "status": "DRAFT",
+      "created_at": "2026-09-14",
+      "created_by": "Claude Code (D-039 batch 1)",
+      "path": "08_GENERATION_CACHE/EP01/AI_STILL/PA_S02_SH001_CUT2_V01_56483502.png",
+      "note": "GEN_PA_EP01_S02_SH001_CUT2_HIGGSFIELD_V01 · 봇 판정 대기 · 사용자 OK/FIX 대기 (8장 일괄)"
+    },
+    {
+      "version": "V03",
+      "stage": "STILL",
+      "status": "DRAFT",
+      "created_at": "2026-09-14",
+      "created_by": "Claude Code (D-039 batch 1)",
+      "path": "08_GENERATION_CACHE/EP01/AI_STILL/PA_S02_SH001_CUT3_V01_d5c835b5.png",
+      "note": "GEN_PA_EP01_S02_SH001_CUT3_HIGGSFIELD_V01 · 봇 판정 대기 · 사용자 OK/FIX 대기 (8장 일괄)"
     }
   ],
   "approved_version": "V01",

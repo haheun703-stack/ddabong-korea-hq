@@ -1,0 +1,26 @@
+{
+  "provider": "Higgsfield",
+  "job_id": "0d7214c7-55ab-40ef-bb39-eed189da7751",
+  "job_set_type": "nano_banana_flash",
+  "display_name": "Nano Banana 2",
+  "status": "completed",
+  "created_at": "2026-09-14T10:07:39Z",
+  "params": {
+    "width": 2752,
+    "height": 1536,
+    "aspect_ratio": "16:9",
+    "resolution": "2k",
+    "batch_size": 1,
+    "is_inpaint": false,
+    "input_images": [
+      {
+        "media_id": "2737bda6-f71c-4c10-98ca-0711e994256d",
+        "role": "image",
+        "source": "media_import_url Commons original (RTS_COMMONS_DAEREUNGWON_MIETCHEN_PINE_001, CC0)"
+      }
+    ],
+    "prompt": "Photorealistic present-day documentary still, reconstructed from a licensed reference photograph. Keep the real landform, silhouette and proportions of the reference; change only season, light, weather and clutter as instructed. Natural lighting, neutral grade, realistic materials. Present-day surroundings (paths, trees, distant town) allowed only as they exist in the reference. No fantasy. No invented buildings. No text. No logos. No oversaturation. No glossy AI look. No malformed anatomy. Present-day Daereungwon Tomb Complex, Gyeongju, South Korea. Photorealistic documentary still, 16:9, 4K master. Keep from the reference: the exact placement of the dark pine trunks and overhanging branches in the foreground (large trunk at x≈0.27), the bright green mound behind them (crest at x≈0.68, y≈0.47), the low fence line and the grass in front. Change: season → early summer; light → soft overcast daylight; weather → thin high cloud; remove all people, signage, vehicles and modern clutter; keep the low iron fence as in the reference. Camera: 35 mm, height 1.6 m, tilt 0°, static tripod frame. Grass fresh green; sky pale grey-white. Documentary tone, neutral grade, slight film grain acceptable. Style B Documentary Reenactment look: natural textures, not glossy. No text, no watermark, no lens flare, no HDR look, no oversaturation."
+  },
+  "retrieved_at": "2026-09-14",
+  "note": "jobs_wait/job_status result. Result/CDN URLs omitted. params.prompt = text actually sent (identical to PRM_PA_EP01_S01_SH002_V01.assembled_text, batch generate_image_batch index 0). Catalog id nano_banana_2 -> job_set_type nano_banana_flash (Nano Banana 2, D-036)."
+}

@@ -31,7 +31,17 @@
   ],
   "rights_ids": [],
   "ai_label": "AI Visual Reconstruction (present-day, photo-based)",
-  "version_history": [],
+  "version_history": [
+    {
+      "version": "V01",
+      "stage": "STILL",
+      "status": "DRAFT",
+      "created_at": "2026-09-14",
+      "created_by": "Claude Code (D-039 batch 1)",
+      "path": "08_GENERATION_CACHE/EP01/AI_STILL/PA_S08_SH003_V01_0f2174d1.png",
+      "note": "GEN_PA_EP01_S08_SH003_HIGGSFIELD_V01 · 봇 판정 대기 · 사용자 OK/FIX 대기 (8장 일괄)"
+    }
+  ],
   "approved_version": null,
   "created_at": "2026-09-11",
   "updated_at": "2026-09-14",
