@@ -17,5 +17,5 @@
   "delegated": false,
   "decided_by": "사용자",
   "decided_at": "2026-09-14T05:00:00Z",
-  "note": "D-034 #3 (2026-09-14 '너의 추론대로') 파이프라인 A 첫 유료 시험 1장, 커넥터 작동 확인 뒤 실행. D-035 #4 절차 확정. 전송은 PRM_PA_EP01_S02_SH001_V01 그대로. 전송 직전 사용자 '보내' 확인 1회 (채팅). 1/1 사용 (SUCCESS, 2 credits, GEN_PA_EP01_S02_SH001_HIGGSFIELD_V01). 실제 모델 = Nano Banana 2 (nano_banana_flash); 승인 당시 문구 NANO_BANANA_PRO 였으나 D-036 (2026-09-14) 로 Nano Banana 2 를 파이프라인 A 기본 모델로 인정 → 문구 정정."
+  "note": "D-034 #3 (2026-09-14 '너의 추론대로') 파이프라인 A 첫 유료 시험 1장, 커넥터 작동 확인 뒤 실행. D-035 #4 절차 확정. 전송은 PRM_PA_EP01_S02_SH001_V01 그대로. 전송 직전 사용자 '보내' 확인 1회 (채팅). 1/1 사용 (SUCCESS, 2 credits, GEN_PA_EP01_S02_SH001_HIGGSFIELD_V01). 실제 모델 = Nano Banana 2 (nano_banana_flash); 승인 당시 문구 NANO_BANANA_PRO 였으나 D-036 (2026-09-14) 로 Nano Banana 2 를 파이프라인 A 기본 모델로 인정 → 문구 정정. D-037: 사용자 최종 OK → V01 APPROVED."
 }

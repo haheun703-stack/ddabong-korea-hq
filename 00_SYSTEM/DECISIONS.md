@@ -197,6 +197,10 @@
 **경위** S02_SH001 시험 (`GEN_PA_EP01_S02_SH001_HIGGSFIELD_V01`, 2 credits) 이 Higgsfield 카탈로그 id `nano_banana_2` 로 나갔는데 실제 job_set_type 은 `nano_banana_flash` ('Nano Banana 2'). 승인 문구의 NANO_BANANA_PRO (H06 이 쓴 job `nano_banana_2`) 와 다름. 결과가 기준 통과.
 **결정** 파이프라인 A (사진 기반 현재 시점 재구성) 기본 모델 = `NANO_BANANA_2` (HIGGSFIELD). 역사 인물·기준 그림은 기존 NANO_BANANA_PRO 유지. `MODEL_ROUTER.md` 모델 표 갱신, S02_SH001 샷·라우터·승인 model 값 정정. 재생성 없음 (추가 비용 0). **운영 규칙 추가**: 전송 전 preflight 결과의 job_set_type 을 승인 문구와 대조, 다르면 전송 전 보고.
 
+### D-037 · 2026-09-14 · 파이프라인 A 시험 1장 최종 OK (사용자 "ok")
+**결정** `EP01_S02_SH001` V01 (`GEN_PA_EP01_S02_SH001_HIGGSFIELD_V01`, `08_GENERATION_CACHE/EP01/AI_STILL/PA_S02_SH001_V01_9cbd059e.png`) **APPROVED** → 샷 LOOK_APPROVED, approved_version V01. 작은 점 (오른쪽 말뚝·줄·포장길 잔존, 왼쪽 소나무) 수용, 추가 호출 없음. **파이프라인 A 첫 시험 성공** — 사진→AI 재구성 2 credits 로 기준 통과. EP01 누적 68.12 credits.
+**의미** PHOTO_AI_STANDARD A1–A6 전 단계가 실제로 한 번 돌았다 (탐색 → 권리 → 프롬프트 → 승인 → 전송 → 라벨·계보·검증). EP02 부터 25–30% 배합 (D-033 #4) 적용 가능.
+
 ---
 
 ## 승인 대기 (P)
