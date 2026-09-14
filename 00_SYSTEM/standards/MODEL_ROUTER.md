@@ -37,7 +37,7 @@ OS 는 공급자 교체에도 살아남아야 한다.
 
 ## 논리 분류 · 공급자 · 모델 분리 (D-028)
 
-> **모델 ID 주의 (D-036, 2026-09-14)**: Higgsfield 카탈로그 id `nano_banana_2` 는 'Nano Banana 2' (job_set_type `nano_banana_flash`). H06 이 쓴 'Nano Banana Pro' 는 job_set_type `nano_banana_2` (카탈로그 id 미확인 — 검색에 안 잡힘). OS 모델 ID: `NANO_BANANA_PRO` = Pro, `NANO_BANANA_2` = Nano Banana 2. 비용은 둘 다 2k 16:9 참고 1장 기준 2 credits.
+> **모델 ID 주의 (D-036, 2026-09-14)**: Higgsfield 카탈로그 id `nano_banana_2` 는 'Nano Banana 2' (job_set_type `nano_banana_flash`). H06 이 쓴 'Nano Banana Pro' 는 job_set_type `nano_banana_2`, 카탈로그 id **`nano_banana_pro`** (2026-09-14 저녁 확인, 1k/2k/4k, image_references 지원). OS 모델 ID: `NANO_BANANA_PRO` = Pro, `NANO_BANANA_2` = Nano Banana 2. 비용은 둘 다 2k 16:9 참고 1장 기준 2 credits.
 샷 판정(논리 분류)은 공급자·모델이 바뀌어도 그대로 둔다. 모델 교체(Kling → Veo → Seedance 등)는 `provider` / `model` 필드만 바꾸고 새 승인을 받는다.
 
 | 논리 분류 (`logical_pipeline`) | legacy `pipeline` | 예: provider / model |
