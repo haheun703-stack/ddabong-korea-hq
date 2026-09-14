@@ -1,0 +1,20 @@
+{
+  "rights_id": "RTS_COMMONS_DAEREUNGWON_MIETCHEN_PINE_001",
+  "asset_id": "ASSET_COMMONS_DAEREUNGWON_MIETCHEN_PINE_001_V01",
+  "source": "https://commons.wikimedia.org/wiki/File:대릉원_20160724_01.jpg",
+  "creator": "Daniel Mietchen",
+  "license": "CC0 1.0 Universal (Public Domain Dedication)",
+  "commercial_use": "YES",
+  "modification_allowed": "YES",
+  "attribution_required": "NO",
+  "attribution_text": "Photo: Daniel Mietchen, Wikimedia Commons, CC0 (attribution not required; given as courtesy).",
+  "expiration": null,
+  "proof": "05_HISTORY_DATABASE/rights/proof/RTS_COMMONS_DAEREUNGWON_MIETCHEN_PINE_001_20260914.html",
+  "research_permission": "YES",
+  "media_reuse_permission": "YES",
+  "status": "GREEN",
+  "usage_tier": "ACTIVE",
+  "checked_at": "2026-09-14",
+  "checked_by": "Claude Code (D-038 all-in-house conversion; Commons API LicenseShortName 'CC0', page proof saved)",
+  "notes": "소나무 줄기·가지 사이로 초록 봉분 (리빌 구도). 쓰일 샷: S01_SH002 · S09_SH003 (같은 구도 회수). 촬영 2016-07-24 14:16. 실측 3264×1836, sha256 앞 16자리 cd66b3fb2ba26638, 로컬 `02_SEASONS/S01/EP01/02_SOURCES/RTS_COMMONS_DAEREUNGWON_MIETCHEN_PINE_001.jpg`. 파이프라인 A GREEN 참고 원본 (D-033 #2)."
+}

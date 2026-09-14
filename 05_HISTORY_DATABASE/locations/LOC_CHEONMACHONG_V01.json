@@ -40,7 +40,7 @@
       "status": "TO_RECORD_AFTER_SHOOT",
       "shot_id": "EP01_S08_SH003",
       "pairs_with": "EP01_S08_SH002 (H07 AI_STILL)",
-      "note": "D-026: 천마총 봉분 착지. SH003 삼각대 촬영 후 값을 채우고, 그 뒤 H07 생성 (D-018). 키 이름은 SHOOT_PLAN_EP01_V01 §3a.",
+      "note": "D-026: 천마총 봉분 착지. SH003 삼각대 촬영 후 값을 채우고, 그 뒤 H07 생성 (D-018). 키 이름은 SHOOT_PLAN_EP01_V01 §3a. D-039 (2026-09-14): D-026 '매치컷 착지 = 천마총 봉분' 을 '대릉원 봉분 (천마총형, 47 m·12.7 m 비율)' 로 완화 — 착지 원본 RTS_COMMONS_DAEREUNGWON_MIETCHEN_MOUND_001 (CC0, 어느 고분인지 미확인). match_cut_frame 값은 S08_SH003 승인 이미지에서 잰다.",
       "position_description": null,
       "gps": null,
       "mound_id": "천마총 (황남동 155호분)",

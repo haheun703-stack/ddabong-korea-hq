@@ -1,0 +1,20 @@
+{
+  "rights_id": "RTS_COMMONS_CHEONMACHONG_SIGN_MIETCHEN_001",
+  "asset_id": "ASSET_COMMONS_CHEONMACHONG_SIGN_MIETCHEN_001_V01",
+  "source": "https://commons.wikimedia.org/wiki/File:대릉원_천마총_20160724_155901.jpg",
+  "creator": "Daniel Mietchen",
+  "license": "CC0 1.0 Universal (Public Domain Dedication)",
+  "commercial_use": "YES",
+  "modification_allowed": "YES",
+  "attribution_required": "NO",
+  "attribution_text": "Photo: Daniel Mietchen, Wikimedia Commons, CC0 (attribution not required; given as courtesy).",
+  "expiration": null,
+  "proof": "05_HISTORY_DATABASE/rights/proof/RTS_COMMONS_CHEONMACHONG_SIGN_MIETCHEN_001_20260914.html",
+  "research_permission": "YES",
+  "media_reuse_permission": "YES",
+  "status": "GREEN",
+  "usage_tier": "ACTIVE",
+  "checked_at": "2026-09-14",
+  "checked_by": "Claude Code (D-038 all-in-house conversion; Commons API LicenseShortName 'CC0', page proof saved)",
+  "notes": "천마총 입구 天馬塚 석판 + 봉분 꼭대기, 맑음. 쓰일 샷: S03_SH001 (표지·입구). 촬영 2016-07-24 15:59. 실측 3264×1836, sha256 앞 16자리 3c7276f9762dd52c, 로컬 `02_SEASONS/S01/EP01/02_SOURCES/RTS_COMMONS_CHEONMACHONG_SIGN_MIETCHEN_001.jpg`. 파이프라인 A GREEN 참고 원본 (D-033 #2)."
+}

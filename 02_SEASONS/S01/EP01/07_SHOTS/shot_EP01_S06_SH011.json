@@ -11,7 +11,7 @@
   "spatial_accuracy": 40,
   "human_motion": 20,
   "visual_importance": 65,
-  "pipeline": "REAL_SHOOT",
+  "pipeline": "AI_STILL",
   "status": "ROUTED",
   "characters": [],
   "costumes": [],
@@ -19,18 +19,29 @@
   "master_frame": null,
   "must_keep": [],
   "camera_id": null,
-  "prompt_id": null,
+  "prompt_id": "PRM_PA_EP01_S06_SH011_V01",
   "router_decision_id": "RTR_EP01_S06_SH011_V01",
   "fact_ids": [
     "CLM_EP01_MODERN_012"
   ],
   "rights_ids": [],
-  "ai_label": null,
+  "ai_label": "AI Visual Reconstruction (present-day, photo-based)",
   "version_history": [],
   "approved_version": null,
   "created_at": "2026-09-11",
-  "updated_at": "2026-09-11",
-  "updated_by": "Visual Router (Claude Code)",
-  "notes": "TC 5:16–5:20 (러프컷 v1 기준, 내레이션 녹음 후 조정). D-009 채움 컷 (H06 분할분). 관람객 얼굴 식별 불필요. 점수(camera_complexity 등)는 Continuity Engine 추정치 — P4 라우터에서 확정.",
-  "evidence_role": "CONTEXT"
+  "updated_at": "2026-09-14",
+  "updated_by": "Claude Code (D-038/D-039 all-in-house conversion)",
+  "notes": "TC 5:16–5:20 (러프컷 v1 기준, 내레이션 녹음 후 조정). D-009 채움 컷 (H06 분할분). 관람객 얼굴 식별 불필요. 점수(camera_complexity 등)는 Continuity Engine 추정치 — P4 라우터에서 확정. D-038 (2026-09-14): 현장 촬영 제외, 파이프라인 A (사진→AI) 전환. D-039 배치 1.",
+  "evidence_role": "CONTEXT",
+  "logical_pipeline": "AI_STILL",
+  "provider": "HIGGSFIELD",
+  "model": "NANO_BANANA_2",
+  "photo_ai": {
+    "source_rights_ids": [
+      "RTS_COMMONS_DAEREUNGWON_GAGNON_001"
+    ],
+    "composition_ref_note": null,
+    "redesign_prompt_id": "PRM_PA_EP01_S06_SH011_V01",
+    "i2v_generation_id": null
+  }
 }

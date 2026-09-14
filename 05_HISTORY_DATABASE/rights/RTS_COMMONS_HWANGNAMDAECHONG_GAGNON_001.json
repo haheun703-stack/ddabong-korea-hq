@@ -1,0 +1,20 @@
+{
+  "rights_id": "RTS_COMMONS_HWANGNAMDAECHONG_GAGNON_001",
+  "asset_id": "ASSET_COMMONS_HWANGNAMDAECHONG_GAGNON_001_V01",
+  "source": "https://commons.wikimedia.org/wiki/File:Hwangnamdaechong_Tomb.jpg",
+  "creator": "Bernard Gagnon (Wikimedia Commons User:Bgag)",
+  "license": "CC0 1.0 Universal (Public Domain Dedication)",
+  "commercial_use": "YES",
+  "modification_allowed": "YES",
+  "attribution_required": "NO",
+  "attribution_text": "Photo: Bernard Gagnon, Wikimedia Commons, CC0 (attribution not required; given as courtesy).",
+  "expiration": null,
+  "proof": "05_HISTORY_DATABASE/rights/proof/RTS_COMMONS_HWANGNAMDAECHONG_GAGNON_001_20260914.html",
+  "research_permission": "YES",
+  "media_reuse_permission": "YES",
+  "status": "GREEN",
+  "usage_tier": "ACTIVE",
+  "checked_at": "2026-09-14",
+  "checked_by": "Claude Code (D-038 all-in-house conversion; Commons API LicenseShortName 'CC0', page proof saved)",
+  "notes": "황남대총 쌍봉 + 연못, 10월 초 초록. 쓰일 샷: S02_SH001 추가 컷 (경관 3–4컷 중). 촬영 2022-10-06. 실측 4860×3240, sha256 앞 16자리 f7df96b3c79f9a99, 로컬 `02_SEASONS/S01/EP01/02_SOURCES/RTS_COMMONS_HWANGNAMDAECHONG_GAGNON_001.jpg`. 파이프라인 A GREEN 참고 원본 (D-033 #2)."
+}

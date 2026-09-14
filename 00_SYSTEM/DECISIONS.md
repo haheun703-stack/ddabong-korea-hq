@@ -201,6 +201,15 @@
 **결정** `EP01_S02_SH001` V01 (`GEN_PA_EP01_S02_SH001_HIGGSFIELD_V01`, `08_GENERATION_CACHE/EP01/AI_STILL/PA_S02_SH001_V01_9cbd059e.png`) **APPROVED** → 샷 LOOK_APPROVED, approved_version V01. 작은 점 (오른쪽 말뚝·줄·포장길 잔존, 왼쪽 소나무) 수용, 추가 호출 없음. **파이프라인 A 첫 시험 성공** — 사진→AI 재구성 2 credits 로 기준 통과. EP01 누적 68.12 credits.
 **의미** PHOTO_AI_STANDARD A1–A6 전 단계가 실제로 한 번 돌았다 (탐색 → 권리 → 프롬프트 → 승인 → 전송 → 라벨·계보·검증). EP02 부터 25–30% 배합 (D-033 #4) 적용 가능.
 
+### D-038 · 2026-09-14 · 현장 촬영 제외 — EP01 전부 자체 제작 (사용자 "직접 촬영 말고, 우리가 자체적으로 해보자고")
+**결정** D-032 경주 촬영은 **하지 않는다.** REAL_SHOOT 9샷 전부 파이프라인 A (GREEN 사진 → AI 재구성) 로 전환. GREEN 없는 샷은 D-034 #2 (YELLOW 수치만 옮긴 텍스트 전용). 움직임 중심 2샷 (S01_SH001 거리 · S08_SH001 몽타주) 은 정지 이미지 뒤 I2V (P-012 뒤).
+**GREEN 추가 5** `RTS_COMMONS_DAEREUNGWON_MIETCHEN_PINE_001` · `_MOUND_001` · `_VALLEY_001` · `RTS_COMMONS_CHEONMACHONG_SIGN_MIETCHEN_001` · `RTS_COMMONS_HWANGNAMDAECHONG_GAGNON_001` (전부 CC0, 원본 `02_SEASONS/S01/EP01/02_SOURCES/`, 페이지 proof 저장).
+**봇 규칙** 앞으로 "현장 촬영" 을 다음 단계로 제안하지 않는다.
+
+### D-039 · 2026-09-14 · 파이프라인 A 배치 1 (8장, 16 credits) + D-026 완화 (사용자)
+**승인** `APR_EP01_PA_002` — S01_SH002 (→ S09_SH003 재사용) · S02_SH001 추가 2컷 · S03_SH001 표지 · S06_SH007 · S06_SH011 (뒷모습 관람객 소수 추가) · S08_SH003 · S09_SH004 (골든아워). 각 1회, 2 credits, 실패 시 STOP. 최종 OK/FIX 는 8장 일괄.
+**D-026 완화** 매치컷 착지 = "대릉원 봉분 (천마총형, 47 m·12.7 m 비율)". 원본 MOUND_001 은 어느 고분인지 미확인이나 AI 재구성이라 화면에 드러나지 않음. H07 은 같은 비율로 생성.
+
 ---
 
 ## 승인 대기 (P)

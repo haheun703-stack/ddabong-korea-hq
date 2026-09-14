@@ -1,0 +1,28 @@
+{
+  "approval_id": "APR_EP01_PA_002",
+  "kind": "PAID_GENERATION",
+  "target_id": "EP01_PIPELINE_A_BATCH1",
+  "money_gate_presented": {
+    "shot_id": "EP01_S01_SH002 · S02_SH001(cut2,cut3) · S03_SH001 · S06_SH007 · S06_SH011 · S08_SH003 · S09_SH004",
+    "prompt_ids": [
+      "PRM_PA_EP01_S01_SH002_V01",
+      "PRM_PA_EP01_S02_SH001_CUT2_V01",
+      "PRM_PA_EP01_S02_SH001_CUT3_V01",
+      "PRM_PA_EP01_S03_SH001_V01",
+      "PRM_PA_EP01_S06_SH007_V01",
+      "PRM_PA_EP01_S06_SH011_V01",
+      "PRM_PA_EP01_S08_SH003_V01",
+      "PRM_PA_EP01_S09_SH004_V01"
+    ],
+    "provider_model": "HIGGSFIELD / NANO_BANANA_2, 2k 16:9 still, 1 GREEN image reference each",
+    "expected_attempts": 8,
+    "estimated_cost_range": "16 credits (8 x 2, hard cap 16)",
+    "continuity_risk": "LOW-MEDIUM: landform drift; S03 carved characters legibility; S06_SH011 added visitors must stay small/back-view"
+  },
+  "decision": "APPROVE",
+  "fix_reason": null,
+  "delegated": false,
+  "decided_by": "사용자",
+  "decided_at": "2026-09-14T10:20:00Z",
+  "note": "D-039 (2026-09-14 '8장 승인 (16 credits)'): 파이프라인 A 배치 1. 각 프롬프트 1회, 실패 시 추가 호출 없이 STOP. 봇 판정 후 8장 일괄 OK/FIX 는 사용자."
+}

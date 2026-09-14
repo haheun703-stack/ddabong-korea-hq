@@ -18,13 +18,17 @@
   "continuity_risk": "LOW",
   "expected_cost_range": {
     "currency": "CREDITS",
-    "min": null,
-    "max": null
+    "min": 2,
+    "max": 2
   },
   "expected_attempts": 1,
-  "provider_candidates": [],
-  "human_decision": "ACCEPTED",
-  "override_note": null,
-  "decided_at": "2026-09-13",
-  "decided_by": "사용자 (D-024)"
+  "provider_candidates": [
+    "HIGGSFIELD / NANO_BANANA_2"
+  ],
+  "human_decision": "OVERRIDDEN",
+  "override_note": "D-038 (2026-09-14): 현장 촬영 제외 → 파이프라인 A 사진 기반 AI_STILL. GREEN 원본 RTS_COMMONS_CHEONMACHONG_SIGN_MIETCHEN_001. D-039 배치 1 (2 credits).",
+  "decided_at": "2026-09-14",
+  "decided_by": "사용자 (D-038 · D-039)",
+  "selected_provider": "HIGGSFIELD",
+  "selected_model": "NANO_BANANA_2"
 }

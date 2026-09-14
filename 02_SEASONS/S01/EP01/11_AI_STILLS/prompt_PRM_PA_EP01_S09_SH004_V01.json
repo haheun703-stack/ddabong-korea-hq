@@ -1,0 +1,42 @@
+{
+  "prompt_id": "PRM_PA_EP01_S09_SH004_V01",
+  "shot_id": "EP01_S09_SH004",
+  "target": "IMAGE",
+  "locks": {
+    "global": "DDABONG_GLOBAL_PRESENT_V01",
+    "era": "NONE",
+    "location": "NONE",
+    "character_costume": [],
+    "style": "DDABONG_DOC_REENACTMENT_V01",
+    "camera": null
+  },
+  "shot_delta": "Ending hero wide: same mounds at golden hour, low warm side light, long soft shadows, nobody",
+  "negative": [
+    "text",
+    "watermark",
+    "logo",
+    "signage",
+    "lens flare",
+    "HDR look",
+    "oversaturation",
+    "glossy AI look",
+    "malformed anatomy",
+    "identifiable faces",
+    "invented buildings not in the reference",
+    "altered landform or mound proportions",
+    "fantasy elements",
+    "historical costume figures",
+    "vehicles",
+    "crowds",
+    "drone or aerial perspective unless in the reference"
+  ],
+  "assembled_text": "Photorealistic present-day documentary still, reconstructed from a licensed reference photograph. Keep the real landform, silhouette and proportions of the reference; change only season, light, weather and clutter as instructed. Natural lighting, neutral grade, realistic materials. Present-day surroundings (paths, trees, distant town) allowed only as they exist in the reference. No fantasy. No invented buildings. No text. No logos. No oversaturation. No glossy AI look. No malformed anatomy. Present-day Daereungwon Tomb Complex, Gyeongju, South Korea. Photorealistic documentary still, 16:9, 4K master. Keep from the reference: the exact landform and silhouette of the three overlapping grass mounds (position x≈0.50, horizon y≈0.60), the pine trees at left and the gravel path. Change: season → early summer; light → golden hour, low warm sun from the left side, long soft shadows across the grass, warm rim light on the mound crests; weather → clear with a few thin clouds catching warm light; remove all people, signage, vehicles and modern clutter. Camera: 35 mm, height 1.6 m, tilt 0°, static tripod frame. Grass warm green; sky warm pale orange to soft blue; no lens flare, no HDR look. Documentary tone, neutral grade, slight film grain acceptable. Style B Documentary Reenactment look: natural textures, not glossy. No text, no watermark, no lens flare, no HDR look, no oversaturation.",
+  "reference_images": [
+    "rights:RTS_COMMONS_DAEREUNGWON_GAGNON_001"
+  ],
+  "version": "V01",
+  "parent_prompt_id": null,
+  "patch_id": null,
+  "created_at": "2026-09-14",
+  "created_by": "Claude Code (PHOTO_AI_REDESIGN_V01 template, D-039 batch 1; saved before sending - Sent Prompt Rule)"
+}
