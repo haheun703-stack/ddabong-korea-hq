@@ -1,7 +1,7 @@
 # PHOTO_AI_REDESIGN_V01 — 사진→AI 리디자인 프롬프트 템플릿 (파이프라인 A4)
 
 > v0.1 DRAFT (2026-09-14) · `PHOTO_AI_STANDARD.md` §2 A4 · 조립 결과는 `prompt` 인스턴스 `assembled_text` 로 저장하고 **그대로** 전송한다 (Sent Prompt Rule).
-> lock 조립: prompt 인스턴스의 `locks` 필수 키는 유지한다 — `era: "NONE"`, `location`: 해당 LOC lock 또는 `"NONE"`, `character_costume: []`, `style: DDABONG_DOC_REENACTMENT_V01`. `global` 은 현재 시점용 `DDABONG_GLOBAL_PRESENT_V01` (+ 짝 `DDABONG_NEGATIVE_PRESENT_V01`) — **B-1 결정 전까지는 신설 금지, 결정 전 A4 실행 불가**. 검증기는 `global` 이름으로 negative 세트를 고른다.
+> lock 조립: prompt 인스턴스의 `locks` 필수 키는 유지한다 — `era: "NONE"`, `location`: 해당 LOC lock 또는 `"NONE"`, `character_costume: []`, `style: DDABONG_DOC_REENACTMENT_V01`. `global` 은 현재 시점용 `DDABONG_GLOBAL_PRESENT_V01` (+ 짝 `DDABONG_NEGATIVE_PRESENT_V01`) — **D-035 #1 로 신설 (APPROVED)**. 검증기는 `global` 이름으로 negative 세트를 고르므로 `negative` 배열은 `DDABONG_NEGATIVE_PRESENT_V01.items` 를 전부 포함해야 한다. 참고 원본은 `reference_images: ["rights:<rights_id>"]` 로 계보 기록 (검증기가 실존 확인).
 
 ## 템플릿
 
@@ -38,4 +38,4 @@ Grass color fresh green; sky pale grey-blue. No text, no watermark, no lens flar
 Documentary tone, neutral grade, slight film grain acceptable.
 ```
 
-이 샘플은 **전송하지 않았다** (생성 0). 실제 사용 시 prompt 인스턴스 `PRM_PA_EP01_S02_SH001_V01` 로 저장 후 Money Gate 승인.
+이 샘플은 2026-09-14 prompt 인스턴스 `11_AI_STILLS/prompt_PRM_PA_EP01_S02_SH001_V01.json` 으로 저장됐다 (assembled_text = GLOBAL_PRESENT 문장 + 위 본문). 승인 `APR_EP01_PA_001` (D-034 #3, 1 호출 / 2 credits). 전송 여부는 generation 인스턴스로 확인.

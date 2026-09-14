@@ -35,6 +35,8 @@
 
 ## 4. 사용자 결정 필요 (B, 반박 검수 권고 포함)
 
+> **2026-09-14 오후 결정: 8건 전부 권고대로 승인 → D-035.** 반영 내역은 `00_SYSTEM/DECISIONS.md` D-035.
+
 1. **PRESENT lock 쌍 신설** (`DDABONG_GLOBAL_PRESENT_V01` + `DDABONG_NEGATIVE_PRESENT_V01`) — 없으면 파이프라인 A 프롬프트를 저장할 수 없다. 권고: 승인.
 2. present-day 라벨 문구 `AI Visual Reconstruction (present-day, photo-based)` 확정 + `shot.schema` description · G09 갱신. 권고: 채택.
 3. D-028 `I2V_MOTION` 정의를 "사진→영상 (인물·풍경)" 으로 확장 (풍경 I2V 도 FLOW_VEO 로 가려면 필요). 권고: 확장.

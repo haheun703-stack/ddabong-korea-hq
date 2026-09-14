@@ -18,13 +18,17 @@
   "continuity_risk": "LOW",
   "expected_cost_range": {
     "currency": "CREDITS",
-    "min": null,
-    "max": null
+    "min": 2,
+    "max": 2
   },
   "expected_attempts": 1,
-  "provider_candidates": [],
-  "human_decision": "ACCEPTED",
-  "override_note": null,
-  "decided_at": "2026-09-13",
-  "decided_by": "사용자 (D-024)"
+  "provider_candidates": [
+    "HIGGSFIELD / NANO_BANANA_PRO"
+  ],
+  "human_decision": "OVERRIDDEN",
+  "override_note": "D-034 #3 · D-035 #4 (2026-09-14): REAL_SHOOT → AI_STILL. 파이프라인 A (사진→AI 리디자인) 첫 유료 시험 1장, GREEN 원본 RTS_COMMONS_DAEREUNGWON_GAGNON_001. 최대 1 호출 / 2 credits (D-030 사진 위임 한도 안). 현장 촬영(D-032)은 병행.",
+  "decided_at": "2026-09-14",
+  "decided_by": "사용자 (D-034 #3 · D-035 #4)",
+  "selected_provider": "HIGGSFIELD",
+  "selected_model": "NANO_BANANA_PRO"
 }

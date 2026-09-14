@@ -7,11 +7,15 @@
     "provider_model": "Flow / veo-template",
     "expected_attempts": 3,
     "estimated_cost_range": "미확인",
-    "continuity_risk": "MEDIUM"
+    "continuity_risk": "MEDIUM",
+    "prompt_ids": [
+      "PRM_EP001_S004_SH003_V01"
+    ]
   },
   "decision": "PENDING",
   "fix_reason": null,
   "decided_by": "사용자",
   "decided_at": "2026-09-11T00:00:00Z",
-  "note": "TEMPLATE"
+  "note": "TEMPLATE",
+  "delegated": false
 }

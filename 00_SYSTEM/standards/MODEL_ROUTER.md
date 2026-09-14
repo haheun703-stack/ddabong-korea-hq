@@ -41,6 +41,6 @@ OS 는 공급자 교체에도 살아남아야 한다.
 | 논리 분류 (`logical_pipeline`) | legacy `pipeline` | 예: provider / model |
 |---|---|---|
 | `AI_STILL` | AI_STILL | HIGGSFIELD / NANO_BANANA_PRO |
-| `I2V_MOTION` (사람 동작 사진→영상) | FLOW_VEO | HIGGSFIELD / KLING_3_0 |
+| `I2V_MOTION` (사진→영상 — 인물 동작 · 풍경/장소 카메라 이동 모두, D-035 #3 확장) | FLOW_VEO | HIGGSFIELD / KLING_3_0 |
 | `BLENDER_I2V` (공간·카메라 사전 작업 필요) | BLENDER_FLOW | HIGGSFIELD / KLING_3_0 (+ BLENDER_LOCAL 사전 작업) |
 | `EXTREME_CAMERA` (극단 카메라·강한 임팩트) | HIGGSFIELD | EP01 = 0 shots |

@@ -1,6 +1,6 @@
 # PHOTO_AI_STANDARD — 파이프라인 A: 사진 탐색 → AI 리디자인 → 영상화
 
-> 문서 버전 **v0.1 DRAFT** (2026-09-14, Claude Code) · 근거: D-033 #1 #2 (사용자 승인 2026-09-14) · `RIGHTS_STANDARD.md` · `PROMPT_STANDARD.md` (Sent Prompt Rule) · `MODEL_ROUTER.md` (D-028 logical pipeline)
+> 문서 버전 **v0.1 ACTIVE** (2026-09-14, Claude Code · **ACTIVE 승격 D-035 #8**; A4 보류 조건이던 PRESENT lock 쌍은 D-035 #1 로 같이 신설되어 A4 포함 전부 ACTIVE) · 근거: D-033 #1 #2 (사용자 승인 2026-09-14) · `RIGHTS_STANDARD.md` · `PROMPT_STANDARD.md` (Sent Prompt Rule) · `MODEL_ROUTER.md` (D-028 logical pipeline)
 > 벤치마크: `09_ANALYTICS/benchmarks/BENCHMARK_ARCHDICT_GYEONGHOERU_20260914.md` (현장 촬영 0, 실사풍 30% 는 전부 사진→AI 재구성)
 > 도구: `00_SYSTEM/tools/photo_search.py` (A2) · 프롬프트 템플릿 `06_PROMPT_LIBRARY/templates/PHOTO_AI_REDESIGN_V01.md` (A4)
 
@@ -58,4 +58,5 @@ EP02 부터 화면의 25–30% (D-033 #4). ① QUESTION · ④ CONTEXT · ⑦ LE
 
 - e뮤지엄·공유마당·KTV 자동 탐색 추가 여부 (API 유무 확인 필요).
 - 원본 GREEN 사진이 없을 때의 대안 순서: (a) YELLOW 수치만 → 텍스트 전용 생성, (b) 현장 촬영, (c) 샷 삭제. 기본값 제안 = (a).
-- 현재 시점 재구성의 라벨 문구 확정 (`AI Visual Reconstruction (present-day, photo-based)`).
+- ~~현재 시점 재구성의 라벨 문구 확정~~ → D-035 #2 확정 (`AI Visual Reconstruction (present-day, photo-based)`).
+- ~~PRESENT lock 쌍~~ → D-035 #1 신설 (`DDABONG_GLOBAL_PRESENT_V01` + `DDABONG_NEGATIVE_PRESENT_V01`, APPROVED).

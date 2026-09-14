@@ -1,7 +1,7 @@
 # CURRENT STATUS — 지금 어디까지 왔나
 
 > **매 작업마다 갱신한다.** 이 파일 하나만 읽으면 어느 봇/AI 창을 열어도 바로 이어갈 수 있어야 한다.
-> 갱신: 2026-09-14 (Claude Code, D-033 · D-034 · 전체 검수 완료) · 마지막 사용자 승인: 2026-09-14 (D-033 제작 방식 전환 · D-034 샘플 4건)
+> 갱신: 2026-09-14 오후 (Claude Code, D-035 반영 · S02_SH001 시험 준비 완료) · 마지막 사용자 승인: 2026-09-14 (D-035 검수 §4 B 8건)
 > 읽는 순서: `BOT_HANDOFF_DDABONG_STUDIO_OS_V0.1.md` → `BOT_BOOTSTRAP_PROMPT.md` → **이 문서** → `OS_INDEX.md` → `02_SEASONS/S01/EP01/episode.json`
 
 ---
@@ -15,8 +15,8 @@
 4. 사진 후보 `EP01/15_QA/PHOTO_AI_CANDIDATES_20260914.md`: **GREEN 은 대릉원 경관 1장뿐** (Gagnon CC0 5018×3345). 천마총·석양·관람객은 YELLOW 만 → 수치만 옮기거나 촬영.
 5. **다음**: 순서 4 전체 검수 (멀티 에이전트 + 반박, D-029) → 순서 5 EP01 시험 준비. **D-034 결정 완료**: ② 는 EP02 부터 · GREEN 없는 샷은 YELLOW 수치만 → 촬영 · A 첫 유료 시험 = S02_SH001 1장 (커넥터 재인증 뒤, 라우터 OVERRIDE·rights·prompt 선행) · 표준 3개는 검수 뒤 ACTIVE. **전체 검수 (D-029) 2026-09-14 완료** → `15_QA/REVIEW_FIX_20260914.md`.
 6. ✔ **전체 검수 완료 (2026-09-14)** → `15_QA/REVIEW_FIX_20260914.md`: 치명 1 (photo_ai 규칙 YES/True) 포함 A 항목 26건 수정, 검증기 규칙 +6, tools 30개 legacy 이동, rights +1 (Gagnon CC0). 검증 336/336.
-7. **사용자 결정 대기 (B 8건, 보고서 §4)**: PRESENT lock 쌍 · present-day 라벨 문구 · I2V_MOTION 정의 확장 · 시험 절차 · approval 필수 필드 · delegated 필드 · CAMERA 기본값 · 표준 3개 ACTIVE.
-8. 대기 중: 경주 짧은 촬영 (D-032, 다음 주, 유지) · P-012 실제 청구액. ~~Higgsfield 커넥터 재인증~~ → 2026-09-14 claude.ai Higgsfield 커넥터 작동 확인 (balance 조회 1,676.58 credits · plus, 비용 0). 로컬 `higgsfield` MCP 는 미인증이나 불필요. Flow/Veo 는 연결 없음 — D-028 공급자 = Higgsfield Kling 3.0. 오후 재개: 잔액 재조회 → 보고서 §4 B 8건 → S02_SH001 시험 1장.
+7. ✔ **D-035 (2026-09-14 오후)**: 보고서 §4 B 8건 전부 권고대로 승인 → 반영 완료. PRESENT lock 쌍 신설 · 라벨 `AI Visual Reconstruction (present-day, photo-based)` · I2V_MOTION 확장 · S02_SH001 시험 절차 · approval `prompt_ids`/`expected_attempts` 필수 + AI 컷 ≤ 6초 규칙 (photo_ai 예외) · `delegated` 필드 + D-030 한도 규칙 · CAMERA 기본값 · 표준 3개 ACTIVE. 검증 338/338, 부정 테스트 5/5.
+8. **다음 = 파이프라인 A 시험 1장 전송 (사용자 '보내' 확인 대기)**: `EP01_S02_SH001` 라우터 OVERRIDDEN → AI_STILL · prompt `11_AI_STILLS/prompt_PRM_PA_EP01_S02_SH001_V01.json` · approval `APR_EP01_PA_001` (1 호출 / 2 credits) · 원본 `02_SOURCES/RTS_COMMONS_DAEREUNGWON_GAGNON_001_5018x3345.jpg` (실측 완료). Higgsfield claude.ai 커넥터 오후 잔액 재조회 1,676.58 credits · plus (오전과 동일). 대기 중: 경주 짧은 촬영 (D-032) · P-012 실제 청구액.
 
 **사용자 손에 있는 것**
 - ~~P-001~~ EP01 예산 **₩40,000 확정 (D-015)** → Money Gate OPEN.
@@ -170,6 +170,8 @@
 ---
 
 ## 최근 변경 (최신순)
+
+- **2026-09-14 오후 사용자 + Claude Code** — **D-035.** 검수 §4 B 8건 전부 승인 → 반영: PRESENT lock 쌍 (`DDABONG_GLOBAL_PRESENT_V01` · `DDABONG_NEGATIVE_PRESENT_V01`) · present-day 라벨 · I2V_MOTION 확장 (MODEL_ROUTER) · approval 스키마 (`prompt_ids` required · `delegated`) · 검증기 규칙 +4 (AI ≤ 6초 · PAID 승인 gate 필수 · 위임 한도 · `rights:` 참조) · CAMERA 기본값 · 표준 3개 ACTIVE (OS_INDEX). S02_SH001 시험 준비: 라우터 OVERRIDDEN · 샷 AI_STILL + photo_ai · prompt V01 · approval PA_001 · Gagnon 원본 5018×3345 다운로드 (rights 실측 완료). 검증 338/338. **전송은 사용자 확인 뒤.**
 
 - **2026-09-13 사용자** — **D-032.** 경주 짧은 촬영 (다음 주): 꼭 찍기 5컷 (거리 · 오프닝 드러남 · 엔딩 같은 자리 · 천마총 매치컷 · 몽타주), 나머지 5컷은 시간 남으면. TODO `08_REAL_FOOTAGE/SHOOT_TODO_EP01_20260913.md`.
 

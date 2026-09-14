@@ -16,7 +16,7 @@
 
 ## 규칙
 1. 기록에 없는 내면 생각을 사실적 인용이나 확신으로 제시하지 않는다. `INTERPRETIVE` 이상은 "might have / may have / it is possible that" 로 표현 (`fact.hedge_required = true`).
-2. 역사 AI 장면은 `AI Visual Reconstruction` 라벨. 강한 해석 장면은 `INTERPRETIVE RECONSTRUCTION` 고려.
+2. 역사 AI 장면은 `AI Visual Reconstruction` 라벨. 강한 해석 장면은 `INTERPRETIVE RECONSTRUCTION` 고려. 현재 시점 사진 기반 재구성(파이프라인 A)은 `AI Visual Reconstruction (present-day, photo-based)` (D-035 #2).
 3. 증거 순서: 실제 자료 → 복원 → 영화적 창작 (Evidence Before Imagination).
 4. 근거 없는 건축을 사실로 제시하지 않는다. 모든 시대에 조선 양식을 쓰지 않는다.
 5. 대본 블록·샷·인물·복식·장소 모두 등급 필드를 가진다.

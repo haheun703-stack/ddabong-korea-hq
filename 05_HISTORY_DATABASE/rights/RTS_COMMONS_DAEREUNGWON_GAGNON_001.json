@@ -16,5 +16,5 @@
   "usage_tier": "ACTIVE",
   "checked_at": "2026-09-14",
   "checked_by": "Claude Code (D-034 #3 Pipeline A trial source; rebuttal review A-14)",
-  "notes": "파이프라인 A 첫 시험 (EP01_S02_SH001, D-034 #3) 참고 원본. Commons API: 5018×3345, 2022-10-06 촬영, LicenseShortName 'CC0', LicenseUrl creativecommons.org/publicdomain/zero/1.0. 페이지 원문 proof 저장 (2026-09-14). 원본 실측: 미완 — upload.wikimedia.org 가 429 로 거부 (2026-09-14), A3 완료 전 실측 필요. 대릉원 봉분 3기 겹침 경관, 사람 없음, 10월 초 초록 풀, 흐림. 15_QA/PHOTO_AI_CANDIDATES_20260914.md."
+  "notes": "파이프라인 A 첫 시험 (EP01_S02_SH001, D-034 #3) 참고 원본. Commons API: 5018×3345, 2022-10-06 촬영, LicenseShortName 'CC0', LicenseUrl creativecommons.org/publicdomain/zero/1.0. 페이지 원문 proof 저장 (2026-09-14). 원본 실측 완료 2026-09-14 오후: Special:FilePath 로 다운로드, 5018×3345 JPEG 6,308,933 bytes, sha256 앞 16자리 94d50e08fad4c52e, 로컬 `02_SEASONS/S01/EP01/02_SOURCES/RTS_COMMONS_DAEREUNGWON_GAGNON_001_5018x3345.jpg` (A3 완료). 대릉원 봉분 3기 겹침 경관, 사람 없음, 10월 초 초록 풀, 흐림. 15_QA/PHOTO_AI_CANDIDATES_20260914.md."
 }

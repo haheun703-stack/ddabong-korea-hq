@@ -1,6 +1,6 @@
 # DIAGRAM_TEMPLATES — 파이프라인 B: 3D 도해 템플릿 4종 (GT-01 ~ GT-04)
 
-> 문서 버전 **v0.1 DRAFT** (2026-09-14, Claude Code) · 근거: D-033 #1 #5 · 벤치마크 `BENCHMARK_ARCHDICT_GYEONGHOERU_20260914.md` (화면 55% 가 단면·오버헤드·치수선·X 표시)
+> 문서 버전 **v0.1 ACTIVE** (2026-09-14, Claude Code · **ACTIVE 승격 D-035 #8**) · 근거: D-033 #1 #5 · 벤치마크 `BENCHMARK_ARCHDICT_GYEONGHOERU_20260914.md` (화면 55% 가 단면·오버헤드·치수선·X 표시)
 > 관계: 에피소드별 `GRAPHICS_SPEC_*` 의 G 항목이 여기 GT 템플릿을 **인용**한다 (예: EP01 G04 = GT-01 적용). legacy `episodes/ep01-graphics-spec.html` 은 수정하지 않는다.
 > 공통 규격은 `GRAPHICS_SPEC_EP01_V2.md` §1.2 (4K · safe area · 브랜드 색 · 8–12프레임 페이드) 를 그대로 따른다. 렌더는 `BLENDER_STANDARD.md`.
 

@@ -182,6 +182,17 @@
 **3** 파이프라인 A 첫 유료 시험 = `EP01_S02_SH001` 1장 (GREEN Gagnon CC0 원본, 최대 1 호출 / 2 credits, D-030 사진 위임 한도 안). **실행은 Higgsfield 커넥터 재인증 뒤**, prompt 인스턴스 저장 + approval 기록 후 Sent Prompt Rule.
 **4** `STORY_ENGINE_STANDARD` · `PHOTO_AI_STANDARD` · `DIAGRAM_TEMPLATES` 는 2026-09-14 전체 검수(D-029 반박 검수) 통과 뒤 ACTIVE.
 
+### D-035 · 2026-09-14 · 전체 검수 보고서 §4 B 8건 (사용자 "8건 전부 권고대로 승인")
+**근거** `02_SEASONS/S01/EP01/15_QA/REVIEW_FIX_20260914.md` §4. Higgsfield claude.ai 커넥터 잔액 재조회 1,676.58 credits (plus) 확인 뒤.
+**1** PRESENT lock 쌍 신설 `06_PROMPT_LIBRARY/locks/DDABONG_GLOBAL_PRESENT_V01` + `DDABONG_NEGATIVE_PRESENT_V01` (APPROVED). 역사 GLOBAL/NEGATIVE 는 그대로.
+**2** 현재 시점 사진 기반 재구성 라벨 = `AI Visual Reconstruction (present-day, photo-based)`. `shot.schema.ai_label` description · HISTORY_ACCURACY 규칙 2 · G09 갱신.
+**3** D-028 `I2V_MOTION` 정의를 "사진→영상 (인물 동작 · 풍경/장소 카메라 이동)" 으로 확장. 분류·공급자·모델 분리 원칙은 그대로.
+**4** 파이프라인 A 시험 절차 확정: `EP01_S02_SH001` 라우터 OVERRIDDEN (REAL_SHOOT → AI_STILL, note) · pipeline/logical/provider/model · ai_label · photo_ai → prompt `PRM_PA_EP01_S02_SH001_V01` 저장 → approval `APR_EP01_PA_001` (D-034 #3, 1 호출 / 2 credits) → 전송. D-032 촬영 병행. 11초 샷은 경관 3–4컷 중 1컷을 이 정지 이미지로 채운다.
+**5** `approval.money_gate_presented` 의 `expected_attempts` · `prompt_ids` required 승격 (기존 6건 전부 충족). AI 샷 `duration ≤ 6` 검증 규칙 — **현재 시점 사진 기반(photo_ai) 정지 컷은 예외** (D-009 5–6초 제한은 인물 재현 컷 대상; 봇 판단, 사용자 이견 시 S02_SH001 분할).
+**6** `approval.delegated: true` 필드 (D-030 위임 승인). 검증기: decided_by 에 '봇' · 시도 ≤ 2 · 샷당 ≤ 4 credits · 누적 ≤ 20 credits.
+**7** `CAMERA_GRAMMAR.md` 기본값 35 mm · 1.6 m · tilt 0° 명시.
+**8** `STORY_ENGINE_STANDARD` · `PHOTO_AI_STANDARD` · `DIAGRAM_TEMPLATES` v0.1 **ACTIVE**. PHOTO_AI 의 'A4 보류' 조건은 #1 과 함께 해소되어 A4 포함 전부 ACTIVE.
+
 ---
 
 ## 승인 대기 (P)

@@ -1,0 +1,27 @@
+{
+  "lock_id": "DDABONG_NEGATIVE_PRESENT_V01",
+  "kind": "NEGATIVE",
+  "text": "text, watermark, logo, signage, lens flare, HDR look, oversaturation, glossy AI look, malformed anatomy, identifiable faces, invented buildings not in the reference, altered landform or mound proportions, fantasy elements, historical costume figures, vehicles, crowds, drone or aerial perspective unless in the reference",
+  "items": [
+    "text",
+    "watermark",
+    "logo",
+    "signage",
+    "lens flare",
+    "HDR look",
+    "oversaturation",
+    "glossy AI look",
+    "malformed anatomy",
+    "identifiable faces",
+    "invented buildings not in the reference",
+    "altered landform or mound proportions",
+    "fantasy elements",
+    "historical costume figures",
+    "vehicles",
+    "crowds",
+    "drone or aerial perspective unless in the reference"
+  ],
+  "source": "PHOTO_AI_STANDARD §3 (no identifiable faces, GREEN reference only) · D-035 #1. Pair of DDABONG_GLOBAL_PRESENT_V01 (validator picks negative set by global lock name)",
+  "status": "APPROVED",
+  "updated_at": "2026-09-14"
+}

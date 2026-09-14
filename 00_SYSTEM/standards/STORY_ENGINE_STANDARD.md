@@ -1,7 +1,7 @@
 # STORY_ENGINE_STANDARD — 스토리 엔진 7단계
 
-> 문서 버전 **v0.1 DRAFT** (2026-09-14, Claude Code) · 근거: `concept-bible.md` §Story engine (6단계) + D-033 (벤치마크 반영, 사용자 승인 2026-09-14)
-> **승인 전까지 `concept-bible.md` 6단계가 우선한다.** 승인되면 `standard_version` ACTIVE, `DECISIONS.md` 에 D-번호.
+> 문서 버전 **v0.1 ACTIVE** (2026-09-14, Claude Code · **ACTIVE 승격 D-035 #8**, 전체 검수 D-029 통과) · 근거: `concept-bible.md` §Story engine (6단계) + D-033 (벤치마크 반영, 사용자 승인 2026-09-14)
+> 이 문서가 `concept-bible.md` 6단계보다 우선한다 (D-035). ② 는 EP02 부터 (D-034 #1).
 > 관련 표준: `NARRATION_STANDARD.md` (리듬 QUESTION → DISCOVERY → EVIDENCE → MEANING 은 이 7단계의 축약형) · `HISTORY_ACCURACY_STANDARD.md` (FACT / INTERPRETATION) · `SHOT_STANDARD.md`
 > 샘플 대입: `02_SEASONS/S01/EP01/03_STORY/STORY_ENGINE_EP01.md`
 

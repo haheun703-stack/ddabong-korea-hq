@@ -184,8 +184,9 @@
   | `EP01_S06_SH005` | H05 | 4:43–4:49 | 6초 | **INTERPRETIVE RECONSTRUCTION** (notes: 두 라벨 모두 표시) |
   | `EP01_S06_SH010` | H06 | 5:10–5:16 | 6초 | AI Visual Reconstruction |
   | `EP01_S08_SH002` | H07 | 6:20–6:25 | 5초 | AI Visual Reconstruction |
+  | `EP01_S02_SH001` | 파이프라인 A 시험 (D-034 #3) | 0:42–0:53 중 1컷 | 3–4초 (경관 3–4컷 중 1) | **AI Visual Reconstruction (present-day, photo-based)** (D-035 #2) |
 
-- **화면 문구**: `AI VISUAL RECONSTRUCTION` · 보조 `INTERPRETIVE RECONSTRUCTION` (H05 는 두 줄 모두).
+- **화면 문구**: `AI VISUAL RECONSTRUCTION` · 보조 `INTERPRETIVE RECONSTRUCTION` (H05 는 두 줄 모두). 현재 시점 사진 기반 재구성 컷은 `AI VISUAL RECONSTRUCTION` + 작은 글씨 `present-day, photo-based` (D-035 #2) — 실사처럼 보여도 생략 금지.
 - **레이아웃**: 좌하단. 약 70~80% 흰색 배경 또는 어두운 반투명 박스. AI 장면 시작 후 최소 2초 이상 보이게 (legacy). 모든 AI 샷 ≥ 4초이므로 조건 충족 가능. 라벨 서체·크기 미정 (편집 시 결정).
 - **근거**: HISTORY_ACCURACY_STANDARD 규칙 2. H04/H05/H06 구간 내레이션은 `CLM_EP01_FUNERAL_008` · `CLM_EP01_DISPLAY_009` · `CLM_EP01_ORDER_010` · `CLM_EP01_MOUND_011` (모두 INTERPRETIVE, hedge 필수) — 이 구간 자막/그래픽 문구를 추가할 경우 `MAY HAVE` 형태 필수.
 - **금지**: AI 샷에서 라벨 생략 · 라벨을 safe area 밖에 배치 · AI 컷 끝에서 실제 자료로 복귀할 때 라벨을 실제 자료 위에 남겨두기.

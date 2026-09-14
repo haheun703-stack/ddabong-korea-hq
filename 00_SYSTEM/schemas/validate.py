@@ -108,6 +108,8 @@ def ledger_rules(p, d, facts, rights, routers):
         errs.append(f"{rel}: AI pipeline without ai_label")
     if d["pipeline"] in AI_PIPES and d.get("historical_confidence") == "INTERPRETIVE" and "INTERPRETIVE" not in str(d.get("ai_label") or ""):
         errs.append(f"{rel}: INTERPRETIVE AI shot must carry 'INTERPRETIVE RECONSTRUCTION' in ai_label (HISTORY_ACCURACY / STORY_ENGINE)")
+    if d["pipeline"] in AI_PIPES and not d.get("photo_ai") and (d.get("duration") or 0) > 6:  # D-009 AI cut 5-6 s; present-day photo-based stills exempt (D-035 #5)
+        errs.append(f"{rel}: AI shot duration {d.get('duration')} s > 6 (D-009 / D-035 #5)")
     if d["pipeline"] == "HIGGSFIELD" and d.get("episode_id") in HIGGSFIELD_LOCKED:
         errs.append(f"{rel}: pipeline HIGGSFIELD is locked to 0 shots for {d.get('episode_id')} (D-024)")
     if rid and routers.get(rid, {}).get("human_decision") == "OVERRIDDEN" and not (routers[rid].get("override_note") or "").strip():
@@ -213,6 +215,18 @@ def money_rules(docs):
     for aid, n in per_approval.items():
         exp = (apps[aid][1].get("money_gate_presented") or {}).get("expected_attempts")
         if exp is not None and n > exp: errs.append(f"{rel(apps[aid][0])}: {n} generation calls exceed expected_attempts {exp}")
+    delegated_total = 0.0
+    for aid, (p, a) in apps.items():  # D-035 #5 #6: paid approvals carry the gate; delegated (D-030) approvals stay inside the photo-only limits
+        if a["kind"] == "PAID_GENERATION" and not a.get("money_gate_presented"):
+            errs.append(f"{rel(p)}: PAID_GENERATION approval without money_gate_presented (D-035 #5)")
+        if a.get("delegated"):
+            mg = a.get("money_gate_presented") or {}
+            if "봇" not in str(a.get("decided_by")): errs.append(f"{rel(p)}: delegated approval must be decided_by the bot ('봇 (D-030 위임)')")
+            if (mg.get("expected_attempts") or 0) > 2: errs.append(f"{rel(p)}: delegated approval expected_attempts {mg.get('expected_attempts')} > 2 (D-030)")
+            spent = sum(g["cost"].get("spent") or 0 for _, g in gens.values() if g.get("approval_id") == aid and g["cost"]["currency"] == "CREDITS")
+            if spent > 4: errs.append(f"{rel(p)}: delegated approval spent {spent} credits > 4 per shot (D-030)")
+            delegated_total += spent
+    if delegated_total > 20: errs.append(f"delegated approvals spent {delegated_total} credits > 20 cumulative (D-030) - user re-approval required")
     latest = {}
     for cid, (p, c) in costs.items():
         if c["episode_id"] not in latest or c["as_of"] > latest[c["episode_id"]][1]["as_of"]: latest[c["episode_id"]] = (p, c)
@@ -302,6 +316,7 @@ def refcheck(paths):
                 kind, _, v = str(r).partition(":")
                 if kind == "master_frame": need(p, "master_frame", v, "reference_images")
                 elif kind == "character_pack": need(p, "character", v, "reference_images")
+                elif kind == "rights": need(p, "rights", v, "reference_images")  # Pipeline A photo reference (D-035 #4)
         if name == "master_frame":
             need(p, "scene", d["scene_id"], "scene_id"); need(p, "shot", d.get("derived_shots"), "derived_shots")
             need(p, "character", d.get("characters"), "characters"); need(p, "location", d["location"], "location")

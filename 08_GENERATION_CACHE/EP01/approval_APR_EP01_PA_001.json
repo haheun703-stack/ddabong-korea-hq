@@ -1,0 +1,21 @@
+{
+  "approval_id": "APR_EP01_PA_001",
+  "kind": "PAID_GENERATION",
+  "target_id": "EP01_S02_SH001",
+  "money_gate_presented": {
+    "shot_id": "EP01_S02_SH001",
+    "prompt_ids": [
+      "PRM_PA_EP01_S02_SH001_V01"
+    ],
+    "provider_model": "HIGGSFIELD / NANO_BANANA_PRO, 16:9 still, image reference = Gagnon CC0",
+    "expected_attempts": 1,
+    "estimated_cost_range": "2 credits (hard cap 2)",
+    "continuity_risk": "LOW - present-day landscape, no characters; risk = landform drift from reference"
+  },
+  "decision": "APPROVE",
+  "fix_reason": null,
+  "delegated": false,
+  "decided_by": "사용자",
+  "decided_at": "2026-09-14T05:00:00Z",
+  "note": "D-034 #3 (2026-09-14 '너의 추론대로') 파이프라인 A 첫 유료 시험 1장, 커넥터 작동 확인 뒤 실행. D-035 #4 절차 확정. 전송은 PRM_PA_EP01_S02_SH001_V01 그대로. 전송 직전 사용자 '보내' 확인 1회 (채팅)."
+}

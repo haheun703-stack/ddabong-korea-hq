@@ -169,7 +169,7 @@
         "string",
         "null"
       ],
-      "description": "AI 장면이면 'AI Visual Reconstruction' 또는 'INTERPRETIVE RECONSTRUCTION'"
+      "description": "AI 장면이면 'AI Visual Reconstruction' 또는 'INTERPRETIVE RECONSTRUCTION'. 현재 시점 사진 기반 재구성(photo_ai)은 'AI Visual Reconstruction (present-day, photo-based)' (D-035 #2)"
     },
     "version_history": {
       "type": "array",

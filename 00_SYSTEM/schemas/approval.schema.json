@@ -45,8 +45,22 @@
         },
         "continuity_risk": {
           "type": "string"
+        },
+        "prompt_ids": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "승인 범위의 prompt_id (조상 버전 허용). D-035 #5 필수"
         }
-      }
+      },
+      "required": [
+        "shot_id",
+        "provider_model",
+        "expected_attempts",
+        "prompt_ids"
+      ],
+      "description": "PAID_GENERATION 은 null 불가 (검증기). expected_attempts = 최대 호출 수, prompt_ids = 전송 허용 프롬프트 (D-035 #5)"
     },
     "decision": {
       "type": "string",
@@ -89,6 +103,10 @@
         "string",
         "null"
       ]
+    },
+    "delegated": {
+      "type": "boolean",
+      "description": "D-030 사진 전용 위임 승인 (봇이 스스로 승인). true 면 decided_by 에 '봇' 포함, 샷당 ≤ 2 호출 / 4 credits, 위임 누적 ≤ 20 credits (검증기). D-035 #6"
     }
   },
   "required": [
