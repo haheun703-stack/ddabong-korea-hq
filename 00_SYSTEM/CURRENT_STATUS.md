@@ -1,17 +1,20 @@
 # CURRENT STATUS — 지금 어디까지 왔나
 
 > **매 작업마다 갱신한다.** 이 파일 하나만 읽으면 어느 봇/AI 창을 열어도 바로 이어갈 수 있어야 한다.
-> 갱신: 2026-09-13 (Claude Code, D-023 반영 · P2 완료) · 마지막 사용자 승인: 2026-09-11 (P0 범위·EP01 파일 유지·push 전 확인 → D-007)
+> 갱신: 2026-09-14 (Claude Code, D-033 · 샘플 1–3) · 마지막 사용자 승인: 2026-09-11 (P0 범위·EP01 파일 유지·push 전 확인 → D-007)
 > 읽는 순서: `BOT_HANDOFF_DDABONG_STUDIO_OS_V0.1.md` → `BOT_BOOTSTRAP_PROMPT.md` → **이 문서** → `OS_INDEX.md` → `02_SEASONS/S01/EP01/episode.json`
 
 ---
 
 ## 지금 우선 작업
 
-**내일 (2026-09-14) 할 일 — 사용자 지정**
-1. **전체 검수**: 코드 (`00_SYSTEM/schemas/validate.py`, `00_SYSTEM/tools/*.py`) · 로직 (Money Gate · Sent Prompt Rule · 권리 · 라우터 규칙이 검증기에 빠짐없이 있는지) · 버그 · 슬러지 (중복·옛 문구·일회용 스크립트·낡은 상태 줄) · 데이터 일관성. 멀티 에이전트 + 반박 검수 (D-029), 무료.
-2. **OS 활용 추가 제작 셋팅**: 다음 에피소드·반복 제작에 쓸 수 있도록 템플릿·도구·절차 정리 (범위는 내일 사용자와 확정).
-3. 대기 중: 경주 짧은 촬영 (D-032, 다음 주) · P-012 실제 청구액 (영상 전 필수) · Higgsfield 커넥터 재인증.
+**2026-09-14 진행 (D-033 승인, 순서 1–3 샘플 완료 · 커밋 `61679a5`)**
+1. ✔ 벤치마크 `09_ANALYTICS/benchmarks/BENCHMARK_ARCHDICT_GYEONGHOERU_20260914.md` (사용자 판정: 현장 촬영 0, 실사풍 = 사진→AI 재구성).
+2. ✔ **D-033** 제작 방식 전환: 파이프라인 A (사진→AI) · B (3D 도해) 표준화, 인물 10% 유지, 스토리 엔진 템플릿.
+3. ✔ 샘플 (DRAFT, 승인 대기): `standards/STORY_ENGINE_STANDARD.md` (7단계) + `EP01/03_STORY/STORY_ENGINE_EP01.md` (② 만 빈 칸) · `standards/PHOTO_AI_STANDARD.md` + `tools/photo_search.py` + `06_PROMPT_LIBRARY/templates/PHOTO_AI_REDESIGN_V01.md` + `shot.photo_ai` 스키마·검증 규칙 (부정 테스트 통과) · `standards/DIAGRAM_TEMPLATES.md` (GT-01~04).
+4. 사진 후보 `EP01/15_QA/PHOTO_AI_CANDIDATES_20260914.md`: **GREEN 은 대릉원 경관 1장뿐** (Gagnon CC0 5018×3345). 천마총·석양·관람객은 YELLOW 만 → 수치만 옮기거나 촬영.
+5. **다음**: 순서 4 전체 검수 (멀티 에이전트 + 반박, D-029) → 순서 5 EP01 시험 준비. 사용자 결정 4건 (샘플 페이지 참조): ② 를 EP01 에 넣을지 · GREEN 없는 샷 처리 · A 첫 유료 시험 1장 · 3개 표준 ACTIVE 승인.
+6. 대기 중: 경주 짧은 촬영 (D-032, 다음 주, 유지) · P-012 실제 청구액 · Higgsfield 커넥터 재인증.
 
 **사용자 손에 있는 것**
 - ~~P-001~~ EP01 예산 **₩40,000 확정 (D-015)** → Money Gate OPEN.
