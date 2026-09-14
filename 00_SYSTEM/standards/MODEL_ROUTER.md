@@ -36,11 +36,13 @@ OS 는 공급자 교체에도 살아남아야 한다.
 - 각 공급자별 어댑터(P6) 우선순위와 계정/크레딧 현황
 
 ## 논리 분류 · 공급자 · 모델 분리 (D-028)
+
+> **모델 ID 주의 (D-036, 2026-09-14)**: Higgsfield 카탈로그 id `nano_banana_2` 는 'Nano Banana 2' (job_set_type `nano_banana_flash`). H06 이 쓴 'Nano Banana Pro' 는 job_set_type `nano_banana_2` (카탈로그 id 미확인 — 검색에 안 잡힘). OS 모델 ID: `NANO_BANANA_PRO` = Pro, `NANO_BANANA_2` = Nano Banana 2. 비용은 둘 다 2k 16:9 참고 1장 기준 2 credits.
 샷 판정(논리 분류)은 공급자·모델이 바뀌어도 그대로 둔다. 모델 교체(Kling → Veo → Seedance 등)는 `provider` / `model` 필드만 바꾸고 새 승인을 받는다.
 
 | 논리 분류 (`logical_pipeline`) | legacy `pipeline` | 예: provider / model |
 |---|---|---|
-| `AI_STILL` | AI_STILL | HIGGSFIELD / NANO_BANANA_PRO |
+| `AI_STILL` | AI_STILL | HIGGSFIELD / NANO_BANANA_PRO (역사 인물·기준 그림, job `nano_banana_2`) · **파이프라인 A 사진 기반 = NANO_BANANA_2** (카탈로그 id `nano_banana_2` = job `nano_banana_flash`, D-036) |
 | `I2V_MOTION` (사진→영상 — 인물 동작 · 풍경/장소 카메라 이동 모두, D-035 #3 확장) | FLOW_VEO | HIGGSFIELD / KLING_3_0 |
 | `BLENDER_I2V` (공간·카메라 사전 작업 필요) | BLENDER_FLOW | HIGGSFIELD / KLING_3_0 (+ BLENDER_LOCAL 사전 작업) |
 | `EXTREME_CAMERA` (극단 카메라·강한 임팩트) | HIGGSFIELD | EP01 = 0 shots |

@@ -193,6 +193,10 @@
 **7** `CAMERA_GRAMMAR.md` 기본값 35 mm · 1.6 m · tilt 0° 명시.
 **8** `STORY_ENGINE_STANDARD` · `PHOTO_AI_STANDARD` · `DIAGRAM_TEMPLATES` v0.1 **ACTIVE**. PHOTO_AI 의 'A4 보류' 조건은 #1 과 함께 해소되어 A4 포함 전부 ACTIVE.
 
+### D-036 · 2026-09-14 · 파이프라인 A 기본 모델 = Nano Banana 2 (사용자 "Nano Banana 2를 파이프라인 A 기본으로 인정")
+**경위** S02_SH001 시험 (`GEN_PA_EP01_S02_SH001_HIGGSFIELD_V01`, 2 credits) 이 Higgsfield 카탈로그 id `nano_banana_2` 로 나갔는데 실제 job_set_type 은 `nano_banana_flash` ('Nano Banana 2'). 승인 문구의 NANO_BANANA_PRO (H06 이 쓴 job `nano_banana_2`) 와 다름. 결과가 기준 통과.
+**결정** 파이프라인 A (사진 기반 현재 시점 재구성) 기본 모델 = `NANO_BANANA_2` (HIGGSFIELD). 역사 인물·기준 그림은 기존 NANO_BANANA_PRO 유지. `MODEL_ROUTER.md` 모델 표 갱신, S02_SH001 샷·라우터·승인 model 값 정정. 재생성 없음 (추가 비용 0). **운영 규칙 추가**: 전송 전 preflight 결과의 job_set_type 을 승인 문구와 대조, 다르면 전송 전 보고.
+
 ---
 
 ## 승인 대기 (P)
