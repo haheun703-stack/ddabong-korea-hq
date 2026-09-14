@@ -6,6 +6,22 @@
 
 ---
 
+## 내일 시작 (2026-09-15) — "따봉 계속" 하면 여기부터
+
+**어제(09-14) 끝난 자리**: EP01 AI 정지 컷 전부 승인 (파이프라인 A 13 + H06 + H07). 현장 촬영은 **안 함** (D-038). 커밋 `p1-continuity` 최신, 검증 381/381. EP01 누적 98.12 credits, Higgsfield 잔액 1,644.58 (Plus). 위임 한도 2/20.
+
+**승인된 그림 위치**: `08_GENERATION_CACHE/EP01/AI_STILL/` — `PA_*.png` 13장 (현재 시점) · `H06_V03_*.png` · `H07_V02_2801ac11.png`. 검수 시트 `REVIEW_PA_BATCH1_20260914.md` · `REVIEW_PA_BATCH2_20260914.md`.
+
+**내일 할 일 후보 (사용자가 고름)**
+1. **P-012 실제 청구액** (Higgsfield 계정 → 월 요금·월 크레딧) 을 알려주면 → 영상 승인 가능. 그 다음: I2V (Kling 3.0) 로 움직임 컷 (S01_SH001 거리 · S08_SH001 M1–M3 · S01_SH002 리빌) + 영상 H01–H05 (Master Frame S04·S06 기반).
+2. GT-01~04 Blender 도해 템플릿 (파이프라인 B, 무료).
+3. 텍스트 전용 GLOBAL lock 변형 `DDABONG_GLOBAL_PRESENT_TEXT_V01` (무료, 승인 필요) — 배치 2 프롬프트에 "reference photograph" 문구가 그대로 들어간 문제.
+4. main 병합 검수 게이트 — Codex 교차 검수 (D-025) 시점.
+
+**봇 규칙 상기**: 현장 촬영 제안 금지 (D-038) · 파일 언급 시 폴더 경로 항상 (사용자 요구) · 유료는 승인 뒤 · Sent Prompt Rule · 검증 통과 시 자동 push (D-025). H: 드라이브가 어제 fsync 오류 1회 → `.git/config` 에 `core.fsyncObjectFiles=false` 설정됨, D: 백업 클론 유지.
+
+---
+
 ## 지금 우선 작업
 
 **2026-09-14 진행 (D-033 승인, 순서 1–3 샘플 완료 · 커밋 `61679a5`)**
