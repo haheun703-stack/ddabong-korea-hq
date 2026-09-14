@@ -12,7 +12,7 @@
   "human_motion": 0,
   "visual_importance": 75,
   "pipeline": "AI_STILL",
-  "status": "ROUTED",
+  "status": "LOOK_APPROVED",
   "characters": [],
   "costumes": [],
   "continuity_group": "EP01_S09",
@@ -32,17 +32,17 @@
     {
       "version": "V01",
       "stage": "STILL",
-      "status": "DRAFT",
+      "status": "APPROVED",
       "created_at": "2026-09-14",
-      "created_by": "Claude Code (D-039 batch 1)",
+      "created_by": "사용자",
       "path": "08_GENERATION_CACHE/EP01/AI_STILL/PA_S01_SH002_V01_0d7214c7.png",
-      "note": "S01_SH002 V01 이미지 재사용 (구도 회수, D-039). GEN_PA_EP01_S01_SH002_HIGGSFIELD_V01 · 봇 판정 대기 · 사용자 OK/FIX 대기 (8장 일괄)"
+      "note": "D-040 (2026-09-14) 사용자 OK (8장 일괄). S01_SH002 V01 이미지 재사용 (구도 회수, D-039). GEN_PA_EP01_S01_SH002_HIGGSFIELD_V01 · 봇 PASS"
     }
   ],
-  "approved_version": null,
+  "approved_version": "V01",
   "created_at": "2026-09-11",
   "updated_at": "2026-09-14",
-  "updated_by": "Claude Code (D-038/D-039 all-in-house conversion)",
+  "updated_by": "사용자 (D-040)",
   "notes": "TC 6:42–6:48 (러프컷 v1 기준, 내레이션 녹음 후 조정). EP01_S01_SH002 구도 회수. 점수(camera_complexity 등)는 Continuity Engine 추정치 — P4 라우터에서 확정. D-038 (2026-09-14): 현장 촬영 제외, 파이프라인 A (사진→AI) 전환. D-039 배치 1. S01_SH002 와 같은 이미지 재사용 (구도 회수).",
   "evidence_role": "CONTEXT",
   "logical_pipeline": "AI_STILL",

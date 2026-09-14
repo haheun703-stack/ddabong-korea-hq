@@ -40,27 +40,27 @@
     {
       "version": "V02",
       "stage": "STILL",
-      "status": "DRAFT",
+      "status": "APPROVED",
       "created_at": "2026-09-14",
-      "created_by": "Claude Code (D-039 batch 1)",
+      "created_by": "사용자",
       "path": "08_GENERATION_CACHE/EP01/AI_STILL/PA_S02_SH001_CUT2_V01_56483502.png",
-      "note": "GEN_PA_EP01_S02_SH001_CUT2_HIGGSFIELD_V01 · 봇 판정 대기 · 사용자 OK/FIX 대기 (8장 일괄)"
+      "note": "D-040 (2026-09-14) 사용자 OK (8장 일괄). GEN_PA_EP01_S02_SH001_CUT2_HIGGSFIELD_V01 · 봇 PASS"
     },
     {
       "version": "V03",
       "stage": "STILL",
-      "status": "DRAFT",
+      "status": "APPROVED",
       "created_at": "2026-09-14",
-      "created_by": "Claude Code (D-039 batch 1)",
+      "created_by": "사용자",
       "path": "08_GENERATION_CACHE/EP01/AI_STILL/PA_S02_SH001_CUT3_V01_d5c835b5.png",
-      "note": "GEN_PA_EP01_S02_SH001_CUT3_HIGGSFIELD_V01 · 봇 판정 대기 · 사용자 OK/FIX 대기 (8장 일괄)"
+      "note": "D-040 (2026-09-14) 사용자 OK (8장 일괄). GEN_PA_EP01_S02_SH001_CUT3_HIGGSFIELD_V01 · 봇 PASS"
     }
   ],
   "approved_version": "V01",
   "created_at": "2026-09-11",
   "updated_at": "2026-09-14",
-  "updated_by": "사용자 (D-037)",
-  "notes": "TC 0:42–0:53 (러프컷 v1 기준, 내레이션 녹음 후 조정). 넓은 클러스터 촬영분 활용 (정본 §19). S1. 점수(camera_complexity 등)는 Continuity Engine 추정치 — P4 라우터에서 확정. D-034 #3 · D-035 #4: 파이프라인 A 첫 유료 시험 샷 — 라우터 OVERRIDDEN (REAL_SHOOT → AI_STILL, 사진 기반 재구성), GREEN 원본 Gagnon CC0. 11초 = 경관 3–4컷 중 1컷을 이 AI 정지 이미지(편집에서 3% push-in)로 채움; D-032 '시간 남으면 촬영' 병행 유지. AI 컷 ≤ 6초 규칙(D-035 #5)은 인물 재현 컷 대상 — 현재 시점 사진 기반(photo_ai) 정지 컷은 예외 (검증기 명시). D-036: 실제 모델 Nano Banana 2 (nano_banana_flash) 를 파이프라인 A 기본으로 인정 (사용자 2026-09-14). D-039: 추가 컷 2 = PRM_PA_EP01_S02_SH001_CUT2_V01 (골짜기) · CUT3_V01 (황남대총).",
+  "updated_by": "사용자 (D-040)",
+  "notes": "TC 0:42–0:53 (러프컷 v1 기준, 내레이션 녹음 후 조정). 넓은 클러스터 촬영분 활용 (정본 §19). S1. 점수(camera_complexity 등)는 Continuity Engine 추정치 — P4 라우터에서 확정. D-034 #3 · D-035 #4: 파이프라인 A 첫 유료 시험 샷 — 라우터 OVERRIDDEN (REAL_SHOOT → AI_STILL, 사진 기반 재구성), GREEN 원본 Gagnon CC0. 11초 = 경관 3–4컷 중 1컷을 이 AI 정지 이미지(편집에서 3% push-in)로 채움; D-032 '시간 남으면 촬영' 병행 유지. AI 컷 ≤ 6초 규칙(D-035 #5)은 인물 재현 컷 대상 — 현재 시점 사진 기반(photo_ai) 정지 컷은 예외 (검증기 명시). D-036: 실제 모델 Nano Banana 2 (nano_banana_flash) 를 파이프라인 A 기본으로 인정 (사용자 2026-09-14). D-039: 추가 컷 2 = PRM_PA_EP01_S02_SH001_CUT2_V01 (골짜기) · CUT3_V01 (황남대총). D-040: 컷2·컷3 (V02·V03) 도 APPROVED — 경관 3컷 확보.",
   "evidence_role": "SUPPORTING",
   "logical_pipeline": "AI_STILL",
   "provider": "HIGGSFIELD",

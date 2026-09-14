@@ -1,7 +1,7 @@
 # CURRENT STATUS — 지금 어디까지 왔나
 
 > **매 작업마다 갱신한다.** 이 파일 하나만 읽으면 어느 봇/AI 창을 열어도 바로 이어갈 수 있어야 한다.
-> 갱신: 2026-09-14 오후 (Claude Code, D-035~D-039 · 파이프라인 A 배치 1 8장 생성, OK/FIX 대기) · 마지막 사용자 승인: 2026-09-14 (D-039 배치 1 8장 · D-026 완화)
+> 갱신: 2026-09-14 오후 (Claude Code, D-035~D-040 · 파이프라인 A 배치 1 8장 APPROVED) · 마지막 사용자 승인: 2026-09-14 (D-040 배치 1 8장 OK)
 > 읽는 순서: `BOT_HANDOFF_DDABONG_STUDIO_OS_V0.1.md` → `BOT_BOOTSTRAP_PROMPT.md` → **이 문서** → `OS_INDEX.md` → `02_SEASONS/S01/EP01/episode.json`
 
 ---
@@ -17,7 +17,7 @@
 6. ✔ **전체 검수 완료 (2026-09-14)** → `15_QA/REVIEW_FIX_20260914.md`: 치명 1 (photo_ai 규칙 YES/True) 포함 A 항목 26건 수정, 검증기 규칙 +6, tools 30개 legacy 이동, rights +1 (Gagnon CC0). 검증 336/336.
 7. ✔ **D-035 (2026-09-14 오후)**: 보고서 §4 B 8건 전부 권고대로 승인 → 반영 완료. PRESENT lock 쌍 신설 · 라벨 `AI Visual Reconstruction (present-day, photo-based)` · I2V_MOTION 확장 · S02_SH001 시험 절차 · approval `prompt_ids`/`expected_attempts` 필수 + AI 컷 ≤ 6초 규칙 (photo_ai 예외) · `delegated` 필드 + D-030 한도 규칙 · CAMERA 기본값 · 표준 3개 ACTIVE. 검증 338/338, 부정 테스트 5/5.
 8. ✔ **파이프라인 A 시험 1장 완료 · D-037 사용자 OK (2026-09-14 오후)**: `EP01_S02_SH001` V01 LOOK_APPROVED — `08_GENERATION_CACHE/EP01/AI_STILL/PA_S02_SH001_V01_9cbd059e.png` (2752×1536, 2 credits, Nano Banana 2 = D-036 파이프라인 A 기본). 검수 시트 `AI_STILL/REVIEW_PA_S02_SH001_V01.md`. EP01 누적 68.12 credits.
-9. ✔ **D-038 현장 촬영 제외 → 전부 자체 제작** (사용자 "직접 촬영 말고"). REAL 9샷 → 파이프라인 A. GREEN 원본 +5 (CC0, `02_SEASONS/S01/EP01/02_SOURCES/`). **D-039 배치 1 (8장, 16 credits) 생성 완료** → `08_GENERATION_CACHE/EP01/AI_STILL/PA_*_V01_*.png` · 검수 시트 `AI_STILL/REVIEW_PA_BATCH1_20260914.md`. 봇 판정 PASS 7 · PARTIAL 1 (S09_SH004 지형 이탈). **사용자 OK/FIX 대기 (8장 일괄).** D-026 완화 (착지 = 대릉원 봉분). EP01 누적 84.12 credits, 잔액 1658.58.
+9. ✔ **D-038 현장 촬영 제외 → 전부 자체 제작** (사용자 "직접 촬영 말고"). REAL 9샷 → 파이프라인 A. GREEN 원본 +5 (CC0, `02_SEASONS/S01/EP01/02_SOURCES/`). **D-039 배치 1 (8장, 16 credits) 생성 완료** → `08_GENERATION_CACHE/EP01/AI_STILL/PA_*_V01_*.png` · 검수 시트 `AI_STILL/REVIEW_PA_BATCH1_20260914.md`. 봇 판정 PASS 7 · PARTIAL 1 → **D-040 사용자 8장 전부 OK → 7샷 LOOK_APPROVED** (파이프라인 A 누적 9/9 승인, 실패 0). D-026 완화 (착지 = 대릉원 봉분). EP01 누적 84.12 credits, 잔액 1658.58.
 10. 보류 2샷: S01_SH001 거리 · S08_SH001 몽타주 → 정지 이미지 + I2V (Kling 3.0, P-012 뒤). 현장 촬영 (D-032) 은 **취소**.
 
 **사용자 손에 있는 것**
@@ -172,6 +172,8 @@
 ---
 
 ## 최근 변경 (최신순)
+
+- **2026-09-14 오후 사용자** — **D-040** 배치 1 8장 전부 OK → S01_SH002 · S02_SH001(3컷) · S03_SH001 · S06_SH007 · S06_SH011 · S08_SH003 · S09_SH003 · S09_SH004 LOOK_APPROVED. 파이프라인 A 9/9 승인.
 
 - **2026-09-14 오후 사용자 + Claude Code** — **D-038** 현장 촬영 제외, 전부 자체 제작. **D-039** 파이프라인 A 배치 1: GREEN CC0 원본 5장 추가 (권리·proof), 8장 생성 (Nano Banana 2, 16 credits, 8/8 SUCCESS), 봇 PASS 7 · PARTIAL 1. D-026 완화. 사용자 OK/FIX 대기. EP01 84.12 credits.
 

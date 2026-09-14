@@ -38,5 +38,5 @@
   "started_at": "2026-09-14T10:30:00Z",
   "finished_at": null,
   "run_by": "Claude Code (Pipeline A batch 1, D-039)",
-  "notes": "Sent text == prompt.assembled_text (verified at submission). Bot check pending owner OK/FIX (8 at once, D-039)."
+  "notes": "Sent text == prompt.assembled_text (verified at submission). Bot check PASS (S09_SH004 PARTIAL landform drift, accepted). D-040 (2026-09-14): owner OK, all 8 APPROVED."
 }
