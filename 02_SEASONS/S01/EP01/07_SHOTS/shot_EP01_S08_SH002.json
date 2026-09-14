@@ -40,6 +40,15 @@
       "created_by": "Claude Code (D-044)",
       "path": "08_GENERATION_CACHE/EP01/AI_STILL/H07_V01_db03cd01.png",
       "note": "GEN_EP01_S08_SH002_HIGGSFIELD_V01 · prompt V02 · 봇 PARTIAL: 구도 불일치(중앙·좁음·산 지평선) · 지평선 끝 인공물 · 겨울 들판 → V03 재시도"
+    },
+    {
+      "version": "V02",
+      "stage": "STILL",
+      "status": "DRAFT",
+      "created_at": "2026-09-14",
+      "created_by": "Claude Code (D-044 attempt 2)",
+      "path": "08_GENERATION_CACHE/EP01/AI_STILL/H07_V02_2801ac11.png",
+      "note": "GEN_EP01_S08_SH002_HIGGSFIELD_V02 · prompt V03 (PATCH_EP01_S08_SH002_001) · 봇 판정 대기 · 사용자 OK/FIX 대기"
     }
   ],
   "approved_version": null,

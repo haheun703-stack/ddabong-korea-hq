@@ -1,0 +1,44 @@
+{
+  "generation_id": "GEN_EP01_S08_SH002_HIGGSFIELD_V02",
+  "shot_id": "EP01_S08_SH002",
+  "stage": "STILL",
+  "provider": "Higgsfield",
+  "model": "NANO_BANANA_PRO (catalog nano_banana_pro -> job_set_type nano_banana_2, 2k, 16:9, image reference = S08_SH003 plate)",
+  "provider_job": {
+    "job_id": "2801ac11-5bf0-4433-81a2-2700fefed98b",
+    "job_set_type": "nano_banana_2",
+    "display_name": "Nano Banana Pro",
+    "params_path": "08_GENERATION_CACHE/EP01/provider_jobs/HF_2801ac11-5bf0-4433-81a2-2700fefed98b.json"
+  },
+  "prompt_id": "PRM_EP01_S08_SH002_V03",
+  "prompt_version": "V03",
+  "standard_versions": {
+    "CHARACTER_CONTINUITY_STANDARD.md": "v0.1",
+    "COST_STANDARD.md": "v0.1",
+    "HISTORY_ACCURACY_STANDARD.md": "v0.1"
+  },
+  "case_ids_used": [
+    "CASE_DDABONG_CHAR_001"
+  ],
+  "approval_id": "APR_EP01_AI_B1_003",
+  "input_paths": [
+    "08_GENERATION_CACHE/EP01/AI_STILL/PA_S08_SH003_V01_0f2174d1.png"
+  ],
+  "output_paths": [
+    "08_GENERATION_CACHE/EP01/AI_STILL/H07_V02_2801ac11.png"
+  ],
+  "attempts": 1,
+  "duration_sec": null,
+  "cost": {
+    "currency": "CREDITS",
+    "amount": 2.0,
+    "spent": 2.0,
+    "note": "Balance 1646.58 -> 1644.58 (-2). Approval 2/2 used (cap reached)."
+  },
+  "result_status": "SUCCESS",
+  "failure_id": null,
+  "started_at": "2026-09-14T11:30:48Z",
+  "finished_at": null,
+  "run_by": "Claude Code (H07 attempt 2, D-044)",
+  "notes": "Sent text == prompt V03 assembled_text (verified). Measured vs plate: crest x=0.492/y=0.306 (plate 0.388/0.303), edge horizon y=0.508 (plate 0.553). Bot visual check + owner OK/FIX pending. Approval cap reached - no further attempts without new approval."
+}

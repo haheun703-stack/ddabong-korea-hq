@@ -1,0 +1,25 @@
+{
+  "provider": "Higgsfield",
+  "job_id": "2801ac11-5bf0-4433-81a2-2700fefed98b",
+  "job_set_type": "nano_banana_2",
+  "display_name": "Nano Banana Pro",
+  "status": "completed",
+  "created_at": "2026-09-14T11:30:48Z",
+  "params": {
+    "width": 2752,
+    "height": 1536,
+    "aspect_ratio": "16:9",
+    "resolution": "2k",
+    "batch_size": 1,
+    "input_images": [
+      {
+        "id": "0f2174d1-1bd9-4df3-81e4-c970c5ccf761",
+        "type": "image_job",
+        "source": "GEN_PA_EP01_S08_SH003_HIGGSFIELD_V01 (approved landing plate, D-040)"
+      }
+    ],
+    "prompt": "Photorealistic cinematic historical documentary. Natural physical proportions. Historically plausible reconstruction. Realistic materials. Natural lighting. No fantasy. No modern objects. No text. No logos. No excessive saturation. No glossy AI look. No malformed anatomy. No arbitrary architecture changes. [SILLA_EARLY_V01] Early Silla, Gyeongju royal capital, 5th to early 6th century. Elite burial construction context. Modest timber work spaces, no palace spectacle. Forbidden: Joseon dynasty hanbok; gat hats; Ming or Qing court robes; samurai armor; European medieval armor; fantasy armor; giant stone palace; Joseon-style tiled palace compound; Chinese imperial palace; pagoda skyline; torii gates; stone mausoleum / pyramid / Chinese-style tomb gateway; modern tools, excavators, cranes, wheeled modern carts; concrete, electric lights, plastic, modern roads; supernatural ghosts, glowing magic, fantasy crown; modern museum display cases. [LOC_CHEONMACHONG_V01] Cheonmachong under construction, Gyeongju: stone-mound wooden-chamber tomb. Wooden outer chamber 6.6 x 4.2 m, coffin inside, river stones piled above and around the chamber, earth mound finishing at about 47 m diameter and 12.7 m height. Layer order: coffin and grave-goods chest, wooden chamber, stones, earth. Do not invent stone-pile thickness, work duration, headcount or ritual order. [DDABONG_DOC_REENACTMENT_V01] DDABONG Documentary Reenactment (style B): realistic Korean facial proportions, natural skin texture with subtle imperfections, restrained expressions, historically researched clothing, natural documentary lighting, not glamorous, not glossy, not fantasy-drama, not generic Joseon hanbok. [CAMERA_EP01_S08_SH002_V01] lens 35mm, camera height 1.6 m, static, 5 s. SHOT: H07 (past side of the G10 match cut). Use the attached reference image as the exact compositional template: keep the same mound size, the same position in frame (crest left of centre at about x≈0.44, y≈0.31), the mound's base filling almost the whole frame width, and the same flat open ground line at about y≈0.62 - do not centre the mound, do not make it smaller, do not raise a hill line behind it. Change only the surfaces and the era: the mound is newly finished, freshly packed bare earth, smooth, brownish, no grass on it yet, with a smoothly rounded crown; the flat ground in front of it is early-summer green grass exactly as in the reference; far away on the horizon only low hills and green summer trees. Nothing man-made anywhere: no buildings, greenhouses, sheds, fences, poles, roads or paths at either edge of the frame. No people anywhere. Neutral overcast daylight with no strong shadows, matching the reference. Camera completely still, 35 mm, height 1.6 m, tilt 0°, the whole 16:9 frame edge to edge, no borders. Photorealistic historical documentary still, style B Documentary Reenactment, natural textures, not glossy, earthy natural colours. No text, no watermark, no logo."
+  },
+  "retrieved_at": "2026-09-14",
+  "note": "job_status raw_data. Result/CDN URLs omitted. params.prompt = text actually sent (identical to PRM_EP01_S08_SH002_V03.assembled_text). Attempt 2 of 2 (PATCH_EP01_S08_SH002_001)."
+}
