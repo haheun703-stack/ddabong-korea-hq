@@ -298,6 +298,43 @@
         "null"
       ],
       "description": "D-028 실제 생성 모델 ID (예: KLING_3_0, NANO_BANANA_PRO)"
+    },
+    "photo_ai": {
+      "type": [
+        "object",
+        "null"
+      ],
+      "description": "D-033 Pipeline A (PHOTO_AI_STANDARD v0.1). Present only for photo-based AI redesign shots (pipeline AI_STILL / FLOW_VEO). source_rights_ids must be GREEN + ACTIVE + modification_allowed.",
+      "additionalProperties": false,
+      "properties": {
+        "source_rights_ids": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "composition_ref_note": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "redesign_prompt_id": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "i2v_generation_id": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "required": [
+        "source_rights_ids"
+      ]
     }
   },
   "required": [

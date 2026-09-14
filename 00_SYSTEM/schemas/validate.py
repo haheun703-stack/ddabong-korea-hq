@@ -110,6 +110,26 @@ def ledger_rules(p, d, facts, rights, routers):
             errs.append(f"{rel}: AI shot without provider/model (D-028)")
     return errs
 
+def photo_ai_rules(p, d, rights, has):
+    """D-033 Pipeline A (PHOTO_AI_STANDARD v0.1 §4): photo-based AI redesign shots must cite GREEN/ACTIVE/modifiable source rights + AI label."""
+    errs, rel = [], p.relative_to(ROOT)
+    pa = d.get("photo_ai")
+    if not pa: return errs
+    if d["pipeline"] not in ("AI_STILL", "FLOW_VEO"):
+        errs.append(f"{rel}: photo_ai present but pipeline {d['pipeline']} is not AI_STILL/FLOW_VEO (D-033)")
+    if not pa.get("source_rights_ids") and not pa.get("composition_ref_note"):
+        errs.append(f"{rel}: photo_ai needs source_rights_ids (GREEN) or composition_ref_note (YELLOW numbers only)")
+    for r in pa.get("source_rights_ids", []):
+        rr = rights.get(r)
+        if not rr: errs.append(f"{rel}: photo_ai.source_rights_ids -> unknown rights '{r}'"); continue
+        if rr.get("status") != "GREEN": errs.append(f"{rel}: photo_ai source {r} is {rr.get('status')} - only GREEN may be an AI reference (D-033 #2)")
+        if rr.get("usage_tier") == "BACKUP_ONLY": errs.append(f"{rel}: photo_ai source {r} is BACKUP_ONLY (D-014)")
+        if rr.get("modification_allowed") is not True: errs.append(f"{rel}: photo_ai source {r} modification_allowed != true")
+    if not d.get("ai_label"): errs.append(f"{rel}: photo_ai shot without ai_label (present-day reconstruction must be labeled)")
+    if pa.get("redesign_prompt_id") and not has("prompt", pa["redesign_prompt_id"]):
+        errs.append(f"{rel}: photo_ai.redesign_prompt_id -> unknown prompt '{pa['redesign_prompt_id']}'")
+    return errs
+
 def forbidden_items(lock_id):
     """Items of a NEGATIVE lock, or the trailing 'Forbidden: a, b.' list of any other lock."""
     p = ROOT / "06_PROMPT_LIBRARY" / "locks" / f"{lock_id}.json"
@@ -248,6 +268,7 @@ def refcheck(paths):
             need(p, "costume", d.get("costumes"), "costumes"); need(p, "scene", d.get("scene_id"), "scene_id")
             need(p, "fact", d.get("fact_ids"), "fact_ids"); need(p, "rights", d.get("rights_ids"), "rights_ids")
             errs.extend(ledger_rules(p, d, facts, rights, routers))
+            errs.extend(photo_ai_rules(p, d, rights, has))
         if name == "scene":
             need(p, "shot", d.get("shot_ids"), "shot_ids")
             if d.get("master_frame"): need(p, "master_frame", d["master_frame"], "master_frame")
