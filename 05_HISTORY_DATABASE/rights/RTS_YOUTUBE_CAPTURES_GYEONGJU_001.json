@@ -1,0 +1,20 @@
+{
+  "rights_id": "RTS_YOUTUBE_CAPTURES_GYEONGJU_001",
+  "asset_id": "ASSET_YOUTUBE_CAPTURES_GYEONGJU_V01",
+  "source": "YouTube screenshots (MBN 뉴스 '천년고도 경주, 축제 분위기' · MeyGold '경주관광명소 TOP10' · MBC 나혼자산다/픽잇 등) — 사용자 캡처 21장, 로컬 `경주 사진 모음/` (git 제외)",
+  "creator": "각 방송사·채널 (MBN, MeyGold, MBC)",
+  "license": "All rights reserved (방송·채널 저작물, 캡처)",
+  "commercial_use": "NO",
+  "modification_allowed": "NO",
+  "attribution_required": "NO",
+  "attribution_text": "",
+  "expiration": null,
+  "proof": null,
+  "research_permission": "YES",
+  "media_reuse_permission": "NO",
+  "status": "RED",
+  "checked_at": "2026-09-14",
+  "checked_by": "Claude Code (사용자 캡처 폴더 확인)",
+  "notes": "RED: 자막·로고 제거해도 저작권 그대로. AI 참고 이미지로 첨부 금지 (D-033 #2), 화면 사용 금지. 허용 = D-034 #2 방식의 구도 연구만 — 카메라 각도·요소·시간대를 문장으로 옮겨 텍스트 전용 생성 (composition_ref_note). 대상: S01_SH001 거리 (그림1·17 황리단길), S08_SH001 몽타주, S02_SH001 항공 컷 후보 (그림10).",
+  "usage_tier": "BACKUP_ONLY"
+}

@@ -18,13 +18,17 @@
   "continuity_risk": "LOW",
   "expected_cost_range": {
     "currency": "CREDITS",
-    "min": null,
-    "max": null
+    "min": 2,
+    "max": 6
   },
-  "expected_attempts": 1,
-  "provider_candidates": [],
-  "human_decision": "ACCEPTED",
-  "override_note": null,
-  "decided_at": "2026-09-13",
-  "decided_by": "사용자 (D-024)"
+  "expected_attempts": 3,
+  "provider_candidates": [
+    "HIGGSFIELD / NANO_BANANA_2"
+  ],
+  "human_decision": "OVERRIDDEN",
+  "override_note": "D-038/D-041 (2026-09-14): 현장 촬영 제외 → AI_STILL 텍스트 전용 (D-034 #2, 구도 수치만; 참고 이미지 없음). 정지 뒤 I2V (Kling 3.0) 는 P-012 뒤 별도 승인.",
+  "decided_at": "2026-09-14",
+  "decided_by": "사용자 (D-038 · D-041)",
+  "selected_provider": "HIGGSFIELD",
+  "selected_model": "NANO_BANANA_2"
 }

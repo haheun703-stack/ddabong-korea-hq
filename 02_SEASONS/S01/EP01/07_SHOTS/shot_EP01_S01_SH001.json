@@ -11,7 +11,7 @@
   "spatial_accuracy": 30,
   "human_motion": 30,
   "visual_importance": 60,
-  "pipeline": "REAL_SHOOT",
+  "pipeline": "AI_STILL",
   "status": "ROUTED",
   "characters": [],
   "costumes": [],
@@ -19,18 +19,27 @@
   "master_frame": null,
   "must_keep": [],
   "camera_id": null,
-  "prompt_id": null,
+  "prompt_id": "PRM_PA_EP01_S01_SH001_V01",
   "router_decision_id": "RTR_EP01_S01_SH001_V01",
   "fact_ids": [
     "CLM_EP01_MODERN_012"
   ],
   "rights_ids": [],
-  "ai_label": null,
+  "ai_label": "AI Visual Reconstruction (present-day, photo-based)",
   "version_history": [],
   "approved_version": null,
   "created_at": "2026-09-11",
-  "updated_at": "2026-09-11",
-  "updated_by": "Visual Router (Claude Code)",
-  "notes": "TC 0:00–0:08 (러프컷 v1 기준, 내레이션 녹음 후 조정). field-shoot A1. 현장음 1초 먼저. 점수(camera_complexity 등)는 Continuity Engine 추정치 — P4 라우터에서 확정.",
-  "evidence_role": "CONTEXT"
+  "updated_at": "2026-09-14",
+  "updated_by": "Claude Code (D-041 text-only conversion)",
+  "notes": "TC 0:00–0:08 (러프컷 v1 기준, 내레이션 녹음 후 조정). field-shoot A1. 현장음 1초 먼저. 점수(camera_complexity 등)는 Continuity Engine 추정치 — P4 라우터에서 확정. D-038: 현장 촬영 제외. D-041 (2026-09-14): GREEN 원본 없음 → D-034 #2 텍스트 전용 생성 (캡처 구도 수치만). 정지 이미지 뒤 I2V 는 P-012 뒤.",
+  "evidence_role": "CONTEXT",
+  "logical_pipeline": "AI_STILL",
+  "provider": "HIGGSFIELD",
+  "model": "NANO_BANANA_2",
+  "photo_ai": {
+    "source_rights_ids": [],
+    "composition_ref_note": "YELLOW/RED 수치 전용 (D-034 #2): 구도는 유튜브 캡처 그림1·그림18 (RTS_YOUTUBE_CAPTURES_GYEONGJU_001, RED, 이미지 미첨부) 에서 문장으로만 옮김 — 황리단길 일방통행로, 소실점 x≈0.62 y≈0.42, 흰 승용차 x≈0.55 y≈0.62, 한옥 기와 양쪽, 쌍등 가로등 좌측, 맑은 하늘. 차·사람은 이 샷의 목적이라 negative 'vehicles'·'crowds' 는 이 샷에 한해 유보 (판독 가능한 간판·얼굴 금지 유지).",
+    "redesign_prompt_id": "PRM_PA_EP01_S01_SH001_V01",
+    "i2v_generation_id": null
+  }
 }
