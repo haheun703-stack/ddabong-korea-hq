@@ -1,0 +1,26 @@
+{
+  "patch_id": "PATCH_MP_ELITE_RECAST_001",
+  "shot_id": "MASTER_PACK:CHAR_SILLA_ELITE_OBSERVER_01:hero",
+  "from_version": "V05",
+  "to_version": "V06",
+  "fix_reason": "COSTUME",
+  "keep": [
+    "new face identity (V05)",
+    "age",
+    "eyebrow scar",
+    "salt-and-pepper temples",
+    "expression and head angle",
+    "framing",
+    "golden back-right rim light, haze, shallow DoF, grain",
+    "mound + scaffolding background"
+  ],
+  "change": [
+    "costume: single indigo hemp garment -> COSTUME_SILLA_ELITE_A01 as rendered in old hero V03 (grey-blue silk outer robe over ivory inner jacket, bronze plaque belt with pendants)",
+    "cap: flat cap -> tall conical birch-bark cap (V03 silhouette, needed for H05 back view consistency)"
+  ],
+  "reason": "Bot 200% QC of recast V05: face PASS, costume PARTIAL (one layer, no belt, cap silhouette changed). Patch instead of regenerate (VISUAL_STYLE_BIBLE v0.2 §5).",
+  "requested_by": "봇 (D-051 검수 3단 #2, 위임 2회차)",
+  "created_at": "2026-09-15",
+  "resulting_prompt_id": "PRM_MP_CHAR_SILLA_ELITE_OBSERVER_01_HERO_V06",
+  "resulting_generation_id": "GEN_MP_ELITE_HERO_RECAST_HIGGSFIELD_V06"
+}

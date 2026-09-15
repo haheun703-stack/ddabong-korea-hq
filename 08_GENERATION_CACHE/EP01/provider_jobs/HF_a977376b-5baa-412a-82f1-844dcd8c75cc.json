@@ -1,0 +1,28 @@
+{
+  "provider": "Higgsfield",
+  "job_id": "a977376b-5baa-412a-82f1-844dcd8c75cc",
+  "job_set_type": "nano_banana_2",
+  "display_name": "Nano Banana Pro",
+  "status": "completed",
+  "created_at": "2026-09-15T12:14:18Z",
+  "params": {
+    "model": "nano_banana_pro",
+    "aspect_ratio": "3:4",
+    "resolution": "2k",
+    "input_images": [
+      {
+        "job_id": "aff9066b-7f09-4e7b-a0b2-05379c768fc5",
+        "role": "image_references",
+        "note": "recast V05 = face"
+      },
+      {
+        "job_id": "5de27748-f100-47e0-af23-1bdb68466bb7",
+        "role": "image_references",
+        "note": "old hero V03 = costume"
+      }
+    ],
+    "prompt": "Edit using two reference images. FIRST reference (job aff9066b) = the new man: keep his face, age, skin texture, eyebrow scar, salt-and-pepper temples, expression, head angle, camera framing, golden back-right rim light, haze, shallow depth of field, film grain, and the mound-with-scaffolding background exactly as they are. SECOND reference (job 5de27748) = the costume source only, not the face: dress the new man in exactly that costume - the pale grey-blue silk outer robe with straight collar closing right over left, worn over the ivory hemp inner jacket whose sleeves show at the cuffs, the wide bronze plaque belt with small hanging pendants, and the tall conical birch-bark cap replacing his current flat cap. Same muted blue tones, never crimson or purple, no gold crown, no gold belt. Chest-up 3:4 portrait, the belt just visible at the bottom edge. Exactly ONE person, the new face. No text, no watermark, no logo."
+  },
+  "retrieved_at": "2026-09-15",
+  "note": "params.prompt = text actually sent (identical to PRM_..._HERO_V06.assembled_text). Cost 2 credits (1548.53 -> 1546.53). Output 1792x2400."
+}
