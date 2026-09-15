@@ -46,7 +46,7 @@
 | `SOUND_STANDARD.md` | §16 §17 | DRAFT v0.1 |
 | `SOURCE_STANDARD.md` | §10 · 아스트라 §5 근거 묶음 | DRAFT v0.1 |
 | `THUMBNAIL_STANDARD.md` | §14 | DRAFT v0.1 |
-| `VISUAL_STYLE_BIBLE.md` | §5 §8 §20 | DRAFT v0.1 |
+| `VISUAL_STYLE_BIBLE.md` | §5 §8 §20 · D-051 | DRAFT v0.2 |
 | `STORY_ENGINE_STANDARD.md` | concept-bible 6단계 + D-033 (② 추가) | **ACTIVE v0.1** (D-035 #8, 2026-09-14) |
 | `PHOTO_AI_STANDARD.md` | D-033 파이프라인 A · `tools/photo_search.py` · `06_PROMPT_LIBRARY/templates/PHOTO_AI_REDESIGN_V01.md` | **ACTIVE v0.1** (D-035 #8, 2026-09-14) |
 | `DIAGRAM_TEMPLATES.md` | D-033 파이프라인 B (GT-01~04) | **ACTIVE v0.1** (D-035 #8, 2026-09-14) |

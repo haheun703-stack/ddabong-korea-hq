@@ -1,28 +1,81 @@
 # VISUAL_STYLE_BIBLE — 시각 스타일 기준
 
-> 문서 버전 **v0.1 DRAFT** (2026-09-11, Claude Code) · 출처: `BOT_HANDOFF_DDABONG_STUDIO_OS_V0.1.md` §5 §8 §20
-> **승인 전까지 정본 §5 §8 §20 이 우선한다.** 승인되면 `standard_version` 을 ACTIVE 로 올리고 `DECISIONS.md` 에 D-번호를 남긴다 (P-004).
-> 관련 스키마: `prompt`, `character`
+> 문서 버전 **v0.2 DRAFT** (2026-09-15, Claude Code · D-051) · v0.1 출처: `BOT_HANDOFF_DDABONG_STUDIO_OS_V0.1.md` §5 §8 §20 · v0.2 근거: `09_ANALYTICS/benchmarks/VISUAL_FORMAT_RESEARCH_20260915.md` (D-050) · `REVIEW_PROMPT_PACK_AISTRA_20260915.md`
+> v0.2 는 D-051 로 개정됨. D-047 문서 동결의 예외 (D-050 산출 → BIBLE 개정 → 제작 재개).
+> 관련 스키마: `prompt`, `character`, `shot`
 
 ---
 
-## 본편 스타일 LOCK (D-004)
-**B — Documentary Reenactment** (`DDABONG_DOC_REENACTMENT_V01`)
-- 사실적인 한국인 얼굴 비율 · 자연스러운 피부 질감 · 미세한 결점과 생활감 · 절제된 표정 · 고증된 복식 · 자연 다큐 조명
-- 아님: 과도한 화려함 · 번들거리는 AI 모델 피부 · 판타지 사극 스타일링 · 모든 한국사에 조선 한복
+## 0. 한 줄 정의 (D-051)
 
-## 예외
-- Hero shot(포스터·썸네일·오프닝)만 A Cinematic Photoreal 로 기울 수 있다. 본편은 B.
-- C Semi-Realistic 3D = previz/참고. D Stylized = 기본 아님.
+**"미스터 션샤인" 실사 영화 룩의 정지 다큐.** 얼굴은 현대 미감, 복식·소품·건축은 고증, 배경은 실제 사진, 인물은 움직이지 않는다. 움직이는 것은 카메라·지도·라벨·먼지·빛뿐이다.
 
-## 전역 프롬프트 베이스 (`DDABONG_GLOBAL_V01`)
-> Photorealistic cinematic historical documentary. Natural physical proportions. Historically plausible reconstruction. Realistic materials. Natural lighting. No fantasy. No modern objects. No text. No logos. No excessive saturation. No glossy AI look. No malformed anatomy. No arbitrary architecture changes.
+## 1. 본편 스타일 LOCK (D-004 → D-051 개정)
 
-## 금지
-새 컷마다 새 스타일 · 10분 연속 AI 푸티지 · 모든 컷 text-to-video.
+**B2 — Sageuk Cinematic Reenactment** (`DDABONG_SAGEUK_CINEMATIC_V02`) — v0.1 의 B `DDABONG_DOC_REENACTMENT_V01` 을 대체한다. 기존 V01 lock 은 보존(승인 자산 기록용), 새 생성은 V02.
+
+| 항목 | 규정 |
+|---|---|
+| 얼굴 | **현대 한국 배우 미감** (사극 캐스팅 기준). 실존 인물 초상 금지. 인물마다 나이·골격·피부결·흉터·치아를 다르게 잠가 "같은 얼굴" 방지. 미인형은 편당 1–2명, 나머지는 생활감 있는 얼굴 |
+| 피부 | 모공·잔주름·햇볕 자국이 보이는 실사 질감. 번들거림·밀랍·플라스틱 금지 |
+| 복식·머리·장신구·도구 | **FACT/PROBABLE 고증** (`05_HISTORY_DATABASE`). 얼굴 정책과 무관하게 조선 한복·판타지 금지 유지 |
+| 낮 조명 | 골든 키라이트(낮은 태양, 카메라 측면 45°), 소프트 헤이즈, 얇은 림라이트, 얕은 심도, 필름 그레인 |
+| 밤 조명 | 호박색 횃불·등불 키 + 청색 그늘 필. 흑백 대비 아니라 색 대비 |
+| 색 | 의복·흙·금속의 채도는 깊게, 하늘·피부는 자연. 애니·일러스트 룩 아님. 과포화 금지 |
+| 프레이밍 | 인물은 원경·중경 우선, 정면 클로즈업은 편당 ≤3컷·컷당 ≤4초. 실루엣·역광·부분 프레이밍(손·도구·천) 적극 사용 |
+| 동작 | **인물 정지** (D-050). AI 영상은 사람 없는 모션(먼지·천·물·빛·안개) ≤3초, 1080p 미만 |
+
+## 2. 사진 우선 원칙 (D-051 #3)
+
+- 현재 시점 풍경·유물·건축(봉분·다보탑·거리·자동차)은 **실제 사진 플레이트**만 쓴다. 생성하지 않는다.
+- 허용 원본: **공공누리 1유형 · CC0 · KOGL 1유형**만. 보정·크롭·합성·그레이드 허용. 그 외 라이선스는 참고 전용(RED). 권리 기록은 `rights` 인스턴스 필수.
+- 과거 재연 = 생성 인물 + (가능하면) 실제 지형 플레이트 합성. 합성 시 광원 방향·높이·색온도를 플레이트에 맞춘다.
+- 자료 컷(발굴 사진·유물)에도 §1 그레이드를 편집에서 입혀 한 편의 룩을 통일한다.
+
+## 3. 샷 그래머 (D-050 §4, 7분 기준)
+
+| 코드 | 유형 | 비율 | 컷 길이 | 움직임 |
+|---|---|---|---|---|
+| A | 스틸 + 2.5D 패럴랙스/켄번즈 | 55% | 4–6 s | 줌 ≤5%/5 s, 깊이 2–3층 |
+| B | 3D 도해·지도 (Blender GT-01~04) | 15% | 6–12 s | 오빗 + 라벨 |
+| C | 아카이브·유물 사진 | 12% | 5–8 s | 느린 팬 3–5% |
+| D | AI 영상 — 사람 없는 모션 | 8% | ≤3 s | 먼지·천·물·빛 |
+| E | 라벨·타이틀·매치컷·검정 | 10% | 1–4 s | 텍스트 |
+
+편집 모션은 **4배 업스케일 후 zoompan** 또는 DepthFlow(실수 좌표). 이동량 ≤3%/5 s, 이징 필수. 정수 픽셀 zoompan 금지 (지터 0.19 px 실측).
+
+## 4. 연속성 락 (AISTRA 페이블판 4종을 다큐로 번역)
+
+1. **이동 벡터**: 지도·부대·행렬·카메라 트래킹은 한 시퀀스 안에서 항상 **좌→우**. 뒤집지 않는다.
+2. **광원 방향**: 한 장소의 모든 컷은 태양(또는 횃불) 방향이 같다. 플레이트가 정하고 생성이 따른다.
+3. **시각 시계**: 시퀀스마다 진행을 보여주는 하나의 물리량을 둔다 (S06 봉분 축조 = 봉분 높이 / 장례 = 횃불 수 / 발굴 = 흙 깊이).
+4. **dead-air 금지**: 6초 넘는 컷은 내레이션·라벨·시계 중 하나가 반드시 변한다.
+5. **앵글 중복 금지**: 연속 두 컷은 사이즈나 축이 달라야 한다. 카메라는 〈렌즈·앵글/구도·무브·광학〉 4요소로 적는다 (`CAMERA_GRAMMAR.md`).
+
+## 5. 검수 3단 (D-049 · D-051)
+
+1. 봇: 정지 컷은 200% 줌 4분할(얼굴·손·직선·글자), 영상은 0.5 s 간격 12프레임 시트 + 프레임간 이동 측정. "AI 티" 체크리스트: 뭉개진 얼굴·손가락·직선 끓음·그림자 방향·의상 플리커·글자.
+2. 부분 결함은 재생성이 아니라 **패치(인페인트)**. 재생성은 구도 자체가 틀렸을 때만.
+3. 사용자 최종 OK/FIX. 봇 PASS 는 사용자 OK 를 대신하지 못한다.
+
+## 6. 전역 프롬프트 베이스
+
+- 과거 재연: `DDABONG_GLOBAL_V01` + `DDABONG_SAGEUK_CINEMATIC_V02` + `DDABONG_NEGATIVE_V02`
+- 현재 시점: `DDABONG_GLOBAL_PRESENT_V01` + `DDABONG_NEGATIVE_PRESENT_V01` (플레이트 우선, 생성은 보정·합성만)
+- 화면 안 글자 0. YouTube AI 공시 ON + 화면 내 "AI reconstruction" 라벨 상시 (D-051 #5).
+
+## 7. 예외
+
+- Hero shot(포스터·썸네일·오프닝)만 A Cinematic Photoreal 로 더 기울 수 있다.
+- C Semi-Realistic 3D = previz/도해. D Stylized = 기본 아님 (회화풍 인물 A/B 는 EP02 이후 실험).
+
+## 8. 금지
+
+새 컷마다 새 스타일 · 6초 넘는 AI 영상 · 사람이 움직이는 AI 영상 · 모든 컷 text-to-video · 생성 배경으로 실제 장소 대체 · 화면 내 글자.
 
 ---
 
 ## 미결 (사용자 결정 필요)
 
-- 없음
+- 회화·일러스트풍 인물(EP02 A/B) 시험 여부.
+- 마스터팩 재캐스팅 범위: 원로 1인 시험 후 노동자·시종까지 확대할지.

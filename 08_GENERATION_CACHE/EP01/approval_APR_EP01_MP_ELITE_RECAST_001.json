@@ -1,0 +1,21 @@
+{
+  "approval_id": "APR_EP01_MP_ELITE_RECAST_001",
+  "kind": "PAID_GENERATION",
+  "target_id": "CHAR_SILLA_ELITE_OBSERVER_01",
+  "money_gate_presented": {
+    "shot_id": "MASTER_PACK:CHAR_SILLA_ELITE_OBSERVER_01:hero (recast)",
+    "prompt_ids": [
+      "PRM_MP_CHAR_SILLA_ELITE_OBSERVER_01_HERO_V05"
+    ],
+    "provider_model": "Higgsfield / Nano Banana Pro (nano_banana_pro), 3:4, 2k, no reference image (new face)",
+    "expected_attempts": 2,
+    "estimated_cost_range": "2-8 credits (up to 2 attempts, D-051 test #1 of 3)",
+    "continuity_risk": "NONE for existing assets (old cast V03 stays); HIGH for the goal — must read as a modern-cast actor with distinct features, not 'AI beauty'"
+  },
+  "decision": "APPROVE",
+  "fix_reason": null,
+  "delegated": true,
+  "decided_by": "봇 (D-051 사용자 '시작하자' — EP01 재작업 예산 ≈100 credits 안, 위임 40/배치)",
+  "decided_at": "2026-09-15T13:30:00Z",
+  "note": "D-051 첫 시험: 원로 얼굴 재캐스팅 1장. 사용자 OK 면 정면·3/4·측면·전신 재생성으로 확대. FIX 면 얼굴 lock V02 수정 후 1회 재시도, 그래도 안 되면 보고."
+}

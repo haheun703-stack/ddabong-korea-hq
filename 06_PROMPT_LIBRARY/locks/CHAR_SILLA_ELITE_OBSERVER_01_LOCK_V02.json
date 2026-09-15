@@ -1,0 +1,8 @@
+{
+  "lock_id": "CHAR_SILLA_ELITE_OBSERVER_01_LOCK_V02",
+  "kind": "CHARACTER",
+  "text": "CHAR_SILLA_ELITE_OBSERVER_01 (Senior elite observer, recast D-051): senior member of the elite watching mound construction and funeral preparation from a distance; not the deceased, not a king. Face (LOCKED, distinct): Korean man in his early 50s cast like a veteran Korean drama actor - long oval face, high flat cheekbones, deep-set narrow dark eyes with heavy upper lids and crow's-feet, straight nose with a slightly wide bridge, thin firm mouth with a faint downward set, a short old scar through the left eyebrow, weathered olive skin with visible pores and sun lines on the forehead, salt-and-pepper temples. Not a portrait of any real person. Expression: restrained, watchful, tired authority. Body: lean, upright still posture, 172 cm. Hair: tied up under the period headwear of COSTUME_SILLA_ELITE_A01. Skin: real texture, no gloss. Costume lock: COSTUME_SILLA_ELITE_A01_LOCK.",
+  "source": "05_HISTORY_DATABASE/characters/CHAR_SILLA_ELITE_OBSERVER_01.json · D-051 face policy (modern casting, distinct features)",
+  "status": "DRAFT",
+  "updated_at": "2026-09-15"
+}

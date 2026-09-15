@@ -1,7 +1,7 @@
 # CURRENT STATUS — 지금 어디까지 왔나
 
 > **매 작업마다 갱신한다.** 이 파일 하나만 읽으면 어느 봇/AI 창을 열어도 바로 이어갈 수 있어야 한다.
-> 갱신: 2026-09-15 밤 (Claude Code, D-050 시각 형식 리서치 보고) · 마지막 사용자 승인: 2026-09-15 (D-046 페르소나·콜드오픈·CTA·주기)
+> 갱신: 2026-09-15 밤 (Claude Code, D-051 시각 형식 확정 · 재캐스팅 시험 시작) · 마지막 사용자 승인: 2026-09-15 (D-046 페르소나·콜드오픈·CTA·주기)
 > 읽는 순서: `BOT_HANDOFF_DDABONG_STUDIO_OS_V0.1.md` → `BOT_BOOTSTRAP_PROMPT.md` → **이 문서** → `OS_INDEX.md` → `02_SEASONS/S01/EP01/episode.json`
 
 ---
@@ -9,6 +9,8 @@
 ## 다음 시작 — "따봉 계속" 하면 여기부터 (갱신 2026-09-15 밤)
 
 **속도 모드 (D-047)**: 문서 동결 · 영상 예산 150 credits · 위임 40/배치 · 결정은 아침 1회 묶음.
+
+**09-15 밤 추가 3 — D-051 확정 · 제작 재개**: 사용자 결정 = "미스터 션샤인" 실사 영화 룩 · 얼굴 현대 미감(복식 고증) · 사진 우선(공공누리 1유형·CC0 플레이트) · 검수 3단 · 목표 "AI 90~95% 퀄리티" · 주 1편(첫 2편은 2주) · EP01 재작업 ≈100 credits. 산출: `00_SYSTEM/standards/VISUAL_STYLE_BIBLE.md` v0.2 · locks `DDABONG_SAGEUK_CINEMATIC_V02` `DDABONG_NEGATIVE_V02` `CHAR_SILLA_ELITE_OBSERVER_01_LOCK_V02` (`06_PROMPT_LIBRARY/locks/`) · AISTRA 스킬 4개 `.claude/skills/` (README `_DDABONG_README.md`). **시험 3개**: ① 원로 얼굴 재캐스팅 1장 (`11_AI_STILLS/prompt_…HERO_V05`, approval `APR_EP01_MP_ELITE_RECAST_001`) → ② 인물+실제 플레이트 합성 1컷 → ③ 러프컷 1분. 하나라도 실패 시 보고.
 
 **09-15 밤 추가 2 — D-050 제작 중단 · 시각 형식 리서치 완료**: 사용자 "흔들림 + 실사 아닌 어떤 형태로 보여줄지 리서치·벤치마크 보고하라". 유료 영상 생성 0 (리서치 보고 → 사용자 결정 → VISUAL_STYLE_BIBLE 개정 → 재개). **보고서 `09_ANALYTICS/benchmarks/VISUAL_FORMAT_RESEARCH_20260915.md`** (17채널 서베이 · AI 수용 조건 · 샷 그래머 A55/B15/C12/D8/E10 · 기각 4클립 판정 · 벤치마크 3편 · 흔들림 실측). 흔들림 원인 = zoompan 정수 픽셀 지터 (0.19 px) → 4배 업스케일로 0.04 px 확인 (`AI_VIDEO/H05_EDITMOTION_pushin_720p_v2.mp4`). **다음 = 사용자 결정 §7 (시각 시스템·인물 형식·4클립·벤치마크 분석·AI 고지·BIBLE 개정) → D-051.**
 

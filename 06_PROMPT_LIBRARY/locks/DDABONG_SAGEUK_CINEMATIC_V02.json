@@ -1,0 +1,8 @@
+{
+  "lock_id": "DDABONG_SAGEUK_CINEMATIC_V02",
+  "kind": "STYLE",
+  "text": "DDABONG Sageuk Cinematic Reenactment (style B2, D-051): photoreal Korean period-drama film look. Faces cast like contemporary Korean drama actors - attractive, natural, distinct from one another, never a portrait of a real person; real skin texture with visible pores, fine lines and sun marks, no gloss, no wax, no plastic. Clothing, hair, ornaments and tools strictly historically researched (early Silla), never Joseon hanbok, never fantasy. Lighting: low golden key light from a 45-degree side, soft atmospheric haze, thin warm rim light on hair and shoulders, shallow depth of field, fine film grain; night scenes lit by amber torch or lamp light against cool blue shadow. Colour: deep saturated fabrics, earth and metal, natural sky and skin, not over-saturated, not anime, not illustration. Figures still and composed; wide and medium framing preferred, faces often in profile, silhouette or backlight.",
+  "source": "VISUAL_STYLE_BIBLE.md v0.2 §1 · D-051 (replaces DDABONG_DOC_REENACTMENT_V01 for new generation)",
+  "status": "APPROVED",
+  "updated_at": "2026-09-15"
+}
