@@ -1,0 +1,42 @@
+{
+  "generation_id": "GEN_MP_ELITE_HERO_RECAST_HIGGSFIELD_V05",
+  "shot_id": "MASTER_PACK:CHAR_SILLA_ELITE_OBSERVER_01:hero",
+  "stage": "STILL",
+  "provider": "Higgsfield",
+  "model": "NANO_BANANA_PRO (catalog nano_banana_pro, 3:4, 2k, no reference — new face, D-051 recast test #1)",
+  "provider_job": {
+    "job_id": "aff9066b-7f09-4e7b-a0b2-05379c768fc5",
+    "job_set_type": "nano_banana_2",
+    "display_name": "Nano Banana Pro",
+    "params_path": "08_GENERATION_CACHE/EP01/provider_jobs/HF_aff9066b-7f09-4e7b-a0b2-05379c768fc5.json"
+  },
+  "prompt_id": "PRM_MP_CHAR_SILLA_ELITE_OBSERVER_01_HERO_V05",
+  "prompt_version": "V05",
+  "standard_versions": {
+    "VISUAL_STYLE_BIBLE.md": "v0.2",
+    "CHARACTER_CONTINUITY_STANDARD.md": "v0.1",
+    "COST_STANDARD.md": "v0.1"
+  },
+  "case_ids_used": [],
+  "approval_id": "APR_EP01_MP_ELITE_RECAST_001",
+  "input_paths": [],
+  "output_paths": [
+    "08_GENERATION_CACHE/EP01/MP_ELITE/MP_ELITE_HERO_RECAST_V05_aff9066b.png",
+    "08_GENERATION_CACHE/EP01/MP_ELITE/QC_HERO_RECAST_V05_200pct.jpg",
+    "08_GENERATION_CACHE/EP01/MP_ELITE/COMPARE_HERO_V03_vs_RECAST_V05.jpg"
+  ],
+  "attempts": 1,
+  "duration_sec": null,
+  "cost": {
+    "currency": "CREDITS",
+    "amount": 2.0,
+    "spent": 2.0,
+    "note": "balance 1550.53 -> 1548.53"
+  },
+  "result_status": "SUCCESS",
+  "failure_id": null,
+  "started_at": "2026-09-15T12:11:28Z",
+  "finished_at": null,
+  "run_by": "Claude Code (D-051 recast test #1)",
+  "notes": "Bot 200% QC: face PASS (distinct veteran-actor face, real pores, crow's-feet, eyebrow scar, salt-and-pepper temples, no wax/gloss, no same-face look); lighting PASS (golden rim from back-right, haze, shallow DoF, grain); background PASS (mound + scaffolding, no tiled roofs, no text). Costume PARTIAL: only one plain indigo hemp-like garment visible — lock asks silk outer robe over inner jacket (two layers); belt not in frame (chest-up). Verdict PASS-soft for the FACE TEST; costume layering to fix in the full-body/front recast. Old cast V03 kept as record. Owner OK/FIX pending."
+}
