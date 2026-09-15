@@ -6,25 +6,24 @@
 
 ---
 
-## 다음 시작 — "따봉 계속" 하면 여기부터 (갱신 2026-09-15 오후)
+## 다음 시작 — "따봉 계속" 하면 여기부터 (갱신 2026-09-15 밤)
 
-**D-047 속도 모드**: 문서 동결 · EP01 영상 예산 150 credits (P-012 종결) · 위임 배치당 40 credits/재시도 2 · I2V 핵심 4컷 (H05 · H01 · S01_SH001 · S08 M1) + 나머지 정지 · 도해 G04 만 · 내레이션 초안 = Higgsfield TTS. 2주 목표 = EP01 게시.
-**I2V 배치 1 완료 (09-15 저녁)**: H05 · H01 · S01_SH001 · S08 M1 4컷 SUCCESS (Kling 3.0 pro, 36 credits) → `08_GENERATION_CACHE/EP01/AI_VIDEO/`, 봇 PASS 4 (minor 2). 내레이션 샘플 3 (Grady·Arthur·Holden, 8.1 credits) → `EP01/13_AUDIO/narration_samples/`. 검수 시트 `AI_VIDEO/REVIEW_I2V_BATCH1_20260915.md`. **사용자: 4컷 OK/FIX + 보이스 1개 선택 대기.** EP01 누적 142.22 credits, 잔액 1600.48.
+**속도 모드 (D-047)**: 문서 동결 · 영상 예산 150 credits · 위임 40/배치 · 결정은 아침 1회 묶음.
 
+**09-15 끝난 자리**
+- **I2V 4컷 VIDEO_APPROVED (D-048)** → `08_GENERATION_CACHE/EP01/AI_VIDEO/` (H05 · H01 · S01_SH001 · S08_M1, Kling 3.0 pro 6 s). 편집 메모: S01_SH001 은 5초 컷.
+- **내레이션 초안 완료** (Grady, 9섹션, 6:02) → `02_SEASONS/S01/EP01/13_AUDIO/narration/NARR_EP01_S0~S8_Grady_*.wav`. 최종 보이스 재검토는 게시 전.
+- D-046 마케팅 7역할 적용 (채널 기준서·표준 6·EP01 제목 5안·게시 메타 초안).
+- EP01 누적 **173.42 credits** (영상 예산 150 중 75.3 사용), 잔액 1,569.28. 위임 누적 39.3/150.
 
-**2026-09-15 한 것 (D-046)**: `AI 비서/` 자료집(AI 마케팅팀 7명) 적용 — 채널 기준서 `01_CHANNEL/channel.json` (페르소나 a 주) · 표준 6 신설 (`AUDIENCE` `TITLE` `EXPERIMENT` `BENCHMARK` `SHORTS` `COMMUNITY`, DRAFT) · `PUBLISH` v0.2 (설명란 템플릿·CTA) · `BRAND_INTRO` v0.2 (콜드오픈 뒤) · EP01 게시 산출물: `04_TITLE_THUMB/TITLE_CANDIDATES_EP01.md` (5안) · `THUMB_TEXT_EP01.md` (3안) · `16_PUBLISH/PUBLISH_META_EP01.md` · `14_EDIT/COLD_OPEN_ORDER_EP01.md` · `17_SHORTS/SHORTS_PLAN_EP01.md` · `01_CHANNEL/CALENDAR_2026Q4.md` · `QUESTION_BANK.md`. Community Agent 추가. 판매(2·6·7) 는 P-013 보류. **사용자 결정 대기: EP01 제목 실험 2안 · 썸네일 문구 · 유튜브 채널 핸들.**
+**내일 아침 결정 묶음 (한 번에)**
+1. EP01 제목 실험 2안 — 봇 권장 A = T1 "Why Are Giant Tombs Everywhere in This Korean City?" · B = T4 "Inside a 47-Meter Tomb: What Korea Buried With Its Dead" (`04_TITLE_THUMB/TITLE_CANDIDATES_EP01.md`)
+2. 썸네일 문구 — 없음 / WHAT'S INSIDE? / 47 M (`THUMB_TEXT_EP01.md`)
+3. 썸네일 히어로샷 생성 승인 (1–2회, Nano Banana Pro, ≤ 4 credits)
+4. 러프컷 v2 편집을 누가 하나 — 사용자(Premiere) vs 봇이 ffmpeg 로 가편집(정지+영상+내레이션 타임라인 초안) 만들어 드림
+5. 유튜브 채널 핸들·Studio 접근 (게시 메타 마무리용)
 
-**09-14 끝난 자리**: EP01 AI 정지 컷 전부 승인 (파이프라인 A 13 + H06 + H07). 현장 촬영은 **안 함** (D-038). 커밋 `p1-continuity` 최신, 검증 381/381. EP01 누적 98.12 credits, Higgsfield 잔액 1,644.58 (Plus). 위임 한도 2/20.
-
-**승인된 그림 위치**: `08_GENERATION_CACHE/EP01/AI_STILL/` — `PA_*.png` 13장 (현재 시점) · `H06_V03_*.png` · `H07_V02_2801ac11.png`. 검수 시트 `REVIEW_PA_BATCH1_20260914.md` · `REVIEW_PA_BATCH2_20260914.md`.
-
-**내일 할 일 후보 (사용자가 고름)**
-1. **P-012 실제 청구액** (Higgsfield 계정 → 월 요금·월 크레딧) 을 알려주면 → 영상 승인 가능. 그 다음: I2V (Kling 3.0) 로 움직임 컷 (S01_SH001 거리 · S08_SH001 M1–M3 · S01_SH002 리빌) + 영상 H01–H05 (Master Frame S04·S06 기반).
-2. GT-01~04 Blender 도해 템플릿 (파이프라인 B, 무료).
-3. 텍스트 전용 GLOBAL lock 변형 `DDABONG_GLOBAL_PRESENT_TEXT_V01` (무료, 승인 필요) — 배치 2 프롬프트에 "reference photograph" 문구가 그대로 들어간 문제.
-4. main 병합 검수 게이트 — Codex 교차 검수 (D-025) 시점.
-
-**봇 규칙 상기**: 현장 촬영 제안 금지 (D-038) · 파일 언급 시 폴더 경로 항상 (사용자 요구) · 유료는 승인 뒤 · Sent Prompt Rule · 검증 통과 시 자동 push (D-025). H: 드라이브가 어제 fsync 오류 1회 → `.git/config` 에 `core.fsyncObjectFiles=false` 설정됨, D: 백업 클론 유지.
+**봇이 아침에 바로 할 수 있는 것 (무료)**: ffmpeg 가편집 초안 (사용자가 4 를 "봇" 으로 답하면) · G04 단면 도해 사양서 · 쇼츠 3개 컷 목록 확정.
 
 ---
 
@@ -195,6 +194,8 @@
 ---
 
 ## 최근 변경 (최신순)
+
+- **2026-09-15 밤 Claude Code** — **D-048** I2V 4컷 OK · 보이스 Grady → 내레이션 전체 초안 9섹션 (31.2 credits, 6:02). EP01 173.42 credits. 내일 아침 결정 묶음 5개 준비.
 
 - **2026-09-15 저녁 Claude Code** — I2V 배치 1 (4컷, 36 credits) + 내레이션 샘플 3 (8.1 credits) 생성, 봇 PASS. 검증기 13_AUDIO 프롬프트 포함. 사용자 OK/FIX·보이스 선택 대기.
 
