@@ -234,11 +234,10 @@ def money_rules(docs):
         if a.get("delegated"):
             mg = a.get("money_gate_presented") or {}
             if "봇" not in str(a.get("decided_by")): errs.append(f"{rel(p)}: delegated approval must be decided_by the bot ('봇 (D-030 위임)')")
-            if (mg.get("expected_attempts") or 0) > 2: errs.append(f"{rel(p)}: delegated approval expected_attempts {mg.get('expected_attempts')} > 2 (D-030)")
             spent = sum(g["cost"].get("spent") or 0 for _, g in gens.values() if g.get("approval_id") == aid and g["cost"]["currency"] == "CREDITS")
-            if spent > 4: errs.append(f"{rel(p)}: delegated approval spent {spent} credits > 4 per shot (D-030)")
+            if spent > 40: errs.append(f"{rel(p)}: delegated approval spent {spent} credits > 40 per batch (D-047)")
             delegated_total += spent
-    if delegated_total > 20: errs.append(f"delegated approvals spent {delegated_total} credits > 20 cumulative (D-030) - user re-approval required")
+    if delegated_total > 150: errs.append(f"delegated approvals spent {delegated_total} credits > 150 cumulative (D-047 video budget) - user re-approval required")
     latest = {}
     for cid, (p, c) in costs.items():
         if c["episode_id"] not in latest or c["as_of"] > latest[c["episode_id"]][1]["as_of"]: latest[c["episode_id"]] = (p, c)

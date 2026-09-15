@@ -1,0 +1,42 @@
+{
+  "prompt_id": "PRM_EP01_S08_SH001_M1_I2V_V01",
+  "shot_id": "EP01_S08_SH001",
+  "target": "VIDEO",
+  "locks": {
+    "global": "DDABONG_GLOBAL_PRESENT_V01",
+    "era": "NONE",
+    "location": "NONE",
+    "character_costume": [],
+    "style": "DDABONG_DOC_REENACTMENT_V01",
+    "camera": null
+  },
+  "shot_delta": "S08_SH001 montage cut 1 I2V (I2V_MOTION landscape): start image = approved still GEN_PA_EP01_S08_SH001_M1_HIGGSFIELD_V01 (job d3d1f230); locked-off camera, visitors walk away; 6 s (M2/M3 stay stills with edit motion, D-047)",
+  "negative": [
+    "text",
+    "watermark",
+    "logo",
+    "signage",
+    "lens flare",
+    "HDR look",
+    "oversaturation",
+    "glossy AI look",
+    "malformed anatomy",
+    "identifiable faces",
+    "invented buildings not in the reference",
+    "altered landform or mound proportions",
+    "fantasy elements",
+    "historical costume figures",
+    "vehicles",
+    "crowds",
+    "drone or aerial perspective unless in the reference"
+  ],
+  "assembled_text": "Photorealistic present-day documentary still, reconstructed from a licensed reference photograph. Keep the real landform, silhouette and proportions of the reference; change only season, light, weather and clutter as instructed. Natural lighting, neutral grade, realistic materials. Present-day surroundings (paths, trees, distant town) allowed only as they exist in the reference. No fantasy. No invented buildings. No text. No logos. No oversaturation. No glossy AI look. No malformed anatomy. Video from the start image, 6 seconds, silent. Camera locked off on a tripod, no movement, no zoom, no cut. Natural motion only: the visitors walk slowly away along the gravel path, seen from behind, faces never turned to the camera; the two light umbrellas sway gently; leaves move slightly in a light breeze; clouds drift very slowly. The mounds, benches, trees and path stay exactly as in the start image; nothing new is added, nobody new enters. No text, no captions, no watermark, no logo. Nobody looks at the camera, nobody speaks.",
+  "reference_images": [
+    "generation:GEN_PA_EP01_S08_SH001_M1_HIGGSFIELD_V01"
+  ],
+  "version": "V01",
+  "parent_prompt_id": null,
+  "patch_id": null,
+  "created_at": "2026-09-15",
+  "created_by": "Claude Code (D-047 I2V batch 1; saved before sending - Sent Prompt Rule)"
+}

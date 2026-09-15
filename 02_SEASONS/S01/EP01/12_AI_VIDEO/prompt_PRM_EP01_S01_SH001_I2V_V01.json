@@ -1,0 +1,42 @@
+{
+  "prompt_id": "PRM_EP01_S01_SH001_I2V_V01",
+  "shot_id": "EP01_S01_SH001",
+  "target": "VIDEO",
+  "locks": {
+    "global": "DDABONG_GLOBAL_PRESENT_V01",
+    "era": "NONE",
+    "location": "NONE",
+    "character_costume": [],
+    "style": "DDABONG_DOC_REENACTMENT_V01",
+    "camera": null
+  },
+  "shot_delta": "S01_SH001 I2V (I2V_MOTION landscape, D-035 #3): start image = approved still GEN_PA_EP01_S01_SH001_HIGGSFIELD_V01 (job 866883a5); slow forward dolly, car passes, pedestrians walk; 6 s clip inside the 8 s shot (hold on last frame or Ken Burns for the rest)",
+  "negative": [
+    "text",
+    "watermark",
+    "logo",
+    "signage",
+    "lens flare",
+    "HDR look",
+    "oversaturation",
+    "glossy AI look",
+    "malformed anatomy",
+    "identifiable faces",
+    "invented buildings not in the reference",
+    "altered landform or mound proportions",
+    "fantasy elements",
+    "historical costume figures",
+    "vehicles",
+    "crowds",
+    "drone or aerial perspective unless in the reference"
+  ],
+  "assembled_text": "Photorealistic present-day documentary still, reconstructed from a licensed reference photograph. Keep the real landform, silhouette and proportions of the reference; change only season, light, weather and clutter as instructed. Natural lighting, neutral grade, realistic materials. Present-day surroundings (paths, trees, distant town) allowed only as they exist in the reference. No fantasy. No invented buildings. No text. No logos. No oversaturation. No glossy AI look. No malformed anatomy. Video from the start image, 6 seconds, silent. Slow steady forward dolly down the street at walking pace, about three metres in six seconds, same height 1.6 m, no zoom, no tilt, no cut. Natural motion only: the white sedan drives slowly toward the camera and passes on the right; the pedestrians walk on, seen from behind or in profile, faces never turned to the camera; awnings and planters stay still; light stays constant, clear sunny day. Keep everything in the start image unchanged: the same street, hanok roofs, lamps, colours and layout; nothing new is added. No readable text or signs appear, no text, no captions, no watermark, no logo. Nobody looks at the camera, nobody speaks.",
+  "reference_images": [
+    "generation:GEN_PA_EP01_S01_SH001_HIGGSFIELD_V01"
+  ],
+  "version": "V01",
+  "parent_prompt_id": null,
+  "patch_id": null,
+  "created_at": "2026-09-15",
+  "created_by": "Claude Code (D-047 I2V batch 1; saved before sending - Sent Prompt Rule)"
+}

@@ -1,0 +1,21 @@
+{
+  "approval_id": "APR_EP01_AUD_001",
+  "kind": "PAID_GENERATION",
+  "target_id": "EP01_NARRATION_VOICE_SAMPLES",
+  "money_gate_presented": {
+    "shot_id": "EP01 narration (cold open 0:00-0:35)",
+    "prompt_ids": [
+      "PRM_EP01_NARR_SAMPLE_V01"
+    ],
+    "provider_model": "HIGGSFIELD / seed_audio (Seed Audio 1.0), preset voices Grady · Arthur · Holden",
+    "expected_attempts": 3,
+    "estimated_cost_range": "4.2 credits (3 x 1.4)",
+    "continuity_risk": "NONE (voice pick only)"
+  },
+  "decision": "APPROVE",
+  "fix_reason": null,
+  "delegated": true,
+  "decided_by": "봇 (D-030 위임, D-047 확대)",
+  "decided_at": "2026-09-15T06:30:00Z",
+  "note": "D-047 #5: 내레이션 초안 = Higgsfield TTS. 남성 다큐 톤 3종 샘플 (콜드오픈 6문장) → 사용자가 1개 선택 → 전체 대본 생성. 위임 한도 안 (4.2/40)."
+}

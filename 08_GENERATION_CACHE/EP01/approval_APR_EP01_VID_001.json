@@ -1,0 +1,24 @@
+{
+  "approval_id": "APR_EP01_VID_001",
+  "kind": "PAID_GENERATION",
+  "target_id": "EP01_I2V_BATCH1",
+  "money_gate_presented": {
+    "shot_id": "EP01_S06_SH005 (H05) · EP01_S04_SH004 (H01) · EP01_S01_SH001 · EP01_S08_SH001 (M1)",
+    "prompt_ids": [
+      "PRM_EP01_S06_SH005_V02",
+      "PRM_EP01_S04_SH004_V03",
+      "PRM_EP01_S01_SH001_I2V_V01",
+      "PRM_EP01_S08_SH001_M1_I2V_V01"
+    ],
+    "provider_model": "HIGGSFIELD / KLING_3_0 (catalog kling3_0), mode pro, 6 s, 16:9, sound off, start_image = approved still/master frame (job id)",
+    "expected_attempts": 4,
+    "estimated_cost_range": "36 credits (4 x 9, hard cap 40 = D-047 batch limit)",
+    "continuity_risk": "HIGH for H05/H01 (faces, costume, era must hold over 6 s); LOW for landscapes"
+  },
+  "decision": "APPROVE",
+  "fix_reason": null,
+  "delegated": false,
+  "decided_by": "사용자 (D-047 영상 예산 150 credits)",
+  "decided_at": "2026-09-15T06:30:00Z",
+  "note": "D-047: 영상 게이트 해제, EP01 I2V 핵심 4컷. 1회씩. 실패 항목 재시도는 위임 (배치당 40 credits, 2회) 으로 별도 approval. 결과 OK/FIX 는 사용자 저녁 일괄."
+}
