@@ -288,7 +288,8 @@ def refcheck(paths):
            "fact": "claim_id", "source": "source_id", "rights": "rights_id", "router_decision": "decision_id",
            "camera": "camera_id", "prompt": "prompt_id", "master_frame": "frame_id",
            "scene": "scene_id", "shot": "shot_id", "episode": "episode_id",
-           "generation": "generation_id", "approval": "approval_id", "cost": "cost_id", "keep_change_patch": "patch_id"}
+           "generation": "generation_id", "approval": "approval_id", "cost": "cost_id", "keep_change_patch": "patch_id",
+           "channel": "channel_id"}  # D-046
     for p in paths:
         if p in SCHEMA_FAILED: continue  # schema-invalid docs would KeyError here and hide the rest (2026-09-14 review)
         data = json.loads(p.read_text(encoding="utf-8")); name = pick(p, data)
