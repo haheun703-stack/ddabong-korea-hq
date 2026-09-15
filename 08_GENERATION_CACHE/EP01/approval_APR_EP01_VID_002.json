@@ -1,0 +1,21 @@
+{
+  "approval_id": "APR_EP01_VID_002",
+  "kind": "PAID_GENERATION",
+  "target_id": "EP01_S06_SH005",
+  "money_gate_presented": {
+    "shot_id": "EP01_S06_SH005 (H05 quality retest, D-049)",
+    "prompt_ids": [
+      "PRM_EP01_S06_SH005_V03"
+    ],
+    "provider_model": "HIGGSFIELD / KLING_3_0 std (sub-1080p) 5 s silent; optional SEEDANCE_2_5 480p/720p omni_reference for comparison",
+    "expected_attempts": 2,
+    "estimated_cost_range": "6.25 (Kling std) + Seedance 480p if <= 15; hard cap 40 (D-047 batch)",
+    "continuity_risk": "HIGH - crowd I2V; test decides whether AI video is used at all"
+  },
+  "decision": "APPROVE",
+  "fix_reason": "AI_ARTIFACT",
+  "delegated": true,
+  "decided_by": "봇 (D-047 위임)",
+  "decided_at": "2026-09-15T09:10:00Z",
+  "note": "D-049: 사용자 품질 불만 → 1080p 미만·3초·정지 우선 규칙. H05 1컷 모델 비교 (Kling std vs Seedance 저해상). 낫지 않으면 영상 재시도 중단."
+}

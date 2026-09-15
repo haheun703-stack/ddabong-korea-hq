@@ -1,0 +1,43 @@
+{
+  "generation_id": "GEN_EP01_S06_SH005_KLING_V02",
+  "shot_id": "EP01_S06_SH005",
+  "stage": "VIDEO",
+  "provider": "Higgsfield",
+  "model": "KLING_3_0 (kling3_0 std, 1284x716, 5 s, silent; D-049 retest A)",
+  "provider_job": {
+    "job_id": "306b694f-c23b-4bf1-b254-918d3f0eb27f",
+    "job_set_type": "kling3_0",
+    "display_name": "Kling v3.0",
+    "params_path": "08_GENERATION_CACHE/EP01/provider_jobs/HF_306b694f-c23b-4bf1-b254-918d3f0eb27f.json"
+  },
+  "prompt_id": "PRM_EP01_S06_SH005_V03",
+  "prompt_version": "V03",
+  "standard_versions": {
+    "CHARACTER_CONTINUITY_STANDARD.md": "v0.1",
+    "COST_STANDARD.md": "v0.1"
+  },
+  "case_ids_used": [
+    "CASE_DDABONG_CHAR_001"
+  ],
+  "approval_id": "APR_EP01_VID_002",
+  "input_paths": [
+    "08_GENERATION_CACHE/EP01/MF/MF_EP01_S06_MASTER_MOUND_BUILDING_V01_8e1007b7.png"
+  ],
+  "output_paths": [
+    "08_GENERATION_CACHE/EP01/AI_VIDEO/H05_V02_KLINGSTD_306b694f.mp4"
+  ],
+  "attempts": 1,
+  "duration_sec": 5,
+  "cost": {
+    "currency": "CREDITS",
+    "amount": 6.25,
+    "spent": 6.25,
+    "note": "Balance 1569.28 -> 1550.53 together with Seedance 480p test (12.5)."
+  },
+  "result_status": "SUCCESS",
+  "failure_id": null,
+  "started_at": "2026-09-15T09:12:00Z",
+  "finished_at": null,
+  "run_by": "Claude Code (D-049 retest)",
+  "notes": "12-frame contact sheet: camera locked, observer + foreground group still (improvement over V01), but background crowd still animates despite 'frozen' instruction. Verdict: PARTIAL - usable only as <=3 s insert. Owner review pending."
+}

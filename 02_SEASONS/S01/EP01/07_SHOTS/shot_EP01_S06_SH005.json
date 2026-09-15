@@ -50,6 +50,15 @@
       "created_by": "사용자",
       "path": "08_GENERATION_CACHE/EP01/AI_VIDEO/H05_V01_5822bbbe.mp4",
       "note": "GEN_EP01_S06_SH005_KLING_V01 · Kling 3.0 pro 6 s · 봇 PASS · D-048 사용자 OK (2026-09-15) → D-049: 사용자 재생 후 품질 불만 (AI 티·뭉개짐) → 재검토. 3초 이하 부분 사용 또는 정지+패럴랙스로 대체."
+    },
+    {
+      "version": "V02",
+      "stage": "VIDEO",
+      "status": "DRAFT",
+      "created_at": "2026-09-15",
+      "created_by": "Claude Code (D-049 retest A)",
+      "path": "08_GENERATION_CACHE/EP01/AI_VIDEO/H05_V02_KLINGSTD_306b694f.mp4",
+      "note": "GEN_EP01_S06_SH005_KLING_V02 · Kling std 720p 5 s · 봇 PARTIAL (배경 군중 여전히 움직임) · 3초 이하 삽입용"
     }
   ],
   "approved_version": null,
