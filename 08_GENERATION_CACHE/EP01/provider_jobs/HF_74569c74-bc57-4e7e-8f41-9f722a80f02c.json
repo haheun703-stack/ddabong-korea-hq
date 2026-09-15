@@ -1,0 +1,17 @@
+{
+  "provider": "Higgsfield",
+  "job_id": "74569c74-bc57-4e7e-8f41-9f722a80f02c",
+  "job_set_type": "seed_audio",
+  "display_name": "Seed Audio 1.0",
+  "status": "completed",
+  "created_at": "2026-09-15T07:25:00Z",
+  "params": {
+    "model": "seed_audio",
+    "voice_type": "preset",
+    "voice_id": "e2a2d2e6-9ed2-59cd-82af-feaa27f8a678",
+    "voice_name": "Grady",
+    "prompt": "So let us reconstruct the problem, not an invented conversation. A ruler or powerful member of the elite dies. The person is gone. But rank, legitimacy, relationships, and authority still matter to the people who remain. The burial now becomes a moment when those things can be made visible — through scale, ritual, precious materials, and the place chosen for the tomb. We do not have a Silla text saying, “Build this mound to prove that order continues.” But the archaeological evidence allows us to ask whether these monumental funerals also communicated status and authority to the living. That is the difference between inventing their thoughts and trying to understand why their choices made sense."
+  },
+  "retrieved_at": "2026-09-15",
+  "note": "Section 5 (4:20-5:20 MINDSET RECONSTRUCTION) of PRM_EP01_NARR_FULL_V01; text verbatim from script v2. Sections 1 and 5 hit seed_audio 429 rate limit on first submit (no charge) and were resubmitted after the queue drained."
+}

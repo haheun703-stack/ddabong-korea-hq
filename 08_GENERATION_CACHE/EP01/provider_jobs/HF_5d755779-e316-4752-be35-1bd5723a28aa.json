@@ -1,0 +1,17 @@
+{
+  "provider": "Higgsfield",
+  "job_id": "5d755779-e316-4752-be35-1bd5723a28aa",
+  "job_set_type": "seed_audio",
+  "display_name": "Seed Audio 1.0",
+  "status": "completed",
+  "created_at": "2026-09-15T07:25:00Z",
+  "params": {
+    "model": "seed_audio",
+    "voice_type": "preset",
+    "voice_id": "e2a2d2e6-9ed2-59cd-82af-feaa27f8a678",
+    "voice_name": "Grady",
+    "prompt": "So why are giant tombs everywhere in Gyeongju? Because these were never just piles of earth. They were built through labor, ritual, wealth, and deliberate social choices. We may never know every thought of the people who stood here fifteen centuries ago. But the tombs show us what they chose to make visible: rank, legitimacy, memory, and authority. And that is how we get closer to understanding not only what Silla built — but why building it this way may have made sense to them. DDABONG KOREA. Stories Behind Korea."
+  },
+  "retrieved_at": "2026-09-15",
+  "note": "Section 8 (6:40-7:05 CLOSING) of PRM_EP01_NARR_FULL_V01; text verbatim from script v2. Sections 1 and 5 hit seed_audio 429 rate limit on first submit (no charge) and were resubmitted after the queue drained."
+}

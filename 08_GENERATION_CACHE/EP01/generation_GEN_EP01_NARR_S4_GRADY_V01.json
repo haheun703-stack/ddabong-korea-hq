@@ -1,0 +1,39 @@
+{
+  "generation_id": "GEN_EP01_NARR_S4_GRADY_V01",
+  "shot_id": "EP01_S01_SH001",
+  "stage": "STILL",
+  "provider": "Higgsfield",
+  "model": "SEED_AUDIO_1_0 (seed_audio preset Grady) - narration draft section (stage enum has no AUDIO; STILL placeholder, D-047 #5)",
+  "provider_job": {
+    "job_id": "d1a59e68-879f-4db2-b36f-52d64334f89e",
+    "job_set_type": "seed_audio",
+    "display_name": "Seed Audio 1.0",
+    "params_path": "08_GENERATION_CACHE/EP01/provider_jobs/HF_d1a59e68-879f-4db2-b36f-52d64334f89e.json"
+  },
+  "prompt_id": "PRM_EP01_NARR_S4_V01",
+  "prompt_version": "V01",
+  "standard_versions": {
+    "NARRATION_STANDARD.md": "v0.1",
+    "COST_STANDARD.md": "v0.1"
+  },
+  "case_ids_used": [],
+  "approval_id": "APR_EP01_AUD_002",
+  "input_paths": [],
+  "output_paths": [
+    "02_SEASONS/S01/EP01/13_AUDIO/narration/NARR_EP01_S4_Grady_d1a59e68.wav"
+  ],
+  "attempts": 1,
+  "duration_sec": 56.3,
+  "cost": {
+    "currency": "CREDITS",
+    "amount": 3.47,
+    "spent": 3.47,
+    "note": "9 sections = 31.2 credits (balance 1600.48 -> 1569.28); booked 6x3.47 + 3x3.46."
+  },
+  "result_status": "SUCCESS",
+  "failure_id": null,
+  "started_at": "2026-09-15T07:25:00Z",
+  "finished_at": null,
+  "run_by": "Claude Code (D-048 narration draft)",
+  "notes": "Section 4 3:15-4:20 WHAT THE GOLD TELLS US, 101 words, 56.3 s. Draft VO for rough cut v2; final voice re-check before publish."
+}

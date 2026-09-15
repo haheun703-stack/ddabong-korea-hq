@@ -1,0 +1,39 @@
+{
+  "generation_id": "GEN_EP01_NARR_S2_GRADY_V01",
+  "shot_id": "EP01_S01_SH001",
+  "stage": "STILL",
+  "provider": "Higgsfield",
+  "model": "SEED_AUDIO_1_0 (seed_audio preset Grady) - narration draft section (stage enum has no AUDIO; STILL placeholder, D-047 #5)",
+  "provider_job": {
+    "job_id": "1fc0d703-10d7-465d-92fa-17e8b9d2f8da",
+    "job_set_type": "seed_audio",
+    "display_name": "Seed Audio 1.0",
+    "params_path": "08_GENERATION_CACHE/EP01/provider_jobs/HF_1fc0d703-10d7-465d-92fa-17e8b9d2f8da.json"
+  },
+  "prompt_id": "PRM_EP01_NARR_S2_V01",
+  "prompt_version": "V01",
+  "standard_versions": {
+    "NARRATION_STANDARD.md": "v0.1",
+    "COST_STANDARD.md": "v0.1"
+  },
+  "case_ids_used": [],
+  "approval_id": "APR_EP01_AUD_002",
+  "input_paths": [],
+  "output_paths": [
+    "02_SEASONS/S01/EP01/13_AUDIO/narration/NARR_EP01_S2_Grady_1fc0d703.wav"
+  ],
+  "attempts": 1,
+  "duration_sec": 51.2,
+  "cost": {
+    "currency": "CREDITS",
+    "amount": 3.47,
+    "spent": 3.47,
+    "note": "9 sections = 31.2 credits (balance 1600.48 -> 1569.28); booked 6x3.47 + 3x3.46."
+  },
+  "result_status": "SUCCESS",
+  "failure_id": null,
+  "started_at": "2026-09-15T07:25:00Z",
+  "finished_at": null,
+  "run_by": "Claude Code (D-048 narration draft)",
+  "notes": "Section 2 1:25-2:15 CASE STUDY: CHEONMACHONG, 100 words, 51.2 s. Draft VO for rough cut v2; final voice re-check before publish."
+}

@@ -9,7 +9,7 @@
   },
   "spent_total": null,
   "spent_by_provider": {
-    "Higgsfield (credits)": 142.22
+    "Higgsfield (credits)": 173.42
   },
   "percent_used": null,
   "gate_state": "OPEN",
@@ -70,8 +70,17 @@
     "GEN_EP01_S08_SH001_M1_I2V_KLING_V01",
     "GEN_EP01_NARR_SAMPLE_GRADY_V01",
     "GEN_EP01_NARR_SAMPLE_ARTHUR_V01",
-    "GEN_EP01_NARR_SAMPLE_HOLDEN_V01"
+    "GEN_EP01_NARR_SAMPLE_HOLDEN_V01",
+    "GEN_EP01_NARR_S0_GRADY_V01",
+    "GEN_EP01_NARR_S1_GRADY_V01",
+    "GEN_EP01_NARR_S2_GRADY_V01",
+    "GEN_EP01_NARR_S3_GRADY_V01",
+    "GEN_EP01_NARR_S4_GRADY_V01",
+    "GEN_EP01_NARR_S5_GRADY_V01",
+    "GEN_EP01_NARR_S6_GRADY_V01",
+    "GEN_EP01_NARR_S7_GRADY_V01",
+    "GEN_EP01_NARR_S8_GRADY_V01"
   ],
   "as_of": "2026-09-15",
-  "note": "57 호출 = 142.22 credits (사진·기준 그림·파이프라인 A 98.12 · I2V 배치 1 36 · 내레이션 샘플 8.1). 영상 예산 150 credits (D-047) 중 44.1 사용."
+  "note": "66 호출 = 173.42 credits (사진 98.12 · I2V 배치 1 36 · 내레이션 샘플 8.1 · 내레이션 전체 31.2). 영상 예산 150 (D-047) 중 75.3 사용."
 }

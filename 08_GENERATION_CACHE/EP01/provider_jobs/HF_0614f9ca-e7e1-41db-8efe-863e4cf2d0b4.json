@@ -1,0 +1,17 @@
+{
+  "provider": "Higgsfield",
+  "job_id": "0614f9ca-e7e1-41db-8efe-863e4cf2d0b4",
+  "job_set_type": "seed_audio",
+  "display_name": "Seed Audio 1.0",
+  "status": "completed",
+  "created_at": "2026-09-15T07:25:00Z",
+  "params": {
+    "model": "seed_audio",
+    "voice_type": "preset",
+    "voice_id": "e2a2d2e6-9ed2-59cd-82af-feaa27f8a678",
+    "voice_name": "Grady",
+    "prompt": "Today, people walk between these mounds. Families take photographs. Visitors step inside Cheonmachong. Cars and cafés sit only a short distance away. What was once an elite burial landscape has become part of the everyday landscape of modern Gyeongju. The past is not hidden outside the city. The city lives around it."
+  },
+  "retrieved_at": "2026-09-15",
+  "note": "Section 7 (6:05-6:40 MODERN GYEONGJU) of PRM_EP01_NARR_FULL_V01; text verbatim from script v2. Sections 1 and 5 hit seed_audio 429 rate limit on first submit (no charge) and were resubmitted after the queue drained."
+}

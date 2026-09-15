@@ -1,0 +1,40 @@
+{
+  "prompt_id": "PRM_EP01_NARR_S3_V01",
+  "shot_id": "EP01_S01_SH001",
+  "target": "IMAGE",
+  "locks": {
+    "global": "DDABONG_GLOBAL_PRESENT_V01",
+    "era": "NONE",
+    "location": "NONE",
+    "character_costume": [],
+    "style": "DDABONG_DOC_REENACTMENT_V01",
+    "camera": null
+  },
+  "shot_delta": "Narration section 3 (2:15-3:15 HOW A TOMB LIKE THIS WAS BUILT) - exact text sent to seed_audio (Grady). Child of PRM_EP01_NARR_FULL_V01.",
+  "negative": [
+    "text",
+    "watermark",
+    "logo",
+    "signage",
+    "lens flare",
+    "HDR look",
+    "oversaturation",
+    "glossy AI look",
+    "malformed anatomy",
+    "identifiable faces",
+    "invented buildings not in the reference",
+    "altered landform or mound proportions",
+    "fantasy elements",
+    "historical costume figures",
+    "vehicles",
+    "crowds",
+    "drone or aerial perspective unless in the reference"
+  ],
+  "assembled_text": "Cheonmachong was not a simple grave dug into the ground. A wooden outer chamber was built. A coffin and grave goods were placed inside. Stone was piled above and around the chamber, and earth formed the giant mound. Now imagine the work behind that sequence. Timber had to be prepared. Stone had to be carried. Valuable objects had to be selected. People had to coordinate the burial. And the mound itself had to be raised on a monumental scale. Whatever else this funeral meant, it required organization, resources, and many human decisions.",
+  "reference_images": [],
+  "version": "V01",
+  "parent_prompt_id": "PRM_EP01_NARR_FULL_V01",
+  "patch_id": null,
+  "created_at": "2026-09-15",
+  "created_by": "Claude Code (D-048 narration full draft; saved before sending)"
+}

@@ -5,7 +5,16 @@
   "money_gate_presented": {
     "shot_id": "EP01 narration (9 sections, 777 words, ~5.5 min)",
     "prompt_ids": [
-      "PRM_EP01_NARR_FULL_V01"
+      "PRM_EP01_NARR_FULL_V01",
+      "PRM_EP01_NARR_S0_V01",
+      "PRM_EP01_NARR_S1_V01",
+      "PRM_EP01_NARR_S2_V01",
+      "PRM_EP01_NARR_S3_V01",
+      "PRM_EP01_NARR_S4_V01",
+      "PRM_EP01_NARR_S5_V01",
+      "PRM_EP01_NARR_S6_V01",
+      "PRM_EP01_NARR_S7_V01",
+      "PRM_EP01_NARR_S8_V01"
     ],
     "provider_model": "HIGGSFIELD / seed_audio preset Grady (e2a2d2e6-9ed2-59cd-82af-feaa27f8a678)",
     "expected_attempts": 9,
@@ -17,5 +26,5 @@
   "delegated": true,
   "decided_by": "봇 (D-030 위임, D-047 확대)",
   "decided_at": "2026-09-15T07:20:00Z",
-  "note": "D-048: 보이스 Grady 확정 → 대본 v2 전체 초안. 섹션별 9 청크 (편집에서 TC 맞추기 쉬움). 결과 OK 는 사용자."
+  "note": "D-048: 보이스 Grady 확정 → 대본 v2 전체 초안. 섹션별 9 청크 (편집에서 TC 맞추기 쉬움). 결과 OK 는 사용자. 9/9 SUCCESS, 31.2 credits (위임 한도 40 안). 총 길이 362.2 s."
 }

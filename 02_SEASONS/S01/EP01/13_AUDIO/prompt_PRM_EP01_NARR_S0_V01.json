@@ -1,0 +1,40 @@
+{
+  "prompt_id": "PRM_EP01_NARR_S0_V01",
+  "shot_id": "EP01_S01_SH001",
+  "target": "IMAGE",
+  "locks": {
+    "global": "DDABONG_GLOBAL_PRESENT_V01",
+    "era": "NONE",
+    "location": "NONE",
+    "character_costume": [],
+    "style": "DDABONG_DOC_REENACTMENT_V01",
+    "camera": null
+  },
+  "shot_delta": "Narration section 0 (0:00-0:35 COLD OPEN) - exact text sent to seed_audio (Grady). Child of PRM_EP01_NARR_FULL_V01.",
+  "negative": [
+    "text",
+    "watermark",
+    "logo",
+    "signage",
+    "lens flare",
+    "HDR look",
+    "oversaturation",
+    "glossy AI look",
+    "malformed anatomy",
+    "identifiable faces",
+    "invented buildings not in the reference",
+    "altered landform or mound proportions",
+    "fantasy elements",
+    "historical costume figures",
+    "vehicles",
+    "crowds",
+    "drone or aerial perspective unless in the reference"
+  ],
+  "assembled_text": "Walk through Gyeongju today, and something feels unusual. Between roads, houses, and everyday city life, enormous green mounds rise from the ground. They look like hills. But they are tombs. Some were built for the rulers and elite of Silla, the kingdom that made Gyeongju its capital for centuries. So here is the question: why would a society give this much land, labor, and wealth to the dead?",
+  "reference_images": [],
+  "version": "V01",
+  "parent_prompt_id": "PRM_EP01_NARR_FULL_V01",
+  "patch_id": null,
+  "created_at": "2026-09-15",
+  "created_by": "Claude Code (D-048 narration full draft; saved before sending)"
+}

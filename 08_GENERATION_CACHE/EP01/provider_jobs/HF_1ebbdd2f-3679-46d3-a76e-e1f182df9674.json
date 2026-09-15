@@ -1,0 +1,17 @@
+{
+  "provider": "Higgsfield",
+  "job_id": "1ebbdd2f-3679-46d3-a76e-e1f182df9674",
+  "job_set_type": "seed_audio",
+  "display_name": "Seed Audio 1.0",
+  "status": "completed",
+  "created_at": "2026-09-15T07:25:00Z",
+  "params": {
+    "model": "seed_audio",
+    "voice_type": "preset",
+    "voice_id": "e2a2d2e6-9ed2-59cd-82af-feaa27f8a678",
+    "voice_name": "Grady",
+    "prompt": "Look again at the gold crown from Cheonmachong. Today it sits under museum lighting, separated from the place where it was buried. But originally, this was not an object made for a museum. It may have belonged to a burial system of status, ceremony, and identity. And that changes the question from “How beautiful is this?” to “Why did placing something this valuable with the dead make sense?” That second question is where the story becomes human."
+  },
+  "retrieved_at": "2026-09-15",
+  "note": "Section 6 (5:20-6:05 THE CROWN CHANGES MEANING) of PRM_EP01_NARR_FULL_V01; text verbatim from script v2. Sections 1 and 5 hit seed_audio 429 rate limit on first submit (no charge) and were resubmitted after the queue drained."
+}

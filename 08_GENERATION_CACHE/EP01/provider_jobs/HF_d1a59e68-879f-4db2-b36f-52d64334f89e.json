@@ -1,0 +1,17 @@
+{
+  "provider": "Higgsfield",
+  "job_id": "d1a59e68-879f-4db2-b36f-52d64334f89e",
+  "job_set_type": "seed_audio",
+  "display_name": "Seed Audio 1.0",
+  "status": "completed",
+  "created_at": "2026-09-15T07:25:00Z",
+  "params": {
+    "model": "seed_audio",
+    "voice_type": "preset",
+    "voice_id": "e2a2d2e6-9ed2-59cd-82af-feaa27f8a678",
+    "voice_name": "Grady",
+    "prompt": "Then there is the gold. The Gyeongju National Museum describes the peak of Silla gold culture in the fifth to early sixth century as a time when the ruling elite built huge tombs in the royal capital and placed elaborate gold objects with the dead. More importantly, the museum explains that gold was used to express sacredness, legitimacy, and enduring authority. That gives us firmer ground than simply guessing what people believed. We cannot read the exact thoughts of a Silla official fifteen centuries ago. But we can see that status and authority were deliberately made visible in elite burial culture."
+  },
+  "retrieved_at": "2026-09-15",
+  "note": "Section 4 (3:15-4:20 WHAT THE GOLD TELLS US) of PRM_EP01_NARR_FULL_V01; text verbatim from script v2. Sections 1 and 5 hit seed_audio 429 rate limit on first submit (no charge) and were resubmitted after the queue drained."
+}

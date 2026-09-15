@@ -1,0 +1,40 @@
+{
+  "prompt_id": "PRM_EP01_NARR_S6_V01",
+  "shot_id": "EP01_S01_SH001",
+  "target": "IMAGE",
+  "locks": {
+    "global": "DDABONG_GLOBAL_PRESENT_V01",
+    "era": "NONE",
+    "location": "NONE",
+    "character_costume": [],
+    "style": "DDABONG_DOC_REENACTMENT_V01",
+    "camera": null
+  },
+  "shot_delta": "Narration section 6 (5:20-6:05 THE CROWN CHANGES MEANING) - exact text sent to seed_audio (Grady). Child of PRM_EP01_NARR_FULL_V01.",
+  "negative": [
+    "text",
+    "watermark",
+    "logo",
+    "signage",
+    "lens flare",
+    "HDR look",
+    "oversaturation",
+    "glossy AI look",
+    "malformed anatomy",
+    "identifiable faces",
+    "invented buildings not in the reference",
+    "altered landform or mound proportions",
+    "fantasy elements",
+    "historical costume figures",
+    "vehicles",
+    "crowds",
+    "drone or aerial perspective unless in the reference"
+  ],
+  "assembled_text": "Look again at the gold crown from Cheonmachong. Today it sits under museum lighting, separated from the place where it was buried. But originally, this was not an object made for a museum. It may have belonged to a burial system of status, ceremony, and identity. And that changes the question from “How beautiful is this?” to “Why did placing something this valuable with the dead make sense?” That second question is where the story becomes human.",
+  "reference_images": [],
+  "version": "V01",
+  "parent_prompt_id": "PRM_EP01_NARR_FULL_V01",
+  "patch_id": null,
+  "created_at": "2026-09-15",
+  "created_by": "Claude Code (D-048 narration full draft; saved before sending)"
+}

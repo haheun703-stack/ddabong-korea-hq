@@ -1,0 +1,17 @@
+{
+  "provider": "Higgsfield",
+  "job_id": "495b5fd2-72cd-4dee-b795-9f1f68b1b5d8",
+  "job_set_type": "seed_audio",
+  "display_name": "Seed Audio 1.0",
+  "status": "completed",
+  "created_at": "2026-09-15T07:25:00Z",
+  "params": {
+    "model": "seed_audio",
+    "voice_type": "preset",
+    "voice_id": "e2a2d2e6-9ed2-59cd-82af-feaa27f8a678",
+    "voice_name": "Grady",
+    "prompt": "Gyeongju is not a city with just a few old graves. Its historic landscape preserves palaces, temples, fortresses, and groups of royal tombs from Silla. UNESCO describes the Tumuli Park area as three groups of royal tombs. Beneath many of these mounds were wooden burial spaces covered with stone and gravel. Excavations revealed gold, glass, fine ceramics, weapons, ornaments, and horse equipment. The mound is only the outside of the story. The real story is what people deliberately chose to place inside."
+  },
+  "retrieved_at": "2026-09-15",
+  "note": "Section 1 (0:35-1:25 FACT: WHAT IS ACTUALLY HERE?) of PRM_EP01_NARR_FULL_V01; text verbatim from script v2. Sections 1 and 5 hit seed_audio 429 rate limit on first submit (no charge) and were resubmitted after the queue drained."
+}
