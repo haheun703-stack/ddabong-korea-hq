@@ -11,6 +11,7 @@
 
 ## Historical QA
 등급·출처 연결·hedge 표현·AI 라벨 확인. → `HISTORY_ACCURACY_STANDARD.md`
+제목·썸네일 문구의 주장 → `fact_id` (FACT 등급) 또는 질문형인지 확인 (D-046, `TITLE_STANDARD.md`).
 
 ## Visual QA
 Fix reason 분류 (§13). 실패는 `failure_memory` 로. 연속성 위반(얼굴 변경·복식 드리프트)은 KEEP/CHANGE.

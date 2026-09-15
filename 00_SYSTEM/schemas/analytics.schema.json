@@ -64,7 +64,78 @@
         "object",
         "null"
       ],
-      "description": "제목/썸네일 실험 변수"
+      "description": "제목/썸네일 실험 (EXPERIMENT_STANDARD, D-046). null = 실험 없음",
+      "additionalProperties": false,
+      "properties": {
+        "method": {
+          "type": "string",
+          "enum": [
+            "YT_TEST_COMPARE",
+            "MANUAL_SWAP",
+            "NONE"
+          ]
+        },
+        "variants": {
+          "type": "array",
+          "maxItems": 3,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "angle": {
+                "type": "string",
+                "enum": [
+                  "SCALE",
+                  "MYSTERY",
+                  "CONTRAST"
+                ]
+              },
+              "thumb_text": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "title": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              }
+            },
+            "required": [
+              "id",
+              "angle"
+            ]
+          }
+        },
+        "winner": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "decided_at": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+        },
+        "note": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "required": [
+        "method",
+        "variants"
+      ]
     },
     "data_source": {
       "type": "string"

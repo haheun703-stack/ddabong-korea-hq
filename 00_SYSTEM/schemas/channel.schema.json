@@ -1,0 +1,332 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://haheun703-stack.github.io/ddabong-korea-hq/00_SYSTEM/schemas/channel.schema.json",
+  "title": "CHANNEL (채널 기준서 · D-046)",
+  "description": "채널 단위 기준: 시청자 페르소나 · 채널 약속 · 핵심 질문 · 차별점 · 업로드 주기 · CTA 정책 · 수익 상태. 모든 제목·설명란·쇼츠·커뮤니티 문구의 기준.",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "channel_id": {
+      "type": "string",
+      "pattern": "^CHANNEL_[A-Z0-9_]+$"
+    },
+    "brand_name_en": {
+      "type": "string"
+    },
+    "brand_name_ko": {
+      "type": "string"
+    },
+    "slogan": {
+      "type": "string"
+    },
+    "promise": {
+      "type": "string",
+      "description": "채널 약속 1줄 (= 오퍼설계의 채널 등가물)"
+    },
+    "channel_question": {
+      "type": "string"
+    },
+    "platforms": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "youtube",
+          "youtube_shorts",
+          "instagram",
+          "blog",
+          "newsletter"
+        ]
+      },
+      "minItems": 1
+    },
+    "language": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "primary": {
+          "type": "string"
+        },
+        "secondary": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "narration": {
+          "type": "string"
+        },
+        "subtitles": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "required": [
+        "primary",
+        "narration"
+      ]
+    },
+    "audience": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "primary_persona_id": {
+          "type": "string"
+        },
+        "personas": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "persona_id": {
+                "type": "string",
+                "pattern": "^PERSONA_[A-Z0-9_]+$"
+              },
+              "role": {
+                "type": "string",
+                "enum": [
+                  "PRIMARY",
+                  "SECONDARY"
+                ]
+              },
+              "name": {
+                "type": "string"
+              },
+              "age_range": {
+                "type": "string"
+              },
+              "region": {
+                "type": "string"
+              },
+              "korea_knowledge": {
+                "type": "string"
+              },
+              "entry_point": {
+                "type": "string",
+                "description": "이 사람이 한국에 관심을 갖게 된 경로"
+              },
+              "wants": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "misconceptions": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "frictions": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "watches": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            },
+            "required": [
+              "persona_id",
+              "role",
+              "name",
+              "age_range",
+              "region",
+              "korea_knowledge",
+              "wants"
+            ]
+          }
+        },
+        "core_questions": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string"
+          },
+          "description": "외국인이 한국에 대해 실제로 묻는 질문 (질문수집 입력)"
+        },
+        "needs_map": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "need": {
+                "type": "string"
+              },
+              "we_answer_with": {
+                "type": "string"
+              },
+              "episode_ids": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            },
+            "required": [
+              "need",
+              "we_answer_with"
+            ]
+          }
+        }
+      },
+      "required": [
+        "primary_persona_id",
+        "personas",
+        "core_questions"
+      ]
+    },
+    "differentiators": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string"
+      }
+    },
+    "cadence": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "interval": {
+          "type": "string",
+          "enum": [
+            "WEEKLY",
+            "BIWEEKLY",
+            "MONTHLY",
+            "IRREGULAR"
+          ]
+        },
+        "weekday": {
+          "type": "string"
+        },
+        "time_utc": {
+          "type": "string",
+          "pattern": "^\\d{2}:\\d{2}$"
+        },
+        "measure_days": {
+          "type": "array",
+          "items": {
+            "type": "integer"
+          }
+        },
+        "note": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "required": [
+        "interval",
+        "weekday",
+        "time_utc",
+        "measure_days"
+      ]
+    },
+    "cta_policy": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "description_cta": {
+          "type": "string"
+        },
+        "pinned_comment_cta": {
+          "type": "string"
+        },
+        "end_screen": {
+          "type": "string"
+        },
+        "bot_may_post": {
+          "type": "boolean",
+          "const": false,
+          "description": "봇은 댓글·포스트 초안만, 게시는 사용자 (D-046)"
+        }
+      },
+      "required": [
+        "description_cta",
+        "pinned_comment_cta",
+        "end_screen",
+        "bot_may_post"
+      ]
+    },
+    "monetization": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "status": {
+          "type": "string",
+          "enum": [
+            "NONE",
+            "AD_ONLY",
+            "PRODUCTS"
+          ]
+        },
+        "planned": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "decision_ref": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "required": [
+        "status"
+      ]
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "DRAFT",
+        "APPROVED",
+        "PREVIOUS"
+      ]
+    },
+    "version": {
+      "type": "string",
+      "pattern": "^V\\d{2,}$"
+    },
+    "updated_at": {
+      "type": "string",
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+    },
+    "updated_by": {
+      "type": "string"
+    },
+    "notes": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  },
+  "required": [
+    "channel_id",
+    "brand_name_en",
+    "promise",
+    "channel_question",
+    "platforms",
+    "language",
+    "audience",
+    "differentiators",
+    "cadence",
+    "cta_policy",
+    "monetization",
+    "status",
+    "version",
+    "updated_at"
+  ]
+}

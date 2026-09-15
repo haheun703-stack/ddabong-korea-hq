@@ -1,0 +1,154 @@
+{
+  "channel_id": "CHANNEL_DDABONG_KOREA",
+  "brand_name_en": "DDABONG KOREA",
+  "brand_name_ko": "따봉 코리아",
+  "slogan": "STORIES BEHIND KOREA",
+  "promise": "Every episode takes one question a foreigner would actually ask about Korea and answers it with evidence you can see on screen - and tells you why it made sense to the people back then.",
+  "channel_question": "Why is Korea like this?",
+  "platforms": [
+    "youtube"
+  ],
+  "language": {
+    "primary": "en",
+    "secondary": "ko",
+    "narration": "en",
+    "subtitles": [
+      "en",
+      "ko"
+    ]
+  },
+  "audience": {
+    "primary_persona_id": "PERSONA_KOREA_CURIOUS_EN_01",
+    "personas": [
+      {
+        "persona_id": "PERSONA_KOREA_CURIOUS_EN_01",
+        "role": "PRIMARY",
+        "name": "Korea-curious (English-speaking)",
+        "age_range": "25-44",
+        "region": "US · UK · Canada · Australia · Europe (English)",
+        "korea_knowledge": "near zero history; knows Korea through K-drama, K-pop, food or one trip",
+        "entry_point": "K-drama / travel to Seoul or Gyeongju / K-pop / Korean friends",
+        "wants": [
+          "understand what they saw or heard (\"why is that there?\")",
+          "a clear answer in under 10 minutes, no lecture tone",
+          "to feel the people were real, not a museum label"
+        ],
+        "misconceptions": [
+          "all old Korean things are 'Joseon' / hanbok = one look",
+          "Korea = smaller China or Japan",
+          "ancient Korea was poor and simple"
+        ],
+        "frictions": [
+          "proper nouns with no explanation",
+          "long talking-head segments",
+          "unclear what is fact vs guess"
+        ],
+        "watches": [
+          "Fall of Civilizations (occasionally)",
+          "travel vlogs",
+          "K-drama recaps",
+          "history Shorts"
+        ]
+      },
+      {
+        "persona_id": "PERSONA_HISTORY_DOC_REGULAR_01",
+        "role": "SECONDARY",
+        "name": "History-documentary regular",
+        "age_range": "30-60",
+        "region": "English-speaking",
+        "korea_knowledge": "some world history; Korea is a gap",
+        "entry_point": "recommended after other history channels",
+        "wants": [
+          "sources and dates",
+          "structure and scale (numbers)",
+          "no clickbait"
+        ],
+        "misconceptions": [
+          "Korean history starts with the Korean War"
+        ],
+        "frictions": [
+          "unsourced claims",
+          "AI visuals presented as fact"
+        ],
+        "watches": [
+          "Fall of Civilizations",
+          "Kings and Generals",
+          "Tasting History"
+        ]
+      }
+    ],
+    "core_questions": [
+      "Why are giant grass mounds in the middle of a Korean city?",
+      "Why did Silla make gold crowns - who wore them?",
+      "Why do Koreans heat the floor instead of the room?",
+      "Is this Korean or Chinese or Japanese? (how to tell)",
+      "How old is Korea, really?"
+    ],
+    "needs_map": [
+      {
+        "need": "make sense of something seen in Korea",
+        "we_answer_with": "① QUESTION from the present-day view + ⑦ LEGACY back to today",
+        "episode_ids": [
+          "EP01"
+        ]
+      },
+      {
+        "need": "know what is fact and what is a guess",
+        "we_answer_with": "FACT / INTERPRETIVE labels on screen, sources in description",
+        "episode_ids": [
+          "EP01"
+        ]
+      },
+      {
+        "need": "feel the people",
+        "we_answer_with": "⑤ MINDSET AI reenactment, 5-6 s cuts, ~10% of runtime (D-033 #3)",
+        "episode_ids": [
+          "EP01"
+        ]
+      },
+      {
+        "need": "numbers and scale",
+        "we_answer_with": "③ FACT with GT-01~04 diagrams and on-screen dimensions",
+        "episode_ids": [
+          "EP01"
+        ]
+      }
+    ]
+  },
+  "differentiators": [
+    "The question comes first, and it is the question a foreigner asks - not the one a Korean textbook asks.",
+    "Fact and interpretation are separated on screen (labels, hedged narration, sources in the description).",
+    "The people of the past appear as real people (Documentary Reenactment style B, Character Master), not as spectacle."
+  ],
+  "cadence": {
+    "interval": "BIWEEKLY",
+    "weekday": "SAT",
+    "time_utc": "14:00",
+    "measure_days": [
+      1,
+      7,
+      28
+    ],
+    "note": "D-046: 격주 토 14:00 UTC (미국 아침·유럽 오후). EP01 게시일은 P-012·편집 뒤 확정."
+  },
+  "cta_policy": {
+    "description_cta": "One CTA only, after the Sources block: subscribe for the next question.",
+    "pinned_comment_cta": "One question to viewers: what would you have asked standing here? (question harvesting input)",
+    "end_screen": "next episode + playlist (upsell equivalent)",
+    "bot_may_post": false
+  },
+  "monetization": {
+    "status": "AD_ONLY",
+    "planned": [
+      "membership",
+      "episode guide (diagram PDF)",
+      "education"
+    ],
+    "decision_ref": "P-013 (판매 오퍼 설계, 결정 전 파일 생성 금지)"
+  },
+  "status": "DRAFT",
+  "version": "V01",
+  "updated_at": "2026-09-15",
+  "updated_by": "Claude Code (D-046)",
+  "notes": "MASTER_CHANNEL_BIBLE §미결 '시청자 필드' 해소 초안. 페르소나 주 타깃 (a) = 사용자 결정 2026-09-15."
+}

@@ -1,14 +1,16 @@
 # CURRENT STATUS — 지금 어디까지 왔나
 
 > **매 작업마다 갱신한다.** 이 파일 하나만 읽으면 어느 봇/AI 창을 열어도 바로 이어갈 수 있어야 한다.
-> 갱신: 2026-09-14 오후 (Claude Code, D-035~D-045 · EP01 AI 정지 컷 전부 완료, H07 매치컷 확보) · 마지막 사용자 승인: 2026-09-14 (D-045 H07 V02 OK)
+> 갱신: 2026-09-15 (Claude Code, D-046 마케팅 7역할 적용 · 채널 기준서·제목/게시 표준·학습 루프 DRAFT) · 마지막 사용자 승인: 2026-09-15 (D-046 페르소나·콜드오픈·CTA·주기)
 > 읽는 순서: `BOT_HANDOFF_DDABONG_STUDIO_OS_V0.1.md` → `BOT_BOOTSTRAP_PROMPT.md` → **이 문서** → `OS_INDEX.md` → `02_SEASONS/S01/EP01/episode.json`
 
 ---
 
-## 내일 시작 (2026-09-15) — "따봉 계속" 하면 여기부터
+## 다음 시작 — "따봉 계속" 하면 여기부터 (갱신 2026-09-15)
 
-**어제(09-14) 끝난 자리**: EP01 AI 정지 컷 전부 승인 (파이프라인 A 13 + H06 + H07). 현장 촬영은 **안 함** (D-038). 커밋 `p1-continuity` 최신, 검증 381/381. EP01 누적 98.12 credits, Higgsfield 잔액 1,644.58 (Plus). 위임 한도 2/20.
+**2026-09-15 한 것 (D-046)**: `AI 비서/` 자료집(AI 마케팅팀 7명) 적용 — 채널 기준서 `01_CHANNEL/channel.json` (페르소나 a 주) · 표준 6 신설 (`AUDIENCE` `TITLE` `EXPERIMENT` `BENCHMARK` `SHORTS` `COMMUNITY`, DRAFT) · `PUBLISH` v0.2 (설명란 템플릿·CTA) · `BRAND_INTRO` v0.2 (콜드오픈 뒤) · EP01 게시 산출물: `04_TITLE_THUMB/TITLE_CANDIDATES_EP01.md` (5안) · `THUMB_TEXT_EP01.md` (3안) · `16_PUBLISH/PUBLISH_META_EP01.md` · `14_EDIT/COLD_OPEN_ORDER_EP01.md` · `17_SHORTS/SHORTS_PLAN_EP01.md` · `01_CHANNEL/CALENDAR_2026Q4.md` · `QUESTION_BANK.md`. Community Agent 추가. 판매(2·6·7) 는 P-013 보류. **사용자 결정 대기: EP01 제목 실험 2안 · 썸네일 문구 · 유튜브 채널 핸들.**
+
+**09-14 끝난 자리**: EP01 AI 정지 컷 전부 승인 (파이프라인 A 13 + H06 + H07). 현장 촬영은 **안 함** (D-038). 커밋 `p1-continuity` 최신, 검증 381/381. EP01 누적 98.12 credits, Higgsfield 잔액 1,644.58 (Plus). 위임 한도 2/20.
 
 **승인된 그림 위치**: `08_GENERATION_CACHE/EP01/AI_STILL/` — `PA_*.png` 13장 (현재 시점) · `H06_V03_*.png` · `H07_V02_2801ac11.png`. 검수 시트 `REVIEW_PA_BATCH1_20260914.md` · `REVIEW_PA_BATCH2_20260914.md`.
 
@@ -189,6 +191,8 @@
 ---
 
 ## 최근 변경 (최신순)
+
+- **2026-09-15 사용자 + Claude Code** — **D-046** 자료집 7역할 적용: 42항목 판정 (C5 · A22 · N10 · P3 5), Phase 1 (채널 기준서·제목·게시·콜드오픈·캘린더) + Phase 2 DRAFT (실험·질문은행·벤치마크·쇼츠·커뮤니티) 작성. 스키마 `channel` 신설 (30개), `analytics.experiment` 구조화, Community Agent. P-013 판매 보류.
 
 - **2026-09-14 저녁 사용자 + Claude Code** — H: 재연결 확인. **D-044** H07 승인 (2회/4 credits) → 1차 PARTIAL → PATCH V03 → 2차 PASS → **D-045** V02 OK, S08_SH002 LOOK_APPROVED. match_cut_frame 실측 기록. Nano Banana Pro 카탈로그 id `nano_banana_pro` 확인. EP01 98.12 credits.
 

@@ -41,7 +41,7 @@ def check(path):
     errs = [f"{'/'.join(map(str, e.path)) or '<root>'}: {e.message}" for e in v.iter_errors(data)]
     return (path, name, errs)
 
-INSTANCES = sorted(ROOT.glob("02_SEASONS/*/*/episode.json")) + \
+INSTANCES = sorted(ROOT.glob("02_SEASONS/*/*/episode.json")) + sorted(ROOT.glob("01_CHANNEL/channel*.json")) + \
             sorted(p for p in ROOT.glob("05_HISTORY_DATABASE/*/*.json")) + \
             sorted(ROOT.glob("02_SEASONS/*/*/07_SHOTS/*.json")) + \
             sorted(ROOT.glob("02_SEASONS/*/*/10_BLENDER/camera_*.json")) + \
@@ -166,6 +166,18 @@ def required_negative(locks):
         for it in forbidden_items(i):
             if it not in out: out.append(it)
     return out
+
+def channel_rules(p, d):
+    """D-046: channel.json - primary persona must exist and be PRIMARY; bot may never post; core questions non-empty."""
+    errs, rel = [], p.relative_to(ROOT)
+    ids = {x["persona_id"]: x for x in d["audience"]["personas"]}
+    pid = d["audience"]["primary_persona_id"]
+    if pid not in ids: errs.append(f"{rel}: primary_persona_id {pid} not in personas")
+    elif ids[pid]["role"] != "PRIMARY": errs.append(f"{rel}: primary persona {pid} role must be PRIMARY")
+    if sum(1 for x in ids.values() if x["role"] == "PRIMARY") != 1: errs.append(f"{rel}: exactly one PRIMARY persona required")
+    if d["cta_policy"].get("bot_may_post") is not False: errs.append(f"{rel}: cta_policy.bot_may_post must be false (COMMUNITY_STANDARD)")
+    if d["monetization"]["status"] == "PRODUCTS" and not d["monetization"].get("decision_ref"): errs.append(f"{rel}: monetization PRODUCTS requires decision_ref (P-013 / D-number)")
+    return errs
 
 def money_rules(docs):
     """Money Gate + record integrity (2026-09-13 review): approval, sent prompt, cost sums, pack slots, patches, negatives."""
@@ -329,6 +341,7 @@ def refcheck(paths):
             need(p, "source", d.get("source_ids"), "source_ids")
             if d["confidence"] in ("INTERPRETIVE", "ARTISTIC") and not d.get("hedge_required"):
                 errs.append(f"{p.relative_to(ROOT)}: {d['confidence']} claim must set hedge_required=true")
+        if name == "channel": errs.extend(channel_rules(p, d))
         if name == "episode":
             need(p, "era", d.get("era_ids"), "era_ids"); need(p, "location", d.get("location_ids"), "location_ids")
             need(p, "character", d.get("character_ids"), "character_ids"); need(p, "scene", d.get("scene_ids"), "scene_ids")

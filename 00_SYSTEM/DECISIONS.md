@@ -237,9 +237,24 @@
 **결정** H07 V02 **APPROVED** → `EP01_S08_SH002` LOOK_APPROVED. G10 매치컷 양쪽 플레이트 확보 (과거 H07 ↔ 현재 S08_SH003). 꼭대기 5–10% 우측 편차는 편집 정렬. 4 credits, EP01 누적 98.12. 승인 한도 소진, 추가 생성 없음.
 **결과** EP01 AI 정지 컷 전부 확보: H06 · H07 · 파이프라인 A 13. 남은 AI = 영상 H01–H05 + I2V (P-012 뒤).
 
+### D-046 · 2026-09-15 · "AI 마케팅팀 7명" 자료집 적용 — 채널 기준서 · 제목/게시 표준 · 학습 루프 (사용자 "나중에 판매 계획 있음 · 표준 문서 + 에이전트 역할" + 결정 4건)
+**입력** `AI 비서/` 캡처 9장 (인스타 platformtree_ 카드뉴스, 7역할 × 6 = 42항목). 판정: 이미 있음 5 · 채널 형태로 번역 22 · 신설 10 · 판매 전 해당 없음 5 → 계획 `C:\Users\ASUS\.claude\plans\h-00-hazy-volcano.md` (승인 2026-09-15).
+**사용자 결정** ① 페르소나 주 타깃 = (a) Korea-curious 영어권 25–44, (b) 역사 다큐 시청층은 부 · ② 콜드오픈: 0:00 = ① 질문 첫 컷 3–8초 → 브랜드 인트로 → ① 계속 (EP01 러프컷 재배열, STORY_ENGINE ① 행 메모) · ③ CTA: 설명란 = 구독 1개, 고정 댓글 = 질문 1개, **봇은 답글·포스트 초안만** · ④ 업로드 격주 토 14:00 UTC, 측정 D+1/7/28 · ⑤ 판매: 나중에 계획 있음 → 2·6·7 은 설계만, 파일 생성은 P-013 결정 뒤.
+**반영 (Phase 1)** `channel.schema.json` + `01_CHANNEL/channel.json` (검증기 규칙 channel_rules) · `AUDIENCE_STANDARD` · `TITLE_STANDARD` + EP01 제목 5안 / 썸네일 문구 3안 (`04_TITLE_THUMB/`) · `PUBLISH_STANDARD` v0.2 (설명란 템플릿·CTA·고정 댓글·엔드스크린) + `16_PUBLISH/PUBLISH_META_EP01.md` · `BRAND_INTRO` v0.2 위치 규칙 + `14_EDIT/COLD_OPEN_ORDER_EP01.md` · `01_CHANNEL/CALENDAR_2026Q4.md` · QA_STANDARD 제목 검사 1줄.
+**반영 (Phase 2, DRAFT)** `EXPERIMENT_STANDARD` + `analytics.experiment` 구조화 · `QUESTION_BANK.md` 씨앗 10 · `BENCHMARK_STANDARD` + benchmarks/_README · `SHORTS_STANDARD` + `17_SHORTS/SHORTS_PLAN_EP01.md` · `COMMUNITY_STANDARD` + **Community Agent** (AGENT_RULES §2, 금지 = 자동 게시). OS_INDEX 등록 (표준 6 신설, 스키마 30개).
+**보류 (Phase 3)** → P-013. `AI 비서/` 는 .gitignore (타인 저작물, 구조 연구용).
+**남은 사용자 결정** EP01 제목 실험 2안 · 썸네일 문구 · 유튜브 채널 핸들/Studio 접근 · 쇼츠 개수·시점 · 페르소나 (b) 유지 여부 (3편 뒤).
+
 ---
 
 ## 승인 대기 (P)
+
+### P-013 · 판매 오퍼 설계 (자료집 역할 2 상품기획 · 6 퍼널 · 7 자동화의 판매 부분) — D-046 에서 보류
+**현황** 사용자: "나중에 판매 계획 있음 (멤버십·가이드·교육)". 현재 `channel.json.monetization.status = AD_ONLY`, `planned = [membership, episode guide (diagram PDF), education]`.
+**제안 (결정 전 파일 생성 금지)** `01_CHANNEL/offer.json` + `OFFER_STANDARD.md` (상품구성·가격·오퍼·업셀·차별화) · 리드마그넷 = GT-01~04 도해 PDF "episode guide" · 뉴스레터 여부 · 멤버십 인사 포스트 · Community Agent 확장 (자동 DM 등가물).
+**시점** 3편 게시 + 성과 3회 측정 뒤 (EXPERIENCE_LEARNING 규칙). 결정 시 D-번호 + `monetization.decision_ref` 갱신.
+**영향** `channel.schema.json` (`monetization`), COMMUNITY_STANDARD, PUBLISH_STANDARD 엔드스크린 외부 링크 규칙.
+
 
 ### P-012 · Higgsfield 크레딧 → KRW 환산율 (Money Gate 계산용)
 **현황** 예산은 KRW ₩40,000 (D-015), 소진은 Higgsfield 크레딧 (배치 1 = 8.12 credits, plus 플랜). 환산율이 없어 `cost.percent_used` 를 계산할 수 없다.

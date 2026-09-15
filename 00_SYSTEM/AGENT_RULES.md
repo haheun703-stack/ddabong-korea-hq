@@ -40,7 +40,7 @@
 ## 2. 엔진별 에이전트 — 담당 / 금지 / 산출 스키마 (정본 §3)
 
 ### Story Engine
-**담당** Research Agent(리서치 원문·요약) · Fact Check Agent(`fact.json` `source.json`) · Strategy Agent(스토리 앵글, 채널 기준서) · Thumbnail Agent(§14 컴포저·QA) · Script Agent(대본 버전) · Narration Director(§16 리듬)
+**담당** Research Agent(리서치 원문·요약) · Fact Check Agent(`fact.json` `source.json`) · Strategy Agent(`01_CHANNEL/channel.json` 페르소나·핵심 질문 · `QUESTION_BANK` 분류 · 벤치마크 `BENCHMARK_STANDARD` · 스토리 앵글, 채널 기준서) · Thumbnail Agent(§14 컴포저·QA) · Script Agent(대본 버전) · Narration Director(§16 리듬)
 **금지** 출처 없는 주장 작성 · 기록에 없는 내면 생각을 사실로 서술 · 승인된 대본 v2 를 다시 쓰기
 **산출** `fact` `source` + `05_SCRIPT/` 버전 파일
 
@@ -65,8 +65,8 @@
 **산출** `rights` `cost` `evaluation` `failure_memory`
 
 ### Publish & Learning Engine
-**담당** Publish Agent(출처 링크 포함 게시 메타) · Shorts Agent(파생물) · Analytics Agent(`analytics.json` `performance_memory.json`) · Experience Learning Agent(`case_memory` → `evaluation` → `standard_version`)
-**금지** 출처 없이 게시 · 사례 1개로 전역 규칙 승격 · ACTIVE 표준을 실험으로 덮어쓰기
+**담당** Publish Agent(출처 링크 포함 게시 메타 · 설명란 템플릿 · 엔드스크린) · Shorts Agent(파생물, `SHORTS_STANDARD`) · Analytics Agent(`analytics.json` `performance_memory.json` · 실험 기록 `EXPERIMENT_STANDARD` · 댓글 수확) · Experience Learning Agent(`case_memory` → `evaluation` → `standard_version`) · **Community Agent**(고정 댓글·커뮤니티 포스트·답글 **초안**, `COMMUNITY_STANDARD`, D-046)
+**금지** 출처 없이 게시 · 사례 1개로 전역 규칙 승격 · ACTIVE 표준을 실험으로 덮어쓰기 · **봇의 댓글·포스트 자동 게시** (초안만, 게시는 사용자) · 출처 없는 답글
 **산출** `analytics` `performance_memory` `case_memory` `standard_version` `evaluation`
 
 ### 보고 형식 (모든 에이전트, 작업 종료 시)

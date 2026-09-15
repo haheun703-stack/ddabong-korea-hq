@@ -1,0 +1,71 @@
+{
+  "channel_id": "CHANNEL_TEMPLATE_EXAMPLE",
+  "brand_name_en": "EXAMPLE CHANNEL",
+  "brand_name_ko": "예시 채널",
+  "slogan": "EXAMPLE SLOGAN",
+  "promise": "Every episode answers one question a foreigner would ask, with sources on screen.",
+  "channel_question": "Why is this country like this?",
+  "platforms": [
+    "youtube"
+  ],
+  "language": {
+    "primary": "en",
+    "secondary": "ko",
+    "narration": "en",
+    "subtitles": [
+      "en",
+      "ko"
+    ]
+  },
+  "audience": {
+    "primary_persona_id": "PERSONA_EXAMPLE_01",
+    "personas": [
+      {
+        "persona_id": "PERSONA_EXAMPLE_01",
+        "role": "PRIMARY",
+        "name": "Curious Traveler",
+        "age_range": "25-44",
+        "region": "English-speaking",
+        "korea_knowledge": "none",
+        "entry_point": "travel",
+        "wants": [
+          "understand what they saw"
+        ]
+      }
+    ],
+    "core_questions": [
+      "Why are there giant mounds in the middle of a city?"
+    ],
+    "needs_map": []
+  },
+  "differentiators": [
+    "sources shown on screen"
+  ],
+  "cadence": {
+    "interval": "BIWEEKLY",
+    "weekday": "SAT",
+    "time_utc": "14:00",
+    "measure_days": [
+      1,
+      7,
+      28
+    ],
+    "note": null
+  },
+  "cta_policy": {
+    "description_cta": "Subscribe for the next question.",
+    "pinned_comment_cta": "What would you ask?",
+    "end_screen": "next episode + playlist",
+    "bot_may_post": false
+  },
+  "monetization": {
+    "status": "AD_ONLY",
+    "planned": [],
+    "decision_ref": null
+  },
+  "status": "DRAFT",
+  "version": "V01",
+  "updated_at": "2026-09-15",
+  "updated_by": "TEMPLATE",
+  "notes": "EP001_HWANGNYONGSA 계열 템플릿 ID만 (D-006)"
+}

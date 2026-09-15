@@ -17,7 +17,7 @@
 
 | # | 단계 | 역할 | 주로 쓰는 화면 (SHOT pipeline) | 근거 표시 | 길이 가이드 (7분 기준) |
 |---|---|---|---|---|---|
-| ① | **QUESTION** | 외국인이 처음 떠올릴 질문. 현재 시점에서 시작 | `AI_STILL`(사진→AI 재구성) · `REAL_SHOOT` · `ORIGINAL_GRAPHIC`(질문 카드) | 없음 | 15–35초 |
+| ① | **QUESTION** | 외국인이 처음 떠올릴 질문. 현재 시점에서 시작. **콜드오픈: 첫 컷 3–8초가 0:00, 브랜드 인트로는 그 뒤 (D-046)** | `AI_STILL`(사진→AI 재구성) · `REAL_SHOOT` · `ORIGINAL_GRAPHIC`(질문 카드) | 없음 | 15–35초 |
 | ② | **REJECTED OBVIOUS ANSWER** (상식 처방 기각) | 시청자가 떠올릴 뻔한 답 1–3개를 FACT 로 먼저 기각. 질문을 더 세게 남긴다 | `ORIGINAL_GRAPHIC`(도해 GT-04 "틀린 답 X") · `ARCHIVE` | 기각 근거 = FACT 등급 fact_id 필수 | 20–45초 |
 | ③ | **FACT** | 기록·유물·발굴로 확인되는 사실. 숫자·치수를 화면에 | `ORIGINAL_GRAPHIC`(GT-01 단면 · GT-03 치수) · `ARCHIVE` · `BLENDER_FLOW` | 출처 라벨 필수 (SOURCE_STANDARD) | 60–90초 |
 | ④ | **CONTEXT** | 당시 사회·종교·환경·기술·권력 | `ORIGINAL_GRAPHIC`(GT-02 오버헤드) · `AI_STILL` | FACT / PROBABLE 구분 | 45–75초 |
