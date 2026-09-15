@@ -13,6 +13,6 @@
 | walking | ○ | 5/5 | PASS | 좌→우 보행 (연속성 락 ①) |
 | costume_detail | — (턱 크롭) | 5/5 | PASS | 깃·비단결·은 과판 3 드리개 선명 |
 | back_view (보조) | — | 5/5 | PASS | 어깨선·고깔 실루엣, 봉분 배경 — H05 참조 |
-| expression_sheet | (아래) | | | |
+| expression_sheet | ○ ×5 | 5/5 | PASS | 5얼굴 동일 인물·동일 모자·의상. 표정 변화는 미세 (절제 지시대로: 중립·주시·근심·결의·조용한 슬픔). 편집에서 클로즈업 표정 참조용으로 충분 |
 
-봇 판정: 9/9 PASS. 구 캐스팅 V01/V02 이미지는 기록 보존, 새 팩이 CHARACTER_MASTER 후보. 사용자 OK → CHARACTER_MASTER_APPROVED (D-053).
+봇 판정: **10/10 PASS** (20 credits, 재시도 0). 구 캐스팅 V01/V02 이미지는 기록 보존, 새 팩이 CHARACTER_MASTER 후보. 사용자 OK → CHARACTER_MASTER_APPROVED (D-053).

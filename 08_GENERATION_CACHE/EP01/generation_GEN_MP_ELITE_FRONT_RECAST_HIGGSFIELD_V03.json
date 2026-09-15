@@ -1,0 +1,42 @@
+{
+  "generation_id": "GEN_MP_ELITE_FRONT_RECAST_HIGGSFIELD_V03",
+  "shot_id": "MASTER_PACK:CHAR_SILLA_ELITE_OBSERVER_01:front",
+  "stage": "STILL",
+  "provider": "Higgsfield",
+  "model": "NANO_BANANA_PRO (nano_banana_pro, 2k, image_references = hero V07; D-052 master pack recast)",
+  "provider_job": {
+    "job_id": "f03114c2-6587-4e7a-afa4-aeb27190caa1",
+    "job_set_type": "nano_banana_2",
+    "display_name": "Nano Banana Pro",
+    "params_path": "08_GENERATION_CACHE/EP01/provider_jobs/HF_f03114c2-6587-4e7a-afa4-aeb27190caa1.json"
+  },
+  "prompt_id": "PRM_MP_CHAR_SILLA_ELITE_OBSERVER_01_FRONT_V03",
+  "prompt_version": "V03",
+  "standard_versions": {
+    "VISUAL_STYLE_BIBLE.md": "v0.2",
+    "CHARACTER_CONTINUITY_STANDARD.md": "v0.1",
+    "COST_STANDARD.md": "v0.1"
+  },
+  "case_ids_used": [],
+  "approval_id": "APR_EP01_MP_ELITE_RECAST_003",
+  "input_paths": [
+    "08_GENERATION_CACHE/EP01/MP_ELITE/MP_ELITE_HERO_RECAST_V07_46880b62.png"
+  ],
+  "output_paths": [
+    "08_GENERATION_CACHE/EP01/MP_ELITE/MP_ELITE_FRONT_RECAST_V03_f03114c2.png"
+  ],
+  "attempts": 1,
+  "duration_sec": null,
+  "cost": {
+    "currency": "CREDITS",
+    "amount": 2.0,
+    "spent": 2.0,
+    "note": "batch of 10; balance 1477.03 -> 1457.03"
+  },
+  "result_status": "SUCCESS",
+  "failure_id": null,
+  "started_at": "2026-09-15T13:15:00Z",
+  "finished_at": null,
+  "run_by": "Claude Code (D-052 recast batch)",
+  "notes": "Bot QC pending (contact sheet + costume checklist 5). Owner OK/FIX pending."
+}
