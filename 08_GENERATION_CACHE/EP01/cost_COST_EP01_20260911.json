@@ -5,11 +5,11 @@
     "currency": "KRW",
     "amount": 40000,
     "spent": null,
-    "note": "D-015 사용자 확정 ₩40,000. 소진 Higgsfield 98.12 credits (원로 24.12 · 군중 20 · 기준 그림 16 · AI 샷 10 · 파이프라인 A 시험 2 · 배치 1 16 · 배치 2 8 · M2 FIX 2 [위임]). 크레딧→KRW 환산율 미확정 (P-012). 계정 크레딧은 다른 작업과 공용 (D-018) → job 기록 합계로 계산."
+    "note": "D-015 사용자 확정 ₩40,000 (사진) + D-047 영상 예산 150 credits. 소진 Higgsfield 142.22 credits. 크레딧→KRW 환산은 청구서 뒤 (P-012 종결)."
   },
   "spent_total": null,
   "spent_by_provider": {
-    "Higgsfield (credits)": 98.12
+    "Higgsfield (credits)": 142.22
   },
   "percent_used": null,
   "gate_state": "OPEN",
@@ -63,8 +63,15 @@
     "GEN_PA_EP01_S08_SH001_M3_HIGGSFIELD_V01",
     "GEN_PA_EP01_S08_SH001_M2_HIGGSFIELD_V02",
     "GEN_EP01_S08_SH002_HIGGSFIELD_V01",
-    "GEN_EP01_S08_SH002_HIGGSFIELD_V02"
+    "GEN_EP01_S08_SH002_HIGGSFIELD_V02",
+    "GEN_EP01_S06_SH005_KLING_V01",
+    "GEN_EP01_S04_SH004_KLING_V01",
+    "GEN_EP01_S01_SH001_I2V_KLING_V01",
+    "GEN_EP01_S08_SH001_M1_I2V_KLING_V01",
+    "GEN_EP01_NARR_SAMPLE_GRADY_V01",
+    "GEN_EP01_NARR_SAMPLE_ARTHUR_V01",
+    "GEN_EP01_NARR_SAMPLE_HOLDEN_V01"
   ],
-  "as_of": "2026-09-14",
-  "note": "50 호출 = 98.12 credits (원로 13 · 군중 10 · 기준 그림 8 · AI 샷 5 (H06 3 · H07 2) · 파이프라인 A 14). P-012 환산율 확정 시 percent_used 계산."
+  "as_of": "2026-09-15",
+  "note": "57 호출 = 142.22 credits (사진·기준 그림·파이프라인 A 98.12 · I2V 배치 1 36 · 내레이션 샘플 8.1). 영상 예산 150 credits (D-047) 중 44.1 사용."
 }

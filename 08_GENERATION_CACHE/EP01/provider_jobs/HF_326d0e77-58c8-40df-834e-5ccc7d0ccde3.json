@@ -1,0 +1,17 @@
+{
+  "provider": "Higgsfield",
+  "job_id": "326d0e77-58c8-40df-834e-5ccc7d0ccde3",
+  "job_set_type": "seed_audio",
+  "display_name": "Seed Audio 1.0",
+  "status": "completed",
+  "created_at": "2026-09-15T06:33:00Z",
+  "params": {
+    "model": "seed_audio",
+    "voice_type": "preset",
+    "voice_id": "30fc8796-ceb6-4a66-b3a7-4a145ef7f346",
+    "voice_name": "Arthur",
+    "prompt": "Walk through Gyeongju today, and something feels unusual. Between roads, houses, and everyday city life, enormous green mounds rise from the ground. They look like hills. But they are tombs. Some were built for the rulers and elite of Silla, the kingdom that made Gyeongju its capital for centuries. So here is the question: why would a society give this much land, labor, and wealth to the dead?"
+  },
+  "retrieved_at": "2026-09-15",
+  "note": "Narration voice sample (cold open VO, ~30 s). Actual cost ~2.7 credits each (preflight 1.4 used a shorter sentence)."
+}

@@ -1,0 +1,44 @@
+{
+  "generation_id": "GEN_EP01_S04_SH004_KLING_V01",
+  "shot_id": "EP01_S04_SH004",
+  "stage": "VIDEO",
+  "provider": "Higgsfield",
+  "model": "KLING_3_0 (catalog kling3_0, mode pro, 6 s, 16:9, silent, start_image = approved still/master frame; D-028 / D-047)",
+  "provider_job": {
+    "job_id": "a2f49c4c-55b6-4991-9fb0-df2fb9a903b5",
+    "job_set_type": "kling3_0",
+    "display_name": "Kling v3.0",
+    "params_path": "08_GENERATION_CACHE/EP01/provider_jobs/HF_a2f49c4c-55b6-4991-9fb0-df2fb9a903b5.json"
+  },
+  "prompt_id": "PRM_EP01_S04_SH004_V03",
+  "prompt_version": "V03",
+  "standard_versions": {
+    "CHARACTER_CONTINUITY_STANDARD.md": "v0.1",
+    "COST_STANDARD.md": "v0.1",
+    "CAMERA_GRAMMAR.md": "v0.1"
+  },
+  "case_ids_used": [
+    "CASE_DDABONG_CHAR_001"
+  ],
+  "approval_id": "APR_EP01_VID_001",
+  "input_paths": [
+    "08_GENERATION_CACHE/EP01/MF/MF_EP01_S04_MASTER_V05_c4ceb494.png"
+  ],
+  "output_paths": [
+    "08_GENERATION_CACHE/EP01/AI_VIDEO/H01_V01_a2f49c4c.mp4"
+  ],
+  "attempts": 1,
+  "duration_sec": 6,
+  "cost": {
+    "currency": "CREDITS",
+    "amount": 9.0,
+    "spent": 9,
+    "note": "Batch generate_video_batch (4 jobs). Balance before 1644.58 -> after 1600.48 (incl. 3 narration samples 8.1)."
+  },
+  "result_status": "SUCCESS",
+  "failure_id": null,
+  "started_at": "2026-09-15T06:40:00Z",
+  "finished_at": null,
+  "run_by": "Claude Code (I2V batch 1, D-047)",
+  "notes": "Sent text == prompt assembled_text (verified). Bot check + owner OK/FIX pending (evening batch review, D-047 #6)."
+}

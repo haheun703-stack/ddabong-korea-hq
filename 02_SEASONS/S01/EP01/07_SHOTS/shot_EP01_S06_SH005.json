@@ -41,7 +41,17 @@
   ],
   "rights_ids": [],
   "ai_label": "AI Visual Reconstruction · INTERPRETIVE RECONSTRUCTION",
-  "version_history": [],
+  "version_history": [
+    {
+      "version": "V01",
+      "stage": "VIDEO",
+      "status": "DRAFT",
+      "created_at": "2026-09-15",
+      "created_by": "Claude Code (D-047 I2V batch 1)",
+      "path": "08_GENERATION_CACHE/EP01/AI_VIDEO/H05_V01_5822bbbe.mp4",
+      "note": "GEN_EP01_S06_SH005_KLING_V01 · Kling 3.0 pro 6 s · 봇 판정 대기 · 사용자 OK/FIX 대기"
+    }
+  ],
   "approved_version": null,
   "created_at": "2026-09-11",
   "updated_at": "2026-09-15",

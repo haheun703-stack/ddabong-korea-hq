@@ -1,0 +1,26 @@
+{
+  "provider": "Higgsfield",
+  "job_id": "73b5f315-e4c6-4e6f-b1d7-a01b805060ee",
+  "job_set_type": "kling3_0",
+  "display_name": "Kling v3.0",
+  "status": "completed",
+  "created_at": "2026-09-15T06:40:00Z",
+  "params": {
+    "model": "kling3_0",
+    "mode": "pro",
+    "duration": 6,
+    "aspect_ratio": "16:9",
+    "sound": "off",
+    "declined_preset_id": "24bae836-2c4a-48e0-89b6-49fcc0b21612",
+    "input_images": [
+      {
+        "job_id": "866883a5-6178-490c-9d34-2c56957331a6",
+        "role": "start_image",
+        "path": "08_GENERATION_CACHE/EP01/AI_STILL/PA_S01_SH001_V01_866883a5.png"
+      }
+    ],
+    "prompt": "Photorealistic present-day documentary still, reconstructed from a licensed reference photograph. Keep the real landform, silhouette and proportions of the reference; change only season, light, weather and clutter as instructed. Natural lighting, neutral grade, realistic materials. Present-day surroundings (paths, trees, distant town) allowed only as they exist in the reference. No fantasy. No invented buildings. No text. No logos. No oversaturation. No glossy AI look. No malformed anatomy. Video from the start image, 6 seconds, silent. Slow steady forward dolly down the street at walking pace, about three metres in six seconds, same height 1.6 m, no zoom, no tilt, no cut. Natural motion only: the white sedan drives slowly toward the camera and passes on the right; the pedestrians walk on, seen from behind or in profile, faces never turned to the camera; awnings and planters stay still; light stays constant, clear sunny day. Keep everything in the start image unchanged: the same street, hanok roofs, lamps, colours and layout; nothing new is added. No readable text or signs appear, no text, no captions, no watermark, no logo. Nobody looks at the camera, nobody speaks."
+  },
+  "retrieved_at": "2026-09-15",
+  "note": "jobs_wait result. Result/CDN URLs omitted. params.prompt = text actually sent (identical to PRM_EP01_S01_SH001_I2V_V01.assembled_text). First submission was intercepted by a Higgsfield preset recommendation (no charge); resubmitted with declined_preset_id."
+}

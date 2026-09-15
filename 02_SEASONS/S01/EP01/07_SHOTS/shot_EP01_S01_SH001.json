@@ -35,6 +35,15 @@
       "created_by": "사용자",
       "path": "08_GENERATION_CACHE/EP01/AI_STILL/PA_S01_SH001_V01_866883a5.png",
       "note": "D-042 (2026-09-14) 사용자 OK. GEN_PA_EP01_S01_SH001_HIGGSFIELD_V01 · 텍스트 전용 · 봇 PASS (minor: 차 엠블럼)"
+    },
+    {
+      "version": "V01",
+      "stage": "VIDEO",
+      "status": "DRAFT",
+      "created_at": "2026-09-15",
+      "created_by": "Claude Code (D-047 I2V batch 1)",
+      "path": "08_GENERATION_CACHE/EP01/AI_VIDEO/S01_SH001_V01_73b5f315.mp4",
+      "note": "GEN_EP01_S01_SH001_I2V_KLING_V01 · Kling 3.0 pro 6 s · 봇 판정 대기 · 사용자 OK/FIX 대기"
     }
   ],
   "approved_version": "V01",
@@ -50,6 +59,6 @@
     "source_rights_ids": [],
     "composition_ref_note": "YELLOW/RED 수치 전용 (D-034 #2): 구도는 유튜브 캡처 그림1·그림18 (RTS_YOUTUBE_CAPTURES_GYEONGJU_001, RED, 이미지 미첨부) 에서 문장으로만 옮김 — 황리단길 일방통행로, 소실점 x≈0.62 y≈0.42, 흰 승용차 x≈0.55 y≈0.62, 한옥 기와 양쪽, 쌍등 가로등 좌측, 맑은 하늘. 차·사람은 이 샷의 목적이라 negative 'vehicles'·'crowds' 는 이 샷에 한해 유보 (판독 가능한 간판·얼굴 금지 유지).",
     "redesign_prompt_id": "PRM_PA_EP01_S01_SH001_V01",
-    "i2v_generation_id": null
+    "i2v_generation_id": "GEN_EP01_S01_SH001_I2V_KLING_V01"
   }
 }

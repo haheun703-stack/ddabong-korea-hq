@@ -9,6 +9,7 @@
 ## 다음 시작 — "따봉 계속" 하면 여기부터 (갱신 2026-09-15 오후)
 
 **D-047 속도 모드**: 문서 동결 · EP01 영상 예산 150 credits (P-012 종결) · 위임 배치당 40 credits/재시도 2 · I2V 핵심 4컷 (H05 · H01 · S01_SH001 · S08 M1) + 나머지 정지 · 도해 G04 만 · 내레이션 초안 = Higgsfield TTS. 2주 목표 = EP01 게시.
+**I2V 배치 1 완료 (09-15 저녁)**: H05 · H01 · S01_SH001 · S08 M1 4컷 SUCCESS (Kling 3.0 pro, 36 credits) → `08_GENERATION_CACHE/EP01/AI_VIDEO/`, 봇 PASS 4 (minor 2). 내레이션 샘플 3 (Grady·Arthur·Holden, 8.1 credits) → `EP01/13_AUDIO/narration_samples/`. 검수 시트 `AI_VIDEO/REVIEW_I2V_BATCH1_20260915.md`. **사용자: 4컷 OK/FIX + 보이스 1개 선택 대기.** EP01 누적 142.22 credits, 잔액 1600.48.
 
 
 **2026-09-15 한 것 (D-046)**: `AI 비서/` 자료집(AI 마케팅팀 7명) 적용 — 채널 기준서 `01_CHANNEL/channel.json` (페르소나 a 주) · 표준 6 신설 (`AUDIENCE` `TITLE` `EXPERIMENT` `BENCHMARK` `SHORTS` `COMMUNITY`, DRAFT) · `PUBLISH` v0.2 (설명란 템플릿·CTA) · `BRAND_INTRO` v0.2 (콜드오픈 뒤) · EP01 게시 산출물: `04_TITLE_THUMB/TITLE_CANDIDATES_EP01.md` (5안) · `THUMB_TEXT_EP01.md` (3안) · `16_PUBLISH/PUBLISH_META_EP01.md` · `14_EDIT/COLD_OPEN_ORDER_EP01.md` · `17_SHORTS/SHORTS_PLAN_EP01.md` · `01_CHANNEL/CALENDAR_2026Q4.md` · `QUESTION_BANK.md`. Community Agent 추가. 판매(2·6·7) 는 P-013 보류. **사용자 결정 대기: EP01 제목 실험 2안 · 썸네일 문구 · 유튜브 채널 핸들.**
@@ -194,6 +195,8 @@
 ---
 
 ## 최근 변경 (최신순)
+
+- **2026-09-15 저녁 Claude Code** — I2V 배치 1 (4컷, 36 credits) + 내레이션 샘플 3 (8.1 credits) 생성, 봇 PASS. 검증기 13_AUDIO 프롬프트 포함. 사용자 OK/FIX·보이스 선택 대기.
 
 - **2026-09-15 오후 사용자** — **D-047** 속도 우선: 문서 동결, P-012 종결(영상 150 credits), 위임 40/배치·재시도 2, EP01 I2V 4컷으로 축소, 내레이션 Higgsfield TTS 초안. 영상 착수.
 

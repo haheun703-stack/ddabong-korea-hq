@@ -1,0 +1,39 @@
+{
+  "generation_id": "GEN_EP01_NARR_SAMPLE_HOLDEN_V01",
+  "shot_id": "EP01_S01_SH001",
+  "stage": "STILL",
+  "provider": "Higgsfield",
+  "model": "SEED_AUDIO_1_0 (seed_audio preset Holden) - narration TTS sample (stage enum has no AUDIO; STILL used as placeholder, D-047 #5)",
+  "provider_job": {
+    "job_id": "b5528e87-ffa3-419c-9757-6e70acb3e1d1",
+    "job_set_type": "seed_audio",
+    "display_name": "Seed Audio 1.0",
+    "params_path": "08_GENERATION_CACHE/EP01/provider_jobs/HF_b5528e87-ffa3-419c-9757-6e70acb3e1d1.json"
+  },
+  "prompt_id": "PRM_EP01_NARR_SAMPLE_V01",
+  "prompt_version": "V01",
+  "standard_versions": {
+    "NARRATION_STANDARD.md": "v0.1",
+    "COST_STANDARD.md": "v0.1"
+  },
+  "case_ids_used": [],
+  "approval_id": "APR_EP01_AUD_001",
+  "input_paths": [],
+  "output_paths": [
+    "02_SEASONS/S01/EP01/13_AUDIO/narration_samples/NARR_SAMPLE_Holden_b5528e87.wav"
+  ],
+  "attempts": 1,
+  "duration_sec": 30,
+  "cost": {
+    "currency": "CREDITS",
+    "amount": 2.7,
+    "spent": 2.7,
+    "note": "3 samples = 8.1 credits measured from balance delta (44.1 - 36)."
+  },
+  "result_status": "SUCCESS",
+  "failure_id": null,
+  "started_at": "2026-09-15T06:33:00Z",
+  "finished_at": null,
+  "run_by": "Claude Code (D-047 narration draft)",
+  "notes": "Voice sample for owner pick (Grady / Arthur / Holden). Delegated (D-030/D-047)."
+}
