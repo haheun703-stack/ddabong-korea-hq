@@ -1,12 +1,35 @@
 # CURRENT STATUS — 지금 어디까지 왔나
 
 > **매 작업마다 갱신한다.** 이 파일 하나만 읽으면 어느 봇/AI 창을 열어도 바로 이어갈 수 있어야 한다.
-> 갱신: 2026-09-15 밤 (Claude Code, D-051 시각 형식 확정 · 재캐스팅 시험 시작) · 마지막 사용자 승인: 2026-09-15 (D-046 페르소나·콜드오픈·CTA·주기)
+> 갱신: 2026-09-15 밤 (Claude Code, D-052 복식 정정 · 원로 10종 재캐스팅 완료 · 내일 결정 묶음) · 마지막 사용자 승인: 2026-09-15 (D-046 페르소나·콜드오픈·CTA·주기)
 > 읽는 순서: `BOT_HANDOFF_DDABONG_STUDIO_OS_V0.1.md` → `BOT_BOOTSTRAP_PROMPT.md` → **이 문서** → `OS_INDEX.md` → `02_SEASONS/S01/EP01/episode.json`
 
 ---
 
-## 다음 시작 — "따봉 계속" 하면 여기부터 (갱신 2026-09-15 밤)
+## 다음 시작 — "따봉 계속" 하면 여기부터 (갱신 2026-09-15 밤, 내일 09-16 용)
+
+**오늘(09-15) 확정 결정**: D-049 영상 품질 번복 → D-050 리서치 → **D-051 시각 형식 확정** ("미스터 션샤인" 실사 영화 룩 · 얼굴 현대 미감 · 복식 고증 · 사진 우선 · 검수 3단 · 목표 AI 90~95%) → **D-052 복식 근거 정정** (반소매·V 여밈·청동 과대·원추 관모 = 시대착오/근거 없음 → 긴소매 직령교임·얕은 여밈·은 과판·낮은 고깔). 문서: `standards/VISUAL_STYLE_BIBLE.md` v0.2 · `05_HISTORY_DATABASE/costumes/COSTUME_SILLA_ELITE_A01.json` V02 · `EP01/01_RESEARCH/COSTUME_ELITE_VERIFY_20260915.md` · 벤치마크 `09_ANALYTICS/benchmarks/VISUAL_FORMAT_RESEARCH_20260915.md` · AISTRA 자료 검토 `REVIEW_PROMPT_PACK_AISTRA_20260915.md`.
+
+**09-15 끝난 자리**
+- 시험 ① 원로 재캐스팅 **완료·봇 PASS**: hero V07 (`08_GENERATION_CACHE/EP01/MP_ELITE/MP_ELITE_HERO_RECAST_V07_46880b62.png`) + 10종 V03 (`MP_ELITE_*_RECAST_V03_*.png`, 시트 `CONTACT_RECAST_V03_20260915.jpg`, 검수 `REVIEW_RECAST_PACK_V03_20260915.md`). 26 credits.
+- 스킬 4개 설치 `.claude/skills/` (storyboard-v1/v2 · master-sheet-v2 · seedance-continuity-builder, 안내 `_DDABONG_README.md`).
+- 잔액 1,457.03 · EP01 누적 218.17 · D-051 재작업 예산 100 중 26 사용. 계정 외 결제 Seedance 2.0 67.5 (12:25 캠핑 광고, 다른 창) 는 EP01 제외 — 사용자 확인 필요.
+
+**내일 아침 결정 묶음 (한 번에, 순서대로)**
+1. **원로 10종 OK/FIX** (`CONTACT_RECAST_V03_20260915.jpg`) → OK 면 **D-053** CHARACTER_MASTER_APPROVED (신 캐스팅), 구 V01~V03 은 기록 보존. 걸리면 슬롯 이름 + 한 줄.
+2. **시험 ② 실제 플레이트 합성 1컷 승인** (2~4 credits): 대릉원 CC0 원본 (`02_SEASONS/S01/EP01/02_SOURCES/`, Gagnon 5018×3345) 위에 새 원로 뒷모습(back_view) 합성 → 광원 방향·그림자·색온도 이음새 검수. 통과 = 사진 우선 원칙 실증.
+3. **노동자·시종 재캐스팅 범위**: 시험 ② 통과 뒤 LITE 3+3장 (≈12~16 credits) 진행 여부. 복식 lock 도 D-052 방식으로 근거 재검증 먼저 (노동자 CLM_001·005, 시종 CLM_004 기준).
+4. **프리비즈 시트 1장** (storyboard-v1, S01 콜드오픈 12컷, ≤4 credits) — 한글 헤더 깨짐 시험 겸.
+5. 이월 결정: EP01 제목 A/B (T1 vs T4) · 썸네일 문구 · 러프컷 편집 주체 · 유튜브 핸들.
+
+**봇이 아침에 승인 없이 할 수 있는 것 (무료)**: 노동자·시종 복식 근거 리서치 (웹만, 유료 도구 금지) · 대릉원 플레이트 광원 분석(태양 방향·시각 추정) · 시험 ② 프롬프트 초안 저장 · 기각 4클립 중 자동차 컷 3초 재검증 컷 리스트.
+
+**규칙 리마인드**: 사진 우선(공공누리 1유형·CC0만) · 인물 정지 · AI 영상 사람 없는 ≤3초 · 검수 3단(200% 줌/12프레임 → 패치 → 사용자 OK) · 복식 체크리스트 5항목 · 위임 40/배치·150 누적 · Sent Prompt Rule · 서브에이전트 유료 도구 금지.
+
+---
+
+<details><summary>09-15 낮~밤 상세 로그 (접힘)</summary>
+
 
 **속도 모드 (D-047)**: 문서 동결 · 영상 예산 150 credits · 위임 40/배치 · 결정은 아침 1회 묶음.
 
@@ -30,6 +53,8 @@
 5. 유튜브 채널 핸들·Studio 접근 (게시 메타 마무리용)
 
 **봇이 아침에 바로 할 수 있는 것 (무료)**: ffmpeg 가편집 초안 (사용자가 4 를 "봇" 으로 답하면) · G04 단면 도해 사양서 · 쇼츠 3개 컷 목록 확정.
+
+</details>
 
 ---
 
