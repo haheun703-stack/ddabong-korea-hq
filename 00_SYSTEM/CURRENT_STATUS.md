@@ -10,6 +10,8 @@
 
 **속도 모드 (D-047)**: 문서 동결 · 영상 예산 150 credits · 위임 40/배치 · 결정은 아침 1회 묶음.
 
+**09-15 밤 추가 — D-049 품질 번복**: 사용자가 I2V 4컷 재생 후 "AI 티 심함" → 4컷 VIDEO_V 로 되돌림. 규칙: AI 영상 1080p 미만 · 편집 3초 이하 · 정지+편집 카메라 우선. H05 재시험 (Kling std 720p 6.25 · Seedance 480p 12.5) → Seedance '거의 정지' 가 가장 덜 AI 같음. 비교 시트 `08_GENERATION_CACHE/EP01/AI_VIDEO/REVIEW_H05_RETEST_20260915.md`. **사용자 결정: 인물 컷 방식 (정지+편집 / Seedance 3초 삽입 / 둘 다).** EP01 누적 192.17.
+
 **09-15 끝난 자리**
 - **I2V 4컷 VIDEO_APPROVED (D-048)** → `08_GENERATION_CACHE/EP01/AI_VIDEO/` (H05 · H01 · S01_SH001 · S08_M1, Kling 3.0 pro 6 s). 편집 메모: S01_SH001 은 5초 컷.
 - **내레이션 초안 완료** (Grady, 9섹션, 6:02) → `02_SEASONS/S01/EP01/13_AUDIO/narration/NARR_EP01_S0~S8_Grady_*.wav`. 최종 보이스 재검토는 게시 전.

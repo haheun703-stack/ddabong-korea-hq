@@ -1,0 +1,43 @@
+{
+  "generation_id": "GEN_EP01_S06_SH005_SEEDANCE_V01",
+  "shot_id": "EP01_S06_SH005",
+  "stage": "VIDEO",
+  "provider": "Higgsfield",
+  "model": "SEEDANCE_2_5 (seedance_2_5 omni_reference 480p 854x480, 5 s, silent; D-049 retest B)",
+  "provider_job": {
+    "job_id": "75bbfd3b-4ddf-43d2-9f8f-a86d6b8eab7e",
+    "job_set_type": "seedance_2_5",
+    "display_name": "Seedance 2.5",
+    "params_path": "08_GENERATION_CACHE/EP01/provider_jobs/HF_75bbfd3b-4ddf-43d2-9f8f-a86d6b8eab7e.json"
+  },
+  "prompt_id": "PRM_EP01_S06_SH005_V03",
+  "prompt_version": "V03",
+  "standard_versions": {
+    "CHARACTER_CONTINUITY_STANDARD.md": "v0.1",
+    "COST_STANDARD.md": "v0.1"
+  },
+  "case_ids_used": [
+    "CASE_DDABONG_CHAR_001"
+  ],
+  "approval_id": "APR_EP01_VID_002",
+  "input_paths": [
+    "08_GENERATION_CACHE/EP01/MF/MF_EP01_S06_MASTER_MOUND_BUILDING_V01_8e1007b7.png"
+  ],
+  "output_paths": [
+    "08_GENERATION_CACHE/EP01/AI_VIDEO/H05_V03_SEEDANCE480_75bbfd3b.mp4"
+  ],
+  "attempts": 1,
+  "duration_sec": 5,
+  "cost": {
+    "currency": "CREDITS",
+    "amount": 12.5,
+    "spent": 12.5,
+    "note": "Balance 1569.28 -> 1550.53 together with Kling std test (6.25)."
+  },
+  "result_status": "SUCCESS",
+  "failure_id": null,
+  "started_at": "2026-09-15T09:12:00Z",
+  "finished_at": null,
+  "run_by": "Claude Code (D-049 retest)",
+  "notes": "12-frame contact sheet: camera locked, observer + foreground + most background still; only distant figures micro-move; no visible smearing. Softest AI look of the three, but 480p (soft when upscaled). Verdict: BEST of AI options for 'mostly still' prompts; cost 2x Kling std. Owner pick pending."
+}

@@ -59,6 +59,15 @@
       "created_by": "Claude Code (D-049 retest A)",
       "path": "08_GENERATION_CACHE/EP01/AI_VIDEO/H05_V02_KLINGSTD_306b694f.mp4",
       "note": "GEN_EP01_S06_SH005_KLING_V02 · Kling std 720p 5 s · 봇 PARTIAL (배경 군중 여전히 움직임) · 3초 이하 삽입용"
+    },
+    {
+      "version": "V03",
+      "stage": "VIDEO",
+      "status": "DRAFT",
+      "created_at": "2026-09-15",
+      "created_by": "Claude Code (D-049 retest B)",
+      "path": "08_GENERATION_CACHE/EP01/AI_VIDEO/H05_V03_SEEDANCE480_75bbfd3b.mp4",
+      "note": "GEN_EP01_S06_SH005_SEEDANCE_V01 · Seedance 2.5 480p 5 s · 봇 판정 대기"
     }
   ],
   "approved_version": null,

@@ -17,5 +17,5 @@
   "delegated": true,
   "decided_by": "봇 (D-047 위임)",
   "decided_at": "2026-09-15T09:10:00Z",
-  "note": "D-049: 사용자 품질 불만 → 1080p 미만·3초·정지 우선 규칙. H05 1컷 모델 비교 (Kling std vs Seedance 저해상). 낫지 않으면 영상 재시도 중단."
+  "note": "D-049: 사용자 품질 불만 → 1080p 미만·3초·정지 우선 규칙. H05 1컷 모델 비교 (Kling std vs Seedance 저해상). 낫지 않으면 영상 재시도 중단. 2/2 사용 (Kling std 6.25 + Seedance 480p 12.5 = 18.75)."
 }

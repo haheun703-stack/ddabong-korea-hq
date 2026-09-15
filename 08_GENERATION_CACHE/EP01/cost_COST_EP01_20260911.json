@@ -9,7 +9,7 @@
   },
   "spent_total": null,
   "spent_by_provider": {
-    "Higgsfield (credits)": 179.67
+    "Higgsfield (credits)": 192.17
   },
   "percent_used": null,
   "gate_state": "OPEN",
@@ -80,8 +80,9 @@
     "GEN_EP01_NARR_S6_GRADY_V01",
     "GEN_EP01_NARR_S7_GRADY_V01",
     "GEN_EP01_NARR_S8_GRADY_V01",
-    "GEN_EP01_S06_SH005_KLING_V02"
+    "GEN_EP01_S06_SH005_KLING_V02",
+    "GEN_EP01_S06_SH005_SEEDANCE_V01"
   ],
   "as_of": "2026-09-15",
-  "note": "66 호출 = 173.42 credits (사진 98.12 · I2V 배치 1 36 · 내레이션 샘플 8.1 · 내레이션 전체 31.2). 영상 예산 150 (D-047) 중 75.3 사용."
+  "note": "68 호출 = 192.17 credits (사진 98.12 · I2V 배치 1 36 · 내레이션 샘플 8.1 · 내레이션 전체 31.2 · D-049 재시험 18.75). 영상 예산 150 중 94.05 사용."
 }
