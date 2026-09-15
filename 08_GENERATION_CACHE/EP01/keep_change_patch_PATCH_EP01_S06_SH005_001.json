@@ -1,0 +1,23 @@
+{
+  "patch_id": "PATCH_EP01_S06_SH005_001",
+  "shot_id": "EP01_S06_SH005",
+  "from_version": "V01",
+  "to_version": "V02",
+  "fix_reason": "AI_ARTIFACT",
+  "keep": [
+    "start image = MOUND_BUILDING master frame",
+    "observer seen from behind, still",
+    "era/costume/layout locks"
+  ],
+  "change": [
+    "camera locked off (was 2 m forward dolly)",
+    "only 2 distant figures move (was many + dust everywhere)",
+    "5 s (was 6)",
+    "output below 1080p (Kling std / Seedance) and compared across 2 models"
+  ],
+  "reason": "Owner review of GEN_EP01_S06_SH005_KLING_V01: crowd I2V at 6 s pro looks AI-generated - faces/hands smear, walking slides. D-049: reduce motion, resolution and length; compare models before deciding whether AI video is used at all.",
+  "requested_by": "사용자 (D-049)",
+  "created_at": "2026-09-15",
+  "resulting_prompt_id": "PRM_EP01_S06_SH005_V03",
+  "resulting_generation_id": null
+}
