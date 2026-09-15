@@ -1,0 +1,17 @@
+{
+  "source_id": "SRC_NAHF_GOGURYEO_MURAL_DRESS_001",
+  "claim_ids": [
+    "CLM_SILLA_COSTUME_014"
+  ],
+  "title": "고분 벽화에 표현된 고구려 복식 (우리역사넷, 김문자)",
+  "institution_or_author": "국사편찬위원회",
+  "url_or_path": "https://contents.history.go.kr/front/km/view.do?levelId=km_009_0030_0020_0020",
+  "verified_at": "2026-09-15",
+  "verified_by": "Claude Code (Historical QA, D-052 research agent + review)",
+  "excerpt_or_summary": "고구려 저고리는 깃·섶·끝동에 두 색 선(襈). 좌임·우임 공존. 소매 좁은 것·넓은 것 혼재. 길이 엉덩이 덮고 허리에 띠. 직령교임. 선은 귀족적 구분 표지로 해석.",
+  "confidence": "FACT",
+  "uncertainty": "고구려 자료. 신라 남성 상의 선(襈) 직접 증거는 없음 → 삼국 공통 유추만 가능.",
+  "source_type": "ACADEMIC",
+  "rights_id": null,
+  "notes": "복식 검증 리서치 (D-052, 2026-09-15). 미디어 재사용 권리는 별개."
+}

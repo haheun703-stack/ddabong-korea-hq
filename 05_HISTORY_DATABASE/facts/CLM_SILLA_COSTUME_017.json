@@ -1,0 +1,17 @@
+{
+  "claim_id": "CLM_SILLA_COSTUME_017",
+  "text_ko": "금제 과대는 경주 최상위(금관 동반) 무덤에만 있고, 왕·왕족=금, 귀족=은, 그 아래 금동이며 청동·철은 하위 위계다.",
+  "text_en": "Gold plaque belts occur only in top-tier tombs; royalty gold, nobles silver, then gilt-bronze; bronze/iron mark lower rank.",
+  "confidence": "PROBABLE",
+  "source_ids": [
+    "SRC_KIM_JAEYEOL_BELT_001",
+    "SRC_AKS_HWANGNAM_BELT_001"
+  ],
+  "used_in": [
+    "COSTUME_SILLA_ELITE_A01"
+  ],
+  "hedge_required": true,
+  "verified_at": "2026-09-15",
+  "verified_by": "Claude Code (Historical QA, D-052 research agent + review)",
+  "notes": "D-015 의 '청동 과대' 선택은 하위 위계에 해당 → 상위 비왕족 관찰자는 은제(1순위)·금동(2순위)으로 정정."
+}

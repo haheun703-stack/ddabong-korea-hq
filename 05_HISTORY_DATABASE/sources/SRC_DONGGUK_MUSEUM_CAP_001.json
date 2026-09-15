@@ -1,0 +1,17 @@
+{
+  "source_id": "SRC_DONGGUK_MUSEUM_CAP_001",
+  "claim_ids": [
+    "CLM_SILLA_COSTUME_010"
+  ],
+  "title": "관모와 관식 (동국대학교박물관 강정무, 동국인)",
+  "institution_or_author": "동국대학교박물관 / 동국인",
+  "url_or_path": "https://www.donggukin.or.kr/news/articleView.html?idxno=6501",
+  "verified_at": "2026-09-15",
+  "verified_by": "Claude Code (Historical QA, D-052 research agent + review)",
+  "excerpt_or_summary": "신라 관모 대부분은 백화수피(자작나무 껍질)제. 형태는 '끝이 뭉툭한 고깔', 나무껍질 틀 위에 색·문양 비단으로 장식. 금제는 왕릉급, 금동 소량, 은은 관식 위주. 황오동 100번지(대릉원 일원) 출토품 기준.",
+  "confidence": "PROBABLE",
+  "uncertainty": "천마총 개체가 아닌 황오동 개체 기준. 뾰족 원추가 아니라 뭉툭한 고깔.",
+  "source_type": "MUSEUM",
+  "rights_id": null,
+  "notes": "복식 검증 리서치 (D-052, 2026-09-15). 미디어 재사용 권리는 별개."
+}

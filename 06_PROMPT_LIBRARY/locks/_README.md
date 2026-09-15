@@ -21,3 +21,4 @@
 | `DDABONG_SAGEUK_CINEMATIC_V02` | STYLE | VISUAL_STYLE_BIBLE v0.2 §1 · D-051 (새 생성의 기본 STYLE) |
 | `DDABONG_NEGATIVE_V02` | NEGATIVE | V01 + AI-tell 16항목 · D-051 |
 | `CHAR_SILLA_ELITE_OBSERVER_01_LOCK_V02` | CHARACTER | 원로 재캐스팅 (현대 미감 얼굴, D-051) — 시험 통과 후 APPROVED |
+| `COSTUME_SILLA_ELITE_A01_LOCK_V02` | COSTUME | 원로 복식 V02 — 근거 정정 (긴소매 직령교임·얕은 여밈·은/금동 과판·낮은 뭉툭 고깔) · D-052 |

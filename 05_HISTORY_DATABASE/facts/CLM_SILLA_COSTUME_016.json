@@ -1,0 +1,16 @@
+{
+  "claim_id": "CLM_SILLA_COSTUME_016",
+  "text_ko": "마립간기(5세기) 신라 지배층의 신분 표지는 옷 재단보다 금속 장신구(관·과대·귀걸이)였다.",
+  "text_en": "In the 5th-c. Maripgan period, Silla elite status was marked by metal ornaments rather than garment cut.",
+  "confidence": "PROBABLE",
+  "source_ids": [
+    "SRC_LEE_HANSANG_SILLA_DRESS_001"
+  ],
+  "used_in": [
+    "COSTUME_SILLA_ELITE_A01"
+  ],
+  "hedge_required": false,
+  "verified_at": "2026-09-15",
+  "verified_by": "Claude Code (Historical QA, D-052 research agent + review)",
+  "notes": null
+}

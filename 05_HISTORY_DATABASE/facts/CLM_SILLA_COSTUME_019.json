@@ -1,0 +1,16 @@
+{
+  "claim_id": "CLM_SILLA_COSTUME_019",
+  "text_ko": "황남대총·천마총 직물에 자·홍·청·녹색이 잔존하며 홍색이 가장 많다. 색-관등 대응은 520년 이후이므로 5세기 장면에 '관등색'을 말하면 시대착오다.",
+  "text_en": "Purple, red, blue and green survive on Hwangnamdaechong/Cheonmachong silks, red most; colour-by-rank only begins in 520, so 'rank colour' is anachronistic for 5th-c. scenes.",
+  "confidence": "FACT",
+  "source_ids": [
+    "SRC_JANG_HWANGNAM_TEXTILE_001"
+  ],
+  "used_in": [
+    "COSTUME_SILLA_ELITE_A01"
+  ],
+  "hedge_required": true,
+  "verified_at": "2026-09-15",
+  "verified_by": "Claude Code (Historical QA, D-052 research agent + review)",
+  "notes": "직물 색은 FACT, 신분 해석은 PROBABLE. 회청·상아 사용 자체는 시대착오 아님."
+}

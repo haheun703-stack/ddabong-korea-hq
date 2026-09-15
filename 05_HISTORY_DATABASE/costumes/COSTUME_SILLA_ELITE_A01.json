@@ -11,19 +11,32 @@
     "CLM_SILLA_COSTUME_005",
     "CLM_SILLA_COSTUME_006",
     "CLM_SILLA_COSTUME_007",
-    "CLM_SILLA_COSTUME_008"
+    "CLM_SILLA_COSTUME_008",
+    "CLM_SILLA_COSTUME_009",
+    "CLM_SILLA_COSTUME_010",
+    "CLM_SILLA_COSTUME_011",
+    "CLM_SILLA_COSTUME_012",
+    "CLM_SILLA_COSTUME_013",
+    "CLM_SILLA_COSTUME_014",
+    "CLM_SILLA_COSTUME_015",
+    "CLM_SILLA_COSTUME_016",
+    "CLM_SILLA_COSTUME_017",
+    "CLM_SILLA_COSTUME_018",
+    "CLM_SILLA_COSTUME_019",
+    "CLM_SILLA_COSTUME_020"
   ],
   "elements": {
-    "material": "견직 표의 + 마/저 내의 — PROBABLE (CLM_006 천마총 직물 + CLM_004 귀족/서민 구분 유추)",
-    "upper": "소매 좁은 유 위에 표의(포), 직령 우임, 둥근 깃 가능 — PROBABLE (CLM_001, CLM_007, CLM_008 부상 토우)",
-    "lower": "통 넓은 바지(고), 주름 표현 가능 — PROBABLE (CLM_001 상류층, CLM_008)",
-    "belt": "과대 — 금속 장식 띠 + 요패. 천마총 금제 허리띠 복제 금지(피장자 부장품) → 절제된 동(bronze) 계열로 확정 (D-015, 사용자) — PROBABLE (CLM_004, CLM_008). 은·금 판 금지",
-    "footwear": "발목 덮는 화(靴) + 버선 — PROBABLE (CLM_005 관원·귀족)",
-    "headwear": "백화모(자작나무 껍질) 계열 또는 변형모 — PROBABLE (CLM_003, CLM_008). 금관·금동관 착용 금지 (왕·피장자 아님)",
-    "color": "청(muted blue) 계열로 확정 (D-015, 사용자). 자색(최고위)·비(다홍) 회피. 관등 공복색 위계 참고 — PROBABLE 유지 (CLM_002; 5세기 적용 여부 불확실, hedge 유지)",
+    "material": "견직 장유 + 마/저 속옷 — PROBABLE (CLM_006 천마총 직물, CLM_019 황남대총 견직물)",
+    "upper": "회청색 긴소매 직령교임 장유(長襦, 엉덩이 덮는 길이) 한 벌. 곧은 깃, 얕은 교차, 우임(좌임 허용). 상아색 속옷은 깃선에서만 보임. **반소매 겉옷 금지 (CLM_015, 834년 이후)**. 깊은 V 노출 금지 (CLM_014) — PROBABLE (CLM_001, CLM_013, CLM_014)",
+    "lower": "통 넓은 바지(고), 발목 여밈, 주름 가능 — PROBABLE (CLM_001, CLM_013)",
+    "belt": "가죽띠 위 **은제(1순위) 또는 금동(2순위) 과판**, 드리개 1~3줄로 절제. 금제 금지 (왕·왕족 부장품). 청동·철은 하위 위계라 금지 (CLM_017, CLM_018). D-015 '청동' 은 D-052 로 정정 — PROBABLE",
+    "footwear": "발목 덮는 화(靴) + 버선 — PROBABLE (CLM_005)",
+    "headwear": "낮고 끝이 뭉툭한 고깔형 백화수피 관모, 비단 덮개 (CLM_010). 높은 뾰족 원추 금지. 금제 관모·관식 금지 (CLM_009, CLM_011). 금동/은 조우 관식은 선택 — PROBABLE",
+    "color": "회청(muted grey-blue) 유지, 상아 속옷. 5세기 직물에 자·홍·청·녹 실재 (CLM_019). '관등색' 설명 금지 (520년 이후). 자색·다홍은 왕릉급 연상이라 회피 유지 — PROBABLE",
     "silhouette_priority": "H05 는 뒤에서 찍는다 → 뒷모습·어깨선·관모 실루엣이 연속성 핵심",
-    "forbidden": "금관, 은·금 과대 판, 조선 곤룡포/관복, 명·청 황실 예복, 판타지 왕 연출, 자색, 다홍",
-    "qa_note": "D-011 근거 확정 2026-09-11. D-015 (2026-09-11, 사용자): 옷 색 muted blue · 과대 bronze 확정, historical_basis 는 PROBABLE 유지 (P-009 종결)."
+    "forbidden": "반소매 겉옷(반비), 깊은 V 교임, 금관·금제 관모·관식, 금제 과대, 청동·철 과대, 높은 원추 관모, 복두·단령·홀(통일신라 당풍), 조선 곤룡포/관복, 명·청 예복, 판타지 왕 연출, 자색, 다홍",
+    "qa_note": "D-011 근거 확정 2026-09-11. D-015 (2026-09-11, 사용자): 옷 색 muted blue · 과대 bronze 확정, historical_basis 는 PROBABLE 유지 (P-009 종결). D-052 (2026-09-15, 리서치 12출처·12주장 추가): 반소매 겉옷·V 교임·청동 과대·높은 원추 관모 = 근거 없음/시대착오 → V02 로 정정. 검수 체크리스트 5항목: ①긴소매 직령교임 ②얕은 여밈 ③낮은 뭉툭 고깔 관모 ④은/금동 과판·드리개 ≤3 ⑤화면 내 관등색 언급 없음.",
+    "edging": "선(襈) 생략 (신라 자체 증거 없음, CLM_014). 쓸 경우 깃·소맷부리·도련에 폭 좁은 단색 선 + '삼국 공통 양식 추정' 캡션 — INTERPRETIVE"
   },
   "reference_images": [
     {
@@ -33,6 +46,6 @@
     }
   ],
   "status": "DRAFT",
-  "version": "V01",
-  "updated_at": "2026-09-11"
+  "version": "V02",
+  "updated_at": "2026-09-15"
 }

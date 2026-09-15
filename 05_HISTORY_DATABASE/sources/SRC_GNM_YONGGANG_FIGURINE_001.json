@@ -1,0 +1,17 @@
+{
+  "source_id": "SRC_GNM_YONGGANG_FIGURINE_001",
+  "claim_ids": [
+    "CLM_SILLA_COSTUME_020"
+  ],
+  "title": "문관토용 (용강동 1130 돌방무덤, 경주7499)",
+  "institution_or_author": "국립경주박물관 소장품",
+  "url_or_path": "https://gyeongju.museum.go.kr/kor/html/sub04/0406.html?mode=V&dvs_code=&mng_no=422&GotoPage=2",
+  "verified_at": "2026-09-15",
+  "verified_by": "Claude Code (Historical QA, D-052 research agent + review)",
+  "excerpt_or_summary": "통일신라 8세기 추정, 높이 17cm. 복두·홀·발까지 오는 옷·턱수염 — 당 토제 인물상 영향. 공공누리 1유형.",
+  "confidence": "FACT",
+  "uncertainty": "5세기 말과 200년 이상 갭. 천마총기 재현에 사용 금지.",
+  "source_type": "MUSEUM",
+  "rights_id": null,
+  "notes": "복식 검증 리서치 (D-052, 2026-09-15). 미디어 재사용 권리는 별개."
+}

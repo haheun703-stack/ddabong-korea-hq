@@ -1,0 +1,16 @@
+{
+  "claim_id": "CLM_SILLA_COSTUME_015",
+  "text_ko": "반비(반소매 겉옷)의 한국 최초 기록은 834년 흥덕왕 복식금제이며, 통일 이전 신라에서 반소매 겉옷을 긴소매 속옷 위에 덧입은 증거는 없다.",
+  "text_en": "The earliest Korean record of banbi (short-sleeved over-garment) is the 834 sumptuary law; no pre-Unified-Silla evidence of a short-sleeved outer over a long-sleeved inner.",
+  "confidence": "FACT",
+  "source_ids": [
+    "SRC_AKS_ENCYKOREA_BANBI_001"
+  ],
+  "used_in": [
+    "COSTUME_SILLA_ELITE_A01"
+  ],
+  "hedge_required": false,
+  "verified_at": "2026-09-15",
+  "verified_by": "Claude Code (Historical QA, D-052 research agent + review)",
+  "notes": "5세기 장면에서 반소매 겉옷 = 시대착오 → 금지."
+}

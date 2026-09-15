@@ -1,0 +1,17 @@
+{
+  "source_id": "SRC_JANG_HWANGNAM_TEXTILE_001",
+  "claim_ids": [
+    "CLM_SILLA_COSTUME_019"
+  ],
+  "title": "황남대총 출토직물 연구, 『복식』62(7):41-53 (DOI 10.7233/jksc.2012.62.7.041)",
+  "institution_or_author": "장현주·권영숙 (2012)",
+  "url_or_path": "https://doi.org/10.7233/jksc.2012.62.7.041",
+  "verified_at": "2026-09-15",
+  "verified_by": "Claude Code (Historical QA, D-052 research agent + review)",
+  "excerpt_or_summary": "경주문화재연구소 소장 26편(견 21·마 5). 1500년 경과에도 자·홍·청·녹색 식별, 홍색 최다. 경금·평견·마직물.",
+  "confidence": "FACT",
+  "uncertainty": "직물은 FACT, 색-신분 해석은 PROBABLE. 염료 화학분석 미확인. 왕릉급.",
+  "source_type": "ACADEMIC",
+  "rights_id": null,
+  "notes": "복식 검증 리서치 (D-052, 2026-09-15). 미디어 재사용 권리는 별개."
+}

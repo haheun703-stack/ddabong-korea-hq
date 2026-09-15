@@ -1,0 +1,17 @@
+{
+  "source_id": "SRC_LEE_HANSANG_SILLA_DRESS_001",
+  "claim_ids": [
+    "CLM_SILLA_COSTUME_016"
+  ],
+  "title": "신라 복식의 변천과 그 배경, 『신라문화』43:137-172",
+  "institution_or_author": "이한상 (2014)",
+  "url_or_path": "https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART001855822",
+  "verified_at": "2026-09-15",
+  "verified_by": "Claude Code (Historical QA, D-052 research agent + review)",
+  "excerpt_or_summary": "신라 복식 3단계: 사로국기 → 마립간기(신라적 색채, 지배층은 황금 장식으로 정치사회적 권위 표현) → 중고기 이후(법흥왕 의관제·진덕여왕 당복·흥덕왕 금제).",
+  "confidence": "PROBABLE",
+  "uncertainty": "5세기 엘리트 신분 표지는 옷 재단보다 금속 장신구.",
+  "source_type": "ACADEMIC",
+  "rights_id": null,
+  "notes": "복식 검증 리서치 (D-052, 2026-09-15). 미디어 재사용 권리는 별개."
+}

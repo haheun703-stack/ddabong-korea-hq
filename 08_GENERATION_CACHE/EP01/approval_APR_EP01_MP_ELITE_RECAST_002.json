@@ -1,0 +1,21 @@
+{
+  "approval_id": "APR_EP01_MP_ELITE_RECAST_002",
+  "kind": "PAID_GENERATION",
+  "target_id": "CHAR_SILLA_ELITE_OBSERVER_01",
+  "money_gate_presented": {
+    "shot_id": "MASTER_PACK:CHAR_SILLA_ELITE_OBSERVER_01:hero (costume V02 patch)",
+    "prompt_ids": [
+      "PRM_MP_CHAR_SILLA_ELITE_OBSERVER_01_HERO_V07"
+    ],
+    "provider_model": "Higgsfield / Nano Banana Pro, 3:4, 2k, image_references = recast V06",
+    "expected_attempts": 2,
+    "estimated_cost_range": "2-4 credits",
+    "continuity_risk": "LOW (edit of V06; face anchored)"
+  },
+  "decision": "APPROVE",
+  "fix_reason": null,
+  "delegated": true,
+  "decided_by": "봇 (사용자 '순서대로 진행' 2026-09-15 — 3단계 계획 중 2단계, ≈100 예산 안)",
+  "decided_at": "2026-09-15T14:30:00Z",
+  "note": "D-052: 복식 근거 정정 뒤 원로 V07 패치. 통과 시 사용자 OK → 10종 재생성."
+}

@@ -1,0 +1,18 @@
+{
+  "source_id": "SRC_KIM_JAEYEOL_BELT_001",
+  "claim_ids": [
+    "CLM_SILLA_COSTUME_017",
+    "CLM_SILLA_COSTUME_018"
+  ],
+  "title": "삼국시대 경주지역 고분 출토 대금구의 부장양상 검토, 『신라사학보』32:263-305",
+  "institution_or_author": "김재열 (2014)",
+  "url_or_path": "https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART001944959",
+  "verified_at": "2026-09-15",
+  "verified_by": "Claude Code (Historical QA, D-052 research agent + review)",
+  "excerpt_or_summary": "부장유형 A·B·C 중 금제 대금구는 C류(최상위, 금관 동반)에만 확인. 청동 등은 전 유형 분포. 허리 착장 대금구는 망자의 성복 의례품, 머리맡 부장품이 생전 소유품.",
+  "confidence": "PROBABLE",
+  "uncertainty": "발굴자료 집계 기반 해석.",
+  "source_type": "ACADEMIC",
+  "rights_id": null,
+  "notes": "복식 검증 리서치 (D-052, 2026-09-15). 미디어 재사용 권리는 별개."
+}

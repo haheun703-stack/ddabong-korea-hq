@@ -1,0 +1,17 @@
+{
+  "claim_id": "CLM_SILLA_COSTUME_009",
+  "text_ko": "천마총(5세기 말~6세기 초)에서 금제·은제·금동·백화수피제 관모와 금제·은제 과대가 출토되었다. 금제 관모·관식은 피장자 위세품이다.",
+  "text_en": "Cheonmachong yielded gold, silver, gilt-bronze and birch-bark caps plus gold and silver belts; the gold cap is the deceased's prestige item.",
+  "confidence": "FACT",
+  "source_ids": [
+    "SRC_ARCHIVES_CHEONMACHONG_EXCAV_001",
+    "SRC_GNM_CHEONMACHONG_GOLD_CAP_001"
+  ],
+  "used_in": [
+    "COSTUME_SILLA_ELITE_A01"
+  ],
+  "hedge_required": false,
+  "verified_at": "2026-09-15",
+  "verified_by": "Claude Code (Historical QA, D-052 research agent + review)",
+  "notes": null
+}

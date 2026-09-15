@@ -1,0 +1,17 @@
+{
+  "source_id": "SRC_GNM_CHEONMACHONG_GOLD_CAP_001",
+  "claim_ids": [
+    "CLM_SILLA_COSTUME_011"
+  ],
+  "title": "금제 관모 (천마총, 국보, 경주2275)",
+  "institution_or_author": "국립경주박물관 소장품",
+  "url_or_path": "https://gyeongju.museum.go.kr/kor/html/sub04/0402.html?mode=V&mng_no=58&GotoPage=1",
+  "verified_at": "2026-09-15",
+  "verified_by": "Claude Code (Historical QA, D-052 research agent + review)",
+  "excerpt_or_summary": "높이 16~19cm. 금관과 함께 지배자를 상징하는 위세품. 가죽 또는 자작나무 껍질 모자 윗부분을 장식한 용도. 널 바깥 머리쪽 부장 구덩이 출토. 공공누리 1유형.",
+  "confidence": "FACT",
+  "uncertainty": "피장자(왕급) 부장품 — 살아있는 비왕족 관찰자에게 적용 불가.",
+  "source_type": "MUSEUM",
+  "rights_id": null,
+  "notes": "복식 검증 리서치 (D-052, 2026-09-15). 미디어 재사용 권리는 별개."
+}

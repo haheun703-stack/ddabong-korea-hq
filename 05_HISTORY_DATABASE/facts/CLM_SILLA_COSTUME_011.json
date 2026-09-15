@@ -1,0 +1,16 @@
+{
+  "claim_id": "CLM_SILLA_COSTUME_011",
+  "text_ko": "금제 관모는 가죽·자작나무 모자 윗부분을 장식한 것으로 단독 착용용이 아니며, 왕급 부장품이다.",
+  "text_en": "The gold cap ornament decorated a leather/birch cap, was not worn alone, and is a royal grave good.",
+  "confidence": "FACT",
+  "source_ids": [
+    "SRC_GNM_CHEONMACHONG_GOLD_CAP_001"
+  ],
+  "used_in": [
+    "COSTUME_SILLA_ELITE_A01"
+  ],
+  "hedge_required": false,
+  "verified_at": "2026-09-15",
+  "verified_by": "Claude Code (Historical QA, D-052 research agent + review)",
+  "notes": null
+}

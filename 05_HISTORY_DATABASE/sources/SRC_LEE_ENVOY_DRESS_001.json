@@ -1,0 +1,17 @@
+{
+  "source_id": "SRC_LEE_ENVOY_DRESS_001",
+  "claim_ids": [
+    "CLM_SILLA_COSTUME_013"
+  ],
+  "title": "「왕회도」와 「번객입조도」에 묘사된 삼국사신의 복식 연구, 『복식』51(3)",
+  "institution_or_author": "이진민·남윤자·조우현 (2001)",
+  "url_or_path": "https://www.dbpia.co.kr/Journal/articleDetail?nodeId=NODE06674653",
+  "verified_at": "2026-09-15",
+  "verified_by": "Claude Code (Historical QA, D-052 research agent + review)",
+  "excerpt_or_summary": "삼국 사신 모두 장유(長襦) 또는 유 + 고(袴) + 관모 + 대(帶) + 화(靴) 구성. 차이는 관모 형태·머리모양·옷 문양. 초록만 확인.",
+  "confidence": "PROBABLE",
+  "uncertainty": "신라 사신 개별 소매 길이·깃·여밈은 본문(유료) 미확인.",
+  "source_type": "ACADEMIC",
+  "rights_id": null,
+  "notes": "복식 검증 리서치 (D-052, 2026-09-15). 미디어 재사용 권리는 별개."
+}

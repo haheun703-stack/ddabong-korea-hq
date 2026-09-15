@@ -1,0 +1,16 @@
+{
+  "claim_id": "CLM_SILLA_COSTUME_012",
+  "text_ko": "양직공도 남경본에는 신라 사신 그림이 없고 신라 제기에 복식 서술이 없다. 신라 사신 도상은 왕회도·번객입조도(7세기 모본)이다.",
+  "text_en": "The Nanjing Liang Zhigongtu lacks the Silla envoy image and its caption has no dress text; Silla envoy images are in the 7th-c. Wanghuido / Fanke ruchaotu.",
+  "confidence": "FACT",
+  "source_ids": [
+    "SRC_WIKI_LIANG_ZHIGONGTU_001"
+  ],
+  "used_in": [
+    "COSTUME_SILLA_ELITE_A01"
+  ],
+  "hedge_required": false,
+  "verified_at": "2026-09-15",
+  "verified_by": "Claude Code (Historical QA, D-052 research agent + review)",
+  "notes": "CLM_007 의 근거 표기를 왕회도 계열로 정정."
+}

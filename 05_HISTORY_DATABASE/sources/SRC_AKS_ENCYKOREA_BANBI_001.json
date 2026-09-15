@@ -1,0 +1,17 @@
+{
+  "source_id": "SRC_AKS_ENCYKOREA_BANBI_001",
+  "claim_ids": [
+    "CLM_SILLA_COSTUME_015"
+  ],
+  "title": "한국민족문화대백과 「반비(半臂)」·「복식금제」",
+  "institution_or_author": "한국학중앙연구원",
+  "url_or_path": "https://encykorea.aks.ac.kr/Article/E0021489",
+  "verified_at": "2026-09-15",
+  "verified_by": "Claude Code (Historical QA, D-052 research agent + review)",
+  "excerpt_or_summary": "반비는 당 고조 때 소매를 줄여 명명. 한국 최초 기록은 신라 흥덕왕 9년(834) 복식금제(삼국사기 색복지). 남자용은 소매 없거나 아주 짧음.",
+  "confidence": "FACT",
+  "uncertainty": "834년 이전 신라 반비 기록·유물 없음.",
+  "source_type": "SECONDARY",
+  "rights_id": null,
+  "notes": "복식 검증 리서치 (D-052, 2026-09-15). 미디어 재사용 권리는 별개."
+}

@@ -1,0 +1,16 @@
+{
+  "claim_id": "CLM_SILLA_COSTUME_013",
+  "text_ko": "왕회도·번객입조도의 삼국 사신은 모두 긴 저고리(유/장유)+바지(고)+관모+띠+신 구성이며, 차이는 관모·머리·문양이다.",
+  "text_en": "Envoys of all three kingdoms wear a long jacket + trousers + cap + belt + boots; the differences are in cap, hair and patterns.",
+  "confidence": "PROBABLE",
+  "source_ids": [
+    "SRC_LEE_ENVOY_DRESS_001"
+  ],
+  "used_in": [
+    "COSTUME_SILLA_ELITE_A01"
+  ],
+  "hedge_required": true,
+  "verified_at": "2026-09-15",
+  "verified_by": "Claude Code (Historical QA, D-052 research agent + review)",
+  "notes": "신라 사신 소매·깃 세부는 본문 미확인."
+}

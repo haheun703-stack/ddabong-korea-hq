@@ -1,0 +1,24 @@
+{
+  "patch_id": "PATCH_MP_ELITE_RECAST_002",
+  "shot_id": "MASTER_PACK:CHAR_SILLA_ELITE_OBSERVER_01:hero",
+  "from_version": "V06",
+  "to_version": "V07",
+  "fix_reason": "COSTUME",
+  "keep": [
+    "V05/V06 face identity",
+    "expression, head angle, framing",
+    "golden rim light, haze, DoF, grain",
+    "mound + scaffolding background",
+    "grey-blue / ivory colours"
+  ],
+  "change": [
+    "short-sleeved over-garment + deep V crossover -> one long-sleeved straight-collar jangyu, shallow crossover (CLM_014, CLM_015)",
+    "bronze plaque belt with many pendants -> silver plaques, <=3 pendants (CLM_017, CLM_018)",
+    "tall pointed birch-bark cap -> low blunt gokkal cap with silk cover (CLM_010)"
+  ],
+  "reason": "Owner asked for evidence (2026-09-15). D-052 research: short-sleeved outer = post-834 banbi (anachronistic); deep V unsupported; bronze belt = lower rank; tall cone cap not attested.",
+  "requested_by": "사용자 (근거 요구) → 봇 리서치 (D-052)",
+  "created_at": "2026-09-15",
+  "resulting_prompt_id": "PRM_MP_CHAR_SILLA_ELITE_OBSERVER_01_HERO_V07",
+  "resulting_generation_id": null
+}

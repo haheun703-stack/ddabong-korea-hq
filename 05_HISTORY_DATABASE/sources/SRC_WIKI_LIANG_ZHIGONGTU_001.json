@@ -1,0 +1,17 @@
+{
+  "source_id": "SRC_WIKI_LIANG_ZHIGONGTU_001",
+  "claim_ids": [
+    "CLM_SILLA_COSTUME_012"
+  ],
+  "title": "양직공도 (남경박물원 모본 · 2011 장경 모본 제기)",
+  "institution_or_author": "위키백과 · 서울신문 2011-08-23 · 한국민족문화대백과 E0035785",
+  "url_or_path": "https://www.seoul.co.kr/news/newsView.php?id=20110823800065",
+  "verified_at": "2026-09-15",
+  "verified_by": "Claude Code (Historical QA, D-052 research agent + review)",
+  "excerpt_or_summary": "남경박물원 모본에는 고구려·신라 사신 도상이 결실되어 백제 사신만 남음. 2011년 청대 장경 모본에서 신라 제기 발견: 풍속은 고구려와 같다는 내용뿐, 복식 서술 없음. 신라 사신 도상은 왕회도·번객입조도(7세기 모본)에서 봐야 함.",
+  "confidence": "FACT",
+  "uncertainty": "기존 CLM_007 의 '양직공도 신라 사신 우임' 근거는 왕회도 계열로 정정 필요.",
+  "source_type": "SECONDARY",
+  "rights_id": null,
+  "notes": "복식 검증 리서치 (D-052, 2026-09-15). 미디어 재사용 권리는 별개."
+}

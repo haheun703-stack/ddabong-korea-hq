@@ -1,0 +1,17 @@
+{
+  "claim_id": "CLM_SILLA_COSTUME_014",
+  "text_ko": "5~6세기 신라 남성 상의에 선(襈)이 있었다는 신라 자체 1차 증거는 없다. 삼국 공통 직령교임 양식으로만 유추 가능하다. 삼국 상의는 곧은 깃을 얕게 교차하며 깊은 V자 노출은 근거가 없다.",
+  "text_en": "No Silla-specific primary evidence shows edging (seon) on 5th–6th c. male jackets; only a Three-Kingdoms-wide straight-collar shallow-crossover style can be inferred. A deep V crossover is unsupported.",
+  "confidence": "INTERPRETIVE",
+  "source_ids": [
+    "SRC_NAHF_GOGURYEO_MURAL_DRESS_001",
+    "SRC_AKS_ENCYKOREA_BOKSIK_001"
+  ],
+  "used_in": [
+    "COSTUME_SILLA_ELITE_A01"
+  ],
+  "hedge_required": true,
+  "verified_at": "2026-09-15",
+  "verified_by": "Claude Code (Historical QA, D-052 research agent + review)",
+  "notes": "선을 쓰면 '삼국 공통 양식 추정' 캡션 필수. 생략 권장."
+}

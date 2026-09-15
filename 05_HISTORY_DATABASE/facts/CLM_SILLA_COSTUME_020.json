@@ -1,0 +1,16 @@
+{
+  "claim_id": "CLM_SILLA_COSTUME_020",
+  "text_ko": "용강동·황성동 토용(복두·단령·홀)은 7세기 후반~8세기 당풍이며 5~6세기 재현에 쓸 수 없다.",
+  "text_en": "Yonggang-dong / Hwangseong-dong figurines (Tang-style, 7th–8th c.) cannot inform 5th–6th c. dress.",
+  "confidence": "FACT",
+  "source_ids": [
+    "SRC_GNM_YONGGANG_FIGURINE_001"
+  ],
+  "used_in": [
+    "COSTUME_SILLA_ELITE_A01"
+  ],
+  "hedge_required": false,
+  "verified_at": "2026-09-15",
+  "verified_by": "Claude Code (Historical QA, D-052 research agent + review)",
+  "notes": null
+}

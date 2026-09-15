@@ -1,0 +1,16 @@
+{
+  "claim_id": "CLM_SILLA_COSTUME_010",
+  "text_ko": "신라 백화수피 관모는 끝이 뭉툭한 낮은 고깔형이며 비단으로 감싸 장식했다. 높은 뾰족 원추가 아니다.",
+  "text_en": "Silla birch-bark caps are low, blunt-tipped conical (gokkal) forms covered with silk — not tall pointed cones.",
+  "confidence": "PROBABLE",
+  "source_ids": [
+    "SRC_DONGGUK_MUSEUM_CAP_001"
+  ],
+  "used_in": [
+    "COSTUME_SILLA_ELITE_A01"
+  ],
+  "hedge_required": true,
+  "verified_at": "2026-09-15",
+  "verified_by": "Claude Code (Historical QA, D-052 research agent + review)",
+  "notes": "황오동 100번지 개체 기준. 천마총 개체 치수는 1974 보고서 미확인."
+}

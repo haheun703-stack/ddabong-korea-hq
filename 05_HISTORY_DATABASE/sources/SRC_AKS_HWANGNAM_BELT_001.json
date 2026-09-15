@@ -1,0 +1,17 @@
+{
+  "source_id": "SRC_AKS_HWANGNAM_BELT_001",
+  "claim_ids": [
+    "CLM_SILLA_COSTUME_017"
+  ],
+  "title": "한국민족문화대백과 「황남대총 북분 금제 허리띠」 (최응천 2013)",
+  "institution_or_author": "한국학중앙연구원",
+  "url_or_path": "https://encykorea.aks.ac.kr/Article/E0007973",
+  "verified_at": "2026-09-15",
+  "verified_by": "Claude Code (Historical QA, D-052 research agent + review)",
+  "excerpt_or_summary": "과판 28·드리개 13, 길이 120cm, 5세기. 왕과 왕족은 금제, 귀족은 은제 허리띠, 그 아래 금동. 5세기엔 일상복이 아니라 부장 의례품 성격.",
+  "confidence": "PROBABLE",
+  "uncertainty": "은/금동 구분은 학설, 법제 기록 없음.",
+  "source_type": "SECONDARY",
+  "rights_id": null,
+  "notes": "복식 검증 리서치 (D-052, 2026-09-15). 미디어 재사용 권리는 별개."
+}
