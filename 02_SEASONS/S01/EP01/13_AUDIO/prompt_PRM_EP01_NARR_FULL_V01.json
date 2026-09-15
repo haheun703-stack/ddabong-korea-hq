@@ -1,0 +1,40 @@
+{
+  "prompt_id": "PRM_EP01_NARR_FULL_V01",
+  "shot_id": "EP01_S01_SH001",
+  "target": "IMAGE",
+  "locks": {
+    "global": "DDABONG_GLOBAL_PRESENT_V01",
+    "era": "NONE",
+    "location": "NONE",
+    "character_costume": [],
+    "style": "DDABONG_DOC_REENACTMENT_V01",
+    "camera": null
+  },
+  "shot_delta": "FULL NARRATION (audio; target enum has no AUDIO). Script v2 VO lines (episodes/ep01-production-script-v2.md, APPROVED 2026-08-16) verbatim, 9 sections = 9 seed_audio jobs, voice Grady (D-048). Section texts sent exactly as in assembled_text, separated by [S<n> tc title].",
+  "negative": [
+    "text",
+    "watermark",
+    "logo",
+    "signage",
+    "lens flare",
+    "HDR look",
+    "oversaturation",
+    "glossy AI look",
+    "malformed anatomy",
+    "identifiable faces",
+    "invented buildings not in the reference",
+    "altered landform or mound proportions",
+    "fantasy elements",
+    "historical costume figures",
+    "vehicles",
+    "crowds",
+    "drone or aerial perspective unless in the reference"
+  ],
+  "assembled_text": "[S0 0:00-0:35 COLD OPEN] Walk through Gyeongju today, and something feels unusual. Between roads, houses, and everyday city life, enormous green mounds rise from the ground. They look like hills. But they are tombs. Some were built for the rulers and elite of Silla, the kingdom that made Gyeongju its capital for centuries. So here is the question: why would a society give this much land, labor, and wealth to the dead?\n[S1 0:35-1:25 FACT: WHAT IS ACTUALLY HERE?] Gyeongju is not a city with just a few old graves. Its historic landscape preserves palaces, temples, fortresses, and groups of royal tombs from Silla. UNESCO describes the Tumuli Park area as three groups of royal tombs. Beneath many of these mounds were wooden burial spaces covered with stone and gravel. Excavations revealed gold, glass, fine ceramics, weapons, ornaments, and horse equipment. The mound is only the outside of the story. The real story is what people deliberately chose to place inside.\n[S2 1:25-2:15 CASE STUDY: CHEONMACHONG] One of the best-known examples is Cheonmachong — the Tomb of the Heavenly Horse. It was excavated in 1973 as Tomb No. 155, during a test excavation before work on the much larger Hwangnamdaechong. More than eleven thousand objects were recovered, including a gold crown and a birch-bark saddle flap painted with a heavenly horse. That image gave the tomb the name we use today. But the person buried here is still not known with certainty. That uncertainty matters. History does not always give us a name — but the things people built and buried can still show us choices.\n[S3 2:15-3:15 HOW A TOMB LIKE THIS WAS BUILT] Cheonmachong was not a simple grave dug into the ground. A wooden outer chamber was built. A coffin and grave goods were placed inside. Stone was piled above and around the chamber, and earth formed the giant mound. Now imagine the work behind that sequence. Timber had to be prepared. Stone had to be carried. Valuable objects had to be selected. People had to coordinate the burial. And the mound itself had to be raised on a monumental scale. Whatever else this funeral meant, it required organization, resources, and many human decisions.\n[S4 3:15-4:20 WHAT THE GOLD TELLS US] Then there is the gold. The Gyeongju National Museum describes the peak of Silla gold culture in the fifth to early sixth century as a time when the ruling elite built huge tombs in the royal capital and placed elaborate gold objects with the dead. More importantly, the museum explains that gold was used to express sacredness, legitimacy, and enduring authority. That gives us firmer ground than simply guessing what people believed. We cannot read the exact thoughts of a Silla official fifteen centuries ago. But we can see that status and authority were deliberately made visible in elite burial culture.\n[S5 4:20-5:20 MINDSET RECONSTRUCTION] So let us reconstruct the problem, not an invented conversation. A ruler or powerful member of the elite dies. The person is gone. But rank, legitimacy, relationships, and authority still matter to the people who remain. The burial now becomes a moment when those things can be made visible — through scale, ritual, precious materials, and the place chosen for the tomb. We do not have a Silla text saying, “Build this mound to prove that order continues.” But the archaeological evidence allows us to ask whether these monumental funerals also communicated status and authority to the living. That is the difference between inventing their thoughts and trying to understand why their choices made sense.\n[S6 5:20-6:05 THE CROWN CHANGES MEANING] Look again at the gold crown from Cheonmachong. Today it sits under museum lighting, separated from the place where it was buried. But originally, this was not an object made for a museum. It may have belonged to a burial system of status, ceremony, and identity. And that changes the question from “How beautiful is this?” to “Why did placing something this valuable with the dead make sense?” That second question is where the story becomes human.\n[S7 6:05-6:40 MODERN GYEONGJU] Today, people walk between these mounds. Families take photographs. Visitors step inside Cheonmachong. Cars and cafés sit only a short distance away. What was once an elite burial landscape has become part of the everyday landscape of modern Gyeongju. The past is not hidden outside the city. The city lives around it.\n[S8 6:40-7:05 CLOSING] So why are giant tombs everywhere in Gyeongju? Because these were never just piles of earth. They were built through labor, ritual, wealth, and deliberate social choices. We may never know every thought of the people who stood here fifteen centuries ago. But the tombs show us what they chose to make visible: rank, legitimacy, memory, and authority. And that is how we get closer to understanding not only what Silla built — but why building it this way may have made sense to them. DDABONG KOREA. Stories Behind Korea.",
+  "reference_images": [],
+  "version": "V01",
+  "parent_prompt_id": "PRM_EP01_NARR_SAMPLE_V01",
+  "patch_id": null,
+  "created_at": "2026-09-15",
+  "created_by": "Claude Code (D-048 narration full draft; saved before sending)"
+}

@@ -1,0 +1,21 @@
+{
+  "approval_id": "APR_EP01_AUD_002",
+  "kind": "PAID_GENERATION",
+  "target_id": "EP01_NARRATION_FULL_DRAFT",
+  "money_gate_presented": {
+    "shot_id": "EP01 narration (9 sections, 777 words, ~5.5 min)",
+    "prompt_ids": [
+      "PRM_EP01_NARR_FULL_V01"
+    ],
+    "provider_model": "HIGGSFIELD / seed_audio preset Grady (e2a2d2e6-9ed2-59cd-82af-feaa27f8a678)",
+    "expected_attempts": 9,
+    "estimated_cost_range": "~30 credits (2.7 per ~30 s sample -> 777 words; hard cap 40 = D-047 batch)",
+    "continuity_risk": "LOW (draft VO; final voice re-check before publish)"
+  },
+  "decision": "APPROVE",
+  "fix_reason": null,
+  "delegated": true,
+  "decided_by": "봇 (D-030 위임, D-047 확대)",
+  "decided_at": "2026-09-15T07:20:00Z",
+  "note": "D-048: 보이스 Grady 확정 → 대본 v2 전체 초안. 섹션별 9 청크 (편집에서 TC 맞추기 쉬움). 결과 OK 는 사용자."
+}

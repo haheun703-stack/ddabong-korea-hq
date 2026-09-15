@@ -12,7 +12,7 @@
   "human_motion": 30,
   "visual_importance": 60,
   "pipeline": "FLOW_VEO",
-  "status": "LOOK_APPROVED",
+  "status": "VIDEO_APPROVED",
   "characters": [],
   "costumes": [],
   "continuity_group": "EP01_S01",
@@ -39,17 +39,17 @@
     {
       "version": "V01",
       "stage": "VIDEO",
-      "status": "DRAFT",
+      "status": "APPROVED",
       "created_at": "2026-09-15",
-      "created_by": "Claude Code (D-047 I2V batch 1)",
+      "created_by": "사용자",
       "path": "08_GENERATION_CACHE/EP01/AI_VIDEO/S01_SH001_V01_73b5f315.mp4",
-      "note": "GEN_EP01_S01_SH001_I2V_KLING_V01 · Kling 3.0 pro 6 s · 봇 판정 대기 · 사용자 OK/FIX 대기"
+      "note": "GEN_EP01_S01_SH001_I2V_KLING_V01 · Kling 3.0 pro 6 s · 봇 PASS · D-048 사용자 OK (2026-09-15)"
     }
   ],
   "approved_version": "V01",
   "created_at": "2026-09-11",
   "updated_at": "2026-09-15",
-  "updated_by": "Claude Code (D-047)",
+  "updated_by": "사용자 (D-048)",
   "notes": "TC 0:00–0:08 (러프컷 v1 기준, 내레이션 녹음 후 조정). field-shoot A1. 현장음 1초 먼저. 점수(camera_complexity 등)는 Continuity Engine 추정치 — P4 라우터에서 확정. D-038: 현장 촬영 제외. D-041 (2026-09-14): GREEN 원본 없음 → D-034 #2 텍스트 전용 생성 (캡처 구도 수치만). 정지 이미지 뒤 I2V 는 P-012 뒤. D-047: 승인 정지 이미지 → 거리 리빌 6초 I2V (D-035 #3 풍경 I2V). 정지 prompt 는 photo_ai.redesign_prompt_id 에 유지, 영상 prompt = PRM_EP01_S01_SH001_I2V_V01.",
   "evidence_role": "CONTEXT",
   "logical_pipeline": "I2V_MOTION",

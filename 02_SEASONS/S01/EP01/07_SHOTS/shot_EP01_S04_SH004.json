@@ -12,7 +12,7 @@
   "human_motion": 70,
   "visual_importance": 70,
   "pipeline": "FLOW_VEO",
-  "status": "ROUTED",
+  "status": "VIDEO_APPROVED",
   "characters": [
     "CHAR_SILLA_LABORER_GROUP_01"
   ],
@@ -40,17 +40,17 @@
     {
       "version": "V01",
       "stage": "VIDEO",
-      "status": "DRAFT",
+      "status": "APPROVED",
       "created_at": "2026-09-15",
-      "created_by": "Claude Code (D-047 I2V batch 1)",
+      "created_by": "사용자",
       "path": "08_GENERATION_CACHE/EP01/AI_VIDEO/H01_V01_a2f49c4c.mp4",
-      "note": "GEN_EP01_S04_SH004_KLING_V01 · Kling 3.0 pro 6 s · 봇 판정 대기 · 사용자 OK/FIX 대기"
+      "note": "GEN_EP01_S04_SH004_KLING_V01 · Kling 3.0 pro 6 s · 봇 PASS · D-048 사용자 OK (2026-09-15)"
     }
   ],
   "approved_version": null,
   "created_at": "2026-09-11",
   "updated_at": "2026-09-15",
-  "updated_by": "Claude Code (D-047)",
+  "updated_by": "사용자 (D-048)",
   "notes": "TC 2:48–2:54 (러프컷 v1 기준, 내레이션 녹음 후 조정). H01 프롬프트 APPROVED (legacy 팩). 6초 (D-009). 운반·작업·의례 준비 동작은 정본 §6 상 Flow/Veo 영역 → P4 에서 BLENDER_FLOW 재검토. 파이프라인은 legacy 팩 태그 그대로 (잠정). P4 Visual Router 에서 재판정. 점수(camera_complexity 등)는 Continuity Engine 추정치 — P4 라우터에서 확정. D-024: 파이프라인 BLENDER_FLOW → FLOW_VEO (사용자 OVERRIDE). D-028: logical_pipeline I2V_MOTION · provider HIGGSFIELD (공급 플랫폼) · model KLING_3_0 (시작 사진 필요 시 NANO_BANANA_PRO). D-047: START 정지 이미지 생략, 기준 그림 S04 MASTER V05 를 시작 이미지로 I2V (prompt V03).",
   "evidence_role": "SUPPORTING",
   "logical_pipeline": "I2V_MOTION",
