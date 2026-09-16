@@ -1,7 +1,7 @@
 # CURRENT STATUS — 지금 어디까지 왔나
 
 > **매 작업마다 갱신한다.** 이 파일 하나만 읽으면 어느 봇/AI 창을 열어도 바로 이어갈 수 있어야 한다.
-> 갱신: 2026-09-16 오전 (Claude Code, Higgsfield 미인증 · 무료 작업 4건 · 시험 ② 재조준 권고) · 마지막 사용자 승인: 2026-09-15 (D-046 페르소나·콜드오픈·CTA·주기)
+> 갱신: 2026-09-16 오전 (Claude Code, Higgsfield 미인증 · 무료 작업 4건 · 시험 ② 재조준 권고 · 고증 API 키 확인) · 마지막 사용자 승인: 2026-09-15 (D-046 페르소나·콜드오픈·CTA·주기)
 > 읽는 순서: `BOT_HANDOFF_DDABONG_STUDIO_OS_V0.1.md` → `BOT_BOOTSTRAP_PROMPT.md` → **이 문서** → `OS_INDEX.md` → `02_SEASONS/S01/EP01/episode.json`
 
 ---
@@ -22,6 +22,8 @@
 - **S09_SH004 골든아워 히어로 불가**: 이 플레이트가 흐린 날이라 진짜 배경으로 못 씀. (a) 기존 AI 리디자인 유지 또는 (b) 골든아워 CC0 새로 확보 — 결정 필요.
 - **복식 정정 핵심 3**: ① 노동자 상체 노출 PROBABLE→INTERPRETIVE (금령총 하인상은 명기 관습) ② 계급 표지를 색·재질 → **갖춤의 양(요소 수)** 으로 (원로=일습 / 시종=제한 / 노동자=최소) ③ 여성 시종 저고리+치마 INTERPRETIVE 강등, 황성동 토우식(높은 허리·이중치마·쪽머리) 금지 = 7세기 후반 자료. 부수: 긴소매 명시(반비 834년) · 우임 고정 완화(좌임 허용) · 섬유 종류 단정 삭제 · 발목 끈·맨발 UNSUPPORTED · 복두·동철 대구 ANACHRONISTIC.
 - 복식 lock JSON (`05_HISTORY_DATABASE/costumes/COSTUME_SILLA_LABORER_A01.json`·`COSTUME_SILLA_ATTENDANT_A01.json`) 은 **일부러 손대지 않음** — V02 패치는 소유자 승인 사항.
+
+**09-16 오전 (집 창) — 고증 API 키 확인**: 국가유산청 Open API 는 **키 불필요**, https 호출로 실데이터 확인 (`https://www.khs.go.kr/cha/SearchKindOpenapiList.do?pageUnit=20&ccbaCncl=N&ccbaKdcd=11&ccbaCtcd=37`, http 는 302). `.env` 의 `EMUSEUM_API_KEY`(사용자가 넣음, 값 미열람) 는 e뮤지엄 서버(4030 미등록)·문화공공데이터광장 api.kcisa.kr(401) 모두 인증 실패 → **어느 API 에 활용신청한 키인지 확인 필요** (culture.go.kr 마이페이지 → 활용신청 현황, API 이름만). 후보: culture.go.kr id 378 "지도로 보는 문화재 탐방"(경주박물관 포함, keyword 검색) · id 653 국립경주박물관 발간자료 · data.go.kr 15105038 "20개 기관 유물정보". `.env` 는 gitignore, 키 값은 대화에 붙이지 않는다.
 
 **사용자 결정 대기 (순서대로)**
 1. **Higgsfield 재연결** (이게 되어야 2~4 실행 가능).
