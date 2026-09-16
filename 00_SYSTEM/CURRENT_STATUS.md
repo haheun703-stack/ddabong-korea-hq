@@ -1,28 +1,41 @@
 # CURRENT STATUS — 지금 어디까지 왔나
 
 > **매 작업마다 갱신한다.** 이 파일 하나만 읽으면 어느 봇/AI 창을 열어도 바로 이어갈 수 있어야 한다.
-> 갱신: 2026-09-15 밤 (Claude Code, D-052 복식 정정 · 원로 10종 재캐스팅 완료 · 내일 결정 묶음) · 마지막 사용자 승인: 2026-09-15 (D-046 페르소나·콜드오픈·CTA·주기)
+> 갱신: 2026-09-16 오전 (Claude Code, Higgsfield 미인증 · 무료 작업 4건 · 시험 ② 재조준 권고) · 마지막 사용자 승인: 2026-09-15 (D-046 페르소나·콜드오픈·CTA·주기)
 > 읽는 순서: `BOT_HANDOFF_DDABONG_STUDIO_OS_V0.1.md` → `BOT_BOOTSTRAP_PROMPT.md` → **이 문서** → `OS_INDEX.md` → `02_SEASONS/S01/EP01/episode.json`
 
 ---
 
-## 다음 시작 — "따봉 계속" 하면 여기부터 (갱신 2026-09-15 밤, 내일 09-16 용)
+## 다음 시작 — "따봉 계속" 하면 여기부터 (갱신 2026-09-16 오전)
 
-**오늘(09-15) 확정 결정**: D-049 영상 품질 번복 → D-050 리서치 → **D-051 시각 형식 확정** ("미스터 션샤인" 실사 영화 룩 · 얼굴 현대 미감 · 복식 고증 · 사진 우선 · 검수 3단 · 목표 AI 90~95%) → **D-052 복식 근거 정정** (반소매·V 여밈·청동 과대·원추 관모 = 시대착오/근거 없음 → 긴소매 직령교임·얕은 여밈·은 과판·낮은 고깔). 문서: `standards/VISUAL_STYLE_BIBLE.md` v0.2 · `05_HISTORY_DATABASE/costumes/COSTUME_SILLA_ELITE_A01.json` V02 · `EP01/01_RESEARCH/COSTUME_ELITE_VERIFY_20260915.md` · 벤치마크 `09_ANALYTICS/benchmarks/VISUAL_FORMAT_RESEARCH_20260915.md` · AISTRA 자료 검토 `REVIEW_PROMPT_PACK_AISTRA_20260915.md`.
+**09-16 오전 상태**: **Higgsfield 커넥터 끊김 → 유료 생성 전면 정지.** claude.ai 커넥터 설정에서 재인증 필요. 그동안 무료 작업 4건 완료 (커밋 `008be54`, `66950c2`). 검증 498/498.
 
-**09-15 끝난 자리**
-- 시험 ① 원로 재캐스팅 **완료·봇 PASS**: hero V07 (`08_GENERATION_CACHE/EP01/MP_ELITE/MP_ELITE_HERO_RECAST_V07_46880b62.png`) + 10종 V03 (`MP_ELITE_*_RECAST_V03_*.png`, 시트 `CONTACT_RECAST_V03_20260915.jpg`, 검수 `REVIEW_RECAST_PACK_V03_20260915.md`). 26 credits.
-- 스킬 4개 설치 `.claude/skills/` (storyboard-v1/v2 · master-sheet-v2 · seedance-continuity-builder, 안내 `_DDABONG_README.md`).
-- 잔액 1,457.03 · EP01 누적 218.17 · D-051 재작업 예산 100 중 26 사용. 계정 외 결제 Seedance 2.0 67.5 (12:25 캠핑 광고, 다른 창) 는 EP01 제외 — 사용자 확인 필요.
+**오전에 끝낸 무료 작업**
+1. **대릉원 플레이트 광원 분석** → `02_SEASONS/S01/EP01/01_RESEARCH/PLATE_LIGHT_ANALYSIS_DAEREUNGWON_20260916.md`. EXIF 2022-10-06 15:38, 18mm APS-C f/8. 계산 태양 고도 26.5°/방위 241° 이지만 **실제는 흐린 날 확산광** — 봉분 좌 128.3 vs 우 126.0 (0.03 EV), 투영 그림자 0. 합성 규격: 키라이트 금지·접지 그림자만(40cm 내 소멸)·f/8 전역 선명·중성~약간 차가움·28.8mm 환산. 인물 배치 표 포함 (권장 발 y≈2100 = 15m, 455px).
+2. **시험 ② 프롬프트 초안 2안** → `02_SEASONS/S01/EP01/11_AI_STILLS/DRAFT_TRIAL2_PLATE_COMPOSITE_20260916.md`. 둘 다 **오려붙이기 아닌 인페인트**(원본 픽셀 보존).
+3. **노동자·시종 복식 근거 리서치** (서브에이전트, 웹 전용) → `02_SEASONS/S01/EP01/01_RESEARCH/COSTUME_LABOURER_ATTENDANT_VERIFY_20260916.md` + 출처 11 (`05_HISTORY_DATABASE/sources/`) + 주장 11 (`05_HISTORY_DATABASE/facts/CLM_SILLA_COSTUME_021~031`). 32항 판정: CONFIRMED 4 · PROBABLE 14 · INTERPRETIVE 9 · UNSUPPORTED 2 · ANACHRONISTIC 2 · ARTISTIC 1.
+4. **자동차 컷 3초 재검증** → `08_GENERATION_CACHE/EP01/AI_VIDEO/REVIEW_S01_SH001_CAR_RECHECK_20260916.md` + 컷 파일 `S01_SH001_V01_CUT3S_0000_0300.mp4` (로컬만, 08 폴더는 git 제외). 앞 3초 끓음 4.175 vs 뒤 3초 9.606. 건물·가로등·하늘 PASS, 보행자는 뒷모습만이라 형태 유지. **기각 해제 권고.**
 
-**내일 아침 결정 묶음 (한 번에, 순서대로)**
-1. **원로 10종 OK/FIX** (`CONTACT_RECAST_V03_20260915.jpg`) → OK 면 **D-053** CHARACTER_MASTER_APPROVED (신 캐스팅), 구 V01~V03 은 기록 보존. 걸리면 슬롯 이름 + 한 줄.
-2. **시험 ② 실제 플레이트 합성 1컷 승인** (2~4 credits): 대릉원 CC0 원본 (`02_SEASONS/S01/EP01/02_SOURCES/`, Gagnon 5018×3345) 위에 새 원로 뒷모습(back_view) 합성 → 광원 방향·그림자·색온도 이음새 검수. 통과 = 사진 우선 원칙 실증.
-3. **노동자·시종 재캐스팅 범위**: 시험 ② 통과 뒤 LITE 3+3장 (≈12~16 credits) 진행 여부. 복식 lock 도 D-052 방식으로 근거 재검증 먼저 (노동자 CLM_001·005, 시종 CLM_004 기준).
-4. **프리비즈 시트 1장** (storyboard-v1, S01 콜드오픈 12컷, ≤4 credits) — 한글 헤더 깨짐 시험 겸.
-5. 이월 결정: EP01 제목 A/B (T1 vs T4) · 썸네일 문구 · 러프컷 편집 주체 · 유튜브 핸들.
+**오전 리서치가 뒤집은 것 (사용자 결정 필요)**
+- **시험 ② 대상 재조준 권고**: 샷 전수 조사 결과 **EP01 에 과거 인물 + 실사 플레이트 조합 샷이 없다.** 인물 샷은 전부 과거 재현, 사진 샷은 전부 현재 시점. 원로를 현재 잔디 봉분에 세우면 통과해도 채울 샷이 없다. → **안 B (현대 관람객)** 권장: `EP01_S06_SH011`·`EP01_S01_SH002` 가 실제로 요구하는 그림, 같은 비용, 통과 시 두 샷이 AI 리디자인 → 진짜 사진 + AI 인물 로 승격.
+- **기존 back_view 는 못 쓴다**: 세로 2:3 · 따뜻한 석양 · 아웃포커스 · 축조 중 배경. 플레이트와 방향·광질·심도·시대 전부 불일치. 인물 조명만 일치.
+- **S09_SH004 골든아워 히어로 불가**: 이 플레이트가 흐린 날이라 진짜 배경으로 못 씀. (a) 기존 AI 리디자인 유지 또는 (b) 골든아워 CC0 새로 확보 — 결정 필요.
+- **복식 정정 핵심 3**: ① 노동자 상체 노출 PROBABLE→INTERPRETIVE (금령총 하인상은 명기 관습) ② 계급 표지를 색·재질 → **갖춤의 양(요소 수)** 으로 (원로=일습 / 시종=제한 / 노동자=최소) ③ 여성 시종 저고리+치마 INTERPRETIVE 강등, 황성동 토우식(높은 허리·이중치마·쪽머리) 금지 = 7세기 후반 자료. 부수: 긴소매 명시(반비 834년) · 우임 고정 완화(좌임 허용) · 섬유 종류 단정 삭제 · 발목 끈·맨발 UNSUPPORTED · 복두·동철 대구 ANACHRONISTIC.
+- 복식 lock JSON (`05_HISTORY_DATABASE/costumes/COSTUME_SILLA_LABORER_A01.json`·`COSTUME_SILLA_ATTENDANT_A01.json`) 은 **일부러 손대지 않음** — V02 패치는 소유자 승인 사항.
 
-**봇이 아침에 승인 없이 할 수 있는 것 (무료)**: 노동자·시종 복식 근거 리서치 (웹만, 유료 도구 금지) · 대릉원 플레이트 광원 분석(태양 방향·시각 추정) · 시험 ② 프롬프트 초안 저장 · 기각 4클립 중 자동차 컷 3초 재검증 컷 리스트.
+**사용자 결정 대기 (순서대로)**
+1. **Higgsfield 재연결** (이게 되어야 2~4 실행 가능).
+2. **원로 10종 OK/FIX** — `08_GENERATION_CACHE/EP01/MP_ELITE/CONTACT_RECAST_V03_20260915.jpg`, 봇 판정 10/10 PASS. OK면 **D-053** CHARACTER_MASTER_APPROVED (신 캐스팅), 구 V01~V03 기록 보존.
+3. **시험 ② 안 A(원로) vs 안 B(현대 관람객)** — 봇 권장 B. 2~4 credits.
+4. **자동차 컷 기각 해제** 승인 (비용 0).
+5. **노동자·시종 복식 lock V02 패치** 승인 — 위 정정 반영 여부.
+6. **S09_SH004 골든아워** 처리 방향 (기존 유지 vs 새 플레이트 확보).
+7. 노동자·시종 재캐스팅 범위 (LITE 3+3, ≈12~16 credits) — 시험 ② 통과 + lock V02 확정 뒤.
+8. 프리비즈 시트 1장 (storyboard-v1, S01 콜드오픈 12컷, ≤4 credits).
+9. 이월: EP01 제목 A/B (T1 vs T4) · 썸네일 문구 · 러프컷 편집 주체 · 유튜브 핸들.
+10. **계정 외 결제 67.5 credits 확인** (09-15 12:25 Seedance 2.0 캠핑 광고, 다른 창 추정, EP01 비용 제외).
+
+**비용**: EP01 누적 218.17 credits · 잔액 1,457.03 · D-051 재작업 예산 100 중 26 사용. 09-16 오전 유료 생성 **0**.
 
 **규칙 리마인드**: 사진 우선(공공누리 1유형·CC0만) · 인물 정지 · AI 영상 사람 없는 ≤3초 · 검수 3단(200% 줌/12프레임 → 패치 → 사용자 OK) · 복식 체크리스트 5항목 · 위임 40/배치·150 누적 · Sent Prompt Rule · 서브에이전트 유료 도구 금지.
 
