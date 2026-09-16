@@ -27,3 +27,9 @@ AI 비서/
 
 # 2026-09-15: AI ASTRA prompt pack (third-party, 253 MB) — reviewed in 09_ANALYTICS/benchmarks/REVIEW_PROMPT_PACK_AISTRA_20260915.md
 프롬프트 자료집/
+
+# 2026-09-16: 환경변수 — 실제 키가 든 .env 는 절대 커밋하지 않는다.
+# .env.example (키 이름만 적힌 템플릿) 만 추적한다.
+.env
+.env.*
+!.env.example
