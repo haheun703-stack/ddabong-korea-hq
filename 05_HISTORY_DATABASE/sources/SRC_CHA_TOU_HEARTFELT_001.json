@@ -1,0 +1,17 @@
+{
+  "source_id": "SRC_CHA_TOU_HEARTFELT_001",
+  "claim_ids": [
+    "CLM_SILLA_COSTUME_023"
+  ],
+  "title": "1500년 전 신라인의 생생한 몸짓과 표정 — 토우(土偶)에 담긴 희로애락",
+  "institution_or_author": "국가유산청 『월간 국가유산사랑』",
+  "url_or_path": "https://www.cha.go.kr/cop/bbs/selectBoardArticle.do?nttId=92241&bbsId=BBSMSTR_1008&mn=NS_01_09_01",
+  "verified_at": "2026-09-16",
+  "verified_by": "Claude Code (Historical QA, D-053 labourer/attendant research agent)",
+  "excerpt_or_summary": "신라 토우는 대부분 5, 6세기에 만들어졌고 크기는 2~10cm. 1926년 경주 황남동 고분에서 최초 발굴, 이후 황남동·용강동·월성로 고분군·손곡리 물천동 생산유적·쪽샘지구에서 지속 발굴. 상투 튼 남자, 저고리를 입은 여자, 사냥·고기잡이·짐을 나르는 사람, 물동이를 옮기는 사람, 항아리를 지게에 진 사람, 봇짐을 멘 사람 등이 표현됨.",
+  "confidence": "FACT",
+  "uncertainty": "토우 크기 2~10cm — 소매 길이·여밈 방향·허리띠 재질 등 복식 세부 판별에는 한계.",
+  "source_type": "GOVERNMENT",
+  "rights_id": null,
+  "notes": "D-053 용. 노동 장면 도상의 존재는 확실하나 복식 세부는 추출 불가."
+}

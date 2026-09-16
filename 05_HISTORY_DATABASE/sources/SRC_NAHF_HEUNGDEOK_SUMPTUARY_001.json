@@ -1,0 +1,17 @@
+{
+  "source_id": "SRC_NAHF_HEUNGDEOK_SUMPTUARY_001",
+  "claim_ids": [
+    "CLM_SILLA_COSTUME_026"
+  ],
+  "title": "흥덕왕의 사치 금령 조치 (사료로 본 한국사)",
+  "institution_or_author": "국사편찬위원회 우리역사넷",
+  "url_or_path": "https://contents.history.go.kr/front/hm/view.do?levelId=hm_036_0020&tabId=01&treeId=010303",
+  "verified_at": "2026-09-16",
+  "verified_by": "Claude Code (Historical QA, D-053 labourer/attendant research agent)",
+  "excerpt_or_summary": "834년(흥덕왕 9년) 교서. 출전 『삼국사기』 권33 「잡지」2 색복. 색복(복두·관·겉옷·바지저고리·허리띠·버선·신발·빗·비녀)·거기·기용·옥사를 신분별로 규제. 진골 귀족이 주 대상이나 지방 일반 백성까지 포함한 신분제적 규제.",
+  "confidence": "FACT",
+  "uncertainty": "9세기 법령 — 5~6세기 복식 재현의 근거로 쓸 수 없음.",
+  "source_type": "GOVERNMENT",
+  "rights_id": null,
+  "notes": "D-053 용. '평인(平人)' 규정의 연대 확정 = 시대착오 차단용 음성 근거."
+}

@@ -1,0 +1,18 @@
+{
+  "claim_id": "CLM_SILLA_COSTUME_025",
+  "text_ko": "『수서』 신라전은 신라인이 흰색(素)을 숭상한다고 기록하며, 신편 한국사도 신라의 백색 숭상을 인정한다. 다만 두 기록 모두 6~7세기 편찬이므로 5세기 무염 백색 일반화는 유추이다.",
+  "text_en": "The Book of Sui records that Silla people esteemed white; standard Korean historiography accepts this. Both are 6th-7th-c. compilations, so extending undyed white to the 5th c. is inference.",
+  "confidence": "PROBABLE",
+  "source_ids": [
+    "SRC_AKS_ENCYKOREA_BAEKUI_001",
+    "SRC_NAHF_SILLA_LIFE_DRESS_001"
+  ],
+  "used_in": [
+    "COSTUME_SILLA_LABORER_A01",
+    "COSTUME_SILLA_ATTENDANT_A01"
+  ],
+  "hedge_required": true,
+  "verified_at": "2026-09-16",
+  "verified_by": "Claude Code (Historical QA, D-053 labourer/attendant research agent)",
+  "notes": "기존 lock 의 '백·흑·생지색'은 유지 가능하나 근거를 CLM_002(법흥왕 공복색 추정)에서 본 주장으로 교체할 것. '백의민족' 담론 자체는 후대 개념이므로 내레이션 금지."
+}

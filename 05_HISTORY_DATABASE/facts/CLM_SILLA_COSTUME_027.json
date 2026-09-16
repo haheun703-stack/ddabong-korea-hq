@@ -1,0 +1,18 @@
+{
+  "claim_id": "CLM_SILLA_COSTUME_027",
+  "text_ko": "『양서』·『남사』 계열 기록에 신라 남자의 黑巾 착용이 전하나 이는 6세기 이후 기록이며, 5세기 노동자·시종의 두건 착용은 유추이다.",
+  "text_en": "Chinese records transmit that Silla men wore a black head-cloth (heukgeon), but these are 6th-c.-or-later texts; head-cloths on 5th-c. labourers and attendants remain inference.",
+  "confidence": "INTERPRETIVE",
+  "source_ids": [
+    "SRC_NAHF_SILLA_LIFE_DRESS_001",
+    "SRC_NMK_GEUMNYEONGCHONG_RIDER_001"
+  ],
+  "used_in": [
+    "COSTUME_SILLA_LABORER_A01",
+    "COSTUME_SILLA_ATTENDANT_A01"
+  ],
+  "hedge_required": true,
+  "verified_at": "2026-09-16",
+  "verified_by": "Claude Code (Historical QA, D-053 labourer/attendant research agent)",
+  "notes": "기존 lock 의 '상투 + 천 수건 — PROBABLE' 을 INTERPRETIVE 로 강등. 단 '상투' 자체는 토우·명기로 뒷받침(CLM_023, CLM_003)."
+}

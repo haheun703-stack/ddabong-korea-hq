@@ -1,0 +1,16 @@
+{
+  "claim_id": "CLM_SILLA_COSTUME_024",
+  "text_ko": "황남대총 남분급 봉분은 자재가 현장에 이미 마련되었다는 가정 하에서도 하루 약 300명이 121일 동원되는 노동력이 필요했던 것으로 추정된다.",
+  "text_en": "Building a mound of the Hwangnamdaechong south-mound class is estimated to have taken about 300 workers a day for 121 days, even assuming materials were already on site.",
+  "confidence": "PROBABLE",
+  "source_ids": [
+    "SRC_NAHF_HWANGNAMDAECHONG_001"
+  ],
+  "used_in": [
+    "COSTUME_SILLA_LABORER_A01"
+  ],
+  "hedge_required": true,
+  "verified_at": "2026-09-16",
+  "verified_by": "Claude Code (Historical QA, D-053 labourer/attendant research agent)",
+  "notes": "복식 근거가 아니라 장면 규모 근거. 군중 컷 인원 밀도·공정(나무틀→돌무지 4m→봉토) 설계에 사용."
+}

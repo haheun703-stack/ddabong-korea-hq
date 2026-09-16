@@ -1,0 +1,17 @@
+{
+  "source_id": "SRC_PARK_NAMSU_TEXTILE_001",
+  "claim_ids": [
+    "CLM_SILLA_COSTUME_030"
+  ],
+  "title": "신라의 衣生活과 織物 생산",
+  "institution_or_author": "박남수, 『한국고대사연구』 (2011)",
+  "url_or_path": "https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART001618129",
+  "verified_at": "2026-09-16",
+  "verified_by": "Claude Code (Historical QA, D-053 labourer/attendant research agent)",
+  "excerpt_or_summary": "신라 직물의 등급과 명칭은 재료와 직조법, 그리고 표백 정도와 염색 차수로 정해졌다. 왕실 공방의 기술이 귀족 공방으로 전해졌다. 당 복식의 영향은 648년 채택된 관복에 한정되며, 여자 머리모양 변화는 문무왕대 이후. 일상복은 신라 말기까지 신라 고유의 성격을 유지했다.",
+  "confidence": "PROBABLE",
+  "uncertainty": "논의의 중심 연대가 통일신라(9세기 기록 기반)라 5~6세기 소급 적용은 유추.",
+  "source_type": "ACADEMIC",
+  "rights_id": null,
+  "notes": "D-053 용. '서민=마직 / 귀족=견직' 이분법을 직조법·표백·염색 차수 위계로 교정."
+}

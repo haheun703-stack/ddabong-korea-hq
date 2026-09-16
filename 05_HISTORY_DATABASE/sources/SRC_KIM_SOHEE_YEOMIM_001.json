@@ -1,0 +1,17 @@
+{
+  "source_id": "SRC_KIM_SOHEE_YEOMIM_001",
+  "claim_ids": [
+    "CLM_SILLA_COSTUME_028"
+  ],
+  "title": "한국 전통복식 여밈의 변화와 미적 특성",
+  "institution_or_author": "김소희 (숙명여자대학교), 『한국의류학회지』 42권 6호 (2018), DOI 10.5850/JKSCT.2018.42.6.924",
+  "url_or_path": "https://koreascience.kr/article/JAKO201811459665537.pdf",
+  "verified_at": "2026-09-16",
+  "verified_by": "Claude Code (Historical QA, D-053 labourer/attendant research agent)",
+  "excerpt_or_summary": "고대에는 좌임(左衽)과 우임(右衽)이 공존했고 대(帶)가 옷을 여미는 주된 수단이었다. 고려에서 재료가 다양해지고, 조선에서 우임이 지배적이 되며 고름이 주된 여밈 수단이 되었다. 삼국시대 저고리는 길이가 엉덩이에 이르러 대로 여몄다.",
+  "confidence": "PROBABLE",
+  "uncertainty": "신라 단독 표본이 아니라 한국 전통복식 통사 관점. 5~6세기 신라 서민 개체 표본은 제시되지 않음.",
+  "source_type": "ACADEMIC",
+  "rights_id": null,
+  "notes": "D-053 용. '우임 고정'을 반증 — 좌·우임 공존."
+}

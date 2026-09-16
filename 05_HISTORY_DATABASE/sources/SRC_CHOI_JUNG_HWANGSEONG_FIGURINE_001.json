@@ -1,0 +1,17 @@
+{
+  "source_id": "SRC_CHOI_JUNG_HWANGSEONG_FIGURINE_001",
+  "claim_ids": [
+    "CLM_SILLA_COSTUME_029"
+  ],
+  "title": "황성동 출토 여성토우의 복식 고증과 돌 코스튬 응용디자인 연구",
+  "institution_or_author": "최정, 『복식(Journal of the Korean Society of Costume)』 61권 7호, 67-79쪽 (2011)",
+  "url_or_path": "https://scienceon.kisti.re.kr/srch/selectPORSrchArticle.do?cn=JAKO201131242951202",
+  "verified_at": "2026-09-16",
+  "verified_by": "Claude Code (Historical QA, D-053 labourer/attendant research agent)",
+  "excerpt_or_summary": "경주 황성동 여성토우는 축조연대 7세기 후반으로 추정되는 돌방무덤 유적 출토. 복식은 긴소매에 비교적 둥근 깃 형태의 단의(옆트임), 높은 허리선의 이중치마(겉치마 옆트임), 가르마가 있는 쪽머리로 고증됨.",
+  "confidence": "FACT",
+  "uncertainty": "연대(7세기 후반)는 확실. 복식 세부는 저자의 고증 해석.",
+  "source_type": "ACADEMIC",
+  "rights_id": null,
+  "notes": "D-053 용. 여성 시종 복식을 이 자료로 구성하면 100~200년 시대착오."
+}

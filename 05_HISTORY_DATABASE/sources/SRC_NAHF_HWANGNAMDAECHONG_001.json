@@ -1,0 +1,17 @@
+{
+  "source_id": "SRC_NAHF_HWANGNAMDAECHONG_001",
+  "claim_ids": [
+    "CLM_SILLA_COSTUME_024"
+  ],
+  "title": "경주 황남대총 (한국문화사 / 우리역사넷)",
+  "institution_or_author": "국사편찬위원회 우리역사넷",
+  "url_or_path": "https://contents.history.go.kr/mobile/kc/view.do?levelId=kc_r100044&code=kc_age_10",
+  "verified_at": "2026-09-16",
+  "verified_by": "Claude Code (Historical QA, D-053 labourer/attendant research agent)",
+  "excerpt_or_summary": "남북 길이 120m, 동서 지름 80m, 높이 약 22m. '높이 20m 이상에 달하는 남분을 만들기 위해서는 모든 자재가 현장에서 마련되어 있다는 가정 하에 대략 하루 300명의 인력이 121일 정도 동원되는 노동력이 필요했을 것이라고 추정된다.' 공정: 덧널 주위에 나무틀을 세우고, 돌무지를 약 4m 높이로 쌓고, 산에서 퍼 온 흙과 강자갈로 봉토를 올림.",
+  "confidence": "PROBABLE",
+  "uncertainty": "노동력 수치는 추정치이며 자재 운반 공정은 제외된 조건부 계산.",
+  "source_type": "GOVERNMENT",
+  "rights_id": null,
+  "notes": "D-053 용. 봉분 축조 노동 장면의 규모·공정 근거. 복식 근거는 아님."
+}

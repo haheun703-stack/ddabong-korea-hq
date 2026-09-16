@@ -1,0 +1,16 @@
+{
+  "claim_id": "CLM_SILLA_COSTUME_029",
+  "text_ko": "경주 황성동 출토 여성토우(긴소매 둥근깃 단의, 높은 허리 이중치마, 쪽머리)는 7세기 후반 돌방무덤 자료이므로 5~6세기 여성 시종 복식의 근거로 쓸 수 없다.",
+  "text_en": "The Hwangseong-dong female figurine (long-sleeved round-collar tunic, high-waisted double skirt, parted chignon) comes from a late-7th-c. stone-chamber tomb and cannot inform 5th-6th c. female attendant dress.",
+  "confidence": "FACT",
+  "source_ids": [
+    "SRC_CHOI_JUNG_HWANGSEONG_FIGURINE_001"
+  ],
+  "used_in": [
+    "COSTUME_SILLA_ATTENDANT_A01"
+  ],
+  "hedge_required": false,
+  "verified_at": "2026-09-16",
+  "verified_by": "Claude Code (Historical QA, D-053 labourer/attendant research agent)",
+  "notes": "기존 lock 의 '여성 시종은 저고리+치마' 근거를 재점검해야 함. 높은 허리선·이중치마·쪽머리는 5~6세기 장면에서 금지."
+}

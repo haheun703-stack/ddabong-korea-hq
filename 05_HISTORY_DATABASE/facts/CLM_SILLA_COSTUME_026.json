@@ -1,0 +1,18 @@
+{
+  "claim_id": "CLM_SILLA_COSTUME_026",
+  "text_ko": "『삼국사기』 색복조의 평인(平人)·평인녀 복식 규정(복두·포·동철 허리띠 등)은 834년 흥덕왕 교서이며 5~6세기 재현에 쓸 수 없다.",
+  "text_en": "The commoner (pyeongin) dress rules in the Samguk sagi Saekbok treatise belong to King Heungdeok's 834 edict and cannot inform 5th-6th c. reconstruction.",
+  "confidence": "FACT",
+  "source_ids": [
+    "SRC_NAHF_HEUNGDEOK_SUMPTUARY_001",
+    "SRC_SAMGUKSAGI_SAEKBOK_PYEONGIN_001"
+  ],
+  "used_in": [
+    "COSTUME_SILLA_LABORER_A01",
+    "COSTUME_SILLA_ATTENDANT_A01"
+  ],
+  "hedge_required": false,
+  "verified_at": "2026-09-16",
+  "verified_by": "Claude Code (Historical QA, D-053 labourer/attendant research agent)",
+  "notes": "CLM_020(용강동 토용 = 7~8세기 당풍)과 같은 성격의 음성 근거. 복두(幞頭)·동철 대구는 5~6세기 노동자/시종에 금지."
+}

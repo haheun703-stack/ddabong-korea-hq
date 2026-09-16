@@ -1,0 +1,17 @@
+{
+  "claim_id": "CLM_SILLA_COSTUME_031",
+  "text_ko": "짚신 모양 토기는 신라·가야 무덤의 부장 이형토기로 짚신의 형태(꼬임 방향·짜임)를 전하지만, 착용 계층을 특정하지 못한다.",
+  "text_en": "Straw-sandal-shaped vessels are ritual burial pottery preserving sandal form (twist direction, weave) but do not identify which social stratum wore them.",
+  "confidence": "PROBABLE",
+  "source_ids": [
+    "SRC_KHAN_STRAW_SHOE_POTTERY_001"
+  ],
+  "used_in": [
+    "COSTUME_SILLA_LABORER_A01",
+    "COSTUME_SILLA_ATTENDANT_A01"
+  ],
+  "hedge_required": true,
+  "verified_at": "2026-09-16",
+  "verified_by": "Claude Code (Historical QA, D-053 labourer/attendant research agent)",
+  "notes": "기존 lock 의 '짚신 — PROBABLE' 은 유지하되 '서민 전용' 함의는 제거. 맨발 옵션은 증거 없음 → INTERPRETIVE 로 별도 표기 필요."
+}

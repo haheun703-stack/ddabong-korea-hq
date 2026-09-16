@@ -1,0 +1,18 @@
+{
+  "claim_id": "CLM_SILLA_COSTUME_022",
+  "text_ko": "금령총 기마인물형 명기는 신라 5세기 부장 명기이며, 하인상의 '상체 노출 + 상투에 수건'은 명기의 신분 표현 관습이므로 실제 노동 복장의 직접 증거로 볼 수 없다.",
+  "text_en": "The Geumnyeongchong horse-and-rider vessels are 5th-c. Silla funerary models; the servant's bare torso and cloth-bound topknot encode status within the model convention and are not direct evidence of real working dress.",
+  "confidence": "INTERPRETIVE",
+  "source_ids": [
+    "SRC_KHERITAGE_RIDER_NT91_001",
+    "SRC_NMK_GEUMNYEONGCHONG_RIDER_001",
+    "SRC_KIM_JAEYEOL_WANGGYEONG_001"
+  ],
+  "used_in": [
+    "COSTUME_SILLA_LABORER_A01"
+  ],
+  "hedge_required": true,
+  "verified_at": "2026-09-16",
+  "verified_by": "Claude Code (Historical QA, D-053 labourer/attendant research agent)",
+  "notes": "연대(5세기)는 FACT. 기존 lock의 '노동 중 상체 노출 가능 — PROBABLE'을 INTERPRETIVE 로 강등할 것. 화면에서 상시 상체 노출은 금지, 1~2컷 한정 + hedge."
+}

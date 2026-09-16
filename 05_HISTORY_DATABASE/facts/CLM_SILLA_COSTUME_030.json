@@ -1,0 +1,18 @@
+{
+  "claim_id": "CLM_SILLA_COSTUME_030",
+  "text_ko": "신라 직물의 등급은 재료·직조법과 표백 정도·염색 차수로 정해졌고, 당 복식 수용은 648년 관복에 한정되며 일상복은 신라 고유 양식을 유지했다.",
+  "text_en": "Silla textile grades were set by material, weave, degree of bleaching and number of dye passes; Tang influence was confined to the 648 court dress, while everyday clothing stayed Silla in character.",
+  "confidence": "PROBABLE",
+  "source_ids": [
+    "SRC_PARK_NAMSU_TEXTILE_001",
+    "SRC_KPEA_CHEONMACHONG_TEXTILE_001"
+  ],
+  "used_in": [
+    "COSTUME_SILLA_LABORER_A01",
+    "COSTUME_SILLA_ATTENDANT_A01"
+  ],
+  "hedge_required": true,
+  "verified_at": "2026-09-16",
+  "verified_by": "Claude Code (Historical QA, D-053 labourer/attendant research agent)",
+  "notes": "'서민=마직 / 귀족=견직' 이분법은 단순화. 시종의 재질 차이는 '고운 평직·표백도가 높음' 으로 표현하고 섬유 종류 단정은 피할 것."
+}

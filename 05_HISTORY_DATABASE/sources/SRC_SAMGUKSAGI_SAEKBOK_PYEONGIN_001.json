@@ -1,0 +1,17 @@
+{
+  "source_id": "SRC_SAMGUKSAGI_SAEKBOK_PYEONGIN_001",
+  "claim_ids": [
+    "CLM_SILLA_COSTUME_026"
+  ],
+  "title": "『삼국사기』 권33 잡지2 색복 — 평인(平人)·평인녀(平人女) 조",
+  "institution_or_author": "김부식(1145) / 국사편찬위원회 한국사데이터베이스 한국 고대 사료 DB",
+  "url_or_path": "https://db.history.go.kr/ancient/level.do?levelId=sg_033r_0020_0130",
+  "verified_at": "2026-09-16",
+  "verified_by": "Claude Code (Historical QA, D-053 labourer/attendant research agent)",
+  "excerpt_or_summary": "평인(남): 복두는 견(絹)·포(布)만, 겉옷과 바지는 포만, 속옷은 견·포만, 허리띠는 동(銅)·철(鐵)만 쓴다. 평인녀: 겉옷은 면주(綿紬)·포만, 속옷은 견류·포만 쓴다.",
+  "confidence": "FACT",
+  "uncertainty": "834년 흥덕왕 교서의 일부. 5~6세기 적용 불가. DB 세부 항목(평인 조) 직접 열람은 미완 — 검색 요약 기준.",
+  "source_type": "PRIMARY_RECORD",
+  "rights_id": null,
+  "notes": "D-053 용. 서민 허리띠 '동·철'은 9세기 규정이며 5세기 포대(布帶) 상정과 별개."
+}

@@ -1,0 +1,18 @@
+{
+  "source_id": "SRC_KIM_JAEYEOL_WANGGYEONG_001",
+  "claim_ids": [
+    "CLM_SILLA_COSTUME_021",
+    "CLM_SILLA_COSTUME_022"
+  ],
+  "title": "신라 왕경인의 복식에 대한 고고학적 자료와 그 특성",
+  "institution_or_author": "김재열, 『영남고고학』 103호, 229-254쪽 (2025)",
+  "url_or_path": "https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART003246376",
+  "verified_at": "2026-09-16",
+  "verified_by": "Claude Code (Historical QA, D-053 labourer/attendant research agent)",
+  "excerpt_or_summary": "신라 토제 인물상은 '일습을 갖춘 의복 / 갖춤이 제한된 의복 / 아예 의복이 생략된' 세 층위로 복식의 차별성이 드러나며, 금령총 유물과 토우 자료에서 위계성과 제한성이 관찰된다. 분석 대상은 기마 인물형 토기, 배 모양 토기의 뱃사공 등 토제 인물상과 귀금속 장신구, 중국 회화의 신라 사절 도상.",
+  "confidence": "PROBABLE",
+  "uncertainty": "KCI 초록 기준. 본문(유료) 미열람 — 세부 계측·도판 미확인.",
+  "source_type": "ACADEMIC",
+  "rights_id": null,
+  "notes": "D-053 노동자·시종 복식 검증용. 하위 계층 복식 위계의 1차 학술 근거."
+}

@@ -1,0 +1,18 @@
+{
+  "source_id": "SRC_NAHF_SILLA_LIFE_DRESS_001",
+  "claim_ids": [
+    "CLM_SILLA_COSTUME_025",
+    "CLM_SILLA_COSTUME_027"
+  ],
+  "title": "신편 한국사 8권 — 4) 신라의 의생활",
+  "institution_or_author": "국사편찬위원회 우리역사넷 (신편 한국사)",
+  "url_or_path": "https://contents.history.go.kr/mobile/nh/view.do?levelId=nh_008_0070_0010_0040",
+  "verified_at": "2026-09-16",
+  "verified_by": "Claude Code (Historical QA, D-053 labourer/attendant research agent)",
+  "excerpt_or_summary": "중국 사서에 의하면 신라 복식은 고구려·백제와 같다. 『양서』·『남사』는 冠을 遺子禮, 襦를 尉解, 袴를 柯半, 靴를 洗라 기록. 신라도 백색(素)을 숭상. 여자는 辮髮하여 머리를 둘렀고 남자는 黑巾을 썼다. 17등 관계에 따라 자·비·청·황 4색 공복.",
+  "confidence": "PROBABLE",
+  "uncertainty": "인용된 중국 사서는 6~7세기 편찬물이며 5세기 마립간기 직접 기술이 아님. 본문의 '양직공도 신라 사신' 서술은 CLM_SILLA_COSTUME_012 로 이미 정정된 구설.",
+  "source_type": "ACADEMIC",
+  "rights_id": null,
+  "notes": "D-053 용. 黑巾·백색 숭상의 문헌 근거."
+}

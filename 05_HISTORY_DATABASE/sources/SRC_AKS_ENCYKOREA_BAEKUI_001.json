@@ -1,0 +1,17 @@
+{
+  "source_id": "SRC_AKS_ENCYKOREA_BAEKUI_001",
+  "claim_ids": [
+    "CLM_SILLA_COSTUME_025"
+  ],
+  "title": "백의민족 (한국민족문화대백과사전)",
+  "institution_or_author": "서봉하 (용인예술과학대학교), 한국학중앙연구원 (2023-08-12 최종수정)",
+  "url_or_path": "https://encykorea.aks.ac.kr/Article/E0022280",
+  "verified_at": "2026-09-16",
+  "verified_by": "Claude Code (Historical QA, D-053 labourer/attendant research agent)",
+  "excerpt_or_summary": "『수서(隋書)』: '신라 사람들은 옷의 색깔로 흰 옷을 숭상한다.' 한국인의 전통 백의는 평민들의 일상복은 물론 양반의 평거복·학자복, 종교복·제례복·상복 등으로 다양하다.",
+  "confidence": "PROBABLE",
+  "uncertainty": "『수서』는 636년 편찬 — 5세기 마립간기 직접 기술 아님. '백의민족' 담론은 후대 형성된 개념이라 5세기 일반화에 주의.",
+  "source_type": "SECONDARY",
+  "rights_id": null,
+  "notes": "D-053 용. 백색 계열 근거이되 시대 격차 명시 필요."
+}

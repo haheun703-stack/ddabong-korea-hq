@@ -1,0 +1,18 @@
+{
+  "claim_id": "CLM_SILLA_COSTUME_028",
+  "text_ko": "고대 한국 복식은 좌임과 우임이 공존했고 대(帶)가 주된 여밈 수단이었으며, 우임 고정은 조선기의 현상이다. 5~6세기 신라 하위 계층에 우임을 고정 규칙으로 강제할 수 없다.",
+  "text_en": "Left- and right-over closures coexisted in ancient Korean dress with the belt as the main fastening; right-over dominance is a Joseon-period development, so it cannot be enforced as a rule for 5th-6th c. Silla commoners.",
+  "confidence": "PROBABLE",
+  "source_ids": [
+    "SRC_KIM_SOHEE_YEOMIM_001",
+    "SRC_NAHF_SILLA_CLOTHING_001"
+  ],
+  "used_in": [
+    "COSTUME_SILLA_LABORER_A01",
+    "COSTUME_SILLA_ATTENDANT_A01"
+  ],
+  "hedge_required": true,
+  "verified_at": "2026-09-16",
+  "verified_by": "Claude Code (Historical QA, D-053 labourer/attendant research agent)",
+  "notes": "CLM_007 의 하위 계층 적용판. lock 의 '직령 우임' 은 '직령교임, 우임 우세·좌임 허용' 으로 완화 권고. 고름(옷고름) 표현은 금지 — 조선 요소."
+}

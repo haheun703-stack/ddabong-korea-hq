@@ -1,0 +1,18 @@
+{
+  "claim_id": "CLM_SILLA_COSTUME_023",
+  "text_ko": "5~6세기 신라 토우에 지게·봇짐·물동이 운반 등 노동 장면이 다수 표현되나, 토우 크기가 2~10cm라 소매 길이·여밈 방향·허리띠 재질 등 복식 세부는 판별할 수 없다.",
+  "text_en": "Silla figurines (5th-6th c., 2-10 cm) depict carrying frames, bundles and water jars, but at that scale sleeve length, closure direction and belt material cannot be read.",
+  "confidence": "PROBABLE",
+  "source_ids": [
+    "SRC_CHA_TOU_HEARTFELT_001",
+    "SRC_KCULTURE_SILLA_TOU_001"
+  ],
+  "used_in": [
+    "COSTUME_SILLA_LABORER_A01",
+    "COSTUME_SILLA_ATTENDANT_A01"
+  ],
+  "hedge_required": true,
+  "verified_at": "2026-09-16",
+  "verified_by": "Claude Code (Historical QA, D-053 labourer/attendant research agent)",
+  "notes": "노동 장면 존재 = FACT. 세부 복식 판별 불가 = 본 주장의 핵심. 토우를 '소매·여밈' 근거로 인용하는 것은 과대 해석."
+}

@@ -1,0 +1,17 @@
+{
+  "source_id": "SRC_KHERITAGE_RIDER_NT91_001",
+  "claim_ids": [
+    "CLM_SILLA_COSTUME_022"
+  ],
+  "title": "국보 도기 기마인물형 명기 (陶器 騎馬人物形 明器)",
+  "institution_or_author": "국가유산청 국가유산포털",
+  "url_or_path": "https://www.heritage.go.kr/heri/cul/culSelectDetail.do?pageNo=1_1_1_1&ccbaCpno=1111100910000",
+  "verified_at": "2026-09-16",
+  "verified_by": "Claude Code (Historical QA, D-053 labourer/attendant research agent)",
+  "excerpt_or_summary": "분류 토도/생활공예/토기. 수량 1쌍. 지정일 1962-12-20. 시대 신라시대 5세기. 소재지 국립중앙박물관. 경주 금령총 출토 명기(明器).",
+  "confidence": "FACT",
+  "uncertainty": "명기(부장 모형)이므로 실제 착장 복식의 사실적 기록으로 단정 불가.",
+  "source_type": "GOVERNMENT",
+  "rights_id": null,
+  "notes": "D-053 용. 하인상 도상의 연대(5세기)를 마립간기 범위 안으로 확정."
+}

@@ -1,0 +1,17 @@
+{
+  "claim_id": "CLM_SILLA_COSTUME_021",
+  "text_ko": "신라 토제 인물상의 복식은 '일습을 갖춘 의복 / 갖춤이 제한된 의복 / 의복이 생략된 상' 세 층위로 위계가 표현된다. 하위 계층일수록 복식 요소가 생략된다.",
+  "text_en": "Silla clay figures show dress hierarchy in three tiers: a full set, a restricted set, and figures with dress omitted entirely; lower status means fewer garment elements.",
+  "confidence": "PROBABLE",
+  "source_ids": [
+    "SRC_KIM_JAEYEOL_WANGGYEONG_001"
+  ],
+  "used_in": [
+    "COSTUME_SILLA_LABORER_A01",
+    "COSTUME_SILLA_ATTENDANT_A01"
+  ],
+  "hedge_required": true,
+  "verified_at": "2026-09-16",
+  "verified_by": "Claude Code (Historical QA, D-053 labourer/attendant research agent)",
+  "notes": "김재열 2025 영남고고학 103. 계급 구분 표지는 '색·재질'보다 '갖춤의 양(요소 수)'으로 표현됨 — 노동자/시종 구분의 1차 원칙으로 채택 권고."
+}
