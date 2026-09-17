@@ -1,0 +1,23 @@
+{
+  "approval_id": "APR_EP01_COSTUME_V02_SAMPLE_001",
+  "kind": "PAID_GENERATION",
+  "target_id": "COSTUME_V02_SAMPLES",
+  "money_gate_presented": {
+    "shot_id": "costume V02 samples (labourer, attendant, rank lineup)",
+    "prompt_ids": [
+      "PRM_MP_CHAR_SILLA_LABORER_GROUP_01_COSTUME_V02_SAMPLE_V01",
+      "PRM_MP_CHAR_SILLA_ATTENDANT_GROUP_01_COSTUME_V02_SAMPLE_V01",
+      "PRM_MP_CHAR_SILLA_ATTENDANT_GROUP_01_RANK_LINEUP_SAMPLE_V01"
+    ],
+    "provider_model": "Higgsfield / Nano Banana Pro (CLI), 2:3 and 3:2, 2k",
+    "expected_attempts": 3,
+    "estimated_cost_range": "6 credits",
+    "continuity_risk": "NONE (review samples, not master pack)"
+  },
+  "decision": "APPROVE",
+  "fix_reason": null,
+  "delegated": true,
+  "decided_by": "봇 (사용자 '샘플로 니가 뽑아야지' 2026-09-17, 위임 40/배치 안)",
+  "decided_at": "2026-09-17T13:00:00Z",
+  "note": "정정안 승인 판단용 샘플. 승인 전이므로 복식 lock V02 는 DRAFT."
+}
