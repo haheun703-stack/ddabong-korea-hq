@@ -8,6 +8,8 @@
 
 ## 다음 시작 — "따봉 계속" 하면 여기부터 (갱신 2026-09-17)
 
+**09-17 밤 — D-055 원로 확정 · 실사화 A묶음 준비 완료 (전송 대기)**: 원로 신 캐스팅 CHARACTER_MASTER_APPROVED. 프롬프트 4개 저장 `02_SEASONS/S01/EP01/11_AI_STILLS/prompt_PRM_EP01_*_BL_V01.json` + 승인 `08_GENERATION_CACHE/EP01/approval_APR_EP01_BL_A_001.json`. **막힌 것: Higgsfield 커넥터 미연결** → 재연결 후 새 창에서 "따봉 계속" → 잔액 확인 → 클레이 렌더 업로드 → 4컷 전송. **사용자 결정 대기: 노동자·시종 복식 V02 승인** (B묶음 4컷 선행 조건).
+
 **09-17 저녁 — D-054 Blender 구도·주변 환경 승인**: 씬 V01.4 (실제 지형 + 대릉원 고분 3층 + 작업장 + 목조 틀 + 말목·끈). 불확실 고분은 축조 장면에서 제외. 렌더 `08_GENERATION_CACHE/EP01/BLENDER/CONTACT_SHOTS_CLAY_V01.jpg` · `CONTACT_ENVIRONMENT_V01.jpg` · `ANIM_CAM_ESTABLISH_AERIAL_5s.mp4`. **다음 = Higgsfield 재연결 → Phase 3 실사화 8컷** (원로 10종 OK 함께).
 
 **09-17 오후 — 외부 API 키 5종 확인**: 네이버 검색(백과·뉴스) **OK** · ElevenLabs TTS **OK**(35 보이스, eleven_v3 가능, 잔여 글자 조회 권한 없음) · Webshare 프록시 **OK**(출구 영국) · 공공데이터포털 `KOREA_DATA_API_KEY` **등록 대기**(e뮤지엄 서버 미등록, 내일 재시험) · `EMUSEUM_API_KEY` 미등록. 공용 호출 모듈 `tools/api/apis.py` (`python tools/api/apis.py selftest`) · 활용 계획 `tools/api/README.md` (백과 = 출처 탐색, ElevenLabs = 내레이션 최종본 후보, 프록시 = 막힌 사이트 리서치, e뮤지엄 = 관모 실물 사진). `.env.example` 이름 갱신.

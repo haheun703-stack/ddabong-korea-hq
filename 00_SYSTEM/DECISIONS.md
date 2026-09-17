@@ -288,6 +288,11 @@
 **다음** Phase 3 실사화 (Higgsfield 재연결 필요, 8컷 ≤32 credits) · 원로 10종 OK 대기.
 **미결** OSM 금관총 위치 2곳 불일치 — 근접 촬영 전 지도 대조.
 
+### D-055 · 2026-09-17 · 원로 신 캐스팅 확정 + 실사화 A묶음 진행 (사용자 "CONTACT_RECAST_V03 봤다 뭐 나쁘진 않지 … 진행해라")
+**결정** ① `CHAR_SILLA_ELITE_OBSERVER_01` V02 = hero V07 + 9슬롯 RECAST V03 → CHARACTER_MASTER_APPROVED. 구 캐스팅 이미지는 기록 보존. 얼굴 ID 참조 = hero V07. ② D-053 Phase 3 실사화 A묶음 4컷 진행 승인: S04_SH005(목곽, 사람 없음) · H05(원로 뒷모습) · H06(봉토 진행 원경) · H07(완성 봉분). 참조 = Blender 클레이 렌더 + 원로 팩. 8~16 credits.
+**보류** B묶음 H01·H02b·H03·H04 = 노동자·시종이 크게 나오는 컷 → 노동자·시종 복식 V02 승인(`EP01/01_RESEARCH/COSTUME_LABOURER_ATTENDANT_VERIFY_20260916.md` §4) + 재캐스팅 뒤.
+**전제** Higgsfield 커넥터 재연결 (현재 세션 미연결).
+
 ---
 
 ## 승인 대기 (P)

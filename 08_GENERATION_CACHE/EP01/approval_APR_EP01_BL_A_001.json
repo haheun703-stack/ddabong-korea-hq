@@ -1,0 +1,24 @@
+{
+  "approval_id": "APR_EP01_BL_A_001",
+  "kind": "PAID_GENERATION",
+  "target_id": "EP01_BLENDER_PHOTOREAL_BATCH_A",
+  "money_gate_presented": {
+    "shot_id": "EP01_S04_SH005 · EP01_S06_SH005 (H05) · EP01_S06_SH010 (H06) · EP01_S08_SH002 (H07)",
+    "prompt_ids": [
+      "PRM_EP01_S04_SH005_BL_V01",
+      "PRM_EP01_S06_SH005_BL_V01",
+      "PRM_EP01_S06_SH010_BL_V01",
+      "PRM_EP01_S08_SH002_BL_V01"
+    ],
+    "provider_model": "Higgsfield / Nano Banana Pro, 16:9, 2k, image_references = Blender clay render (media_upload) [+ elder hero V07 / back view]",
+    "expected_attempts": 8,
+    "estimated_cost_range": "8-16 credits (4 shots x 2 credits, up to 1 patch each)",
+    "continuity_risk": "LOW for geometry (Blender-locked); MEDIUM for H05 elder back view"
+  },
+  "decision": "APPROVE",
+  "fix_reason": null,
+  "delegated": false,
+  "decided_by": "사용자 ('진행해라' 2026-09-17, D-053 Phase 3)",
+  "decided_at": "2026-09-17T12:00:00Z",
+  "note": "D-053 Phase 3 A묶음 (노동자·시종 복식 V02 결정과 무관한 4컷). 전송 대기: Higgsfield 커넥터 재연결 필요. B묶음 (H01·H02b·H03·H04) = 노동자·시종 복식 V02 승인 + 재캐스팅 뒤."
+}
