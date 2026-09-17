@@ -100,9 +100,10 @@ def label(name, text, loc, size, c, rot=(math.pi / 2, 0, 0)):
 # ---------------- world / ground ----------------
 C_ENV = coll("ENV")
 bpy.ops.mesh.primitive_plane_add(size=600); g = bpy.context.object; g.name = "Ground"; g.data.materials.append(M_GRASS); link(g, C_ENV)
-# distant Daereungwon mounds (existence FACT, positions shape-only)
+# distant Daereungwon mounds (existence FACT, positions shape-only) — own collection so diagrams can hide them
+C_DIST = coll("ENV_DISTANT")
 for i, (x, y, r, h) in enumerate([(170, 120, 18, 9), (-150, 190, 22, 11), (230, -60, 16, 8), (-210, -50, 20, 10), (40, 210, 20, 10)]):
-    m = revolve_mound(f"DistantMound_{i}", r, h, C_ENV, M_GRASS); m.location = (x, y, 0)
+    m = revolve_mound(f"DistantMound_{i}", r, h, C_DIST, M_GRASS); m.location = (x, y, 0)
 
 # sun: late afternoon, from camera-left when cameras look north (+Y) -> sun in the WSW, elevation 25 deg (BIBLE v0.2)
 bpy.ops.object.light_add(type='SUN', location=(0, 0, 80)); sun = bpy.context.object; sun.name = "Sun_LateAfternoon"
@@ -135,6 +136,14 @@ for k in range(14):
 C_S2 = coll("STAGE2_GOODS")
 box("GoodsChest", (0.9, 2.2, 0.7), (1.9, 0, 0.12 + 0.35), C_S2, M_WOOD)  # T-shaped to the coffin head (east)
 for k in range(6): box(f"Vessel_{k}", (0.3, 0.3, 0.35), (2.6 + (k % 3) * 0.45, -1.4 + (k // 3) * 0.6, 0.12 + 0.18), C_S2, M_STONE)
+# H03: low wooden preparation table OUTSIDE the chamber (south-east), plain grey stoneware + folded hemp cloths, no gold (FACT: gold is worn by the occupant)
+TX, TY, TH = 5.0, -4.2, 0.62
+box("PrepTable_Top", (1.8, 0.8, 0.06), (TX, TY, TH), C_S2, M_WOOD)
+for dx in (-0.8, 0.8):
+    for dy in (-0.33, 0.33): box(f"PrepTable_Leg_{dx:+.1f}_{dy:+.1f}", (0.07, 0.07, TH - 0.03), (TX + dx, TY + dy, (TH - 0.03) / 2), C_S2, M_WOOD)
+for k, (dx, r, hgt) in enumerate([(-0.55, 0.13, 0.30), (-0.2, 0.10, 0.22), (0.12, 0.15, 0.26)]):
+    bpy.ops.mesh.primitive_cylinder_add(radius=r, depth=hgt, location=(TX + dx, TY + 0.1, TH + 0.03 + hgt / 2)); v = bpy.context.object; v.name = f"TableVessel_{k}"; v.data.materials.append(M_STONE); link(v, C_S2)
+for k in range(3): box(f"HempCloth_{k}", (0.34, 0.26, 0.035), (TX + 0.55, TY - 0.12, TH + 0.05 + k * 0.036), C_S2, M_WHITE)
 
 C_S3 = coll("STAGE3_STONES")
 stones("Stone", C_S3, radius=9.0, height=4.2, count=2600)   # shape-only, no numbers on screen
@@ -156,7 +165,7 @@ C_PX = coll("PROXIES")
 PX = {
  "H01": [("Lab1", 1.67, (-14.5, -9.2), 60), ("Lab2", 1.67, (-11.6, -10.4), 120)],
  "H02b": [("Lab1", 1.67, (-3, -3.5), 30), ("Lab2", 1.67, (4, 3.2), 200), ("Lab3", 1.67, (-9, 6), 90), ("Att1", 1.68, (5.5, -5), 140)],
- "H03": [("Att1", 1.68, (3.6, -1.9), 90)],
+ "H03": [("Att1", 1.68, (6.05, -3.55), 250)],
  "H04": [("Elder", 1.72, (0, -6), 90), ("Att1", 1.68, (2, 2), 250), ("Att2", 1.68, (2.8, 1.2), 250), ("Lab1", 1.67, (-4, 8), 300), ("Lab2", 1.67, (-5, 7), 320)],
  "H05": [("Elder", 1.72, (0, -17.5), 90), ("Lab1", 1.67, (-6, 9), 40), ("Lab2", 1.67, (7, 10), 140), ("Lab3", 1.67, (2, 12), 90)],
  "H06": [("Grp1", 1.67, (-26, -20), 30), ("Grp2", 1.67, (-25, -21.2), 30), ("Grp3", 1.67, (30, -8), 150)],
@@ -192,7 +201,7 @@ CAMS = [  # (id, stage, proxies, location, target, lens, ortho, portrait, dims)
  ("CAM_S04_SH004_H01", "S1", "H01", (-18, -14, 1.4), (-12.5, -10, 0.6), 35, None, False, False),
  ("CAM_S04_SH005", "S1", None, (0, -12, 1.6), (0, 0, 1.0), 28, None, False, False),
  ("CAM_S04_SH006_H02b", "S1", "H02b", (-22, -26, 2.2), (0, 0, 0.8), 24, None, False, False),
- ("CAM_S05_SH005_H03", "S2", "H03", (5.2, -4.6, 1.1), (2.9, -0.9, 0.55), 50, None, False, False),
+ ("CAM_S05_SH005_H03", "S2", "H03", (5.9, -6.3, 1.0), (4.9, -4.0, 0.72), 50, None, False, False),
  ("CAM_S06_SH002_H04", "S2", "H04", (0, -14, 1.5), (0, 0, 1.2), 28, None, False, False),
  ("CAM_S06_SH005_H05", "S3", "H05", (0.6, -20, 1.5), (0, 0, 2.5), 35, None, False, False),
  ("CAM_S06_SH010_H06", "S4", "H06", (-40, -45, 1.7), (0, 4, 4), 24, None, False, False),
@@ -221,9 +230,9 @@ for o in list(C_S3.objects):
 
 # ---------------- render ----------------
 w, h = [int(v) for v in A.res.lower().split("x")]
-def set_visible(names, with_proxies, with_dims, section=False):
+def set_visible(names, with_proxies, with_dims, section=False, distant=True):
     for c in sc.collection.children:
-        vis = c.name in names or c.name in ("ENV", "CAMERAS")
+        vis = c.name in names or c.name in ("ENV", "CAMERAS") or (c.name == "ENV_DISTANT" and distant)
         if c.name == "PROXIES":
             vis = True
             for sub in c.children: sub.hide_render = sub.name != f"PX_{with_proxies}"
@@ -257,12 +266,12 @@ for cid, st, px, *_ in CAMS:
     cam = bpy.data.objects[cid]
     if cid == "CAM_G05_BUILD":
         for s in ("S1", "S2", "S3", "S4", "S5"):
-            set_visible(STAGE_SETS[s], None, False); render(cam, f"{cid}_{s}", "clay")
-            set_visible(STAGE_SETS[s], None, False); render(cam, f"{cid}_{s}", "line")
+            set_visible(STAGE_SETS[s], None, False, distant=False); render(cam, f"{cid}_{s}", "clay")
+            set_visible(STAGE_SETS[s], None, False, distant=False); render(cam, f"{cid}_{s}", "line")
         continue
     if cid == "CAM_G04_SECTION":
-        set_visible(["STAGE1_CHAMBER", "STAGE2_GOODS"], None, False, section=True); render(cam, cid, "clay"); render(cam, cid, "line"); continue
-    set_visible(STAGE_SETS[st], px, bool(cam.get("dims")))
+        set_visible(["STAGE1_CHAMBER", "STAGE2_GOODS"], None, False, section=True, distant=False); render(cam, cid, "clay"); render(cam, cid, "line"); continue
+    set_visible(STAGE_SETS[st], px, bool(cam.get("dims")), distant=not bool(cam.get("dims")))
     for m in passes: render(cam, cid, m)
 
 if A.save:
