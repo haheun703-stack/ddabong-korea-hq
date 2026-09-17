@@ -20,6 +20,18 @@
 | 주변 고분 | 대릉원 돔형 봉분 여러 기 원경 | FACT(존재) / 위치 INTERPRETIVE | `CLM_EP01_TUMULI_002` | 원경 3~4기, 숫자 없음 |
 | 광원 | 늦은 오후 태양, 카메라-좌 45°, 고도 ≈25° | 스타일 규정 | `VISUAL_STYLE_BIBLE` v0.2 §1 | 씬 전체 고정 (연속성 락 ②) |
 
+## 1b. 주변 환경 (V01.2, 09-17 사용자 지적 "분봉만 보이고 주위가 안 보인다" 반영)
+
+| 레이어 | 데이터 | 등급 | 씬 처리 |
+|---|---|---|---|
+| 실제 지형 `ENV_TERRAIN` | AWS 공개 지형 타일(terrarium z12, 3×3, 약 24 km) → `data/TERRAIN_HEIGHTMAP_Z12_step2.bin`. 현장 고도 41 m, 최고 738 m | PROBABLE (DEM 셀 30~40 m, 현대 지표) | 반경 1.2 km 안은 평지(분지 바닥), 2.6 km 밖은 실제 고도 → 실제 산 능선 |
+| 대릉원 고분 배치 `ENV_TOMBS_PERIOD` / `ENV_TOMBS_PRESENT` | OpenStreetMap 윤곽 50기 (ODbL) → `data/DAEREUNGWON_OSM_TOMBS_20260917.json`. 천마총 OSM 윤곽 53.5 m vs FACT 47 m → 전 고분 ×0.88 보정 | 평면 위치 PROBABLE · 높이 = 지름×0.27 INTERPRETIVE | 길쭉한 윤곽(쌍봉분) = 긴 축 위 봉분 2개. 축조 장면에는 **PERIOD** 만(현재 황남대총), 현재 모습 컷에는 **PRESENT** 전체 |
+| 축조 작업장 `WORKSITE` | 움막 3 · 강돌 야적 · 흙더미 2 · 작업로(원형 + 2갈래) · 준비상 | INTERPRETIVE (형태만, 숫자 금지) | S1~S4 샷에만 표시, 완성(S5)·도해에서는 숨김 |
+
+- **연대 판단 대기**: 천마총 축조 당시 이미 서 있던 고분 목록은 리서치 중 (웹 전용). 결과로 `PERIOD_NAMES` 갱신.
+- **카메라 추가**: `CAM_ESTABLISH_AERIAL` (현장 전체 + 황남대총 + 산 능선, 축조 S3) · `CAM_G03_LANDSCAPE_PRESENT` (현재 대릉원 고분 전체, G03 개념도 베이스).
+- **카메라 이동**: `--anim CAM_ID --anim_seconds 5 --anim_amount 0.22` → Blender 카메라 애니메이션(이징) → PNG 시퀀스 → mp4. 시험 `ANIM_CAM_ESTABLISH_AERIAL_5s.mp4`: 프레임간 이동 흔들림 0.02 px (정수 픽셀 zoompan 0.19 px 대비 약 1/10).
+
 ## 2. 축조 단계 (G05 + 시각 시계 = 봉분 높이)
 
 | 단계 | 컬렉션 | 보이는 것 | 사용 샷 |
@@ -64,6 +76,7 @@
 - 이후 Higgsfield 실사화는 렌더와 결과를 50% 오버레이해 기하 드리프트 검사.
 
 ## 수정 이력
+- V01.2 (09-17): 실제 지형·대릉원 OSM 고분·작업장·조감/현재 카메라·카메라 이동 렌더 추가.
 - V01.1 (09-17): H03 = 목곽 밖 준비상 추가·카메라 재배치 (목곽 벽만 보이던 문제). 도해 카메라(G04/G05/G14)는 원경 고분 숨김 (G14 '12.7 m' 가림 문제).
 
 ## 미결

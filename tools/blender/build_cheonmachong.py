@@ -17,6 +17,9 @@ ap.add_argument("--save", default="")
 ap.add_argument("--only", default="")
 ap.add_argument("--passes", default="clay,depth,line")
 ap.add_argument("--res", default="1920x1080")
+ap.add_argument("--anim", default="")
+ap.add_argument("--anim_seconds", type=float, default=5.0)
+ap.add_argument("--anim_amount", type=float, default=0.18)
 A = ap.parse_args(argv)
 OUT = os.path.abspath(A.out); os.makedirs(OUT, exist_ok=True)
 random.seed(7)
@@ -98,12 +101,74 @@ def label(name, text, loc, size, c, rot=(math.pi / 2, 0, 0)):
     t.data.align_x = 'CENTER'; t.rotation_euler = rot; t.data.materials.append(M_RED); t.data.extrude = 0.05; link(t, c)
 
 # ---------------- world / ground ----------------
+import json, re, struct
+ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+DATA = os.path.join(ROOT, "02_SEASONS", "S01", "EP01", "10_BLENDER", "data")
+M_THATCH = mat("thatch", (0.62, 0.52, 0.33)); M_PATH = mat("path_dirt", (0.47, 0.40, 0.30))
 C_ENV = coll("ENV")
-bpy.ops.mesh.primitive_plane_add(size=600); g = bpy.context.object; g.name = "Ground"; g.data.materials.append(M_GRASS); link(g, C_ENV)
-# distant Daereungwon mounds (existence FACT, positions shape-only) — own collection so diagrams can hide them
-C_DIST = coll("ENV_DISTANT")
-for i, (x, y, r, h) in enumerate([(170, 120, 18, 9), (-150, 190, 22, 11), (230, -60, 16, 8), (-210, -50, 20, 10), (40, 210, 20, 10)]):
-    m = revolve_mound(f"DistantMound_{i}", r, h, C_DIST, M_GRASS); m.location = (x, y, 0)
+bpy.ops.mesh.primitive_plane_add(size=2600); g = bpy.context.object; g.name = "Ground"; g.data.materials.append(M_GRASS); link(g, C_ENV)
+
+# real terrain (AWS terrain tiles, z12 3x3, ~24 km). Flattened inside 1.2 km (basin floor = ground plane), full relief beyond 2.6 km -> real mountain skyline
+C_TERR = coll("ENV_TERRAIN")
+def load_terrain(c):
+    p = os.path.join(DATA, "TERRAIN_HEIGHTMAP_Z12_step2.bin")
+    if not os.path.exists(p): print("NO TERRAIN", p); return
+    with open(p, "rb") as f:
+        nx, ny = struct.unpack("<ii", f.read(8)); X = struct.unpack(f"<{nx}f", f.read(4 * nx)); Y = struct.unpack(f"<{ny}f", f.read(4 * ny)); Zs = struct.unpack(f"<{nx*ny}f", f.read(4 * nx * ny))
+    verts = []
+    for j in range(ny):
+        for i in range(nx):
+            r = math.hypot(X[i], Y[j]); w = 0.0 if r < 1200 else (1.0 if r > 2600 else (r - 1200) / 1400)
+            verts.append((X[i], Y[j], max(0.0, Zs[j * nx + i]) * w - 0.08))
+    faces = [(j * nx + i, (j + 1) * nx + i, (j + 1) * nx + i + 1, j * nx + i + 1) for j in range(ny - 1) for i in range(nx - 1)]
+    me = bpy.data.meshes.new("Terrain"); me.from_pydata(verts, [], faces); me.materials.append(M_GRASS)
+    for pgn in me.polygons: pgn.use_smooth = True
+    o = bpy.data.objects.new("Terrain_Gyeongju", me); c.objects.link(o)
+load_terrain(C_TERR)
+
+# real Daereungwon tomb layout (OpenStreetMap outlines, 2026-09-17). OSM outline of Cheonmachong = 53.5 m vs FACT 47 m -> scale 0.88 applied to all.
+# heights = diameter x 0.27 (Cheonmachong ratio) -> INTERPRETIVE. Elongated outlines (twin mounds, e.g. Hwangnamdaechong) -> two mounds on the long axis.
+C_TPER = coll("ENV_TOMBS_PERIOD")    # judged to exist when Cheonmachong was built (pending dating research)
+C_TPRE = coll("ENV_TOMBS_PRESENT")   # present-day only / date unknown
+PERIOD_NAMES = ("황남대총",)
+def tomb_layer():
+    p = os.path.join(DATA, "DAEREUNGWON_OSM_TOMBS_20260917.json")
+    if not os.path.exists(p): return
+    T = json.load(open(p, encoding="utf-8"))["tombs"]; seen = []
+    for t in T:
+        nm = t["name_ko"] or t["name_en"] or ""
+        if t["osm_way"] == 382249601 or math.hypot(t["x_m"], t["y_m"]) < 25: continue
+        if t["historic"] == "archaeological_site" or t["eq_diameter_m"] > 130 or t["eq_diameter_m"] < 10: continue
+        if not (t["historic"] == "tomb" or re.search("총|릉|봉황대", nm)): continue
+        if any(math.hypot(t["x_m"] - a, t["y_m"] - b) < 15 for a, b in seen): continue
+        seen.append((t["x_m"], t["y_m"]))
+        pts = t["outline_m"]; n = len(pts); mx = sum(q[0] for q in pts) / n; my = sum(q[1] for q in pts) / n
+        sxx = sum((q[0] - mx) ** 2 for q in pts) / n; syy = sum((q[1] - my) ** 2 for q in pts) / n; sxy = sum((q[0] - mx) * (q[1] - my) for q in pts) / n
+        ang = 0.5 * math.atan2(2 * sxy, sxx - syy); ux, uy = math.cos(ang), math.sin(ang)
+        proj_u = [(q[0] - mx) * ux + (q[1] - my) * uy for q in pts]; proj_v = [-(q[0] - mx) * uy + (q[1] - my) * ux for q in pts]
+        L = max(proj_u) - min(proj_u); W = max(proj_v) - min(proj_v)
+        c = C_TPER if any(k in nm for k in PERIOD_NAMES) else C_TPRE
+        if W > 0 and L / W > 1.35:
+            d = W * 0.88; off = (L - W) / 2 * 0.88
+            for s, sgn in (("A", 1), ("B", -1)):
+                o = revolve_mound(f"Tomb_{t['osm_way']}_{s}", d / 2, d * 0.27, c, M_GRASS); o.location = (mx + sgn * off * ux, my + sgn * off * uy, 0)
+        else:
+            d = t["eq_diameter_m"] * 0.88
+            o = revolve_mound(f"Tomb_{t['osm_way']}", d / 2, d * 0.27, c, M_GRASS); o.location = (mx, my, 0)
+tomb_layer()
+
+# construction worksite props (all INTERPRETIVE, shape only, no numbers on screen)
+C_WORK = coll("WORKSITE")
+def hut(name, x, y, rot):
+    bpy.ops.mesh.primitive_cylinder_add(radius=2.0, depth=1.5, location=(x, y, 0.75)); w = bpy.context.object; w.name = name + "_wall"; w.data.materials.append(M_WOOD); link(w, C_WORK)
+    bpy.ops.mesh.primitive_cone_add(radius1=2.7, depth=2.3, location=(x, y, 1.5 + 1.15)); r = bpy.context.object; r.name = name + "_roof"; r.data.materials.append(M_THATCH); link(r, C_WORK)
+for k, (x, y) in enumerate([(-34, -4), (-37, 7), (-30, -15)]): hut(f"Hut_{k}", x, y, 0)
+ss = revolve_mound("StoneStock", 5.5, 2.2, C_WORK, M_STONE); ss.location = (-24, 20, 0)          # river-stone stockpile
+for k, (x, y, r, h) in enumerate([(26, 22, 6.5, 3.0), (31, 9, 5.0, 2.4)]):
+    e = revolve_mound(f"EarthHeap_{k}", r, h, C_WORK, M_EARTH); e.location = (x, y, 0)          # earth heaps for the mound
+bpy.ops.mesh.primitive_torus_add(major_radius=30, minor_radius=1.4, location=(0, 0, 0.02)); tr = bpy.context.object; tr.name = "WorkPathRing"; tr.scale = (1, 1, 0.02); tr.data.materials.append(M_PATH); link(tr, C_WORK)
+for k, (a, L) in enumerate([(math.radians(200), 60), (math.radians(35), 45)]):
+    box(f"WorkPath_{k}", (L, 2.6, 0.04), ((30 + L / 2) * math.cos(a), (30 + L / 2) * math.sin(a), 0.02), C_WORK, M_PATH, rot=(0, 0, a))
 
 # sun: late afternoon, from camera-left when cameras look north (+Y) -> sun in the WSW, elevation 25 deg (BIBLE v0.2)
 bpy.ops.object.light_add(type='SUN', location=(0, 0, 80)); sun = bpy.context.object; sun.name = "Sun_LateAfternoon"
@@ -189,7 +254,7 @@ C_CAM = coll("CAMERAS")
 def camera(name, loc, target, lens, ortho=None, portrait=False):
     bpy.ops.object.camera_add(location=loc); cam = bpy.context.object; cam.name = name
     dvec = Vector(target) - Vector(loc); cam.rotation_euler = dvec.to_track_quat('-Z', 'Y').to_euler()
-    cam.data.lens = lens; cam.data.clip_end = 2000
+    cam.data.lens = lens; cam.data.clip_end = 40000
     if ortho: cam.data.type = 'ORTHO'; cam.data.ortho_scale = ortho
     cam["portrait"] = portrait; link(cam, C_CAM); return cam
 
@@ -212,6 +277,8 @@ CAMS = [  # (id, stage, proxies, location, target, lens, ortho, portrait, dims)
  ("CAM_SHORTS_01", "S5", None, (0, -60, 1.5), (0, 0, 8), 24, None, True, False),
  ("CAM_SHORTS_02", "S3", "H05", (0.6, -16, 1.5), (0, 0, 2.5), 35, None, True, False),
  ("CAM_SHORTS_03", "S2", None, (0, -9, 9), (0, 0, 0.5), 35, None, True, False),
+ ("CAM_ESTABLISH_AERIAL", "S3", "H05", (-150, -170, 62), (40, 25, 4), 35, None, False, False),
+ ("CAM_G03_LANDSCAPE_PRESENT", "S5", None, (60, -620, 360), (40, 90, 0), 50, None, False, False),
 ]
 for cid, st, px, loc, tgt, lens, ortho, portrait, dims in CAMS:
     cam = camera(cid, loc, tgt, lens, ortho, portrait); cam["stage"] = st; cam["proxies"] = px or ""; cam["dims"] = dims
@@ -230,9 +297,14 @@ for o in list(C_S3.objects):
 
 # ---------------- render ----------------
 w, h = [int(v) for v in A.res.lower().split("x")]
-def set_visible(names, with_proxies, with_dims, section=False, distant=True):
+def set_visible(names, with_proxies, with_dims, section=False, distant=True, present=False, worksite=None):
+    # distant = real terrain + period tombs; present = present-day-only tombs; worksite defaults to "construction stage visible"
+    if worksite is None: worksite = distant and "STAGE5_COMPLETE" not in names
     for c in sc.collection.children:
-        vis = c.name in names or c.name in ("ENV", "CAMERAS") or (c.name == "ENV_DISTANT" and distant)
+        vis = c.name in names or c.name in ("ENV", "CAMERAS")
+        if c.name in ("ENV_TERRAIN", "ENV_TOMBS_PERIOD"): vis = distant
+        if c.name == "ENV_TOMBS_PRESENT": vis = present
+        if c.name == "WORKSITE": vis = worksite
         if c.name == "PROXIES":
             vis = True
             for sub in c.children: sub.hide_render = sub.name != f"PX_{with_proxies}"
@@ -271,8 +343,28 @@ for cid, st, px, *_ in CAMS:
         continue
     if cid == "CAM_G04_SECTION":
         set_visible(["STAGE1_CHAMBER", "STAGE2_GOODS"], None, False, section=True, distant=False); render(cam, cid, "clay"); render(cam, cid, "line"); continue
-    set_visible(STAGE_SETS[st], px, bool(cam.get("dims")), distant=not bool(cam.get("dims")))
+    if cid == "CAM_G03_LANDSCAPE_PRESENT":
+        set_visible(STAGE_SETS[st], None, False, distant=True, present=True, worksite=False)
+    else:
+        set_visible(STAGE_SETS[st], px, bool(cam.get("dims")), distant=not bool(cam.get("dims")))
     for m in passes: render(cam, cid, m)
+
+# optional camera move (Blender camera animation, no jitter): --anim CAM_ID  -> PNG sequence + mp4 via ffmpeg outside
+if A.anim:
+    cid = A.anim; cam = bpy.data.objects[cid]; st = cam.get("stage"); px = cam.get("proxies") or None
+    set_visible(STAGE_SETS[st], px, False, distant=True)
+    start = cam.location.copy(); tgt = Vector(dict((c[0], c[4]) for c in CAMS)[cid])
+    end = start.lerp(tgt, A.anim_amount)
+    sc.frame_start, sc.frame_end = 1, int(A.anim_seconds * 24); sc.render.fps = 24
+    cam.location = start; cam.keyframe_insert("location", frame=1)
+    cam.location = end; cam.keyframe_insert("location", frame=sc.frame_end)
+    for fc in (cam.animation_data.action.fcurves if cam.animation_data and cam.animation_data.action else []):
+        for kp in fc.keyframe_points: kp.interpolation = 'BEZIER'; kp.easing = 'EASE_IN_OUT'
+    sc.camera = cam; sc.render.engine = 'BLENDER_WORKBENCH'; sh = sc.display.shading
+    sh.light = 'STUDIO'; sh.color_type = 'MATERIAL'; sh.show_shadows = True; sh.show_cavity = True; sc.use_nodes = False
+    sc.render.resolution_x, sc.render.resolution_y = 1280, 720; sc.render.image_settings.file_format = 'PNG'; sc.render.image_settings.color_depth = '8'
+    seq = os.path.join(OUT, f"ANIM_{cid}"); os.makedirs(seq, exist_ok=True); sc.render.filepath = os.path.join(seq, "f_")
+    bpy.ops.render.render(animation=True); print("ANIM_RENDERED", seq)
 
 if A.save:
     os.makedirs(os.path.dirname(os.path.abspath(A.save)), exist_ok=True); bpy.ops.wm.save_as_mainfile(filepath=os.path.abspath(A.save)); print("SAVED", A.save)

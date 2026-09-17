@@ -1,0 +1,18 @@
+{
+ "source": "AWS Open Data Terrain Tiles (terrarium, Mapzen; SRTM/other public DEMs), z12 3x3 mosaic, fetched 2026-09-17",
+ "grid": [
+  384,
+  384
+ ],
+ "step_px": 2,
+ "extent_m": [
+  -8949,
+  14784,
+  -10115,
+  13447
+ ],
+ "site_elevation_m": 41.0,
+ "max_elevation_m": 738.0,
+ "format": "bin: int32 nx, int32 ny, float32[nx] x_m (east), float32[ny] y_m (north, row order top->bottom), float32[ny*nx] z_m relative to site",
+ "grade": "terrain = measured DEM (PROBABLE, ~30-40 m cell); modern surface, used only for distant mountains skyline"
+}
