@@ -274,6 +274,15 @@
 **도구** AISTRA 스킬 4개(master-sheet-v2 · storyboard-v1 · storyboard-v2 · seedance-continuity-builder) 를 `.claude/skills/` 에 설치, 모델은 Nano Banana Pro 로 치환. 프리비즈 시트 시험 1장(S01, ≤4 credits) 승인.
 **산출** `VISUAL_STYLE_BIBLE.md` v0.2 · locks `DDABONG_SAGEUK_CINEMATIC_V02` `DDABONG_NEGATIVE_V02` `CHAR_SILLA_ELITE_OBSERVER_01_LOCK_V02` · 원로 HERO 재캐스팅 프롬프트 V05. D-050 종결.
 
+### D-052 · 2026-09-15 · 원로 복식 근거 정정 (사용자 "신라시대 의상이 맞나? 근거가 있는거가?")
+**결정** 리서치 12출처·12주장 (`CLM_SILLA_COSTUME_009~020`) 반영: 반소매 겉옷(834년 이후 반비)·깊은 V 여밈·청동 과대(하위 위계)·높은 원추 관모 = 근거 없음/시대착오 → `COSTUME_SILLA_ELITE_A01` V02 (긴소매 직령교임·얕은 우임·은/금동 과판 드리개 ≤3·낮은 뭉툭 고깔 백화수피 관모·선 생략). 복식 체크리스트 5항목을 검수 3단 #1 에 추가. 원로 hero V07 + 10종 V03 재생성 (봇 PASS 10/10, 26 credits) → 사용자 OK 대기 (D-053 후보 → 아래 D-053 은 파이프라인 결정으로 번호 사용, 승인은 D-054 로).
+**산출** `EP01/01_RESEARCH/COSTUME_ELITE_VERIFY_20260915.md` · lock `COSTUME_SILLA_ELITE_A01_LOCK_V02` · `MP_ELITE/*RECAST*`.
+
+### D-053 · 2026-09-17 · 제작 순서 확정 — Blender 구조 먼저 → Higgsfield 실사화 → 롱폼 → 쇼츠 파생 (사용자 "블렌더로 전체 구조를 만들고 … 롱폼 만들고 난 다음에 쇼츠로도")
+**결정** ① 천마총 축조 현장 Blender 마스터 씬 1개를 실측(FACT 치수)으로 만들고 모든 재연·도해·쇼츠 컷을 같은 씬의 카메라에서 뽑는다. ② 재연 8컷은 클레이 렌더 + 마스터팩을 참조로 Higgsfield 이미지→이미지 실사화 (기하·광원 유지, 인물 정지). ③ 도해 G03/G04/G05 + 신설 **G14 MEASURE ×6** 은 Blender 선화, AI 0. ④ 롱폼 완성 뒤 같은 .blend 에 9:16 카메라로 쇼츠 (S2 60초 건축 쇼츠). ⑤ 건축 쇼츠 문법(숫자 콜드오픈·한 줄 반전·3단계 구조·질문 회귀) 채택, 4초 AI 클립 이어붙이기 불채택.
+**플랜** `EP01/00_BRIEF/PRODUCTION_PLAN_EP01_BLENDER_FIRST_20260917.md` (Phase 0~5, D1~D6). 예산 Phase 3 ≤32 credits (D-051 100 안). 씬 생성은 bpy 스크립트(`tools/blender/`)로 재현 가능하게, .blend 는 git 미추적.
+**전제** Blender 4.2.16 로컬 확인, 헤드리스 렌더 OK (2026-09-17). Higgsfield 커넥터는 Phase 3 전 재연결.
+
 ---
 
 ## 승인 대기 (P)
