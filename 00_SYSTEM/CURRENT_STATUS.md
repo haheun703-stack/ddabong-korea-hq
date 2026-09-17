@@ -8,6 +8,8 @@
 
 ## 다음 시작 — "따봉 계속" 하면 여기부터 (갱신 2026-09-17)
 
+**09-17 저녁 — D-054 Blender 구도·주변 환경 승인**: 씬 V01.4 (실제 지형 + 대릉원 고분 3층 + 작업장 + 목조 틀 + 말목·끈). 불확실 고분은 축조 장면에서 제외. 렌더 `08_GENERATION_CACHE/EP01/BLENDER/CONTACT_SHOTS_CLAY_V01.jpg` · `CONTACT_ENVIRONMENT_V01.jpg` · `ANIM_CAM_ESTABLISH_AERIAL_5s.mp4`. **다음 = Higgsfield 재연결 → Phase 3 실사화 8컷** (원로 10종 OK 함께).
+
 **09-17 오후 — 외부 API 키 5종 확인**: 네이버 검색(백과·뉴스) **OK** · ElevenLabs TTS **OK**(35 보이스, eleven_v3 가능, 잔여 글자 조회 권한 없음) · Webshare 프록시 **OK**(출구 영국) · 공공데이터포털 `KOREA_DATA_API_KEY` **등록 대기**(e뮤지엄 서버 미등록, 내일 재시험) · `EMUSEUM_API_KEY` 미등록. 공용 호출 모듈 `tools/api/apis.py` (`python tools/api/apis.py selftest`) · 활용 계획 `tools/api/README.md` (백과 = 출처 탐색, ElevenLabs = 내레이션 최종본 후보, 프록시 = 막힌 사이트 리서치, e뮤지엄 = 관모 실물 사진). `.env.example` 이름 갱신.
 
 **09-17 — D-053 제작 순서 확정 (Blender 먼저)**: 플랜 `02_SEASONS/S01/EP01/00_BRIEF/PRODUCTION_PLAN_EP01_BLENDER_FIRST_20260917.md`. 순서 = FACT 치수표 → Blender 마스터 씬(천마총 축조, 실측) → 카메라별 클레이·깊이 렌더 → Higgsfield 이미지→이미지 실사화(8컷, ≤32 cr) → 롱폼 편집(패럴랙스·G14 숫자 오버레이) → 같은 씬 9:16 카메라로 쇼츠. Blender 4.2.16 헤드리스 렌더 확인. **오늘 진행 중: Phase 0 치수표·카메라 목록 + Phase 1 bpy 씬 스크립트.** 커넥터 재연결은 Phase 3 전까지만 필요.

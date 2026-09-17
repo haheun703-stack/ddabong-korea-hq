@@ -152,7 +152,7 @@ def tomb_layer():
         proj_u = [(q[0] - mx) * ux + (q[1] - my) * uy for q in pts]; proj_v = [-(q[0] - mx) * uy + (q[1] - my) * ux for q in pts]
         L = max(proj_u) - min(proj_u); W = max(proj_v) - min(proj_v)
         if any(k in nm for k in PERIOD_NAMES): c, mt = C_TPER, M_GRASS
-        elif any(k in nm for k in UNCERTAIN_NAMES): c, mt = C_TUNC, M_GHOST
+        elif any(k in nm for k in UNCERTAIN_NAMES): c, mt = C_TUNC, M_GRASS   # D-054: excluded from construction-time shots, shown only in present-day views
         else: c, mt = C_TPRE, M_GRASS
         if W > 0 and L / W > 1.35:
             d = W * 0.88; off = (L - W) / 2 * 0.88
@@ -321,7 +321,8 @@ def set_visible(names, with_proxies, with_dims, section=False, distant=True, pre
     if worksite is None: worksite = distant and "STAGE5_COMPLETE" not in names
     for c in sc.collection.children:
         vis = c.name in names or c.name in ("ENV", "CAMERAS")
-        if c.name in ("ENV_TERRAIN", "ENV_TOMBS_PERIOD", "ENV_TOMBS_UNCERTAIN"): vis = distant
+        if c.name in ("ENV_TERRAIN", "ENV_TOMBS_PERIOD"): vis = distant
+        if c.name == "ENV_TOMBS_UNCERTAIN": vis = present   # D-054 owner: uncertain tombs removed from construction-time scenes
         if c.name == "ENV_TOMBS_PRESENT": vis = present
         if c.name == "WORKSITE": vis = worksite
         if c.name == "PROXIES":
