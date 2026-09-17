@@ -1,0 +1,17 @@
+{
+  "source_id": "SRC_HAM_GOLDCROWN_CHRONO_001",
+  "claim_ids": [
+    "CLM_EP01_CHRONO_014"
+  ],
+  "title": "함순섭, 신라 금관 편년 (JKAA)",
+  "institution_or_author": "함순섭 (국립경주박물관 계열 연구자)",
+  "url_or_path": "https://www.ijkaa.org/assets/pdf/123/journal-8-0-10.pdf",
+  "verified_at": "2026-09-17",
+  "verified_by": "Claude Code (Historical QA, tomb-dating research agent web-only + review)",
+  "excerpt_or_summary": "황남대총 남분 피장자 3설(이희준 내물 402 · 함순섭 실성 417 · 김용성 눌지 458) 정리. 금관 III군(황남대총 북분·금관총, 출자형 3단) → IV군(서봉총 → 천마총 → 금령총, 4단).",
+  "confidence": "PROBABLE",
+  "uncertainty": "금관 형식 편년 = 상대 순서 근거. 절대연대는 학설별 차이.",
+  "source_type": "ACADEMIC",
+  "rights_id": null,
+  "notes": "천마총 축조 당시 주변 고분·지형·공정 조사 (D-053 Blender 씬, 2026-09-17). 1차 보고서 원문은 대부분 미열람, 2차 자료 경유."
+}

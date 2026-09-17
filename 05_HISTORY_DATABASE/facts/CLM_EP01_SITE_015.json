@@ -1,0 +1,20 @@
+{
+  "claim_id": "CLM_EP01_SITE_015",
+  "text_ko": "대릉원 일원은 경주 선상지 끝자락의 평탄지로 샘과 습지가 흩어져 있었고, 적석용 냇돌은 선상지 표층과 북천 하상에서 가져온 것으로 본다.",
+  "text_en": "The Daereungwon area sat on the flat distal fan of the Gyeongju alluvial fan with scattered springs and wetlands; the rounded stones were likely taken from the fan surface and the Bukcheon stream bed.",
+  "confidence": "PROBABLE",
+  "source_ids": [
+    "SRC_SHIM_DAEREUNGWON_TERRAIN_001",
+    "SRC_HWANG_GYEONGJU_FAN_001"
+  ],
+  "used_in": [
+    "EP01_S04_SH006",
+    "EP01_S06_SH005",
+    "EP01_S06_SH010",
+    "EP01_S08_SH002"
+  ],
+  "hedge_required": true,
+  "verified_at": "2026-09-17",
+  "verified_by": "Claude Code (Historical QA, tomb-dating research agent web-only + review)",
+  "notes": "강이 현장 바로 옆에 흐르는 모습은 근거 없음."
+}

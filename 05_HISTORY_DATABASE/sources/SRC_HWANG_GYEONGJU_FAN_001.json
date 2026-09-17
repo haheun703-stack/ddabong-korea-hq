@@ -1,0 +1,17 @@
+{
+  "source_id": "SRC_HWANG_GYEONGJU_FAN_001",
+  "claim_ids": [
+    "CLM_EP01_SITE_015"
+  ],
+  "title": "황상일·윤순옥 2014, 경주 선상지와 적석목곽분 (『한국지형학회지』 21-3)",
+  "institution_or_author": "황상일·윤순옥",
+  "url_or_path": "https://www.kci.go.kr/kciportal/landing/article.kci?arti_id=ART001919715",
+  "verified_at": "2026-09-17",
+  "verified_by": "Claude Code (Historical QA, tomb-dating research agent web-only + review)",
+  "excerpt_or_summary": "경주 선상지는 지하수위가 높아 지상식 무덤이 불가피. 적석용 자갈·거력은 선상지 표층과 북천 하상에서 채취한 것으로 봄.",
+  "confidence": "PROBABLE",
+  "uncertainty": "채취 지점·운반 방법 직접 증거는 없음.",
+  "source_type": "ACADEMIC",
+  "rights_id": null,
+  "notes": "천마총 축조 당시 주변 고분·지형·공정 조사 (D-053 Blender 씬, 2026-09-17). 1차 보고서 원문은 대부분 미열람, 2차 자료 경유."
+}

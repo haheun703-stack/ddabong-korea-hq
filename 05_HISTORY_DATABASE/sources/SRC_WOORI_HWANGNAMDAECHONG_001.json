@@ -1,0 +1,17 @@
+{
+  "source_id": "SRC_WOORI_HWANGNAMDAECHONG_001",
+  "claim_ids": [
+    "CLM_EP01_CHRONO_014"
+  ],
+  "title": "우리역사넷 — 황남대총 / 천마총 항목",
+  "institution_or_author": "국사편찬위원회",
+  "url_or_path": "https://contents.history.go.kr/mobile/kc/view.do?levelId=kc_r100044&code=kc_age_10",
+  "verified_at": "2026-09-17",
+  "verified_by": "Claude Code (Historical QA, tomb-dating research agent web-only + review)",
+  "excerpt_or_summary": "황남대총 남분 5세기 초~중반, 북분은 남분에 덧붙여 5세기 중~중후반. 천마총은 대릉원 무덤 중 가장 늦은 시기, 피장자는 보통 지증왕으로 봄(소지왕설도 있음).",
+  "confidence": "PROBABLE",
+  "uncertainty": "남분 피장자 내물·실성·눌지 설 대립 → 절대연대 INTERPRETIVE, 천마총보다 이르다는 순서는 공통.",
+  "source_type": "GOVERNMENT",
+  "rights_id": null,
+  "notes": "천마총 축조 당시 주변 고분·지형·공정 조사 (D-053 Blender 씬, 2026-09-17). 1차 보고서 원문은 대부분 미열람, 2차 자료 경유."
+}

@@ -1,0 +1,18 @@
+{
+  "source_id": "SRC_HANKOOK_GEUMGWANCHONG_REEXCAV_001",
+  "claim_ids": [
+    "CLM_EP01_BUILD_016",
+    "CLM_EP01_CHRONO_014"
+  ],
+  "title": "한국일보 2015 — 금관총 재발굴, 목조가구 속 돌무지 축조 확인",
+  "institution_or_author": "한국일보 (국립중앙박물관 재발굴 보도)",
+  "url_or_path": "https://www.hankookilbo.com/news/article/201506231799653939",
+  "verified_at": "2026-09-17",
+  "verified_by": "Claude Code (Historical QA, tomb-dating research agent web-only + review)",
+  "excerpt_or_summary": "금관총 재발굴에서 세운 기둥과 가로재로 짠 목조가구 틀 안에 돌무지를 쌓아 올린 과정 확인. 황남대총에도 목조가구 흔적.",
+  "confidence": "PROBABLE",
+  "uncertainty": "보도 기사 경유. 원 보고서 미열람.",
+  "source_type": "SECONDARY",
+  "rights_id": null,
+  "notes": "천마총 축조 당시 주변 고분·지형·공정 조사 (D-053 Blender 씬, 2026-09-17). 1차 보고서 원문은 대부분 미열람, 2차 자료 경유."
+}

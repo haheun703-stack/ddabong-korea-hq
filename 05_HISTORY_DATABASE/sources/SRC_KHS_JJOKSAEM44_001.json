@@ -1,0 +1,17 @@
+{
+  "source_id": "SRC_KHS_JJOKSAEM44_001",
+  "claim_ids": [
+    "CLM_EP01_BUILD_016"
+  ],
+  "title": "국가유산청 — 경주 쪽샘 44호분 발굴 성과 (21단계 축조 공정)",
+  "institution_or_author": "국가유산청 / 국립경주문화유산연구소",
+  "url_or_path": "https://www.khs.go.kr/newsBbz/selectNewsBbzView.do?newsItemId=155705184&sectionId=b_sec_1&mn=NS_01_02",
+  "verified_at": "2026-09-17",
+  "verified_by": "Claude Code (Historical QA, tomb-dating research agent web-only + review)",
+  "excerpt_or_summary": "5세기 후반 쪽샘 44호분 완전 해체 조사로 21단계 공정 확인: 정지·고운 흙 깔기 → 말목과 끈으로 봉분 범위 표시 → 돌무지 기초 나무 기둥 → 묘광 → 목조구조물(기둥 108개, 동심원·가로재 격자) 안에 냇돌 적석 → 안치·의례 → 뚜껑 → 봉토.",
+  "confidence": "FACT",
+  "uncertainty": "쪽샘 44호분(지름 약 19 m) 사례. 천마총 공정에 그대로 적용하면 PROBABLE.",
+  "source_type": "GOVERNMENT",
+  "rights_id": null,
+  "notes": "천마총 축조 당시 주변 고분·지형·공정 조사 (D-053 Blender 씬, 2026-09-17). 1차 보고서 원문은 대부분 미열람, 2차 자료 경유."
+}

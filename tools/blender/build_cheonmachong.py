@@ -128,9 +128,13 @@ load_terrain(C_TERR)
 
 # real Daereungwon tomb layout (OpenStreetMap outlines, 2026-09-17). OSM outline of Cheonmachong = 53.5 m vs FACT 47 m -> scale 0.88 applied to all.
 # heights = diameter x 0.27 (Cheonmachong ratio) -> INTERPRETIVE. Elongated outlines (twin mounds, e.g. Hwangnamdaechong) -> two mounds on the long axis.
-C_TPER = coll("ENV_TOMBS_PERIOD")    # judged to exist when Cheonmachong was built (pending dating research)
-C_TPRE = coll("ENV_TOMBS_PRESENT")   # present-day only / date unknown
-PERIOD_NAMES = ("황남대총",)
+# dating (CLM_EP01_CHRONO_014): PERIOD = already standing; UNCERTAIN = undated/contemporary -> ghost material; PRESENT = unnamed/present-day only
+C_TPER = coll("ENV_TOMBS_PERIOD")
+C_TUNC = coll("ENV_TOMBS_UNCERTAIN")
+C_TPRE = coll("ENV_TOMBS_PRESENT")
+PERIOD_NAMES = ("황남대총", "금관총", "Geumgwanchong")
+UNCERTAIN_NAMES = ("봉황대", "검총", "미추왕릉", "금령총", "식리총", "서봉총")
+M_GHOST = mat("ghost_uncertain", (0.72, 0.74, 0.70))
 def tomb_layer():
     p = os.path.join(DATA, "DAEREUNGWON_OSM_TOMBS_20260917.json")
     if not os.path.exists(p): return
@@ -147,14 +151,16 @@ def tomb_layer():
         ang = 0.5 * math.atan2(2 * sxy, sxx - syy); ux, uy = math.cos(ang), math.sin(ang)
         proj_u = [(q[0] - mx) * ux + (q[1] - my) * uy for q in pts]; proj_v = [-(q[0] - mx) * uy + (q[1] - my) * ux for q in pts]
         L = max(proj_u) - min(proj_u); W = max(proj_v) - min(proj_v)
-        c = C_TPER if any(k in nm for k in PERIOD_NAMES) else C_TPRE
+        if any(k in nm for k in PERIOD_NAMES): c, mt = C_TPER, M_GRASS
+        elif any(k in nm for k in UNCERTAIN_NAMES): c, mt = C_TUNC, M_GHOST
+        else: c, mt = C_TPRE, M_GRASS
         if W > 0 and L / W > 1.35:
             d = W * 0.88; off = (L - W) / 2 * 0.88
             for s, sgn in (("A", 1), ("B", -1)):
-                o = revolve_mound(f"Tomb_{t['osm_way']}_{s}", d / 2, d * 0.27, c, M_GRASS); o.location = (mx + sgn * off * ux, my + sgn * off * uy, 0)
+                o = revolve_mound(f"Tomb_{t['osm_way']}_{s}", d / 2, d * 0.27, c, mt); o.location = (mx + sgn * off * ux, my + sgn * off * uy, 0)
         else:
             d = t["eq_diameter_m"] * 0.88
-            o = revolve_mound(f"Tomb_{t['osm_way']}", d / 2, d * 0.27, c, M_GRASS); o.location = (mx, my, 0)
+            o = revolve_mound(f"Tomb_{t['osm_way']}", d / 2, d * 0.27, c, mt); o.location = (mx, my, 0)
 tomb_layer()
 
 # construction worksite props (all INTERPRETIVE, shape only, no numbers on screen)
@@ -212,12 +218,25 @@ for k in range(3): box(f"HempCloth_{k}", (0.34, 0.26, 0.035), (TX + 0.55, TY - 0
 
 C_S3 = coll("STAGE3_STONES")
 stones("Stone", C_S3, radius=9.0, height=4.2, count=2600)   # shape-only, no numbers on screen
-# scaffold ring (shape-only): posts + rails around the stone pile
-for k in range(14):
-    a = 2 * math.pi * k / 14; x, y = 11.5 * math.cos(a), 11.5 * math.sin(a)
-    box(f"ScafPost_{k}", (0.22, 0.22, 3.2), (x, y, 1.6), C_S3, M_WOOD)
-    box(f"ScafRail_{k}", (0.15, 5.2, 0.15), (x, y, 2.6), C_S3, M_WOOD, rot=(0, 0, a))
-    box(f"ScafPlank_{k}", (0.9, 5.0, 0.06), (x * 0.93, y * 0.93, 1.55), C_S3, M_WOOD, rot=(0, 0, a))
+# internal timber framework (CLM_EP01_BUILD_016: posts + cross-beams, concentric, stones piled inside the frame; Jjoksaem 44 / Geumgwanchong).
+# Replaces the earlier outer scaffold, which had no evidence. Post count is NOT Jjoksaem's 108 (shape only).
+for ring, (rad, n, hgt) in enumerate([(5.0, 12, 4.6), (7.6, 18, 3.4)]):
+    tops = []
+    for k in range(n):
+        a = 2 * math.pi * k / n; x, y = rad * math.cos(a), rad * math.sin(a)
+        box(f"FramePost_{ring}_{k}", (0.2, 0.2, hgt), (x, y, hgt / 2), C_S3, M_WOOD); tops.append((x, y))
+    for k in range(n):
+        (x0, y0), (x1, y1) = tops[k], tops[(k + 1) % n]; L = math.hypot(x1 - x0, y1 - y0); a = math.atan2(y1 - y0, x1 - x0)
+        box(f"FrameBeam_{ring}_{k}", (L, 0.14, 0.14), ((x0 + x1) / 2, (y0 + y1) / 2, hgt - 0.25), C_S3, M_WOOD, rot=(0, 0, a))
+for k in range(12):   # radial tie beams between rings (lattice)
+    a = 2 * math.pi * k / 12
+    box(f"FrameRadial_{k}", (2.6, 0.12, 0.12), (6.3 * math.cos(a), 6.3 * math.sin(a), 3.2), C_S3, M_WOOD, rot=(0, 0, a))
+
+# stage-1 layout marking: stakes + cord around the planned mound edge (CLM_EP01_BUILD_016, Jjoksaem 44 step 2)
+C_MARK = coll("STAGE1_LAYOUT_MARK")
+for k in range(36):
+    a = 2 * math.pi * k / 36; box(f"Stake_{k}", (0.07, 0.07, 0.9), (23.5 * math.cos(a), 23.5 * math.sin(a), 0.45), C_MARK, M_WOOD)
+bpy.ops.mesh.primitive_torus_add(major_radius=23.5, minor_radius=0.02, location=(0, 0, 0.72)); cord = bpy.context.object; cord.name = "LayoutCord"; cord.data.materials.append(M_THATCH); link(cord, C_MARK)
 
 C_S4 = coll("STAGE4_EARTH_RISING")
 revolve_mound("MoundRising", 18.0, 8.0, C_S4, M_EARTH)   # shape-only (about 60%)
@@ -259,7 +278,7 @@ def camera(name, loc, target, lens, ortho=None, portrait=False):
     cam["portrait"] = portrait; link(cam, C_CAM); return cam
 
 STAGE_SETS = {  # which stage collections are visible
- "S1": ["STAGE1_CHAMBER"], "S2": ["STAGE1_CHAMBER", "STAGE2_GOODS"], "S3": ["STAGE1_CHAMBER", "STAGE2_GOODS", "STAGE3_STONES"],
+ "S1": ["STAGE1_CHAMBER", "STAGE1_LAYOUT_MARK"], "S2": ["STAGE1_CHAMBER", "STAGE2_GOODS", "STAGE1_LAYOUT_MARK"], "S3": ["STAGE1_CHAMBER", "STAGE2_GOODS", "STAGE3_STONES", "STAGE1_LAYOUT_MARK"],
  "S4": ["STAGE1_CHAMBER", "STAGE2_GOODS", "STAGE3_STONES", "STAGE4_EARTH_RISING"], "S5": ["STAGE5_COMPLETE"],
 }
 CAMS = [  # (id, stage, proxies, location, target, lens, ortho, portrait, dims)
@@ -302,7 +321,7 @@ def set_visible(names, with_proxies, with_dims, section=False, distant=True, pre
     if worksite is None: worksite = distant and "STAGE5_COMPLETE" not in names
     for c in sc.collection.children:
         vis = c.name in names or c.name in ("ENV", "CAMERAS")
-        if c.name in ("ENV_TERRAIN", "ENV_TOMBS_PERIOD"): vis = distant
+        if c.name in ("ENV_TERRAIN", "ENV_TOMBS_PERIOD", "ENV_TOMBS_UNCERTAIN"): vis = distant
         if c.name == "ENV_TOMBS_PRESENT": vis = present
         if c.name == "WORKSITE": vis = worksite
         if c.name == "PROXIES":

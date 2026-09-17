@@ -1,0 +1,17 @@
+{
+  "source_id": "SRC_SHIM_DAEREUNGWON_TERRAIN_001",
+  "claim_ids": [
+    "CLM_EP01_SITE_015"
+  ],
+  "title": "심현철 2018, 대릉원 일원 고분 입지 (『헤리티지:역사와 과학』 51-4)",
+  "institution_or_author": "심현철",
+  "url_or_path": "https://www.kci.go.kr/kciportal/landing/article.kci?arti_id=ART002418588",
+  "verified_at": "2026-09-17",
+  "verified_by": "Claude Code (Historical QA, tomb-dating research agent web-only + review)",
+  "excerpt_or_summary": "대릉원 일원 고분은 경주 선상지 말단부에 입지. 용천(샘)과 습지가 많았고 고분은 습지를 피해 구역별로 무리지으며 대형분은 구역 경계의 약간 높은 곳. 1950~60년대 항공사진·지적도로 옛 지형 복원.",
+  "confidence": "PROBABLE",
+  "uncertainty": "천마총 개별 지점의 샘·습지 위치는 미확보.",
+  "source_type": "ACADEMIC",
+  "rights_id": null,
+  "notes": "천마총 축조 당시 주변 고분·지형·공정 조사 (D-053 Blender 씬, 2026-09-17). 1차 보고서 원문은 대부분 미열람, 2차 자료 경유."
+}

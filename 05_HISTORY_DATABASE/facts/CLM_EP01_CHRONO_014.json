@@ -1,0 +1,21 @@
+{
+  "claim_id": "CLM_EP01_CHRONO_014",
+  "text_ko": "천마총 축조 시점(5세기 말~6세기 초)에 황남대총 남·북분은 이미 완성돼 있었다. 금관총도 대체로 천마총보다 이르다. 봉황대·검총·미추왕릉은 연대 미확보, 금령총·서봉총 남분·식리총은 거의 동시기다.",
+  "text_en": "When Cheonmachong was built (late 5th–early 6th c.), both Hwangnamdaechong mounds already stood; Geumgwanchong is generally earlier. Bonghwangdae, Geomchong and the Michu tomb are undated; Geumnyeongchong, Seobongchong south and Sikrichong are roughly contemporary.",
+  "confidence": "PROBABLE",
+  "source_ids": [
+    "SRC_WOORI_HWANGNAMDAECHONG_001",
+    "SRC_HAM_GOLDCROWN_CHRONO_001",
+    "SRC_HANKOOK_GEUMGWANCHONG_REEXCAV_001"
+  ],
+  "used_in": [
+    "EP01_S04_SH006",
+    "EP01_S06_SH005",
+    "EP01_S06_SH010",
+    "EP01_S08_SH002"
+  ],
+  "hedge_required": true,
+  "verified_at": "2026-09-17",
+  "verified_by": "Claude Code (Historical QA, tomb-dating research agent web-only + review)",
+  "notes": "순서는 FACT 급, 절대연대·피장자는 학설 대립 → 화면에 왕 이름·정확 연도 금지, '5세기 말~6세기 초' 범위만."
+}

@@ -1,0 +1,20 @@
+{
+  "claim_id": "CLM_EP01_BUILD_016",
+  "text_ko": "신라 돌무지덧널무덤은 말목과 끈으로 봉분 범위를 표시한 뒤, 기둥과 가로재로 짠 목조 틀 안에 냇돌을 쌓아 올렸다 (쪽샘 44호분·금관총 발굴 확인).",
+  "text_en": "Silla stone-mound wooden-chamber tombs were laid out with stakes and cord, then river stones were piled inside a timber framework of posts and cross-beams (confirmed at Jjoksaem No.44 and Geumgwanchong).",
+  "confidence": "FACT",
+  "source_ids": [
+    "SRC_KHS_JJOKSAEM44_001",
+    "SRC_HANKOOK_GEUMGWANCHONG_REEXCAV_001"
+  ],
+  "used_in": [
+    "EP01_S04_SH006",
+    "EP01_S06_SH005",
+    "EP01_S06_SH010",
+    "EP01_S08_SH002"
+  ],
+  "hedge_required": true,
+  "verified_at": "2026-09-17",
+  "verified_by": "Claude Code (Historical QA, tomb-dating research agent web-only + review)",
+  "notes": "쪽샘 44호분·금관총 = FACT. 천마총에 적용하면 PROBABLE → 화면 라벨 'reconstruction'. 기둥 수 108 은 쪽샘 44호분 수치이므로 천마총 숫자로 쓰지 않는다."
+}
