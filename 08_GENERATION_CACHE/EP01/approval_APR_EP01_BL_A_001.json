@@ -20,5 +20,5 @@
   "delegated": false,
   "decided_by": "사용자 ('진행해라' 2026-09-17, D-053 Phase 3)",
   "decided_at": "2026-09-17T12:00:00Z",
-  "note": "D-053 Phase 3 A묶음 (노동자·시종 복식 V02 결정과 무관한 4컷). 전송 대기: Higgsfield 커넥터 재연결 필요. B묶음 (H01·H02b·H03·H04) = 노동자·시종 복식 V02 승인 + 재캐스팅 뒤."
+  "note": "D-053 Phase 3 A묶음 (노동자·시종 복식 V02 결정과 무관한 4컷). 전송 대기: Higgsfield 커넥터 재연결 필요. B묶음 (H01·H02b·H03·H04) = 노동자·시종 복식 V02 승인 + 재캐스팅 뒤. 결과: 7회 14 credits (한도 16). H05 PASS-soft, H07 PARTIAL, S04_SH005 FAIL_LAYOUT, H06 FAIL. 추가 재시도는 사용자 결정 뒤."
 }

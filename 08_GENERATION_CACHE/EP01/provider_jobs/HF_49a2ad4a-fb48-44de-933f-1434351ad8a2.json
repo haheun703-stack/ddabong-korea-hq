@@ -1,0 +1,22 @@
+{
+  "provider": "Higgsfield",
+  "job_id": "49a2ad4a-fb48-44de-933f-1434351ad8a2",
+  "job_set_type": "nano_banana_pro",
+  "display_name": "Nano Banana Pro",
+  "status": "completed",
+  "created_at": "2026-09-17T07:25:00Z",
+  "params": {
+    "model": "nano_banana_pro",
+    "aspect_ratio": "16:9",
+    "resolution": "2k",
+    "input_images": [
+      {
+        "ref": "H:\\00. 클로드 봇 프로그램 모음_260801\\3. 따봉 코리아_유튜브 모음_260814\\ddabong-korea-hq\\08_GENERATION_CACHE\\EP01\\BLENDER\\CAM_S04_SH005_clay.png",
+        "role": "image_references"
+      }
+    ],
+    "prompt": "Photorealistic cinematic historical documentary. Natural physical proportions. Historically plausible reconstruction. Realistic materials. Natural lighting. No fantasy. No modern objects. No text. No logos. No excessive saturation. No glossy AI look. No malformed anatomy. No arbitrary architecture changes. Early Silla, Gyeongju royal capital, 5th to early 6th century. Elite burial construction context. Modest timber work spaces, no palace spectacle. Forbidden: Joseon dynasty hanbok; gat hats; Ming or Qing court robes; samurai armor; European medieval armor; fantasy armor; giant stone palace; Joseon-style tiled palace compound; Chinese imperial palace; pagoda skyline; torii gates; stone mausoleum / pyramid / Chinese-style tomb gateway; modern tools, excavators, cranes, wheeled modern carts; concrete, electric lights, plastic, modern roads; supernatural ghosts, glowing magic, fantasy crown; modern museum display cases. Cheonmachong under construction, Gyeongju: stone-mound wooden-chamber tomb. Wooden outer chamber 6.6 x 4.2 m, coffin inside, river stones piled above and around the chamber, earth mound finishing at about 47 m diameter and 12.7 m height. Layer order: coffin and grave-goods chest, wooden chamber, stones, earth. Do not invent stone-pile thickness, work duration, headcount or ritual order. DDABONG Sageuk Cinematic Reenactment (style B2, D-051): photoreal Korean period-drama film look. Faces cast like contemporary Korean drama actors - attractive, natural, distinct from one another, never a portrait of a real person; real skin texture with visible pores, fine lines and sun marks, no gloss, no wax, no plastic. Clothing, hair, ornaments and tools strictly historically researched (early Silla), never Joseon hanbok, never fantasy. Lighting: low golden key light from a 45-degree side, soft atmospheric haze, thin warm rim light on hair and shoulders, shallow depth of field, fine film grain; night scenes lit by amber torch or lamp light against cool blue shadow. Colour: deep saturated fabrics, earth and metal, natural sky and skin, not over-saturated, not anime, not illustration. Figures still and composed; wide and medium framing preferred, faces often in profile, silhouette or backlight. BLENDER REFERENCE RULE: the first attached image is a grey clay render of the exact 3D scene. Keep its camera, lens, horizon line, composition, the size and position of every mound, stone pile, timber post, hut and path, and the mountain skyline EXACTLY. Do not add, move or remove any structure. Only turn the grey clay into real photographic materials and light. Open wooden outer chamber of the tomb under construction, heavy timber plank walls and corner posts, plain earth floor, stakes and a cord marking a large circle on the ground around it, work huts and piles far behind, real Gyeongju basin hills on the horizon. No people in frame. Photoreal still frame from a Korean period film, 16:9, late-afternoon golden light from camera-left, soft haze, fine film grain, natural colour, no text, no watermark, no logo."
+  },
+  "retrieved_at": "2026-09-17",
+  "note": "Sent via Higgsfield CLI 1.1.25 (generate create nano_banana_pro --wait --json); local clay render auto-uploaded. params.prompt = saved assembled_text verbatim. 2 credits."
+}

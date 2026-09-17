@@ -9,7 +9,7 @@
   },
   "spent_total": null,
   "spent_by_provider": {
-    "Higgsfield (credits)": 218.17
+    "Higgsfield (credits)": 232.17
   },
   "percent_used": null,
   "gate_state": "OPEN",
@@ -94,8 +94,15 @@
     "GEN_MP_ELITE_WALKING_RECAST_HIGGSFIELD_V03",
     "GEN_MP_ELITE_COSTUME_DETAIL_RECAST_HIGGSFIELD_V03",
     "GEN_MP_ELITE_EXPRESSION_SHEET_RECAST_HIGGSFIELD_V03",
-    "GEN_MP_ELITE_BACK_VIEW_RECAST_HIGGSFIELD_V03"
+    "GEN_MP_ELITE_BACK_VIEW_RECAST_HIGGSFIELD_V03",
+    "GEN_EP01_S08_SH002_BL_HIGGSFIELD_V01",
+    "GEN_EP01_S04_SH005_BL_HIGGSFIELD_V01",
+    "GEN_EP01_S06_SH005_BL_HIGGSFIELD_V01",
+    "GEN_EP01_S06_SH010_BL_HIGGSFIELD_V01",
+    "GEN_EP01_S08_SH002_BL_HIGGSFIELD_V02",
+    "GEN_EP01_S04_SH005_BL_HIGGSFIELD_V02",
+    "GEN_EP01_S06_SH010_BL_HIGGSFIELD_V02"
   ],
   "as_of": "2026-09-15",
-  "note": "81 호출 = 218.17 credits. D-051 EP01 재작업 예산 ≈100 중 26.0 사용 (원로 재캐스팅 hero 3회 + 10종 배치)."
+  "note": "81 호출 = 218.17 credits. D-051 EP01 재작업 예산 ≈100 중 26.0 사용 (원로 재캐스팅 hero 3회 + 10종 배치). D-055 실사화 A묶음 4컷 8 credits (CLI) → 누적 226.17. 재시도 3컷 6 credits → 누적 232.17. 계정 외 결제 Seedream 5.0 Pro 8건 12 credits (09-17 07:32) EP01 제외."
 }

@@ -1,0 +1,18 @@
+{
+  "patch_id": "PATCH_EP01_S08_SH002_BL_001",
+  "shot_id": "EP01_S08_SH002",
+  "from_version": "V01",
+  "to_version": "V02",
+  "fix_reason": "OTHER",
+  "keep": [
+    "Blender camera, horizon, mound outline and object positions"
+  ],
+  "change": [
+    "repaint whole frame as photograph (V01 echoed clay render)"
+  ],
+  "reason": "Bot QC batch A (clay vs photoreal 50% overlay): NO_CHANGE.",
+  "requested_by": "봇 (검수 3단 #2, 승인 APR_EP01_BL_A_001 범위 안)",
+  "created_at": "2026-09-17",
+  "resulting_prompt_id": "PRM_EP01_S08_SH002_BL_V02",
+  "resulting_generation_id": "GEN_EP01_S08_SH002_BL_HIGGSFIELD_V02"
+}
