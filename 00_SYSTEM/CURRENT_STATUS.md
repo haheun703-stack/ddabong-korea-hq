@@ -1,12 +1,28 @@
 # CURRENT STATUS — 지금 어디까지 왔나
 
 > **매 작업마다 갱신한다.** 이 파일 하나만 읽으면 어느 봇/AI 창을 열어도 바로 이어갈 수 있어야 한다.
-> 갱신: 2026-09-17 (Claude Code, D-053 Blender-first 제작 순서 · 플랜 v2) · 마지막 사용자 승인: 2026-09-15 (D-046 페르소나·콜드오픈·CTA·주기)
+> 갱신: 2026-09-17 밤 (Claude Code, D-053~D-056 · Blender 씬 V01.4 · 실사화 A묶음 · 복식 V02 승인)
 > 읽는 순서: `BOT_HANDOFF_DDABONG_STUDIO_OS_V0.1.md` → `BOT_BOOTSTRAP_PROMPT.md` → **이 문서** → `OS_INDEX.md` → `02_SEASONS/S01/EP01/episode.json`
 
 ---
 
-## 다음 시작 — "따봉 계속" 하면 여기부터 (갱신 2026-09-17)
+## 다음 시작 — "따봉 계속" 하면 여기부터 (갱신 2026-09-17 밤, 내일 09-18 용)
+
+**09-17 확정**: D-053 Blender 먼저 → D-054 구도·주변 환경 승인(불확실 고분 제외) → D-055 원로 신 캐스팅 확정 → D-056 노동자·시종 복식 V02 승인.
+**도구**: Higgsfield 는 **CLI 로 사용** (`higgsfield account status` 로 연결 확인, 창 재시작 불필요). 커넥터는 이 세션에서 안 잡힘. 외부 API 모듈 `tools/api/apis.py` (네이버·ElevenLabs·프록시 OK, e뮤지엄 키 등록 대기).
+
+**내일 할 일 (순서대로, 승인 불필요한 것부터)**
+1. 복식 JSON V02 반영: `05_HISTORY_DATABASE/costumes/COSTUME_SILLA_LABORER_A01.json` · `COSTUME_SILLA_ATTENDANT_A01.json` (lock V02 는 APPROVED 완료).
+2. **실사화 A묶음 재시도 방식 결정 (사용자)**: A안 = Blender 질감 렌더(흙·풀·나무·하늘)로 참조 교체 [추천] · B안 = 다른 편집 모델 H07 1장 비교. 현재 통과 = H05 1컷 (`08_GENERATION_CACHE/EP01/BLENDER_PHOTOREAL/REVIEW_BATCH_A_20260917.md`).
+3. 노동자·시종 재캐스팅 (가슴 끈 금지·원로 모자 참조 강화, LITE 3+3 ≈ 12 credits).
+4. 실사화 B묶음 4컷 H01·H02b·H03·H04.
+5. 이월: 내레이션 최종 목소리(ElevenLabs 샘플) · 러프컷 조립 스크립트 · 제목 A/B · 썸네일 문구 · 유튜브 핸들.
+6. 확인 요청: 계정 외 결제 Seedream 5.0 Pro 12 credits (09-17 07:32) · Seedance 67.5 (09-15).
+
+**비용**: EP01 누적 238.17 credits · 잔액 1,425.03 · 오늘 사용 20 (실사화 14 + 복식 샘플 6).
+
+<details><summary>09-17 이전 상세 (접힘)</summary>
+
 
 **09-17 밤 — D-055 원로 확정 · 실사화 A묶음 준비 완료 (전송 대기)**: 원로 신 캐스팅 CHARACTER_MASTER_APPROVED. 프롬프트 4개 저장 `02_SEASONS/S01/EP01/11_AI_STILLS/prompt_PRM_EP01_*_BL_V01.json` + 승인 `08_GENERATION_CACHE/EP01/approval_APR_EP01_BL_A_001.json`. **막힌 것: Higgsfield 커넥터 미연결** → 재연결 후 새 창에서 "따봉 계속" → 잔액 확인 → 클레이 렌더 업로드 → 4컷 전송. **사용자 결정 대기: 노동자·시종 복식 V02 승인** (B묶음 4컷 선행 조건).
 
@@ -76,6 +92,9 @@
 5. 유튜브 채널 핸들·Studio 접근 (게시 메타 마무리용)
 
 **봇이 아침에 바로 할 수 있는 것 (무료)**: ffmpeg 가편집 초안 (사용자가 4 를 "봇" 으로 답하면) · G04 단면 도해 사양서 · 쇼츠 3개 컷 목록 확정.
+
+</details>
+
 
 </details>
 

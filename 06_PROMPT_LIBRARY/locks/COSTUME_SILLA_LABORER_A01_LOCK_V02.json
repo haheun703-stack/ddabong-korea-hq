@@ -1,8 +1,8 @@
 {
   "lock_id": "COSTUME_SILLA_LABORER_A01_LOCK_V02",
   "kind": "COSTUME",
-  "text": "COSTUME_SILLA_LABORER_A01 V02 DRAFT (evidence-corrected, CLM_SILLA_COSTUME_021-031): Silla labourer, 5th to early 6th century. ONE coarse, unbleached, loosely woven plain-weave jacket, hip length, LONG narrow sleeves to the wrist, straight collar crossed shallowly (right over left or left over right), no ribbon ties; narrow plain trousers; a simple twisted cloth waist cord, no metal; straw sandals; hair in a topknot, bare or with a plain cloth band; natural off-white, grey-brown or dark undyed tones, dusty and worn. FEWEST items of all ranks: no cap, no belt ornament, no bag. Forbidden: short sleeves, bare chest as default, ankle-bound trousers, futou hat, bronze or iron belt buckle, Joseon hanbok silhouette, ribbon ties, gat hat, bright dye, official colours.",
-  "source": "02_SEASONS/S01/EP01/01_RESEARCH/COSTUME_LABOURER_ATTENDANT_VERIFY_20260916.md section 4 (proposal, not yet approved)",
-  "status": "DRAFT",
+  "text": "COSTUME_SILLA_LABORER_A01 V02 (evidence-corrected, CLM_SILLA_COSTUME_021-031): Silla labourer, 5th to early 6th century. ONE coarse, unbleached, loosely woven plain-weave jacket, hip length, LONG narrow sleeves to the wrist, straight collar crossed shallowly (right over left or left over right), no ribbon ties; narrow plain trousers; a simple twisted cloth waist cord, no metal; straw sandals; hair in a topknot, bare or with a plain cloth band; natural off-white, grey-brown or dark undyed tones, dusty and worn. FEWEST items of all ranks: no cap, no belt ornament, no bag. Forbidden: short sleeves, bare chest as default, ankle-bound trousers, futou hat, bronze or iron belt buckle, Joseon hanbok silhouette, ribbon ties, gat hat, bright dye, official colours. Also forbidden: any dangling chest tie or ribbon-like cord at the collar (seen in 09-17 samples).",
+  "source": "02_SEASONS/S01/EP01/01_RESEARCH/COSTUME_LABOURER_ATTENDANT_VERIFY_20260916.md section 4 (proposal, not yet approved) · APPROVED D-056 (owner 'OK' 2026-09-17 after visual samples)",
+  "status": "APPROVED",
   "updated_at": "2026-09-17"
 }

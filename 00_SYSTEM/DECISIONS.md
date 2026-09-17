@@ -293,6 +293,10 @@
 **보류** B묶음 H01·H02b·H03·H04 = 노동자·시종이 크게 나오는 컷 → 노동자·시종 복식 V02 승인(`EP01/01_RESEARCH/COSTUME_LABOURER_ATTENDANT_VERIFY_20260916.md` §4) + 재캐스팅 뒤.
 **전제** Higgsfield 커넥터 재연결 (현재 세션 미연결).
 
+### D-056 · 2026-09-17 · 노동자·시종 복식 정정안 V02 승인 (사용자 샘플 확인 뒤 "OK")
+**결정** 연구 문서 §4 정정안을 샘플 3장(`08_GENERATION_CACHE/EP01/MP_CROWD/COSTUME_V02_SAMPLES/`)으로 확인 → 승인. lock `COSTUME_SILLA_LABORER_A01_LOCK_V02` · `COSTUME_SILLA_ATTENDANT_A01_LOCK_V02` = APPROVED. 핵심: 긴소매 · 직령교임(좌우 허용, 고름 금지) · 신분 = 갖춤의 수(원로 > 시종 > 노동자) · 노동자 상체 노출·두건·맨발·발목 끈 = 추정 강등/삭제 · 복두·동철 대구 금지 · 섬유 단정 삭제. 샘플에서 나온 가슴 끈은 금지 항목으로 추가.
+**다음** 복식 JSON(`05_HISTORY_DATABASE/costumes/`) V02 반영 → 노동자·시종 재캐스팅(모자·끈 참조 강화) → 실사화 B묶음 4컷.
+
 ---
 
 ## 승인 대기 (P)
