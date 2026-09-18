@@ -1,0 +1,14 @@
+{
+  "_note": "D-057 track 2 trial prompt for fal flux-general. Deliberately NOT named prompt_*.json so the schema validator does not pick it up; if the trial passes this gets promoted to a schema-conformant prompt record.",
+  "shot_id": "EP01_S08_SH002",
+  "cam": "CAM_S08_SH002_H07",
+  "compare_against": "08_GENERATION_CACHE/EP01/BLENDER_PHOTOREAL/H07_BL_V02_bb3c07bd.png",
+  "_why_short": "FLUX reads a T5 prompt with a hard token budget and the geometry is already pinned by the depth controlnet, so the lock stack that Nano Banana needed is dead weight here. This prompt only describes SURFACE and LIGHT.",
+  "_negatives_note": "FLUX.1-dev is guidance-distilled; a negative_prompt needs real CFG, which doubles cost and made the server fail with a blank 'Could not load pipeline'. So the exclusions are phrased POSITIVELY inside the prompt instead ('bare and empty', 'nothing else in the field'), which is the usual FLUX practice. The `negative` field below is kept only for --real-cfg runs.",
+  "prompt": "Photorealistic documentary photograph, late afternoon. A newly completed ancient burial mound of freshly packed brown earth stands alone in a bare empty field, nothing else in the landscape. Its surface is bare tamped soil, clods and rake marks, faint erosion runnels, a few thin green grass sprouts starting near the base, damp darker earth in the hollows. Dry autumn grass covers the flat open ground around it, undisturbed and empty. Low wooded hills on the distant horizon. Warm raking sunlight from the left, long soft shadows, hazy sky near the horizon. Shot on a full-frame camera, 35mm lens, f/8, deep focus, natural muted colour, fine film grain.",
+  "negative": "gray clay render, untextured 3d model, matte plastic surface, cgi look, smooth featureless dome, stones, boulders, scaffolding, timber frame, huts, people, roads, fences, buildings, modern objects, power lines, text, watermark, logo, oversaturated, HDR halo, tilt-shift blur, snow, sand dune, desert",
+  "controls": {
+    "depth": { "conditioning_scale": 0.85, "start_percentage": 0.0, "end_percentage": 0.45 },
+    "canny": { "conditioning_scale": 0.60, "start_percentage": 0.0, "end_percentage": 0.30 }
+  }
+}
