@@ -15,7 +15,7 @@ ap = argparse.ArgumentParser()
 ap.add_argument("--out", default="08_GENERATION_CACHE/EP01/BLENDER")
 ap.add_argument("--save", default="")
 ap.add_argument("--only", default="")
-ap.add_argument("--passes", default="clay,depth,line")
+ap.add_argument("--passes", default="beauty,depth,normal,line,mask")  # D-057: beauty/normal/mask added
 ap.add_argument("--res", default="1920x1080")
 ap.add_argument("--anim", default="")
 ap.add_argument("--anim_seconds", type=float, default=5.0)
@@ -36,12 +36,86 @@ def link(obj, c):
     for uc in obj.users_collection: uc.objects.unlink(obj)
     c.objects.link(obj)
 
-def mat(name, rgb):
-    m = bpy.data.materials.get(name) or bpy.data.materials.new(name)
-    m.diffuse_color = (*rgb, 1); m.use_nodes = False; return m
+# D-057 track 1: materials carry BOTH a flat viewport colour (workbench = clay/line/mask passes)
+# and a procedural PBR node tree (EEVEE = beauty pass). MASK_RGB keys the object-mask pass by
+# material name, so the mask stays in sync with whatever a surface is actually made of.
+MASK_RGB = {
+    "earth":  (0.90, 0.16, 0.10), "stone": (0.15, 0.45, 1.00), "wood":  (1.00, 0.75, 0.05),
+    "grass":  (0.15, 0.80, 0.25), "proxy": (1.00, 0.00, 0.95), "thatch": (1.00, 0.45, 0.00),
+    "path_dirt": (0.55, 0.30, 0.90), "ghost_uncertain": (0.00, 0.85, 0.85),
+}
 
-M_EARTH = mat("earth", (0.42, 0.34, 0.24)); M_STONE = mat("stone", (0.55, 0.55, 0.52)); M_WOOD = mat("wood", (0.50, 0.36, 0.20))
-M_GRASS = mat("grass", (0.36, 0.42, 0.25)); M_PROXY = mat("proxy", (0.80, 0.78, 0.72)); M_RED = mat("dimension_red", (0.85, 0.10, 0.10)); M_WHITE = mat("white", (0.9, 0.9, 0.9))
+def _setsock(node, names, value):
+    for n in names:
+        if n in node.inputs:
+            node.inputs[n].default_value = value; return True
+    return False
+
+def mat(name, rgb, rough=0.92, macro=0.0, macro_m=8.0, micro=0.0, micro_m=0.35, vary=0.0, sheen=0.0, dark=0.58):
+    """Procedural surface keyed to WORLD position, so feature size is in real metres and does not
+    change with object scale (the 2600 m ground plane and a 0.2 m post get the same grain).
+      macro / macro_m : big relief strength, feature size in metres (heaped-earth undulation, boulders)
+      micro / micro_m : fine grain strength, feature size in metres (clods, bark, straw)
+      vary            : base-colour mottling, 0 = flat paint
+    Two octaves matter: one noise alone reads as sandpaper, which is what a flat clay dome looked like."""
+    m = bpy.data.materials.get(name) or bpy.data.materials.new(name)
+    m.diffuse_color = (*rgb, 1)              # workbench passes (clay / line / mask)
+    m.use_nodes = True                        # EEVEE beauty pass
+    nt = m.node_tree
+    for n in list(nt.nodes): nt.nodes.remove(n)
+    out = nt.nodes.new('ShaderNodeOutputMaterial'); out.location = (700, 0)
+    bsdf = nt.nodes.new('ShaderNodeBsdfPrincipled'); bsdf.location = (420, 0)
+    _setsock(bsdf, ["Base Color"], (*rgb, 1)); _setsock(bsdf, ["Roughness"], rough)
+    _setsock(bsdf, ["Specular IOR Level", "Specular"], 0.16)
+    if sheen: _setsock(bsdf, ["Sheen Weight", "Sheen"], sheen)
+    nt.links.new(bsdf.outputs[0], out.inputs['Surface'])
+    if not (macro or micro or vary): return m
+
+    geo = nt.nodes.new('ShaderNodeNewGeometry'); geo.location = (-1000, 0)
+    src = geo.outputs['Position']             # world space, metres
+
+    def noise(scale_m, detail, rough_n, y):
+        n = nt.nodes.new('ShaderNodeTexNoise'); n.location = (-780, y)
+        n.inputs['Scale'].default_value = 1.0 / max(scale_m, 1e-4)
+        n.inputs['Detail'].default_value = detail
+        n.inputs['Roughness'].default_value = rough_n
+        nt.links.new(src, n.inputs['Vector']); return n
+
+    if vary:
+        nv = noise(max(macro_m, micro_m) * 2.2, 6.0, 0.55, 260)
+        mx = nt.nodes.new('ShaderNodeMixRGB'); mx.location = (-400, 260)
+        mx.blend_type = 'MIX'; mx.inputs['Fac'].default_value = vary
+        mx.inputs['Color1'].default_value = (*rgb, 1)
+        mx.inputs['Color2'].default_value = (rgb[0] * dark, rgb[1] * dark, rgb[2] * (dark - 0.04), 1)
+        nt.links.new(nv.outputs['Fac'], mx.inputs['Fac'])
+        nt.links.new(mx.outputs['Color'], bsdf.inputs['Base Color'])
+
+    prev = None
+    if macro:
+        nb = noise(macro_m, 4.0, 0.5, -120)
+        bp = nt.nodes.new('ShaderNodeBump'); bp.location = (-400, -120)
+        bp.inputs['Strength'].default_value = macro
+        bp.inputs['Distance'].default_value = macro_m * 0.30
+        nt.links.new(nb.outputs['Fac'], bp.inputs['Height']); prev = bp
+    if micro:
+        nb2 = noise(micro_m, 10.0, 0.65, -420)
+        bp2 = nt.nodes.new('ShaderNodeBump'); bp2.location = (-120, -420)
+        bp2.inputs['Strength'].default_value = micro
+        bp2.inputs['Distance'].default_value = micro_m * 0.55
+        nt.links.new(nb2.outputs['Fac'], bp2.inputs['Height'])
+        if prev: nt.links.new(prev.outputs['Normal'], bp2.inputs['Normal'])
+        prev = bp2
+    if prev: nt.links.new(prev.outputs['Normal'], bsdf.inputs['Normal'])
+    return m
+
+#                                          rough  macro macro_m micro micro_m vary
+M_EARTH = mat("earth", (0.30, 0.21, 0.13), 0.97, 0.55,  7.0,   0.85, 0.22, 0.34)
+M_STONE = mat("stone", (0.44, 0.43, 0.40), 0.90, 0.85,  0.85,  0.70, 0.10, 0.40)
+M_WOOD  = mat("wood",  (0.34, 0.22, 0.11), 0.84, 0.20,  0.60,  0.55, 0.05, 0.30)
+M_GRASS = mat("grass", (0.24, 0.29, 0.14), 0.98, 0.35, 12.0,   0.60, 0.30, 0.38)
+M_PROXY = mat("proxy", (0.62, 0.58, 0.52), 0.92)
+M_RED   = mat("dimension_red", (0.85, 0.10, 0.10), 0.60)
+M_WHITE = mat("white", (0.9, 0.9, 0.9), 0.70)
 
 def box(name, size, loc, c, m, rot=(0, 0, 0)):
     bpy.ops.mesh.primitive_cube_add(size=1, location=loc); o = bpy.context.object; o.name = name
@@ -104,7 +178,8 @@ def label(name, text, loc, size, c, rot=(math.pi / 2, 0, 0)):
 import json, re, struct
 ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 DATA = os.path.join(ROOT, "02_SEASONS", "S01", "EP01", "10_BLENDER", "data")
-M_THATCH = mat("thatch", (0.62, 0.52, 0.33)); M_PATH = mat("path_dirt", (0.47, 0.40, 0.30))
+M_THATCH = mat("thatch", (0.46, 0.37, 0.20), 0.96, 0.25, 0.45, 0.80, 0.06, 0.32, sheen=0.3)
+M_PATH = mat("path_dirt", (0.33, 0.27, 0.20), 0.98, 0.30, 3.0, 0.55, 0.15, 0.30)
 C_ENV = coll("ENV")
 bpy.ops.mesh.primitive_plane_add(size=2600); g = bpy.context.object; g.name = "Ground"; g.data.materials.append(M_GRASS); link(g, C_ENV)
 
@@ -134,7 +209,7 @@ C_TUNC = coll("ENV_TOMBS_UNCERTAIN")
 C_TPRE = coll("ENV_TOMBS_PRESENT")
 PERIOD_NAMES = ("황남대총", "금관총", "Geumgwanchong")
 UNCERTAIN_NAMES = ("봉황대", "검총", "미추왕릉", "금령총", "식리총", "서봉총")
-M_GHOST = mat("ghost_uncertain", (0.72, 0.74, 0.70))
+M_GHOST = mat("ghost_uncertain", (0.30, 0.34, 0.22), 0.97, 0.35, 10.0, 0.50, 0.30, 0.30)
 def tomb_layer():
     p = os.path.join(DATA, "DAEREUNGWON_OSM_TOMBS_20260917.json")
     if not os.path.exists(p): return
@@ -178,11 +253,36 @@ for k, (a, L) in enumerate([(math.radians(200), 60), (math.radians(35), 45)]):
 
 # sun: late afternoon, from camera-left when cameras look north (+Y) -> sun in the WSW, elevation 25 deg (BIBLE v0.2)
 bpy.ops.object.light_add(type='SUN', location=(0, 0, 80)); sun = bpy.context.object; sun.name = "Sun_LateAfternoon"
-sun.data.energy = 3.5; sun.data.angle = math.radians(1.5)
+sun.data.energy = 2.2; sun.data.angle = math.radians(2.2)   # D-057: 3.5 blew out the EEVEE beauty pass
+sun.data.color = (1.0, 0.93, 0.82)                          # late-afternoon warmth (BIBLE v0.2)
 az, el = math.radians(240), math.radians(25)  # azimuth from +Y clockwise? use direction vector instead
 d = Vector((-math.cos(el) * math.sin(az), -math.cos(el) * math.cos(az), -math.sin(el)))
 sun.rotation_euler = d.to_track_quat('-Z', 'Y').to_euler(); link(sun, C_ENV)
+
+# world: flat colour for workbench passes + Nishita physical sky for the EEVEE beauty pass.
+# Sky elevation/rotation are driven by the SAME az/el as the sun lamp above, so the horizon glow,
+# the sky gradient and the cast shadows agree (BIBLE v0.2 light lock).
 sc.world = bpy.data.worlds.new("World"); sc.world.color = (0.62, 0.68, 0.75)
+sc.world.use_nodes = True
+_wnt = sc.world.node_tree
+for _n in list(_wnt.nodes): _wnt.nodes.remove(_n)
+_wout = _wnt.nodes.new('ShaderNodeOutputWorld'); _wout.location = (300, 0)
+_wbg = _wnt.nodes.new('ShaderNodeBackground'); _wbg.location = (100, 0)
+_wbg.inputs['Strength'].default_value = 0.28   # D-057: Nishita radiance is physical and clipped the sky to pure white at 1.0
+_sky = _wnt.nodes.new('ShaderNodeTexSky'); _sky.location = (-160, 0)
+try:
+    _sky.sky_type = 'NISHITA'
+    _sky.sun_elevation = el
+    _sky.sun_rotation = az
+    _sky.altitude = 50.0
+    _sky.air_density = 1.0
+    _sky.dust_density = 2.2      # late-afternoon haze: softens the horizon, kills the "CG clean sky" look
+    _sky.ozone_density = 1.0
+    _sky.sun_intensity = 0.55    # sun disc is small on camera; the SUN lamp does the real lighting
+except (AttributeError, TypeError):
+    pass
+_wnt.links.new(_sky.outputs[0], _wbg.inputs['Color'])
+_wnt.links.new(_wbg.outputs[0], _wout.inputs['Surface'])
 
 # ---------------- tomb core (FACT dims) ----------------
 CH_L, CH_W, CH_H = 6.6, 4.2, 2.2   # chamber 6.6 x 4.2 FACT; height shape-only
@@ -332,18 +432,80 @@ def set_visible(names, with_proxies, with_dims, section=False, distant=True, pre
         if c.name == "SECTION_G04": vis = section
         c.hide_render = not vis
 
+def _apply_mask_colours():
+    """Object-mask pass: colour every object by what its surface IS (material name -> MASK_RGB).
+    Regional conditioning downstream uses these plates to keep 'mound' prompts off the sky and
+    'people' prompts off the ground, which is what stops the model inventing extra scenery."""
+    for o in sc.objects:
+        if o.type != 'MESH': continue
+        key = o.data.materials[0].name if (o.data.materials and o.data.materials[0]) else ""
+        o.color = (*MASK_RGB.get(key, (0.05, 0.05, 0.05)), 1.0)
+
+def _clear_compositor():
+    sc.use_nodes = False
+    if sc.node_tree:
+        for n in list(sc.node_tree.nodes): sc.node_tree.nodes.remove(n)
+
 def render(cam, tag, mode):
     sc.camera = cam
     portrait = bool(cam.get("portrait")); sc.render.resolution_x, sc.render.resolution_y = (h, w) if portrait else (w, h)
-    sc.render.image_settings.file_format = 'PNG'; sc.render.image_settings.color_depth = '16' if mode == "depth" else '8'
+    sc.render.image_settings.file_format = 'PNG'
+    sc.render.image_settings.color_depth = '16' if mode in ("depth", "normal") else '8'
+    vl = sc.view_layers[0]
+
+    # ---- EEVEE passes: beauty (textured, lit) and normal (geometry ground truth) ----
+    if mode in ("beauty", "normal"):
+        sc.render.engine = 'BLENDER_EEVEE_NEXT'
+        sc.render.film_transparent = False
+        ee = sc.eevee
+        for k, v in (("taa_render_samples", 64), ("use_gtao", True), ("use_shadows", True),
+                     ("use_raytracing", True), ("shadow_ray_count", 2), ("shadow_step_count", 6)):
+            if hasattr(ee, k):
+                try: setattr(ee, k, v)
+                except (AttributeError, TypeError): pass
+        if mode == "normal":
+            sc.view_settings.view_transform = 'Standard'; sc.view_settings.look = 'None'
+            sc.view_settings.exposure = 0.0
+        else:
+            # AgX desaturates highlights hard and turned the first test plate chalk-white.
+            # Filmic keeps earth reading as earth, which is the whole point of this pass.
+            try: sc.view_settings.view_transform = 'Filmic'; sc.view_settings.look = 'Filmic - Base Contrast'
+            except TypeError: sc.view_settings.view_transform = 'Standard'; sc.view_settings.look = 'None'
+            sc.view_settings.exposure = 0.15
+        if mode == "beauty":
+            _clear_compositor()
+        else:
+            # view-space normal -> RGB. (n + 1) * 0.5 so the map is readable as a standard normal plate.
+            vl.use_pass_normal = True
+            sc.use_nodes = True; nt = sc.node_tree
+            for n in list(nt.nodes): nt.nodes.remove(n)
+            rl = nt.nodes.new('CompositorNodeRLayers')
+            add = nt.nodes.new('CompositorNodeMixRGB'); add.blend_type = 'ADD'
+            add.inputs[0].default_value = 1.0; add.inputs[2].default_value = (1, 1, 1, 1)
+            hal = nt.nodes.new('CompositorNodeMixRGB'); hal.blend_type = 'MULTIPLY'
+            hal.inputs[0].default_value = 1.0; hal.inputs[2].default_value = (0.5, 0.5, 0.5, 1)
+            comp = nt.nodes.new('CompositorNodeComposite')
+            nt.links.new(rl.outputs['Normal'], add.inputs[1])
+            nt.links.new(add.outputs[0], hal.inputs[1])
+            nt.links.new(hal.outputs[0], comp.inputs[0])
+        sc.render.filepath = os.path.join(OUT, f"{tag}_{mode}.png"); bpy.ops.render.render(write_still=True)
+        print("RENDERED", sc.render.filepath); return
+
+    # ---- Workbench passes: clay (composition proof), line, mask ----
     sc.render.engine = 'BLENDER_WORKBENCH'; sh = sc.display.shading
+    sc.view_settings.view_transform = 'Standard'
     sh.light = 'STUDIO'; sh.color_type = 'MATERIAL'; sh.show_shadows = True; sh.show_cavity = True; sh.show_object_outline = False
     sc.display.render_aa = '8'
-    sc.use_nodes = False
+    _clear_compositor()
     if mode == "line":
         sh.light = 'FLAT'; sh.color_type = 'SINGLE'; sh.single_color = (0.95, 0.95, 0.95); sh.show_shadows = False; sh.show_cavity = False; sh.show_object_outline = True
+    if mode == "mask":
+        _apply_mask_colours()
+        sh.light = 'FLAT'; sh.color_type = 'OBJECT'; sh.show_shadows = False; sh.show_cavity = False; sh.show_object_outline = False
+        sh.background_type = 'VIEWPORT'; sh.background_color = (0.0, 0.0, 0.0)
+        sc.display.render_aa = 'OFF'          # hard edges: anti-aliased masks bleed between regions
     if mode == "depth":
-        sc.view_layers[0].use_pass_z = True; sc.use_nodes = True; nt = sc.node_tree
+        vl.use_pass_z = True; sc.use_nodes = True; nt = sc.node_tree
         for n in list(nt.nodes): nt.nodes.remove(n)
         rl = nt.nodes.new('CompositorNodeRLayers'); nz = nt.nodes.new('CompositorNodeNormalize'); comp = nt.nodes.new('CompositorNodeComposite')
         nt.links.new(rl.outputs['Depth'], nz.inputs[0]); nt.links.new(nz.outputs[0], comp.inputs[0])

@@ -297,6 +297,17 @@
 **결정** 연구 문서 §4 정정안을 샘플 3장(`08_GENERATION_CACHE/EP01/MP_CROWD/COSTUME_V02_SAMPLES/`)으로 확인 → 승인. lock `COSTUME_SILLA_LABORER_A01_LOCK_V02` · `COSTUME_SILLA_ATTENDANT_A01_LOCK_V02` = APPROVED. 핵심: 긴소매 · 직령교임(좌우 허용, 고름 금지) · 신분 = 갖춤의 수(원로 > 시종 > 노동자) · 노동자 상체 노출·두건·맨발·발목 끈 = 추정 강등/삭제 · 복두·동철 대구 금지 · 섬유 단정 삭제. 샘플에서 나온 가슴 끈은 금지 항목으로 추가.
 **다음** 복식 JSON(`05_HISTORY_DATABASE/costumes/`) V02 반영 → 노동자·시종 재캐스팅(모자·끈 참조 강화) → 실사화 B묶음 4컷.
 
+### D-057 · 2026-09-18 · 실사화 파이프라인 전환 — 구조 조건 주입 방식으로 (사용자 "A안으로 해보자")
+**배경** 09-17 실사화 A묶음 4컷 중 1컷만 통과. 검토 보고서 `09_ANALYTICS/benchmarks/PIPELINE_TOOL_REVIEW_20260918.md` (로컬 증거 + 웹 조사 4건, 유료 생성 0).
+**진단** 프롬프트 품질 문제가 아니다. Nano Banana Pro 에 **구조를 강제하는 입력 채널이 없다** — `image_references` 는 기하가 아니라 내용물로 해석된다. 직접 증거: H06 결과 하늘에 가이드 클레이 렌더가 액자처럼 삽입됨(`H06_BL_V02_b05aad68.png`). 부수 발견 ① depth·line 패스를 이미 렌더해 두고 생성에는 clay 만 투입 ② Blender 렌더가 `BLENDER_WORKBENCH` + `use_nodes=False` = 재질·조명 미계산 뷰포트 미리보기 (태양은 이미 정확한 각도로 배치되어 있음).
+**기각** ① 미니맥스 디자인 = 데스크톱 앱, 공개 API 없음(자동화 붕괴), 이미지 모델 2025-02 판 ② 페이블/아스트라 = Claude Fable 5.1 · GPT-6 Astra, **LLM 이지 이미지 모델이 아님** (전제 오류, 그 역할은 Claude Code 가 이미 수행) ③ 구글 직접 가입 = Veo 3.1 은 I2V 리더보드 11위, 한국 거주자는 AI Ultra($99.99/월) 없이 가시 워터마크 ④ Sora 2 = API 종료 보고 ⑤ 로컬 ComfyUI = VRAM 8GB 로 빠듯, 보류(트랙 1 산출물은 나중에 그대로 재사용).
+**결정 (A안 2트랙)**
+- **트랙 1 (무료, 승인 불필요, 선행)**: Blender 렌더 정상화. 엔진 EEVEE + 절차적 질감·요철, 패스 5종으로 확장 = beauty · Z(depth) · **Normal(신규)** · lineart · **오브젝트별 Mask(신규)**. Normal = 곡면 볼륨 고정(depth 는 스케일 모호성 있음), Mask = 영역 분리로 "없는 현대 건물" 생성 차단. 어느 경로를 택하든 100% 재사용.
+- **트랙 2 (유료, fal.ai 신규 계정)**: 스틸 실사화 = fal `flux-general` (depth `conditioning_scale` 0.85 · 개입 구간 end 45% / lineart 0.6 · end 30%, **denoise 1.0**). 영상 실사화 = fal `ltx-2.3-quality/render-to-real` (CG 실사화 전용). 인물 일관성·영상 모델은 **Higgsfield 유지**(Soul ID, Cinema Studio 4.0, Kling/Gemini Omni).
+**핵심 원리** clay PNG 를 img2img 입력으로 주는 것을 그만둔다. 픽셀은 denoise 1.0 으로 전부 새로 만들고 기하는 **Blender 의 depth/normal/lineart 를 별도 채널로 강제** → 재질과 기하가 분리된다. depth 는 추정하지 않고 **실측 씬의 Z 패스를 정답값으로 사용**한다(추정 시 봉분 크기 오차 재유입).
+**부수 규칙** 컷당 후보를 1~2 → 다수 생성 후 사람 선별로 전환(fal 선례는 샷당 20~40). 프롬프트에 "Image 1 is the ONLY source of truth for geometry and composition. Repaint surfaces only." 계열 잠금 문구 + 50% 오버레이 QC(기존 방식) 유지.
+**다음** 트랙 1 착수 → fal.ai 계정·`FAL_KEY` 등록(사용자) → H07 1컷 대조 시험.
+
 ---
 
 ## 승인 대기 (P)
