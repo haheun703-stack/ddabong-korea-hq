@@ -6,7 +6,27 @@
 
 ---
 
-## 다음 시작 — "따봉 계속" 하면 여기부터 (갱신 2026-09-17 밤, 내일 09-18 용)
+## 다음 시작 — "따봉 계속" 하면 여기부터 (갱신 2026-09-18, D-057 실사화 파이프라인 전환)
+
+**09-18 확정**: D-057 — 실사화 실패 원인은 프롬프트가 아니라 **구조 조건 주입 방식**. Nano Banana Pro 에 기하를 강제하는 입력 채널이 없다(증거: H06 결과 하늘에 가이드 클레이 렌더가 액자처럼 박힘). 검토 보고서 `09_ANALYTICS/benchmarks/PIPELINE_TOOL_REVIEW_20260918.md`.
+**기각**: 미니맥스 디자인(공개 API 없음) · 페이블/아스트라(둘 다 LLM 이지 이미지 모델 아님) · 구글 직접 가입(Veo 3.1 은 I2V 11위 + 한국 워터마크) · 로컬 ComfyUI(VRAM 8GB, 보류).
+**채택 = A안 2트랙**: 트랙 1 Blender 렌더 정상화(무료) + 트랙 2 fal.ai 구조 제어(유료, 계정 필요). 인물 일관성·영상 모델은 Higgsfield 유지.
+
+**트랙 1 완료 (09-18, 커밋 `cf9e462`)**: 렌더가 그동안 `BLENDER_WORKBENCH` + `use_nodes=False` = 재질·조명 미계산 뷰포트 미리보기였음(태양은 이미 정확한 각도로 배치돼 있었음). → EEVEE + 월드 좌표 절차적 재질(2옥타브 요철) + Nishita 하늘(태양과 같은 az/el). 패스 5종으로 확장: **beauty · depth · normal(신규) · line · mask(신규)**. 8컷 × 5패스 = 82장 → `08_GENERATION_CACHE/EP01/BLENDER_V02/`. 비교 시트 `BLENDER_V02/QC_RENDER_V02_vs_CLAY.jpg`. 기존 `BLENDER/` 클레이는 D-055 기록 보존 위해 그대로 둠.
+
+**다음 할 일**
+1. **사용자**: fal.ai 계정 생성 → Dashboard → Keys → `.env` 에 `FAL_KEY=` 채우기 (키 값은 대화창에 붙이지 않는다). 소액 충전으로 시작 권장.
+2. **사용자 검수**: `QC_RENDER_V02_vs_CLAY.jpg` — 질감 렌더 OK/FIX.
+3. FAL_KEY 등록 뒤: H07 1컷 대조 시험 (기존 Higgsfield 결과 vs fal flux-general depth 제어). 장당 약 100원.
+4. 통과 시 B묶음 포함 8컷 재실사화 → 컷당 후보 다수 생성 후 선별.
+5. 이월: 복식 JSON V02 반영 · 노동자·시종 재캐스팅 · 내레이션 최종 목소리 · 러프컷 조립 · 제목 A/B · 썸네일 · 유튜브 핸들.
+6. **확인 요청 (미해결)**: 계정 외 결제 Seedream 12 credits (09-17) · Seedance 67.5 (09-15).
+
+**비용**: EP01 누적 238.17 credits · 잔액 1,425.03 (09-18 확인) · 09-18 유료 생성 **0**.
+
+<details><summary>09-17 밤 기준 다음 시작 블록 (접힘)</summary>
+
+### (구) 다음 시작 — 갱신 2026-09-17 밤
 
 **09-17 확정**: D-053 Blender 먼저 → D-054 구도·주변 환경 승인(불확실 고분 제외) → D-055 원로 신 캐스팅 확정 → D-056 노동자·시종 복식 V02 승인.
 **도구**: Higgsfield 는 **CLI 로 사용** (`higgsfield account status` 로 연결 확인, 창 재시작 불필요). 커넥터는 이 세션에서 안 잡힘. 외부 API 모듈 `tools/api/apis.py` (네이버·ElevenLabs·프록시 OK, e뮤지엄 키 등록 대기).
@@ -95,6 +115,8 @@
 
 </details>
 
+
+</details>
 
 </details>
 
