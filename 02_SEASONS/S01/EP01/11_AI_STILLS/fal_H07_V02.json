@@ -1,0 +1,18 @@
+{
+  "_note": "D-057 track 2 trial prompt for fal flux-general. Deliberately NOT named prompt_*.json so the schema validator does not pick it up; if the trial passes this gets promoted to a schema-conformant prompt record.",
+  "shot_id": "EP01_S08_SH002",
+  "cam": "CAM_S08_SH002_H07",
+  "compare_against": "08_GENERATION_CACHE/EP01/BLENDER_PHOTOREAL/H07_BL_V02_bb3c07bd.png",
+  "_why_short": "FLUX reads a T5 prompt with a hard token budget and the geometry is already pinned by the depth controlnet, so the lock stack that Nano Banana needed is dead weight here. This prompt only describes SURFACE and LIGHT.",
+  "_negatives_note": "FLUX.1-dev is guidance-distilled; a negative_prompt needs real CFG, which doubles cost and made the server fail with a blank 'Could not load pipeline'. So the exclusions are phrased POSITIVELY inside the prompt instead ('bare and empty', 'nothing else in the field'), which is the usual FLUX practice. The `negative` field below is kept only for --real-cfg runs.",
+  "prompt": "Photorealistic documentary photograph, late afternoon. An enormous ancient burial mound of freshly packed brown earth, 47 metres across and 12.7 metres tall, the height of a four-storey building, photographed from 75 metres away so the whole mound fills the frame and dwarfs the empty plain around it. Its vast flank is bare tamped soil, broad and smooth at this distance, crossed by long shallow erosion channels running the full height of the slope and faint horizontal terraces left by the builders. Wide open dry grassland stretches away on all sides, flat and empty. Distant wooded hills sit low on the far horizon, small against the mound. Warm raking sunlight from the left, long soft shadows across the plain, hazy sky near the horizon. Shot on a full-frame camera, 35mm lens, f/8, deep focus, natural muted colour, fine film grain.",
+  "negative": "gray clay render, untextured 3d model, matte plastic surface, cgi look, smooth featureless dome, stones, boulders, scaffolding, timber frame, huts, people, roads, fences, buildings, modern objects, power lines, text, watermark, logo, oversaturated, HDR halo, tilt-shift blur, snow, sand dune, desert",
+  "controls": {
+    "depth": {
+      "conditioning_scale": 0.85,
+      "start_percentage": 0.0,
+      "end_percentage": 0.65
+    }
+  },
+  "_v02_note": "V02 (2026-09-19). V01 failed on scale: the 47 m tomb read as a 2-3 m dirt pile because the prompt named no size and described close-range detail (grass sprouts at the base, clods, rake marks) which set human-scale cues. Depth maps carry no absolute scale, so size must come from the words. Fix: state the dimensions and the camera distance, describe LARGE-scale surface features only, and hold depth longer (end 45% -> 65%). Insert clips proved on 09-19 that stating metres fixes proportion (Omni V02/V04)."
+}

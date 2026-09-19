@@ -164,6 +164,7 @@ def main():
     s.add_argument("--real-cfg-scale", type=float, default=3.5)
     s.add_argument("--width", type=int, default=1344)
     s.add_argument("--height", type=int, default=768)
+    s.add_argument("--ver", default="V01", help="output version tag; a retry MUST bump this or it overwrites the previous take")
     s.add_argument("--dry-run", action="store_true")
     a = ap.parse_args()
 
@@ -211,13 +212,13 @@ def main():
     saved = []
     for i, im in enumerate(res.get("images", [])):
         b = requests.get(im["url"], timeout=300).content
-        fp = os.path.join(outd, "%s_FAL_V01_%d.png" % (a.cam, i))
+        fp = os.path.join(outd, "%s_FAL_%s_%d.png" % (a.cam, a.ver, i))
         open(fp, "wb").write(b); saved.append(fp); print("SAVED", fp)
-    meta = {"cam": a.cam, "request_id": rid, "model": MODEL, "depth_path": a.depth_path,
+    meta = {"cam": a.cam, "ver": a.ver, "request_id": rid, "model": MODEL, "depth_path": a.depth_path,
             "controls": pay["controlnets"], "steps": a.steps, "guidance": a.guidance,
             "seed": res.get("seed"), "size": [a.width, a.height], "n": a.n,
             "est_usd": round(est, 4), "outputs": [os.path.relpath(p, ROOT) for p in saved]}
-    mp_ = os.path.join(outd, "%s_FAL_V01_meta.json" % a.cam)
+    mp_ = os.path.join(outd, "%s_FAL_%s_meta.json" % (a.cam, a.ver))
     io.open(mp_, "w", encoding="utf-8").write(json.dumps(meta, ensure_ascii=False, indent=2))
     print("META", mp_)
 
