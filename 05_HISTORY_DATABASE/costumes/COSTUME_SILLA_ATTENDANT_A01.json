@@ -2,25 +2,37 @@
   "costume_id": "COSTUME_SILLA_ATTENDANT_A01",
   "era": "SILLA_EARLY",
   "wearer_role": "장례 시종·장인 (부장품 취급, 의례 준비)",
-  "historical_basis": "PROBABLE",
+  "historical_basis": "INTERPRETIVE",
   "fact_ids": [
     "CLM_SILLA_COSTUME_001",
     "CLM_SILLA_COSTUME_002",
     "CLM_SILLA_COSTUME_004",
     "CLM_SILLA_COSTUME_005",
-    "CLM_SILLA_COSTUME_007"
+    "CLM_SILLA_COSTUME_007",
+    "CLM_SILLA_COSTUME_021",
+    "CLM_SILLA_COSTUME_022",
+    "CLM_SILLA_COSTUME_023",
+    "CLM_SILLA_COSTUME_024",
+    "CLM_SILLA_COSTUME_025",
+    "CLM_SILLA_COSTUME_026",
+    "CLM_SILLA_COSTUME_027",
+    "CLM_SILLA_COSTUME_028",
+    "CLM_SILLA_COSTUME_029",
+    "CLM_SILLA_COSTUME_030",
+    "CLM_SILLA_COSTUME_031"
   ],
   "elements": {
-    "material": "노동자보다 고운 마직 또는 저포 평직 — PROBABLE (CLM_006 유추). 견직은 귀족 전용으로 상정 — INTERPRETIVE",
-    "upper": "소매 좁은 저고리(유), 엉덩이선 길이, 직령 우임, 노동자보다 정돈됨 — PROBABLE (CLM_001, CLM_007)",
-    "lower": "통 좁은~중간 바지(고) — PROBABLE (CLM_001 서민형). 여성 시종은 저고리+치마 — PROBABLE (CLM_001 서민 여자)",
-    "belt": "포대 (천 띠), 장식 최소 — PROBABLE (CLM_004)",
-    "footwear": "운두 낮은 이(履) 또는 짚신 — PROBABLE (CLM_005)",
-    "headwear": "상투 + 수건 또는 단순 건 — PROBABLE (CLM_003)",
-    "color": "백·흑·회갈 등 무염 계열 — PROBABLE (CLM_002 평인). 공복 4색 금지 (관등 없는 인원)",
+    "material": "고르게 짠, 더 표백된 평직 저고리. 견직 없음 — 섬유 종류 단정 삭제 (D-056)",
+    "upper": "저고리(유) 1벌, 엉덩이선 또는 약간 길게, **긴 소매(손목까지)** 깔끔한 민 소매부리, 직령 얕은 교임 — 우임/좌임 모두 허용. 고름·끈 없음",
+    "lower": "중간 폭 민바지(고). **여성 시종의 저고리+치마는 INTERPRETIVE 로 강등** — 황성동 토우식(높은 허리·이중 치마·쪽머리)은 7세기 후반 자료이므로 **금지** (D-056)",
+    "belt": "정돈된 민 천 띠. 금속 과판·드리개 없음",
+    "footwear": "운두 낮은 신 — PROBABLE (CLM_005)",
+    "headwear": "단정한 상투, 맨상투 또는 평범한 천 머리띠. 관모 없음",
+    "color": "오프화이트·연회색·회갈. 깨끗하고 단정. 공복 4색 금지 (무관등)",
+    "rank_marker": "**갖춤의 수로 구분 (D-056)**: 노동자보다 많고 원로보다 훨씬 적음. 견직 없음, 관모 없음, 금속 띠 없음, 목 긴 신 없음",
     "hands": "H03 은 손 클로즈업 중심 — 소매 끝·손목 디테일이 KEEP 대상",
-    "forbidden": "조선 한복 실루엣, 궁중 예복, 판타지 사제복, 중국 황실 복식, 공복 4색",
-    "qa_note": "D-011 근거 확정 2026-09-11. 미확정 항목 없음. 잔여 불확실: 시종의 관등·계층(무관등 서민으로 상정)."
+    "forbidden": "반소매, 복두, 단령(둥근 깃), 청동·철 대구, 금속 과판, 조선 한복 실루엣, 고름·리본 끈, **깃에 늘어진 가슴 끈** (09-17 샘플), 황성동 토우식 여성 복식, 공복 4색",
+    "qa_note": "V02: D-056 승인 (2026-09-19 JSON 반영). 근거 CLM_SILLA_COSTUME_021~031. 프롬프트 락 COSTUME_SILLA_ATTENDANT_A01_LOCK_V02 (APPROVED) 와 동일 내용. 잔여 불확실: 여성 시종 복식 전반 (INTERPRETIVE)."
   },
   "reference_images": [
     {
@@ -29,7 +41,7 @@
       "status": "MISSING"
     }
   ],
-  "status": "DRAFT",
-  "version": "V01",
-  "updated_at": "2026-09-11"
+  "status": "APPROVED",
+  "version": "V02",
+  "updated_at": "2026-09-19"
 }

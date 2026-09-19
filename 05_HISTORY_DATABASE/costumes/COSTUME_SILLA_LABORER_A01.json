@@ -2,26 +2,38 @@
   "costume_id": "COSTUME_SILLA_LABORER_A01",
   "era": "SILLA_EARLY",
   "wearer_role": "봉분 조성 노동자 (목재·돌 운반)",
-  "historical_basis": "PROBABLE",
+  "historical_basis": "INTERPRETIVE",
   "fact_ids": [
     "CLM_SILLA_COSTUME_001",
     "CLM_SILLA_COSTUME_003",
     "CLM_SILLA_COSTUME_004",
     "CLM_SILLA_COSTUME_005",
     "CLM_SILLA_COSTUME_006",
-    "CLM_SILLA_COSTUME_007"
+    "CLM_SILLA_COSTUME_007",
+    "CLM_SILLA_COSTUME_021",
+    "CLM_SILLA_COSTUME_022",
+    "CLM_SILLA_COSTUME_023",
+    "CLM_SILLA_COSTUME_024",
+    "CLM_SILLA_COSTUME_025",
+    "CLM_SILLA_COSTUME_026",
+    "CLM_SILLA_COSTUME_027",
+    "CLM_SILLA_COSTUME_028",
+    "CLM_SILLA_COSTUME_029",
+    "CLM_SILLA_COSTUME_030",
+    "CLM_SILLA_COSTUME_031"
   ],
   "elements": {
-    "material": "마직(삼베류) 평직, 무염 생지 — PROBABLE (CLM_006 천마총 마직 확인 + CLM_002 평인 백·흑 추정)",
-    "upper": "소매 좁은 저고리(유), 엉덩이선 길이, 직령, 우임 — PROBABLE (CLM_001, CLM_007). 노동 중 상체 노출 가능 — PROBABLE (CLM_003 금령총 하인상)",
-    "lower": "통 좁은 바지(고), 정강이·발목 끈 묶음 가능 — PROBABLE (CLM_001; 묶음은 INTERPRETIVE)",
-    "belt": "포대 — 천 허리끈, 금속 장식 없음 — PROBABLE (CLM_004)",
-    "footwear": "짚신 또는 맨발 — PROBABLE (CLM_005 짚신 모양 토기)",
-    "headwear": "상투 + 천 수건 동여맴, 또는 맨상투 — PROBABLE (CLM_003 금령총 하인상)",
-    "color": "백·흑·생지색 — PROBABLE (CLM_002). 채도 높은 염색 없음. 자·비·청·황은 관등 공복색이므로 금지",
+    "material": "마직(삼베류) 거친 평직, 무염 생지, 성글게 짬 — PROBABLE (CLM_006 천마총 마직). 섬유 종류 단정은 삭제 (D-056)",
+    "upper": "저고리(유) 1벌, 엉덩이선 길이, **긴 소매(손목까지)**, 직령 얕은 교임 — 우임/좌임 모두 허용 (D-056). 고름·끈 없음. **상체 노출은 기본값 아님** — 금령총 하인상은 명기(明器) 관습이므로 INTERPRETIVE 로 강등 (CLM_021~031)",
+    "lower": "통 좁은 민바지(고). **발목 끈 묶음 금지** — 근거 없음 (D-056)",
+    "belt": "단순 꼰 천 허리끈. 금속 없음 — PROBABLE (CLM_004)",
+    "footwear": "짚신 — PROBABLE (CLM_005 짚신 모양 토기). **맨발은 근거 없음** (D-056)",
+    "headwear": "상투, 맨상투 또는 평범한 천 머리띠",
+    "color": "무염 오프화이트·회갈·짙은 자연색. 먼지·해짐. 공복 4색 금지",
+    "rank_marker": "**신분은 색·재질이 아니라 갖춤의 수로 나타낸다 (D-056).** 노동자 = 전 계층 중 가장 적음: 관모 없음, 띠 장식 없음, 주머니 없음",
     "wear": "먼지·땀·해진 자국 (lived-in) — ARTISTIC",
-    "forbidden": "조선 한복 실루엣, 갓, 명·청 복식, 사무라이 요소, 현대 원단, 공복 4색",
-    "qa_note": "D-011 근거 확정 2026-09-11. 미확정 항목 없음. 잔여 불확실: 바지 묶음 방식, 소매 선(襈) 유무."
+    "forbidden": "반소매, 기본 상체 노출, 발목 묶은 바지, 복두, 청동·철 대구, 조선 한복 실루엣, 고름·리본 끈, **깃에 늘어진 가슴 끈** (09-17 샘플), 갓, 선명한 염색, 공복 4색",
+    "qa_note": "V02: D-056 승인 (2026-09-19 JSON 반영). 근거 CLM_SILLA_COSTUME_021~031. 프롬프트 락 COSTUME_SILLA_LABORER_A01_LOCK_V02 (APPROVED) 와 동일 내용. 잔여 불확실: 소매 선(襈) 유무, 교임 방향."
   },
   "reference_images": [
     {
@@ -30,7 +42,7 @@
       "status": "MISSING"
     }
   ],
-  "status": "DRAFT",
-  "version": "V01",
-  "updated_at": "2026-09-11"
+  "status": "APPROVED",
+  "version": "V02",
+  "updated_at": "2026-09-19"
 }
