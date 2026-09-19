@@ -1,0 +1,31 @@
+{
+  "created_at": "2026-09-19T07:50:20.514213Z",
+  "display_name": "Gemini Omni Flash 1.1",
+  "id": "7e472618-07a0-4e0f-bc36-8345c9869d5e",
+  "job_type": "gemini_omni_flash_1_1",
+  "min_result_url": null,
+  "params": {
+    "aspect_ratio": "16:9",
+    "batch_size": 1,
+    "duration": 8,
+    "height": 720,
+    "medias": [
+      {
+        "data": {
+          "id": "fef44e47-de2e-40f4-8f0d-d3f92ba76ca2",
+          "type": "media_input",
+          "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_37Pr23aHZBmmIS8npWLYUTXqdYF/fef44e47-de2e-40f4-8f0d-d3f92ba76ca2.png"
+        },
+        "role": "start_image"
+      }
+    ],
+    "mode": "image-to-video",
+    "prompt": "Technical architectural size comparison, aerial view over an ancient Korean royal tomb field at true scale. On the left a single round earthen mound 47 metres across and 12.7 metres tall. On the right a twin mound, two joined domes forming one gourd-shaped tomb 120 metres long and 23 metres tall, visibly far larger than the one on the left. Both are smooth grassed earth mounds on a flat plain with low wooded hills far behind. The camera drifts slowly forward and slightly down, a gentle aerial glide, so the size difference between the two tombs reads clearly. The glowing cobalt-blue structure lines stay crisp and continuous on both mounds throughout as an overlay. Dark neutral grey ground, dim overcast sky. Subtle floating dust motes only. No people, no text, no labels, no logos, no flicker, no extra tombs. Steady, deliberate, museum-exhibit pacing.",
+    "resolution": "720p",
+    "seed": 832228,
+    "width": 1280
+  },
+  "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_37Pr23aHZBmmIS8npWLYUTXqdYF/hf_20260919_075020_7e472618-07a0-4e0f-bc36-8345c9869d5e.mp4",
+  "status": "completed",
+  "thumbnail_url": "https://cdn.higgsfield.ai/user_37Pr23aHZBmmIS8npWLYUTXqdYF/hf_20260919_075020_7e472618-07a0-4e0f-bc36-8345c9869d5e_thumbnail.webp"
+}
