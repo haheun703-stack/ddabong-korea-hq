@@ -1,0 +1,15 @@
+{
+  "job_id": "1515450e",
+  "job_set_type": "nano_banana_pro",
+  "note": "CLI --json capture not retained per shot; id from the download URL.",
+  "prompt_id": "PRM_MP_CHAR_SILLA_LABORER_GROUP_01_RECAST_THREE_QUARTER_V05",
+  "output": [
+    "08_GENERATION_CACHE/EP01/MP_RECAST_V04/LABORER_THREE_QUARTER_V05_1515450e.png"
+  ],
+  "params": {
+    "prompt": "STUDIO REFERENCE PHOTOGRAPH OF ONE PERSON ALONE. Exactly one man, by himself, isolated against a plain empty light grey studio backdrop. The frame contains NO other people, no second figure, no crowd, no workers, no bystanders, no hands of anyone else, no workshop, no village, no buildings, no roof, no posts, no tables, no pots, no jars, no tools, no rope, no props of any kind, no scenery. Nothing but the single man and the flat empty backdrop. Even, soft, neutral studio lighting from the front left, no dramatic shadows. Full length, head to feet, standing still, turned three-quarters to camera left, arms relaxed at his sides so the collar crossing and the plain waist band are visible. A Korean man in his early 40s, lean and sinewy, weathered sun-darkened skin, plain ordinary face, dusty worn clothing, hair in a simple topknot with a plain cloth band. He wears the FEWEST items of anyone: jacket, trousers, plain cloth waist cord, straw sandals, cloth head band. No cap, no belt ornament, no bag, no shoes of leather. His clothing: COSTUME_SILLA_LABORER_A01 V02 (evidence-corrected, CLM_SILLA_COSTUME_021-031): Silla labourer, 5th to early 6th century. ONE coarse, unbleached, loosely woven plain-weave jacket, hip length, LONG narrow sleeves to the wrist, straight collar crossed shallowly (right over left or left over right), no ribbon ties; narrow plain trousers; a simple twisted cloth waist cord, no metal; straw sandals; hair in a topknot, bare or with a plain cloth band; natural off-white, grey-brown or dark undyed tones, dusty and worn. FEWEST items of all ranks: no cap, no belt ornament, no bag. The collar closes with the belt only; no dangling chest tie or ribbon-like cord at the collar (seen in 09-17 samples). Forbidden: short sleeves, bare chest as default, ankle-bound trousers, futou hat, bronze or iron belt buckle, Joseon hanbok silhouette, ribbon ties, gat hat, bright dye, official colours. The jacket collar is closed by the waist cord alone: there is no ribbon, no tie, no bow, no knot with loops, no dangling cord hanging down the chest. The waist cord is a plain twisted cloth band tucked flat, NOT tied in a bow. Both sleeves reach the wrists; no bare forearms, no bare chest. Trousers hang loose at the ankle, not bound. Photoreal still, sharp focus, face cast like a Korean period-drama actor but ordinary and weathered, not glamorous. No text, no watermark, no logo.",
+    "aspect_ratio": "3:4",
+    "resolution": "2k",
+    "model": "nano_banana_pro"
+  }
+}

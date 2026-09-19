@@ -1,0 +1,15 @@
+{
+  "job_id": "d71b6146",
+  "job_set_type": "nano_banana_pro",
+  "note": "CLI --json capture not retained per shot; id from the download URL.",
+  "prompt_id": "PRM_MP_CHAR_SILLA_ATTENDANT_GROUP_01_RECAST_COSTUME_DETAIL_V05",
+  "output": [
+    "08_GENERATION_CACHE/EP01/MP_RECAST_V04/ATTENDANT_COSTUME_DETAIL_V05_d71b6146.png"
+  ],
+  "params": {
+    "prompt": "STUDIO REFERENCE PHOTOGRAPH OF ONE PERSON ALONE. Exactly one man, by himself, isolated against a plain empty light grey studio backdrop. The frame contains NO other people, no second figure, no crowd, no workers, no bystanders, no hands of anyone else, no workshop, no village, no buildings, no roof, no posts, no tables, no pots, no jars, no tools, no rope, no props of any kind, no scenery. Nothing but the single man and the flat empty backdrop. Even, soft, neutral studio lighting from the front left, no dramatic shadows. Waist-up crop, centred on the chest and collar, standing still and facing the camera, arms lowered out of frame, so the shallow straight collar, the bare chest area with no tie, the plain waist band and the sleeve cuffs are all clearly legible. A Korean man in his late 30s, calm and tidy, clean unworn clothing, neat topknot, plain ordinary face, no ornament of any kind. He wears slightly MORE than a labourer but far less than an aristocrat: a cleaner better-woven jacket, a neat plain cloth belt, low cloth shoes, bare neat topknot. Still no cap of rank, no metal, no silk, no pendant. His clothing: COSTUME_SILLA_ATTENDANT_A01 V02 (evidence-corrected, CLM_SILLA_COSTUME_021-031): Silla funeral attendant, 5th to early 6th century. ONE evenly woven, better-bleached plain-weave jacket, hip length or slightly longer, LONG sleeves to the wrist with clean plain cuffs, straight collar crossed shallowly (right over left or left over right), no ribbon ties; medium-width plain trousers; a neat plain cloth belt, no metal plaques, no pendants; low shoes; hair in a neat topknot, bare or with a plain cloth band; off-white, light grey or grey-brown tones, clean and tidy. MORE items than a labourer, far fewer than the elite observer: no silk, no cap of rank, no metal belt, no ankle boots. The collar closes with the belt only; no dangling chest tie or ribbon-like cord at the collar (seen in 09-17 samples). Forbidden: short sleeves, futou hat, round-collar danryeong, bronze or iron belt buckle, metal plaques, Joseon hanbok silhouette, ribbon ties, official colours. The jacket collar is closed by the waist cord alone: there is no ribbon, no tie, no bow, no knot with loops, no dangling cord hanging down the chest. The waist cord is a plain twisted cloth band tucked flat, NOT tied in a bow. Both sleeves reach the wrists; no bare forearms, no bare chest. Trousers hang loose at the ankle, not bound. Photoreal still, sharp focus, face cast like a Korean period-drama actor but ordinary and weathered, not glamorous. No text, no watermark, no logo.",
+    "aspect_ratio": "3:4",
+    "resolution": "2k",
+    "model": "nano_banana_pro"
+  }
+}

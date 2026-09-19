@@ -10,7 +10,13 @@
       "PRM_MP_CHAR_SILLA_LABORER_GROUP_01_RECAST_COSTUME_DETAIL_V04",
       "PRM_MP_CHAR_SILLA_ATTENDANT_GROUP_01_RECAST_FULL_BODY_V04",
       "PRM_MP_CHAR_SILLA_ATTENDANT_GROUP_01_RECAST_THREE_QUARTER_V04",
-      "PRM_MP_CHAR_SILLA_ATTENDANT_GROUP_01_RECAST_COSTUME_DETAIL_V04"
+      "PRM_MP_CHAR_SILLA_ATTENDANT_GROUP_01_RECAST_COSTUME_DETAIL_V04",
+      "PRM_MP_CHAR_SILLA_ATTENDANT_GROUP_01_RECAST_COSTUME_DETAIL_V05",
+      "PRM_MP_CHAR_SILLA_ATTENDANT_GROUP_01_RECAST_FULL_BODY_V05",
+      "PRM_MP_CHAR_SILLA_ATTENDANT_GROUP_01_RECAST_THREE_QUARTER_V05",
+      "PRM_MP_CHAR_SILLA_LABORER_GROUP_01_RECAST_COSTUME_DETAIL_V05",
+      "PRM_MP_CHAR_SILLA_LABORER_GROUP_01_RECAST_FULL_BODY_V05",
+      "PRM_MP_CHAR_SILLA_LABORER_GROUP_01_RECAST_THREE_QUARTER_V05"
     ],
     "aspect_ratios": {
       "FRONT": "3:4",
@@ -28,8 +34,8 @@
       "hero_V07": "46880b62-4e44-4a96-b02b-28c7fac10b35"
     },
     "provider_model": "Higgsfield CLI / nano_banana_pro, 2k, 3:4",
-    "expected_attempts": 6,
-    "estimated_cost_range": "12 credits (6 shots x 2, Nano Banana Pro, no retry budget)",
+    "expected_attempts": 12,
+    "estimated_cost_range": "24 credits (V04 6 shots + V05 6 shots, retry owner-approved 2026-09-19 'a')",
     "continuity_risk": "LOW (new casting, no prior face to match); costume locks V02 APPROVED"
   },
   "decision": "APPROVE",
@@ -37,5 +43,5 @@
   "delegated": false,
   "decided_by": "사용자 ('해봐라' 2026-09-15 — V07 OK, 10종 재생성 승인)",
   "decided_at": "2026-09-19",
-  "note": "D-056 recast after costume V02. Owner: '진행해' (2026-09-19). Chest tie from the 09-17 samples banned explicitly in every prompt."
+  "note": "D-056 recast after costume V02. Owner: '진행해' (2026-09-19). Chest tie from the 09-17 samples banned explicitly in every prompt. V05 retry approved after V04 failed the one-person/plain-backdrop format."
 }
