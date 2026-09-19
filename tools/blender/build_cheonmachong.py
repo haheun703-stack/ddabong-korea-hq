@@ -406,6 +406,14 @@ for cid, st, px, loc, tgt, lens, ortho, portrait, dims in CAMS:
 
 # G04 section: bisected copies of stage-5 mound + stones (x > 0 removed)
 C_SEC = coll("SECTION_G04")
+# D-058: scale cues for the tech pass. A 1.7 m figure and a 6.6 m bar (chamber length, FACT) sit in the section
+# plane so Freestyle outlines them; without a cue the video model shrank the mound to a garden pile (P-015 #5).
+C_SCALE = coll("SCALE_CUES")
+bpy.ops.mesh.primitive_cylinder_add(radius=0.22, depth=1.45, location=(0.6, -19.0, 0.725)); _f = bpy.context.object; _f.name = "ScaleFigure_body"; _f.data.materials.append(M_PROXY); link(_f, C_SCALE)
+bpy.ops.mesh.primitive_uv_sphere_add(radius=0.12, location=(0.6, -19.0, 1.58)); _h = bpy.context.object; _h.name = "ScaleFigure_head"; _h.data.materials.append(M_PROXY); link(_h, C_SCALE)
+bpy.ops.mesh.primitive_cube_add(size=1, location=(0.6, 0.0, 0.55)); _b = bpy.context.object; _b.name = "ScaleBar_6p6m"; _b.scale = (0.12, 6.6, 0.12); _b.data.materials.append(M_RED); link(_b, C_SCALE)
+C_FSX = coll("FS_EXCLUDE")   # objects Freestyle must ignore in the tech pass (infinite planes draw frame-wide lines)
+C_FSX.objects.link(bpy.data.objects["Ground"])
 for src in ("MoundComplete",):
     o = bpy.data.objects[src].copy(); o.data = o.data.copy(); o.name = src + "_Section"; sc.collection.objects.link(o); link(o, C_SEC)
     bm = bmesh.new(); bm.from_mesh(o.data)
@@ -432,6 +440,8 @@ def set_visible(names, with_proxies, with_dims, section=False, distant=True, pre
             for sub in c.children: sub.hide_render = sub.name != f"PX_{with_proxies}"
         if c.name == "DIMENSIONS": vis = with_dims
         if c.name == "SECTION_G04": vis = section
+        if c.name == "SCALE_CUES": vis = bool(_TECH_MODE[0])
+        if c.name == "FS_EXCLUDE": continue
         c.hide_render = not vis
 
 def _apply_mask_colours():
@@ -444,6 +454,7 @@ def _apply_mask_colours():
         o.color = (*MASK_RGB.get(key, (0.05, 0.05, 0.05)), 1.0)
 
 _MAT_BACKUP = {}
+_TECH_MODE = [False]
 def _swap_materials(m):
     for o in sc.objects:
         if o.type != "MESH" or not o.data.materials: continue
@@ -463,6 +474,9 @@ def _clear_compositor():
         for n in list(sc.node_tree.nodes): sc.node_tree.nodes.remove(n)
 
 def render(cam, tag, mode):
+    _TECH_MODE[0] = (mode == "tech")
+    for c in sc.collection.children:
+        if c.name == "SCALE_CUES": c.hide_render = not _TECH_MODE[0]
     sc.camera = cam
     portrait = bool(cam.get("portrait")); sc.render.resolution_x, sc.render.resolution_y = (h, w) if portrait else (w, h)
     sc.render.image_settings.file_format = 'PNG'
@@ -503,6 +517,7 @@ def render(cam, tag, mode):
             for ls_ in list(fs.linesets): fs.linesets.remove(ls_)
             lset = fs.linesets.new("tech"); lset.select_silhouette = True; lset.select_crease = True
             lset.select_border = True; lset.select_contour = True; lset.select_external_contour = True
+            lset.select_by_collection = True; lset.collection = C_FSX; lset.collection_negation = "EXCLUSIVE"
             lst = lset.linestyle; lst.color = (1.0, 0.30, 0.12); lst.thickness = 2.6; lst.alpha = 1.0
             sc.render.line_thickness_mode = "ABSOLUTE"; sc.render.line_thickness = 2.6
             _swap_materials(M_TECHBASE)              # 4.2 EEVEE Next ignores material_override; swap slots instead
