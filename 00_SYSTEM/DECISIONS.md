@@ -312,6 +312,18 @@
 
 ## 승인 대기 (P)
 
+### P-014 · 2026-09-19 · 「마스터 프롬프트 + 구글 플로우」 워크플로에서 가져올 장치 5건 + 쇼츠 실험 1건
+**현황** 사용자가 유튜브 mwkiVWqqb08 자막 + 마스터 프롬프트 전문을 주며 "우리 분석을 해보자". 분석 `09_ANALYTICS/benchmarks/WORKFLOW_MASTERPROMPT_FLOW_20260919.md` (유료 0). **판정: 갈아타지 않는다** — 저쪽은 사람 없는 3D 인포그래픽, 우리는 실사 사극 재현 (D-003·D-051). BIBLE §74 금지 4항을 저 워크플로는 전부 어긴다. 제작자 본인도 영상 안에 "AI 영상만 반복 업로드 시 수익화 불이익 가능" 주의사항을 넣었다. 09-14 벤치마크(같은 채널)·09-18 도구 재검토(같은 도구)와 모순 없음.
+**제안 (DRAFT 로 이미 편입, ACTIVE 승격 여부 결정 요청)**
+- **A** 내레이션 속도 규칙 → `NARRATION_STANDARD` §속도. 영어 120–140 wpm. **EP01 실측 129 wpm (6:02) 으로 검증 완료.**
+- **B** 주제 후보 5선 + 3축 점수 → `STORY_ENGINE_STANDARD` §0. EP02 부터. 점수는 결정 보조.
+- **C** 타임스탬프 라인별 대본 `[m:ss] [태그] 문장` → `NARRATION_STANDARD` §대본 형식. 러프컷 조립 스크립트 입력 규격. EP02 부터.
+- **D** 화면 내 한글·숫자 1:1 매핑 문구 → `PROMPT_STANDARD` 부록 A. **썸네일에만** 조건부.
+- **E** 마지막 프레임 → 첫 프레임 체이닝 → `CAMERA_GRAMMAR` §AI 순서 규칙. **사람 없는 D형 ≤3초 컷, 최대 2단** 에만.
+- **F (별건, 권고 아님)** EP01 쇼츠 S2 "47 metres. No machines." 를 Blender 도해 → Omni Flash i2v 10초 × 3씬으로 A/B 실험. **90 credits, D-051 영상 예산 잔여 74 초과.** 기본값은 `SHORTS_STANDARD` 크롭 유지.
+**버림** 사람 배제 · 이미지 안 한글 렌더 · 10초 클립 이어붙이기 · 모델 내장 보이스오버 · 무료 계정 다중 운용 · 네온 윤곽 룩 · ChatGPT 프롬프트 1장으로 회귀 (사유는 분석 §4).
+**영향** 위 표준 4개 (DRAFT 표기) · `09_ANALYTICS/topics/` 신설 (B 채택 시) · 메모 원본은 `프롬프트 자료집/` (타인 저작, git 제외).
+
 ### P-013 · 판매 오퍼 설계 (자료집 역할 2 상품기획 · 6 퍼널 · 7 자동화의 판매 부분) — D-046 에서 보류
 **현황** 사용자: "나중에 판매 계획 있음 (멤버십·가이드·교육)". 현재 `channel.json.monetization.status = AD_ONLY`, `planned = [membership, episode guide (diagram PDF), education]`.
 **제안 (결정 전 파일 생성 금지)** `01_CHANNEL/offer.json` + `OFFER_STANDARD.md` (상품구성·가격·오퍼·업셀·차별화) · 리드마그넷 = GT-01~04 도해 PDF "episode guide" · 뉴스레터 여부 · 멤버십 인사 포스트 · Community Agent 확장 (자동 DM 등가물).
