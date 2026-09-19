@@ -382,9 +382,18 @@ def camera(name, loc, target, lens, ortho=None, portrait=False):
     if ortho: cam.data.type = 'ORTHO'; cam.data.ortho_scale = ortho
     cam["portrait"] = portrait; link(cam, C_CAM); return cam
 
+C_CMP = coll("SCALE_COMPARE")   # P-015 insert 2: Hwangnamdaechong beside Cheonmachong, both to FACT scale
+for _nm, _y, _h in (("HwangnamSouth", -20.0, 23.0), ("HwangnamNorth", 20.0, 22.0)):
+    _m = revolve_mound(_nm, 40.0, _h, C_CMP, M_GRASS, exp=0.62)   # grassed, as they stand today
+    _m.location = (150.0, _y, 0.0)
+bpy.ops.mesh.primitive_cylinder_add(radius=0.22, depth=1.45, location=(150.0, -62.0, 0.725)); _cf = bpy.context.object
+_cf.name = "CompareFigure_body"; _cf.data.materials.append(M_PROXY); link(_cf, C_CMP)
+bpy.ops.mesh.primitive_uv_sphere_add(radius=0.12, location=(150.0, -62.0, 1.58)); _ch = bpy.context.object
+_ch.name = "CompareFigure_head"; _ch.data.materials.append(M_PROXY); link(_ch, C_CMP)
+
 STAGE_SETS = {  # which stage collections are visible
  "S1": ["STAGE1_CHAMBER", "STAGE1_LAYOUT_MARK"], "S2": ["STAGE1_CHAMBER", "STAGE2_GOODS", "STAGE1_LAYOUT_MARK"], "S3": ["STAGE1_CHAMBER", "STAGE2_GOODS", "STAGE3_STONES", "STAGE1_LAYOUT_MARK"],
- "S4": ["STAGE1_CHAMBER", "STAGE2_GOODS", "STAGE3_STONES", "STAGE4_EARTH_RISING"], "S5": ["STAGE5_COMPLETE"],
+ "S4": ["STAGE1_CHAMBER", "STAGE2_GOODS", "STAGE3_STONES", "STAGE4_EARTH_RISING"], "S5": ["STAGE5_COMPLETE"], "CMP": ["STAGE5_COMPLETE", "SCALE_COMPARE"],
 }
 CAMS = [  # (id, stage, proxies, location, target, lens, ortho, portrait, dims)
  ("CAM_S04_SH004_H01", "S1", "H01", (-18, -14, 1.4), (-12.5, -10, 0.6), 35, None, False, False),
@@ -396,6 +405,7 @@ CAMS = [  # (id, stage, proxies, location, target, lens, ortho, portrait, dims)
  ("CAM_S06_SH010_H06", "S4", "H06", (-40, -45, 1.7), (0, 4, 4), 24, None, False, False),
  ("CAM_S08_SH002_H07", "S5", None, (3, -75, 1.6), (0, 5, 5), 35, None, False, False),
  ("CAM_G04_SECTION", "S5", None, (90, 0, 6), (0, 0, 5), 50, 56, False, False),
+ ("CAM_INSERT_HWANGNAM_SCALE", "CMP", None, (95, -430, 110), (95, 0, 6), 35, None, False, False),
  ("CAM_G05_BUILD", "S1", None, (-60, -60, 45), (0, 0, 3), 50, 70, False, False),
  ("CAM_G14_ELEVATION", "S5", None, (0, -120, 6), (0, 0, 6), 50, 76, False, True),
  ("CAM_SHORTS_01", "S5", None, (0, -60, 1.5), (0, 0, 8), 24, None, True, False),
@@ -417,6 +427,9 @@ bpy.ops.mesh.primitive_uv_sphere_add(radius=0.12, location=(0.6, -19.0, 1.58)); 
 bpy.ops.mesh.primitive_cube_add(size=1, location=(0.6, 0.0, 0.55)); _b = bpy.context.object; _b.name = "ScaleBar_6p6m"; _b.scale = (0.12, 6.6, 0.12); _b.data.materials.append(M_RED); link(_b, C_SCALE)
 C_FSX = coll("FS_EXCLUDE")   # objects Freestyle must ignore in the tech pass (infinite planes draw frame-wide lines)
 C_FSX.objects.link(bpy.data.objects["Ground"])
+for _o in list(bpy.data.objects):
+    if _o.type == "MESH" and ("Terrain" in _o.name or _o.name.startswith("Hill")):
+        C_FSX.objects.link(_o)   # distant scenery: outlines it into noise (P-015 insert 2)
 for src in ("MoundComplete",):
     o = bpy.data.objects[src].copy(); o.data = o.data.copy(); o.name = src + "_Section"; sc.collection.objects.link(o); link(o, C_SEC)
     bm = bmesh.new(); bm.from_mesh(o.data)
@@ -444,6 +457,8 @@ def set_visible(names, with_proxies, with_dims, section=False, distant=True, pre
         if c.name == "DIMENSIONS": vis = with_dims
         if c.name == "SECTION_G04": vis = section
         if c.name == "SCALE_CUES": vis = bool(_TECH_MODE[0])
+        if c.name == "SCALE_COMPARE": vis = "SCALE_COMPARE" in names
+        if c.name.startswith("ENV_TOMBS") and "SCALE_COMPARE" in names: vis = False   # comparison shot shows only the two subjects
         if c.name == "FS_EXCLUDE": continue
         c.hide_render = not vis
 

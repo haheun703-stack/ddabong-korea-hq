@@ -1,0 +1,17 @@
+{
+  "source_id": "SRC_GYEONGJU_TOUR_HWANGNAM_001",
+  "claim_ids": [
+    "CLM_EP01_STRUCT_012"
+  ],
+  "title": "경주문화관광 — 사적 경주 대릉원 일원 / 황남대총",
+  "institution_or_author": "경주시",
+  "url_or_path": "https://www.gyeongju.go.kr/tour/page.do?mnu_uid=2517&chaNo=3252&cmd=2",
+  "verified_at": "2026-09-19",
+  "verified_by": "Claude Code",
+  "excerpt_or_summary": "황남대총은 두 봉분이 남북으로 맞붙은 표주박형 쌍분. 남북 길이 120 m, 동서 지름 80 m, 높이 약 22 m (남분 23 m / 북분 22 m). 1973~1975 경주고적조사단 발굴, 유물 2만여 점.",
+  "confidence": "FACT",
+  "uncertainty": null,
+  "source_type": "GOVERNMENT",
+  "rights_id": null,
+  "notes": "우리역사넷(SRC_WOORI_HWANGNAMDAECHONG_001) 및 국가유산청 보도자료와 교차 확인."
+}

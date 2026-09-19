@@ -1,0 +1,17 @@
+{
+  "claim_id": "CLM_EP01_STRUCT_012",
+  "text_ko": "황남대총(경주 황남동 98호분)은 남·북 두 봉분이 표주박 모양으로 붙은 쌍분으로, 남북 길이 120 m, 동서 지름 80 m, 남분 높이 23 m, 북분 높이 22 m다. 천마총(지름 47 m, 높이 12.7 m)보다 훨씬 크다.",
+  "text_en": "Hwangnamdaechong (Gyeongju Hwangnam-dong Tomb No. 98) is a twin mound: 120 m north-south, 80 m east-west, south mound 23 m high, north mound 22 m high. Far larger than Cheonmachong (47 m across, 12.7 m high).",
+  "confidence": "FACT",
+  "source_ids": [
+    "SRC_GYEONGJU_TOUR_HWANGNAM_001",
+    "SRC_WOORI_HWANGNAMDAECHONG_001"
+  ],
+  "used_in": [
+    "EP01_INSERT_HWANGNAM_SCALE"
+  ],
+  "hedge_required": false,
+  "verified_at": "2026-09-19",
+  "verified_by": "Claude Code (P-015 #6 insert 2)",
+  "notes": "경주시 문화관광 공식 페이지와 우리역사넷이 일치. 높이는 현존 봉분 기준."
+}
