@@ -20,6 +20,9 @@ ap.add_argument("--res", default="1920x1080")
 ap.add_argument("--anim", default="")
 ap.add_argument("--anim_seconds", type=float, default=5.0)
 ap.add_argument("--anim_amount", type=float, default=0.18)
+# D-058 look variants: structure-line colour as "r,g,b" 0-1 and a filename tag, so palettes can be compared side by side
+ap.add_argument("--tech_rgb", default="1.0,0.30,0.12")
+ap.add_argument("--tech_tag", default="")
 A = ap.parse_args(argv)
 OUT = os.path.abspath(A.out); os.makedirs(OUT, exist_ok=True)
 random.seed(7)
@@ -518,7 +521,8 @@ def render(cam, tag, mode):
             lset = fs.linesets.new("tech"); lset.select_silhouette = True; lset.select_crease = True
             lset.select_border = True; lset.select_contour = True; lset.select_external_contour = True
             lset.select_by_collection = True; lset.collection = C_FSX; lset.collection_negation = "EXCLUSIVE"
-            lst = lset.linestyle; lst.color = (1.0, 0.30, 0.12); lst.thickness = 2.6; lst.alpha = 1.0
+            TECH_RGB = tuple(float(v) for v in A.tech_rgb.split(","))
+            lst = lset.linestyle; lst.color = TECH_RGB; lst.thickness = 2.6; lst.alpha = 1.0
             sc.render.line_thickness_mode = "ABSOLUTE"; sc.render.line_thickness = 2.6
             _swap_materials(M_TECHBASE)              # 4.2 EEVEE Next ignores material_override; swap slots instead
             sc.world.use_nodes = False; sc.world.color = (0.030, 0.034, 0.045)   # flat dark backdrop, no sky haze
@@ -527,7 +531,7 @@ def render(cam, tag, mode):
             rl = nt.nodes.new("CompositorNodeRLayers")
             gl = nt.nodes.new("CompositorNodeGlare"); gl.glare_type = "FOG_GLOW"; gl.threshold = 0.05; gl.size = 8; gl.mix = 0.0
             boost = nt.nodes.new("CompositorNodeMixRGB"); boost.blend_type = "MULTIPLY"; boost.inputs[0].default_value = 1.0
-            boost.inputs[2].default_value = (1.0, 0.35, 0.15, 1.0)
+            boost.inputs[2].default_value = (min(1.0, TECH_RGB[0] + 0.05), min(1.0, TECH_RGB[1] + 0.05), min(1.0, TECH_RGB[2] + 0.05), 1.0)
             add = nt.nodes.new("CompositorNodeMixRGB"); add.blend_type = "ADD"; add.inputs[0].default_value = 1.0
             comp = nt.nodes.new("CompositorNodeComposite")
             nt.links.new(rl.outputs["Freestyle"], gl.inputs["Image"])
@@ -549,7 +553,7 @@ def render(cam, tag, mode):
             nt.links.new(rl.outputs['Normal'], add.inputs[1])
             nt.links.new(add.outputs[0], hal.inputs[1])
             nt.links.new(hal.outputs[0], comp.inputs[0])
-        sc.render.filepath = os.path.join(OUT, f"{tag}_{mode}.png"); bpy.ops.render.render(write_still=True)
+        sc.render.filepath = os.path.join(OUT, f"{tag}_{mode}{A.tech_tag if mode == 'tech' else ''}.png"); bpy.ops.render.render(write_still=True)
         print("RENDERED", sc.render.filepath); return
 
     # ---- Workbench passes: clay (composition proof), line, mask ----
