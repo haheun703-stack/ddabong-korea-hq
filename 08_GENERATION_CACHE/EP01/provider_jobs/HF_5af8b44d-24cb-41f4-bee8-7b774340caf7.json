@@ -1,0 +1,31 @@
+{
+  "created_at": "2026-09-19T08:45:56.633374Z",
+  "display_name": "Gemini Omni Flash 1.1",
+  "id": "5af8b44d-24cb-41f4-bee8-7b774340caf7",
+  "job_type": "gemini_omni_flash_1_1",
+  "min_result_url": null,
+  "params": {
+    "aspect_ratio": "16:9",
+    "batch_size": 1,
+    "duration": 8,
+    "height": 720,
+    "medias": [
+      {
+        "data": {
+          "id": "346e5e9e-7d33-4741-a15e-c0aff79aed19",
+          "type": "media_input",
+          "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_37Pr23aHZBmmIS8npWLYUTXqdYF/346e5e9e-7d33-4741-a15e-c0aff79aed19.png"
+        },
+        "role": "start_image"
+      }
+    ],
+    "mode": "image-to-video",
+    "prompt": "Photorealistic documentary footage, late afternoon. A completed ancient Korean royal burial mound of freshly packed brown earth, 47 metres across and 12.7 metres tall, the height of a four-storey building, seen from ground level 75 metres away on a wide open plain of dry grass. The camera stays at eye height and pushes in very slowly, a gentle steady dolly, never rising into the air. The earth surface becomes real: fine tamped soil, subtle irregular erosion runnels, a scatter of small stones near the base, a few thin grass shoots. The mound stays exactly the same shape and size as in the opening frame, one smooth unbroken dome, no trench, no cut, no stairs, no terraces, no excavation. Warm raking sunlight from the left, long soft shadows on the plain, hazy sky near the horizon. No people, no buildings, no roads, no text, no labels, no logos. Calm, still, observational documentary pacing.",
+    "resolution": "720p",
+    "seed": 585545,
+    "width": 1280
+  },
+  "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_37Pr23aHZBmmIS8npWLYUTXqdYF/hf_20260919_084556_5af8b44d-24cb-41f4-bee8-7b774340caf7.mp4",
+  "status": "completed",
+  "thumbnail_url": "https://cdn.higgsfield.ai/user_37Pr23aHZBmmIS8npWLYUTXqdYF/hf_20260919_084556_5af8b44d-24cb-41f4-bee8-7b774340caf7_thumbnail.webp"
+}
