@@ -1,0 +1,41 @@
+{
+  "generation_id": "GEN_EP01_INSERT_G04_OMNI_V02",
+  "shot_id": "EP01_S06_SH010",
+  "stage": "VIDEO",
+  "provider": "Higgsfield",
+  "model": "GEMINI_OMNI_FLASH_1_1 (gemini_omni_flash_1_1 image-to-video 8s 720p 16:9 via CLI; start_image = Blender tech pass)",
+  "provider_job": {
+    "job_id": "96b1a461-0250-494e-b43f-ed0827eccd8e",
+    "job_set_type": "gemini_omni_flash_1_1",
+    "display_name": "Gemini Omni Flash 1.1",
+    "params_path": "08_GENERATION_CACHE/EP01/provider_jobs/HF_96b1a461-0250-494e-b43f-ed0827eccd8e.json"
+  },
+  "prompt_id": "PRM_EP01_INSERT_G04_V02",
+  "prompt_version": "V02",
+  "standard_versions": {
+    "VISUAL_STYLE_BIBLE.md": "v0.2",
+    "COST_STANDARD.md": "v0.1"
+  },
+  "case_ids_used": [],
+  "approval_id": "APR_EP01_INSERT_001",
+  "input_paths": [
+    "08_GENERATION_CACHE/EP01/HERITAGE_INSERT/CAM_G04_SECTION_tech.png"
+  ],
+  "output_paths": [
+    "08_GENERATION_CACHE/EP01/HERITAGE_INSERT/INSERT_G04_SECTION_OMNI_V02_96b1a461.mp4"
+  ],
+  "attempts": 1,
+  "duration_sec": 8.0,
+  "cost": {
+    "currency": "CREDITS",
+    "amount": 24.0,
+    "spent": 24.0,
+    "note": "D-058 corrected retry"
+  },
+  "result_status": "SUCCESS",
+  "failure_id": null,
+  "started_at": "2026-09-19T05:20:38Z",
+  "finished_at": "2026-09-19T05:23:00Z",
+  "run_by": "Claude Code (D-058 retry)",
+  "notes": "Bot QC PASS on geometry: chamber/mound ~1/7 (FACT), layer order correct, orbit reveals semi-transparent 3D cutaway from 4.7s, lines continuous, scale figure static. FAIL on rule: model rendered dimension labels in-frame (47 m / 12.7 m / 6.6 m / 1.7 m). Overlay-only rule forbids. See REVIEW_INSERT_G04_OMNI_V02_20260919.md"
+}

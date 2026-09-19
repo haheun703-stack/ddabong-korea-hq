@@ -311,7 +311,7 @@
 ### D-058 · 2026-09-19 · 유적 3D 인서트 `HERITAGE_INSERT` 채택 — 컷 종류·BIBLE 예외·두 번째 룩 락 (사용자 "그래 1번부터 순차적으로 진행하자")
 **결정** P-015 #1·2·3 채택. ① `shot.schema.json` pipeline enum + `SHOT_STANDARD.md` §HERITAGE_INSERT (사람 0 · 15–25초 · ③④ 위치 · 편당 2–3 · 라벨 오버레이 · 비례 단서 필수) ② `VISUAL_STYLE_BIBLE.md` §74 예외: 사람 없는 구조물 인서트 AI 영상 컷당 ≤10초 ③ `06_PROMPT_LIBRARY/locks/DDABONG_TECH_INFOGRAPHIC_V01.json` APPROVED.
 **근거** 시험 클립 `INSERT_G04_SECTION_OMNI_V01` PASS-soft (도해→실사 리빌, 층 순서 FACT 일치, 구조선 8초 유지) + 조사 `HERITAGE_INSERT_SURVEY_AND_PLAN_20260919.md`.
-**다음** 보정 2건(비례 단서·지면 평면 제외) 반영 재생성 1회 (24 credits, 승인됨) → 통과 시 P-015 #6 (국가유산청 3D 목록 → EP01 후보) · #7 (레시피 문서).
+**진행** V02 재생성 완료 (09-19, 24 credits): 비례·지면 선·궤도 리빌 통과, **화면 내 치수 라벨 렌더 1건 위반** → V03 (숫자 렌더 금지 명시) 승인 대기. 통과 시 P-015 #6 (국가유산청 3D 목록 → EP01 후보) · #7 (레시피 문서).
 
 ---
 

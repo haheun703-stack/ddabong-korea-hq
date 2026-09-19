@@ -1,0 +1,31 @@
+{
+  "created_at": "2026-09-19T05:20:38.215138Z",
+  "display_name": "Gemini Omni Flash 1.1",
+  "id": "96b1a461-0250-494e-b43f-ed0827eccd8e",
+  "job_type": "gemini_omni_flash_1_1",
+  "min_result_url": null,
+  "params": {
+    "aspect_ratio": "16:9",
+    "batch_size": 1,
+    "duration": 8,
+    "height": 720,
+    "medias": [
+      {
+        "data": {
+          "id": "a80785e0-fe9e-46ba-91a6-13790b9366ac",
+          "type": "media_input",
+          "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_37Pr23aHZBmmIS8npWLYUTXqdYF/a80785e0-fe9e-46ba-91a6-13790b9366ac.png"
+        },
+        "role": "start_image"
+      }
+    ],
+    "mode": "image-to-video",
+    "prompt": "Technical architectural cutaway animation of an ancient Korean earthen burial mound, true scale: the mound is 47 metres wide and 12.7 metres tall, the tiny human silhouette standing at the left base is 1.7 metres, and the small wooden chamber at the centre is only 6.6 metres long, so the chamber is a small box deep inside a vast hill. The camera performs one slow, smooth orbital move of about 15 degrees around the cross-section, revealing the layered interior: the small timber chamber, a thick dome of river stones packed over it, and the wide earth mound covering everything. The glowing orange structure lines stay crisp and continuous throughout as an overlay. Dark neutral grey background, no sky. Subtle floating dust motes only. No people other than the static scale silhouette, no text, no labels, no logos, no flicker. Steady, deliberate, museum-exhibit pacing.",
+    "resolution": "720p",
+    "seed": 569661,
+    "width": 1280
+  },
+  "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_37Pr23aHZBmmIS8npWLYUTXqdYF/hf_20260919_052038_96b1a461-0250-494e-b43f-ed0827eccd8e.mp4",
+  "status": "completed",
+  "thumbnail_url": "https://cdn.higgsfield.ai/user_37Pr23aHZBmmIS8npWLYUTXqdYF/hf_20260919_052038_96b1a461-0250-494e-b43f-ed0827eccd8e_thumbnail.webp"
+}

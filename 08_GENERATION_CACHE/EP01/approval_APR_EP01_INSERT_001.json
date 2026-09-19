@@ -5,11 +5,12 @@
   "money_gate_presented": {
     "shot_id": "EP01_G04_SECTION (heritage-insert concept test, no episode shot yet)",
     "prompt_ids": [
-      "PRM_EP01_INSERT_G04_V01"
+      "PRM_EP01_INSERT_G04_V01",
+      "PRM_EP01_INSERT_G04_V02"
     ],
     "provider_model": "Higgsfield CLI / gemini_omni_flash_1_1 image-to-video, 8 s, 720p, 16:9, start_image = Blender tech pass CAM_G04_SECTION_tech.png",
-    "expected_attempts": 1,
-    "estimated_cost_range": "24 credits (1 clip, no retry)",
+    "expected_attempts": 2,
+    "estimated_cost_range": "48 credits (concept test + corrected retry, both owner-approved 2026-09-19)",
     "continuity_risk": "n/a (no characters); scale cue absent in input"
   },
   "decision": "APPROVE",
