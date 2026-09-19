@@ -72,7 +72,8 @@
         "ORIGINAL_GRAPHIC",
         "BLENDER_FLOW",
         "FLOW_VEO",
-        "HIGGSFIELD"
+        "HIGGSFIELD",
+        "HERITAGE_INSERT"
       ]
     },
     "status": {
