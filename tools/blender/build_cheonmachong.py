@@ -116,6 +116,8 @@ M_GRASS = mat("grass", (0.24, 0.29, 0.14), 0.98, 0.35, 12.0,   0.60, 0.30, 0.38)
 M_PROXY = mat("proxy", (0.62, 0.58, 0.52), 0.92)
 M_RED   = mat("dimension_red", (0.85, 0.10, 0.10), 0.60)
 M_WHITE = mat("white", (0.9, 0.9, 0.9), 0.70)
+# P-015 tech pass: whole scene forced to one dark matte so only the glowing structure lines carry information
+M_TECHBASE = mat("tech_base", (0.11, 0.12, 0.14), 0.95)
 
 def box(name, size, loc, c, m, rot=(0, 0, 0)):
     bpy.ops.mesh.primitive_cube_add(size=1, location=loc); o = bpy.context.object; o.name = name
@@ -441,6 +443,20 @@ def _apply_mask_colours():
         key = o.data.materials[0].name if (o.data.materials and o.data.materials[0]) else ""
         o.color = (*MASK_RGB.get(key, (0.05, 0.05, 0.05)), 1.0)
 
+_MAT_BACKUP = {}
+def _swap_materials(m):
+    for o in sc.objects:
+        if o.type != "MESH" or not o.data.materials: continue
+        _MAT_BACKUP[o.name] = [sl for sl in o.data.materials]
+        for i in range(len(o.data.materials)): o.data.materials[i] = m
+def _restore_materials():
+    for name, mats in _MAT_BACKUP.items():
+        o = bpy.data.objects.get(name)
+        if not o: continue
+        for i, m in enumerate(mats):
+            if i < len(o.data.materials): o.data.materials[i] = m
+    _MAT_BACKUP.clear()
+
 def _clear_compositor():
     sc.use_nodes = False
     if sc.node_tree:
@@ -452,9 +468,13 @@ def render(cam, tag, mode):
     sc.render.image_settings.file_format = 'PNG'
     sc.render.image_settings.color_depth = '16' if mode in ("depth", "normal") else '8'
     vl = sc.view_layers[0]
+    # every pass starts clean: tech mode flips these and must not leak into the next pass
+    sc.render.use_freestyle = False; vl.use_freestyle = False; vl.material_override = None
+    _wbg.inputs["Strength"].default_value = 0.28; sc.world.use_nodes = True
+    _restore_materials()
 
     # ---- EEVEE passes: beauty (textured, lit) and normal (geometry ground truth) ----
-    if mode in ("beauty", "normal"):
+    if mode in ("beauty", "normal", "tech"):
         sc.render.engine = 'BLENDER_EEVEE_NEXT'
         sc.render.film_transparent = False
         ee = sc.eevee
@@ -474,6 +494,32 @@ def render(cam, tag, mode):
             sc.view_settings.exposure = 0.15
         if mode == "beauty":
             _clear_compositor()
+        elif mode == "tech":
+            # Freestyle structure lines (silhouette + crease + border + contour) rendered as their own pass,
+            # then glowed and added over a dark matte base. The look the heritage-insert survey found
+            # dominant: neutral base, one accent colour, lines trace the structure (P-015 §2).
+            sc.render.use_freestyle = True; vl.use_freestyle = True
+            fs = vl.freestyle_settings; fs.as_render_pass = True; fs.crease_angle = math.radians(120)
+            for ls_ in list(fs.linesets): fs.linesets.remove(ls_)
+            lset = fs.linesets.new("tech"); lset.select_silhouette = True; lset.select_crease = True
+            lset.select_border = True; lset.select_contour = True; lset.select_external_contour = True
+            lst = lset.linestyle; lst.color = (1.0, 0.30, 0.12); lst.thickness = 2.6; lst.alpha = 1.0
+            sc.render.line_thickness_mode = "ABSOLUTE"; sc.render.line_thickness = 2.6
+            _swap_materials(M_TECHBASE)              # 4.2 EEVEE Next ignores material_override; swap slots instead
+            sc.world.use_nodes = False; sc.world.color = (0.030, 0.034, 0.045)   # flat dark backdrop, no sky haze
+            sc.use_nodes = True; nt = sc.node_tree
+            for n in list(nt.nodes): nt.nodes.remove(n)
+            rl = nt.nodes.new("CompositorNodeRLayers")
+            gl = nt.nodes.new("CompositorNodeGlare"); gl.glare_type = "FOG_GLOW"; gl.threshold = 0.05; gl.size = 8; gl.mix = 0.0
+            boost = nt.nodes.new("CompositorNodeMixRGB"); boost.blend_type = "MULTIPLY"; boost.inputs[0].default_value = 1.0
+            boost.inputs[2].default_value = (1.0, 0.35, 0.15, 1.0)
+            add = nt.nodes.new("CompositorNodeMixRGB"); add.blend_type = "ADD"; add.inputs[0].default_value = 1.0
+            comp = nt.nodes.new("CompositorNodeComposite")
+            nt.links.new(rl.outputs["Freestyle"], gl.inputs["Image"])
+            nt.links.new(gl.outputs["Image"], boost.inputs[1])
+            nt.links.new(rl.outputs["Image"], add.inputs[1])
+            nt.links.new(boost.outputs[0], add.inputs[2])
+            nt.links.new(add.outputs[0], comp.inputs[0])
         else:
             # view-space normal -> RGB. (n + 1) * 0.5 so the map is readable as a standard normal plate.
             vl.use_pass_normal = True
@@ -516,15 +562,18 @@ def render(cam, tag, mode):
 only = set(A.only.split(",")) if A.only else None
 passes = A.passes.split(",")
 for cid, st, px, *_ in CAMS:
-    if only and cid not in only: continue
+    if only and cid not in only and not any(o.startswith(cid + "_") for o in only): continue
     cam = bpy.data.objects[cid]
     if cid == "CAM_G05_BUILD":
         for s in ("S1", "S2", "S3", "S4", "S5"):
-            set_visible(STAGE_SETS[s], None, False, distant=False); render(cam, f"{cid}_{s}", "clay")
-            set_visible(STAGE_SETS[s], None, False, distant=False); render(cam, f"{cid}_{s}", "line")
+            if only and f"{cid}_{s}" not in only and cid not in only: continue
+            for m in (passes if "tech" in passes else ("clay", "line")):   # diagram cams: clay/line unless tech asked
+                set_visible(STAGE_SETS[s], None, False, distant=False); render(cam, f"{cid}_{s}", m)
         continue
     if cid == "CAM_G04_SECTION":
-        set_visible(["STAGE1_CHAMBER", "STAGE2_GOODS"], None, False, section=True, distant=False); render(cam, cid, "clay"); render(cam, cid, "line"); continue
+        for m in (passes if "tech" in passes else ("clay", "line")):
+            set_visible(["STAGE1_CHAMBER", "STAGE2_GOODS"], None, False, section=True, distant=False); render(cam, cid, m)
+        continue
     if cid == "CAM_G03_LANDSCAPE_PRESENT":
         set_visible(STAGE_SETS[st], None, False, distant=True, present=True, worksite=False)
     else:

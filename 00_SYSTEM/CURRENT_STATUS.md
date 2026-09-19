@@ -8,7 +8,7 @@
 
 ## 다음 시작 — "따봉 계속" 하면 여기부터 (갱신 2026-09-19 오전)
 
-**09-19 낮 — 유적 3D 인서트 조사·계획 (P-015)**: 사용자 요청(유적지·보물을 3D 구조 영상으로 중간중간) → 타 채널 10곳 조사 + 할 일 7단계 `09_ANALYTICS/benchmarks/HERITAGE_INSERT_SURVEY_AND_PLAN_20260919.md`. 국가유산청 3D 186건 공공누리 1유형 확인. PIL 네온 합성 시험 실패 → Blender Freestyle 정식 패스 필요. **승인 대기: 4 Blender 패스(무료) + 5 천마총 시험 클립 24 credits.**
+**09-19 낮 — 유적 3D 인서트 조사·계획 (P-015)**: 사용자 요청(유적지·보물을 3D 구조 영상으로 중간중간) → 타 채널 10곳 조사 + 할 일 7단계 `09_ANALYTICS/benchmarks/HERITAGE_INSERT_SURVEY_AND_PLAN_20260919.md`. 국가유산청 3D 186건 공공누리 1유형 확인. PIL 네온 합성 시험 실패 → Blender Freestyle 정식 패스 필요. **4 Blender `tech` 패스 완료 (09-19, Freestyle 구조선 + 발광 + 무채색 오버라이드 + 다크 월드, `--passes tech`)** — 시트 `08_GENERATION_CACHE/EP01/HERITAGE_INSERT/QC_TECH_PASS_V01.jpg`. 발견: 4.2 EEVEE Next 는 뷰레이어 material_override 무시 → 오브젝트별 슬롯 교체로 해결. **승인 대기: 5 천마총 시험 클립 24 credits.**
 
 **09-19 오전 — 「마스터 프롬프트 + 구글 플로우」 워크플로 분석 완료 (P-014)**: 사용자가 유튜브 mwkiVWqqb08 + 프롬프트 전문을 주며 분석 요청. 결과 `09_ANALYTICS/benchmarks/WORKFLOW_MASTERPROMPT_FLOW_20260919.md`. **갈아타지 않음** (제품이 다름: 무인 3D 인포그래픽 vs 실사 사극 재현). 가져올 장치 5건을 DRAFT 로 편입 — A 내레이션 속도 (EP01 실측 129 wpm 으로 검증) · B 주제 5선 점수표 · C 타임스탬프 대본 · D 썸네일 한글 1:1 매핑 · E 사람 없는 컷 체이닝. **사용자 결정 대기: P-014 A~E ACTIVE 승격 + F 쇼츠 실험 (90 credits, 예산 초과) 여부.** 메모 원본은 `프롬프트 자료집/` 로 이동.
 
