@@ -1,0 +1,30 @@
+{
+  "cam": "CAM_S08_SH002_H07",
+  "request_id": "01a0b8a9-8f46-7f71-9460-6aa2ad4fbc51",
+  "model": "fal-ai/flux-general",
+  "depth_path": "jasperai/Flux.1-dev-Controlnet-Depth",
+  "controls": [
+    {
+      "path": "jasperai/Flux.1-dev-Controlnet-Depth",
+      "control_image_url": "https://v3b.fal.media/files/b/0aab0663/NAXhYQ_4E0hBaudrynhAV_CAM_S08_SH002_H07_depth.png",
+      "conditioning_scale": 0.85,
+      "start_percentage": 0.0,
+      "end_percentage": 0.65
+    }
+  ],
+  "steps": 30,
+  "guidance": 3.5,
+  "seed": 13022016588629847964,
+  "size": [
+    1344,
+    768
+  ],
+  "n": 2,
+  "est_usd": 1.8432,
+  "outputs": [
+    "08_GENERATION_CACHE\\EP01\\FAL_PHOTOREAL\\CAM_S08_SH002_H07_FAL_V02_0.png",
+    "08_GENERATION_CACHE\\EP01\\FAL_PHOTOREAL\\CAM_S08_SH002_H07_FAL_V02_1.png"
+  ],
+  "ver": "V02",
+  "note": "V02 (scale stated in prompt, depth end 65%). NOTE: written by the pre---ver tool, which overwrote the V01 files; V01 images from 2026-09-18 are lost, their review and 12-frame sheet remain."
+}
