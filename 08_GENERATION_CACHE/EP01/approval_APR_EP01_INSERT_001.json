@@ -7,11 +7,12 @@
     "prompt_ids": [
       "PRM_EP01_INSERT_G04_V01",
       "PRM_EP01_INSERT_G04_V02",
-      "PRM_EP01_INSERT_G04_V03"
+      "PRM_EP01_INSERT_G04_V03",
+      "PRM_EP01_INSERT_G04_V04"
     ],
     "provider_model": "Higgsfield CLI / gemini_omni_flash_1_1 image-to-video, 8 s, 720p, 16:9, start_image = Blender tech pass CAM_G04_SECTION_tech.png",
-    "expected_attempts": 3,
-    "estimated_cost_range": "72 credits (3 clips, each owner-approved 2026-09-19)",
+    "expected_attempts": 4,
+    "estimated_cost_range": "96 credits (4 clips, each owner-approved 2026-09-19; V04 = master take)",
     "continuity_risk": "n/a (no characters); scale cue absent in input"
   },
   "decision": "APPROVE",

@@ -1,0 +1,41 @@
+{
+  "generation_id": "GEN_EP01_INSERT_G04_OMNI_V04",
+  "shot_id": "EP01_S06_SH010",
+  "stage": "VIDEO",
+  "provider": "Higgsfield",
+  "model": "GEMINI_OMNI_FLASH_1_1 (gemini_omni_flash_1_1 image-to-video 8s 720p 16:9 via CLI; start_image = Blender tech pass)",
+  "provider_job": {
+    "job_id": "1c94ac4c-95c3-495e-ad6d-621c61f019d6",
+    "job_set_type": "gemini_omni_flash_1_1",
+    "display_name": "Gemini Omni Flash 1.1",
+    "params_path": "08_GENERATION_CACHE/EP01/provider_jobs/HF_1c94ac4c-95c3-495e-ad6d-621c61f019d6.json"
+  },
+  "prompt_id": "PRM_EP01_INSERT_G04_V04",
+  "prompt_version": "V04",
+  "standard_versions": {
+    "VISUAL_STYLE_BIBLE.md": "v0.2",
+    "COST_STANDARD.md": "v0.1"
+  },
+  "case_ids_used": [],
+  "approval_id": "APR_EP01_INSERT_001",
+  "input_paths": [
+    "08_GENERATION_CACHE/EP01/HERITAGE_INSERT/CAM_G04_SECTION_tech_taegukblue.png"
+  ],
+  "output_paths": [
+    "08_GENERATION_CACHE/EP01/HERITAGE_INSERT/INSERT_G04_SECTION_OMNI_V04_BLUE_1c94ac4c.mp4"
+  ],
+  "attempts": 1,
+  "duration_sec": 8.0,
+  "cost": {
+    "currency": "CREDITS",
+    "amount": 24.0,
+    "spent": 24.0,
+    "note": "D-059 taeguk-blue master take"
+  },
+  "result_status": "SUCCESS",
+  "failure_id": null,
+  "started_at": "2026-09-19T05:58:39Z",
+  "finished_at": "2026-09-19T06:01:00Z",
+  "run_by": "Claude Code (D-059)",
+  "notes": "Bot QC PASS (master take): blue structure lines continuous 8 s; layer order chamber->stones->earth correct; no invented side rooms (short V02 prompt restored); proportion ~1/7 (FACT); scale figure static; interior materialises 1.3-3.3 s inside the outline, gentle orbit. Rendered metre labels present (expected) -> covered by edit overlays (D-059). Sheet QC_INSERT_G04_OMNI_V04_BLUE_12FRAMES.jpg"
+}
