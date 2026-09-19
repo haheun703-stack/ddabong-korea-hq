@@ -21,7 +21,7 @@ ap.add_argument("--anim", default="")
 ap.add_argument("--anim_seconds", type=float, default=5.0)
 ap.add_argument("--anim_amount", type=float, default=0.18)
 # D-058 look variants: structure-line colour as "r,g,b" 0-1 and a filename tag, so palettes can be compared side by side
-ap.add_argument("--tech_rgb", default="1.0,0.30,0.12")
+ap.add_argument("--tech_rgb", default="0.20,0.58,1.00")   # D-059: 태극 blue is the house accent; orange was the reference channel
 ap.add_argument("--tech_tag", default="")
 A = ap.parse_args(argv)
 OUT = os.path.abspath(A.out); os.makedirs(OUT, exist_ok=True)

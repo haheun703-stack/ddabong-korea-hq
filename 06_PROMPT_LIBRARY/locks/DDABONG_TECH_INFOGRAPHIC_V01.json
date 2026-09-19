@@ -1,8 +1,8 @@
 {
   "lock_id": "DDABONG_TECH_INFOGRAPHIC_V01",
   "kind": "STYLE",
-  "text": "DDABONG Tech Infographic (heritage insert, D-058): technical architectural cutaway visualization. Neutral dark matte base (charcoal grey, no sky, no texture), one accent colour only: glowing orange-red structure lines (#FF4D1F family) tracing silhouettes, creases and section edges. Slow dolly or orbit only, museum-exhibit pacing. Diagram may materialise into a photoreal cutaway while the structure lines remain as an overlay. Zero humans. Zero in-frame text, labels or logos (all labels are edit overlays). Scale cue mandatory in the input plate (1.7 m human silhouette or dimension bar).",
-  "source": "HERITAGE_INSERT_SURVEY_AND_PLAN_20260919.md §2·§5 · P-015 #5 test clip INSERT_G04_SECTION_OMNI_V01 (PASS-soft) · D-058",
+  "text": "DDABONG Tech Infographic (heritage insert, D-058/D-059): technical architectural cutaway visualization. Neutral dark base (charcoal to deep ink-navy, no sky, no texture), primary accent = glowing TAEGUK BLUE structure lines (RGB 0.20/0.58/1.00, #3394FF family) tracing silhouettes, creases and section edges; secondary accent = DDABONG brand red reserved for ONE highlighted element per insert (edit overlay, never generated). Slow push-in or a single short orbit, museum-exhibit pacing. Diagram may materialise into a photoreal cutaway while the blue structure lines remain as an overlay. Zero humans except a static 1.7 m scale silhouette in the plate. Zero in-frame text, labels or logos: all labels are edit overlays (English + one Hanja/Korean line, underline-style dimension marks). Structure comes only from the plate; the prompt describes materials and camera, never dimensions in metres (metre values are rendered as labels, verified 2026-09-19 V02/V03).",
+  "source": "HERITAGE_INSERT_SURVEY_AND_PLAN_20260919.md §2·§5 · P-015 #5 test clip INSERT_G04_SECTION_OMNI_V01 (PASS-soft) · D-058 · D-059 palette = 태극 blue (owner choice 2026-09-19, QC_TECH_PALETTE_V01.jpg)",
   "status": "APPROVED",
   "updated_at": "2026-09-19"
 }
