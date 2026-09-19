@@ -111,5 +111,5 @@
     "GEN_EP01_INSERT_G04_OMNI_V04"
   ],
   "as_of": "2026-09-19",
-  "note": "81 호출 = 218.17 credits. D-051 EP01 재작업 예산 ≈100 중 26.0 사용 (원로 재캐스팅 hero 3회 + 10종 배치). D-055 실사화 A묶음 4컷 8 credits (CLI) → 누적 226.17. 재시도 3컷 6 credits → 누적 232.17. 계정 외 결제 Seedream 5.0 Pro 8건 12 credits (09-17 07:32) EP01 제외. 노동자·시종 복식 V02 샘플 3장 6 credits → 누적 238.17. | 2026-09-19 +24 (P-015 #5 insert test, Omni Flash). External (not this project, excluded): 09-15 Seedance 67.5 · 09-17 Seedream 12 · 09-18 21:12-21:20 KST Flux Kontext 11x1.5=16.5. | 2026-09-19 +24 (D-058 retry V02). | 2026-09-19 +24 (V03, FAIL). | 2026-09-19 +24 (V04 blue, master take)."
+  "note": "81 호출 = 218.17 credits. D-051 EP01 재작업 예산 ≈100 중 26.0 사용 (원로 재캐스팅 hero 3회 + 10종 배치). D-055 실사화 A묶음 4컷 8 credits (CLI) → 누적 226.17. 재시도 3컷 6 credits → 누적 232.17. 계정 외 결제 Seedream 5.0 Pro 8건 12 credits (09-17 07:32) EP01 제외. 노동자·시종 복식 V02 샘플 3장 6 credits → 누적 238.17. | 2026-09-19 +24 (P-015 #5 insert test, Omni Flash). External (not this project, excluded): 09-15 Seedance 67.5 · 09-17 Seedream 12 · 09-18 21:12-21:20 KST Flux Kontext 11x1.5=16.5. | 2026-09-19 +24 (D-058 retry V02). | 2026-09-19 +24 (V03, FAIL). | 2026-09-19 +24 (V04 blue, master take). | D-060: shared account with other bots; external charges (09-15 67.5, 09-17 12, 09-18 16.5) are other projects, not security events; EP01 aggregates by our job_ids only."
 }
