@@ -1,0 +1,41 @@
+{
+  "approval_id": "APR_EP01_MP_RECAST_V04_001",
+  "kind": "PAID_GENERATION",
+  "target_id": "EP01_MP_LABORER_ATTENDANT_RECAST_V04",
+  "money_gate_presented": {
+    "shot_id": "MASTER_PACK: CHAR_SILLA_LABORER_GROUP_01 + CHAR_SILLA_ATTENDANT_GROUP_01 (D-056 recast)",
+    "prompt_ids": [
+      "PRM_MP_CHAR_SILLA_LABORER_GROUP_01_RECAST_FULL_BODY_V04",
+      "PRM_MP_CHAR_SILLA_LABORER_GROUP_01_RECAST_THREE_QUARTER_V04",
+      "PRM_MP_CHAR_SILLA_LABORER_GROUP_01_RECAST_COSTUME_DETAIL_V04",
+      "PRM_MP_CHAR_SILLA_ATTENDANT_GROUP_01_RECAST_FULL_BODY_V04",
+      "PRM_MP_CHAR_SILLA_ATTENDANT_GROUP_01_RECAST_THREE_QUARTER_V04",
+      "PRM_MP_CHAR_SILLA_ATTENDANT_GROUP_01_RECAST_COSTUME_DETAIL_V04"
+    ],
+    "aspect_ratios": {
+      "FRONT": "3:4",
+      "THREE_QUARTER_LEFT": "3:4",
+      "THREE_QUARTER_RIGHT": "3:4",
+      "PROFILE": "3:4",
+      "FULL_BODY": "2:3",
+      "NEUTRAL_STANDING": "2:3",
+      "WALKING": "2:3",
+      "COSTUME_DETAIL": "3:4",
+      "EXPRESSION_SHEET": "3:2",
+      "BACK_VIEW": "2:3"
+    },
+    "image_references": {
+      "hero_V07": "46880b62-4e44-4a96-b02b-28c7fac10b35"
+    },
+    "provider_model": "Higgsfield CLI / nano_banana_pro, 2k, 3:4",
+    "expected_attempts": 6,
+    "estimated_cost_range": "12 credits (6 shots x 2, Nano Banana Pro, no retry budget)",
+    "continuity_risk": "LOW (new casting, no prior face to match); costume locks V02 APPROVED"
+  },
+  "decision": "APPROVE",
+  "fix_reason": null,
+  "delegated": false,
+  "decided_by": "사용자 ('해봐라' 2026-09-15 — V07 OK, 10종 재생성 승인)",
+  "decided_at": "2026-09-19",
+  "note": "D-056 recast after costume V02. Owner: '진행해' (2026-09-19). Chest tie from the 09-17 samples banned explicitly in every prompt."
+}
