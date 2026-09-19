@@ -8,7 +8,7 @@
     "job_id": "b187034d-c9cb-4ce3-8045-93f628876766",
     "job_set_type": "gemini_omni_flash_1_1",
     "display_name": "Gemini Omni Flash 1.1",
-    "params_path": ""
+    "params_path": "08_GENERATION_CACHE/EP01/provider_jobs/HF_b187034d-c9cb-4ce3-8045-93f628876766.json"
   },
   "prompt_id": "PRM_EP01_INSERT_G04_V01",
   "prompt_version": "V01",

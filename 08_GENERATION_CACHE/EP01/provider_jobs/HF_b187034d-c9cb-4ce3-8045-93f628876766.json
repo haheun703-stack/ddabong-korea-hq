@@ -1,0 +1,31 @@
+{
+  "created_at": "2026-09-19T05:03:46.666223Z",
+  "display_name": "Gemini Omni Flash 1.1",
+  "id": "b187034d-c9cb-4ce3-8045-93f628876766",
+  "job_type": "gemini_omni_flash_1_1",
+  "min_result_url": null,
+  "params": {
+    "aspect_ratio": "16:9",
+    "batch_size": 1,
+    "duration": 8,
+    "height": 720,
+    "medias": [
+      {
+        "data": {
+          "id": "9a829d3f-5bf8-4a8c-ae05-3f70c92b52cc",
+          "type": "media_input",
+          "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_37Pr23aHZBmmIS8npWLYUTXqdYF/9a829d3f-5bf8-4a8c-ae05-3f70c92b52cc.png"
+        },
+        "role": "start_image"
+      }
+    ],
+    "mode": "image-to-video",
+    "prompt": "Technical architectural cutaway animation. The camera performs one slow, smooth orbital move of about 15 degrees around the cross-section of an ancient earthen burial mound, revealing its layered interior: a small wooden chamber at the centre, a thick dome of river stones packed over it, and a wide earth mound covering everything. The glowing orange structure lines stay crisp and continuous throughout. Dark neutral grey background, no sky, no texture change. Subtle floating dust motes only. No people, no text, no labels, no logos, no flicker. Steady, deliberate, museum-exhibit pacing.",
+    "resolution": "720p",
+    "seed": 941107,
+    "width": 1280
+  },
+  "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_37Pr23aHZBmmIS8npWLYUTXqdYF/hf_20260919_050346_b187034d-c9cb-4ce3-8045-93f628876766.mp4",
+  "status": "completed",
+  "thumbnail_url": "https://cdn.higgsfield.ai/user_37Pr23aHZBmmIS8npWLYUTXqdYF/hf_20260919_050346_b187034d-c9cb-4ce3-8045-93f628876766_thumbnail.webp"
+}
