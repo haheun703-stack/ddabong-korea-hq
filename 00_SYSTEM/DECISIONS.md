@@ -315,7 +315,7 @@
 ### P-015 · 2026-09-19 · 유적 3D 인서트 (`HERITAGE_INSERT`) 도입 — 컷 종류·BIBLE 예외·두 번째 룩
 **현황** 사용자: 한국 유적지·보물 지정 문화재를 3D 구조 영상으로 본편 중간중간 넣고 싶다. 타 채널 10곳 조사 + 할 일 7단계 → `09_ANALYTICS/benchmarks/HERITAGE_INSERT_SURVEY_AND_PLAN_20260919.md` (유료 0). 핵심: ① 3D 복원 영상이 조회 상위 독점 (Manuel Bravo 600만 vs 2~4만) ② 한국 문화재 3D 반복 채널 미확인 = 시장 공백(추정) ③ **국가유산청 3D 186건 공공누리 1유형 상업 가능** → 실측 리서치 부담 대폭 감소 ④ 유튜브 2026-07-16: 템플릿 반복 AI 수익화 불가, 독창적 통찰 AI 보조는 허용.
 **제안 (결정 3 + 제작 4)** 1 `SHOT_STANDARD` 에 `HERITAGE_INSERT` 신설 (사람 0 · 15~25초 · ③④ 위치 · 편당 2~3 · 라벨 오버레이) · 2 `VISUAL_STYLE_BIBLE` §74 예외 (사람 없는 구조물 인서트 컷당 ≤10초) · 3 룩 락 `DDABONG_TECH_INFOGRAPHIC_V01` · 4 Blender Freestyle 정식 패스 (PIL 후처리는 실패 확인) · 5 천마총 시험 클립 1개 `gemini_omni_flash_1_1` 8초 **24 credits** · 6 국가유산청 3D 목록 → EP01 후보 2~3 · 7 레시피 문서.
-**권고 순서** 4 → 5 → 사용자 판단 → 1·2·3 → 6 → 7. **승인 요청: 4 (무료, 착수) + 5 (24 credits).**
+**진행** 4 완료 (09-19, `tech` 패스) · 5 완료 (09-19, 24 credits, **PASS-soft** — 도해→실사 리빌·층 순서 정확·구조선 유지; 비례 1/4 vs FACT 1/7, 단면 평면 선 부산물). **결정 요청: 1·2·3 채택 여부 + 보정 후 재생성 1회 (24 credits).**
 **영향** SHOT_STANDARD · VISUAL_STYLE_BIBLE · 신규 룩 락 · RIGHTS_STANDARD 공공누리 문구 · PUBLISH_STANDARD 자기공개 항목.
 
 ### P-014 · 2026-09-19 · 「마스터 프롬프트 + 구글 플로우」 워크플로에서 가져올 장치 5건 + 쇼츠 실험 1건

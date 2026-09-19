@@ -1,0 +1,32 @@
+{
+  "prompt_id": "PRM_EP01_INSERT_G04_V01",
+  "shot_id": "EP01_S08_SH002",
+  "target": "VIDEO",
+  "locks": {
+    "global": "DDABONG_GLOBAL_V01",
+    "era": "SILLA_EARLY_V01",
+    "location": "LOC_CHEONMACHONG_V01",
+    "character_costume": [],
+    "style": "DDABONG_SAGEUK_CINEMATIC_V02",
+    "camera": null
+  },
+  "shot_delta": "P-015 #5 heritage-insert concept test: Blender tech pass (Freestyle structure lines over dark matte) as start_image; one 15-degree orbit; diagram stays as overlay while interior materialises. No humans, no in-frame text.",
+  "negative": [
+    "text",
+    "labels",
+    "logos",
+    "people",
+    "flicker",
+    "sky",
+    "texture change"
+  ],
+  "assembled_text": "Technical architectural cutaway animation. The camera performs one slow, smooth orbital move of about 15 degrees around the cross-section of an ancient earthen burial mound, revealing its layered interior: a small wooden chamber at the centre, a thick dome of river stones packed over it, and a wide earth mound covering everything. The glowing orange structure lines stay crisp and continuous throughout. Dark neutral grey background, no sky, no texture change. Subtle floating dust motes only. No people, no text, no labels, no logos, no flicker. Steady, deliberate, museum-exhibit pacing.",
+  "reference_images": [
+    "08_GENERATION_CACHE/EP01/HERITAGE_INSERT/CAM_G04_SECTION_tech.png"
+  ],
+  "version": "V01",
+  "parent_prompt_id": "",
+  "patch_id": "",
+  "created_at": "2026-09-19",
+  "created_by": "Claude Code (P-015 #5)"
+}

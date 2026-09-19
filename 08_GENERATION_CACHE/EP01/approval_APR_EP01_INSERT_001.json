@@ -1,0 +1,21 @@
+{
+  "approval_id": "APR_EP01_INSERT_001",
+  "kind": "PAID_GENERATION",
+  "target_id": "EP01_HERITAGE_INSERT_TEST_G04",
+  "money_gate_presented": {
+    "shot_id": "EP01_S04_SH005 · EP01_S06_SH005 (H05) · EP01_S06_SH010 (H06) · EP01_S08_SH002 (H07)",
+    "prompt_ids": [
+      "PRM_EP01_INSERT_G04_V01"
+    ],
+    "provider_model": "Higgsfield / Nano Banana Pro, 16:9, 2k, image_references = Blender clay render (media_upload) [+ elder hero V07 / back view]",
+    "expected_attempts": 1,
+    "estimated_cost_range": "8-16 credits (4 shots x 2 credits, up to 1 patch each)",
+    "continuity_risk": "LOW for geometry (Blender-locked); MEDIUM for H05 elder back view"
+  },
+  "decision": "APPROVE",
+  "fix_reason": null,
+  "delegated": false,
+  "decided_by": "사용자 ('진행해라' 2026-09-17, D-053 Phase 3)",
+  "decided_at": "2026-09-19",
+  "note": "P-015 #5 heritage-insert concept test. Owner: '그래 진행해라' (2026-09-19). One Omni Flash clip, 24 credits."
+}
