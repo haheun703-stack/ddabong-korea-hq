@@ -14,7 +14,7 @@
 
 **09-18 저녁 상태 — D-057 트랙 2 첫 시험 결과 (fal H07)**: 사진 품질 확보, 어제 실패 3양상 전부 소멸. 남은 문제 = **크기** (47 m 봉분이 2–3 m 흙무더기로). 원인 = 프롬프트에 크기 언급 0 + 근접 묘사. 시트 `08_GENERATION_CACHE/EP01/FAL_PHOTOREAL/QC_H07_FAL_V01_vs_HIGGSFIELD.jpg`. **V02 완료 ($2.40) → 채택 불가**: 크기는 해결됐으나 후보1 트렌치·후보2 계단식 단·둘 다 항공 시점. 검수 `FAL_PHOTOREAL/REVIEW_H07_FAL_V02_20260919.md`. **→ H07 실사화 해결 (24 credits, PASS).** `BLENDER_PHOTOREAL/H07_OMNI_V01_5af8b44d.mp4`, 검수 `REVIEW_H07_OMNI_V01_20260919.md`. fal 이 3회 실패한 컷을 Blender beauty → Omni 가 1회에 통과. 이유: beauty 는 재질·조명·하늘·카메라가 이미 들어가 있어 모델에게 남은 자유도가 작다. **실사화 경로 확정: Blender beauty → Omni Flash.** fal 은 보류(이 경로로 안 되는 컷 생길 때 재개). Higgsfield EP01 누적 382.17, fal $21.19. 도구 사고: `--ver` 없어 V01 이미지 덮어씀 → 수정 완료. fal 잔액 $21.79 (오늘 $2.85 소모, 실패분 포함 — 견적 5배 오차 정정함).
 
-**복식 JSON V02 반영 완료** (커밋 3b063a1) · **재캐스팅 V04 실패 → V05 형식 통과 (24 credits)**: 6/6 단독·빈 배경, 가슴 끈 해소, 신분 차이 보임. 잔여 결함 3 (허리끈 매듭·시종 팔짱·머리띠 색). 시트 `MP_RECAST_V04/QC_MP_RECAST_V05_20260919.jpg`, 검수 `REVIEW_MP_RECAST_V04_V05_20260919.md`. **사용자 결정: A) V05 채택 / B) V06 재시도 12 credits.** Higgsfield EP01 누적 406.17. (계정 외 결제 3건은 **D-060 으로 종결** — Higgsfield 계정을 다른 봇들과 공유, 우리 지출은 job_id 기준으로만 집계.)
+**복식 JSON V02 반영 완료** (커밋 3b063a1) · **재캐스팅 V04 실패 → V05 형식 통과 (24 credits)**: 6/6 단독·빈 배경, 가슴 끈 해소, 신분 차이 보임. 잔여 결함 3 (허리끈 매듭·시종 팔짱·머리띠 색). 시트 `MP_RECAST_V04/QC_MP_RECAST_V05_20260919.jpg`, 검수 `REVIEW_MP_RECAST_V04_V05_20260919.md`. **→ D-061: V05 채택.** 두 캐릭터 master_pack 3슬롯 APPROVED, 캐릭터 기록 V02. walking 슬롯은 사용 시점 보충. Higgsfield EP01 누적 406.17. (계정 외 결제 3건은 **D-060 으로 종결** — Higgsfield 계정을 다른 봇들과 공유, 우리 지출은 job_id 기준으로만 집계.)
 
 <details><summary>09-18 기준 다음 시작 블록 (접힘)</summary>
 

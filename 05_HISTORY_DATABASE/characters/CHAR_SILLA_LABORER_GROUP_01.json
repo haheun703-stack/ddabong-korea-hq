@@ -32,9 +32,9 @@
       "status": "NOT_REQUIRED"
     },
     "three_quarter_left": {
-      "path": null,
-      "generation_id": null,
-      "status": "NOT_REQUIRED"
+      "path": "08_GENERATION_CACHE/EP01/MP_RECAST_V04/LABORER_THREE_QUARTER_V05_1515450e.png",
+      "generation_id": "GEN_MP_CHAR_SILLA_LABORER_GROUP_01_RECAST_THREE_QUARTER_V05",
+      "status": "APPROVED"
     },
     "three_quarter_right": {
       "path": null,
@@ -47,8 +47,8 @@
       "status": "NOT_REQUIRED"
     },
     "full_body": {
-      "path": "08_GENERATION_CACHE/EP01/MP_CROWD/MP_LABORER_FULL_BODY_V02_412a72bc.png",
-      "generation_id": "GEN_MP_LABORER_FULL_BODY_HIGGSFIELD_V02",
+      "path": "08_GENERATION_CACHE/EP01/MP_RECAST_V04/LABORER_FULL_BODY_V05_5b004878.png",
+      "generation_id": "GEN_MP_CHAR_SILLA_LABORER_GROUP_01_RECAST_FULL_BODY_V05",
       "status": "APPROVED"
     },
     "neutral_standing": {
@@ -62,8 +62,8 @@
       "status": "APPROVED"
     },
     "costume_detail": {
-      "path": "08_GENERATION_CACHE/EP01/MP_CROWD/MP_LABORER_COSTUME_DETAIL_V01_06b95492.png",
-      "generation_id": "GEN_MP_LABORER_COSTUME_DETAIL_HIGGSFIELD_V01",
+      "path": "08_GENERATION_CACHE/EP01/MP_RECAST_V04/LABORER_COSTUME_DETAIL_V05_d137795a.png",
+      "generation_id": "GEN_MP_CHAR_SILLA_LABORER_GROUP_01_RECAST_COSTUME_DETAIL_V05",
       "status": "APPROVED"
     },
     "expression_sheet": {
@@ -73,9 +73,9 @@
     }
   },
   "status": "CHARACTER_MASTER_APPROVED",
-  "approved_by": "사용자 (D-023)",
-  "approved_at": "2026-09-13",
-  "version": "V01",
-  "updated_at": "2026-09-13",
-  "notes": "군중 역할. 연속성은 얼굴이 아니라 복식·체형·작업 도구로 유지. D-008 Lite Crowd Pack: full_body·walking·costume_detail 만 필수. 전경·식별 가능하게 쓰이면 FULL 로 승격. D-015: LITE_CROWD 유지 확인 (사용자). H02 푸시인이 특정 얼굴에 머물 때만 FULL 승격 검토. D-022 (사용자 2026-09-13): full_body APPROVED → 2단계 walking · costume_detail 는 이 이미지를 복식 참조로. D-023 (사용자 2026-09-13): LITE Pack 3/3 APPROVED → CHARACTER_MASTER_APPROVED. 참조 얼굴이 walking/costume_detail 에 반복됨 → 영상에서 이 3인조를 알아볼 정도로 반복 사용 금지."
+  "approved_by": "사용자",
+  "approved_at": "2026-09-19",
+  "version": "V02",
+  "updated_at": "2026-09-19",
+  "notes": "군중 역할. 연속성은 얼굴이 아니라 복식·체형·작업 도구로 유지. D-008 Lite Crowd Pack: full_body·walking·costume_detail 만 필수. 전경·식별 가능하게 쓰이면 FULL 로 승격. D-015: LITE_CROWD 유지 확인 (사용자). H02 푸시인이 특정 얼굴에 머물 때만 FULL 승격 검토. D-022 (사용자 2026-09-13): full_body APPROVED → 2단계 walking · costume_detail 는 이 이미지를 복식 참조로. D-023 (사용자 2026-09-13): LITE Pack 3/3 APPROVED → CHARACTER_MASTER_APPROVED. 참조 얼굴이 walking/costume_detail 에 반복됨 → 영상에서 이 3인조를 알아볼 정도로 반복 사용 금지. | D-061 (2026-09-19): 복식 V02 재캐스팅 V05 채택 (사용자 'a'). full_body·three_quarter_left·costume_detail 3슬롯 APPROVED. walking 슬롯은 미촬영 — LITE_CROWD 필수이나 군중 원경 용도라 사용 시점에 보충. 잔여 결함 3 (허리끈 끝 매듭·시종 3/4 팔짱·노동자 머리띠 짙은 회색) 은 개별 컷에서 패치하기로 함."
 }

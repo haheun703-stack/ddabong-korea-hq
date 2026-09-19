@@ -318,6 +318,12 @@
 **규칙** ① EP01 비용은 **우리 generation 기록의 job_id 로만** 집계한다 (잔액 전후 차이로 추정하지 않는다). ② 잔액 변동에서 우리 job 이 아닌 것은 `cost_*.json` note 에 "external (shared account)" 로 한 줄만 남기고 더 추적하지 않는다. ③ 잔액 부족 경고만 예외 — 우리 배치 전에 `account status` 로 잔액 ≥ 배치 예산 확인.
 **영향** `COST_STANDARD.md` 집계 방식 한 줄 추가 (다음 개정 시). CURRENT_STATUS 의 "계정 외 결제 확인 요청" 항목 종결.
 
+### D-061 · 2026-09-19 · 노동자·시종 재캐스팅 V05 채택 — 복식 V02 마스터팩 확정 (사용자 "a")
+**결정** ① 복식 JSON `COSTUME_SILLA_LABORER_A01` · `COSTUME_SILLA_ATTENDANT_A01` V02 반영 완료 (락과 동일, APPROVED). ② 재캐스팅 V05 6컷 채택 → 두 캐릭터 `master_pack` 의 full_body · three_quarter_left · costume_detail 3슬롯 APPROVED, 캐릭터 기록 V02.
+**근거** V04 는 형식 실패(6컷 중 5컷이 다인 작업장 장면, 금지된 리본 매듭). V05 는 6/6 단독·빈 배경, 09-17 가슴 끈 결함 해소, 신분 차이(갖춤의 수) 가독. 24 credits. 검수 `08_GENERATION_CACHE/EP01/MP_RECAST_V04/REVIEW_MP_RECAST_V04_V05_20260919.md`.
+**미결** walking 슬롯 미촬영 (LITE_CROWD 필수이나 군중 원경 용도 — 사용 시점 보충). 잔여 결함 3 (허리끈 끝 매듭 · 시종 3/4 팔짱 · 노동자 머리띠 색) 은 개별 컷 패치로 처리.
+**확인된 규칙** 프롬프트는 **인원·배경 지시를 맨 앞에 가장 세게**, 복식 묘사는 뒤로. 긴 복식 묘사가 앞서면 모델이 장면 설정으로 읽는다 (H07·인서트의 "구체적 명사로 금지" 와 같은 계열).
+
 ---
 
 ## 승인 대기 (P)
